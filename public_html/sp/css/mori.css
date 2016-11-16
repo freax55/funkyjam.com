@@ -1,0 +1,106 @@
+/* 
+    Document   : top
+    Created on : 2012/05/23, 13:10:15
+    Author     : staff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+html {
+	background-image:url(/sp/images/artist/mori/bg_mori.gif);
+}
+#page #logo {
+	background-image:url(/sp/images/common/bg_page.gif);
+}
+#headline {
+	width:100%;
+}
+#headline .images {
+	text-align:center;
+	width:320px;
+	height:165px;
+	margin:0 auto;
+}
+#headline #navi {
+	width:100%;
+	display:table;
+	overflow-x:hidden;
+    background:-moz-linear-gradient(top, #033718, #022611);
+    background:-webkit-gradient(linear, left top, left bottom, from(#033718), to(#022611));
+	text-align:center;
+	border-bottom:2px solid #303030;
+}
+#headline #navi ul {
+	display:table-row;
+}
+#headline #navi li {
+	display:table-cell;
+	border-top:2px solid #303030;
+	border-right:2px solid #303030;
+	background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #033718, #022611);
+	background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#033718), to(#022611));
+	width:50%;
+}
+#headline #navi li:nth-child(2n) {
+	border-right:none;
+}
+#headline #navi li.current {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #289B28, #1C6C1C);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#289B28), to(#1C6C1C));
+	font-weight: bold;
+}
+#headline #navi li a {
+	display:block;
+	text-align:center;
+	padding:8px 0;
+	text-decoration: none;
+	color:#4F6E5C;
+
+}
+#headline #navi li.current a {
+	color:#fff;
+}
+#newsBlock .day {
+	color: #289B28;
+	font-size: 1.2rem;
+}
+#newsBlock .day strong {
+	padding:3px 5px;
+	margin-right: 5px;
+	background-color: #289B28;
+	color: #fff;
+	font-size: 1.0rem;
+}
+#newsUnder a{
+	color: #289B28;
+	text-decoration: none;
+}
+
+#discography .link {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #033718, #022611);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#033718), to(#022611));
+}
+
+#discography .link li.current {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #289B28, #1C6C1C);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#289B28), to(#1C6C1C));
+}
+#discography .link li a {
+	color:#4F6E5C;
+}
+#newsUnder .detail .day,
+#discography .section .entry .release,
+#discography .images .day{
+	color: #289B28;
+}
+#discography .pc{
+	margin-bottom: 15px;
+}
+#discography #dom .entry{
+	background-image:none;
+}
+#discography #dom .inner{
+	padding-right: 5px;
+}
+#discography #dom .textWrapper{
+	padding-top: 0;
+}

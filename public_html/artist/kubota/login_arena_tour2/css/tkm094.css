@@ -1,0 +1,145 @@
+@charset "shift_jis";
+body {
+	line-height:1;
+}
+
+#container {
+	width:795px;
+	margin:0 auto;
+	padding:23px 30px 10px 30px;
+	border:1px solid #000;
+}
+
+/* header start */
+#header {
+	width:795px;
+	padding:0;
+}
+#header #logo {
+	width:795px;
+}
+
+/* header end */
+
+/* contents start */
+
+#contents .entryWrapper#middle .clear{
+	page-break-after:always;
+}
+#contents .link {
+	width:185px;
+	margin-top:15px;
+	margin-bottom:5px;
+	margin-left:auto;
+	margin-right:0;
+	padding-left:11px;
+	padding-bottom:2px;
+	text-align:right;
+	background-image:url(../image/icon_arrow_pink.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#contents .link a {
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+}
+#contents .link a:hover {
+	color:#E26A9F;
+}
+#contents .entryWrapper {
+	width:795px;
+}
+#contents .entryWrapper#top p.egg,
+#contents .entryWrapper#middle p.egg {
+	float:left;
+}
+#contents .entryWrapper#top {
+	padding-bottom:10px;
+}
+#contents .entryWrapper#middle {
+}
+#contents .entryWrapper#bottom {
+	display:table;
+	width:auto;
+	padding-bottom:10px;
+}
+#contents .entryWrapper#bottom .fLeft {
+	display:table-cell;
+	float:left;
+	width:296px;
+}
+#contents .entryWrapper#bottom .fRightL {
+	display:table-cell;
+	float:left;
+	width:488px;
+}
+#contents .entryWrapper#bottom .fRightS {
+	float:left;
+	width:488px;
+}
+
+#contents .pageBreak {
+	page-break-after:always;
+}
+/* contents end */
+
+/* easter egg start */
+#contents .egg {
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+#contents .egg img {
+	visibility:hidden;
+}
+#contents .egg.img01 {
+	height:509px;
+	background-image:url(../image/1006/image_01.jpg);
+}
+#contents .egg.img02 {
+	width:296px;
+	height:432px;
+	background-image:url(../image/1006/image_02.jpg);
+}
+#contents .egg.img03 {
+	height:284px;
+	background-image:url(../image/1006/image_03.jpg);
+}
+#contents .egg.img04 {
+	height:327px;
+	background-image:url(../image/1006/image_04.jpg);
+}
+#contents .egg.img05 {
+	float:left;
+	width:237px;
+	height:389px;
+	background-image:url(../image/1006/image_05.jpg);
+}
+#contents .egg.img06 {
+	float:left;
+	width:251px;
+	height:389px;
+	background-image:url(../image/1006/image_06.jpg);
+}
+/* easter egg end */
+
+/* copyright start */
+#copyright {
+	width:627px;
+	margin-left:auto;
+	margin-right:-14px;
+}
+#copyright .copy {
+	float:left;
+	width:528px;
+	padding-right:5px;
+	padding-top:7px;
+}
+#copyright .logoS {
+	float:left;
+	width:94px;
+}
+/* copyright end */
+
+/* backNumber start */
+/* backNumber end */

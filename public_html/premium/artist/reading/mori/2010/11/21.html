@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第21回「30年目の真実」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/11/12 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第21回「30年目の真実」</p>
+		</div>
+		<div class="texts">
+			<div class="text">以前にも書いたよーな気がするけど、もう30年近くも同じ美容師にさんに髪を切ってもらっている。<br /><br />最初は原宿の裏通りの、鏡が3枚しかない小さな美容室だったけれど、店舗を移転するたびにどんどん大きな美容室になって、今は青山通りに面したファッションビルのワン・フロアで営業している。<br /><br /><br />そーした美容室に行くのは、ワタル自身としてはヒジョ～に恥ずかしいのだけれど、新しい美容師さんに髪を刈ってもらうよりは恥ずかしくないので、先日も流星号をペダリングした。<br /><br /><br />その日はとても忙しくて雑誌2冊分待たされたあと、上から3番目くらいに偉いヒトがカット前のシャンプーをしてくれるコトになった。<br /><br />上から3番目よりもオレのほーがベテランなんだけど、3番目は気安くオレに話しかけてくる。<br /><br />オレは、タクシーと美容室と駒形どぜうでは無口を基本としているから、3番目の場つなぎトークはちょっとメンドクサイ。<br /><br />でも、3番目とも顔見知りだし、まあテキトーに会話を成立させていた。<br /><br />シャンプーが終わって鏡の前に誘導され、ナンてゆーの、髪の毛が服につかないよーにするポンチョみたいなヤツ、アレを着させられて、まあフツーに、鏡の中のワタル自身と対峙した。<br /><br /><br />その美容室のポンチョは、胸のところに店名のロゴがプリントされ、首のうしろをマジック・テープで留めるタイプだ。<br /><br />そのマジック・テープを留めながら、3番目が懐かしむよーに言った。<br /><br />「いやぁ～、昔のワタルさんは、首のテープ留まらなかったですよね!あの頃、ワタルさんよーにXXLサイズを特別に用意していたんですよ。<br /><center>アッハッハッ!</center>でも今はLサイズでイケますね。いやぁ～、首のテープが留まらなかった頃が懐かしいなぁ～!」<br /><br /><br /><center>ってゆーか!?<br />フツーそんなコトゆーかっ!?</center><br />でも、思い出せば、オレのポンチョだけ店名ロゴもなく、色も違ってた。<br />分かりやすくゆーと、アメリカ陸軍兵が雨中行軍の時に被っている、まさにあのポンチョだったのだ!<br />だっだっだっ!<br /><br /><br />その後、いつもの美容師さんに代わり、いつものよーに髪を切ってもらい、いつものよーに「ではまた」とオトナの挨拶をして店を出た。<br /><br />それから流星号で走りつつ、かつての美容院スタッフの陰トークを想像した。<br /><br /><br />「うぁ!　首オトコが来たよ。ほら、早くXXL出せよ。そう、それだよ。えっ?　米軍のポンチョだって?　わっはっはっはっ!<br />それでイーんだよ。アイツ、デブで首短いしフテーから、それじゃないと合わないんだよ。わっはっはっはっ!」<br /><br /><br />いーか、そーゆーヤカラにゆっとくぞ!<br /><br />キリンもゾウもイヌもブタもクジラもオレもオードリー・ヘップバーンも、み～んな首の骨は7本なんだよ!<br />違いは、骨の1本1本の長さだけなの!<br /><br />オレのばーい、ヒトとしては骨がキョクタンに短く、それをカバーしている脂肪層がキョクタンに厚いだけなの!<br /><br /><br /><center>しか～し!</center><br />日本人は昔から、首の短いヒトをバカにする!<br />そのショーコに、首の短いヒトにとって、激しくザンコクな2字熟語がある。<br /><br /><center>それは…<br />猪首=イクビ!</center><br />ヒトの首なのにイノシシの首って、あまりにもヒドクねぇ～!<br />嗚呼、神様…イノシシの首の骨は3本くらいで良かったのではありませんか?<br /><br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

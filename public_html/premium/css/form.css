@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+#section {
+	width:920px;
+	padding:15px;
+	margin:0 auto 20px;
+	border:1px solid #424242;
+}
+#section a {
+	color:#A5A5A5;
+	text-decoration:none;
+}
+#section .secInner {
+	width:858px;
+	background-image:url(/premium/images/form/bg.jpg);
+	background-position:left top;
+	background-repeat:repeat;
+	border:1px solid #424242;
+	padding:30px;
+}
+#section .secInner h2 {
+	padding-bottom: 30px;
+}
+#section .secInner .lead {
+	padding-bottom: 30px;
+}
+#section .secInner .formTbl {
+	width: 100%;
+}
+#section .secInner .formTbl td,
+#section .secInner .formTbl th {
+	padding-bottom: 16px;
+	text-align: left;
+	vertical-align: top;
+}
+#section .secInner .formTbl th {
+	width: 20%;
+}
+#section .secInner .name input {
+	width: 100px;
+}
+#section .secInner .attn {
+	padding-top: 5px;
+}
+#section .secInner .error {
+	padding-top: 5px;
+	color:#cc0000;
+}
+#section .secInner .comp {
+	font-weight: bold;
+	font-size: 117%;
+}
+#section .secInner .mail input {
+	width: 250px;
+}
+#section .secInner .tel input {
+	width: 120px;
+}
+#section .secInner .select input {
+	vertical-align: -2px;
+}
+#section .secInner .cvs li {
+	padding-top: 10px;
+}
+#section .secInner .cvs li input {
+	vertical-align: -2px;
+}
+#section .secInner .cvs .txt,
+#section .secInner .card .txt {
+	padding-bottom: 5px;
+}
+#section .secInner .card input {
+	width: 40px;
+}
+#section .secInner .btn {
+	padding-top: 40px;
+}
+#section .secInner .btn input{
+	width: 204px;
+	padding:10px;
+	display:block;
+	cursor: pointer;
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+	margin: 0 auto;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 125%;
+}
+#section .secInner .btn1 input {
+	background-color: #94784F;
+	background-image: url(/premium/images/form/bg_btn1.jpg);
+	border: 1px solid #8E734B;
+}
+#section .secInner .btn2 input {
+	background-color: #636363;
+	background-image: url(/premium/images/form/bg_btn2.jpg);
+	border: 1px solid #676767;
+}
+#section .secInner .btn1.notClock input {
+	background-color: #4F4F4F;
+	background-image: none;
+	border: 1px solid #676767;
+	color: #8C8C8C;
+	cursor: default;
+}
+#section .secInner .btns {
+	width:450px;
+	margin: 0 auto;
+}
+#section .secInner .btns .btn1,
+#section .secInner .btns .btn2 {
+	margin: 0;
+}
+#section .secInner .btns .btn1 {
+	float: right;
+}
+#section .secInner .btns .btn2 {
+	float: left;
+}
+
+#section .secInner .agreement {
+	border: 1px solid #000;
+	width: 858px;
+	height: 200px;
+	overflow-y:auto; 
+}
+#section .secInner .attention {
+	padding:20px 0 0 100px;
+	font-weight:bold;
+}
+
+#section .secInner #agreementBlock {
+	padding-top: 30px;
+}
+#section .secInner #agreementBlock .tit {
+	font-size: 125%;
+	font-weight: bold;
+	padding-bottom: 2px;
+	margin-bottom: 17px;
+	border-bottom:1px solid #424242;
+	color: #cccccc;
+}
+#section .secInner .agreement {
+	overflow-y:auto; 
+	width: 858px;
+	height: 200px;
+	background-color: #000;
+	border: 1px solid #424242;
+}
+#section .secInner .agreement .inner {
+	padding:16px 10px;
+}
+#section .secInner .agreement dt {
+	padding-bottom: 3px;
+	font-weight: bold;
+	color: #cccccc;
+}
+#section .secInner .agreement dd {
+	padding-bottom: 15px;
+	color: #717171;
+}
+#section .secInner .agreement .space {
+	padding-bottom: 10px;
+}
+#section .secInner #agreementBlock .check {
+	padding:15px;
+	margin-top: 20px;
+	background-image: url(/premium/images/form/bg_check.png);
+	background-repeat: repeat;
+	background-position: 0 0;
+	text-align: center;
+}
+#section .secInner #agreementBlock .check input {
+	vertical-align: -2px;
+}
+#section .secInner #agreementBlock .error {
+	text-align: center;
+}
+#section .secInner #agreementBlock .next {
+	text-align: center;
+	padding-top: 8px;
+}

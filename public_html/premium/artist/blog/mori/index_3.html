@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="10"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/blog/index.php?path=index">Staff Blog（スタッフブログ）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;森 大輔</div>
+						<div class="section">
+{assign var="blog_id" value="10"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/11/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/11/10 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">腹ごしらえ！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2467.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2467.jpg">
+			</div>
+{/if}
+			<p class="text">お久しぶりになってしまいました。。。すみません！<br />先週末は「森の音楽会」in大阪ということで、森の地元・大阪で公演してまいりました！<br /><br />東京のセットリストとは少し変更してお送りしましたが、いかがでしたか？？<br />東京&大阪のセットリストはHPにて公開予定ですので暫くお待ちください。<br /><br />さて、アンコールでのサプライズ！<br />森の音楽会 第三回in大阪が決定しました。<br />次はどんなテーマでお送りするのか・・・どんどん進化していきますのでご期待下さい！！<br />詳細は決まり次第、こちらもHPで随時UPしていきますのでどうぞお見逃しなく！<br /><br />写真は楽屋での食事タイム。<br />当日のマネージャーツイッターでは会場入りして早々、３人がケータリングにかぶりついていた写真を挙げましたが、食事はとても美味しかったようで、森大輔もしっかり腹ごしらえして本番に臨みました^^<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/10/24 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">森の音楽会　東京公演終了！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2455.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2455.jpg">
+			</div>
+{/if}
+			<p class="text">「森の音楽会 第二回」東京公演、無事終了しました。<br />お越しいただいた皆様、ありがとうございました！<br /><br />当日、NEW～な靴で出演した森大輔。<br />楽屋では空いた時間にヒモ通し。<br />代官山LOOPの楽屋には写真のような、ソファーがあるのですが（森が大好きな緑！）、なんとなく自宅のようなこじんまりした素敵な空間で和んでおりました。<br /><br />さて、お越しいただいた皆様、ライブはいかがでしたか？<br />新曲の「フルムーン」をまさかあんな流れでくるとは・・・！！！と思った方もいるはずです。<br />泣ける曲あり、笑いありのMC・・・来月は大阪に向かいますのでしばらくお待ちください！<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/10/15 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">ラッパー？</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2443.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2443.jpg">
+			</div>
+{/if}
+			<p class="text">新曲「フルムーン」いよいよ配信スタート～！！！<br />無事、皆様にお届けすることができました。<br /><br />既に配信サイトなどで目にされていると思いますが、今回より新たに新しいジャケットキャラを作成。<br />もちろん森本人が手掛けています。<br />ヘッドフォンから続いている“md”のロゴがいい感じですよね。<br />こちらのキャラも試行錯誤しながら完成しました。<br /><br />ところで、「フルムーン」お聞き頂けましたでしょうか？<br />些細に揺れ動く想いを、男性目線で切なく描いている今回の新曲、耳に残る「フルムーン」というフレーズも印象的！<br />少し寒くなったこの季節に無性に聞きたくなります。<br />みなさんの通勤やふとした瞬間のお供になればいいなぁ・・・と、ひそかに思っています^^<br /><br />さて、今週末は「森の音楽会」の東京公演！<br />写真はセットリストを考えているときに、ふざけてラッパーの真似をしている森大輔。<br />ガチでラッパーやってました！なので、左手がぶれています（笑）<br /><br />ライブでも「フルムーン」披露予定ですので、みなさん遊びに来てくださいね～！<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/10/03 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">新曲配信決定！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2430.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2430.jpg">
+			</div>
+{/if}
+			<p class="text">みなさんにようやく告知ができた新曲配信のニュース。<br />マネージャーツイッターや森のFacebookでレコーディング風景を公開していましたが、これはすべて「フルムーン」のレコーディングでした。<br /><br />約２週間後に配信がスタートする新曲ですが、、、、、<br /><br /><br />はっきり言って、、、、、<br /><br /><br />とても良い仕上がりです、はい！！！<br /><br /><br />早く皆さんにも聞いて頂きたい！！！<br /><br />レコーディング風景の動画はすでにご覧頂いていると思いますが（まだ！という方は今すぐFacebookへ！！）、歌いそうでカットしているシーン、かなりジリジリしているのではないでしょうか？（笑）<br /><br />レコーディング中は、毎度おなじみのギター・オオニシさんとベースの岡さんにお世話になりました。<br />写真は無事終了した後、皆で記念撮影。<br /><br />この３人、実は４月に森がお邪魔させて頂いた岡さんのバースディライブでも共演しているのですよね！<br />ということで息ぴったりな３人でした。<br /><br />フルムーン、どうぞお楽しみに！！！<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/09/29 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">やめられない！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2419.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2419.jpg">
+			</div>
+{/if}
+			<p class="text"><span style="font-family:&quot;ＭＳ ゴシック&quot;">先日のスタジオ作業時のこと。</span><span lang="EN-US"><br /><br /></span><span style="font-family:&quot;ＭＳ ゴシック&quot;">スタッフが関西に里帰りしており、そのお土産にと自由軒のカレーせんべいを差し入れしてくれました。</span><span lang="EN-US"><br /></span><span style="font-family:&quot;ＭＳ ゴシック&quot;">（何気に関西人がとても多いんです、森チーム）</span><span lang="EN-US"><br /><br /></span><span style="font-family:&quot;ＭＳ ゴシック&quot;">ちょっと小腹が空いたなぁ・・・と開封したのも束の間、バクバクと食べはじめた森さん（笑）</span><span lang="EN-US"><br /></span><span style="font-family:&quot;ＭＳ ゴシック&quot;">スタッフも一枚～！とつまんだところ、美味しくてついつい手が伸びてしまいました。</span><span lang="EN-US"><br /></span><span style="font-family:&quot;ＭＳ ゴシック&quot;">このカレーせんべいって、ぬれせんべいみたいに少ししっとりしてるんですよね。</span><span lang="EN-US"><br /><br /></span><span style="font-family:&quot;ＭＳ ゴシック&quot;">ついつい頬張る森大輔をお届けしました！</span> </p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/09/19 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">決めショット</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2411.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2411.jpg">
+			</div>
+{/if}
+			<p class="text">FACEBOOKで公開した爽やか森大輔、その後決めショット大公開です。<br /><br />なんか・・・目が本気です（苦笑）<br /><br />路線変更しますか！？とツッコミたくなる１ショットですよね。<br /><br />慌ててカメラを向けましたが、ばっちり押さえた後、本人も「こんなキャラ嫌や～（苦笑）」と、即座に帽子をとっておりました(´`)=3<br /><br />ファンのみなさま、突然唄って踊るアイドルにはなりませんのでご安心下さい^^</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/09/12 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">ヒップホッパー？</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2405.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2405.jpg">
+			</div>
+{/if}
+			<p class="text">先日の久保田さんとのレコーディング日の森大輔。<br /> <br />セッティングのために一足先にスタジオ入りし、機材の準備スタート。<br />・・・と、そのときにちょっと面白い写真撮りたい！というスタッフのリクエストに答えてくれたのがこのポーズ（笑）<br /> <br />どうでしょう？（笑）<br />なぜこのポーズになったのかは謎です(･･;)<br /> <br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/09/02 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">JBS無事終了！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2393.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2393.jpg">
+			</div>
+{/if}
+			<p class="text">先日、無事JAPANESE BLACK STYLEのイベントライブが無事終了しました。<br />沢山の出演者の中で、引き語りをした森大輔はやはり！というべく異色を放っていたはず。<br /> <br />セットリストはすでにオフィシャルFACEBOOKにて公開していますが、唯一のカバー曲だった「SEPTEMBER」、8月なのにSEPTEMBER！<br />なぜ！？<br />と突っ込まれた方も少なからずいらっしゃったと思いますが（苦笑）、本人の強い希望により決定したのでした。<br />確かに誰もが1度は聞いたことのある曲ですよね。<br /> <br />写真は本番直前の前室にて。<br />集中！<br /> <br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/08/20 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">悪巧みの顔！？</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2369.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2369.jpg">
+			</div>
+{/if}
+			<p class="text">今週末と迫ったJAPANESE BLACK STYLEのリリースパーティ。<br />昨日はリハーサルでした。<br /> <br />今回はワンマンライブではないため、持ち時間も限られており、その中でどれだけ“森大輔”を出し切れるかが勝負！<br />さすがにセットリストは決まっていますがどういう演出をするかスタッフと悪巧み中！？（笑）<br />いやいや、きちんと考えているときの１ショットでした。<br /> <br />今回はたくさんのアーティストが出演されるので森本人も楽しみにしているようです。<br />どんな曲を披露するのか、懐かしいアノ曲も聞けるかも・・・？<br />どうぞお楽しみに！<br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/08/12 UPDATE</div>
+
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+
+			<p class="tit">裏エピソード2</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2360.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2360.jpg">
+			</div>
+{/if}
+			<p class="text">モーリー何分！？クッキングの買出し裏エピソード、後編です。<br />北海道物産展でアイスを購入し、さぁ帰ろうか～と歩いていると今度は国内旅行のツアーパンフレットが目に入った森大輔。<br /> <br />どこに興味を持っているのか・・・？と注目してみると手に取ったのは四国エリア。<br />今回の食材も四国の名産品を選んでいますが早速行きたくなったようです（笑）<br /> <br />さて、今月末には動画にてクッキングの様子をお届け予定です。<br />どうぞお楽しみに^^<br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2933.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/11/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/11/post-82.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						違うんかい！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2933.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2933.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2919.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/10/the.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						THE 広島城!!!
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2919.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2919.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2903.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/10/post-81.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						打合せにて
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2903.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2903.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2884.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/09/post-80.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						太鼓の達人!?
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2884.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2884.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2876.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/09/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/09/post-79.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						料理魂、燃える!!!
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2876.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2876.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2851.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/08/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/08/post-78.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						スタジオライブの後は…
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2851.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2851.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2705.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2015/12/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2015/12/post-77.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						森大輔の悪戯
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2705.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2705.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2695.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2015/12/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2015/12/post-76.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						森 in シンガポール
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2695.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2695.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+	</ul>
+</div>
+
+								</div>
+								<div class="pagenate">
+									<ul>
+{assign var=list value='<li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index.html" class="link_page">1</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_2.html" class="link_page">2</a></li><li><span class="current_page">3</span></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_4.html" class="link_page">4</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_5.html" class="link_page">5</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_6.html" class="link_page">6</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_7.html" class="link_page">7</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_8.html" class="link_page">8</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_9.html" class="link_page">9</a></li><li><a href="http://m.funkyjam.com/premium/artist/blog/mori/../../../../../premium/artist/blog/mori/index_10.html" class="link_page">10</a></li>'}
+{$list|replace:"m.funkyjam":"www.funkyjam"}
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

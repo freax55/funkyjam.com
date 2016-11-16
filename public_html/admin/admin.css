@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body, td, th {
+	height: 100%;
+	font-size: 12px;
+	font-family: "£Í£Ó £Ð¥´¥·¥Ã¥¯", Osaka, "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3";
+	line-height: 120%;
+}
+body {
+	padding-bottom: 20px;
+}
+
+h1 {
+	padding: 10px;
+	font-size: 20px;
+	color: #000066;
+	background-color: #eeeeee;
+	border-bottom: 1px solid #cccccc;
+}
+h2 {
+	padding: 10px;
+	font-size: 18px;
+	color: #990000;
+	background-color: #f2f2f2;
+}
+
+#path {
+	margin-left: 10px;
+	line-height: 200%;
+}
+.sub {
+	margin-left: 10px;
+	line-height: 200%;
+}
+#new {
+	margin-right: 10px;
+	text-align: right;
+}
+#notfound {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+ol {
+	list-style-position: inside;
+}
+li {
+	clear: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 150%;
+	border-left: 10px solid #cccccc;
+	padding-left: 10px;
+}
+
+li p {
+	font-size: 12px;
+	font-weight: normal;
+}
+li p strong {
+	color: #ff0000;
+}
+
+#list {
+	margin: 10px;
+	border-collapse: collapse;
+}
+#list .odd {
+	background-color: #ffffff;
+}
+#list .even {
+	background-color: #E4E4E4;
+}
+#list th {
+	padding: 5px;
+	color: #ffffff;
+	background-color: #666666;
+	border: 1px solid #cccccc;
+}
+#list td {
+	padding: 5px;
+	border: 1px solid #cccccc;
+}
+.paging {
+	margin: 0 10px;
+}
+#submit {
+	margin: 10px;
+}
+
+.error {
+	font-weight: bold;
+	color: #cc0000;
+}

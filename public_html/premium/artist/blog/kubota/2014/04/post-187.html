@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="8"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/blog/index.php?path=index">Staff Blog（スタッフブログ）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/blog/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;歯医者はキライだ！</div>
+						<div class="section">
+{assign var="blog_id" value="8"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/04/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/04/15 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">歯医者はキライだ！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2225.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2225.jpg">
+			</div>
+{/if}
+			<p class="text">みなさんお気づきかとは思いますが、「シュウェップス」CMに出てくるあの声、<br />久保田さん本人です。<br />そのナレーション録りの控室での一話をご紹介しちゃいます。<br /> <br />合間合間に確認作業が入るため待ち時間が結構ありました。<br />控室では当然色んな話が飛び交うのですが、<br />その中でもこちらは、久保田さんが何よりもキライな<br />歯医者さんの話をしている時のショット。<br /> <br />久保田さん、とても嫌そうな表情ですね～(^_^;)<br />大森社長が「たまには診てもらっといたほうが～」とスケジュールを確認するのですが、<br />「今日はその話はやめて(泣)ナレーション録りに集中させて！」と<br />意地でも歯医者に行くまいとする久保田さんなのでした。(笑)<br /></p>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2236.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/04/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/04/post-188.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						小腹が減った
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2236.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2236.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2225.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/04/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/04/post-187.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						歯医者はキライだ！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2225.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2225.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2219.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/04/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/04/schweppes-special-night.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						「Schweppes Special Night」イブ...
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2219.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2219.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2188.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/04/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/04/cm-3-1.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						シュウェップスCM撮影 裏話(3)
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2188.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2188.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2182.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/03/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/03/cm-2-1.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						シュウェップスCM撮影 裏話(2)
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2182.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2182.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2174.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/03/cm-1-1.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						シュウェップスCM撮影 裏話(1)
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2174.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2174.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2159.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/03/up-cm3.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						up! CM撮影裏話(3)
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2159.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2159.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2152.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2014/02/up-cm-1.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						up! CM撮影裏話(2)
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2152.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2152.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+	</ul>
+</div>
+
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

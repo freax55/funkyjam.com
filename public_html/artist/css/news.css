@@ -1,0 +1,58 @@
+@charset "shift_jis";
+
+
+#contents #main #navi li#navi01 a {
+	background-position:left bottom;
+}
+
+#contents #main #wrapper .title {
+	width:625px;
+	margin-bottom:20px;
+	background-color:#C23102;
+	background-image:url(../image/common/news/tit_bg.gif);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}
+#contents #main #wrapper .title h2 {
+	float:left;
+	padding:9px 11px;
+	color:#FFFFFF;
+	font-size:143%;
+	line-height:normal;
+}
+#contents #main #wrapper p {
+	padding-bottom:0.8em;
+}
+#contents #main #wrapper .title h2 img {
+	margin-left:8px;
+	vertical-align:2px;
+}
+#contents #main #wrapper .title .date {
+	float:right;
+	padding:13px 10px 5px 0;
+	font-size:85%;
+	line-height:normal;
+}
+#contents #main #wrapper .imageWrapper {
+	width:166px;
+}
+#contents #main .section .imageWrapper {
+	float:right;
+}
+#contents #main .section.even .imageWrapper {
+	float:left;
+}
+#contents #main #wrapper .textWrapper {
+	width:445px;
+}
+#contents #main .section .textWrapper {
+	float:left;
+}
+#contents #main .section.even .textWrapper {
+	float:right;
+}
+
+#contents #main .banner {
+	text-align:center;
+	margin:30px 0 0 0;
+}

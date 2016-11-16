@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;久保田 利伸</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/06/19 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【オススメの本】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 第18回No Diggity、今回はオススメの本をご紹介します。世界でも活躍するアノ人の作品です！<br /><br /><br /><br /><center><font color="#FFBF17">「村上春樹/色彩を持たない多崎つくると、彼の巡礼の年」</font></center><br /><br />「村上春樹さんのこの作品をようやく読むことができました。この人の作品はタイトルにトリックがあることが多いので、今回の作品も“変なタイトルだなぁ～”と思った。タイトルだけじゃ、どういう話なのか全く予測できないよね。<br /><br />この本は結構話題になったようなので、読んだ人はたくさんいると思うけど・・・流石に大先生だけあって、読み物としてはとても面白い！本を読んで何かを学ぼうとか、例えば人生について考えるとか、そういう堅苦しいことを目的としないで、ただただエンターテインメントとしての本という意味で最高でした。いい意味での現実逃避ができて、違う時間に連れていってくれる。<br /><br />そして、余計なことが書かれていなくて嬉しい。どんな作家でも、読んでいるとちょっと疲れてくるような退屈させるページがあったりするんだけど、この本はそう感じさせるページがなかった。」<br /><br /><br /><br /><font color="#FFBF17">　― 村上さんの作品はこれ以外にも読まれているようですが、どんなところに魅力があるのでしょうか？</font><br /><br /><br /><br />「何よりも人を楽しませようという気持ちがすごく強いと思う。だから、超・読書家じゃない僕でも最後まで楽しく読めるんだよね。そういった部分が世界に認められているんだと思う。難しいことを、難しい舞台で描くのではなくて割と日常に近い部分で描かれているから画が想像しやすい。それと、ときどきエロいシーンを挟んでくれるので飽きない（笑）。<br /><br />あとは、本当に知識が豊富だよね。歴史、音楽、政治、医学の事・・・勉強しているんだと思うけど。今回の作品もよくできた作品だと感心しました。」<br /><br /><br /><br /><br /><br />外出が億劫になるこの梅雨の季節、ぜひ読んでみてはいかがでしょうか？<br /><br />次回もオススメの本・第二弾を紹介予定です！<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20140619_1.jpg" /></center></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/05/07 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【オススメの映画】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 第17回となる今回は、オススメの映画を２本ご紹介します！<br /><br /><br /><br /><center><font color="#FFBF17">「スティーブ・ジョブズ」</font></center><br /><br />彼の伝記的なものを我先に！と作った映画です。若干、急いで作りすぎている感が否めず、約２時間の中で彼の人生を描き切るのは難しかったんだろうなぁという印象を受けました。<br /><br />が、主人公のアシュトン・カッチャーの歩き方がジョブズにとても似ていて映画に入りやすかったです。（笑）<br /><br />破天荒なところとか、才能のあるところとか、こんな人だったんだ！と思わせるところが惜しみなく描かれていて、彼自身の情報が少なかった僕にとっては、とても見応えがある映画でした。僕らが知る以上に、強烈な人間性の持ち主だったんだという発見ができ、それが面白かったなぁ。<br /><br /><br /><br /><br /><br /><center><font color="#FFBF17">「夏の終り」</font></center><br /><br />これは機内で観ました。	瀬戸内寂聴さんの自叙伝のような映画で、出家前の瀬戸内さんは本能のままに、自由に生きた人という印象を持っていたので、一体どんな生活をしていたんだろうと興味がありました。<br /><br />僕の予想通り自由に生きていた姿が、リアリティをもって描かれていて面白かった！<br /><br />100点満点の映画ではないけれど、現実離れしているところが面白いと思うよ。<br /><br />彼女の若き頃の話なので、恋愛観が自由！まさにFree Style！という感じ。（笑）決して重たい映画ではないので、先入観を持たずに見れば面白いのではないでしょうか。<br /><br /><br /><br /><br /><br />・・・今回は偶然にも、それぞれの主人公の伝記のような映画作品をチョイスしました。<br /><br />「スティーブ・ジョブズ」はまだパッケージ化されていないようですが、「夏の終り」は既に商品化されているようです。ぜひご覧ください！<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20140507_1.jpg" /></center></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/04/03 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【今、行きたい国は？】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 今回のNo Diggityは、突然ランキングシリーズ“今、行きたい国は？”をお届けします！<br /><br /><br /><br />■１位　キューバ<br /><br />「行った事がない国だから。世界一リズム感のいい人たちを輩出しているその土壌に興味がある。共産主義に基づいた独特な文化と政治をもつ国の空気に触れてみたい。」<br /><br />■2位　ケニア<br /><br />「20年程前、同じアフリカのナイジェリアに行ったとき、同じ地球上なのに自分たちの住んでいるところとはまったく違う・・・ここまで違う国があるのかと、色んなことを考えさせられたので今度はケニアにも行ってみたい。今行ったらどう感じるだろう？」<br /><br />■３位　ブラジル<br /><br />「いつ同じことを問われても、必ず３本指に入る国です。それくらい大好きです。南米とヨーロッパの素敵な融合がとても魅力的。ヨーロッパの植民地だったところは、どこも一つ影が見えるんだけど、この国は太陽の国！と感じさせる国民性が素敵ですね。」<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20140403_1.jpg" /></center><br /><br /><br />第１位のキューバ、実はこの国・・・２年前に発売した久保田初の写真集「TOSHINOBU KUBOTA in INDIA」の撮影で最終ロケ地の候補となっていた国でした。スタッフ全員、久保田ならキューバを選ぶ！と予想していたところ、本人の口から出た国はインド。やはりキューバは今でも気になっている国のようです。<br /><br /><br /><br /><font size="-1" color="#FFFFFF">※写真集はFJ SHOPにて好評発売中です！<br /><br /><a href="/shop/">/shop/</a><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20140403_2.jpg" /></center><br />※写真集「TOSHINOBU KUBOTA in INDIA」より</font><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/28 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【I Do Love You / GQ】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第15回目となる今回は “思い出のメロディー”･･･‥ではなく、久保田利伸的、懐かしいけれど今一押ししたいオススメ音楽です。<br /><br /><br /><br /><center><font color="#FFBF17">【I Do Love You / GQ】</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20140228.jpg" /></center><br /><br />「これは1970年代の古い曲。久々にアメリカのラジオで流れているのを聞いて、懐かしくなり、この曲が好きだったことを思い出したね！」<br /><br /><br /><br /><font color="#FFBF17">―　当時のことを思い出すエピソードとかあるのですか？</font><br /><br />「これは、僕が中学生の頃に『SOUL TRAIN』の前番組で『テレビ三面記事　ウィークエンダー』という番組があったんだけど、そのエンディングでいつもかかっていて、すりこみで好きになった曲です。番組終わりのエンディングラスト５秒のフレーズが大好きで、それを聞くと“もうすぐSOUL TRAINが始まる！”というワクワク感を思い出すね。<br />大好きなフレーズはアドリブなんだけど、未だに自分で歌っていても自然にそのフレーズが出てきてしまいます。」<br /><br /><br /><br /><font color="#FFBF17">―　改めて今聞いてみて、どうですか？</font><br /><br />「今聞くと、スィートソウルがいいなぁと。今年はスィートソウルを沢山聞こうと思います！」<br /><br /><br /><br />今回のインタビューでは、「この曲を日本のバラエティ番組のエンディングで起用したスタッフが偉い！！」という締めで終了しました（笑）GQは他にも「Disco Nights」が有名だそう。みなさんもぜひチェックしてみて下さい。<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/01/31 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【Robin Thicke】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第14回目のNo Diggityは、大好評のオススメCD！第4回で紹介した「Robin Thicke」の第２弾となります。<br /><br /><br /><br /><center><font color="#FFBF17">「BLURRED LINES / Robin Thicke」</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20140131.jpg" /></center><br /><br /><br />「このアルバムは全部いい。中でもタイトル曲の“BLURRED LINES”がオススメ。アメリカでは大ヒットしている曲だね。この曲はMarvin Gayeの「Got to give it up」のオマージュ。そんなところも含めて大好き。」<br /><br /><br /><br /><font color="#FFBF17">―　他にオススメのトラックは？</font><br /><br />「"4 THE REST OF MY LIFE”※1。このスロウジャムも好きだね。<br /><br />彼とは趣味が合う。作る曲の趣味がとても合うね。同じアーティストとして魅力がたくさんある人だと思うよ！」<br /><br /><br /><br /><br />以前、某雑誌の取材でも「The Sweetest Love」（アルバム「Something Else」収録）をオススメ音楽として挙げており、どうやらRobin Thickeはとてもお気に入りのようですね。ぜひ、一度手に取ってみて下さい。<br /><br /><br /><br />※1･･･アルバムによっては「For The Rest of My Life」と表記されている場合があります。<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/03/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【テルマエ・ロマエ】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第13回目のNo Diggityは、オススメの映画をご紹介。しかも、今回は珍しく邦画をチョイスしています。必見！<br /><br /><br /><br /><center><font color="#FFBF17">「テルマエ・ロマエ」</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20130329.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />「阿部さんが出ている『テルマエ・ロマエ』、これは飛行機の中で見たんだよ。日本の映画はジャンルでいうと “ドラマ” が好きで、この作品は娯楽性が高そうだったんで、あまり期待しないで見始めたんだけど、こういう作品だととかくチープになりがちな背景やロケーションをハリウッド映画並みに仕上げられていて嬉しかった。」<br /><br /><br /><br /><font color="#FFBF17">―　そもそも日本の映画は見ますか？</font><br /><br />「見るよ。例えば『復讐するは我にあり』『鬼畜』といった人間の暗部に迫るような作品なんかは好きだな～。また寅さんにもはまったね。今回の『テルマエ・ロマエ』は、ストーリーや話の展開がいい意味で100％想像できて、 作り手が“どうぞ見えちゃって下さい“ というスタンスだから楽しく見ることができたね。娯楽映画として秀作じゃないかな！」<br /><br /><br /><br /><br />取材後、早速私も映画を観ましたが “風呂“というテーマを題材によくぞここまで面白おかしく、かつスケールの大きな映画に仕立て上げたな、という印象を受けました。<br /><br />皆様もぜひご覧ください！<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/02/26 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【好きな焼酎ベスト３】</p>
+		</div>
+		<div class="texts">
+			<div class="text">突然ですが第12回のNo Diggity、今回は久保田利伸愛飲のお酒、その中でも特に好きな焼酎をご紹介します！<br /><br /><br /><br /><font color="#FFBF17">「好きな焼酎ベスト３」</font><br /><br />〇　いいちこ　フラスコボトル（大分県）<br /><br />〇　中々（宮崎県）<br /><br />〇　佐藤 － 麦（鹿児島）<br /><br />（順不同）<br /><br /><br /><br />今回は順位がつけられない！ということで、焼酎の中でも麦焼酎でよく飲まれている３種を挙げてもらいました。<br /><br /><br /><br />「麦は癖がないから本来飲みごたえがないんだけど、“いいちこ“と ”中々“は度数の強さもあって、飲みごたえがある。特に中々は味のバランスが好きかも。」<br /><br /><br /><br /><font color="#FFBF17">―　必ず一緒に食べるおつまみ等ありますか？</font><br /><br />「ちりめん山椒が一番！ご飯にかけて食べるのが一般的だけど、俺は指でつまんで、おつまみにするのが好き。焼酎は二日酔いしないからいいんだよね（笑）。一人でだらだら呑むというよりも、ご飯と一緒に呑むことが多いかなぁ。」<br /><br /><br /><br />以前、同じ事務所の浦嶋さんからお土産で貰ったちりめん山椒を、もらうやいなや嬉しそうに開封する姿をみかけました（笑）。<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20130226_02.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />2011年のGold Skoolツアーでは大分のiichikoグランシアタもまわり、その際に頂いた “いいちこ パーソン“は今でも大事に少～しずつ頂いているようです。<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20130226_01.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />「ちりめん山椒と焼酎ってほんとは一緒にしちゃダメなんだよなぁ(苦笑)。焼酎の味が分かんなくなるから。酒屋が怒ってこないかなぁ～！」<br /><br /><br /><br />と、最後に爆弾発言（？）も飛び出しつつ、今回はオススメの焼酎をご紹介しました。<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/01/31 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【rEVOLVEr/T-PAIN】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 2013年、最初のNo Diggityは、前回に引き続き久保田的オススメのアーティストをご紹介します。<br /><br /><br /><br /><center><font size="1">「rEVOLVEr/T-PAIN」</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20130131_01.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />「前回のCORINNE BAILEY RAEとは正反対でHIP-HOPのアーティスト。最近、日本でもよく使われている機械のような声（=オートチューン）が世界で一番上手い人。R＆Bピーポーは、このオートチューンが大嫌いなんだけど、彼が上手くやりだしてからFUNKYかも、と思い始め、ここ最近は取り入れているアーティストも多い。でも、誰がやっても、T-PAINみたいな気持ちの良い音にならないんだよね。本来、オートチューンは”人間的ではない声になる“という結果が面白いんだけど、彼の場合はものすごく機械的でありながら、ものすごく人間的。で、そこがR＆Bに合うんだろうね。きっと、音楽のセンスが良くて、音楽が大好きなんだと思うよ。」<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20130131_02.jpg" /></center><br /><br /><br /><font color="#FFBF17">―　このアルバムで一番のオススメ曲はありますか？</font><br /><br />「このアルバムはスイートな曲が本当に多くて聞きやすいんだけど、特に1曲を挙げるとするなら６曲目の【Sho-Time】という曲かな。」<br /><br /><br /><br />「オートチューン」といえば真っ先に某女性ユニットを思い浮かべたのは私だけでしょうか。。。（今回のインタビュー中にも名前が挙がりました、笑）<br /><br />この技法自体は約15年くらい前からあったそうですが、T-PAINの出現により、オートチューンの意味が変わったそう。世界一上手い！と久保田も認めるT-PAINのアルバム、ぜひお聴きください。<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/12/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/12/03 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【CORINNE BAILEY RAE】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第10回目となるNo Diggity、今回は久保田的“この秋・冬にオススメ!!”なアーティストをご紹介します。<br /><br /><br /><br /><center><font size="1">「CORINNE BAILEY RAE」</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20121203.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />「ギターを持ちながら歌う女の人でね。とても良いんだ。好きだね。アルバムが２枚あって、「THE SEA」というアルバムの中の『Closer』 、そしてなんと言っても「CORINNE BAILEY RAE」というアルバム中の「Like A Star」がとても良い。２曲ともキャッチ―で聴きやすいです。」<br /><br /><br /><br /><font color="#FFBF17">―出合ったきっかけは？</font><br /><br />「有線のソウルチャンネルで聴いて、これは誰だ！？と思い、そこからいいなぁと思って聞いています。」<br /><br /><font color="#FFBF17">―いつ聞いたのですか？</font><br /><br />「３年くらい前かなぁ。以前紹介した「Robin Thicke」※1と 同じタイミングだったはず。　あのねぇ、Robin Thickeがイイ！と思った人はこれも絶対イイ！と感じると思うよ。」<br /><br /><font color="#FFBF17">―どこが魅力的なのでしょうか？</font><br /><br />「一番は曲だね。そして顔がかわいい（笑）。ずるい感じだよね、この声にこの顔っていうのは。そして、歌い方がいい。人はこういう音楽を聞くと、気持ちよくなるんだろうなぁっていうことを感じさせるな、と。アルバムを全部聞くと少し大人っぽすぎるかもしれないけど・・・この秋、冬にオススメです！」<br /><br /><br /><br />ということで、太鼓判がついた彼女の楽曲をぜひお聞きください！<br /><br /><br /><br />※1･･･第4回で紹介した「Love After War/Robin Thicke」をご覧ください。<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/11/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/11/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【NYの店、”DAVID Z.”で買った物】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第9回目となるNo Diggity。先日、NYに行っていた久保田さんに滞在中の話を聞きました。<br /><br /><br /><br /><center><font size="1">「NYの店、”DAVID Z.”で買った物」</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20121101_01.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br /><font color="#FFBF17">―　NY滞在中に、購入したものはありますか？</font><br /><br />「今回のNYで購入したものは２つだけだね。POLOのスニーカーとCalvin KleinのVネックシャツ。ちなみに、シャツは今着ているものです。」<br /><br /><br /><br /><font color="#FFBF17">―　やはりPOLOがお気に入りなんですね。※1</font><br /><br />「POLOはやっぱり歴史が長いだけあって、ちゃんとしているね。物が良い、ということ以上にデザインがぶれない。<br /><br />POLOのスニーカーって専門店では展示していないのね。POLOだけじゃなくてRALPH LAURENも。だから、NYのブロードウェイにある無数のスニーカー屋さんの中から、【DAVID Z.】っていう店に行って、購入しました。<br /><br />【DAVID Z.】には、POLOのスニーカーだけじゃなくて、いろんなメーカーのスニーカーがあって、とてもいい感じ。セレクトショップというわけじゃないんだけど、奇抜なデザインではなくて、普通に欲しいデザインの靴が手に入るお店です。」<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20121101_02.jpg" /></center><br /><br /><br /><font color="#FFBF17">―　靴専門店なんですね？</font><br /><br />「そうだね。インド人がやっているような普通のお店なんだけどね（笑）」<br /><br /><br /><br />確かに、最近のお気に入りのスニーカーはこのPOLOのようで、よく履いているのを見かけます。バックやサングラス、そして今回のスニーカー・・・お気に入りの物はとことん愛用しているようです！<br /><br /><br /><br />※1･･･第7回のNo DiggityにてRALPH LAURENのレーベル（POLOやDOUBLE RL等）がお気に入りということを話しています。詳しくは第7回目の記事をご覧ください！<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/08/no_diggity_9.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/kubota/index.html" class="link_page">1</a></li>&nbsp;
+<li><span class="current_page">2</span></li>&nbsp;
+<li><a href="/premium/artist/reading/kubota/index_3.html" class="link_page">3</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

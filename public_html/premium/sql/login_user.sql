@@ -1,0 +1,1 @@
+select end_stamp,mail_stamp from premium_users_pc where mail = '{$login_id}' and delete_flg = '0';

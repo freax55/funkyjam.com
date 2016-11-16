@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第20回「イカとアトムとラーメンと焼酎」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/11/05 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第20回「イカとアトムとラーメンと焼酎」</p>
+		</div>
+		<div class="texts">
+			<div class="text"><center>イカが好きだ。</center><br />スルメイカ、ヤリイカ、コウイカ、スミイカ、アカイカ、ホタルイカ、ミミイカ、モンゴイカ…<br /><br />いろんなイカが思い浮かぶけど、その中でもアオリイカは旨味が深く、寿司屋でも高級ネタとして扱われている。<br /><br />だから回転系の寿司屋にマグロのトロはあっても、アオリイカはない。<br /><br />アオリイカは、それくらい高級&amp;希少なイカなのだ。<br /><br /><br /><center>しか～し!</center><br /><br />ワタル自身はアオリイカが好きじゃない。<br /><br />ふっくらと厚い身のアオリイカは、旨すぎるのだ。<br /><br />ズバリ商品名を出すけど、アオリイカは旨すぎて「味の素」の味がする。<br /><br /><br />AGFの肩を持つワケじゃないが、味の素の発明は日本食品業界のノーベル賞だ。<br /><br />どんな和食でも、ナンか味が足りないと感じた時に、ほんのちょっと味の素を加えるだけで、味の隙間がピタッと埋まる。<br />和食だけでなく、中華料理がこれほど美味しくなったのも、味の素を使うよーになったからだ。<br /><br />某国営放送の料理番組に出ている超有名中華料理人も、「ここで少々の旨味調味料を…」などと、商品名を出すことなく、しっかり味の素を使っている。<br /><br />ラーメン・マニアは、味の素も含めた化学調味料のことを「アトム」と呼ぶ。<br />「鉄腕アトム=科学の子」でアトムなのだが、アトムは「科学」で味の素は「化学」。<br />まあ、ラーメン・マニアのアイデアは、その程度だと笑納してちょーだい。<br /><br />「あのラーメン屋はアトムだから、舌に変な味が残る」などと、ラーメン・マニアは語ったりするのだ。<br /><br />確かに、ナンでも使いすぎはイケナイ。<br />健康にイイと言われる食品だって、食べ過ぎたらモトもコーもない。<br /><br /><center>しか～し!</center><br />東京・築地の有名ラーメン屋は、小サジ山盛りのアトムを、客の目の前でドンブリに投入する。<br />それでも毎日大行列。<br /><br />荻窪の老舗も「最近はスープに使う食材の質が落ちたから、化学調味料を使わないと美味しいラーメンにならない」と断言する。<br /><br /><br /><center>じゃあ、ウチのラーメンはどーか?<br /><br />アトムは一切使っていない。</center><br />アトムを使うと、旨すぎちゃうんだよね。<br />完璧になりすぎちゃうの。<br /><br />オレにとってラーメンは、日本を代表するB級グルメ。<br />ラーメンがB級を超えてA級になったら、それはラーメンじゃなくて中華料理なのだ。<br /><br />イカから味の素からラーメンの話になり、大脱線してしまった。<br /><br /><center>話を戻そう。<br />イカだ。イカ。</center><br />ワタル自身が一番好きなイカは、コリコリと薄い身のヤリイカだ。<br /><br />スルメも旨いが、身が厚いぶんだけ、食感でヤリに劣る。<br /><br />細く切ったヤリイカを、ショーガ醤油でコリッパクッとやれば、「オネーチャン、焼酎おかわり!本格焼酎じゃなくて安い焼酎ね。味のしない甲類。えっ?甲類の焼酎が分からない?じゃあね、ウーロンハイのウーロン抜き!　うん。そうそう、焼酎だけ。その焼酎が甲類ね。覚えておいてね!」<br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

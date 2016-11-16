@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;いっとくやんかい!自腹かい!!【冬！遊びに行くならどこがお勧め？】</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/01/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/01/20 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【冬！遊びに行くならどこがお勧め？】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 二人は渋谷に向かっていた。<br /><br />橋口「ライブすか？」<br />女「そう、森大輔っていうアーティスト。」<br />橋口「へぇ、好きなんですか？」<br />女「すごく素敵だよ。聞いてソンはない。」<br /><br />今夜は、楽しいことがありそうだと橋口は思った。車を道玄坂の駐車場に入れた。ライヴハウスは、歩いてすぐの元は映画館だったところだ。<br /><img src="/premium/artist/essay/urashima/images/05/date3-1.jpg" alt="" /><br /><br />ビル６Fの客席には、ドリンクホルダーまで付いていて、橋口の想像していたスタンディング・ライヴのイメージとはずいぶん違う。<br />森大輔のライヴが始まった。森は、２０代後半の真面目な王子様キャラに見える。<br /><br />今回は、ピアノ・ヴォーカルとベース、ドラムのトリオらしい。森の歌は、高音がのびやかでせつない、サウンドもスタイリッシュでいかにも女性が好きそうだ。<br />たぶんこの女も、この手に弱いのだろう。だが、森の魅力はそれだけではなかった。小うるさいブラコン、ソウルおたく達も、思わずうなるアレンジが随所に盛り込まれている。橋口にも、森大輔の音楽は心地良く聞こえた。<br /><br />最後の盛り上がりアンコールで、久保田利伸がステージに現れると、客席はさらに興奮に包まれた。この二人のパフォーマンスは、単に歌が上手い・・という範疇のものではなかった。素晴らしいライヴだった。<br /><br /><br />終演後、関係者らしきスタッフに呼ばれると、森大輔の楽屋に連れて行かれた。<br /><br />橋口は、森との写真を撮って欲しいと女に言われた・・緊張する・・内心そう思ったが、顔には出さないで携帯を構えた。<br />その時<br /><br /><center>「オレも」</center><br />突然、久保田がアングルに飛び込んで来た・・<br /><br />ヤバい！ブレる・・橋口は、手の震えを必死に止めてシャッターを押した。<br /><img src="/premium/artist/essay/urashima/images/05/date3-2.jpg" alt="" /><br /><br /><br />橋口は、なんだか、ふわふわした気分のまま外に出た。再び思った。<br />東京の夜は楽しい・・車は２４６を南に向かって走り出した。<br /><br />「このまま走ると、橋口くんの家に着いちゃうんだけど」女が言った<br /><br />「どうする？」<br /><br />橋口は帰りたくはなかった、明日もOFFだ。<br />この気分のまま、もう少し・・<br /><br /><center>「見晴らしの良いところから、夜景が見たいです」</center><br />ちっ！俺、女の子みたいじゃん・・橋口が舌打ちしそうになった瞬間、車が大きくUターンした。。<br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

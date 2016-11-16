@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第204回 「子供かっ!?」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/06/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/06/06 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第204回 「子供かっ!?」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> バイト仲間のガバチョは40歳の独身男で、高校卒業後ずっとフリーター生活で定職に就いたコトはないが、身体が大きく仕事も早いので、大切な肉体戦力になっている。<br /><br /><br /><br />しか～し!<br /><br />性格が悪い。悪すぎるのだ。<br /><br />ガバチョは会社の集合時間に数分遅れるコトがよくあり、そのコトをリーダー(正社員)が問いただすと、「時間通りに来てもリーダーは時間通りに出発しないから数分の遅刻は問題じゃないでしょ」と答えたのだ。<br /><br />確かに、問題はリーダーにあるかもしれないが、バイトのガバチョに意見されたリーダーは、『コイツ、何様のつもりなんだよ!?』とムカついて当然だ。<br /><br />ちなみに「最長老」のワタル自身は5分前には到着しているが、リーダーの出発遅延をニガニガしく感じたコトなどない。<br /><br /><br /><br />しか～し!<br /><br />ガバチョは常に、態度が尊大で偉そーなのだ。<br /><br />ワタル自身が仕事を終えて「お先に失礼しま～す!」などと愛想良く言っているのに、携帯ゲームから顔を上げよーともしない。<br /><br />子供かっ!?   ←タカ&トシの「欧米かっ!?」の発声でお願いしますm(_ _)m<br /><br />もしもファンキー・ジャムにガバチョみたいなヤカラが間違って入社したら、大森[美人]社長は瞬間沸騰からのウエスタンラリアット炸裂で、3階の窓から叩き落とすに決まってる（≧∇≦）<br /><br />さらにガバチョは、40歳にして糖尿病の宣告を受け、食後に必ずクスリを飲んでいる。<br /><br /><br /><br />しか～し!<br /><br />ガバチョは、脂ギトギトのラーメン二郎が大好きなのだ。<br /><br />東京中のラーメン二郎を食べ歩いてるらしーのだが、それは糖尿病患者にとってジハード的暴挙以外のナニモノでもない。<br /><br />ラーメン二郎がどんなシロモノか、知らない人はネット画像で驚いてネ。<br /><br />ある時、リーダーが「オレはラーメン二郎が好きじゃない」と言ったら、ガバチョは自分の親の悪口を言われたみたいに激怒した。<br /><br />子供かっ!?<br /><br />ワタル自身は自虐的なデブギャグ「肉まん、あんまん、ボク肥満!」などでリーダーを笑わせたりするが、ガバチョは自分がスゴイと信じているから、少しでもからかわれるとリアルに怒るのだ。<br /><br />実はワタル自身もラーメン二郎はニガテなんだけど、ガバチョが怖くてカミングアウトせずにいる^^;<br /><br />あまり酒を飲まないガバチョは、とにかく食べるのが大好きで、慰労会の焼肉屋でも周囲の空気をまったく読まず、いきなり「ライス大盛り!」などと発する。<br /><br />子供かっ!?<br /><br />たまに作業現場に来る元請け業者の営業マンが昼食をゴチソーしてくれる時なども、リーダーは営業マンと同じよーなメニューで即決するのだが、ガバチョだけ最後までメニューに悩み、自分だけ高カロリーのミックスフライ定食かなんかを頼み、『ナニか問題でも?』みたいな顔をしている。<br /><br />な・の・に、自分の財布のヒモは異常にかたく、座右の銘は「無料」と「食べ放題」だ。<br /><br />もー1度ゆーけど、ガバチョはバイトで糖尿だからね。<br /><br /><br /><br />しか～し!<br /><br />コンビニのクリームパン3個セットを一気食いした時は、さすがのリーダーも見かねて「少しは身体を大切にしなくちゃ」と言ったら、ガバチョは平然と「ガマンできないんですよ」の返事。<br /><br />子供かっ!?<br /><br />とにかく、ガバチョが盛り上がるのは食べ物とパチンコの話題だけで、女性の話も時事の話も音楽の話もしない。移動の車中では、携帯ゲームをずっとやってるだけ。<br /><br />子供かっ!?<br /><br /><br /><br />しか～し!<br /><br />リーダー達はみんな常識ある社会人だから、こんなガバチョの振る舞いに呆れ返っていながらも、辞められたら自分達が困るので、適当な距離を置いて付き合っている。<br /><br /><br /><br />しか～し!<br /><br />数ヶ月前にトンズラしたトミーが、ガバチョの言動にブチ切れたコトがあった。<br /><br />リーダーが両者の意見を聞いた結果、「どー考えてもガバチョが悪いね」となった。<br /><br />すると、ガバチョはどーしたと思う?<br /><br />ガバチョは、ヒーヒー泣いたのだ。<br /><br />子供かっ!? 子供のケンカかっ!?<br /><br />こーゆー問題児が身近にいると、対応も困るし気分も悪いんだけど、ワタル自身の経験から判断すると、40男ガバチョの性格が良い方向に変わるコトは、ま～ずアリエナイ。<br /><br />糖尿病が悪化しても、世間を恨むばかりで自分の責任は追及しない、ヤッカイ老人になるに違いない。<br /><br />音楽業界にも困ったピーポーはいるけれど、ほとんどが40歳までには淘汰されてしまうためダメダメ男は珍しく、ガバチョは今までワタル自身が出遭った40男で、ダントツの最低グランプリだ。<br /><br />だから時々、ガバチョがイラつくよーなコトをわざとして、密かに楽しんでいるんだよ^o^<br /><br />ガバチョ、予想通りにイラつくからね。<br /><br />ガバチョの思考回路、完璧に把握してるからね。<br /><br />キリバスから帰ったら、またイジってやるもんね。<br /><br />わっはっはっはっ…って、オレも子供かっ!?<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

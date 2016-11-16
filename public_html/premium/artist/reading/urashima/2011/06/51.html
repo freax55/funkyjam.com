@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第51回 「無言館」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/06/17"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/06/17 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第51回 「無言館」</p>
+		</div>
+		<div class="texts">
+			<div class="text">無言館は、長野県上田市の森林に囲まれた美術館だ。<br />でも、フツーの美術館じゃない。パンフレットから引用する。<br /><br />「無言館」は日中戦争、および太平洋戦争で志半ばで戦死した画学生の遺作を展示する美術館です。<br /><br />その巡回展覧会が横浜の赤レンガ倉庫であると知り、流星号で向かった。<br /><br />瀬田から多摩川沿いのサイクリング・ロードに入り、梅雨の晴れ間の穏やかな朝をのんびり南下、第一京浜を横浜へ走った。<br /><br />赤レンガ倉庫の周辺は、一見して地方から来たと分かる修学旅行生でにぎわっていた。<br /><br />けれど、無言館の展示会場となった赤レンガ倉庫1号館３階は、ワタル自身よりも年配の人が多く、ひっそりとしていた。<br /><br /><br />最初に、10号（約縦50cm×横30cm）ほどの絵があった。<br /><br />老婆の肖像画だ。<br /><br />画学生の蜂谷清が、出征間際に描いた<br /><br /><center>「祖母なつの像」。</center><br />不覚にも、その絵を見たとたん、どっと涙があふれた。<br /><br />「やばい!」と思ったが、ゆるんだ涙腺は言うことをきかない。<br /><br />正装した老婆は膝に手を置き、歯のない口元を精一杯引き締め、まっすぐ前を見つめている。<br /><br />視線の先は、絵を描いている清だ。<br />間もなく戦地へ旅立つ、最愛の孫だ。<br /><br />清も、万感の思いを込めて絵筆を取っている。<br />緻密に描かれた線、皺、陰、光が、祖母なつへの愛と、惜別の悲しみに満ち満ちている。<br /><br />「この絵をいつまでも描きつづけたい」…そんな清の気持ちさえ伝わってくる。<br /><br /><br />けれど清は戦死する。<br />わずか22歳だ。<br /><br /><br />なつと清の無念が、その絵に封じ込められたまま、今も静かに発熱している。<br /><br />最初の1枚で想定外にも泣いてしまったオレは、あわててサングラスをかけ、メイン会場を回った。<br /><br /><br />オレがガキの頃は、まだ街角に傷痍軍人がうずくまり、軍歌を奏でて義援金を募っていた。<br />身近なオトナ達からは、戦争の悲劇を暗記するほど聞かされた。<br /><br />けれどガキのオレは、戦争の事実をいくら見聞しても、ちっともココロが震えなかったし、悲しみに共鳴もしなかった。<br /><br />でも、それが正しいガキなのだと、今でも少しの反省と後悔もない。<br /><br /><br />他人の痛みや愛の魔力を分からないのが、正しいコドモなのだ。<br /><br />だから、打算も思慮もないコドモの笑顔に、沈殿したオトナは救われるのだ。<br /><br />戦渦を嬌声で走り回れるコドモが、折れたオトナに未来を信じさせてくれるのだ。<br /><br /><br />それなのに、オトナの事情の底辺で、被害者になるのもコドモだ…。<br /><br />無言館の展示で想定外に泣いてしまい、想定外にアレコレと考えてしまった。<br /><br />まあ、こんな想定外なら、誰にも迷惑はかけないだろう。<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

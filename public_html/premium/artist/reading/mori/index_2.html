@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;森 大輔</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/02/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/02/19 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part18【しかられて】</p>
+		</div>
+		<div class="texts">
+			<div class="text">     <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20150219.jpg" src="/premium/artist/reading/image/20150219.jpg" width="400" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/12/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/12/16 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">≪モーリー 何分！？クッキング≫　第2弾 ～vol.1買出し編～</p>
+		</div>
+		<div class="texts">
+			<div class="text">第二弾となる≪モーリー 何分！？クッキング≫ ！<br />第一弾は、いきあたりばったり（！）でスタートし、あわや調味料が足りなくなる事態・・・<br />でしたが前回の反省を活かして今回はしっかり打合せをして買出しへ！<br />恒例の地方物産展へ。<br /><br /><br /><img src="/premium/artist/essay/mori/images/2_1.jpg" alt="" /><br /><br /><br />おっ！今回は福岡は博多の前でニヤニヤする森。<br /><br /><br /><img src="/premium/artist/essay/mori/images/2_2.jpg" alt="" /><br /><br /><br />「これだ！」という顔しながら「これだ」という商品を持つ森。<br />ってそれ、インスタントラーメンですよね？<br /><br /><br /><img src="/premium/artist/essay/mori/images/2_3.jpg" alt="" /><br /><br /><br />遊びはさておき、今回使用する食材はこちら↑<br />博多名物の「明太子のり」＆「ゆずこしょう」、そして<br /><br /><br /><img src="/premium/artist/essay/mori/images/2_4.jpg" alt="" /><br /><br /><br />和歌山物産展でゲットした梅！・・・この梅が後々悲惨な事件を巻き起こすことになるのですが・・・。<br />さて、今回の食材はこちら！中に大ヒントがありますね。<br /><br /><br /><img src="/premium/artist/essay/mori/images/2_5.jpg" alt="" /><br /><br /><br />いよいよ、次回はクッキングに取りかかります。どうぞお楽しみに！</div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/12/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/12/12 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part17【大そうじ】</p>
+		</div>
+		<div class="texts">
+			<div class="text">    <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20141212.jpg" src="/premium/artist/reading/image/20141212.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/11/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/11/25 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part16【忘れ物グゼ】</p>
+		</div>
+		<div class="texts">
+			<div class="text">   <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20141125.jpg" src="/premium/artist/reading/image/20141125.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/11/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/11/19 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！【Rさん（女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> <b>家庭菜園を始めたいと思っています。何から始めたらいいですか？コツとかあったら教えて下さい。</b><br /><br /><br />家庭菜園をやったことのない僕が答えられるわけがないじゃないですか！（笑）<br />・・・でも、ゴーヤなんてどうでしょう？結構簡単ですよ。<br />ゴーヤは育てるのは簡単なんですが、収穫のタイミングが難しいんですよ。<br />タイミングを逃すと一日で真っ黄色になっちゃうんですよね。<br />観葉植物を育てるのが本当に苦手で、その昔、ベランダでゴーヤを育てていたことがあって、うっかりツルが網戸に張り付いちゃって、網戸の開け閉めができなくなったという苦い思い出もあるのですが・・・（苦笑）<br />ゴーヤって簡単に実が育つんですよ。育つんですけど、実が大きくなっていって、そしたら欲が出てきてスーパーで売っているようなサイズものが欲しくて、もうちょっと！もうちょっと！・・・と思ってたら、一日にして黄色になっちゃいました。そうなると食べられなくなるんですよね。<br />なので、ぜひゴーヤからチャレンジしてみて下さい！<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part15【あ、ふ～～～～ん。】</p>
+		</div>
+		<div class="texts">
+			<div class="text">  <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20141030.jpg" src="/premium/artist/reading/image/20141030.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/09 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！【せっちゃんさん（女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><b>とにかく物が捨てられません。服の捨て際が分からないことから始まり、思い出の品も手放せず困っています。<br />潔く捨てるにはどうすれば良いでしょうか？</b><br /><br /><br />俺ね、この解決方法知ってます！<br />その物が泥棒に盗まれたと仮定して、どうするかというのを基準にして決めるんですよ。捨てるかどうか迷ったときにね。<br />泥棒に盗られて被害届を出してでも、もしくは新しい物を買い直してでも取り戻したいと思うんやったら捨てなきゃいいし、「まぁ盗られてもしゃぁないな～、思い出もあったけど・・・ま、盗られたんやったら仕方ないわ！」と思うんやったら捨ててもいいんじゃないかと、僕はそういうふうに考えるようにしてます。全然ぶった斬ってないけど（笑）<br /><br />服なんて簡単でしょ！1年着なかったら捨てたらいいでしょ？<br />特に女子の方が流行り・廃りがあるでしょ？着るかも、って思ってとっておいたものって<br />8割9割着ないでしょうし・・・と言いつつ、無理して捨てなくていいんじゃないですか？とも思いますね。<br />動物でもいるじゃないですか、色々巣に溜め込んだり、食べない餌を枝に刺して置いておくとか。動物の本能なんですよ、蓄えておきたい、ということが。そのモノがあることによって平静を保てていると思ったら、捨てなくて良いんじゃないですかね！<br />今回は「捨てなくていい！」という結論に至りました（笑）。<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/09/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part14【無知の知】</p>
+		</div>
+		<div class="texts">
+			<div class="text">  <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20140822.jpg" src="/premium/artist/reading/image/20140930.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/09/11 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！【あややさん（女性/6歳）】</p>
+		</div>
+		<div class="texts">
+			<div class="text">※今回のみ特別に年齢を公開しております。<br /><br /><b>いつもご飯を食べるのが遅くて、パパやママに叱られます。<br />大好きなお肉の時は早いのですが、ちょっと苦手なものがあるときは<br />すごく時間がかかるときもあります。<br />どうすれば、早く食べられますか？</b><br /><br /><br />6歳のあややさん、お手紙どうもありがとう！と言いたいところですが<br />これは間違いなくご両親が送ってきているはずですから、本人はそんなに気に留めてないはずですよね（笑）<br /><br />でもね、食べることが遅い人を貫いていると周りがだんだんそれに合わせてくれるようになるからね～。それは俺自身が身をもって体験しているから。<br />デビューしてすぐの頃は、「森君食べるの遅いな～、早く早く」と言われ続けて、<br />でも急がないということを貫き続けていたら誰も何も言わなくなりました（苦笑）。<br />そんなものです！（笑）<br />だから、大人になったら大丈夫だから、今はそれでいいですよお母さん、といいたいです（笑）<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/08/22 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part13【シュノーケリング！】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20140822.jpg" src="/premium/artist/reading/image/20140822.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/09/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/09/4_part23.html">
+
+
+						4コマまんが Part23【かんちがい】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/08/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/08/4_part22.html">
+
+
+						4コマまんが Part22【夏のイベント？行きません。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/07/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/07/4_part21.html">
+
+
+						4コマまんが Part21【かゆみにさよなら】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/mori/index.html" class="link_page">1</a></li><li><span class="current_page">2</span></li><li><a href="/premium/artist/reading/mori/index_3.html" class="link_page">3</a></li><li><a href="/premium/artist/reading/mori/index_4.html" class="link_page">4</a></li><li><a href="/premium/artist/reading/mori/index_5.html" class="link_page">5</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Reading（リーディング）</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/05/20 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【電車で車で徒歩で！出かけましょう！高尾山～～！！with汁姐 その4「腹ぁ決めてリフトで！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">高尾山で、汁姐さん（年下だけど）と楽しく過ごしてやすが、さすがにちょいと日陰に入ると寒いでやすね・・そろそろ降りやしょうか。<br />ケーブルカーもリフトも降りる人の行列が、すげーでやす！ここは腹ぁ決めてリフトでおりやすよ！<br /><img src="/premium/artist/essay/urashima/images/18/takao4-1.jpg" /><br /><br />これが腹決めた顔でやんす<br />でもやっぱりこえ～～！！<br /><img src="/premium/artist/essay/urashima/images/18/takao4-2.jpg" /><br /><br />なんたって、こんな急勾配をベンチに座ってるだけのようなもんで下ってくなんて・・あぁ誰かバックを下の網に落としてるじゃありやせんか…。<br />あっしは肩掛けななめがけにしてありやすぜっ！これに乗る人はそうするんでやんすよ！絶対！<br />無事下山！ふもとでお土産もん買いやしょう！汁姐さんポーズとってくれてるんすけど、ちょっとリフトで冷えてこわばってやすぜ…。<br /><img src="/premium/artist/essay/urashima/images/18/takao4-3.jpg" /><br /><br />あっしは、あったけ～酒まんじゅうを買いやしたぜっ！！<br /><img src="/premium/artist/essay/urashima/images/18/takao4-4.jpg" /><br /><br />さ～て車に戻って次は南大沢のアウトレットへGO～～～！！！<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/05/07 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【電車で車で徒歩で！出かけましょう！高尾山～～！！with汁姐 その3「ケーブルカーで突撃！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">高尾山～～！<br />おそばでお腹いっぱいになったおいらたちゃぁ、余裕でケーブルカー突撃でぇ！<br />けっこうな人出ですねぇ～！！ケーブルカーで急な勾配をガタンゴトンのぼって行くさまは、子供でなくったって嬉しいもんですぜっ！<br />着きやした～～！山頂！汁姐さん降りたとこで一枚！なんで他の客はおりないのかって？おいらたち以外のお客さんが降りた後…。<br />この人たちは麓に降りるお客さんだから、一緒に写っちまってるんでさ。。<br /><img src="/premium/artist/essay/urashima/images/18/takao3-1.jpg" alt="" /><br /><br />頂上は晴れ～～！！さっきまで雨模様だったのに嬉しいですぜっ！<br /><img src="/premium/artist/essay/urashima/images/18/takao3-2.jpg" alt="" /><br /><br />高尾山は天狗で有名！日本全国で、天狗の伝説は多くここ高尾山のカラス天狗は１０番目くらいの位置づけのようですぜ。。<br />山頂にいる天狗は向かって右が鼻の高い大天狗、左がくちばしのある小天狗。天狗は山の精霊とも呼ばれ、いたずらもこらしめも人助けもしたようですぜ・・<br />汁姐さん天狗と一緒にシュチャって感じっすけど、後で飲み会に連れて行かれっちまうかもしれやせんぜぃ<br /><img src="/premium/artist/essay/urashima/images/18/takao3-3.jpg" alt="" /><br /><br />山頂薬王院には八大龍王堂、銭洗い弁天があるんですゼっ！ここ高尾山は東京パワースポットみたいに、もてはやされてやすが、弁天様のご利益も大層なもんかもしれゃぁせんぜぃ！！参道に洗った銭を入れて持ち帰りそれを資本にしたら商売やらうまく行くぅ～～なんてほんとすかぃ！！<br />きんきらきんでありがたそうなお姿ですゼ！！おぜぜ～じゃぶじゃぶ～～！！<br /><img src="/premium/artist/essay/urashima/images/18/takao3-4.jpg" alt="" /><br /><br />その後、本道に向かって歩いてやすと、となりに来たおっさんが「さっき、お札洗ってましたよねぇ～」って、人の銭見てんじゃねぇ！！<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/04/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/04/22 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【電車で車で徒歩で！出かけましょう！高尾山～～！！with汁姐 その2「汁姐さんのいい女っぷり」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">仲良しシルビア（お汁子ちゃん）とやってきました！高尾山！<br />現在午前１１時半過ぎでござんす！ケーブルカーに乗り込む前に商店街がありんした！（なんか言葉遣いが江戸っ子やら花魁やら迷走中）<br />これから山の上にいくとちょうどお腹が空くんじゃあ・・腹ごしらえをしちゃいましょう☆<br />ちゃ～んと調べてめぇりやしたぜ（どうやら渡世人で着地！）高橋屋でぇ！ここが高尾山で有名なとろろそばの老舗ですぜっ！<br />行列が出来る前にまんまと入りやしたぜぃ・・へっへっへ。<br /><img src="/premium/artist/essay/urashima/images/18/takao2-1.jpg" alt="" /><br /><br />そばがくる前ぇにいきなやつぁそば屋で一杯ってのがツウなんでぇ!!!<br /><img src="/premium/artist/essay/urashima/images/18/takao2-2.jpg" alt="" /><br /><br />汁姐さん早速冷やできゅーっとね。いい女っぷりだねぇ～まだ昼めえだってゆうのに!!!<br /><img src="/premium/artist/essay/urashima/images/18/takao2-3.jpg" alt="" /><br /><br />嬉しくなってくるじゃねえか！！おいらぁ姐さんを最後まで送り届けなきゃなんねぇ・・代わりにもういっぺぇいってくんな。。<br />銀杏なんぞつまんでる内に、名物が来ましたぜっ！とろろ～ってぶっかけてちゅるちゅる～～ってなもんでぇ。<br /><img src="/premium/artist/essay/urashima/images/18/takao2-4.jpg" alt="" /><br /><br />ちょ～ど、店が混み始めやがったぜぃ！おいらたちゃ腹もふくれて、お先にごめんなさいよっ！てなもんでぇ！<br />さ～ケーブルカーに乗ってミシュランで三ツ星の山に輝いた頂上にめぇりやしょう！目指すは薬王院～～！！<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/04/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/04/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【電車で車で徒歩で！出かけましょう！高尾山～～！！with汁姐 その1「行ったのは秋ですが！新連載スタート！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">春じゃ！春じゃ！暖かくてワクワクする季節がやってきたぁ～～！お出かけするには最高の季節！そこでこの春おすすめは高尾山！！<br /><font color="#AD2222">電車で車で徒歩で！出かけましょう！高尾山～～！！</font><br /><br />〈第一弾！〉<br /><br />今回仲良しシルビアと一緒にお出かけ！「アイ・ガット・マーマン」や「ナイン」で共演しただけでなく、プライベートでも仲良しお汁子ちゃん！<br />なぜお汁子かというと自分のサインを「汁」と送ってくるからですよん！ぷぷぷっ奇麗な女優さんなのに「汁」・・ウケる。<br /><br />では～～レッツゴー！今回私たちは車で出かけましたよ。<br />八王子の街道は銀杏並木が奇麗で・・・。ぶっちゃけ取材時期は秋だったのでこんなにイチョウが色づいております<br />皆さんがお出かけになる春先は、枝しかございません。。<br /><img src="/premium/artist/essay/urashima/images/18/takao1-1.jpg" alt="" /><br /><br />都心から車で走る事１時間半くらいで到着ですが・・・行楽シーズンはめちゃくちゃ混む情報は仕入れておりましたが、やはり高尾山口駅前駐車場はいっぱい！あきらめて行楽渋滞のなか隣街に駐車しに行こうとノロノロ運転。。<br />するとアパートの敷地から、おばちゃんが「どうぞ、どうぞ！」と旗を振っているではないか！バキューン！と駐車出来ちゃたんですよ～～！ちょい割高でしたが、隣町に移動する時間を考えればなんのそのですわ！<br />高尾山口駅前は人がいっぱい！さーてここからスタートだよ～～ん。<br /><img src="/premium/artist/essay/urashima/images/18/takao1-2.jpg" alt="" /><br /><br />いや、だから秋だったからさ・・紅葉が奇麗なわけですよ。<br /><img src="/premium/artist/essay/urashima/images/18/takao1-3.jpg" alt="" /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/03/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【テルマエ・ロマエ】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第13回目のNo Diggityは、オススメの映画をご紹介。しかも、今回は珍しく邦画をチョイスしています。必見！<br /><br /><br /><br /><center><font color="#FFBF17">「テルマエ・ロマエ」</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20130329.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />「阿部さんが出ている『テルマエ・ロマエ』、これは飛行機の中で見たんだよ。日本の映画はジャンルでいうと “ドラマ” が好きで、この作品は娯楽性が高そうだったんで、あまり期待しないで見始めたんだけど、こういう作品だととかくチープになりがちな背景やロケーションをハリウッド映画並みに仕上げられていて嬉しかった。」<br /><br /><br /><br /><font color="#FFBF17">―　そもそも日本の映画は見ますか？</font><br /><br />「見るよ。例えば『復讐するは我にあり』『鬼畜』といった人間の暗部に迫るような作品なんかは好きだな～。また寅さんにもはまったね。今回の『テルマエ・ロマエ』は、ストーリーや話の展開がいい意味で100％想像できて、 作り手が“どうぞ見えちゃって下さい“ というスタンスだから楽しく見ることができたね。娯楽映画として秀作じゃないかな！」<br /><br /><br /><br /><br />取材後、早速私も映画を観ましたが “風呂“というテーマを題材によくぞここまで面白おかしく、かつスケールの大きな映画に仕立て上げたな、という印象を受けました。<br /><br />皆様もぜひご覧ください！<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/03/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/03/18 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【久保田利伸御大が家具を買いに行く！その6「ジャケ写のような御大」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">いよいよ「御大が家具を買いに行く！」も最終回！<br />〆は恵比寿のASUPLUND(アスプルンド)！インテリアから家具まで、セレクトされたこれまたおっされな～お店ですよ！御大と社長もレッツゴー！<br /><img src="/premium/artist/essay/urashima/images/17/kubota6-1.jpg" alt="" /><br /><br />お洋服やキッチン小物、大型家具にワイルドインテリアと幅広く展示されている空間はちょっと秘密基地みたいです。<br />御大は、ターンテーブルなどを置くのに良さげなサイドテーブルかチェストをみているようです。<br /><img src="/premium/artist/essay/urashima/images/17/kubota6-2.jpg" alt="" /><br /><br />店内には、今まで以上にシャンデリアがたくさんあるので、御大は「シャンデリアだけどさ～…」と、先ほど却下されたのが諦めきれない様子…。<br />社長は、「この椅子、ちょ～座り心地い～～！」<br /><img src="/premium/artist/essay/urashima/images/17/kubota6-3.jpg" alt="" /><br /><br />とそんな事は聞こえないよ～～ん！とリラックスモードに入ってしまわれましたな…。考えてみれば結構歩きましたよね。<br />本来ならば数日かけて回るような店舗数を半日で回ってらっしゃいます。そもそもアーチストの皆様は歩くのが速い！これは多くの方に見受けられる事です。<br />わたくし、自慢じゃありませんが、遅いです！しかも迷います！今回の取材で目が回っているのは、私だけでしょう。<br />しか～し、社長もどうやらお疲れの様子…眠ってしまわないよう村山がそっと隣に立っているのが印象的です。<br />御大は、勢力的に見ていますが、このショット！まるでジャケ写のようではないですか！<br /><img src="/premium/artist/essay/urashima/images/17/kubota6-4.jpg" alt="" /><br /><br />そして、チェストを二つ並べるとどう見えるか吟味中…。<br /><img src="/premium/artist/essay/urashima/images/17/kubota6-5.jpg" alt="" /><br /><br />最後に久保田メモを取り出しチェック！御大はかなり細かい性格とみた！<br />きっと、レコーディングなどの緻密な作業も妥協しないんでしょうねぇ…。帰路に着く御大が社長の車でBGMに選んだのはトワエモア…。<br /><img src="/premium/artist/essay/urashima/images/17/kubota6-6.jpg" alt="" /><br /><br />空よぉ～水色の空よぉ～…皆様の疲れた体に、美しいメロディが沁み入る夜でございました。皆様、お疲れさまでございました！！<br />後は、セレクトされた家具がオフィスに届くのを待つばかりとなりました。<br />スタッフも御大に選んでもらった、素敵なデスクや椅子でバリバリ働くことでしょう！楽しみです！<br /><br /><center>（完）</center><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/03/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/03/04 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【久保田利伸御大が家具を買いに行く！その5「わたくしPRESSです」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">取材と言いつつ、御大にお金まで借りてしまった反省も含めて、ひたすら写真を撮りまくる浦嶋。<br />ご一行様は、日も落ち始めた白金の石畳のランドマークも美しい「arflex」にやってまいりました。<br /><img src="/premium/artist/essay/urashima/images/17/kubota5-1.jpg" alt="" /><br /><br />いままでのお店よりも、大きなお店です。展示されている家具の種類も豊富！<br />御大は早速店員さんとカタログを見ながら説明を受けています<br /><img src="/premium/artist/essay/urashima/images/17/kubota5-2.jpg" alt="" /><br /><br />と、その時…写真を撮っている浦嶋に気づいた店員さんから、家具の撮影かと聞かれ<br />堂々と人物撮影だと強調すると、なんとPRESSの腕章をくれました…。あのぉ～カメラがiPadなんですけど…。普通カメラマンiPadで撮影しませんよねぇ…？すいません。<br />社長の失笑を買いながら、iPadにPRESS腕章のわたくしは、御大をビシバシ撮影します！<br />どうやら、このお店では、テーブルを吟味している様子、社長をモデルに御大が自らのケータイで全体イメージを撮影しています！<br /><img src="/premium/artist/essay/urashima/images/17/kubota5-3.jpg" alt="" /><br /><br />おっ！久保田メモを取り出しチェック！お買い物済みのものを削除しているのでしょうか…？<br /><img src="/premium/artist/essay/urashima/images/17/kubota5-4.jpg" alt="" /><br /><br />街には明かりが灯ります、どうやら最終目的地に向かおうとしている御大、落書きされた町並みさえも御大にはピッタリ似合っちゃうんですよね～～！！<br /><img src="/premium/artist/essay/urashima/images/17/kubota5-5.jpg" alt="" /><br />いよいよ、最終目的地へレッツゴー！！<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/02/26 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【好きな焼酎ベスト３】</p>
+		</div>
+		<div class="texts">
+			<div class="text">突然ですが第12回のNo Diggity、今回は久保田利伸愛飲のお酒、その中でも特に好きな焼酎をご紹介します！<br /><br /><br /><br /><font color="#FFBF17">「好きな焼酎ベスト３」</font><br /><br />〇　いいちこ　フラスコボトル（大分県）<br /><br />〇　中々（宮崎県）<br /><br />〇　佐藤 － 麦（鹿児島）<br /><br />（順不同）<br /><br /><br /><br />今回は順位がつけられない！ということで、焼酎の中でも麦焼酎でよく飲まれている３種を挙げてもらいました。<br /><br /><br /><br />「麦は癖がないから本来飲みごたえがないんだけど、“いいちこ“と ”中々“は度数の強さもあって、飲みごたえがある。特に中々は味のバランスが好きかも。」<br /><br /><br /><br /><font color="#FFBF17">―　必ず一緒に食べるおつまみ等ありますか？</font><br /><br />「ちりめん山椒が一番！ご飯にかけて食べるのが一般的だけど、俺は指でつまんで、おつまみにするのが好き。焼酎は二日酔いしないからいいんだよね（笑）。一人でだらだら呑むというよりも、ご飯と一緒に呑むことが多いかなぁ。」<br /><br /><br /><br />以前、同じ事務所の浦嶋さんからお土産で貰ったちりめん山椒を、もらうやいなや嬉しそうに開封する姿をみかけました（笑）。<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20130226_02.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />2011年のGold Skoolツアーでは大分のiichikoグランシアタもまわり、その際に頂いた “いいちこ パーソン“は今でも大事に少～しずつ頂いているようです。<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20130226_01.jpg" /></center><br /><img src="/premium/images/common/dot.gif" height="10" /><br /><br />「ちりめん山椒と焼酎ってほんとは一緒にしちゃダメなんだよなぁ(苦笑)。焼酎の味が分かんなくなるから。酒屋が怒ってこないかなぁ～！」<br /><br /><br /><br />と、最後に爆弾発言（？）も飛び出しつつ、今回はオススメの焼酎をご紹介しました。<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/02/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/02/18 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【久保田利伸御大が家具を買いに行く！その4「通りすがりのお店で御大に借金！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">「御大と家具を買いに行こう！」っつーことで繰り出したおされタウン青山！<br />御大にごちそうして頂いたバーガーでお腹もいっぱい！<br />次なるお店へと向かうと…御大が「あっれ～？なんか書いてある！」<br />ここはデンマークの家具を扱うBoConcept（ボーコンセプト）というお店らしいのですが…。<br /><img src="/premium/artist/essay/urashima/images/17/kubota4-1.jpg" alt="" /><br /><br />近づいてみると、改装中らしくリニューアルオープンの日付が書かれてますぅ！残念！<br /><img src="/premium/artist/essay/urashima/images/17/kubota4-2.jpg" alt="" /><br /><br />「あ～～見たかったなぁ…」と御大の独り言が聞こえて来た時、社長が「ねぇ、あれ良くない？」通りすがりのお店の中のテーブルを指差してます。御大も「どれどれ～？」などと良いながらご来店！<br /><img src="/premium/artist/essay/urashima/images/17/kubota4-3.jpg" alt="" /><br /><br />POLISというインテリアショップですが、家具よりも一際目立っているのがド派でなアニマルプリントのオットマンやブランケット！<br /><br />ここで思わず、私「お金貸して下さい！」、御大「はっ？」…「ご迷惑はおかけ致しません！是非お買い物に同行させてくださいませ！お写真を撮るだけでございます！」などと宣った、その舌の根も乾かぬ内に、わーたーくーしー借金を申し込んでしまいました…。<br />iPadだけを手に、バックも車に置いたまま来た私は、現金を一切持たずに取材をしており、まさかまさか・・こんなところでブランケットに一目惚れしてしまうとは・・恋は盲目・・恋しいブランケットちゃん！の為になんと御大に借金を申し込む暴挙に出てしまったぁぁぁぁ！！！<br />「しょーがないなぁ。はい一万円」おぉぉやぁぁさぁぁしぃぃ～！！御大がお金を貸してくださいましたぁぁ！！<br />「ちゃんと返してね。」はいはい、もちろんでございます！<br /><img src="/premium/artist/essay/urashima/images/17/kubota4-4.jpg" alt="" /><br /><br />皆さん！！御大はお優しい方です！お金を貸してくださいました！<br />でも生活苦でも借りに行ってはいけません！！その時は貸してくださらないような気がいたします…。あくまでもそんな気がするだけですけど…。<br />そう！そしてここでは、何も家具はゲットされず浦嶋のお買い物に皆様をお待たせさせただけで終わりました。皆様すみませんでしたぁ！<br />さ～気を取り直して次いこ！次！<br /><img src="/premium/artist/essay/urashima/images/17/kubota4-5.jpg" alt="" /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/02/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/02/04 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【久保田利伸御大が家具を買いに行く！その3「バーガー食べたいんだよ！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">「久保田利伸御大と家具を買いに行く！」の第３回目！<br />おされタウン青山で椅子を購入した御大は、どうやらお腹がお空きになったようですな。<br />「バーガー食べたいんだよ！」ってな事おっしゃって、あーた、ファーストキッチンに入ってくじゃありませんか！<br />「あっ俺ね、海老カツサンド！りんちゃんは？」えっ？ごちそうしてくださるんですかぁぁ～？？嬉しいなぁ！じゃおんなじもんで！<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-1.jpg" alt="" /><br /><br />結構な人がいますが、さすが東京！御大は自由にしてますよ！！！<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-2.jpg" alt="" /><br /><br />いよいよオーダーのものが来ましたが…、社長が御大におつりを渡しています。<br />ちゃんと返すんですねぇ。こぉゆうとこ、しっかりしたお二人です。でも、冷めちゃいますよ～！！！<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-3.jpg" alt="" /><br /><br />NY帰りは違いますねぇ～！！ペリエ飲んでますよ！コーラやファンタじゃないんですねぇ～？おっされ～～！<br /><br />さーて、そろそろ出発！街でペリエを手に持つ姿はCMみたいです！！<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-4.jpg" alt="" /><br /><br />ここで、御大がシャンデリアを見たい！！と…ミーティングルームにシャンデリアを使いたい様子。。急遽村山がアンティークショップを検索。<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-5.jpg" alt="" /><br /><br />やってきたのはこちらLloyd`s Antiques(ロイズ　アンティーク)！！<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-6.jpg" alt="" /><br /><br />ここで社長から、シャンデリアを吊るのに別の工事が必要になるとお聞きになると、しぶしぶあきらめたご様子。。<br />ちょっとがっくし気味の気分を、音で表現する御大なのでした。<br /><img src="/premium/artist/essay/urashima/images/17/kubota3-7.jpg" alt="" /><br /><br />ホ～～～♪<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_7.html" class="link_page">7</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_8.html" class="link_page">8</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_9.html" class="link_page">9</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><span class="current_page">11</span></li>&nbsp;
+<li><a href="/premium/artist/reading/index_12.html" class="link_page">12</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_13.html" class="link_page">13</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_14.html" class="link_page">14</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_15.html" class="link_page">15</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_16.html" class="link_page">16</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

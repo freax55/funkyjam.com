@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>管理トップ - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<link href="admin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="confirm.js"></script>
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="index.php">管理トップ</a> &gt; </p>
+<ul>
+  <li>商品管理
+  <p>チケット、グッズなどの商品を管理できます。</p>
+  <ul>
+    <li><a href="item/ticket/index.php">チケット</a></li>
+	<li><a href="item/goods/index.php">グッズ</a>
+	<p><a href="item/goods/toshikubota_tour/index.php">久保田利伸ツアーグッズ</a> | <a href="item/goods/fjshop/index.php">FJSHOP グッズ</a></p>
+	</li>
+  </ul>
+  </li>
+  <li><a href="category/index.php">アーティスト管理</a>
+  <p>商品データで使用するアーティストを管理できます。</p>
+  </li>
+  <li><a href="place/index.php">会場管理</a>
+  <p>商品データで使用するコンサート会場を管理できます。</p>
+  </li>
+  <li><a href="account/index.php">アカウント管理</a><br>
+    <p>会報に記載するIDとパスワードを管理できます。</p>
+  </li>
+  <li><a href="member/index.php">会員管理</a>
+    <p>現在ショップサイトに登録されている会員を閲覧できます。</p>
+    <p>FileMakerからエクスポートしたデータをインポートすることができます。</p>
+	<p><strong>FileMakerにカード会員を追加する作業を行った後、インポートを必ず行ってください。</strong></p>
+  </li>
+  <li>売上データ ダウンロード
+    <p>前回のダウンロードから昨日までの売上データをダウンロードできます。</p>
+	<p><a href="javascript:confirmDownloadTicketOrder()">久保田利伸チケット</a> | <a href="order/kubota_goods_2011.php">久保田利伸ツアーグッズ2011年版</a></p>
+  </li>
+</ul>
+</body>
+</html>

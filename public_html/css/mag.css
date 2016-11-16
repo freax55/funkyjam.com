@@ -1,0 +1,20 @@
+@charset "shift_jis";
+
+#contents .pageTitle {
+	background-image:url(../image/mag/title.gif);
+}
+
+#contents .section {
+	line-height:2;
+}
+
+#contents .section .entry {
+	margin:1.5em 0;	
+}
+#contents .section .entry img {
+	margin-bottom:-2px;
+}
+
+#contents .contact {
+	margin:6em 0 0 0;	
+}

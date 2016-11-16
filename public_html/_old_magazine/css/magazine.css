@@ -1,0 +1,149 @@
+@charset "shift_jis";
+
+#contents h1 {
+	width:950px;
+	height:30px;
+	margin-bottom:28px;
+	background-image:url(../image/page_title.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents .wrapper {
+	width:950px;
+	margin-bottom:30px;
+	padding-bottom:13px;
+	background-image:url(../../image/common/bg_lower_contents_bottom.gif);
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+#contents .wrapper .inner {
+	width:832px;
+	padding:35px 0 20px 118px;
+	background-image:url(../../image/common/bg_lower_contens.gif);
+	background-position:left bottom;
+	background-repeat:repeat;
+}
+#contents .wrapper h2 {
+	float:left;
+	width:160px;
+	height:18px;
+	margin-bottom:70px;
+/*
+	background-image:url(../image/title.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+*/
+	color:#FFCC33;
+}
+#contents .wrapper span {
+	margin-right:4px;
+	color:#FFFF00;
+}
+#contents .wrapper th {
+	width:150px;
+/*
+	background-repeat:no-repeat;
+	background-position:right top;
+	text-indent:-9999px;
+	font-size:1px;
+	line-height:0;
+*/
+	text-align:right;
+	vertical-align:top;
+}
+/*
+#contents .wrapper #name th {
+	background-image:url(../image/lab_name.gif);
+}
+#contents .wrapper #company th{
+	background-image:url(../image/lab_company.gif);
+}
+#contents .wrapper #mail th{
+	background-image:url(../image/lab_mail.gif);
+}
+#contents .wrapper #mail2 th{
+	background-image:url(../image/lab_mail2.gif);
+}
+#contents .wrapper #tel th{
+	background-image:url(../image/lab_tel.gif);
+}
+#contents .wrapper #type th{
+	background-image:url(../image/lab_type.gif);
+}
+#contents .wrapper #content th{
+	background-image:url(../image/lab_content.gif);
+}
+*/
+#contents .wrapper td {
+	padding-bottom:10px;
+	padding-left:12px;
+	text-align:left;
+	vertical-align:top;
+}
+#contents .wrapper td p {
+	color:#CCCCCC;
+	font-size:85%;
+}
+#contents .wrapper td.indispensability {
+	padding-top:3px;
+	padding-left:2px;
+	color:#FFFF00;
+}
+#contents .wrapper #name input,
+#contents .wrapper #company input{
+	width:300px;
+}
+#contents .wrapper #mail input,
+#contents .wrapper #mail2 input{
+	width:420px;
+}
+#contents .wrapper #tel input{
+	width:46px;
+}
+#contents .wrapper .btn {
+	padding-top:20px;
+	padding-bottom:80px;
+	padding-left:250px;
+}
+#contents .wrapper .btn.double {
+	padding-left:180px;
+}
+#contents .wrapper .btn input {
+	width:157px;
+	height:31px;
+	border:0;
+	background-color:transparent;
+	background-image:url(../image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:118%;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#contents .wrapper .mainMassege {
+	padding:0 0 50px 180px;
+	font-size:120%;
+}
+
+#contents .wrapper .mainLink {
+	padding:0 0 0 180px;
+}
+
+#contents .wrapper td p.error{
+	color:#BB0000;
+}
+
+#contents .wrapper td textarea {
+	width:530px;
+}

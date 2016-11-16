@@ -1,0 +1,13 @@
+			<div id="header" class="clearfix">
+				<h1 id="logo"><a href="/premium/"><img src="/premium/images/common/logo.jpg" alt="Funky Jam PREMIUM FOR MEMBERS" /></a></h1>
+				<div class="login">
+					<ul class="clearfix">
+						<li><a href="/premium/pay.html"><img src="/premium/images/common/img_pay.jpg" alt="お支払いについて" /></a></li>
+						<li><a href="/premium/logout/"><img src="/premium/images/common/img_logout.jpg" alt="ログアウト" /></a></li>
+					</ul>
+					<table>
+						<th><img src="/premium/images/common/img_login.jpg" alt="ログイン中" /></th>
+						<td>会員期限 ： {$user_end|date_format:"%Y年%-m月"}末日まで{if $user_mail}<br /><span class="limit">{$user_mail}</span>{/if}</td>
+					</table>
+				</div>
+			</div>

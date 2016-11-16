@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第238回 「遥かなるスモールワールド」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/01/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/01/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第238回 「遥かなるスモールワールド」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 「スモールワールド現象」という説がある。<br /><br />スモールワールドと言っても、ディズニーランドの人気アトラションじゃないよ。<br /><br />「六次の隔たり」とも言われる説で、スゲー簡単に説明すると、平均して6人の知り合いをたどれば、世界中の誰とでも知り合える…とゆーウソみたいな説だ。<br /><br />この説の検証が、昨年8月にTBS系で放送された「水曜日のダウンタウン」で行われたので、知っている方も多いはずだ。<br /><br />番組では、ダウンタウンの松本人志氏の電話番号を知っている人を見つけるのがテーマで、街頭で無作為に人選し、松本氏の番号を知っていそーな人を順々に紹介してもらう。<br /><br />「知っていそーな人」とゆーのが大きなキーポイントで、ここで進むべき方向が狭まるのだ。<br /><br />番組では、街で出会ったブランドショップ店員⇒その知り合いのスタイリスト・アシスタント⇒その先輩のスタイリスト⇒松本氏のマネージャー⇒松本氏と、なんと4人目で松本氏にたどり着いてしまった。<br /><br />再検証でも、中学校講師⇒その同級生の舞台俳優⇒その仲良しの芸人⇒その知り合いの三又又三氏⇒松本氏で、またも4人目でクリア!　再々検証も、なんと4人でミッション完了となった。<br /><br /><br /><br />しか～し!<br /><br />これには大きな落とし穴がある。<br /><br />あらゆる机上の説は、仮定の上に成り立っているからだ。<br /><br />物理の力学問題の最後に、「ただし空気抵抗と摩擦係数はゼロと仮定する」などと書かれていたのを、記憶してはいないだろーか?<br /><br />現実には限りなく不可能だけど理論上は成立する…こーゆー説は、実生活ではほとんど役に立たないのだ。<br /><br />松本氏に4人目でたどり着いたのは、テレビの取材という善意の前提があったからに他ならない。<br /><br />そーじゃなければ、「どーしてオレの知り合いをアナタに紹介しなくちゃいけないの!?」となる。<br /><br />たとえばワタル自身は、知り合いの知り合いに「久保田利伸を紹介してちょーだい」などと言われて、簡単に教えるワケがない。<br /><br />初対面の人物と接する際は、相手が確実に善意の人で、下ゴコロや悪意がないのを確認してから、よーやく話を聞くレベルになる。<br /><br />友達の友達の友達の友達の友達から紹介された人物は、「Who are you!?」でしかない。<br /><br /><br /><br />しか～し!<br /><br />逆に言えば、世界中が善意の人なら、オレ達は6人の友を介して、誰とでも知り合いになれるのだ。<br /><br />世界中の人と仲良くなれるかは、知り合い以降のテーマだが、世界の善意を前提にすれば、「スモールワールド現象」はバカバカしい仮説とは言えないのである。<br /><br />もし今、ワタル自身がイスラム国の人物と知り合いになりたいとする。<br /><br />YouTubeに登場する黒ずくめのメッセンジャー、通称「ジハーディ・ジョン」を紹介して欲しいとしよう。<br /><br />ジョンはイギリスのラッパー出身らしーから、まず久保田利伸にアメリカのラッパーを紹介してもらう。<br /><br />米国ラッパーから英国ラッパーの線は、容易に想像出来る。<br /><br />さらに、英国ラッパーの中にはジョンを知っている人が必ずいるはずだ。<br /><br /><br /><br />しか～し!<br /><br />ここから先が難関だ。<br /><br />日本の一般ピーポーのワタル自身がいくらココロを開いたとしても、ジョンが会ってくれるとは思えない。オレに会うくらいなら、もっと有益な日本人に会うはずだ。<br /><br />だからやはり、スモールワールドが実現するには、世界の平和と善意とゆー「仮説」が大前提なのだ。<br /><br />2015年は、年明け早々から不穏な風が中東方面から吹き込んでいる。<br /><br />遠い異国の出来事と思われていた危機が、今回の日本人人質事件で、一気に身近な危機に変った。<br /><br />朝起きて、さあ仕事をしようと背筋を伸ばすが、暗いニュースにココロが萎える。<br /><br />多方面に影響力を持つ人達が水面下で必死の努力をしていると思うけれど、一般ピーポーのオレ達が耳にし目にする現実は、あまりにムゴく、全身が沈鬱な空気の底に沈んでしまう。<br /><br />残念ながら、今の世界にはスモールワールド現象よりも、「エントロピーの増大」が当てはまってしまう。<br /><br />エントロピーを簡単に表すと、散らかったワタル部屋はエントロピーが大きく、キチンと片付いた久保田スタジオはエントロピーが小さい、のよーに使われる。<br /><br />エントロピーの増大とは、一度乱れた世界は、どんどん乱れが大きくなり、2度と元に戻らない…とゆー「物理的事実」だ。<br /><br />分かりやすい例だと、沸騰したお湯に冷水を入れたとする。<br /><br />時間とともに冷水はお湯全体に広がり、再びお湯と冷水に分かれるコトはない。<br /><br />小さかったエントロピーが大きくなり、それは逆戻り出来ないのだ。<br /><br />当たり前と思うだろーが、適温のお風呂に入れるのも、美味しいカフェオレが飲めるのも、エントロピー増大が一方通行のオカゲなのだ。<br /><br /><br /><br />しか～し!<br /><br />人間は物理学で生きているワケじゃない。<br /><br />散らかった部屋を整理整頓するコトだって出来るし、大ゲンカをしても仲直り出来る。<br /><br />それはきっと、人間はエントロピーが大きい無秩序な世界より、秩序正しい世界が好きだからだ。<br /><br /><br /><br />しか～し!<br /><br />万物は重力の法則に逆らえないよーに、この瞬間もエントロピーはじわりじわりと増大している。<br /><br />今回の人質事件に関するネットの書き込みなどを見ると、まさに無秩序の極みで、同じ日本人として、ドーニモコーニモやりきれない気持ちになる。<br /><br />残念で悲しいけれど、スモールワールドは遠のくばかりなのだ。<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/_2_vol1.html">
+
+
+						≪モーリー 何分！？クッキング≫　第2弾 ～vol.1買出し...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/4_part16_1.html">
+
+
+						4コマまんが Part17【大そうじ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/11/4_part16.html">
+
+
+						4コマまんが Part16【忘れ物グゼ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/11/r.html">
+
+
+						悩み相談ぶった斬り！【Rさん（女性）】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/4_part15.html">
+
+
+						4コマまんが Part15【あ、ふ～～～～ん。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/post_40.html">
+
+
+						悩み相談ぶった斬り！【せっちゃんさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/4_part14.html">
+
+
+						4コマまんが Part14【無知の知】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/6_5.html">
+
+
+						悩み相談ぶった斬り！【あややさん（女性/6歳）】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

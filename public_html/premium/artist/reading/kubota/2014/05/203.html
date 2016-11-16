@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第203回 「マンデラ氏から食の道?」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/05/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/05/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第203回 「マンデラ氏から食の道?」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 5月24日に「マンデラ-自由への長い道」とゆー映画が公開される。<br /><br />惜しくも昨年末に亡くなられたマンデラ氏は、南アフリカ初の民主的選挙('94)で大統領に選ばれた人物だが、それ以前は反アパルトヘイト活動で終身刑とされ、27年間も投獄されていた('62-'89)。<br /><br />彼を釈放したのは当時大統領のデクラーク氏で、南アが隠し持っていた核兵器を破棄して世界平和に貢献したとし、マンデラ氏と2人でノーベル平和賞を受賞している('93)。<br /><br /><br /><br />しか～し!<br /><br />デクラーク大統領が核兵器を破棄した本当の理由は、ただ単に、南アの黒人達に核を渡したくなかっただけだとも言われている。<br /><br />実際に、核兵器破棄反対の南ア黒人も多かったのだ。<br /><br />まあとにかく、南アは黒人×白人のテロだけでなく、黒人×黒人、白人×白人…苛烈な悲劇を繰り返していたから、マンデラ大統領誕生は、世界中が奇跡と驚き賞賛した。<br /><br />インドの父=ガンジー氏も、南アでの差別体験をきっかけに、人権運動に突き進んでいく。<br /><br />ガンジー氏とマンデラ氏は共通点が多い。<br /><br />投獄されてもヘコタレず、妥協を知らない頑固者で、白人社会と闘う決意をし、一般ピーポーなら逃げ出すよーな苦難を乗り越えて勝利する。<br /><br />このまま話すと、またカタイ方向に行きそーなので、少しベクトルを変えるね。<br /><br />かつて、航海術に長けていた大英帝国は、東インド会社(1600～1858)に代表されるよーにアジアに拠点を置き、ヨーロッパでは手に入らないスパイスなんかをかき集めていた。<br /><br />え？ 話のベクトルが変わってない？ ちょっと待って。これから変わるからね。<br /><br />えー、こーしてイギリスはスパイス大国になったのに、そのスパイスを自分達では活かせずに、自慢料理がフィッシュ&チップスなのは情けない。<br /><br />ワタル自身がイギリスで美味しかったのは、スカンピ(手長エビ)やムール貝の塩茹でで、どちらもガーリックバターあたりで食べ、ほとんど料理なんてしていない。<br /><br /><br /><br />しか～し!<br /><br />彼等は様式美にはコダワリがあるみたいで、トースト&バターの朝食とか、午後のティータイムとか、コロニアル建築とか、ワタル自身にはコダワリのないスタイルだけを、かつての領地に遺している。<br /><br /><br /><br />しか～し!<br /><br />グルメで知られるフランス人はさすがで、ベトナム+ラオス+カンボジア(仏領インドシナ=1887～1954)を統治していた時、現地民にクロワッサンの作り方を教えた。<br /><br />中でもベトナムのパン職人は優秀で、アジアで最高のクロワッサンを食べたかったらベトナムへ行け、とまで言われるよーになった。<br /><br /><br /><br />しか～し!<br /><br />ベトナム戦争('60～'75)が起こり、腕の良い職人はタイへ逃げた。<br /><br />で、バンコクのクロワッサンがアジア最高となった。<br /><br />そーした職人の子や孫や弟子なんかが、今もクロワッサンを焼いていて、ワタル自身も食べたけれど…多分今は、アジア最高のクロワッサンは、日本のどこかにあると思う。<br /><br />日本もアジアや太平洋に領土を広げた時代があったが、現地民を和食の職人に育てるよーなコトはしなかったみたいだ。<br /><br />北朝鮮に手打ちそばの達人がいるとか、パラオに寿司仙人がいるとか聞いたコトがない。<br /><br />これはおそらく、「ガイジンの握った寿司なんて食えるけぇ!」の日本人優越主義のせいだ。<br /><br />今でも、ワタル世代よりずっと若い日本ピーポーがヘイトスピーチをしているけれど、シンソコ恥ずかしくなる。<br /><br /><br /><br />しか～し!<br /><br />逆に日本人は、異国の食を日本流にアレンジする天才だ。<br /><br />今や国民食のラーメンもカレーもトンカツも、異食マッチの傑作だ。<br /><br />ヘイトピーポーも、「怒鳴った後は、やっぱ冷えたビールに豚キムチだよな～!」などとシタツヅミかもしれぬ^^;<br /><br />日本以外の、たとえばニューヨークのチャイナタウンへ行くと、アメリカナイズされていない、中国そのままの食を味わえる。韓国料理もベトナム料理も、スタイルはニューヨークっぽくオシャレになっていても、味は限りなく現地のままだ。<br /><br /><br /><br />しか～し!<br /><br />ここで大きな疑問にぶつかる。<br /><br />アメリカの食文化は、異文化を異文化として受け入れるのに、どーして異文化の争いに口を出すのだろーか？<br /><br />待てよ、そー言えばニューヨークのチャイナタウンは華僑ばかりで、あんまりアメリカ人がいなかったよーな…アメリカ人は街中のデリでアメリカンなワンタンヌードルとか食べていたよーな…でも、ソーホーの中華料理店はニューヨーカーで満員だったなぁ…あっ、また話が戻っちゃいそーだ!<br /><br />えーと、マンデラ氏から食の話題に変わったけれど、南アフリカの国難とマンデラ大統領誕生の奇跡を、是非映画で知ってちょーだい。絶対に感動するよ!<br /><br />え？ オレ？ オレは観ない。号泣しちゃうから（≧∇≦）<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第223回 「マッサン」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/17"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/17 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第223回 「マッサン」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 実はねぇ、NHK朝の連続テレビ小説「マッサン」…見ちゃってるんだよね。<br /><br />最近は、中島みゆきさんが歌うテーマ曲「麦の唄」がはじまると次の展開を思いやり、早くも涙腺がウルウルしちゃうほどなの（≧∇≦）<br /><br />物語は、日本で最初にウィスキーを造った亀山政春氏と妻・エリーちゃんの泣き笑い奮闘記で、その亀山政春=マッサンを演じている主役の玉山鉄二さんが、以前からワタル自身のヒイキなのだ。<br /><br />役者によっては、役柄に違和感を感じる場合もあるけど、玉山さんはどんな役でも次第に「イカニモ」な雰囲気をかもしだす。<br /><br />失礼な言い方かもしれないが、完璧じゃない余白が、「イカニモ」を感じさせるのだ。<br /><br />ワタル自身は、今まで様々な分野で一流と呼ばれる人達にインタビューをして来たけれど、誰もが自分のスタイルに自信を持っているからこそ、誰もが完璧じゃなかった。<br /><br />ある数学者はコッペパンをかじりながら日本の教育を語り、ある政治家は腰が痛いと机に座って子供の未来を憂い、あるスポーツマンはアインシュタインの相対性原理を堂々と勘違いし…インタビュー中はナンダコイツハと思うのだが、原稿を書く時にはイカニモと納得してしまう^_^;<br /><br />オレは芸能評論家じゃないから玉山鉄二さんの将来は語れないが、今後の成長が楽しみな役者さんなのだ。<br /><br />さらに、連続テレビ小説初の外人ヒロインとなるシャーロット・ケイト・フォックス嬢(マッサンの妻・エリー役)も、金髪白人にはダラシのないワタル自身のツボだ。<br /><br />これまた失礼な言い方かもしれないが、65点くらいの美人度数がリアルなのだ。<br /><br />65点の美人度は、角度や表情によって80点にも90点にもランクアップしちゃう。<br /><br />さすがに100点満点はキビシーが、シャーロットちゃんは新婚のダンナが恋しくなって一時帰国したなどの実生活エピソードを聞くと、スコットランドから日本に嫁いだ実在のエリーちゃんと重なり、テレビの前で「負けるなよ!」と応援してしまう。<br /><br />マッサンの元婚約者・田中優子=相武紗季ちゃんはイジワルな設定だけど、ワタル的にはストライクの女優さんだし、彼女の父親・大作=西川きよしさん&母親・佳代=夏樹陽子さんもみんなWelcomeな人達なので、「マッサン」を見て泣いたり笑ったりすると、酸素カプセルより何倍もストレスフリーになれる。<br /><br />その中でも、「マッサン」のナニがジ～ンと来るかって、エリーちゃんのヒタムキな姿&マッサンへの純な愛に尽きる。彼女のカタコトの日本語も、実にリアルで効果的なのだ。<br /><br />第12話なんて、優子に超イジワルされたのに、自分がスコットランドに残して来た母親への心痛を乗り越え、逆にマッサンを叱咤するエリーちゃんに、全国の朝が感涙に包まれた…かどーかは分からないけど…「あまちゃん」とは別種のベクトルで「マッサン」にハマっている。<br /><br />バツ2のワタル自身がゆーのもナンだけど、日本人どーしの結婚だって考え方や生活習慣の差異は避けられないのだから、国際結婚は当事者以外の周囲にもBIG LOVEが必要だ。<br /><br />まして、マッサンがエリーと共にスコットランドから帰国したのは1920年代。外国人だとゆーだけで、エリーとの結婚を否定した人も多い時代だったが、それ以上に多くの理解者がいたから、厳しい試練に遭いながらも、マッサン&エリーは日本最初のウィスキーを完成出来たのだ。<br /><br />もちろん、そーした幸運は、マッサン&エリーの愛と信念が呼び込んだのだ。<br /><br /><br /><br />しか～し!<br /><br />今の日本は、洋々たる未来を与えられた大学生が、1グラムの信念も情熱も夢も持とーとせず、どーせ日本で自殺するなら異教徒と共にテロを起こして死にたいなどと、まったくのタワゴトを堂々と語る。<br /><br />まさに、下衆の極み！<br /><br />そーゆータワケは「マッサン」を見ろ!<br /><br />それでも、男の熱情と女の愛情にココロが動かなかったら、パスポートを焼き捨て日本の片隅で小さな人生を送れ！<br /><br />下衆の極みは、日本から一歩も出るな！<br /><br />愛は世界を丸くするけど、憎悪は世界を歪めるだけなのだ。<br /><br /><br /><br />※スティーヴン・キング著の「11/22/63」プレゼントに、予想以上に多くの応募をいただき、本当にありがとうございました。厳正なる抽選の結果、岐阜県の片岡佐紀子ちゃんに「11/22/63」をお贈りします。<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

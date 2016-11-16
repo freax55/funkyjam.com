@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="8"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Staff Blog（スタッフブログ）</div>
+						<div class="section">
+{assign var="blog_id" value="8"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/11/18 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">渋谷センター街ビルボード</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/756.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/756.jpg">
+			</div>
+{/if}
+			<p class="text">本日渋谷にてラヂオ収録のため、<br />センター街のビルボードをチェックしに行ってみました☆<br /> <br />素敵です!!!<br /> <br />渋谷スクランブル交差点に立つと<br />もれなく久保田さんに<br />双眼鏡で覗かれちゃいます☆<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/11/16 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">差し入れ事件</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/753.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/753.jpg">
+			</div>
+{/if}
+			<p class="text">先日、久保田さんのいるスタジオへ近くに来たからと、差し入れに美味しいパンを持って訪れた浦嶋さん。<br /> <br />ところが…タッチの差で久保田さんはスタジオを後にΣ(￣◇￣*<br />差し入れのパンはお腹を空かせたスタッフで、ありがたく、おいしく、いただきました☆ありがとうございました浦嶋さん(笑)<br /> <br />写真は「いっとくやんかい！自腹かい！！」での一コマ。ここは亜熱帯!?<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/11/16 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">BEAT CONNECTION Rehearsal 2</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/751.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/751.jpg">
+			</div>
+{/if}
+			<p class="text">DJ INOさんと打ち合わせ中の久保田さんです☆<br /> <br />アフロが潰れないように<br />ヘッドフォンを使うのです！笑<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/11/15 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">ツイッター</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/748.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/748.jpg">
+			</div>
+{/if}
+			<p class="text">先程のツイッターの件ですが、<br />「検索」しちゃうと見つからないですね。汗<br /> <br />「友達をさがす」ってところから<br />『funky_manager』と入れてみてください！<br /> <br />明日からがっつり頑張ります！<br /> <br /> <br />画像は一昨日アップしそびれてしまった<br />BEAT CONNECTIONリハーサル風景です☆<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/11/15 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">BEAT CONNECTION Rehearsal</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/747.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/747.jpg">
+			</div>
+{/if}
+			<p class="text">本日スタジオにてBEAT CONNECTIONのリハーサルを行っております！<br /> <br />あの曲にあの曲に…あの曲もやっちゃうの!?<br />と豪華セットリストとなっております☆<br /> <br />皆様お楽しみにーっ♪<br /> <br /> <br /> <br />そしてワタクシ。<br />久保田利伸スタッフツイッター始めることになりました☆<br />リハーサルの様子などを「なう！」な感じでお届けしたいと思っております。<br />すでにツイッターしている方も、<br />これからツイッターする方も、<br />皆様フォローミー!!!<br />でございますm(_ _)m<br />『funky_manager』で検索してみてください☆<br />よろしくお願いします(^_^)<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/10/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/10/27 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">仕事しますか</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/730.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/730.jpg">
+			</div>
+{/if}
+			<p class="text">今日はスタジオでレコーディングな久保田さんです。<br /> <br />普段のレコーディングと若干スタッフのメンバーが違うこともあり、歌い始めるまでいろんな話題で盛り上がっちゃってます。<br /> <br />「さ、仕事しますか。。」<br /> <br />というキーワードが登場するまで、思う存分に話し倒したのでした。<br /> <br />いまはようやくブースの中です（笑）<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/10/26 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">CM用コメント撮影</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/728.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/728.jpg">
+			</div>
+{/if}
+			<p class="text">今日はいつもレコーディングで使っているスタジオで、「BEAT CONNECTION 2010」のCM用コメント撮影を行いました。<br /> <br />一言コメントですが久保田さんらしくFunkにキメていました。<br /> <br />ライブはもちろんCMもお見逃しなく！<br />お楽しみに☆<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/10/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/10/23 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">友情出演</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/723.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/723.jpg">
+			</div>
+{/if}
+			<p class="text">昨夜は濱田"peco"美和子さんのライブにゲスト出演してきました(^-^)/<br /> <br />ドドド迫力な浦嶋さんと濱田さんのボーカルはスゴイの一言！まさにザ・ボーカリストのお二人ならではのステージで、客席を見渡すと口が開いたままのお客さんがチラホラ(笑)<br /> <br />この日は濱田さんの誕生日ということもあり、浦嶋さんのアカペラによるハッピーバースデー♪カッコ良すぎて痺れました(≧▽≦)<br />他にもいろんな演出がなされていて、あったかいライブでした☆<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/10/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/10/21 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">VOICE取材</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/721.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/721.jpg">
+			</div>
+{/if}
+			<p class="text">今日は打ち合わせのあと、今年最後のVOICE取材に突入しております。<br /> <br />ゲストに、◯◯さんをお迎えして大変盛り上がってます！<br /> <br />11/25発行です。お楽しみに♪<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/10/13"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2010/10/13 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">あれ、これ</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/710.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/710.jpg">
+			</div>
+{/if}
+			<p class="text">久保田さんのレコーディングでいつもお世話になっている、エンジニアの川本ゴン太さんは、とても空気を読める方で、久保田さんの要望をいち早くキャッチします。<br /> <br />久保田さんが、<br />「じゃぁ、あれをこーして、これをあーしといてくれませんか。。」<br /> <br />って言うだけで、<br />ゴ「え～と～・・・、あ、はい。」<br />ってな感じで対応してくれます。<br /> <br />たまになんで分かるんだろう？と不思議に思っちゃいますが、とても助かっちゃいます。<br />素晴らしいエンジニアさんです。<br /></p>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2935.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/11/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+			<img src="/premium/images/common/icon_kubota.gif" />
+
+
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/11/post-241.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						偶然！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2935.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2935.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2933.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/11/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+
+
+			<img src="/premium/images/common/icon_mori.gif" />
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/11/post-82.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						違うんかい！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2933.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2933.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/11/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+
+			<img src="/premium/images/common/icon_urashima.gif" />
+
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/11/post-61.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						よ～く見ると!!!
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2919.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+
+
+			<img src="/premium/images/common/icon_mori.gif" />
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/10/the.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						THE 広島城!!!
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2919.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2919.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2917.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+			<img src="/premium/images/common/icon_kubota.gif" />
+
+
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/10/post-240.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						からあげが好き
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2917.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2917.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2903.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+
+
+			<img src="/premium/images/common/icon_mori.gif" />
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/mori/2016/10/post-81.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						打合せにて
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2903.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/mori/images/2903.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2902.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+			<img src="/premium/images/common/icon_kubota.gif" />
+
+
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/10/mens.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						MENS
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2902.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2902.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+
+
+
+			<img src="/premium/images/common/icon_urashima.gif" />
+
+
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/10/post-60.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						森の音楽会＠大阪にて
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+	</ul>
+</div>
+
+								</div>
+								<div class="pagenate">
+									<ul clas="test">
+{assign var=list value='<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_34.html" class="link_page">34</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_35.html" class="link_page">35</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_36.html" class="link_page">36</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_37.html" class="link_page">37</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_38.html" class="link_page">38</a></li>&nbsp;
+<li><span class="current_page">39</span></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_40.html" class="link_page">40</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_41.html" class="link_page">41</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_42.html" class="link_page">42</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_43.html" class="link_page">43</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/index_44.html" class="link_page">44</a></li>'}
+{$list|replace:"m.funkyjam":"www.funkyjam"}
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

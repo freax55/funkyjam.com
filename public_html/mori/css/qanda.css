@@ -1,0 +1,142 @@
+#contents {
+  color: #333;
+}
+#contents .titleType1 {
+  margin-bottom: 60px;
+}
+#contents .qanda {
+  width: 840px;
+  margin: 0 auto;
+}
+#contents .qanda .wrap {
+  margin-top: 80px;
+}
+#contents .qanda .wrap:first-child {
+  margin-top: 0;
+}
+#contents .qanda .wrap h3 {
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-size: 3.6rem;
+}
+#contents .qanda .wrap ul li {
+  border-bottom: 3px solid #333;
+}
+#contents .qanda .wrap ul li:first-child {
+  border-top: 3px solid #333;
+}
+#contents .qanda .wrap .q, #contents .qanda .wrap .a {
+  display: table;
+  width: 100%;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contents .qanda .wrap .q .mark, #contents .qanda .wrap .q .text, #contents .qanda .wrap .a .mark, #contents .qanda .wrap .a .text {
+  display: table-cell;
+}
+#contents .qanda .wrap .q .mark, #contents .qanda .wrap .a .mark {
+  padding-right: 30px;
+  font-size: 3.6rem;
+  vertical-align: middle;
+}
+#contents .qanda .wrap .q .text, #contents .qanda .wrap .a .text {
+  width: 100%;
+  font-size: 3rem;
+  vertical-align: middle;
+}
+#contents .qanda .wrap .q {
+  position: relative;
+  padding: 20px 120px 20px 15px;
+  cursor: pointer;
+}
+#contents .qanda .wrap .q:hover .text {
+  text-decoration: underline;
+}
+#contents .qanda .wrap .q:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  margin-top: -15px;
+  border-top: 5px solid #ccc;
+  border-left: 5px solid #ccc;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+#contents .qanda .wrap .q.open:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#contents .qanda .wrap .a {
+  display: none;
+  padding: 0 120px 40px 15px;
+  color: #077841;
+}
+#contents .qanda .wrap .a .mark {
+  vertical-align: top;
+}
+#contents .qanda .contact {
+  margin-top: 80px;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 899px) {
+  #contents {
+    color: #333;
+  }
+  #contents .titleType1 {
+    margin-bottom: 30px;
+  }
+  #contents .qanda {
+    width: 93.33333%;
+  }
+  #contents .qanda .wrap {
+    margin-top: 40px;
+  }
+  #contents .qanda .wrap h3 {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 1.6rem;
+  }
+  #contents .qanda .wrap ul li {
+    border-bottom: 2px solid #333;
+  }
+  #contents .qanda .wrap ul li:first-child {
+    border-top: 2px solid #333;
+  }
+  #contents .qanda .wrap .q .mark, #contents .qanda .wrap .a .mark {
+    padding-right: 15px;
+    font-size: 1.6rem;
+  }
+  #contents .qanda .wrap .q .text, #contents .qanda .wrap .a .text {
+    font-size: 1.4rem;
+  }
+  #contents .qanda .wrap .q {
+    padding: 20px 60px 20px 7.5px;
+  }
+  #contents .qanda .wrap .q:after {
+    right: 12.5px;
+    width: 7.5px;
+    height: 7.5px;
+    margin-top: -7.5px;
+    border-top: 2.5px solid #ccc;
+    border-left: 2.5px solid #ccc;
+  }
+  #contents .qanda .wrap .a {
+    padding: 0 60px 20px 7.5px;
+  }
+  #contents .qanda .contact {
+    margin-top: 40px;
+    font-size: 1.4rem;
+  }
+}

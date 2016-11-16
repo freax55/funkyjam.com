@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>会員登録 確認 - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/entry.css">
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+				<h2 class="titleType1">会員登録</h2>
+				<ul class="progress">
+					<li>入力</li>
+					<li class="current">確認</li>
+					<li>完了</li>
+				</ul>
+				<div class="inputWrap">
+					<form action="./" method="post" name="entryForm">
+						{if $payment=="コンビニ決済"}
+						<div class="wrap1">
+							<p>コンビニ選択</p>
+							{if $errors.convenience_store_no}<p class="error">※{$errors.convenience_store_no|escape}</p>{/if}
+							{foreach from=$units.convenience_stores item=v key=k name=n}
+								<div class="checkType1"><input name="convenience_store_no" type="radio" value="{$k}" {if $convenience_sore_no == $k} checked="checked"{/if} id="convenience_sore_no{$k}" /><label for="convenience_sore_no{$k}">&nbsp;&nbsp;{$v.name}</label><br /></div>
+							{/foreach}
+						</div>
+						{elseif $payment=="カード決済（ペイジェント）"}
+						<div class="wrap4">
+							<p>カード番号を入力</p>
+							{if $errors.card_no}<p class="error">※{$errors.card_no|escape}</p>{/if}
+							<div><input type="text" istyle="4" MODE="numeric" name="card_no01" value="{$card_no01|escape}" size="4" maxlength="4"{if $errors.card_no} class="error"{/if} /><span class="text">ー</span><input type="text" istyle="4" MODE="numeric" name="card_no02" value="{$card_no02|escape}" size="4" maxlength="4"{if $errors.card_no} class="error"{/if} /><span class="text">ー</span><input type="text" istyle="4" MODE="numeric" name="card_no03" value="{$card_no03|escape}" size="4" maxlength="4"{if $errors.card_no} class="error"{/if} /><span class="text">ー</span><input type="text" istyle="4" MODE="numeric" name="card_no04" value="{$card_no04|escape}" size="4" maxlength="4"{if $errors.card_no} class="error"{/if} /></div>
+						</div>
+						<div class="wrap3">
+							<p>有効期限</p>
+							{if $errors.valid_term}<p class="error">※{$errors.valid_term|escape}</p>{/if}
+							{if $errors.birth}<p class="error">{$errors.birth}</p>{/if}
+							<div class="wrap">
+								<div class="year">
+									<div class="selectType1{if $errors.valid_term} error{/if}">
+										<select name="valid_term02">
+											<option value="">選択する</option>
+											{foreach from=$valid_term_year item=year}
+											<option value="{$year}"{if $valid_term02 == $year} selected="selected"{/if}>{$year}</option>
+											{/foreach}
+										</select>
+									</div><span>年</span>
+								</div>
+								<div class="md">
+									<div>
+										<div class="selectType1{if $errors.valid_term} error{/if}">
+											<select name="valid_term01">
+											<option value="">選択する</option>
+											{foreach from=$valid_term_month item=month}
+											<option value="{$month}"{if $valid_term01 == $month} selected="selected"{/if}>{$month}</option>
+											{/foreach}
+											</select>
+										</div><span>月</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						{/if}
+						<div class="btnType1"><a class="submit" href="javascript:void(0)"><span>登録</span></a></div>
+						<div class="btnType2"><a href="./index.php?action=confirm"><span>入力内容再確認</span></a></div>
+						<input type="hidden" name="action" value="process" />
+					</form>
+				</div>
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+<script src="/mori/js/entry.js"></script>
+</body>
+</html>

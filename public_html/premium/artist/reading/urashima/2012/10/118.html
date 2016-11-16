@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第118回 「今だから言える話」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/10/12 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第118回 「今だから言える話」</p>
+		</div>
+		<div class="texts">
+			<div class="text">ワタル自身がやっていたラーメン屋は全面禁煙だったけれど、トイレに入るとタバコの臭いが残っていることが度々あった。<br />当然、お客さんの仕業だと考え、効果は期待できないと思いつつも、禁煙のサインを作ろーとしていた。<br />そんなある日、トイレに吸い殻が残っていた。<br />それは唯一の女子従業員、ミザリーが吸っている細身のタバコだった。<br />ミザリーは可愛いルックスで、お客さんには人気があったが、ソレとコレとは別問題だ。<br />トイレでタバコを吸うことよりも、なによりオレは火事を恐れた。<br />吸い殻を証拠に、彼女個人をガツンと叱ることも出来たけれど、男子従業員も一緒に注意することにした。<br /><br />「最近、トイレでタバコを吸っているお客さんがいるみたいなんだよ。トイレにタバコの臭いが残るのも困るけど、それより心配なのは火事だから、タバコを吸っているお客さんを見かけたら、必ず注意してちょーだい」<br />それが、オレからミザリーへの最後の気遣いだった。<br /><br />実はミザリー、色々と問題のある女子で、付き合っていた男子にフラれた時は、なんと、営業中の厨房で号泣したり、そのまま店の２階に泊まり込んだり、茹ですぎた麺をお客さんの目の前でゴミ箱にチカライッパイ投げ捨てたり…今は亡き初代店長もホトホト手を焼いていた。<br />一度、ミザリーに「どうしてラーメン屋の仕事をしたいの?」と訊いたら、「とにかくラーメン屋で働きたいんです」とゆー返事しかなく、激しく失望した。<br />結局、ミザリーには辞めてもらったが、最後までジコチューな性格を反省する様子はなかった。<br />その後の彼女は某ラーメン屋の店長に抜擢されるも、わずか数ヶ月でガラガラ閉店の憂き目に。<br />噂では今もラーメン屋で働いているらしーが、ミザリーの笑顔とココロのギャップに、閉口している人達が多いに違いない。<br /><br />30年以上も前、湘南で悪事をはたらいていた頃、茅ヶ崎駅前の「都亭」(みやこてい)とゆーラーメン屋へ通った。<br />狭い店内に家族とおぼしき4名…腰の曲がったオバーチャンと背中の丸まったオジーチャン、顔の半分をマスクで隠したオニーチャンと、フツーのオネーチャンがレギュラー陣で、ワタル自身は密かに「アダムス・ファミリー」と敬愛していた。<br />ここのラーメンが抜群にウマかった。<br />ワンタン麺も、夏の冷やし中華も絶品だった。<br />鶏ガラをメインに煮出したスープは、まさに庶民派ラーメンの原点&amp;頂点で、チャーシューを煮た正油ダレの旨味がじんわり広がり、すするほどに食を誘った。<br />低い声で「いらっしゃい」と「ありがとう」しかなかったけれど、いつも行列ができる茅ヶ崎の名店で、オレが大好きなラーメンのすべては、都亭が教えてくれたのだった。<br /><br />厚切りチャーシューは柔らかすぎず、メンマはスープの邪魔をせず、ノリは旨味をたっぷり吸い、ナルトは彩を放ち、コシのある縮れ細麺に香るカン水…思い出せば、そこには無知な20代の自分が、永遠とも思える未来を夢想しているのだ。<br />そして都亭のラーメンをムショーに食べたくなるが、10年ほど前に消えた味に再会することはない。<br />散々手こずらされたミザリーだけど、都亭みたいなラーメン屋に出逢い、ラーメン屋で働く以前の自分を思い返してもらえたら、彼女の笑顔とココロがひとつになるかもしれないと願うのだ。<br />ラーメン屋は辞めたけれど、今もラーメンを愛して止まないワタル自身なのである。<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

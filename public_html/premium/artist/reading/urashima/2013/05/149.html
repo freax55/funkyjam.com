@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第149回 「あまちゃん」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/05/17"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/05/17 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第149回 「あまちゃん」</p>
+		</div>
+		<div class="texts">
+			<div class="text">今暮らしている板橋区は、昔からTV電波の受信状況が悪いみたいで、マンションやアパートなど、1棟まるごとケーブルテレビ(CATV)に加入しているケースが多い。<br />ワタル自身のアパートもボロいくせにCATV完備で、室内のコネクターにモニターを接続するだけで、鮮明な地デジ映像が見られる。<br />先日、その受信状況の定期診断とかで、CATVスタッフがやって来た。<br />チェックが済み問題なしとなったところで、おもむろにパンフレットを広げ、専用の受信機を設置すれば地デジの他にBSだとかCSだとかナンだとかカンだとかも見られるよーになり、大家さんが管理費を払っているので、ワタルさんなら毎月3620円ポッキリです、などと言いはじめた。<br />スタッフのセールストークを聞きながら、そんなにTVばっか見る時間ねぇーし、カネもねぇーよと断ろーとした時、この受信機にはHDDレコーダーが内蔵されていて、番組表から一発録画予約が出来ますと言われた。<br />さらに、Wi-Fiのルーターもセットになっていますとも言われた。<br />仕事柄、Wi-Fi環境は嬉しいが、もっと嬉しいのはHDDレコーダーだった。<br />HDDレコーダーと聞いた瞬間、オレの頭を「あまちゃん」が横切り、急停止した。<br />そーだ。そーなのだよ。<br />ワタル人生史上はじめて、NHK朝の連続テレビ小説にハマってしまったのだよ。<br /><br />じぇじぇ!<br /><br />ベテラン役者陣のサポートで、あまちゃん役の能年玲奈ちゃんの初々しい笑顔がオジサンゴコロをキュンキュンさせるのだ。<br />あまちゃんのお母さん役を演じているキョンキョン(小泉今日子ちゃん)の、ミステリアスなんだけど想像がついてしまう過去も、今後の展開がますます楽しみだし、祖母役の宮本信子さんの存在感が朝の15分を安心させてくれる。<br />とは言っても、仕事の都合でオンタイムで見られるチャンスはあまりなく、ファンキー・ジャムでは昼の再放送を見たり、もっぱら日曜のダイジェストで乾きを癒している次第。<br /><br />しか～し!<br /><br />HDDレコーダーがあれば、エブリデイ、エブリタイム、あまちゃんタイム実現可能!<br />うぅぅぅぅぅ、どーしよー毎月3620円…と気づけば、契約書にサインをし、3時間後のワタルの小部屋はWi-Fi電波が飛び交い、HDDレコーダー内蔵のCATV受信機が鎮座していた。<br />まさか、この部屋がこれほどカンファタブルになるとは…バチが当たらないかしら…。<br />でもまあ、今はとにかく、あまちゃんのために毎月3620円を深く考えないコトにして、明日も元気に働こーと思っているのだ。<br />さて、ここで珍しく次回の予告。<br />次回は、ファンキー・ジャムのヤマサキと、イケメン木工職人のお見合いドキュメントを克明にリポートするので、どーぞお楽しみに!<br />んじゃ、また来週ね!</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

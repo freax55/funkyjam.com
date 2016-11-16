@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>会員情報変更 入力 - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/entry.css">
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+				<h2 class="titleType1">会員情報変更</h2>
+{if $param == 'login'}
+				<ul class="progress">
+					<li class="current">入力</li>
+					<li>確認</li>
+					<li>完了</li>
+				</ul>
+				<div class="inputWrap">
+					<form action="./" method="post" name="entryForm">
+						<div class="wrap1">
+							<p>お名前<span>お名前（カナ、ローマ字含む）は、ご自身での変更は基本的に不可となります。変更があった場合はお問い合わせ下さい。</span></p>
+							<div>{$login_user_last_name|escape}&nbsp;&nbsp;{$login_user_first_name|escape}</div>
+						</div>
+						<div class="wrap1">
+							<p>お名前カナ</p>
+							<div>{$login_user_last_kana|escape}&nbsp;&nbsp;{$login_user_first_kana|escape}</div>
+						</div>
+						<div class="wrap1">
+							<p>お名前ローマ字</p>
+							<div>{$login_user_last_roman|escape}&nbsp;&nbsp;{$login_user_first_roman|escape}</div>
+						</div>
+						<div class="wrap1 zip">
+							<p>郵便番号<span>（半角数字）</span></p>
+							{if $errors.zip}<p class="error">※{$errors.zip}</p>{/if}
+							<div><input type="text" name="zip1" value="{$zip1|escape}"{if $errors.zip} class="error"{/if} maxlength="3" ><span class="txt">　ー　</span><input type="text" name="zip2" value="{$zip2|escape}"{if $errors.zip} class="error"{/if} maxlength="4" ></div>
+						</div>
+						<div class="wrap1">
+							<p>都道府県</p>
+							{if $errors.address1}<p class="error">{$errors.address1}</p>{/if}
+							<div>
+								<div class="selectType1{if $errors.address1} error{/if}">
+									<select name="address1" class="select" >
+										<option value="">選択する</option>
+										<option value="北海道"{if $address1 == '北海道'} selected="selected"{/if}>北海道</option>
+										<option value="青森県"{if $address1 == '青森県'} selected="selected"{/if}>青森県</option>
+										<option value="岩手県"{if $address1 == '岩手県'} selected="selected"{/if}>岩手県</option>
+										<option value="宮城県"{if $address1 == '宮城県'} selected="selected"{/if}>宮城県</option>
+										<option value="秋田県"{if $address1 == '秋田県'} selected="selected"{/if}>秋田県</option>
+										<option value="山形県"{if $address1 == '山形県'} selected="selected"{/if}>山形県</option>
+										<option value="福島県"{if $address1 == '福島県'} selected="selected"{/if}>福島県</option>
+										<option value="茨城県"{if $address1 == '茨城県'} selected="selected"{/if}>茨城県</option>
+										<option value="栃木県"{if $address1 == '栃木県'} selected="selected"{/if}>栃木県</option>
+										<option value="群馬県"{if $address1 == '群馬県'} selected="selected"{/if}>群馬県</option>
+										<option value="埼玉県"{if $address1 == '埼玉県'} selected="selected"{/if}>埼玉県</option>
+										<option value="千葉県"{if $address1 == '千葉県'} selected="selected"{/if}>千葉県</option>
+										<option value="東京都"{if $address1 == '東京都'} selected="selected"{/if}>東京都</option>
+										<option value="神奈川県"{if $address1 == '神奈川県'} selected="selected"{/if}>神奈川県</option>
+										<option value="新潟県"{if $address1 == '新潟県'} selected="selected"{/if}>新潟県</option>
+										<option value="富山県"{if $address1 == '富山県'} selected="selected"{/if}>富山県</option>
+										<option value="石川県"{if $address1 == '石川県'} selected="selected"{/if}>石川県</option>
+										<option value="福井県"{if $address1 == '福井県'} selected="selected"{/if}>福井県</option>
+										<option value="山梨県"{if $address1 == '山梨県'} selected="selected"{/if}>山梨県</option>
+										<option value="長野県"{if $address1 == '長野県'} selected="selected"{/if}>長野県</option>
+										<option value="岐阜県"{if $address1 == '岐阜県'} selected="selected"{/if}>岐阜県</option>
+										<option value="静岡県"{if $address1 == '静岡県'} selected="selected"{/if}>静岡県</option>
+										<option value="愛知県"{if $address1 == '愛知県'} selected="selected"{/if}>愛知県</option>
+										<option value="三重県"{if $address1 == '三重県'} selected="selected"{/if}>三重県</option>
+										<option value="滋賀県"{if $address1 == '滋賀県'} selected="selected"{/if}>滋賀県</option>
+										<option value="京都府"{if $address1 == '京都府'} selected="selected"{/if}>京都府</option>
+										<option value="大阪府"{if $address1 == '大阪府'} selected="selected"{/if}>大阪府</option>
+										<option value="兵庫県"{if $address1 == '兵庫県'} selected="selected"{/if}>兵庫県</option>
+										<option value="奈良県"{if $address1 == '奈良県'} selected="selected"{/if}>奈良県</option>
+										<option value="和歌山県"{if $address1 == '和歌山県'} selected="selected"{/if}>和歌山県</option>
+										<option value="鳥取県"{if $address1 == '鳥取県'} selected="selected"{/if}>鳥取県</option>
+										<option value="島根県"{if $address1 == '島根県'} selected="selected"{/if}>島根県</option>
+										<option value="岡山県"{if $address1 == '岡山県'} selected="selected"{/if}>岡山県</option>
+										<option value="広島県"{if $address1 == '広島県'} selected="selected"{/if}>広島県</option>
+										<option value="山口県"{if $address1 == '山口県'} selected="selected"{/if}>山口県</option>
+										<option value="徳島県"{if $address1 == '徳島県'} selected="selected"{/if}>徳島県</option>
+										<option value="香川県"{if $address1 == '香川県'} selected="selected"{/if}>香川県</option>
+										<option value="愛媛県"{if $address1 == '愛媛県'} selected="selected"{/if}>愛媛県</option>
+										<option value="高知県"{if $address1 == '高知県'} selected="selected"{/if}>高知県</option>
+										<option value="福岡県"{if $address1 == '福岡県'} selected="selected"{/if}>福岡県</option>
+										<option value="佐賀県"{if $address1 == '佐賀県'} selected="selected"{/if}>佐賀県</option>
+										<option value="長崎県"{if $address1 == '長崎県'} selected="selected"{/if}>長崎県</option>
+										<option value="熊本県"{if $address1 == '熊本県'} selected="selected"{/if}>熊本県</option>
+										<option value="大分県"{if $address1 == '大分県'} selected="selected"{/if}>大分県</option>
+										<option value="宮崎県"{if $address1 == '宮崎県'} selected="selected"{/if}>宮崎県</option>
+										<option value="鹿児島県"{if $address1 == '鹿児島県'} selected="selected"{/if}>鹿児島県</option>
+										<option value="沖縄県"{if $address1 == '沖縄県'} selected="selected"{/if}>沖縄県</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="wrap1">
+							<p>ご住所</p>
+							{if $errors.address2}<p class="error">{$errors.address2}</p>{/if}
+							<div><input type="text" name="address2" value="{$address2|escape}"{if $errors.address2} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>アパート・マンション名,号室<span>建物名・部屋番号まで正確にご入力下さい。</span></p>
+							{if $errors.address3}<p class="error">{$errors.address3}</p>{/if}
+							<div><input type="text" name="address3" value="{$address3|escape}"{if $errors.address3} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>電話番号<span>（半角数字）</span></p>
+							{if $errors.tel}<p class="error">※{$errors.tel}</p>{/if}
+							<div><input type="text" name="tel" value="{$tel|escape}"{if $errors.tel} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>メールアドレス<span>（半角英字）</span></p>
+							{if $errors.mail}<p class="error">※{$errors.mail|escape}</p>{/if}
+							<div><input type="text" name="mail" value="{$mail|escape}"{if $errors.mail} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>確認用メールアドレス<span>（半角英字）</span></p>
+							<div><input type="text" name="confirm" value="{$confirm|escape}" ></div>
+						</div>
+						<div class="wrap1">
+							<p>性別</p>
+							<div>{$login_user_sex|escape}</div>
+						</div>
+						<div class="wrap1">
+						<p>生年月日</p>
+							<div>{$login_user_birth_year|escape}年{$login_user_birth_month|escape}月{$login_user_birth_day|escape}日</div>
+						</div>
+						<div class="wrap1">
+							<p>パスワード<span>半角英数字8ケタでご入力ください。&nbsp;&nbsp;例：9999aaaa</span></p>
+							{if $errors.password}<p class="error">※{$errors.password|escape}</p>{/if}
+							<div><input type="password" name="password" value="{$password|escape}"{if $errors.password} class="error"{/if} maxlength="8" ></div>
+						</div>
+						<div class="policy">
+							<p><a href="/mori/policy/">個人情報保護方針</a>および<a href="/mori/promise/">利用規約</a></p>
+							{if $errors.check}<p class="error">※{$errors.check}</p>{/if}
+							<input type="hidden" value="" name="check">
+							<div class="checkType1"><input type="checkbox" name="check" value="1" id="agree"{if $check == '1'} checked="checked"{/if}><label for="agree">同意する</label></div>
+						</div>
+						<div class="btnType1"><a href="javascript:void(0)" onclick="document.entryForm.submit(); return false;"><span>確認</span></a></div>
+						<input type="hidden" name="action" value="confirm" />
+						<input type="hidden" name="check_mail" value="{$login_user_mail}" />
+					</form>
+				</div>
+{else}
+				<div class="messageBlock">
+					<div class="inner">
+						<p class="error">このコンテンツをご覧になるには<br>有料会員登録が必要となります</p>
+						<p class="price">入会金 ￥500（税込）、 年会費 ￥3,600（税込）</p>
+						<div class="btnWrap">
+							<div>
+								<p>会員登録がお済みでない方はこちら</p>
+								<div class="btnType1"><a href="/mori/entry/"><span>会員登録する</span></a></div>
+							</div>
+							<div>
+								<p>会員登録がお済みの方はこちら</p>
+								<div class="btnType4"><a href="/mori/login/"><span>ログイン</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+{/if}
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+<script src="/mori/js/entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>会員データ インポート - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../admin.css" rel="stylesheet" type="text/css">
+{literal}
+<script type="text/javascript">
+<!--
+function confirmImport() {
+	if (confirm('現在登録されている会員データはすべて削除され、新しいデータが登録されますがよろしいですか？')) {
+		return true;
+	}
+	
+	return false;
+}
+//-->
+</script>
+{/literal}
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; <a href="index.php">会員管理</a> &gt; </p>
+<form action="index.php" method="post" enctype="multipart/form-data" name="new" onSubmit="return confirmImport();">
+  <table id="list">
+    <tr>
+      <th width="120">会員データ</th>
+      <td>
+        {if $errors.file}<span class="error">※{$errors.file|escape}</span><br />{/if}
+        <input name="file" type="file" />
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="インポートする" />    
+    <input type="hidden" name="action" value="add" />
+  </p>
+</form>
+</body>
+</html>

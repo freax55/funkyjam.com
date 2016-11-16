@@ -1,0 +1,261 @@
+@charset "shift_jis";
+
+#contents .boxS:after,
+#contents .boxSInner:after,
+#contents .boxS .detail:after,
+#contents .boxL:after,
+#contents .boxLInner:after,
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+/* clearfix IE6 and IE7
+------------------------------------------------------------------------------*/
+#contents .boxS,
+#contents .boxSInner,
+#contents .boxS .detail,
+#contents .boxL,
+#contents .boxLInner,
+.clearfix {
+	/zoom:1;
+}
+
+
+#contents h2,
+#contents h3,
+#contents h4,
+#contents .read,
+#contents .eyecatch,
+#contents .boxTop#ittoku .text,
+#contents .discription,
+#contents .qr {
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	vertical-align:bottom;
+	text-indent:-9999px;
+	text-decoration:none;
+}
+
+
+/* contents
+------------------------------------------------------------------------------ */
+#contents #main #navi li#navi05 a {
+    background-position: left bottom;
+}
+#contents h2.pageTitle {
+	width:616px;
+	height:35px;
+	background-image:url(../image/urashima/mobile/mobiletitle.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#contents .read {
+	width:611px;
+	height:31px;
+	padding-bottom:10px;
+	background-image:url(../image/urashima/mobile/mobile_read.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+#contents h4 {
+	width:624px;
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#contents h4.allImage {
+	height:83px;
+	background-image:url(../image/urashima/mobile/h4_01.gif);
+}
+#contents h3.allDetail {
+	width:384px;
+	height:25px;
+	margin:0 auto;
+	padding-bottom:15px;
+	background-image:url(../image/urashima/mobile/more.gif);
+	background-position:inherit;
+	background-repeat:no-repeat;
+}
+#contents h4 {
+	width:255px;
+	height:23px;
+	padding-bottom:13px;
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#contents #ittoku h4 {
+	width:626px;
+	height:98px;
+	padding:0;
+	background-image:url(../image/urashima/mobile/h4_essay.jpg);
+}
+#contents #staff h4 {
+	background-image:url(../image/urashima/mobile/h4_staff.gif);
+}
+#contents #off h4 {
+	background-image:url(../image/urashima/mobile/h4_off.gif);
+}
+#contents #wall h4 {
+	background-image:url(../image/urashima/mobile/h4_wall.gif);
+}
+#contents #emoji h4 {
+	background-image:url(../image/urashima/mobile/h4_emoji.gif);
+}
+#contents #essay h4 {
+	width:595px;
+	height:45px;
+	padding-bottom:0;
+	background-image:url(../image/urashima/mobile/h4_essay.gif);
+}
+#contents #wataru h4 {
+	width:595px;
+	height:45px;
+	padding-bottom:0;
+	background-image:url(../image/urashima/mobile/h4_wataru.gif);
+}
+#contents #voice h4 {
+	width:579px;
+	height:45px;
+	padding-bottom:0;
+	background-image:url(../image/urashima/mobile/h4_voice.gif);
+}
+
+/* eyecatch */
+#contents .eyecatch {
+	width:624px;
+	height:428px;
+	padding-bottom:21px;
+	background-image:url(../image/urashima/mobile/eyecatch.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+/* boxTop */
+#contents .boxTop#ittoku {
+	padding-bottom:14px;
+}
+#contents .boxTop#ittoku .text {
+	width:626px;
+	height:295px;
+	padding:0;
+}
+#contents .boxTop#ittoku .text {
+	background-image:url(../image/urashima/mobile/text_essay.jpg);
+}
+
+/* boxL */
+#contents .boxL {
+	width:625px;
+	padding-bottom:21px;
+	background-image:url(../image/urashima/mobile/box_l_bottom.gif);
+	background-position:left bottom;
+	background-repeat:no-repeat;
+	color:#000;
+}
+#contents .boxL .boxLInner {
+	width:625px;
+	background-image:url(../image/urashima/mobile/box_l_body.gif);
+	background-position:left top;
+	background-repeat:repeat-y;
+}
+/* boxS */
+#contents .boxS {
+	width:579px;
+	margin:0 auto;
+	margin-bottom:16px;
+	padding-bottom:17px;
+	background-image:url(../image/urashima/mobile/box_s_bottom.gif);
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+#contents .boxS .boxSWrapp {
+	background-image:url(../image/urashima/mobile/box_s_top.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:12px;
+}
+#contents .boxS .boxSInner {
+	width:579px;
+	background-image:url(../image/urashima/mobile/box_s_body.gif);
+	background-position:left top;
+	background-repeat:repeat-y;
+}
+
+#contents .boxS .detail {
+	float:left;
+	width:260px;
+	padding:0 11px;
+	margin-right:10px;
+}
+#contents .boxS .detail#off,
+#contents .boxS .detail#emoji {
+	margin-right:0;
+}
+#contents .boxS .detail .image {
+	float:left;
+	width:101px;
+}
+#contents .boxS .detail .text {
+	float:right;
+	width:154px;
+}
+
+
+/* boxM */
+#contents .boxM {
+	width:579px;
+	margin:0 auto;
+	margin-bottom:16px;
+	padding-bottom:12px;
+	background-image:url(../image/urashima/mobile/box_m_bottom.gif);
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+#contents .boxM .boxMInner {
+	width:579px;
+	background-color:#FFF;
+}
+#contents .boxM .boxMInner table {
+	width:579px;
+	margin:0 auto;
+	border:1px solid #938259;
+	margin-top:13px;
+}
+#contents .boxM .boxMInner table th {
+	width:111px;
+	padding:1px;
+	border:1px solid #938259;
+	background-color:#F1E9DC;
+}
+#contents .boxM .boxMInner table td {
+	border:1px solid #938259;
+	padding:7px 10px;
+}
+#contents .boxM .detail .text {
+	padding-left:13px;
+}
+
+#contents .discription {
+	width:577px;
+	height:76px;
+	margin:0 auto;
+	background-image:url(../image/urashima/mobile/text_entry.gif);
+}
+#contents .qr {
+	width:577px;
+	height:156px;
+	margin:0 auto;
+	background-image:url(../image/urashima/mobile/img_qr.gif);
+}
+
+#contents strong {
+	color:#911A0B;
+}
+#contents strong.black {
+	color:#000;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第176回 「OPM」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/11/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/11/22 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第176回 「OPM」</p>
+		</div>
+		<div class="texts">
+			<div class="text">まーなぁ…1億ネコババして見つからなかったら、2億もダイジョブかもしんないって思うだろーね。<br /><br />んで、2億もバレなかったら3億…4億…で、意識の底辺じゃヤバイよヤバイよと思いつつも、砂の孤城のトリコになって、24億までポッケしちゃったんだろーな。<br /><br />長野県建設業厚生年金基金元事務局長・坂本芳信容疑者を擁護してるんじゃないよ。<br /><br />平々凡々に生きて来た公務員が、きっと女子にもモテなかったオジサンが、大金をバラ撒くと銀座のホステスにもチヤホヤされ、有名なサッカー選手とも知り合えたりして、もー完全に自動停止装置がブッ壊れた…そんな中年男の悲しいココロが、ワタル自身には手に取るよーに分かるのだよ。<br /><br />アメリカの金融界にはOPMって略語があり、略さないとOther People's Money。<br /><br />ヨースルに投資用に集めた他人のカネで、儲かればラッキーだし、損をしても自分のフトコロは痛まない…だって他人のカネなんだも～ん=OPMなのだ(~_~;)<br /><br />坂本容疑者の建設業厚生年金基金も、簡単にゆーと、労働者から預かったカネを運用し、基金維持のために利益を上げるシステムなのだ。<br /><br />多くの年金基金が破綻的状況に陥ってるのは、こーしたOPMの運用利益が上がってないからなんだよ。<br /><br />だから坂本容疑者だけじゃなく、彼1人に運用を任せた長野県のエライ人も、基金監査をする厚生労働省の役人も、み～んなOPMのココロだったのだ。<br /><br />じゃなきゃ、行方不明のカネが24億円にもなるまで、気づかないハズねーじゃんよ!<br /><br />ワタル自身なんて、出がけに240円が見つからないだけで、必死に探すからね。<br /><br />みんなだって、「あれ？ オツリで貰った240円、どこに入れたっけ？」ってなるでしょ?<br /><br />えっ？ ならない？ だって支払いはカードだから?<br /><br /><br /><br />えー、そーゆー人もいるだろーけど、カードの利用明細が間違ってたら気づくでしょ?　OPMじゃないからね。<br /><br />えっ? パパのカードを使ってるからOPM?<br /><br />そーゆー人は帰ってちょーだい。シッシッ！<br /><br />でね、ワタル自身的に、この横領報道で一番ガクゼンとしたのが、坂本容疑者が家族にナイショで豪遊してたってコトなんだよ。<br /><br />報道に間違いがなければ、坂本容疑者の奥さんは生活が苦しくて、パートの仕事をしてたらしーじゃん。<br /><br />なのに亭主は、24億散財してタイに逃げて愛人とキスして無一文で帰国して逮捕だよ。<br /><br />ナンにも知らずにパートしてた奥さん、どー受け止めりゃイイんだよ!?<br /><br />家族は巻き込みたくないってゆー、亭主の愛に感謝しろってか!?<br /><br />5年くらいじゃ24億円も1人で使い切れないってゆー意見もあるけど、そんなの使えるって!<br /><br />Between The Sheetsの女の子に、店を持たせたりマンション買ったり高級腕時計プレゼントしたりファーストクラスで海外旅行したりヤリタイホーダイしたら、簡単に24億円なんてなくなるっつーの！<br /><br /><br /><br />しか～し!<br /><br /><br /><br />そーは言っても、たとえば1日に10万ずつ使いつづけて1年で3650万円。24億円使い切るまで65年もかかるんだよ。フツーに生活してたら、老後の心配もせずに一生送れるジェジェジェ大変マルな金額だ。<br /><br />江戸っ子には「宵越しの銭は持たねぇ」なんて美学があるけど、カネを甘く見たら絶対にダメだからね！<br /><br />借金返済奮闘中のワタル自身の言葉だからリアルだぞッ!!<br /><br />な～んて書いてたら、酔っ払ったオジサンに中国美人がキスして、ATMからカネを引き出すって事件が上野で頻発し、1年余りで620件＝2億3千万円もの被害が出てるってニュースが入って来た。<br /><br /><br /><br />単純計算でキス1回が…なななんと37万円!<br /><br />ひぇぇぇぇ～!<br /><br /><br /><br />ホントにまったく男って、なんてアワレな生き物なんでしょーか…トホホ…&gt;_&lt;<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

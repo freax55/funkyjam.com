@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第46回 「大森社長がキレる!?」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/05/13"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/05/13 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第46回 「大森社長がキレる!?」</p>
+		</div>
+		<div class="texts">
+			<div class="text">5月25日発行予定の久保田利伸ファンクラブ会報の取材前日、ファンキー・ジャムでインタヴュー資料をまとめ終え「それじゃ明日、よろしくお願いします」と帰路についた。<br /><br />当初の予定ではいつものよーに取材することになっていたが、久保田のレコーディングや作詞の作業が押しに押して、急きょファンキー・ジャムのスタジオでインタヴューすることになったのだ。<br /><br />ラーメン屋をはじめて3年が経ち、デスク・ワークと厨房の両立も少しばかり要領を得たが、寄るトシナミには抗えず、取材の前は以前よりも気力体力の温存が重要になった。<br /><br /><br />その日、4月21日の夜は、大好きな天海祐希ちゃんの「BOSS」新シリーズ2話目もあるから、ワルイコトもしないで帰宅。<br /><br />風呂に入り、冷蔵庫からビールとツマミを搬出し、展示品につき特売3000円のリラックス・チェアでリラックス、「ハガネの女」初回2時間スペシャルあたりからTVタイムをスタートした。<br /><br /><br />ふと気がつくと、携帯電話の着信ランプが点滅している。<br /><br />確認するとファンキー・ジャムのムラヤマからメール。<br /><br />なななんと、急に時間が空いたから、今から久保田のインタヴューをしたいとゆーのだ!<br /><br /><center>『おいおいおい、ちょっと待てよぉぉぉ…』</center><br />と思っていると、今度はセキから電話で、説得力皆無の口調で同じリクエストを告げられる。<br /><br /><center>「今からなんて無理だよ!」<br />(だって「BOSS」新シリーズ2話目があるんだもん)</center><br /><br />しばらくすると、またも電話。セキに代わってムラヤマだ。<br /><br />今夜VOICEの取材をすれば久保田利伸のレコーディングが滞りなく進行する…<br />ニュー・シングルの発売日が死守できる…<br /><br /><center>久保田利伸ファンのためにも…<br />是が非でも…<br />是が非でも取材をお願いします…</center><br />ムラヤマは、ファンキー・ジャム一番の美声で、今にも泣きそうになりつつ、25周年の窮状を訴えかける。<br /><br />そこまで言われれば、オレも鬼ではない。人情にほだされるココロも持ち合わせている。<br /><br />世界中の久保田利伸ファンのために、今夜は天海祐希ちゃんを諦めた。<br /><br /><center>しか～し!</center><br />今オレがいるのは、三鷹市のウッディなアパートメント。<br /><br />すぐにファンキー・ジャムへ向かっても、1時間以上はかかる。<br /><br />それでもOKならば、取材に行くとムラヤマへ伝えた。<br /><br />ムラヤマは受話器を持ったまま、オレの伝言を久保田や大森社長に話しているよーだ。<br /><br />すると突然、受話器の向こうから恐ろしい怒声が飛び込んで来た。<br /><br /><center>「もういいッ!」</center><br />あきらかに、大森社長がキレていた。<br /><br /><center>「もういいッ!」</center><br />ムラヤマが、凍えた小声で言う。<br /><br /><center>「あのぉ…もういいって…」</center><br /><br />オレは猛烈にビビり、ナンとしてでも素早くファンキー・ジャムへ行くべきだったと、重たく後悔した。<br /><br />後悔しながら「BOSS」を見たら、いつもの数倍も天海希ちゃんに癒された。<br /><br /><center>やっぱ天海祐希ちゃんだ。</center><br />翌日、VOICE取材当日、恐る恐るファンキー・ジャムへ行き、大森社長の顔を見るなり「昨夜は申し訳ありませんでした!」と平身低頭謝罪した。<br /><br />すると大森社長は「全然怒ってなんかないわよ」と笑顔を返してくれた。<br /><br /><center>「え?　でも、電話の向こうで怒鳴り声が…」<br /><br />「違うのよ。<br />仕事に煮詰まった久保田が、<br />気晴らしにワタルさんと飲みたかっただけなのよ!」<br /><br />「ホント!?」<br /><br />「ホント!」</center><br />その時、オレのBossは天海祐希ちゃんではなく、大森奈緒子だと再確認させられたのである。<br /><br />トホホ…。<br /><br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

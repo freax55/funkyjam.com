@@ -1,0 +1,44 @@
+@charset "shift_jis";
+
+#container {
+	width:770px;
+}
+body {
+	zoom:75%;
+}
+/* contents start */
+#contents .entry span.egg img {
+	display:inline;
+}
+#contents .entry#entry01 .imageWrapper {
+	background:none;
+}
+#contents .entry#entry02 .imageWrapper {
+	background:none;
+}
+#contents .entry#entry03 .imageWrapper {
+	background:none;
+}
+
+#contents .entry#entry02 #image03 {
+	padding-right:10px;
+}
+#contents .entry#entry02 #text01 {
+	padding-top:32px;
+}
+#contents .entry#entry03 {
+	padding-top:8px;
+}
+#contents .entry#entry03 #image05 {
+	padding-right:16px;
+}
+#contents .entry#entry03 #image07 {
+	float:right;
+	padding-top:13px;
+}
+
+a#zoom {
+	top:190px;
+	left:261px;
+}
+/* contents end */

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第117回 「ツアンポー峡谷」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/10/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/10/05 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第117回 「ツアンポー峡谷」</p>
+		</div>
+		<div class="texts">
+			<div class="text">いつものよーに本屋で文庫本を物色中。<br />2冊つづけてミステリー物でハズシているので、ナニにしよーか悩んでいると、開高健ノンフィクション賞受賞と冠された「空白の五マイル チベット、世界最大のツアンポー峡谷に挑む」(著・角幡唯介/集英社文庫)が目に止まり、最初の数ページを立ち読みしてレジに並んだ。<br />想像をかき立てるタイトル「空白の五マイル」にも惹かれたが、なにより世界最大とゆーツアンポー峡谷が初耳だったからである。<br />ワタル自身にとって世界最大の峡谷といえば、そりゃ間違いなくアメリカのグランドキャニオンなのに…まったく知らないツアンポーが世界一?…今さらながら無知を恥じた。<br />内容を簡単マルに紹介すると、早稲田大学探検部OBの著者が、ツアンポー峡谷単独踏破に挑む冒険譚だ。<br />チベット高原を横断してインドに流れ込むツアンポー川(全長2900キロ)が、ヒマラヤ山脈に連なる7000メートル級の山々を永々と削り取り、誕生させた奇跡がツアンポー峡谷だ。<br />そのサイズは、全長504.6キロ、平均深度2268メートル、最大深度6009メートル(!!)、まさに世界最大の峡谷である。<br />ツアンポー探検の詳しい歴史は本文に譲るが、1924年にイギリス人が峡谷を突破するも、未踏部分が5マイル残された。この「空白の5マイル」に伝説の滝があるのか、ないのか…わずか8キロあまりの人跡未踏地が、好奇心に抗えない探検家達をツアンポー峡谷に駆り立てていた。<br />そして1998年11月、ついにアメリカ探検隊が落差30メートルの滝を発見し、空白の5マイルに終止符を打ったのだ。<br /><br />しか～し!<br /><br />それまでナンにも言わなかったアノ国が、「そんな滝は昔から知ってたアルヨ」と割り込んできた。<br />1986年(アメリカ隊報告の12年前)にヘリコプターから写真も撮ってアルヨ、最初に滝に到達したのは中国人アルヨと、1999年1月(アメリカ隊報告の2ヶ月後)に突然言い出したのだ。<br />世界一のツアンポー峡谷の謎を解明したのは、グランドキャニオンの国から来た宿敵アメリカ人ではなく、中国人に決まってるアルヨ、なのだ。<br />そしてこれ以降、中国は外国人のツアンポー峡谷立ち入りを禁止し、あらゆる異論反論正論を遮断してしまったのである。(著者は無許可で潜入した)<br />本文から抜粋で紹介する。<br />『二一世紀の覇権を争う両国の確執を恐ろしくスケールダウンしたようなこの言い争いは、永遠に決着がつかない水掛け論に終わるに決まっていた。それよりも見逃せないのは、この時の探検に関する中国側の主張の中に、意図的と思われても仕方がない、いくつかの初歩的な誤りが見られることだ。』<br />どんな初歩的な誤りなのかは、本文で飽きれまくってちょーだい…って、そもそもツアンポー峡谷のあるチベットは中国じゃないんだけどね(笑)。<br />ドキドキハラハラの冒険譚だと思って読んでいたら、ここでも中国の後出しジャンケンに遭遇し、読書のベクトルが違う方向に逸れてしまった。<br />しか～し!<br />さすがに開高健ノンフィクション賞受賞作、後半の悲壮な単独行描写には激しく引き込まれ、著者と一緒にツアンポー峡谷をさまよう絶望感にとらわれた。<br />巧みな場面展開も交え、読み応えのある1冊「空白の五マイル チベット、世界最大のツアンポー峡谷に挑む」を、秋の夜長にオススメします。<br /><br />×　×　×<br /><br />1949年にはじまった中国の武力侵攻から逃れた数千のチベット人は、命がけでツアンポー峡谷に逃げ込み、過酷な土地で隠遁生活をはじめた。<br />彼らは、さらなる中国政府の弾圧で峡谷からも排除されてしまったが、現在でもツアンポー峡谷はチベット人にとって特別な場所なのだ。<br />なぜならツアンポー峡谷は、中国人が「発見」する遥か以前から、チベット人の理想郷[ベユル・ペマコ]として「存在」していたのである。<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

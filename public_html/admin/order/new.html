@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>売上データ ダウンロード - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/redmond/jquery-ui.css" rel="stylesheet" />
+<link href="../admin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; 売上データ ダウンロード &gt; 久保田利伸ツアーグッズ2011年版</p>
+<form action="kubota_goods_2011.php" method="post" enctype="multipart/form-data" name="new">
+  <table id="list">
+    <tr>
+      <th width="120">グッズ申込日</th>
+      <td>
+        {if $errors.date}<span class="error">※{$errors.date|escape}</span><br />{/if}
+        <input type="input" name="start" value="{$start|escape}" id="dateStart" /> ~ <input type="input" name="end" value="{$end|escape}" id="dateEnd" />
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="ダウンロード" />    
+    <input type="hidden" name="action" value="download" />
+  </p>
+</form>
+{literal}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("jquery", "1.6");
+google.load("jqueryui", "1.8");
+</script>
+<script type="text/javascript">
+$(function() {
+	var options = {
+		dateFormat:'yy-mm-dd'
+	};
+	$('#dateStart').datepicker(options);
+	$('#dateEnd').datepicker(options);
+});
+</script>
+{/literal}
+</body>
+</html>

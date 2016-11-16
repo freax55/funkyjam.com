@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+
+/*
+pankuzuエリア
+*/
+#pankuzu{
+	padding-bottom: 38px;
+}
+
+
+/*
+mainエリア
+*/
+#mainArea{
+	width:100%;
+	background: #000000;
+}
+
+#mainCover{
+	width: 980px;
+	margin: auto;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/*
+contentエリア
+*/
+#contentArea{
+	width: 100%;
+	background: url(/images/lower/bg.png) repeat;
+	margin: 0px 0px 30px 0px;
+}
+
+#contentArea #bottomBorder{
+	width: 100%;
+	height: 4px;
+	background: url(/images/index3_load_80.jpg) repeat-x bottom;
+}
+
+#contentArea #contentBox{
+	width: 950px;
+	margin: auto;
+	padding: 15px 15px 60px;
+	background: url(/images/bg.png) repeat;
+}
+
+#contentArea #contentWrapper{
+	width: 759px;
+	margin: 0 auto;
+}
+
+/*kubota*/
+.kubota #contentArea{
+	background: url(/images/news/kubota/kubotaBg.png) repeat;
+}
+
+/*urashima*/
+.urashima #contentArea{
+	background: url(/images/news/urashima/urashimaBg.png) repeat;
+}
+
+/*mori*/
+.mori #contentArea{
+	background: url(/images/news/mori/moriBg.png) repeat;
+}
+
+/*bes*/
+.bes #contentArea{
+	background: url(/images/news/bes/besBg.png) repeat;
+}
+
+/*標準テーブル*/
+#contentArea .dfTbl h1{
+	position: relative;
+	height: 36px;
+	margin:0 0 -11px -20px;
+	padding-left: 20px;
+	background: url(/images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 100%;
+}
+
+#contentArea .dfTbl h1 strong{
+	display: inline-block;
+	height: 20px;
+	padding: 3px 14px;
+	background-color: #000;
+	color: #fff;
+}
+
+#contentArea .dfTbl table{
+	width: 100%;
+}
+
+#contentArea .dfTbl th,
+#contentArea .dfTbl td{
+	padding: 14px 0px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	font-size: 87%;
+	text-align: left;
+}
+
+#contentArea .dfTbl th{
+	width: 30%;
+	color: #7e7e7e;
+	vertical-align: top;
+}
+
+#contentArea .dfTbl .error{
+	color: #CC0000;
+}
+
+#contentArea .dfTbl .indispensability{
+	color: #CFBD3D;
+	vertical-align: -3px;
+}
+
+#contentArea .dfTbl .attn{
+	color: #777777;
+}
+
+#contentArea .dfTbl .btn{
+	padding: 20px 0;
+	text-align: center;
+}
+
+#contentArea .dfTbl .w300{
+	width:300px;
+}
+
+#contentArea .dfTbl .w420{
+	width:420px;
+}
+
+#contentArea .dfTbl .w30{
+	width:30px;
+}
+
+/*標準テーブル2*/
+#contentArea .dfTbl2 {
+	margin:0 0 0 -20px;
+	padding-left: 20px;
+	background: url(/images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#contentArea .dfTbl2 table{
+	width: 100%;
+}
+
+#contentArea .dfTbl2 th,
+#contentArea .dfTbl2 td{
+	padding: 14px 10px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	font-size: 87%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#contentArea .dfTbl2 th{
+	width: auto;
+	padding:5px 0;
+	background-color: #000;
+	color: #FFF;
+}
+
+/*標準テーブル3*/
+#contentArea .dfTbl3 table{
+	width: 100%;
+	margin-bottom:25px;
+}
+
+#contentArea .dfTbl3 th,
+#contentArea .dfTbl3 td{
+	padding: 14px 10px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+}
+
+#contentArea .dfTbl3 th{
+	width: 10%;
+	padding:5px 0;
+	background-color: #000;
+	color: #FFF;
+	vertical-align: middle;
+}
+
+/*標準タイトル*/
+.lower #contentArea #contentBox h2.tit{
+	position: relative;
+	height: 36px;
+	margin:0 0 20px -20px;
+	padding-left: 20px;
+	background: url(/images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 100%;
+}
+
+.lower #contentArea #contentBox h2.tit strong{
+	display: inline-block;
+	height: 20px;
+	padding: 3px 14px;
+	background-color: #000;
+	color: #fff;
+}
+
+/*formボタン*/
+.contact #contentArea #contentBox .btn input {
+	cursor: pointer;
+	display:inline-block;
+	padding:6px 10px;
+	border:1px solid #90733F;
+	font-weight: bold;
+	background-color: #B89A63;
+	color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#B89A63), to(#9F814A));
+	background-image: -webkit-linear-gradient(top, #B89A63, #9F814A);
+	background-image: -moz-linear-gradient(top, #B89A63, #9F814A);
+	background-image: -ms-linear-gradient(top, #B89A63, #9F814A);
+	background-image: -o-linear-gradient(top, #B89A63, #9F814A);
+	background-image: linear-gradient(to bottom, #B89A63, #9F814A);
+}
+
+.contact #contentArea #contentBox .btn input:hover {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#BAA06C), to(#B9A969));
+	background-image: -webkit-linear-gradient(top, #BAA06C, #B9A969);
+	background-image: -moz-linear-gradient(top, #BAA06C, #B9A969);
+	background-image: -ms-linear-gradient(top, #BAA06C, #B9A969);
+	background-image: -o-linear-gradient(top, #BAA06C, #B9A969);
+	background-image: linear-gradient(to bottom, #BAA06C, #B9A969);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#BAA06C, endColorstr=#B9A969);
+}

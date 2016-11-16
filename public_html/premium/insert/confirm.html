@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common_insert.html" -->
+<link href="/premium/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_insert.html" -->
+			<div id="section">
+				<form action="index.php" method="post">
+				<div class="secInner">
+					{if $status != "edit"}
+						<h2>新規会員登録</h2>
+					{else}
+						<h2>会員継続</h2>
+					{/if}
+ 					<table border="0" cellspacing="0" cellpadding="0" class="formTbl">
+						<tr class="mail">
+							<th>メールアドレス（ID）</th>
+							<td>{$mail|escape}</td>
+						</tr>
+						<tr class="pass">
+							<th>パスワード</th>
+							<td>{$member_no|escape}</td>
+						</tr>
+						<tr class="name">
+							<th>お名前</th>
+							<td>{$last_name|escape}&nbsp;&nbsp;{$first_name|escape}</td>
+						</tr>
+						<tr class="name">
+							<th>フリガナ</th>
+							<td>{$last_kana|escape}&nbsp;&nbsp;{$first_kana|escape}</td>
+						</tr>
+						<tr class="tel">
+							<th>電話番号</th>
+							<td>{$tel|escape}</td>
+						</tr>
+						<tr class="select">
+							<th>決済方法</th>
+							<td>
+								{if $payment=="コンビニ決済"}
+									{$payment|escape}
+								{elseif $payment=="カード決済（ペイジェント）"}
+									クレジットカード決済
+								{/if}
+							</td>
+						</tr>
+					</table>
+
+					<div class="btns clearfix">
+						<div class="btn btn2"><input type="button" value="修正する" onclick="location.href='index.php?action=cart';" /></div>
+						{if $payment=="コンビニ決済"}
+							<div class="btn btn1"><input type="submit" value="コンビニを選択する"></div>
+						{elseif $payment=="カード決済（ペイジェント）"}
+							<div class="btn btn1"><input type="submit" value="カード情報を入力する"></div>
+						{/if}
+					</div>
+					<input type="hidden" name="action" value="select" />
+				</div>
+				</form>
+			</div>
+<!--#include virtual="/premium/include/footer_insert.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

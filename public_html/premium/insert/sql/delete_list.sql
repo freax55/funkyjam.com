@@ -1,0 +1,1 @@
+select id from premium_users_pc where end_stamp < '{$start}';

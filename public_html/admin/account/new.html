@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>アカウント管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../admin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; <a href="index.php">アカウント管理</a> &gt; </p>
+<form action="index.php" method="post" name="new">
+  <table id="list">
+    <tr>
+      <th width="120">ID</th>
+      <td>
+        {if $errors.id}<span class="error">※{$errors.id|escape}</span><br />{/if}
+        <input name="id" type="text" value="{$id|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">パスワード</th>
+      <td>
+        {if $errors.password}<span class="error">※{$errors.password|escape}</span><br />{/if}
+        <input name="password" type="text" value="{$password|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">備考</th>
+      <td>
+	    {if $errors.note}<span class="error">※{$errors.note|escape}</span><br />{/if}
+        <textarea name="note" cols="50" rows="5">{$note|escape}</textarea>
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="追加する" />    
+    <input type="hidden" name="action" value="add" />
+  </p>
+</form>
+</body>
+</html>

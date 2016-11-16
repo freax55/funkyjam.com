@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/fancybox/jquery.fancybox-1.3.4.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/jquery.tile.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/offshot.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="16"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">ƒgƒbƒvƒy[ƒW</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/offshot/index.php?path=index">OffshotiƒIƒtƒVƒ‡ƒbƒgj</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;X ‘å•ã</div>
+						<div class="section">
+{assign var="blog_id" value="16"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="‹v•Û“c —˜L" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="‰Y“‡ ‚è‚ñ‚±" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="X ‘å•ã" /></a></li>
+	</ul>
+</div>
+							<div class="article" id="offshot">
+								<div class="offshotList">
+									<ul class="clearfix">
+
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="18"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/23 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã‚³‚í‚â‚©‚É</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_15.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_15.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‚³‚í‚â‚©‚É</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_15.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_15.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‚³‚í‚â‚©‚É</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="19"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã‘Å‚¿‡‚í‚¹2</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_14.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_14.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‘Å‚¿‡‚í‚¹2</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_14.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_14.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‘Å‚¿‡‚í‚¹2</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="20"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã‚©‚Á‚±‚æ‚­ƒ|[ƒY</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_13.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_13.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‚©‚Á‚±‚æ‚­ƒ|[ƒY</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_13.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_13.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‚©‚Á‚±‚æ‚­ƒ|[ƒY</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="21"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã––Ê‚ÌÎŠç!</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_12.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_12.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã––Ê‚ÌÎŠç!</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_12.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_12.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã––Ê‚ÌÎŠç!</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="22"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ãÅ‹ß‚ÌX2</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_11.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_11.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãÅ‹ß‚ÌX2</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_11.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_11.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãÅ‹ß‚ÌX2</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="23"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ãÅ‹ß‚ÌX1</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_10.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_10.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãÅ‹ß‚ÌX1</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_10.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_10.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãÅ‹ß‚ÌX1</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="24"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ãâ‚µ‚°‚É</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_9.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_9.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãâ‚µ‚°‚É</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_9.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_9.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãâ‚µ‚°‚É</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="25"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ãÅ‹ß‚ÌXƒIƒt1</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_8.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_8.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãÅ‹ß‚ÌXƒIƒt1</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_8.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_8.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãÅ‹ß‚ÌXƒIƒt1</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="26"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã§ì’†</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_7.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_7.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã§ì’†</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_7.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_7.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã§ì’†</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="27"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ãƒIƒt</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_5.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_5.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãƒIƒt</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_5.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_5.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãƒIƒt</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="28"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã‘Å‚¿‡‚í‚¹</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_4.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_4.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‘Å‚¿‡‚í‚¹</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_4.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_4.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã‘Å‚¿‡‚í‚¹</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="29"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã––±Š‚É‚ÄƒIƒt2</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_3.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_3.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã––±Š‚É‚ÄƒIƒt2</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_3.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_3.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã––±Š‚É‚ÄƒIƒt2</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="30"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ã––±Š‚É‚ÄƒIƒt1</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_2.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_2.jpg&amp;width=195&amp;height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã––±Š‚É‚ÄƒIƒt1</p>
+</div></span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_2.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_2.jpg&amp;width=144&amp;height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ã––±Š‚É‚ÄƒIƒt1</p>
+</div></span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="31"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/01/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/01/22 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">X‘å•ãa’JDUO‚É‚Ä1</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_1.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_1.jpg&width=195&height=195" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãa’JDUO‚É‚Ä1</p>
+</div>
+</span>
+
+{else}
+<span rel="pcOnly">
+<div class="image"><a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_1.jpg"><img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/mori_1.jpg&width=144&height=144" alt="" /></a></div>
+<div class="txts">
+<p class="txt">X‘å•ãa’JDUO‚É‚Ä1</p>
+</div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+									</ul>
+								</div>
+								<div class="pagenate">
+									<ul>
+<li><a href="/premium/artist/offshot/mori/index.html" class="link_page">1</a></li><li><span class="current_page">2</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

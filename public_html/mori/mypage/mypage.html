@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>マイページ - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/mypage.css">
+<link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+				<h2 class="titleType1">マイページ</h2>
+{if $param == 'login' || $param == 'notTime'}
+				<div class="mypage">
+					<!-- <div class="update">
+						<p>有効期限が近づいております<br>下記よりお手続き下さい</p>
+						<div class="btnType1"><a href="#"><span>更新手続き</span></a></div>
+					</div> -->
+					<div class="wrap1">
+						<p>会員番号</p>
+						<div>{$login_user_account_no|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>有効期限</p>
+						<div>{$login_user_end_stamp|date_format:"%Y年%-m月%-d日"|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>お名前</p>
+						<div>{$login_user_last_name|escape}&nbsp;&nbsp;{$login_user_first_name|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>お名前カナ</p>
+						<div>{$login_user_last_kana|escape}&nbsp;&nbsp;{$login_user_first_kana|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>お名前ローマ字</p>
+						<div>{$login_user_last_roman|escape}&nbsp;&nbsp;{$login_user_first_roman|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>郵便番号</p>
+						<div>{$login_user_zip1|escape}-{$login_user_zip2|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>住所</p>
+						<div>{$login_user_address1|escape}{$login_user_address2|escape}{$login_user_address3|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>電話番号</p>
+						<div>{$login_user_tel|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>メールアドレス</p>
+						<div>{$login_user_mail|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>性別</p>
+						<div>{$login_user_sex|escape}</div>
+					</div>
+					<div class="wrap1">
+						<p>生年月日</p>
+						<div>{$login_user_birth_year|escape}年{$login_user_birth_month|escape}月{$login_user_birth_day|escape}日</div>
+					</div>
+					<div class="wrap1">
+						<p>支払い方法</p>
+						<div>
+							{if $login_user_payment=="コンビニ決済"}
+								コンビニ決済
+							{elseif $login_user_payment=="カード決済（ペイジェント）"}
+								クレジットカード決済
+							{/if}
+						</div>
+					</div>
+					<div class="btnType1"><a href="/mori/mypage/edit/"><span>登録情報を変更する</span></a></div>
+					{if $param != 'notTime'}<div class="btnType1"><a href="/mori/mypage/update/"><span>会員を更新する</span></a></div>{/if}
+					<div class="btnType1"><a href="/mori/mypage/delete/"><span>会員を退会する</span></a></div>
+				</div>
+{else}
+				<div class="messageBlock">
+					<div class="inner">
+						<p class="error">このコンテンツをご覧になるには<br>有料会員登録が必要となります</p>
+						<p class="price">入会金 ￥500（税込）、 年会費 ￥3,600（税込）</p>
+						<div class="btnWrap">
+							<div>
+								<p>会員登録がお済みでない方はこちら</p>
+								<div class="btnType1"><a href="/mori/entry/"><span>会員登録する</span></a></div>
+							</div>
+							<div>
+								<p>会員登録がお済みの方はこちら</p>
+								<div class="btnType4"><a href="/mori/login/"><span>ログイン</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+{/if}
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+</body>
+</html>

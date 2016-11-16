@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="CtGKDR01200Service"
+    targetNamespace="http://www.ctgkdr01200.com/wsdl/CtGKDR01200-service.wsdl"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:binding="http://www.ctgkdr01200.com/definitions/CtGKDR01200RemoteInterface"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.ctgkdr01200.com/wsdl/CtGKDR01200-service.wsdl"
+    xmlns:xsd1="http://www.ctgkdr01200.com/schemas/CtGKDR01200RemoteInterface">
+
+<types>
+    <schema attributeFormDefault="qualified" elementFormDefault="qualified"
+        targetNamespace="http://www.ctgkdr01200.com/schemas/CtGKDR01200RemoteInterface"
+        xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd1="http://www.ctgkdr01200.com/schemas/CtGKDR01200RemoteInterface">
+        <complexType name="prkd.j.DODetailResp">
+            <all>
+                <element name="cp_cd" nillable="true" type="string"/>
+                <element name="cp_srv_cd" nillable="true" type="string"/>
+                <element name="item_cd" nillable="true" type="string"/>
+                <element name="cont_sts" nillable="true" type="string"/>
+            </all>
+        </complexType>
+        <complexType name="prkd.j.DOResp">
+            <all>
+                <element name="rslt_cd" nillable="true" type="string"/>
+                <element name="rsn_cd" nillable="true" type="string"/>
+                <element name="sub_ID" nillable="true" type="string"/>
+                <element name="seq_No" nillable="true" type="string"/>
+                <element name="req_Cp_cd" nillable="true" type="string"/>
+                <element name="detailresp1" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp2" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp3" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp4" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp5" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp6" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp7" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp8" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp9" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp10" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp11" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp12" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp13" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp14" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp15" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp16" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp17" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp18" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp19" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp20" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp21" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp22" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp23" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp24" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp25" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp26" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp27" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp28" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp29" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp30" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp31" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp32" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp33" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp34" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp35" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp36" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp37" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp38" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp39" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp40" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp41" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp42" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp43" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp44" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp45" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp46" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp47" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp48" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp49" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp50" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp51" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp52" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp53" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp54" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp55" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp56" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp57" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp58" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp59" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp60" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp61" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp62" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp63" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp64" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp65" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp66" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp67" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp68" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp69" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp70" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp71" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp72" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp73" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp74" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp75" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp76" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp77" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp78" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp79" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp80" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp81" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp82" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp83" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp84" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp85" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp86" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp87" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp88" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp89" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp90" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp91" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp92" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp93" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp94" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp95" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp96" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp97" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp98" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp99" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+                <element name="detailresp100" nillable="true" type="xsd1:prkd.j.DODetailResp"/>
+            </all>
+        </complexType>
+        <complexType name="prkd.j.DODetailReq">
+            <all>
+                <element name="cp_cd" nillable="true" type="string"/>
+                <element name="cp_srv_cd" nillable="true" type="string"/>
+                <element name="item_cd" nillable="true" type="string"/>
+            </all>
+        </complexType>
+        <complexType name="prkd.j.DOReq">
+            <all>
+                <element name="sub_ID" nillable="true" type="string"/>
+                <element name="seq_No" nillable="true" type="string"/>
+                <element name="req_Cp_cd" nillable="true" type="string"/>
+                <element name="detailreq1" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq2" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq3" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq4" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq5" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq6" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq7" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq8" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq9" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq10" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq11" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq12" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq13" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq14" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq15" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq16" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq17" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq18" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq19" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq20" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq21" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq22" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq23" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq24" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq25" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq26" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq27" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq28" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq29" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq30" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq31" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq32" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq33" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq34" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq35" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq36" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq37" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq38" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq39" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq40" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq41" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq42" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq43" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq44" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq45" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq46" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq47" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq48" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq49" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq50" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq51" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq52" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq53" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq54" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq55" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq56" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq57" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq58" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq59" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq60" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq61" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq62" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq63" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq64" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq65" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq66" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq67" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq68" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq69" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq70" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq71" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq72" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq73" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq74" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq75" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq76" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq77" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq78" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq79" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq80" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq81" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq82" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq83" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq84" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq85" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq86" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq87" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq88" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq89" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq90" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq91" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq92" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq93" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq94" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq95" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq96" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq97" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq98" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq99" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+                <element name="detailreq100" nillable="true" type="xsd1:prkd.j.DODetailReq"/>
+            </all>
+        </complexType>
+    </schema>
+</types>
+    <message name="CtGKDSSoapCommonRequest"/>
+    <message name="CtGKDSSoapCommonResponse"/>
+    <message name="trx_DOReqRequest">
+        <part name="request" type="xsd1:prkd.j.DOReq"/>
+    </message>
+    <message name="trx_DOReqResponse">
+        <part name="result" type="xsd1:prkd.j.DOResp"/>
+    </message>
+    <portType name="CtGKDR01200">
+        <operation name="CtGKDSSoapCommon">
+            <input message="tns:CtGKDSSoapCommonRequest" name="CtGKDSSoapCommonRequest"/>
+            <output message="tns:CtGKDSSoapCommonResponse" name="CtGKDSSoapCommonResponse"/>
+        </operation>
+        <operation name="trx_DOReq" parameterOrder="request">
+            <input message="tns:trx_DOReqRequest" name="trx_DOReqRequest"/>
+            <output message="tns:trx_DOReqResponse" name="trx_DOReqResponse"/>
+        </operation>
+    </portType>
+    <binding name="CtGKDR01200Binding" type="tns:CtGKDR01200">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="CtGKDSSoapCommon">
+            <soap:operation soapAction="" style="rpc"/>
+            <input name="CtGKDSSoapCommonRequest">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/DOReq" use="encoded"/>
+            </input>
+            <output name="CtGKDSSoapCommonResponse">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/DOReq" use="encoded"/>
+            </output>
+        </operation>
+        <operation name="trx_DOReq">
+            <soap:operation soapAction="" style="rpc"/>
+            <input name="trx_DOReqRequest">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/DOReq" use="encoded"/>
+            </input>
+            <output name="trx_DOReqResponse">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/DOReq" use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="CtGKDR01200Service">
+        <port binding="tns:CtGKDR01200Binding" name="CtGKDR01200Port">
+            <soap:address location="https://session-stg.collect.kddi.com/soap/rpcrouter"/>
+        </port>
+    </service>
+</definitions>

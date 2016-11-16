@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/jquery.tile.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/movie.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="13"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/movie/index.php?path=index">Movie（動画）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;久保田 利伸</div>
+						<div class="section">
+{assign var="blog_id" value="13"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article" id="movie">
+								<div class="movieList">
+									<ul class="clearfix">
+
+
+<!-- 変数countに初期値0を設定 -->
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="1"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/11/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/11/14 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+	<p class="tit">2016/11/14 Mr.久保田からのプレゼントに感激するリンさん（声）とクールに立ち去るMr.久保田</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+    <p class="lead">2016/11/14 Mr.久保田からのプレゼントに感激するリンさん（声）とクールに立ち去るMr.久保田</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/SC1xyT9kSxM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{else}
+    <p class="lead">2016/11/14 Mr.久保田からのプレゼントに感激するリンさん（声）とクールに立ち去るMr.久保田</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/SC1xyT9kSxM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{/if}	
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="2"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/10/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/10/27 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+	<p class="tit">2016/10/27 UP It’s mine!</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+   <p class="lead">2016/10/27 UP It’s mine!</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/2gOii9skptY?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{else}
+   <p class="lead">2016/10/27 UP It’s mine!</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/2gOii9skptY?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{/if}	
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="3"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/09/12 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+	<p class="tit">2016/9/12 UP 一昨年の冬、布団乾燥機をゲット！</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+  <p class="lead">2016/9/12 UP 一昨年の冬、布団乾燥機をゲット！</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/JzSVFy6wMZI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{else}
+  <p class="lead">2016/9/12 UP 一昨年の冬、布団乾燥機をゲット！</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/JzSVFy6wMZI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{/if}	
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="4"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/01/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/01/01 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+	<p class="tit">2016年 新年のごあいさつ</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+ <p class="lead">2016年 新年のごあいさつ</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/YROzMa_P7eY?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{else}
+ <p class="lead">2016年 新年のごあいさつ</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/YROzMa_P7eY?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{/if}	
+</li>
+
+
+									</ul>
+								</div>
+								<div class="pagenate">
+									<ul>
+<li><span class="current_page">1</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

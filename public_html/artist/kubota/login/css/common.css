@@ -1,0 +1,147 @@
+@charset "shift_jis";
+
+body {
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#333333;
+}
+#page {
+	width:850px;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+#container {
+	width:770px;
+	margin:0 auto;
+	padding:30px 40px 10px 40px;
+	border:1px solid #000;
+}
+
+/* header start */
+#header {
+	width:770px;
+	padding:0 0 27px 0;
+}
+#header #logo {
+	width:770px;
+}
+
+/* header end */
+
+/* contents start */
+#contents {
+	width:100%;
+}
+
+#contents .entryWrapper {
+	width:770px;
+}
+#contents .entry {
+	width:770px;
+}
+#contents .entry img {
+	float:left;
+}
+#contents .entry#entry01 img {
+	float:none;
+}
+#contents .entry#entry01 .imageL {
+	float:left;
+	width:217px;
+}
+#contents .entry#entry01 .imageR {
+	float:right;
+	width:553px;
+}
+#contents .entry#entry02 {
+	padding-top:25px;
+}
+#contents .entry#entry02 .imageL {
+	float:left;
+	width:312px;
+}
+#contents .entry#entry02 .imageR {
+	float:left;
+}
+#contents .entry#entry02 #image03 {
+	padding-right:10px;
+}
+#contents .entry#entry02 #text01 {
+	padding-top:32px;
+}
+#contents .entry#entry03 {
+	padding-top:8px;
+}
+#contents .entry#entry03 #image05 {
+	padding-right:16px;
+}
+#contents .entry#entry03 #image07 {
+	float:right;
+	padding-top:13px;
+}
+
+#contents .entry span.egg {
+	/*display:block;*/
+}
+#contents .entry span.egg img {
+	display:none;
+}
+#contents .entry#entry01 .imageWrapper {
+	height:356px;
+	/*height:770px;*/
+}
+#contents .entry#entry01 .imageWrapper {
+	background:url(../image/entry_01.jpg) no-repeat left top;
+}
+
+#contents .entry#entry02 .imageWrapper {
+	height:306px;
+}
+#contents .entry#entry02 .imageWrapper {
+	background:url(../image/entry_02.jpg) no-repeat left top;
+}
+#contents .entry#entry02 .imageWrapper span#image03 {
+	display:block;
+	height:254px;
+}
+
+#contents .entry#entry03 .imageWrapper {
+	height:530px;
+}
+#contents .entry#entry03 .imageWrapper {
+	background:url(../image/entry_03.jpg) no-repeat left top;
+	margin-right:-5px;
+}
+a#zoom {
+	/*display:block;*/
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:300px;
+	left:580px;
+}
+
+/* contents end */
+
+/* copyright start */
+#copyright {
+	width:627px;
+	margin-left:auto;
+	margin-right:-14px;
+}
+#copyright .copy {
+	float:left;
+	width:528px;
+	padding-right:5px;
+	padding-top:7px;
+}
+#copyright .logoS {
+	float:left;
+	width:94px;
+}
+/* copyright end */
+
+/* backNumber start */
+/* backNumber end */

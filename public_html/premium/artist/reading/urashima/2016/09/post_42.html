@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第325回 「長城の内と外」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/09/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第325回 「長城の内と外」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 最近の東京はトラブルの連続で、頭に来るのを通り越して呆れるレベルだ。<br><br />2020東京五輪のエンブレム盗用問題からスタートし、新国立競技場の設計変更、猪瀬&舛添両都知事の金銭辞職、豊洲新市場の地下室疑惑…などなどビッグコンテンツが目白押しで、五輪招致に関するワイロ問題などは早々に忘れ去られた。<br><br />東京は、日本人は、ホント&#12316;に恥ずかしい国民になってしまった…これでは隣国=中国の手抜き建築や自己中心的外交をトヤカク言えないなぁ…なんて憂いていたら、4000年の歴史大国は、ここで一気に日本と「格」の違いを見せつける大胆なパフォーマンスを行なった。<br><br />TVやネットで報じられたのでご存知の方も多いと思うが、宇宙空間から見える唯一の人口建造物(※1)、まさに全地球人の宝ともゆーべき、あの偉大なる「万里の長城」を、なななんと、修復工事で階段も壁もゼ&#12316;ンブまとめて真っ平らにしちゃったのだッ!!<br><br />現存部分の延長距離が8千850kmほどと言われる長城のうち、真っ平らにされたのは8km程度なのだが、それはガードレールのない舗装道路にしか見えず、万里の長城の面影はマッタクnothing!<br><br />以前、ファンキー・ジャムの社員旅行in北京で万里の長城も訪れたが、無数の石で組み上げられた長城の、山の背を越える延々たる連なり、それらを見た大森［美人］社長はパンツ丸見えでヘタリ込むとゆー荒技で、中国人の偉大な無謀を若い社員達に示したのだった。<br><br />とにかく階段が急とゆーか、ほぼ垂直で、しかも足場が非人道的に狭く、ほとんどツマサキで登り、下りはカカト頼みとなり、確かに敵の侵入は防げるが、味方の応援も期待できない本末転倒な世界遺産なのだった。<br><br />もしかしたら次期アメリカ大統領になるかもしれないトランプ氏は、アメリカとメキシコの国境に壁を作るなんて言ってるけど、中国人がアトサキを考えずに作り続けた万里の長城に比べたら、トランプ壁は子供の積み木だ。<br><br />2012年の中国発表を信じれば、最盛期は2万1千kmもあったとされる万里の長城に対し、アメリカ-メキシコの国境は［たった］の3千kmあまりだから、万里の長城なら7階建てだ。北米大陸横断でも4千kmほどだから、ロサンゼルスとニューヨーク間に万里の長城を造ると5階建て…そんなトホーもない長城を、山を越え谷を渡り河をまたいで延々と造ろーなんて、中国人以外は考えたとしても絶対に実行しない。<br><br /><br><br />しか&#12316;し!<br><br />それを実行するのが、Going Our Wayの中国人なのである。<br><br /><br><br />しか&#12316;し!<br><br />万里の長城が世界遺産に登録されたのは1987年なのだが、観光地にも適さない僻地では今も昔も地元ピーポーが勝手に長城を壊し、石コロを建築材料なんかにリサイクルしちゃっているのだ。<br><br />超大陸人種には世界遺産だろーがナンだろーが、修復工事=原型保存の意識なんて持っていないのかもしれない。<br><br />てゆーか、そーした頑丈な精神構造じゃないと、他国の目の前にある岩礁を勝手に埋め立て、住居や軍事基地を建てて「最初からウチの島だからね」などと言い張れない。<br><br /><br><br />しか&#12316;し!<br><br />先日、秦時代の武術家を描いた映画「HERO-英雄-」(※2)を観たら、武術の究極は「敵と和解し平和を得ることだ」と言っていた。<br><br />それは以前紹介した新渡戸稲造の名著「武士道」に書かれていた精神と同じで、中国人も日本人も武術の最終到達点は、不戦の平和なのだ。<br><br /><br><br />しか&#12316;し!<br><br />Why Chinese People?<br><br />現実は映画のよーにはならず、現代の中国は「無理を通れば道理は引っ込む」作戦を押し進め、他国と仲良くしよーとゆー気持ちなどマッタク感じられず、かつての大日本帝国を思い出して肌がアワ立つ。<br><br /><br><br />しか&#12316;し!<br><br />ワタル自身がナニより腹が立つのは、しかも、これがすべての元凶だと思うのが、万里の長城をリサイクルして生活をしている貧困層がいるとゆーのに、最高指導者=習近平の親族名がパナマ文書に載っているコトだ。<br><br />そして、その事実を中国内では報道規制し隠蔽しているコトだ。<br><br /><br><br />しか&#12316;し!<br><br />共産主義を辞書で引くと「…財産の一部または全部を共同所有することで平等な社会をめざす…」とある。<br><br />万里の長城は真っ平らになったけど、中国人格差の凸凹は激しくなるばかりだなんて、前座見習いの落語家だって言わないオチだっつーの＞＜;<br><br /><br><br />※1=2003年に打ち上げられた中国初の有人宇宙船「神舟5号」に搭乗した飛行士が「万里の長城は見えなかった」と正直に発言しちゃい、ついに中国当局も見えないコトを正式に認めた。<br><br />※2=2002年に公開されたチャン・イーモウ監督の香港&中国合作映画。秦の始皇帝暗殺を目論む武術家の物語で、中国ならではの色彩美とワイヤーアクション演技が見事な傑作。</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

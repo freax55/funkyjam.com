@@ -1,0 +1,27 @@
+@charset "shift_jis";
+
+body {
+	_zoom:75%;
+}
+#page {
+	margin:0;
+}
+
+/* contents start */
+#contents .link {
+	visibility:hidden;
+}
+/* contents end */
+
+#contents .entryWrapper#top {
+	width:810px;
+}
+
+/* easter egg start */
+#contents .egg {
+	background:none !important;
+}
+#contents .egg img {
+	visibility:visible;
+}
+/* easter egg end */

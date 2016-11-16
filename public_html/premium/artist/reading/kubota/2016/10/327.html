@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第327回 「街のニオイ」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/10/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/10/14 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第327回 「街のニオイ」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 夜中に目が覚めたら、部屋が甘いニオイに包まれていた。<br><br />『なんじゃこりゃ!?』と、軽く不安になって寝たまま考え、それはキンモクセイだと気がついてホッとした。<br><br />そーか、そーか、そーだったのか。<br><br />近所の庭に大きなキンモクセイがあり、オレンジ色の小さな花が満開なのを思い出した。<br><br />その芳香が夜風に乗って、小さく開けていた窓からワタル部屋に流れ込んだのだった。<br><br />キンモクセイのニオイは好きだけれど、2度目の結婚生活を思い出して、少し切なくなる。<br><br />秋になると家の近くのキンモクセイが甘い香を放ち、まだ小学低学年だった養女に「これはナンのニオイ？」と問われたシーンを、鮮明に思い出すからだ。<br><br />東京の夏は、狂気の暑さで全身が鈍化するけど、秋の気配がして来るとデブ族も五感が回復してニオイに敏感になる。<br><br />空腹で家路に就くデブ族にとって、秋の日が暮れる街に漂う炊事のニオイは、キンモクセイ以上にセンチメンタルだ。<br><br />鍋や食器を用意する音まで聞こえたりすると、ポケモンGOでレアポケモンを見つけたよーに高揚し、不意に焚火の煙を感じたりしたら、枯葉がパチパチ燃える音まで聞こえて来る気になり、焼きイモを思い出してヨダレをたらす秋のデブ族…。<br><br />そんなデブ族に限らず、ニオイや音は人の思い出と強く結びつく。<br><br />ベトナムの炊事は練炭(レンタン)がメインで、そこから出る二酸化炭素のニオイは、小学生の頃の祭り屋台に直結した。<br><br />古い古い話だが、昔の屋台ではカーバイドとゆー固形燃料に水を加え、発生するアセチレンガスに火をつけて照明にしていた。<br><br /><br><br />しか&#12316;し!<br><br />アセチレンガスの灯はとても明るいが、燃える時に多量の二酸化炭素を出しまくっていたのである。<br><br />今や先進国の日本はCO2削減=温暖化防止などと言っているけど、昔はヤリタイホーダイだったのだ。<br><br />ちなみに、水とカーバイドを空き缶に入れてガチガチにフタをし、川や海に投げ込んで待つコトしばし、アセチレンガスが充満した缶が水中で大爆発し、そこらじゅーの魚がプカプカ浮いて来る…さすがに当時も違法だった爆弾漁も日常茶飯事だった。<br><br />え&#12316;ソレはソレとして、ベトナムの練炭=二酸化炭素=カーバイト=祭の屋台…の方程式なのである。<br><br />ガソリンも昔は品質が悪く、排気ガスのニオイが子供を誘惑した。<br><br />ガソリンには、もともと香水に使われるよーな香料が含まれているのだ。<br><br /><br><br />しか&#12316;し!<br><br />昔のガソリンは精製が悪く、自動車燃料のガソリンにも香料が残っていて、なんと、排気ガスが香水みたいにイイ香りがしたのである。<br><br />で、昭和のバカガキたちは自動車が走り去ると、すぐさま道路に飛び出して排気ガスを胸イッパイ吸い込んでいたのだ。<br><br />自動車のエンジンも昔はポンコツで、よくエンストした。 <br><br />パワーステアリングやオートマなんて未来の技術で、エンストすると「クランク」ってゆー鉄の棒をエンジンのシャフトに直結し、ドッコイドッコイ回してエンジンを再起動させろと父親に言われ、かかったエンジンの安っぽい音も記憶に残っている。<br><br /><br><br />しか&#12316;し!<br><br />なんと言っても気持ちが躍るのは、フツーの家庭のフツーのカレーのニオイだ。<br><br />住宅街に漂うカレーの香り、『ああ、これは市販のルーで作った黄色いカレーだな』の瞬間、なんとも言えずに平和な日本、家族団欒を実感する。<br><br />フツーの黄色いカレーのニオイこそ、日本庶民のノスタルジアなのである(｀_´)ゞ</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/08/no_diggity_9.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

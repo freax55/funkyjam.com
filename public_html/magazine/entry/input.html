@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>メルマガ登録 - Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、Brown Eyed Soulが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,Brown Eyed Soul,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/lower.css">
+<link rel="stylesheet" type="text/css" href="/css/magazine.css">
+<!--#include virtual="/include/head/js.html"-->
+</head>
+<body id="top" class="contact">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header_s.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからmainエリア -->
+	<section id="mainArea">
+		<p id="mainCover">MAIL MAGAZINE</p>
+	</section>
+<!-- ここまでmainエリア -->
+
+<!-- ここからcontentエリア -->
+	<article id="contentArea">
+		<div id="contentBox">
+			<p id="pankuzu"><a href="/">TOP</a>&nbsp;>&nbsp;メルマガ登録</p>
+			<div id="contentWrapper">
+				<p class="lead"><span class="indispensability">*</span>は必ずお書きください。</p>
+				<form action="index.php" method="post">
+					<div class="dfTbl">
+						<h1><strong>メルマガ登録</strong></h1>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>メールアドレス<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
+									<input name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
+									<p class="attn">半角英数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス再確認<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
+									<input name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
+									<p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>性別<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.sex}<p class="error">{$errors.sex}</p>{/if}
+									<input type="radio" name="form[sex]" value="男性" id="formSexMale"{if $form.sex == '男性'} checked{/if} /><label for="formSexMale">男性</label>
+									<input type="radio" name="form[sex]" value="女性" id="formSexFemale"{if $form.sex == '女性'} checked{/if} /><label for="formSexFemale">女性</label>
+								</td>
+							</tr>
+							<tr>
+								<th>生年月日<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.birthday}<p class="error">{$errors.birthday}</p>{/if}
+									西暦<input name="form[birthday_year]" type="text" value="{$form.birthday_year|escape}" maxlength="4" class="w30" />年
+									<input name="form[birthday_month]" type="text" value="{$form.birthday_month|escape}" maxlength="2" class="w30" />月
+									<input name="form[birthday_day]" maxlength="2" class="w30" type="text" value="{$form.birthday_day|escape}" />日
+								</td>
+							</tr>
+							<tr>
+								<th>都道府県<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.pref}<p class="error">{$errors.pref}</p>{/if}
+									<select name="form[pref]">
+									<option value="北海道"{if $form.pref == '北海道'} selected="selected"{/if}>北海道</option>
+
+									<option value="青森県"{if $form.pref == '青森県'} selected="selected"{/if}>青森県</option>
+									<option value="岩手県"{if $form.pref == '岩手県'} selected="selected"{/if}>岩手県</option>
+									<option value="宮城県"{if $form.pref == '宮城県'} selected="selected"{/if}>宮城県</option>
+									<option value="秋田県"{if $form.pref == '秋田県'} selected="selected"{/if}>秋田県</option>
+									<option value="山形県"{if $form.pref == '山形県'} selected="selected"{/if}>山形県</option>
+									<option value="福島県"{if $form.pref == '福島県'} selected="selected"{/if}>福島県</option>
+
+									<option value="茨城県"{if $form.pref == '茨城県'} selected="selected"{/if}>茨城県</option>
+									<option value="栃木県"{if $form.pref == '栃木県'} selected="selected"{/if}>栃木県</option>
+									<option value="群馬県"{if $form.pref == '群馬県'} selected="selected"{/if}>群馬県</option>
+									<option value="埼玉県"{if $form.pref == '埼玉県'} selected="selected"{/if}>埼玉県</option>
+									<option value="千葉県"{if $form.pref == '千葉県'} selected="selected"{/if}>千葉県</option>
+									<option value="東京都"{if $form.pref == '東京都'} selected="selected"{/if}>東京都</option>
+									<option value="神奈川県"{if $form.pref == '神奈川県'} selected="selected"{/if}>神奈川県</option>
+
+									<option value="新潟県"{if $form.pref == '新潟県'} selected="selected"{/if}>新潟県</option>
+									<option value="富山県"{if $form.pref == '富山県'} selected="selected"{/if}>富山県</option>
+									<option value="石川県"{if $form.pref == '石川県'} selected="selected"{/if}>石川県</option>
+									<option value="福井県"{if $form.pref == '福井県'} selected="selected"{/if}>福井県</option>
+									<option value="山梨県"{if $form.pref == '山梨県'} selected="selected"{/if}>山梨県</option>
+									<option value="長野県"{if $form.pref == '長野県'} selected="selected"{/if}>長野県</option>
+
+									<option value="岐阜県"{if $form.pref == '岐阜県'} selected="selected"{/if}>岐阜県</option>
+									<option value="静岡県"{if $form.pref == '静岡県'} selected="selected"{/if}>静岡県</option>
+									<option value="愛知県"{if $form.pref == '愛知県'} selected="selected"{/if}>愛知県</option>
+									<option value="三重県"{if $form.pref == '三重県'} selected="selected"{/if}>三重県</option>
+
+									<option value="滋賀県"{if $form.pref == '滋賀県'} selected="selected"{/if}>滋賀県</option>
+									<option value="京都府"{if $form.pref == '京都府'} selected="selected"{/if}>京都府</option>
+									<option value="大阪府"{if $form.pref == '大阪府'} selected="selected"{/if}>大阪府</option>
+									<option value="兵庫県"{if $form.pref == '兵庫県'} selected="selected"{/if}>兵庫県</option>
+									<option value="奈良県"{if $form.pref == '奈良県'} selected="selected"{/if}>奈良県</option>
+									<option value="和歌山県"{if $form.pref == '和歌山県'} selected="selected"{/if}>和歌山県</option>
+
+									<option value="鳥取県"{if $form.pref == '鳥取県'} selected="selected"{/if}>鳥取県</option>
+									<option value="島根県"{if $form.pref == '島根県'} selected="selected"{/if}>島根県</option>
+									<option value="岡山県"{if $form.pref == '岡山県'} selected="selected"{/if}>岡山県</option>
+									<option value="広島県"{if $form.pref == '広島県'} selected="selected"{/if}>広島県</option>
+									<option value="山口県"{if $form.pref == '山口県'} selected="selected"{/if}>山口県</option>
+
+									<option value="徳島県"{if $form.pref == '徳島県'} selected="selected"{/if}>徳島県</option>
+									<option value="香川県"{if $form.pref == '香川県'} selected="selected"{/if}>香川県</option>
+									<option value="愛媛県"{if $form.pref == '愛媛県'} selected="selected"{/if}>愛媛県</option>
+									<option value="高知県"{if $form.pref == '高知県'} selected="selected"{/if}>高知県</option>
+
+									<option value="福岡県"{if $form.pref == '福岡県'} selected="selected"{/if}>福岡県</option>
+									<option value="佐賀県"{if $form.pref == '佐賀県'} selected="selected"{/if}>佐賀県</option>
+									<option value="長崎県"{if $form.pref == '長崎県'} selected="selected"{/if}>長崎県</option>
+									<option value="熊本県"{if $form.pref == '熊本県'} selected="selected"{/if}>熊本県</option>
+									<option value="大分県"{if $form.pref == '大分県'} selected="selected"{/if}>大分県</option>
+									<option value="宮崎県"{if $form.pref == '宮崎県'} selected="selected"{/if}>宮崎県</option>
+									<option value="鹿児島県"{if $form.pref == '鹿児島県'} selected="selected"{/if}>鹿児島県</option>
+									<option value="沖縄県"{if $form.pref == '沖縄県'} selected="selected"{/if}>沖縄県</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>気になっているアーティスト<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.favorite}<p class="error">{$errors.favorite}</p>{/if}
+									<input type="hidden" name="form[fav_kubota]" value="" />
+									<input type="checkbox" name="form[fav_kubota]" value="久保田利伸" id="formKubota"{if $form.fav_kubota}checked="checked"{/if} /><label for="formKubota">久保田利伸</label>
+									<input type="hidden" name="form[fav_urashima]" value="" />
+									<input type="checkbox" name="form[fav_urashima]" value="浦嶋りんこ" id="formUrashima"{if $form.fav_urashima}checked="checked"{/if} /><label for="formUrashima">浦嶋りんこ</label>
+									<input type="hidden" name="form[fav_mori]" value="" />
+									<input type="checkbox" name="form[fav_mori]" value="森大輔" id="formMori"{if $form.fav_mori}checked="checked"{/if} /><label for="formMori">森大輔</label>
+									<input type="hidden" name="form[fav_bes]" value="" />
+									<input type="checkbox" name="form[fav_bes]" value="BROWN EYED SOUL" id="formBes"{if $form.fav_bes}checked="checked"{/if} /><label for="formBes">BROWN EYED SOUL</label>
+									<br />
+									<input type="hidden" name="form[fav_shigemoto]" value="" />
+									<input type="checkbox" name="form[fav_shigemoto]" value="茂本ヒデキチ" id="formShigemoto"{if $form.fav_shigemoto}checked="checked"{/if} /><label for="formShigemoto">茂本ヒデキチ</label>
+									<input type="hidden" name="form[fav_shima]" value="" />
+									<input type="checkbox" name="form[fav_shima]" value="島かおり" id="formShima"{if $form.fav_shima}checked="checked"{/if} /><label for="formShima">島かおり</label>
+									<input type="hidden" name="form[fav_wataru]" value="" />
+									<input type="checkbox" name="form[fav_wataru]" value="ワタル" id="formWataru"{if $form.fav_wataru}checked="checked"{/if} /><label for="formWataru">ワタル</label>
+								</td>
+							</tr>
+						</table>
+						<p class="btn"><input type="submit" value="内容を確認する" /></p>
+					</div>
+					<input type="hidden" name="action" value="confirm" />
+				</form>
+			</div>
+		</div><!-- /contentBox -->
+		<div id="bottomBorder"></div>
+	</article>
+<!-- ここまでcontentエリア -->
+
+<!-- ここからリンクエリア -->
+<!--#include virtual="/include/link_s.html"-->
+<!-- ここまでリンクエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer_s.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

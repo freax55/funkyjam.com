@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第280回 「ブチギレる孤独」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/11/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/11/20 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第280回 「ブチギレる孤独」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 例年の11月なら、渋谷Mでマーサンミーサシ・ラーハーキーヤーに舌鼓なのだが、今年のサンマは最低レベルに貧弱で、ドーにもコーにも食欲がわかない。<br /><br />この原因は、日本列島に近づく前の公海で、台湾や中国の漁船が発育前のサンマをゴッソリ獲ってしまうからだ、と言われている。<br /><br />公海上だから、これは違法行為ではない。<br /><br /><br /><br />しか～し!<br /><br />台湾では脂の乗っていない小さいサンマを、イヌやネコのペットフード用に大量消費すると聞いたら、やっぱり「そりゃねぇべ!」の気持ちになる。<br /><br /><br /><br />しか～し!<br /><br />日本でも高級食材をペットフードに加工しているのだから、台湾を批難出来ないのだ…なんてコトを思いつつ、ビビアンのお使いで吉祥寺の手芸用品店Ｙへ行くと、70代とおぼしきオトコが、弱々しい中年の男性店員にブチギレていた。<br /><br />「ないってどーゆーコトだよ?! Ｙはその程度の店なのかよ?!」<br /><br />あまりのケンマクに立ち止まってガン聞きすると、オトコは欲しかったファスナーの部品が売っていないコトに激怒しているよーなのだ。<br /><br />オトコは着ているジャンパーのファスナー部分をグイグイ引っ張り、「じゃあナニか?! このファスナーを全部取り替えろってゆーのか?! それがＹの営業方針か!?」<br /><br />オトコの口調は完璧にクレーマーで、立場的に反撃出来ない店員相手に、日常のストレスを暴投しているとしか思えない。<br /><br />「Ｙに売ってないなら、どこで売ってるんだよ?! 売ってる店を教えろよ!!」<br /><br />まるでダダをこねるガキである。<br /><br />昭和の老人は年齢と共に体力気力も衰えていたが、平成老人は「健康寿命」とかでサプリメントだとか適度な運動だとかナンだカンだと、とにかくピンピンしている。<br /><br />ピンピンしてるのに平成デジタル世代には馴染めず、過去の思い出ばかり抱きしめて、ささいなコトでストレスを爆発させてしまう。<br /><br />医学的にゆーと、高齢者のブチギレは加齢による脳の萎縮に原因があるらしく、特に前頭葉が老化すると感情の抑制がきかず、ちょっとキレるとブチブチブチッと急激にキレまくる…と言われている。<br /><br />で、こーゆーブチギレ老人を冷静にさせるのは、本当にヤッカイだ。<br /><br />中国人に南沙諸島の軍事基地建設を中止させるくらい、ほとんど不可能レベルに近い。<br /><br />えー、ここで中国VSアメリカat南沙諸島の話になると深すぎて再浮上出来そーにないので、話をブチギレ老人に戻しま～す。<br /><br />えー、ちょっと想像してみてちょーだい。<br /><br />誰ともコミュニケーションを取れない自分を、想像してちょーだい。<br /><br />LINEやSNSで不特定多数の人達とつながっている、平成デジタル世代には想像が難しいかもしれないけど、本当の孤独は、無人島で独りぼっちより、都会の雑踏で独りぼっちのほーが、はるかに深く重く絶望的なのだ。<br /><br />フォロワーがヒャクマン人にても「いいね」がニヒャクマン回あっても、ショセンは都会の孤独に抗っているだけで、多くのデジタル世代はコミュニケーションの本質を勘違いしている、とワタル自身は思っている。(勘違いしていないのは、デジタルピーポーから莫大な利益を得ている一部の連中だけだ)<br /><br />そーしたデジタル孤独ピーポーの哀しきエンターテイナーが、最近偽物ブランド販売で逮捕された、自称ハイパーエリートニートの「ばびろんまつこ」嬢だ。<br /><br />偽ブランド販売は確実に犯罪だけど、ばびろん嬢の超セレブTwitterはウソでも無罪だ。<br /><br />「使っている香水を教えていただきたいです」とゆーフォロワー質問への回答が「フェロモンを大切にしたいので、基本的にノンパフュームです。うふふ」…素晴らしい!<br /><br />「妹の誕生日プレゼントにフェンディの新作と 『こういうのは25歳くらいまでは男の人に買ってもらうものよ。』という言葉を添えて。 」…お見事!<br /><br /><br /><br />しか～し!<br /><br />元は有名通信会社の広報だったとゆーばびろん嬢は、夢を売る仕事と実生活のギャップゆえに、Twitterで夢の世界のヒロインを演じたに違いない。<br /><br />簡単に別人格に変身出来るデジタル世界だけが、ばびろん嬢のストレス発散の場所だったのだろう。<br /><br /><br /><br />しか～し!<br /><br />デジタル世代の前頭葉が、アナログ世代よりも打たれ強いとは決して思えず、日本の超高齢化社会は超ブチギレ社会になるんじゃないかと、来年のサンマと共に不安なワタル自身なのである。<br /><br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

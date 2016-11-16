@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="8"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/blog/index.php?path=index">Staff Blog（スタッフブログ）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;久保田 利伸</div>
+						<div class="section">
+{assign var="blog_id" value="8"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/06/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/06/09 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">サプライズ</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2817.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2817.jpg">
+			</div>
+{/if}
+			<p class="text">先日5/21shibuya WWWにて開催された事務所の後輩である森大輔のライブ「第7回 森の音楽会」をこっそり見に行っていた久保田さん。<br />後方の観客席の暗闇の中ではこんな事が起きていました(*`艸´)<br /><br />ライブにはBBCファンクラブ担当のワタルさんも来ており、<br />森さんのパフォーマンスに感動・興奮・ゴキゲンのワタルさんは<br />隣に座っていた久保田さんに話かけます。<br />内容は聞き取れませんでしたが、久保田さんがひそひそと何か返事をすると、ワタルさんが「わっはっはっは～！」と大笑いΣ(Дﾟ;/)/…<br /><br />結構大きな声だったので、それを見兼ねた社長がすぐさま2人を一喝！！！<br />久保田さんは「え、僕？！」、ワタルさんも「俺？！」と罪の擦り合い。<br />からの、2人して「しゅん…」としておりました。<br /><br />その後、あのサプライズステージに立つのでした♪ヾ(‘∀’o)ﾉ</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/04/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/04/28 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">めでたい日</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2801.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2801.jpg">
+			</div>
+{/if}
+			<p class="text">先日ファンキー・ジャムスタッフがめでたくも結婚し<br />そして式に招待を頂き、ファンキー・ジャム社員&アーティスト総出で参列した時のお話。<br /><br />式まで少し時間があり、待機室で待つことになったのですが、<br />大人しくしている人達ではありません。<br />新しくスマホを買ったりんさんが、その新機能である"Live Photos"を自慢するところから始まった撮影会。<br />久保田さんに色々なことを注文するりんさん(^_^;)<br />久保田さんも面白がって色んな変なポーズと顔の七変化。<br />←その場面をどうぞご覧あれ。<br /><br />久保田さんとりんさんが集まるといつも二人で延々と大騒ぎしています。<br />だれも止められません(;O;)</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/04/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/04/07 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.20</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2789.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2789.jpg">
+			</div>
+{/if}
+			<p class="text">長期に渡り連載させて頂きました、「L.O.Kツアー裏側」シリーズも本日で完結！<br /><br />L.O.Kツアー全国41公演のファイナル、岡山公演を終え、<br />お世話になったメンバー、たくさんのスタッフの皆様への感謝の打上げを行いました！<br />2ヵ月後にアリーナを控えていたものの、ホール公演終了!!ということで、皆さんそれぞれ大いに羽を伸ばし、楽しんでくださいました。<br /><br />そんな中、久保田さんはというと…<br /><br />とにかく色んなところに割込み、ちゃちゃを入れたり、または、ちゃちゃを入れたりしておりました(笑)<br />こちらは、打上げを仕切ってくれた司会者にちゃちゃを入れているところです！<br /><br />と、本番が終わってからも、なお疲れることを知らない久保田さんの夜はまだまだ続くのでした。<br /><br />※打上げの詳しい内容は、ファンクラブ会報誌vol.117にてお楽しみください。<br /><br />さて！次回からは、また日常のあんなことやこんなことを書いていこうと思います！<br />どうぞお楽しみに！</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/03/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/03/23 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.19</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2781.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2781.jpg">
+			</div>
+{/if}
+			<p class="text">先週遂に！L.O.K Supa DupaのDVD/Blu-rayが発売されましたね！<br /><br />さて、前回に続く岡山移動後のエピソードです！<br /><br />岡山到着後は、ホテルチェックイン後、市内散策に出掛けました。<br />まずは"キムラヤのパン"の本店に！<br />岡山をよく知るイベンターさんに名物のバナナクリームロールを勧められパクリ。<br />美味しいからと「明日の朝ご飯にしなよ！」と、スタッフに別のフレーバーを勧めてみたり。(笑)<br />バナナクリームロールを片手に商店街を練り歩く久保田さん。<br /><br />イベンターさんに「美味しい洋食屋さんがあるので行きましょう！」と勧められ<br />次に辿り着いたのは、知る人ぞ知るという名店「やまと」さん。<br />食べる気満々の久保田さんをよそに、準備中～とのことで意気消沈。<br />ディスプレイを眺めながら、「この昔ながらな感じがまたそそるよね～。」と、<br />かなり残念がっていました( ;∀;) <br /><br />この後も、当分商店街散策は続くのでした。</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/03/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/03/09 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.18</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2775.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2775.jpg">
+			</div>
+{/if}
+			<p class="text">来週はいよいよ、「L.O.K Supa Dupa」DVD、Blu-ray発売！<br /><br />今回は「香川から岡山へツアー一行大移動」の巻です。<br /><br />ツアー中の移動はいつも、スタッフはステージの仕込みがあるため<br />本番前日早々に公演地に入ります。<br />メンバーと久保田さんは、行程によって一緒だったり別々だったりするのですが、<br />この日は、スッタフ、メンバー、久保田さんとL.O.K一行で大移動でした。<br /><br />香川出発前にやはりうどんを食べねばということで<br />高松駅中のうどん屋さんが有名と聞きつけさっそく立ち食いうどん屋さんへ！<br />久保田さんはスタンダードなかけうどんを食べてました。<br />通りかかるスタッフとメンバーがニヤニヤしながら通りすがるのがなんともおかしかったです(笑)<br /><br />そしていざ、二階建の列車にのり岡山へ！<br />両車全体をL.O.K一行が埋め尽くしワイワイガヤガヤ！…は数分、<br />20分も経つとほぼ全員爆睡で静まり返る車内の中。<br />がしかし、瀬戸大橋を渡る瞬間だけはパシャパシャとカメラや動画を撮る音で賑わってました(ｏ´艸`ｏ)♪<br /><br />岡山到着後のエピソードは、次回につづく！<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/02/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/02/22 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.17</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2760.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2760.jpg">
+			</div>
+{/if}
+			<p class="text">昨年7/25、愛媛は松山市民会館公演終演後は、<br />翌日の香川公演のために香川へ移動～。<br /><br />その前に！！！約3時間に渡るパフォーマンス後でお腹ペコペコの久保田さんは、<br />愛媛の和食屋さんにて晩ごはんを済ませてから移動することに！<br /><br />美味しいお料理を食べ終わる頃、<br />シメでお店名物巨大おにぎりを久保田さんがリクエスト?!<br />お腹9分目は満たされているであろう一行はどんなデカいおにぎりが出てくるのか<br />楽しみな反面ビビッておりハラハラドキドキ((((;ﾟ;Д;ﾟ;))))<br /><br />そして登場したのが、久保田さんが手にしているお米3合分で作った<br />仰天巨大おにぎりなのです!!!<br />中身は梅干しがたくさん詰め込まれていました(笑)<br /><br />美味しく頂き、残った分は小さな(普通サイズ)おにぎりにしてもらい夜食として頂きました(〃)´艸`)</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/02/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/02/05 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.16</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2746.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2746.jpg">
+			</div>
+{/if}
+			<p class="text">7月25日松山公演本番当日、一日遅れですが、久保田さんの誕生日をメンバーがサプライズでお祝いしてくれました！<br />リハが終わり久保田さんが楽屋に帰ろうとすると、急にメンバーがバースデーソングを演奏♪<br /><br />なんだなんだ！と大はしゃぎした後は、<br />ケーキを前に祈り(笑)、感動して泣きマネをする(笑)。<br />メンバーもいつもの事と、慣れっこですね(ﾟ∀ﾟ)<br /><br />このケーキ、甘いもの好きのタイ(シンガー)が裏でバクバク食べてたのは内緒です(*’艸`*)</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/01/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/01/19 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.15</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2737.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2737.jpg">
+			</div>
+{/if}
+			<p class="text">'15年6月19日、松本公演の前々日。<br />L.O.Kツアースタッフさん達とささやかな懇親会がありました！<br /><br />ツアーで大変お世話になっている<br />音響、照明、大道具、衣装、グッズ、トランポさん達と共に過ごした夜。<br />それはそれは激しく熱い夜でした！<br />(実際は写真の倍以上の方がいます)<br /><br />最後は、皆で集合写真！<br />お決まりのシャッター切るタイミングで暴れ出す久保田さん(*`▽´*)！<br /><br /><br />こうして顔を合わせて他愛もない話をするのも、より良いステージを作るためにはとても大事なことですよね！</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/01/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/01/05 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.14</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2729.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2729.jpg">
+			</div>
+{/if}
+			<p class="text">新年あけましておめでとうございます！<br /><br />ライブDVD&Blu-rayの発売も決定し！<br />昨年に続き、「L.O.Kツアー裏側」シリーズの続編をドシドシ更新して参りますので<br />このブログをご覧になりながら、是非発売を楽しみにして頂ければと思います！<br /><br />本年も何卒よろしくお願い申し上げます！<br /><br /><br />それではさっそく．．．．.<br />皆様、←これ(写真)は何だと思いますか？<br /><br />あれは、6/13の広島公演のバッグステージでの出来事。<br />久保田さんが会場入りの際に着てきたワイシャツを<br />シワがつかないよう楽屋のクローゼットにかけたスタッフ。<br /><br />リハーサルでステージに向かう際、<br />スタッフがこのシャツを(肌寒くなった時のために)念のためステージに持っていこうと<br />クローゼットを開けると、あるはずのシャツがない？！？！？！？！？！<br /><br />焦ってバタバタ探していると…<br /><br />久：どうしたの？<br />ス：あ、実は…クローゼットにかけておいたはずの久保田さんのシャツが…<br />久：あー、それならここにあるよ。<br /><br />と、指をさした先にあったのが、↑コレ(写真)です。<br /><br />ス：へ？誰がこんなことを…<br />久：俺！これは、シワがあってこそオシャレなシャツなんだよ～。<br />だからこうして雑巾みたいに絞って丸めとくのが一番！<br /><br />・・・・・・・・<br /><br />とにかく、どんな形であれ、そこにシャツがあるなら良かったです(´д`ι)ﾎｯ</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/12/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2015/12/11 UPDATE</div>
+
+
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+
+
+
+			<p class="tit">L.O.Kツアー裏側vol.13</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2704.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2704.jpg">
+			</div>
+{/if}
+			<p class="text">5/28は、びわ湖ホール公演でしたね！<br />この日は、ラルフの誕生日でL.O.Kメンバーでささやかながらお祝いをしました。<br /><br />サプライズでシャンパン(本番前なのでノンアルコールで)とケーキ、<br />そして驚いたのは、久保田さんのドラムを率いてバースデーソングをメンバーが演奏?!<br />レアな姿をすかさずパシャリ＼(◎o◎)／！<br /><br />感動屋のラルフは、涙せずにはいられなかったようです。<br />とっても素敵な光景でした☆<br /><br />ラルフのサプライズバースデー成功！！！！</p>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2935.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/11/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/11/post-241.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						偶然！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2935.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2935.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2917.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/10/post-240.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						からあげが好き
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2917.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2917.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2902.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/10/mens.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						MENS
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2902.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2902.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2891.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/09/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/09/post-239.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						昨日のお話し
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2891.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2891.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2873.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/09/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/09/post-238.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						現在は死語
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2873.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2873.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2858.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/08/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/08/post-237.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						リフレッシュ
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2858.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2858.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2847.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/08/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/08/post-236.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						7/22茂本ヒデキチ個展「Shadow&Shade」初日...
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2847.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2847.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2838.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/kubota/2016/07/post-235.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						素敵なエピソードありがとうございました！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2838.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/kubota/images/2838.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+	</ul>
+</div>
+
+								</div>
+								<div class="pagenate">
+									<ul>
+{assign var=list value='<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index.html" class="link_page">1</a></li>&nbsp;
+<li><span class="current_page">2</span></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_3.html" class="link_page">3</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_4.html" class="link_page">4</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_5.html" class="link_page">5</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_7.html" class="link_page">7</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_8.html" class="link_page">8</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_9.html" class="link_page">9</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/kubota/../../../../../premium/artist/blog/kubota/index_11.html" class="link_page">11</a></li>'}
+{$list|replace:"m.funkyjam":"www.funkyjam"}
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

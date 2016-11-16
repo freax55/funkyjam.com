@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FANCLUB - Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、Brown Eyed Soulが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,Brown Eyed Soul,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/lower.css">
+<link rel="stylesheet" type="text/css" href="/css/fanclub.css">
+<!--#include virtual="/include/head/js.html"-->
+</head>
+<body id="top" class="contact">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header_s.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからmainエリア -->
+	<section id="mainArea">
+		<p id="mainCover">FANCLUB</p>
+	</section>
+<!-- ここまでmainエリア -->
+
+<!-- ここからcontentエリア -->
+	<article id="contentArea">
+		<div id="contentBox">
+			<p id="pankuzu"><a href="http://www.funkyjam.com/">TOP</a>&nbsp;>&nbsp;FANCLUB</p>
+			<div id="contentWrapper">
+				<p class="lead">下記の内容で送信しますか？</p>
+				<form action="index.php" method="post">
+					<div class="dfTbl">
+						<h1><strong>ファンクラブ</strong></h1>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>お名前</th>
+								<td>{$form.name|escape}</td>
+							</tr>
+							<tr>
+								<th>お名前カナ</th>
+								<td>{$form.kana|escape}</td>
+							</tr>
+							<tr>
+								<th>ご住所</th>
+								<td>{$form.zip1|escape}&nbsp;-&nbsp;{$form.zip2|escape}<br />
+								{$form.pref|escape}<br />
+								{$form.address1|escape}<br />
+								{$form.address2|escape}</td>
+							</tr>
+							<tr>
+								<th>お電話番号</th>
+								<td>{$form.tel_1|escape}&nbsp;-&nbsp;{$form.tel_2|escape}&nbsp;-&nbsp;{$form.tel_3|escape}</td>
+							</tr>
+							<tr>
+								<th>メールアドレス</th>
+								<td>{$form.mail|escape}</td>
+							</tr>
+							<tr>
+								<th>性別</th>
+								<td>{$form.sex|escape}</td>
+							</tr>
+							<tr>
+								<th>生年月日</th>
+								<td>西暦&nbsp;{$form.birth_year|escape}年&nbsp;{$form.birth_month|escape}月&nbsp;{$form.birth_day|escape}月</td>
+							</tr>
+							<tr>
+								<th>会員番号</th>
+								<td>{$form.member_no|escape}</td>
+							</tr>
+							<tr>
+								<th>Bari Bari Crewを<br>どこでお知りになりましたか？</th>
+								<td>{$form.know|escape}{if $form.know_other}<br />{$form.know_other|escape|nl2br}{/if}</td>
+							</tr>
+							<tr>
+								<th>ご希望の申込み書類</th>
+								<td>{$form.doc|escape}</td>
+							</tr>
+							<tr>
+								<th>メールマガジン</th>
+								<td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
+							</tr>
+						</table>
+						<p class="btn">
+							<input type="submit" value="上記の内容で送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return" type="button" value="戻る" onclick="location.href='./?action=input';" />
+						</p>
+					</div>
+					<input type="hidden" name="action" value="process" />
+				</form>
+			</div>
+		</div><!-- /contentBox -->
+		<div id="bottomBorder"></div>
+	</article>
+<!-- ここまでcontentエリア -->
+
+<!-- ここからリンクエリア -->
+<!--#include virtual="/include/link_s.html"-->
+<!-- ここまでリンクエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer_s.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+.titleType1 {
+  margin-bottom: 90px;
+}
+
+.mypage {
+  width: 840px;
+  margin: 0 auto;
+  font-size: 3.2rem;
+}
+.mypage .update {
+  margin-bottom: 90px;
+}
+.mypage .update p {
+  margin-bottom: 15px;
+  color: #FF3333;
+  font-weight: bold;
+  text-align: center;
+}
+.mypage .wrap1 {
+  margin-bottom: 60px;
+}
+.mypage .wrap1 p {
+  margin-bottom: 10px;
+  color: #999;
+  font-weight: bold;
+}
+.mypage .wrap1 div {
+  font-weight: bold;
+}
+.mypage > .btnType1 {
+  margin: 90px auto 0;
+}
+
+@media screen and (max-width: 899px) {
+  .titleType1 {
+    margin-bottom: 45px;
+  }
+
+  .mypage {
+    width: 93.33333%;
+    font-size: 1.6rem;
+  }
+  .mypage .update {
+    margin-bottom: 45px;
+  }
+  .mypage .update p {
+    margin-bottom: 7.5px;
+  }
+  .mypage .wrap1 {
+    margin-bottom: 30px;
+  }
+  .mypage .wrap1 p {
+    margin-bottom: 5px;
+  }
+  .mypage > .btnType1 {
+    margin: 45px auto 0;
+  }
+}

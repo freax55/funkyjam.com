@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第312回 「選挙の美学」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/07/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/07/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第312回 「選挙の美学」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 7月10日に第24回参議院議員選挙が行われるが、今回の注目は立候補者よりも、はじめて投票権を与えられた18-19歳の一般ピーポーだ。<br><br />ある調査によると「必ず行く」=22％、「行くつもり」=38％で、18-19歳の60％あまりが投票するコトになりそーなのである。<br><br />ちなみに、2014年の衆議院選挙の投票率は戦後最低の52.66％で、そのうち20歳代は33％弱だったから、18-19歳の60％はとても高い投票率だ。<br><br /><br><br />しか～し!<br><br />ワタル自身が18歳だった時を振り返ると、政治にはマッタク感心がなかった。<br><br />昭和の18歳は、まだまだガキだったのだ。<br><br /><br><br />しか～し!<br><br />平成の18歳は「AKB総選挙」で、投票の楽しさや1票の重みを熟知していると思うのだ。<br><br />冗談で言っているんじゃないよ。本気で言っているの;^_^A<br><br />政治なんて分からなくても、立候補者の主義主張を知らなくても、自分が好きだと思った人に投票すれば良いと、ワタル自身は思うのだ。<br><br />人生最初の国政選挙は、そのテードの意識で良いと思うのだ。<br><br />民主主義の大先輩=イギリスだって、EU離脱に投票した人達が「やっぱ離脱したくないから、もー1回国民投票やってちょーだい」なんて言ってるんだから、18歳の参政なんて好き嫌いレベルでOK。とにかく、投票に行くコトが最初の1歩だ。<br><br />以前も書いたけれど、オレ達=一般ピーポーは、政治家のスポンサーなのだ。<br><br />非力な庶民のオカゲで、政治家はカネの心配をしなくてイイのだよ。<br><br />だから、せめて選挙の時くらいは、庶民の好き嫌いをセンセー達に分からせたい。<br><br />それにはまず、投票に行くコトだ。<br><br />好きな人が誰もいなくて白票を投じても、それが自分の意思表示なのだから価値がある。<br><br />だから全国の18-19歳は、冷やかし気分でも良いから投票に行こう。<br><br />若い意思が本気になれば、きっと未来に反映される。<br><br /><br><br />しか～し!<br><br />東京都民には、参院選の後に都知事選もある。<br><br />この選挙は激しくヤッカイだ。<br><br />マスコミでは様々な人の名前が上がっているけれど、猪瀬・舛添のバトンタッチがトホホ過ぎたから、東京ピーポーはみ～んな懐疑的になっちゃってるのだ。<br><br />「誰が都知事になっても同じ」だなんて決して思わないけど、「誰なら都知事にふさわしいか」が分からないのだ。<br><br />内田裕也翁は、都知事を辞した舛添氏を評して「ロックじゃない、フォークソングだ」と言い捨てたけれど、それは絶対に違う。<br><br />確かにロックは立って走れと歌い、フォークは座って考えろと歌うけれど、それはセコイのではなく、フォークの美学なのだ。<br><br />舛添氏は多くの趣味を持っていたみたいだが、書も絵も音楽も、彼には政治的アクセサリーだったに違いない。<br><br />本当に書を解し、絵を愛で、音楽に癒されていたなら、あんな無様な結末にはならなかったハズである。<br><br />だから、フォークシンガーのワタル自身が次の都知事に望むのは、フォークの美学を持った人だ。<br><br />平成ピーポーには分かりにくいだろーが、風呂なしのアパートに棲み、小さな石けんをカタカタ鳴らして風呂屋へ行くのを、青春の美学と思うよーな政治家…なんていねぇだろーなぁ～ヽ(´o｀；<br><br />それでも全国的に7月10日は投票日!<br><br />行けない人は期日前投票をお忘れなく!<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

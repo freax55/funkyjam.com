@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/fancybox/jquery.fancybox-1.3.4.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/jquery.tile.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/offshot.js" charset="utf-8"></script>
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="16"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/offshot/index.php?path=index">Offshot（オフショット）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;久保田 利伸</div>
+						<div class="section">
+{assign var="blog_id" value="16"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article" id="offshot">
+								<div class="offshotList">
+									<ul class="clearfix">
+
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="52"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/08/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/08/05 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">写真家、久保田？</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+ <span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_69_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_69_l.jpg&amp;width=195&amp;height=195" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">写真家、久保田？</p></div>
+</span>
+
+{else}
+ <span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_69_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_69_l.jpg&amp;width=144&amp;height=144" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">写真家、久保田？</p></div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="53"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/07/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/07/24 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">Bring me up!歌ってます！</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_68_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_68_l.jpg&amp;width=195&amp;height=195" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">Bring me up!歌ってます！</p></div>
+</span>
+
+{else}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_68_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_68_l.jpg&amp;width=144&amp;height=144" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">Bring me up!歌ってます！</p></div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="54"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/07/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/07/16 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">ジャケット撮影中！</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_67_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_67_l.jpg&amp;width=195&amp;height=195" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">ジャケット撮影中！</p></div>
+</span>
+
+{else}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_67_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_67_l.jpg&amp;width=144&amp;height=144" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">ジャケット撮影中！</p></div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="55"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/06/13"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/06/13 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">手の位置確認中</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_66_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_66_l.jpg&amp;width=195&amp;height=195" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">手の位置確認中</p></div>
+</span>
+
+{else}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_66_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_66_l.jpg&amp;width=144&amp;height=144" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">手の位置確認中</p></div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="56"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/06/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/06/04 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">Bring me up!撮影中!</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_65_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_65_l.jpg&width=195&height=195" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">Bring me up!撮影中!</p></div>
+</span>
+
+{else}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_65_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_65_l.jpg&width=144&height=144" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">Bring me up!撮影中!</p></div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+
+<!-- 変数countに1加算する -->
+{assign var="no" value="57"}
+{if $no%17 == '1' || $no%17 == '2'}
+<li class="pick">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2013/05/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2013/05/29 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="tit">VTRチェック中</p>
+	<div class="clearfix">
+{if $no%17 == '1' || $no%17 == '2'}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_64_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_64_l.jpg&width=195&height=195" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">VTRチェック中</p></div>
+</span>
+
+{else}
+<span rel="pcOnly">
+<div class="image">
+<a href="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_64_l.jpg">
+<img src="/premium/image.php?path=/kd_dir/EZdle/EZcont/85001_fjprm_jpg/kubota_64_l.jpg&width=144&height=144" alt="" />
+</a>
+</div>
+<div class="txts"><p class="txt">VTRチェック中</p></div>
+</span>
+
+{/if}
+	</div>
+</li>
+
+
+									</ul>
+								</div>
+								<div class="pagenate">
+									<ul>
+<li><a href="/premium/artist/offshot/kubota/index.html" class="link_page">1</a></li>&nbsp;
+<li><a href="/premium/artist/offshot/kubota/index_2.html" class="link_page">2</a></li>&nbsp;
+<li><a href="/premium/artist/offshot/kubota/index_3.html" class="link_page">3</a></li>&nbsp;
+<li><span class="current_page">4</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

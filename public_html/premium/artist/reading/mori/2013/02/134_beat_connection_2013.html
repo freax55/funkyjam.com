@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第134回 「Beat Connection 2013」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/02/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/02/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第134回 「Beat Connection 2013」</p>
+		</div>
+		<div class="texts">
+			<div class="text">何度か言っているよーに、ワタル自身の音楽的ルーツは、4ビートのフォークソングだ。<br />アメリカからPPM(ピーター、ポール＆マリー)やジョーン・バエズ、ボブ・ディランなどが聴こえて来て、日本では高石ともや、岡林信康、高田渡らが歌いはじめ、日本フォークの夜明けを迎えた。<br /><br />しか～し!<br /><br />当時は著名なジャズ評論家でもあった大橋巨泉氏がMCをしていた洋楽チャート番組「ビートポップス」で、突如ランキングを上げてきたオーティス・レディングの「The Dock Of The Bay」は、やたら気に入った。<br />それがブルースだとかR&amp;Bだとか、まったく無関係に、ただただ、オーティスの哀愁あふれる歌声に、中学生のワタル自身は聴き入ったのだ。<br />そして今振り返ると、それが最初のブラック・ミュージックとの接近で、高校生になってスライ＆ザ・ファミリー・ストーンとかにも触発されたけど、あのサウンドは「不純異性交遊」のBGM以上にならなかった。<br />話が前後するけれど、中学の同級生ハシモトくんはお金持ちで、本物のモズライトのエレキ・ギターを持っていて、ザ・ベンチャーズのコピーが上手だった。<br />それでワタル自身もエレキが弾きたく、オカーチャンに「エレキが欲しいよぉぉぉ～!」とダダをこねたが、「エレキを弾くと不良になる!」と、キッパリ断罪された。<br />ならば、せめてフォークギターをと、段ボールをギターの形に切り、毎日毎日コードを押さえる練習をつづけていたら、たまりかねたオカーチャンは、ハシモトくんちの質屋で格安のアコースティックギターを買ってくれた。<br />それから、ワタル自身のフォークソングがスタートしたのだ。(嗚呼、優しきかな母、偉大なるかな父!)<br />あれから数十年、先週末に行われた「Beat Connection 2013」を体感すると、日本の音楽シーンとオーディエンスの激変を感じずにはいられない。<br /><br />ぶっちゃけ、オレは重たいビートのラップが苦手だ。<br />もちろんワタル自身の個人的趣味だけど、近年の日本語ラップよりも、解散した「叫ぶ詩人の会」のほーが、不意打ち的先鋭的にココロを射られた。<br /><br />しか～し!<br /><br />オセジを抜きに、1月27日の久保田利伸プロデュース「The JAM」は楽しかった。<br />オレにとってはコワモテで苦手だったZeebraや、敷居が高かったVERBALや、最近緊張感高まる韓国からのスター達とか、Mr.レイドバックのマギー司郎氏とか、ゼ～ンブまとめてAS ONEにし、歌わせ踊らせ笑わせ、結局、音楽はノンジャンル=ボーダレスのエンターテインメントに集約されることを、久保田利伸は横浜アリーナのステージで証明してくれたのだ。<br />まあ、そーは言っても、ワタル的にはツッコミ部分も満載なので、そこは2月25日発行予定の「Bari Bari Crew」のトークで笑って下さい。<br />えーとそれから、本当に多くの久保田利伸ファンが「週刊ワタル自身を読んでますよ」の笑顔で富士宮ヤキソバの列に並んで頂き、失地回復感謝感激のココロを、あらためてお伝えする次第であります!<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

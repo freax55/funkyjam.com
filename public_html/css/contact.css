@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#mainCover{
+	padding: 48px 0 48px;
+	font-size: 200%;
+}
+
+#contentArea .lead{
+	padding-bottom: 10px;
+}
+
+#contentArea .indispensability{
+	color: #CFBD3D;
+	vertical-align: -3px;
+}
+
+#contentArea .complete{
+	padding-bottom: 50px;
+}

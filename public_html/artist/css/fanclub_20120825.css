@@ -1,0 +1,146 @@
+@charset "shift_jis";
+
+#gnavi li#gnavi02 a {
+	background-position:left bottom;
+}
+#contents #main #navi li#navi06 a {
+	background-position:left bottom;
+}
+
+#contents #main h2#fanclubtitle {
+	width:564px;
+	height:25px;
+	background:url(../image/kubota/fanclubtitle.gif) no-repeat left top;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents #main p.lead {
+	margin-top:19px;
+}
+
+#contents #main #wrapper .btn a {
+	overflow:hidden;
+	display:block;
+	width:157px;
+	height:31px;
+	background:url(../../contact/image/bg_btn.gif) no-repeat left top;
+	border:0 none;
+	cursor:pointer;
+	font-size:118%;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	line-height:31px;
+	text-align:center;
+	margin:20px auto 30px;
+}
+#contents #main #wrapper .btn#top a {
+	margin:20px auto 30px;
+}
+#contents #main #wrapper .btn#bottom a {
+	margin:30px auto 25px;
+}
+
+#contents #main ul#joininfo{
+	margin:0 auto;
+	width:500px;
+}
+#contents #main ul#joininfo li {
+	float:left;
+	padding:0 14px;
+	line-height:normal;
+	border-right:solid 1px #FFFFFF;
+}
+#contents #main ul#joininfo li.last {
+	border-right:none;
+}
+
+#contents #main .section h3 {
+	color:#CCCCCC;
+	width:625px;
+	border-bottom:dotted 1px #CCCCCC;
+	margin-bottom:10px;
+}
+
+#contents #main .section table {
+	border:solid 1px #333333;
+	border-collapse:collapse;
+	width:100%;
+	line-height:1.5;
+}
+#contents #main .section table th {
+	padding:11px;
+	background-color:#000000;
+	border:solid 1px #333333;
+}
+#contents #main .section table td {
+	padding:11px 5px 11px 9px;
+	background-color:#1E1E1E;
+	border:solid 1px #333333;
+}
+#contents #main .section#benefitAll table td {
+	border-right:none;
+	border-left:none;
+	vertical-align:top;
+}
+#contents #main .section#benefitAll table td.imageCol {
+	text-align:center;
+	vertical-align:middle;
+}
+
+#contents #main .section .announce {
+	margin:8px auto 15px;
+	font-size:120%;
+	color:#FE9900;
+	text-align:center;
+}
+#contents #main .section#benefitAll table th {
+	width:46px;
+	font-weight:normal;
+}
+#contents #main .section#benefitAll table td dl dt {
+	color:#C23102;
+}
+
+#contents #main .section#benefitCredit table {
+	margin-top:15px;
+}
+#contents #main .section#benefitCredit table th {
+	color:#C23102;
+	font-weight:normal;
+	width:34%;
+}
+#contents #main .section#benefitCredit table td {
+	vertical-align:top;
+}
+#contents #main .section#benefitCredit table .imageWrapper {
+	margin:0 auto 10px;
+	text-align:center;
+}
+
+#contents #main .section#payMail .imageWrapper, 
+#contents #main .section#payCredit .imageWrapper {
+	margin-top:10px;
+}
+
+
+#contents #main .section #creditDetail {
+	float:left;
+	width:535px;
+}
+#contents #main .section #creditImage {
+	float:left;
+	width:60px;
+}
+
+.creditIcon {
+	margin:0 2px -3px;
+}
+p.textCenter {
+	text-align:center;
+	font-size:120%;
+	padding-top:15px;
+}

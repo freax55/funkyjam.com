@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>アンケート - Funky Jam　ファンキー・ジャム</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="../../../../css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../../../css/popup.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/enquete.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../../../css/print.css" rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" src="../../../../js/jquery-1.3.2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../js/popup.js" charset="utf-8"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div id="logo">Funky Jam</div>
+				<div id="hnavi">
+					<div id="btnClose"><a href="javascript:void(0);">閉じる</a></div>
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--コンテンツここから-->
+			<div id="contents">
+				<h1 class="pageTitle" id="vol98"><strong>会報119号アンケート</strong></h1>
+				<div class="wrapper">
+					<div class="inner">
+						<form action="index.php" method="post">
+							<input type="hidden" name="action" value="process" />
+							
+							<table border="0" cellspacing="0" cellpadding="0" class="enquete">
+								<tr class="enq01">
+									<th><p>今回の会報で面白かった又は印象に残った内容は何ですか？</p></th>
+									</tr>
+								<tr class="enq01">
+									<td>{$data.enq1|escape}	</td>
+									</tr>
+								<tr class="enq02">
+									<th><p>今回の会報でつまらなかった内容がありましたら、お書き下さい。</p></th>
+									</tr>
+								<tr class="enq02">
+									<td>{$data.enq2|escape}</td>
+									</tr>
+								<tr class="enq03">
+									<th><p>その他、ご意見・ご感想、やって欲しい企画やこんなコンサートグッズが欲しいなど、 自由にお書き下さい。</p></th>
+									</tr>
+								<tr class="enq03">
+									<td>{$data.enq3|default:"未入力"|escape|nl2br}</td>
+								</tr>
+							</table>
+							<div id="personal">
+								<ul>
+									<li class="name"><span>{$data.name|escape}</span></li>
+									<li class="number"><span>{$data.no|escape}</span></li>
+									<li class="mail"><span>{$data.mail|escape}</span></li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+							<div id="present">
+								<p class="title">今回のプレゼント</p>
+								<ul>
+									<li>
+										<strong>{$units.presents[$data.present_id].name|nl2br}</strong>
+									</li>
+								</ul>
+							</div>
+							<p class="btn"><input type="submit" value="送信" /></p>
+							</form>
+						</div>
+					</div>
+				</div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div class="inner">
+					<p id="copyright">(C)FUNKYJAM</p>
+					<p id="privacy"><a href="../../../../privacy.html" target="_blank">個人情報保護方針</a></p>
+				</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+</body>
+</html>

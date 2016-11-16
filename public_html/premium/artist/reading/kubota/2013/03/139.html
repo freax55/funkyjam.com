@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第139回 「実録・アバラ骨折！」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/03/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/03/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第139回 「実録・アバラ骨折！」</p>
+		</div>
+		<div class="texts">
+			<div class="text">夜中の3時に起きてワタル弁当を作り、４時半にバイト会社から群馬の仕事現場へワゴン車で出発。<br />ドライバーは前回登場のヌヌマで、風邪で調子が悪いなどとボソボソ言いつつ、関越道に乗って北上する。<br />助手席にはリーダー（正社員）のノーマン、そのうしろにワタル自身、ヌヌマのうしろは前回登場のトミー。<br />高速に乗る前からヌヌマのハンドリングがココロもとなく、何度かノーマンに注意されていた。<br />その時点でイヤな予感がしたのだが、睡魔には勝てず、トミー側にアタマを向けて後部座席で横になった。<br />完全に寝入って、どのくらい時間が経ったのか…突然、トテツモナイ衝撃に襲われ、ナニがナンだか分からないまま、身体の上に重たく固い物体がガンガン落ちて来た。<br />数回前に厚釜炊飯器が後頭部に落下した話を書いたが、アンなモンじゃない。全身が超重量級に押しつぶされたのだ。<br />混乱したアタマで、とっさにワゴン車が横転したと思った。<br />ヌヌマが意味不明の叫び声を発しているのに気づいた。<br />完全にパニック！ なんとか事態を把握をしよーとするも、身体が動かせない！ 上下左右の感覚がつかめない！<br />すぐに死にはしないと思ったが、さらなる衝撃が襲って来そーで、恐怖が走った。<br />「ヌヌマ、110番！」とゆーノーマンの声が聞こえ、つづいて「ワタルさん、助手席のドアを開けて！」と聞こえた。<br /><br />しか～し！<br /><br />オレはまだ動けない。<br />今度はトミーの声がした。<br /><br />「ちょっと待って」トミーが落下物をどけてくれ、なんとか重量級から上半身だけ脱出、よーやく事態を飲み込めた。<br />オレは前後座席の間に転げ落ち、その上に積み荷の鉄台車なんかが降ってきて、生き埋め状態になっていたのだ。<br />横転したと思っていたワゴンは、高速道路で止まっていた。<br />フロントグラスが蜘蛛の巣みたいにヒビ割れ、ノーマン側のドアがグッチャリ潰れていた。<br />交通事故だ。<br />オレの500倍パニクったヌヌマが、震える声で110番するも、まったく要領を得ない。<br />オレはノーマン側のドアを開けよーと上半身を起こしたが、その前に後部ドアが開かないので、外へ出ることが出来ない。<br />「足が動かない…ドアに挟まれた…」<br />ノーマンが苦しげに訴える。<br />かろーじて落ち着きはじめたオレは、トミーに119番するよーに頼む。<br />生き埋めから強引に全身を引き出し、渾身のパワーで後部ドアを開け、高速車に注意しながら外へ出た。<br />夜明け寸前の薄闇に、凄まじい光景が見えた。<br />あたり一面に車の残骸が散らばり、ハザードを点滅したトラックが、100メートルくらい先の路肩で斜めに止まっている。<br />原因は分からないが、 追い越し車線で大破しているオレ達のワゴン車が、トラックに追突したと思えた。<br />（あとで知ったことだが、ヌヌマが居眠りをして、左車線を走っていたトラックに追突したのだった）<br />助手席のドアは、グチャグチャになって半分ちぎれ、見た瞬間に開けるのを諦めた。<br />「左足が痛い…」<br />ノーマンの顔が血の気を失い、やけに白い。<br />「救急車呼んだから、もう少し我慢して！」<br />そんな気休めにもならない言葉で、ノーマンを励ますしかない。<br />運転席のヌヌマは、ハンドルを抱えて俯いたまま荒い息をしている。<br />殴りつけたい衝動にかられるが、まずはノーマンを助けることだ。<br />ノーマンの手を握ると、氷のよーに冷たい。<br />パニック再来をなんとか押さえ込み、イライラしながら救援を待った。<br />どれほど時間が経ったか定かでないが、警察とレスキュー隊が到着して2車線規制にサイレンが鳴り響き、テレビでしか見たことのないスゴイ機械でノーマン救出作業が開始された。<br />その時、チラッと見えたノーマンの左足がグニャリと曲がっているよーに思え、情けないことに、オレは号泣してしまった。<br />ただ祈るよーに見守るなか、レスキュー隊の迅速な行動で、無事にノーマンは助手席から担架へ移された。<br />ヌヌマは現場検証のために残り、オレとトミーが付き添いとしてノーマンの救急車に同乗した。<br /><br />しか～し！<br /><br />救急病院の診断結果を待つまでもなく、ノーマンの左足は元気だった。<br />オレの涙を嘲笑するかのごとく、ノーマンは左足を引きずりながらタバコを吸いに1人で歩いたのだ。<br />急激にホッとすると、なんだかオレの右胸が痛い感じがする。<br />念のため検査を…となり、ノーマン同様にレントゲン撮影。<br />担当医が整形外科ではないとゆーので、子細な診断書は東京に戻って改めてと、レントゲン写真をCD-Rにコピーしてくれた。<br />それから数時間後、ノーマンとワタル自身は板橋区の整形外科にいた。<br />医者はモニターにワタル肋骨のレントゲン写真を写し、グイグイ拡大する。<br />なにやら発見したのか、下からアバラ骨をイチ、ニッ、サンと数え、ロクで止まった。<br />「ん～ここねぇ」と言いつつ、今度はワタルボディに直接タッチしてイチ、ニッ、サンで、再びロクで止まった。<br />「ここ痛いでしょ？」と、ワタル肋骨を軽く押す。<br />激痛に声が出た。<br />「ほらここ」と、医者がレントゲン写真を指す。<br />「ハッキリ見えるでしょ、ヒビが」 うん。ハッキリ見えた。<br />「ヒビでも骨折になりますから、全治１ヶ月の重傷ですね」<br />ひぇぇぇぇ～!<br />それから看護士さんに胸部固定帯＜RIB BAND＞を着けてもらい、シップ薬を渡されて再診を命じられた。<br />バイト会社はキッチリと労災扱いにしてくれるとゆーのでお金の心配はないとしても、まったく予期せぬ結果に未だ納得がいかない。<br />だって、レスキュー隊で派手に救出されたノーマンは、打撲と肉離れで全治３週間なのだ。<br />号泣したオレのほーが骨折で重傷だったのだ！<br />これを書いているのは事故の翌朝で、バイト癖で４時に目が覚めてしまった。<br />パソコンの横にRIB BANDの使用説明書があって、「RIB BANDのRIBはリブロースのリブと同じだな」と思ったりしている全治１ヶ月のワタル自身なのである。<br />※老婆心ながら、被害トラックの運転手は軽傷とのことです。<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

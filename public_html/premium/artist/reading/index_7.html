@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Reading（リーディング）</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/04/03 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【今、行きたい国は？】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 今回のNo Diggityは、突然ランキングシリーズ“今、行きたい国は？”をお届けします！<br /><br /><br /><br />■１位　キューバ<br /><br />「行った事がない国だから。世界一リズム感のいい人たちを輩出しているその土壌に興味がある。共産主義に基づいた独特な文化と政治をもつ国の空気に触れてみたい。」<br /><br />■2位　ケニア<br /><br />「20年程前、同じアフリカのナイジェリアに行ったとき、同じ地球上なのに自分たちの住んでいるところとはまったく違う・・・ここまで違う国があるのかと、色んなことを考えさせられたので今度はケニアにも行ってみたい。今行ったらどう感じるだろう？」<br /><br />■３位　ブラジル<br /><br />「いつ同じことを問われても、必ず３本指に入る国です。それくらい大好きです。南米とヨーロッパの素敵な融合がとても魅力的。ヨーロッパの植民地だったところは、どこも一つ影が見えるんだけど、この国は太陽の国！と感じさせる国民性が素敵ですね。」<br /><br /><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20140403_1.jpg" /></center><br /><br /><br />第１位のキューバ、実はこの国・・・２年前に発売した久保田初の写真集「TOSHINOBU KUBOTA in INDIA」の撮影で最終ロケ地の候補となっていた国でした。スタッフ全員、久保田ならキューバを選ぶ！と予想していたところ、本人の口から出た国はインド。やはりキューバは今でも気になっている国のようです。<br /><br /><br /><br /><font size="-1" color="#FFFFFF">※写真集はFJ SHOPにて好評発売中です！<br /><br /><a href="/shop/">/shop/</a><br /><br /><center><img src="/premium/artist/essay/kubota2/images/20140403_2.jpg" /></center><br />※写真集「TOSHINOBU KUBOTA in INDIA」より</font><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/03/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/03/24 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その12「ワタクシのミュージカルな1年こぼれ話大放出！最終回！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> ＜第十ニ弾！＞<br /><br /><br /> <br />２０１３年１１月「レ・ミゼラブル」帝劇凱旋公演！こんなに長い舞台公演は初めてだった。<br /><br />お客様は、地方からもまた帝劇に足を運んで下さった。<br /><br />なんと力強い作品だろう！この作品に、キャスティングされたことを改めて感謝したい。<br /><br />わたしは、ショーが好きだ！音楽！舞台！ミュージカル！みな切磋琢磨して、そこにいる。<br /><br />怠け者で、飽き性で、金運が無くて酒癖と男運が悪くても好きだ！（自分で言っててちょっと…どうなの）<br /><br /><br /><br />「りんさん!!!ドリカムさんです!!!紅白です!!! 陸前高田です!!!」<br /><br />Nマネが、また勝手に素敵な仕事を決めて来てくれたぜ。<br /><br />久しぶりのドリカムでの紅白出演だ。<br /><br />またしても余談だが「なぜミュージカルの人になっちゃったの？」と聞かれる事があるが、それはミュージカルのオファーが２年も前から決まるからだ。<br /><br />コンサートツアーは早くて1年前だ、必然的にコンサートの仕事が遠のく。<br /><br />でも、オファー頂くのはありがたいこと。。なんせ好きな事お仕事にしてるからね!!!<br /><br /><br /><br />この仕事をしていなければ、関われなかった事も多くある。今まで関われた全ての皆様、有り難うございました。<br /><br />そして、これから関わる全ての皆様と可能性に、感謝と希望と意地をもって望みたいと思います!!!<br /><br /><br /><br />裏話満載の今回の連載いかがでしたか（笑）<br /><br />結局自分のこと満載で一番スッキリしてるのは　☆わ・た・し☆<br /><br /><br /><br />さーて次回は少し短めなモノにしたいが・・取材いってきまーす!!!!<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/03/14 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part8【ここだけの秘密・・・】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20140314.jpg" src="/premium/artist/reading/image/koma.jpg" width="400" height="569" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/03/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/03/10 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その11「余談をおひとつ」】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> ＜第十一弾！＞<br /><br /><br /><br />余談を一つしよう。<br /><br />レ・ミのオーディションと絶賛本番期間中にわたしは別居と離婚をした。<br /><br />マイナスの力はかなりの引力で、人間をへこませる。<br /><br />が・・私は男と別れる度に禊（みそぎ）をしたような気分になる。<br /><br />精一杯一緒にいて、ダメになったなら仕方ないのであるな。。。<br /><br />さっぱりと生きて行く事にしているが、多少の酒と友人と何よりも仕事が必要だ。<br /><br />金銭的には男に食わせてもらった過去は無いので、べつに何ら変わらないが、<br /><br />人生をフォーカスするのに絶対に必要なモノが仕事！<br /><br />なぜならば、私は好きな事を仕事に出来たからだ。。。要するに。。<br /><br />男より仕事を選ぶ、自分が大好きな自己中なわけだね。。私は。。<br /><br />う～～ん、こうなると一人で生きて行く方が楽なのかぁ・・・<br /><br />いやいや、ご縁があれば何度でも・・だな。<br /><br /><br /><br />そんな人生まっさいちうな私に<br /><br />「りんさん！天使にラブソング」です！来年６月です！帝劇です！！決まりました！！！」<br /><br />マネージャーNが嬉しそうに言う。。嬉しい。。お仕事&#9825;お仕事&#9825;。。でも。。<br /><br />わたし「相談ぐらいしろや！」Nマネ「うふっ&#9825;」<br /><br />このマネージャーは母になってから、一筋縄では行かない女になった。<br /><br />それはとても仕事に反映されているぞ。。<br /><br /><br /><br />写真は、別居ちうの我が家へ激励に来た友人、キムラ緑子・・そして離婚して仕事に走る！2014年６月からのシスター・アクト！主演の森公美子様とガッツリ焼き肉！！<br /><br /><img src="/premium/artist/essay/urashima/images/20/musical11-1.jpg"><br /><br /><img src="/premium/artist/essay/urashima/images/20/musical11-2.jpg"></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/03/07 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！part8【Fさん（女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><div><b>掃除・洗濯は好きなのですが料理が苦手です。料理をしようと思えるにはどうしたらいいですか？また、料理上手になる秘訣などを教えてください。</b></div><div><br /></div><div>これは結局何に興味を持つかってことでしょう。</div><div>料理に興味を持つというよりは食べることに興味を持つことやと思うんですよ。</div><div>自分が食べるためにどれだけの時間と手間とお金を割けるかっていうのを考えると</div><div>そりゃもうお店で食べたほうが練りに練られたメニューをポンと出してもらうほうが手間もかからないし味も間違いないと思うのは当然なんですけどね…。</div><div><br /></div><div>妄想してみるといいんじゃないですか？</div><div>こんな風にしたらおいしなるんちゃうかなっていう。例えば僕なんかの場合はお店で食べた料理でも「これは家でトライしてみようかな」って思うような料理と会うとやっぱり料理作りたくなりますもんねぇ。そういうことじゃないですか？</div><div><br /></div><div>まぁこれは人それぞれだと思いますよ？</div><div>たぶんこの人はそれすらも思わない人なんじゃないかな？</div><div>ごめんなさいね…なんかもう。(笑)</div><div><br /></div><div>あ！こんなのはどうですか？</div><div>七味とか一味とか薬味を吟味するところから始めるってのはいいかも知れないですねぇ。例えばおそば食べる時でも普段練りワサビを入れてたのをネギとか生姜とかわざびでも辛味大根にしてみたりとか…。薬味に興味を持つ。</div><div><br /></div><div>ということで、薬味セットを買いましょう！</div><div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/28 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【I Do Love You / GQ】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第15回目となる今回は “思い出のメロディー”･･･‥ではなく、久保田利伸的、懐かしいけれど今一押ししたいオススメ音楽です。<br /><br /><br /><br /><center><font color="#FFBF17">【I Do Love You / GQ】</font><br /><br /><img src="/premium/artist/essay/kubota2/images/20140228.jpg" /></center><br /><br />「これは1970年代の古い曲。久々にアメリカのラジオで流れているのを聞いて、懐かしくなり、この曲が好きだったことを思い出したね！」<br /><br /><br /><br /><font color="#FFBF17">―　当時のことを思い出すエピソードとかあるのですか？</font><br /><br />「これは、僕が中学生の頃に『SOUL TRAIN』の前番組で『テレビ三面記事　ウィークエンダー』という番組があったんだけど、そのエンディングでいつもかかっていて、すりこみで好きになった曲です。番組終わりのエンディングラスト５秒のフレーズが大好きで、それを聞くと“もうすぐSOUL TRAINが始まる！”というワクワク感を思い出すね。<br />大好きなフレーズはアドリブなんだけど、未だに自分で歌っていても自然にそのフレーズが出てきてしまいます。」<br /><br /><br /><br /><font color="#FFBF17">―　改めて今聞いてみて、どうですか？</font><br /><br />「今聞くと、スィートソウルがいいなぁと。今年はスィートソウルを沢山聞こうと思います！」<br /><br /><br /><br />今回のインタビューでは、「この曲を日本のバラエティ番組のエンディングで起用したスタッフが偉い！！」という締めで終了しました（笑）GQは他にも「Disco Nights」が有名だそう。みなさんもぜひチェックしてみて下さい。<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/24 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その10「地方公演といえば・・」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">＜第十弾！＞<br /><br /><br /><br />いよいよ帝劇公演を終え、地方公演が始まると楽しみは「食」!!<br /><br />各地の美味しいものを知り尽くしている方々と行くわ！食べるわ！<br /><br /><br /><br />まずは博多。モチロン博多豚骨ラーメン有名ですが、今回ヤッパリ美味いと思ったのが<br />一蘭の重箱どんぶりで食す、天然トンコツラーメン!!<br /><br />キャナルシティ大好きで何度も行きましたわいな。<br /><br /><br /><br />そして一人で通い続けた割烹「吉一」博多座の楽屋口前という立地が素晴らしい。<br /><br />モチロンお味も素晴らしい!!和食は身体に浸み込む！スゴい！って実感。<br /><br />ぶっちゃけ心身共に救ってくれたのがこちらのご飯！大将ありがとうございました(T ^ T)<br /><br /><br /><br />写真は一蘭の重箱ラーメンと吉一の鯛茶ずけ<br /><br /><img src="/premium/artist/essay/urashima/images/20/musical10-1.jpg"><br /><br /><img src="/premium/artist/essay/urashima/images/20/musical10-2.jpg"></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/21 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part7【スパゲティの茹で方】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20140221.jpg" src="/premium/artist/reading/image/20140221.jpg" width="400" height="553" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/10 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その9「連日、超満員！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">＜第九弾！＞<br /><br />東京、帝国劇場の公演は連日、超満員！「関係者やキャストでさえチケットの入手が困難」そんな声が聞こえてくる！<br /><br /><br /><br />そんな中、私はジャン・バルジャン役の吉原光夫さんと、とても仲良くなれた!!!<br /><br />仲良くなった吉原さんを誘ったのが、恐竜好きにはたまらんちんなイベント、ウォーキング・ダイナソー！<br /><br /><img src="/premium/artist/essay/urashima/images/20/musical9-1.jpg" /><br /><br /><br /><br />私は近年、恐竜が好きなのだ・・自宅や車にフィギュアを飾る、映画館へ一人恐竜映画を見に行く。<br /><br />「俺も、恐竜好きだよ」の光夫サンの一言で横浜アリーナへいそいそお出かけ！私達は楽しんだ！舞台以上に楽しかった！<br /><br />子供のように楽しむ私達！でも、周りの人に、どん引きされなかったのは、会場中にそんな大の大人がごっちゃりいたからだ。<br /><br />私は、この夏、マンモス YUKA展もエンジョイした！マンモスや恐竜は、隕石が落下しなかったらどこまで大きくなっていたんだろう・・。<br /><br />日々、舞台の上で繰り広げられる物語も、何もかも地球歴のほんの一瞬なんだ・・そんなことを思って今日を生きているのですな。。うん<br /><br /><br /><br />写真はT・REXと光夫サン　そしてマンモス骨に興奮な会場<br /><br /><img src="/premium/artist/essay/urashima/images/20/musical9-2.jpg" /><div><br /><br /><img src="/premium/artist/essay/urashima/images/20/musical9-3.jpg" /><br /><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/05 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！part7【Yさん（女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><div><div><b>心配性の度が過ぎてるようですが、どうしたらいいですか？</b></div><div><b>例えば自宅を出る時、何度も鍵がしまっているかガチャガチャやったり</b></div><div><b>やり過ぎて壊したこともあります。エアコンの電源を消したかどうか確認したり</b></div><div><b>そのせいで外出するまで時間がかかります。どうにかしたいです。</b></div><div><br /></div><div>これは心配症というより記憶機能に問題があるのでは…？あんまりこう滅多な言い方はできないけど、何ていうんでしょう…意識が低すぎるんじゃないですか？(笑)</div><div><br /></div><div>でももしかしたらある意味心配性のほうがいいのかも知れないですよ？</div><div>僕なんか以前ゆでたまごを作りながらスタジオにレコーディングに行ってしまって、帰ってきたら黒たまごが出来てたっていうそんなこともありましたからね！(笑)</div><div>まぁセンサー付きのコンロだったんで何時間か経ったら自動で消えてくれて</div><div>なんとか無事でしたけどね。</div><div>それに比べたら全然心配症でもいいんじゃないですか？</div><div><br /></div><div>まぁ、確認のし過ぎで壊してしまうってのは心配性とはまったく別の話だと思いますけどね！(笑)</div><div>何て言うんでしょう…。これ相当ヒステリックにやったんじゃないですか？</div><div>だって閉まってるってわかってるのに、それを開けようとしてたとしか思えないでしょう。</div><div>もう言ってみれば泥棒みたいなね…。もしかすると自分の家じゃなかったんじゃないですかそこ？(笑)それを心配性なもんでとか言いながら弁解しようとしてるんじゃないですか？</div><div><br /></div><div>どちらにしろ、心配症ってのは悪いことじゃないですからねぇ。</div><div>いいんじゃないですか？(笑)</div><div><br /></div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/index_2.html" class="link_page">2</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_3.html" class="link_page">3</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_4.html" class="link_page">4</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_5.html" class="link_page">5</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><span class="current_page">7</span></li>&nbsp;
+<li><a href="/premium/artist/reading/index_8.html" class="link_page">8</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_9.html" class="link_page">9</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_11.html" class="link_page">11</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_12.html" class="link_page">12</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

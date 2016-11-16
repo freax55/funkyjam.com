@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第191回 「本から本へ」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/03/07 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第191回 「本から本へ」</p>
+		</div>
+		<div class="texts">
+			<div class="text">たとえば久保田利伸のファンなら、久保田サウンドの源流にジョージ・クリントンやスティービー・ワンダーがあると知ったら、彼らの音楽も聴いてみたいと思うに違いない。<br /><br />ワタル自身の場合、興味深い本を読むと、その原典も読みたくなる。<br /><br />先日、髪を切ってもらいながら読んだ雑誌「BRUTUS」に、「独居老人スタイル」(都築響一/筑摩書房)とゆータイトル大変マル本が紹介されていて、こりゃもー読むっきゃないとなった。<br /><br />この本、予想以上のトンデモ独居老人達の大集合で、まさしく数年後のワタル自身を見る思いがした。<br /><br />その中でもケタ違いのトンデモ光線を放射しているのが、ダダカンこと糸井貫二氏だ。<br /><br />ダダカンは1964年の東京オリンピックを「祝」して銀座を全裸疾走したり、70年の大阪万博でも全裸疾走したり、とにかく基本的に全裸表現のアーティストである。<br /><br />今年94歳になるも、ダダカンは相変わらず全裸で逆立ちをしたりして、エガちゃん(江頭2:50)も一撃一蹴の唯我独尊芸術を進行中なのだ。<br /><br /><br /><br />で、この本の著者・都築響一氏が、ダダカンを取材するキッカケになったのが、「篦棒(ベラボー)な人々 ～戦後サブカルチャー偉人伝～」(竹熊健太郎/河出文庫)だと書いてあった。<br /><br />「篦棒な人々」…これまた読まずにはいられない魅惑のタイトル!<br /><br />ダダカンのコトをもっと知りたくて「篦棒な人々」を読んだんだけど、巻頭いきなり康芳夫氏の登場で、ベクトルが急変した。<br /><br />康芳夫氏は、一般ピーポーには馴染みがないかもしれないが、ワタル自身はアントニオ猪木vsモハメド・アリ戦やvsアミン大統領(アミン失脚で中止)などの黒幕として記憶していた。<br /><br />プロレスには興味がなくても、ワタル世代の人なら「オリバー君」(76年)を覚えていないかな？<br /><br />人間とチンパンジーのハーフとゆーフレコミで、オリバー君とゆー「人類猿」(笑)が二足歩行で来日し、日本中が大騒ぎしたコトがあったんだよ。<br /><br />そのオリバー君を招聘したのが、康芳夫氏である。<br /><br />その他にも面白い「騒動」をいっぱい起こしている康氏だが、「家畜人ヤプー」を最初に単行本化したのも氏だったと、今回はじめて知った。<br /><br />活字ファンなら「家畜人ヤプー」のタイトルは知っているだろーが、その超過激なストーリーに尻込みし、未読の方が多いと思う。<br /><br />「篦棒な人々」から、康氏と「家畜人ヤプー」の出逢いと感想を、少し長くなるが抜粋してみる。<br /><br /><br /><br />『あれはそもそも三島由紀夫が僕のところに持ってきたのがはじまりです(中略)三島が「とにかく康さん、だまされたと思って読んでみてよ」って持ってきて(中略)すごい小説ですよ。まず想像力、語学力。生物学的な造詣の深さ(中略)ホワイト・スキン対イエロー・スキンの根本的な問題が(中略)世界的スケールの差別問題も絡んでいる。大きな意味での人種問題、差別問題が、あの小説のもうひとつのテーマだよね』<br /><br /><br /><br />などと言われたら、今度は「家畜人ヤプー」を読むっきゃないでしょ!<br /><br />ネット検索してみると、再版された「家畜人ヤプー」(沼正三/幻冬舎アウトロー文庫)は全5巻の大作で、軽～くストーリーを知っていたので、まずは第1巻だけ買うコトにした。<br /><br />これが犯罪的怪作だった。<br /><br />日本文学界最高の奇書と言われるのは、まぎれもない事実だった。<br /><br />このワタル自身が、あまりの展開に動転動揺し、最初の200ページくらいで挫折しそーになってしまった(~_~;)<br /><br />日々平穏な婦女子男子は、絶対読んではイケマセン。<br /><br />「家畜人ヤプー」は、そーゆー奇書なのであります。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />それゆえ、あらゆる差別問題の根源を考えさせられる貴書でもあります。<br /><br />今回はBRUTUS→独居老人スタイル→篦棒な人々→家畜人ヤプーと辿ったけれど、どれも読みごたえのある作品で、充実の1週間だった(^o^)<br /><br /><br /><br />え？ ヤプーの第2巻？<br /><br />もーお腹イッパイだから遠慮します!<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

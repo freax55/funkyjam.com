@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#contentBox .txt{
+	float: left;
+	width: 515px;
+}
+#contentBox .btn{
+	float: right;
+	padding-top: 30px;
+}
+#contentArea #contentBox .btn img{
+	padding: 0;
+}
+#contentBox h2{
+	text-decoration: underline;
+}
+#contentBox .sub{
+	font-size: 75%;
+}
+#contentBox .detail{
+	font-size: 125%;
+}
+#contentBox .attn{
+	font-size: 75%;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+#contentBox .section{
+	padding-bottom: 35px;
+	margin-bottom: 40px;
+	border-bottom:1px dotted #000; 
+}
+#contentBox .section.last{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+#contentBox .sp5{
+	padding-bottom: 5px;
+}
+#contentBox .sp20{
+	padding-bottom: 20px;
+}

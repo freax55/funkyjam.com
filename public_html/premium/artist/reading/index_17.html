@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Reading（リーディング）</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/09/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/09/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【緊急企画！ﾃﾞｰﾄに誘われちゃったかも～～！！誰がって！あ・た・し・がよぉぉぉ～～～！その4「ｱｸｼﾃﾞﾝﾄ発生！！！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">耕平のどんどん頼れる男感が強くなっていってるぅ～！<br />・・・いや待て・・ここは冷静に判断するんだ！！<br />そもそも、相手が、同い年や年上の男だったらもっと評価は厳しいはず、デートコースのリサーチも、車の中の雰囲気作りにも気を使えて当たり前。。。<br />に比べると・・年下くんには最初から期待薄なとこがあるんだよな・・<br />もともと出来なくても仕方ないよね～って思ってるから・・そゆことが出来ちゃうと、いきなりポイントが倍ぐらい付いちゃうってことさ！<br />そうかそうか・・冷静な目になってきたぞ。。<br /><br />「りんさ～ん！もっと波打ち際まできませんかぁ」<br />呼んでるな・・ポイント倍が！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura4-1.jpg" alt="" /><br /><br />歩き出すとサンダルに砂が・・<br />と？・・こ・こうへいが手を・・手をつないで・・あたしの・・<br />あぁ～冷静に～あたしぃ落ち着けぇぇ！！<br /><br />「何してんのぉ？」<br />って・・そう何してんの・・<br />って誰？・・あり？・・足下にちっちゃい女の子が・・<br />耕平の持ってる海草を指さしてるけど・・<br />この子！はだかんぼですから！！！<br />この子のおかーさーん！こんな物騒な世の中ですから、水着かせめておパンちゅぐらいは着せてあげてくださ～～い！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura4-2.jpg" alt="" /><br /><br />今、この子に良い雰囲気ぶち壊しにされたけど許しますからぁぁぁ。。。<br />思い出は、駅売店で買った江ノ電オルゴール・・曲はサザンの「真夏の果実」・・<br />すでにせつないちゅうの・・・。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura4-3.jpg" alt="" /><br /><br />七里ヶ浜でドキドキの手つなぎ事件！<br />・・うふふふ・・な時間は「はだかんぼうガール」にぶっつぶされて、江ノ島駅に戻ったんだな。<br />そろそろ夕方近く・・駐車場に戻る途中、観光案内所の前を通りかかると<br />「俺、ちょっと時間聞いてきますわ」<br />と言って、中へ入っていく耕平・・。<br />あたしも時計くらい持ってますけど～<br />「江ノ島の岩屋が何時までか聞いてきました」<br />おりょ？江ノ島の岩屋？<br />「俺もまだ行ったことないんですわ、行きたかったんですけど５時で閉まっちゃうみたいですねぇ、展望台なら間に合いそうですけど行ってみませんか？」<br />江ノ島の展望台かぁ～～！<br />行こう！行こう！車は橋を渡って江ノ島へ！後は歩いて上ってくんだよ！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura4-4.jpg" alt="" /><br /><br />江ノ島には、頂上から徒歩で行かないと、たどり着けない見どころがいろいろあるらしい・・<br />岩屋は一番奥の方なので、歩いていくと閉館に間に合わないんだって・・・残念じゃぁ・・<br />観光マップを見ると、恋人の丘の龍恋の鐘（りゅうれんのかね）を撞くと、二人は絶対に別れないなんつーお話もあるらしい・・<br />カップルの皆様は是非！！<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/08/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【緊急企画！ﾃﾞｰﾄに誘われちゃったかも～～！！誰がって！あ・た・し・がよぉぉぉ～～～！その3「おごってくれるのぉ！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">年下の耕平から誘われて来た鎌倉！銭洗弁天や佐助稲荷とか、耕平のうんちくを聞きながらすこ～しうっとりしつつも、腹が減っては～！？てな事で・・・<br /><br />今日のお昼は何かな～～耕平リコメンドはここ！ハンバーガーのKUAAINA鎌倉店！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-1.jpg" alt="" /><br /><br />ここでチーズバーガーセット（1170円）スパイシーアボガドバーガー（1090円）を、なんと耕平が<br />「俺、おごります！」<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-2.jpg" alt="" /><br /><br />あぁ～～これよ！これ！<br />耕平にとってここのハンバーガー代はけして安いものではないはず！！<br />それをここくらいは俺がって・・くあ～～！男らしぃやぁ～～ん！！！<br />そして、出てきたハンバーガーがでかい！<br />下から、横から、ソースがボッタボタこぼれて、まぁ大変！！<br />付き合って間がないカップルにはお勧め出来ないわ～！<br />なんて思って耕平を見ると、顔も上げずに一心不乱に食べてる・・・<br />オイッ！ちったぁは見ろや！<br />確かに、ケチャップとマスタードでフルボリュームは、その年頃にはたまらんだろう・・<br />おいちゃんはな・・さっきのくずきりもまだ効いてんだぞっ！！<br /><br />その時「りんさん、江ノ島行きましょう！」<br />へっ？サザンの湘南？夏の江ノ島？二人で海？！！って青春やぁ～～～ん！！<br />あぁ・・なんか耕平がかっこよく見えてきた・・・これで海なんか行っちゃったら・・ど～～なるのぉぉぉ！！！<br />俄然盛り上がってきたのは私だけ？<br />「りんさん、江ノ電に乗りましょうよ！」<br />って、うんうん！乗る乗る！！<br />サイトで良さげな駐車システム、パーク＆レールライドを発見（７・８月は休止になっちゃうんだって・・残念よ）！！<br />これは1500円で５時間駐車！江ノ電の乗り放題料金込み！！しかも二人分！！<br />どうよ！奥さん！安いでしょ！！<br />駐車場からてくてく歩いて、江ノ島駅へ来た～可愛い駅やぁ～！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-3.jpg" alt="" /><br /><br />木造だぁ・・懐かしい～！電車が来たので早速乗るべし！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-4.jpg" alt="" /><br /><br />江ノ電はいろんな所を走ってく、街の道路や、住宅の軒先すれすれんとこ、<br />そういえば・・西岸良平の鎌倉物語ってマンガが好きなんだけど・・・舞台は全て鎌倉！<br />殺人事件が起こるミステリー物や、妖怪や魔物が出てくるお話が山盛り！<br />この江ノ電も舞台になっていて、犯人がアリバイ工作の為に、２階の窓から江ノ電の屋根に飛び乗って移動するって話を思い出しましたわ・・<br />今は、鎌倉高校前！海の横を走る！<br />あ～～こんなとこで高校生やってたら、あたしの人生だって、もうちょっと違う展開になってたはず！！<br />好きな彼との思い出も、失恋の痛みも舞台は湘南！絵になるぅぅ！<br />妄想する私の前で、耕平が逆光に苦戦しながら電車から海のショットを撮ってくれてる・・<br />結構混んでる車内でがんばってくれてる！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-5.jpg" alt="" /><br /><br />極楽寺で途中下車、ここも雰囲気のある駅・・<br />そんでめちゃちっちゃい！どれくらいかっつーとこれくらい！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-6.jpg" alt="" /><br /><br />江ノ電ホントに可愛い！ここからは引き返すことに・・<br />電車きた！今度は１０００系の藤沢行きってやつに乗る<br /><img src="/premium/artist/essay/urashima/images/10/kamakura3-7.jpg" alt="" /><br /><br />江ノ電は車両の種類も豊富！オリエント急行風のレトロ車両は車内が木目調になってたり、可愛くて鉄子でなくともあがるぅ！<br />「りんさん、海行ってみません？ここで降りましょ」<br />あ～ん、砂浜！太陽！波しぶき！キラキラ☆<br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/08/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/08/18 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【緊急企画！ﾃﾞｰﾄに誘われちゃったかも～～！！誰がって！あ・た・し・がよぉぉぉ～～～！その2「銭を洗う」】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 年下の耕平から誘われてやって来た鎌倉！楽しくもカンカンに暑い日差しから逃れて訪れた甘味処「みのわ」！<br />くずきりで一息いれて、作戦会議！！<br /><br />い～～雰囲気の外観なんだけど、実は前の道が狭すぎて車は対抗出来ない、でも一通じゃない、これぞ鎌倉！<br />車両誘導の係員が出てなんか作業してる前を何回も誘導してもらいながらようやく到着！<br />ふ～～冷たいくずきり（７８０円）を食べてようやく汗がひいたわ！！<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-1.jpg" alt="" /><br /><br />この近くに、有名な銭洗い弁天があるらしい！行かねば！！<br />耕平のナビで銭洗い弁天駐車場へ移動。そこから徒歩で少し坂道を上ってゆくと小さな入り口ってゆうか、トンネルが見えてくるんだけど、<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-2.jpg" alt="" /><br /><br />この坂がハンパないGがかかる・・・<br />えっ？太ってるから？年だから？・・<br />心の中で挙動ってると耕平もすごいGを感じるらしい・・<br />誰かに前から押されてる・・と思うくらい感じるから、皆さんも是非お試しあれ！<br />トンネルを抜けると境内、ここが宇賀福神社、銭洗弁財天でございます。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-3.jpg" alt="" /><br /><br />なんでも、ここの泉でお金を洗うと倍になって還ってくるそうなので、さっそく・・・<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-4.jpg" alt="" /><br /><br />いやいや小銭ばかりじゃあかんやろって紙のお金をね・・・<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-5.jpg" alt="" /><br /><br />ここの信仰は、ここの霊水で神仏を供養すれば、天下は安泰だよって頼朝さんにお告げがあったそうな。その後、北条時頼が、欲にまみれたお金を洗って、心も清らかにし一家の繁栄を願った・・・<br />って話から・・ここでお金を洗えば倍返り！・・に変化しちゃってるけど・・<br />まっいっか！楽しいし！！<br />ここから、本来の参道と言われる急な坂道を下って、佐助稲荷へ・・この坂道が良い雰囲気！<br />竹林や生け垣の間の細い道をつらつらと歩いて、鎌倉らしい雰囲気の住宅街を抜けてくと佐助稲荷の赤い鳥居が見えてくるんだよ。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-6.jpg" alt="" /><br /><br />佐助稲荷も頼朝がらみ、幼少時、助殿（すけどの）と呼ばれていた頼朝の夢枕に立って、挙兵を進めて頼朝を助けた稲荷神を祀ったそうな・・<br />諸々の歴史うんちくは耕平の受け売り・・男の子やねぇ！！<br />おきつねさんがいっぱいいますがな。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-7.jpg" alt="" /><br /><br />日本昔話かジブリ作品に出てきそう・・<br />木立からりすの独特な鳴き声も聞こえてきた・・<br />耕平が「りんさんの声も独特ですよね」ってオイッ！<br />小動物に並べられたら女は嬉しいっちゅうの！！<br />ここから、下道を回って駐車場へ戻り、さらに鶴岡八幡宮へ！！<br />でもほんつ～～～に暑いぃぃぃ！！<br />気温が今年最高の３５度になってるぅぅぅ！！<br /><br />中へひ～ひ～言いながら入って行きますと、<br />あれは何？有名な大銀杏は昨年３月に突然倒れ、現在は再生を願って大事に大事に柵で囲われているところなり・・・<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-8.jpg" alt="" /><br /><br />見学の子供達にまみれながら本殿にお参りしたら、<br /><img src="/premium/artist/essay/urashima/images/10/kamakura2-9.jpg" alt="" /><br /><br />ランチにまいりましょ！由比ヶ浜ヘゴー！！<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/08/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/08/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【緊急企画！ﾃﾞｰﾄに誘われちゃったかも～～！！誰がって！あ・た・し・がよぉぉぉ～～～！その1「おﾃﾞｰﾄの行先は!?」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">あれは先月、とある飲み会で・・<br />「今度、一緒にどっか行きましょうよ！」<br />ってあんた！年下のぉ～ダンサーでぇ～役者のぉ～耕平にぃぃぃ～～！！誘われたがなぁぁ！！<br />いかん！久しぶりにおホモだちの男以外、旦那以外に誘われると異常に嬉しい！<br />耕平の目的が、気さくな先輩を軽くお誘いだろうが、人生相談だろうがそんなこたぁどーでもいい！<br />真っ昼間に男とお出かけ！これはかなりあがる！！<br />そして、灼熱の太陽と、ファンデーションの戦いの火ぶたが切って落とされようとしているのだ！！<br />行き先は・・・、いざ！！！鎌倉～～～！！！<br /><br />無計画な割には早めの出発ってことで、朝８時に用賀駅よ・・<br />8時って・・普通？早め？このあたりの基準が良く判らない・・。<br />と現れました！<br />上口耕平（26歳、T175、ダンサー兼役者、ハウトゥサクシードで共演してから、ちょいちょい飲むやつ）<br /><img src="/premium/artist/essay/urashima/images/10/kamakura1-1.jpg" alt="" /><br /><br />ん～～ちょっとゆるすぎテイストじゃね？っと思ったら、「鎌倉なんでこれくらいの方が」・・これが耕平のTPOだな。<br />で？鎌倉とは決めてたけど、どこへ行こうか？<br />耕平は結構鎌倉好きらしく<br />「今日は俺のおすすめでいいすか？まずはベタなところで鎌倉の大仏です。」<br />おっ？！なかなか良いじゃん！<br />運転も私（耕平免許無し）行き先も私が決めるじゃぁつまんないもんね・・。<br />耕平、ポイント稼ぎました！さ～て今日はどんな一日になるかな～～！<br /><br />９時到着～～！<br />長谷寺と大仏の間くらいにある駐車場にIN！<br />観光地は駐車場探しが一苦労なので、これは前もって下調べしといたぞ。<br />鎌倉は、電車と徒歩で散策するコースがたくさん紹介されてるけど、本日は車でクイックリーに回りますよん。<br />大仏～～～！初２ショット！いや、３ショットか！？<br />鎌倉の大仏様は中に入れるんだけど、中身はわりとガランドウです。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura1-2.jpg" alt="" /><br /><br />長谷寺とは歩いて数分の距離・・歩いてるうちに汗がドバァ～～！<br />夏の屋外デートはすっぴんでいける年までかぁ！?あたしはもうダメなのかぁ?！って言ってる間に着くよ！！<br />長谷寺は十一面観音とあじさいで有名！今日もどんどん人が増えてきてる、修学旅行か社会科見学らしき小、中学生もわんさか！<br />本堂で観音様を拝観して、ありがた～い気持ちになったんだ・・きれいな観音様。<br />外に出ると、裏山の散策ルートへあじさい見物するひとの列が出来始めてるじゃぁないですかい・・・<br /><br />足、靴擦れしたし、山歩きは無理～グスグス言ってたらお寺でうちわもらいました。イラスト入りダヨ。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura1-3.jpg" alt="" /><br /><br />ここは高台にあたるので見晴らし最高～！<br />そんでもって暑い～～！空に向かって吠えるわたし・・・<br /><img src="/premium/artist/essay/urashima/images/10/kamakura1-4.jpg" alt="" /><br /><br />あちちぃなので、ひとまず長谷寺からちょいと移動して佐助稲荷の近くにある「みのわ」へくずきりを食べに甘味処に避難して・・・。<br /><img src="/premium/artist/essay/urashima/images/10/kamakura1-5.jpg" alt="" /><br />よ～～し、耕平次はどこ行く？<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/07/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/07/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【今回のお題！夏祭り！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第４だ～～ん！！<br />今回は高円寺だよ！<br />高円寺といえば「阿波踊り」さ！！<br />今年で５５回目だね、開催日は８月２７日と２８日午後３～６時だよ！<br />今じゃ１万人が踊り、１２０万人が来場する規模になってるんだよ！<br />高円寺は商店街がた～くさんある街だ！阿波踊りの時は、それぞれの商店街に演舞場をもうけて多くの連が踊りを披露するのさ！！<br />く～～血がたぎるね～～！！<br />高円寺の商店街は特色があるから、祭りじゃなくとも楽しいんだよ！高円寺駅を中心に、新宿方向に向かって左側にあるのが、あずま通り商店街、純情商店街、庚申通り商店街、中通商店街、中通北商店街とある。<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-1.jpg" alt="" /><br /><br />古い建物もけっこう残ってんだけど、庚申通りにある、小杉湯さんは良い感じだろう～！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-2.jpg" alt="" /><br /><br />なんでもミルク風呂が有名なんだってさ、商店街の中のお風呂屋なんていいじゃないか・・下町情緒だねぇ！！<br />今や、若者の街としても人気の高い高円寺は暮らしやすそうな街だよ。<br />駅前には安いで有名な高野青果、どうだいこの安さ！小売店の鏡だね！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-3.jpg" alt="" /><br /><br />カフェの走りの街でもあるから、老舗カフェもけっこうある・・コーラルさんは３３年もやってるってさ、これまたい～～感じだろ？<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-4.jpg" alt="" /><br /><br />仲屋むげん堂、楽器や、本屋、カフェに洋服や・・高円寺は飽きないねぇ。<br />反対側はパル商店街、ルック商店街だよ、長～～いアーケードは雨降りも安心だね。<br />食べ物や、洋服やが多いね！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-5.jpg" alt="" /><br /><br />個性的だよ、このマネキンはウサギかい？・・<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-6.jpg" alt="" /><br /><br />この小売店の多さが高円寺商店街の特色なのさ！！<br />商店街を盛り上げるために始まった阿波踊り・・最初は見よう見まねのものだったのが、本格的に稼働し始めて、今や本場徳島に次いで２番目の地位にあるんだ！<br />海外でも、広く紹介されてるってんだから、たいしたものだよ！<br />商店街が元気な街は、人もみんな元気だったよ！！<br />最後に、RAINBOWのランチ・・さすがカフェ激戦区ゆえか安い！<br />サラダ、オーガニック玄米ご飯、オーガニック味噌汁付き、豚バラ肉のしょうが炒めさ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri4-7.jpg" alt="" /><br /><br />これで６８０円だよ！奥さん！<br />この夏はどこの祭りも、東日本大震災復興支援を旗頭にして、応援してるんだ！<br />電気節電だって？！<br />工夫して乗り切るんだよ！！<br />だけど病気にならないどくれよ<br />すばらしい国、日本の祭りを愛でて、みんなで明日もわっしょいだ！！<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/07/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/07/19 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【今回のお題！夏祭り！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第３だ～～ん！！！<br />愛宕神社にかっぱ橋、続いては上野夏まつり！！<br />東日本復興支援納涼大会だよ！花のお江戸はやっぱり上野さ！<br />今やパンダ人気で動物園はずいぶんな人出だねぇ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-1.jpg" alt="" /><br /><br />そのお隣、上野公園で７月１６日～８月７日までの間、なんだかんだとイベントがあるのが上野夏まつりだよ。<br />上野公園！<br />東京に住んでいてもあんまり来なくなっちまってたね！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-2.jpg" alt="" /><br /><br />懐かしいね～～！<br />祭りんときゃ、不忍池の蓮池のほとりに、植木市、骨董市、懐かしい縁日なんかが並ぶんだよ！！<br />その先の野外ステージじゃ、音楽のイベントが催されて、いろんな曲が聴けるのさ！！<br />上野はパレードも有名だよ！ここ中央通りを車両通行止めにして、さんさ踊りが練り歩くんだよ！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-3.jpg" alt="" /><br /><br />沿道も舞い手も、夏浴衣のおなご衆で花が咲いたようで綺麗で風情があるのさ！！<br />祭り以外にも、見どころはあるんだよ！！！<br />ボートに乗ったり、アイスクリーム食べたり、お勧めは下町風俗資料館！３００円！<br />蓮池に隣接した施設で、大正時代の下町の町並みを再現してあるのさ！！<br />ここが面白いのは展示スペースに入ることが出来るのと、おもちゃなんかで遊ぶことも出来て、ちょっとしたタイムスリップが体験出来るとこだよ！！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-4.jpg" alt="" /><br /><br />もう一つ、同じような時期に七夕まつりをするとこがあるのさ！！<br />中央線沿線、阿佐ヶ谷の七夕まつりだ！８月５日～８日に開催されるんだよ。<br />ここは七夕飾りや、人気アニメのキャラクターの張りぼてが７００メートルのアーケードの商店街を彩るのさ。<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-5.jpg" alt="" /><br /><br />今年で５８回目！仙台、平塚に次いで有名になってんだよ！！<br /><br />もう一つの見どころは、Aさんの庭・・<br />ここは、トトロに出てくる家に似てるって有名になった古い民家があったものの、火事で焼失しちまってね・・・。<br />それを、あの宮崎駿監督が残念だってんで、自らデザインしてAさんの庭って名前の公園にしたんだよ。<br />裏のテラス側がまさにそんな感じだろ・・・。<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-6.jpg" alt="" /><br /><br />阿佐ヶ谷は２０年くらい前に、ちょいちょい来てた店があんだよ・・<br />「かんから」ってね。韓国料理が美味しかったんだけど・・あるのかね？・・<br />って、あるじゃないか！<br />おかみさんも変わってないよ！ひゃぁ嬉しいねぇ～！<br />なんだい、祭りにくる楽しみが増すじゃないか！！<br />今から軽く飲んどこうよ！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri3-7.jpg" alt="" /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/07/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/07/07 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【今回のお題！夏祭り！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">夏祭り第２弾だよ！！<br />今回はかっぱ橋の七夕まつりだよ！！<br />かっぱ橋は、地下鉄日比谷線入谷駅と銀座線田原町駅のちょうど真ん中くらいかねぇ・・・。<br /><br />有名なのは南側入り口、菊屋橋交差点角にある、ニイミの巨大コック像だ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri2-1.jpg" alt="" /><br /><br />ここから８００メートル、１７０以上の店舗が、かっぱ橋道具街として国内外に名が知れてるのさ！！<br />間違っちゃいけないのは、川に住む河童の河童橋じゃなく、雨降りに着る合羽の合羽橋なのさ！！<br /><br />江戸時代、小物の侍や足軽が、内職に作った雨合羽を橋の欄干にかけて乾かしたのが由来って説と、ほんの少しの雨が降る度に、洪水を起こす水はけの悪いこの地に、合羽屋喜八（本名・合羽川太郎）が私財を投げ打って掘割工事をやったんだ。<br /><br />でもなかなか工事がはかどらないを見て、隅田川の河童達が、川太郎の善行に感動して、夜な夜な工事を手伝ってようやく完成したって説さ！！<br />そして河童の姿を見た人は、運が開け、商売繁盛したと言われてるのさ！！<br /><br />どちらにしても、合羽がらみなんだけど、街を歩くとやたら河童も目につくんだよ・・！！<br />まっ、縁起モンだからいいやね、ちょっと前には河童河太郎の像ってのも作っちまったみたいだね！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri2-2.jpg" alt="" /><br /><br />道具街として始まったのは、大正の終わりから明治の初め、今じゃ、菓子パン精機の機械器具、和、洋、中華の料理器具、陶器、漆器、白衣、看板、サンプル、のれん、包装用紙、厨房設備、冷蔵庫、冷蔵ショーケースとすごい品揃えじゃないか！！<br /><br />有名なのは食品サンプル！！<br />良く出来てるじゃないか～～本物みたいだよ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri2-3.jpg" alt="" /><br /><br />でもけっこういい値段だね！！！<br /><br />イワサキ・ビーアイ合羽橋ショールームじゃ、食品サンプルの体験制作が出来るみたいだよ。<br />予約して行ってみちゃどうだい？<br /><br />なんだか、こんなのずっと見てたらお腹がすいてきたね・・・そばでも食べるかい？<br /><br />ちょいと、路地に入るとあるじゃないか、「めん公望」か。<br /><img src="/premium/artist/essay/urashima/images/09/matsuri2-4.jpg" alt="" /><br /><br />ランチセットってのにしたよ、もりそばに玄米そぼろご飯、温泉玉子添えなんて豪勢じゃないか！<br />９８０円だよ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri2-5.jpg" alt="" /><br /><br />あ～美味しかった・・・。<br />やっぱり江戸っ子はそばにかぎるね！！！<br />さぁて・・お腹もいっぱいになったしそろそろ帰ろうかね・・<br /><br />ありゃ！？<br />肝心の七夕まつりの話をしてないじゃないか！！<br />バカだねあたしゃ！<br />今年は７月６日～１０日だよ、場所は道具街中程にあるかっぱ本通りさ！！<br /><br />ここに七夕かざりが飾られてきれいなんだよ、今年はスカイツリーも正面に見えるよ！<br /><br />出し物は唄や踊り、演奏会やフリーマーケットなんてのもあるし、９日、１０日には東北復興支援の「東北地方チャリティー物産展」があるから、みんなのぞきにいっとくれよ！！<br /><br />最後にさっき通り過ぎた陶器屋にもどっとくれよ・・。<br />良～いお皿があったんだよ・・。<br />大きかったから先に買うと荷物になって重たいだろ？<br />せっかくだからお茶碗と湯飲み・・他の物も見て・・・<br /><br />ああもう！きりがない！<br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/07/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/07/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【今回のお題！夏祭り！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">梅雨だねぇ！！じめじめした天気はいやだねぇ。<br />でも、この季節がが終わると、あっと言う間におてんとう様がカンカンの夏がきちまうよっ！<br />今回は、そんな夏を“ぐっ”と感じる、いろんな祭りを江戸っ子風に紹介するよ！<br /><br />夏祭りにはちっと早いとお思いだろうけど、夏を先取る祭りが、ほおづき市さっ！<br />浅草の？<br />なんて思わないどくれ愛宕神社だよっ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri1-1.jpg" alt="" /><br /><br />もともとは、ここがほおづき市の発祥の地さ！！<br />6月23日と24日は千日詣りの日で、市もこの日にたつのさ！！<br />この日に神社でお詣りすれば、千日分の御利益が得られるというありがたい日なんだよ。<br />茅の輪くぐりってのもあってさ、茅の葉で編んだ大きな輪っかをくぐれば厄払いも出来るのさ！<br />しかも、ここのほおづきはお祓い済みのを受けると、社殿内でまたお祓いしてもらえるし、ほおづきを巫女さんが選んでくれんだよっ！<br />良いじゃあないか！ただし、売り切れになることも多いから、電話予約するのが賢いね！！<br />（03-3431-0327）<br /><br />愛宕神社の境内は綺麗だよ、左手には池もあってさ！！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri1-2.jpg" alt="" /><br /><br />でも何より、男坂って石段が「出世の階段」って呼ばれて有名なんだよ。<br />そりゃぁ急な階段なんだけどさ・・そもそもの言われは・・、<br />春に、三代将軍、家光公がこの石段の下を通りかかった時、愛宕神社には梅が咲き誇っててさ、将軍様は梅が欲しいって言ったんだ！そん時、見事な手綱さばきでもって馬を操って、曲垣平九朗って人が梅を取ってきて、将軍様に献上したのさ！<br />この人が、将軍様に「日本一の馬術の名人」と称えられて、一日で全国に名前が知れ渡った！！<br />その話にちなんで、出世の階段って呼ばれるのさ！<br />あんたも上ってみなよ、出世するんじゃないかい？<br /><img src="/premium/artist/essay/urashima/images/09/matsuri1-3.jpg" alt="" /><br /><br />ここはさ、今じゃ大都会の真ん中にあるけど、いろいろと歴史に関わりのある神社なんだよ。<br />井伊直弼を討った、水戸浪士が集結したのもここだし、明治元年に、西郷隆盛と勝海舟がこの山に登って会談してさ、江戸の町を見下ろして、戦で消失させるにはしのびないってんで、二人して山をおりて、のちに江戸城の無血開城を行ったんだよ。<br /><br />愛宕神社の隣にさ、NHKの放送博物館があるんだよ。<br /><img src="/premium/artist/essay/urashima/images/09/matsuri1-4.jpg" alt="" /><br /><br />1925年7月ラジオの本放送がここから始まったんだ・・。<br />展示物が面白いんだよ！<br />ひょっこりひょうたん島の人形やブーフーウーなんてあってさ！<br /><img src="/premium/artist/essay/urashima/images/09/matsuri1-5.jpg" alt="" /><br /><img src="/premium/artist/essay/urashima/images/09/matsuri1-6.jpg" alt="" /><br /><br />ここに、江戸時代の愛宕山から見た風景を写した写真があるんだよ・・。<br />これを見て西郷隆盛と勝海舟の気持ちになってみちゃどうだい？<br />便利な世の中だね、この写真がさ、サイトってのでも見られるんだから・・<br />NHK 愛宕山　江戸の写真で検索すると、最後に出てくるよ！！！<br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/06/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/06/16 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【今回のお題！春が満喫出来るスポットを教えて～！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">春が満喫出来る場所を、お教えする最後の回でおじゃりまするぅぅ。<br />深大寺周辺のお勧めスポットでは、「深大寺温泉ゆかり」が有名でおじゃりまするが、今回は「仙川 湯けむりの里」をご案内いたしまするぅぅ。<br /><img src="/premium/artist/essay/urashima/images/08/4-1.jpg" alt="" /><br /><br />こちらは温泉ではなく、普通の銭湯でおじゃりまするが、スーパー銭湯でおじゃりまする。<br />何がスーパーか？お値段と施設の充実度がスーパーなのでおじゃる！！ <br />営業時間は年中無休の朝１０時から深夜２時まで！これもスーパーでおじゃりましょう？<br />まずはお車でお越しの際、駐車場が無料！<br />入浴料は平日６５０円、土日７５０円、一年間有効の会員証１００円を購入なされば５０円引き！<br />館内のお食事処などの料金も会員価格になりまする～～！！お・と・く！<br />では早速！お風呂にまいりまするうぅ。<br /><img src="/premium/artist/essay/urashima/images/08/4-2.jpg" alt="" /><br /><br />こちらは２０１０年１２月にリニューアルされて新しいお風呂が増えたのでおじゃりまする。<br />１２種類ものお風呂は、サウナ、ミスト塩サウナ、露天風呂、ジェットバス、のんびりの大型湯船などなど。<br />そして、新しく導入されたのが炭酸泉電気風呂でおじゃりまする～～！<br />少しぬる目のお湯で、身体に炭酸の気泡がいっぱいぶくぶく、ぶくぶく・・・代謝が良くなりますそうな。<br />電気のビリビリがこれまた効きますれば、いつまでも座っていたくなるのでおじゃるが、譲り合いの精神で、皆で仲良くビリビリいたしましょうぞ。<br /><br />すっかり身体が温まったところで、さらに代謝を上げんと岩盤浴へまいりまする・・地下へまいりましょうぞ。<br /><img src="/premium/artist/essay/urashima/images/08/4-3.jpg" alt="" /><br /><br />ここもリニューアルされて、７００円！何回でも何時間でも入れるようになったのでおじゃる・・嬉しいかぎり～～。<br />ウェアのレンタル代も込みでおじゃりまする。<br />以前は２５分で入れ替え制でおじゃったが、自分で長くも短くも、好きな時間に入退室が可能でおじゃって、入り口横のホットスペースの暖かい部屋にミニベットのような座椅子が用意されて、小さな音量でTVもついておりまする。<br />マンガコーナーや、インターネットコーナーもあって、そこでくつろいだり、また岩盤浴に入ったりするのでおじゃる・・。<br />あ～～暖かくて、汗がだくだく出まするが・・眠い・・少し仮眠いたしましょうぞ。<br /><br />目が覚めましたぞ！もう一度お風呂に戻って身体を洗うでおじゃるよ・・。<br />ヘアシャンプーも、ボディーシャンプーも備え付けられておじゃりまする。<br /><br />浴室の外は、お食事処と手もみ処でおじゃる。<br />今日は長く居て、お腹がすいたでおじゃる・・おにぎりを所望したでおじゃる・・手前に味噌ラーメンも写っておじゃるが・・たくさん汗をかいたので塩分補給でおじゃる。<br /><img src="/premium/artist/essay/urashima/images/08/4-4.jpg" alt="" /><br /><br />マッサージでボディーや足底をお願いすることもおじゃりまする。<br />他にも、アカスリやアロマトリートメントサロン、カットサロンやゲームコーナーまでおじゃりまする。<br />いや～～大満喫の湯けむりの里・・皆様も是非起こし下されませ！！<br />実はお向かいに島忠ホームズ仙川店がおじゃって、大型ホームセンターとテナントおたくさん入っておじゃりまする。<br />西松屋（子供服）しまむら（ファッション）などが・・ここにもお帰りの際に立ち寄ってみてはいかがでおじゃりましょうや。<br />なかなか興味深い深大寺、仙川をご紹介出来て嬉しく思いまする！！<br /><br />次回も楽しみにしていて下されませ～～！！<br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/05/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/05/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【今回のお題！春が満喫出来るスポットを教えて～！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">午後になって人出も増えた、深大寺山門近くを散策するでおじゃりますえ。<br />山門に向かって左手にあやめさんがおじゃりまして、こちらはそばぱんで有名でございまするな。<br />小豆、白あん、栗、かぼちゃ、うぐいす、高菜油炒めと６種類もございまする。<br />迷うたものの、高菜を食しましたえ・・パンはふわっとしてなかなか美味しゅうおじゃりました。<br /><img src="/premium/artist/essay/urashima/images/08/3-1.jpg" alt="" /><br /><br />それにしても、ここの「そば」とつく食べ物の多さに驚いたでおじゃる！<br />そばがき、そばまんじゅう、そばだんご、そば道楽、そばすいとん、そばゆべし、そば大福、さらには・・そばんず（そばのバンズ）まで。<br />これは、かなりの商品開発アイデアを持った御仁がいらっしゃるであろうことが推測されるでおじゃる。<br />今度は是非、別のモノも食してみたいでおじゃる。<br />次は、絶対に外せない、鬼太郎茶屋でおじゃる！<br /><img src="/premium/artist/essay/urashima/images/08/3-2.jpg" alt="" /><br /><br />中はゲゲゲの鬼太郎グッズがいっぱいおじゃるぅぅぅ！！<br />妖怪がいっぱい出てくる、ゲゲゲの鬼太郎は大好きでおじゃる！！！<br />最近のは、ずいぶんキャラクターが可愛くなってまするが、ここにはおどろんおどろんしたものもいっぱいあるでおじゃりますな。<br />欲しいモノがいっぱいで悩みまする。<br /><img src="/premium/artist/essay/urashima/images/08/3-3.jpg" alt="" /><br /><br />復刻版妖怪自動車フィギュアとかまわぬの手ぬぐい（ねこ娘とゲゲゲの森）、携帯お箸、目玉あめを購入でおじゃりまする。<br />大変に楽しうて、いつまでもいたかったでおじゃりまするが茶屋の外の妖怪たちと記念撮影してさよならでおじゃりまする。<br /><img src="/premium/artist/essay/urashima/images/08/3-4.jpg" alt="" /><br /><br />興奮したらノドが乾いたでおじゃる。Cafe曼珠苑でお茶を・・と思うたのでございまするが、これに心を奪われたでおじゃりまする。<br />見れば、店内は深大寺散策のおばさま方でいっぱい。<br />その方々がこれを召し上がっていたのでおじゃりまするな。<br /><img src="/premium/artist/essay/urashima/images/08/3-5.jpg" alt="" /><br /><br />美味しゅうおじゃりますなぁぁ！！おしるこは！！<br />されば、もうひと桜見に参りましょうえ。<br />深大寺を離れて、車で５～６分行くと野川公園がおじゃりまする。<br />大きな公園でございまして、ゆるゆると芝生や松などの林を抜けてまいると桜が綺麗でおじゃる。<br /><img src="/premium/artist/essay/urashima/images/08/3-6.jpg" alt="" /><br /><br />東八通りを挟んだ反対側には、小川も流れておじゃる。<br />ごろりと土手に寝ころんで、春を満喫してみるのも楽しゅうございまするな。<br /><img src="/premium/artist/essay/urashima/images/08/3-7.jpg" alt="" /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_11.html" class="link_page">11</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_12.html" class="link_page">12</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_13.html" class="link_page">13</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_14.html" class="link_page">14</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_15.html" class="link_page">15</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_16.html" class="link_page">16</a></li>&nbsp;
+<li><span class="current_page">17</span></li>&nbsp;
+<li><a href="/premium/artist/reading/index_18.html" class="link_page">18</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_19.html" class="link_page">19</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_20.html" class="link_page">20</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

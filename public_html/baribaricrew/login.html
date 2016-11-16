@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>BARI BARI CREW  FAN CLUB会費コンビニ決済</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="/baribaricrew/css/baribaricrew.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/baribaricrew/js/jquery-1.9.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/baribaricrew/js/script.js" charset="utf-8"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/baribaricrew/js/jquery.belatedPNG.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/baribaricrew/js/alphafix.js" charset="utf-8"></script>
+<![endif]-->
+</head>
+<body>
+<div id="page">
+	<div id="header"><img src="/baribaricrew/images/logo.png" alt="BARI BARI CREW" /></div>
+	<div id="contents">
+		<h1>久保田利伸FANCLUB<br />
+		年会費コンビニ決済</h1>
+		<ul class="nav clearfix">
+			<li class="step1 cur"><p>スタート</p></li>
+			<li class="step2"><p>基本情報入力</p></li>
+			<li class="step4"><p>内容確認</p></li>
+			<li class="step3"><p>支払先選択</p></li>
+			<li class="step5"><p>コンビニ決済申込完了</p></li>
+		</ul>
+		<div id="main" class="top clearfix">
+			<div class="left">
+				<h2>新規会員の方</h2>
+				<p class="caption">入会金：500円　年会費：5000円</p>
+				<div class="rule">
+					<p>同意事項<p>
+					<p>久保田利伸オフィシャルファンクラブBARI BARI CREWにご入会に際しては、以下の事項を承諾しているものとみなされます。<br />
+					・会員の有効期間は、年会費入金月の翌月から1年間です。<br />
+					・年会費は5,000円です。継続される際は毎年有効期限の切れる前までにお手続きください。<br />
+					初年度のみ入会金５００円にお支払いいただきます。<br />
+					・会員の権利は登録されたご本人様のみが有し、他者(親族を含む)への譲渡、使用許諾、売買等の行為は認められません。<br />
+					・ご入金頂いた入会金・年会費は、会員有効期間中に脱会のお申し出があっても払戻しは致しません。<br />
+					・法人のご入会はできません。<br />
+					・会員の個人情報の取り扱いについては、弊社個人情報保護方針(ホームページに掲載)に従います。<br />
+					・ご登録情報の変更がある場合は、所定の方法で変更の届け出をするものとします。</p>
+				</div>
+				<div class="form">
+					<form action="index.php" method="post">
+						<input type="hidden" name="action" value="cart" />
+						<input type="hidden" name="flg" value="input" />
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>パスワード</th>
+								<td>
+									{if $errors.input_login}<p class="error">{$errors.input_login}</p>{/if}
+									{if $errors.input_pass}<p class="error">{$errors.input_pass}</p>{/if}
+									<input name="input_pass" type="password" value="{$input_pass|escape}" class="text" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<p>※「新規入会について」のメールに記載しております。<br />
+				※半角英数字</p>
+				<div class="btn">新規入会の手続きに進む</div>
+			</div>
+			<div class="right">
+				<h2>会員継続の方</h2>
+				<p class="caption">年会費：5000円</p>
+				<div class="form">
+					<form action="index.php" method="post">
+						<input type="hidden" name="action" value="cart" />
+						<input type="hidden" name="flg" value="edit" />
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>会員番号</th>
+								<td>
+									{if $errors.edit_login}<p class="error">{$errors.edit_login}</p>{/if}
+									{if $errors.edit_no}<p class="error">{$errors.edit_no}</p>{/if}
+									<input type="text" name="edit_no" value="{$edit_no|escape}" class="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td class="no"><p class="note">※半角数字8桁</p><td>
+							</tr>
+						</table>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>パスワード</th>
+								<td>
+									{if $errors.edit_pass}<p class="error">{$errors.edit_pass}</p>{/if}
+									<input name="edit_pass" type="password" value="{$edit_pass|escape}" class="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><p class="note">※会報117・118号ページのパスワード<br />
+								※半角英数字</p></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="btn">会員継続の手続きに進む</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner"><img src="/baribaricrew/images/copyright.png" alt="BARI BARI CREW" /></div>
+	</div>
+</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

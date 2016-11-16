@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第75回 「大部屋ゴールデンズ」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/12/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/12/09 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第75回 「大部屋ゴールデンズ」</p>
+		</div>
+		<div class="texts">
+			<div class="text">2010、2011年と久保田利伸の全国ツアーやリリースがつづき、ファンキー・ジャムのスタッフは激務に追われている。<br /><br />一見華やかに思える音楽業界だが、アーティストを陰で支えるスタッフ達は、アタマがイーとかスタイルがイーとかは無関係で、ただただひたすら体力気力胆力を求められる体育会系だ。<br /><br />特にファンキー・ジャムの場合は独特の社風とゆーか、一般ピーポーには理解されがたい風土風習がある。かつては新入社員を迎える時にだけ行われる奇祭さえあった。<br /><br />だから、アコガレだけでファンキー・ジャムに足を踏み入れた者は、大森<美人>社長に強烈な足払いをくらい、泣きながら走り去ることとなる。<br /><br />そーした試練を乗り越えたコールデン・スタッフ達が仕事をする部屋を、オレは単純に「大部屋」と呼んでいる。<br /><br /><br />現在の大部屋は、もはや歴史的人物となったホノベが上座に陣取り、夕日を背にすると漆黒のシルエットと化し、両肩周辺に妖気すら漂わせている。<br /><br />ホノベの実家は日本の高度成長を支えた典型的な町工場だが、そこでデビュー前の北島三郎氏が働いていたのは有名な話で、のちにホノベは永谷園に就職、サブちゃんはサケ茶漬けのCMソングを歌うのである。<br /><br />そんな歴史上のホノベを介護しているのが、女優の夢を捨て去ったスギーだ。<br /><br />スギーは入社した時からワタル自身のお気に入りで、ミッドタウンのスイーツなどで手なずけ、今や立派な仕切り人に成長し、気やすく「会報を1冊ちょーだい」などと言うと「その用途は?」と鋭く切り返されてしまう。まさに「飼い犬に手を咬まれる」とはコノコトである。<br /><br />出産から復帰したハシモト(exナリカワ)はオレの右隣に配備され、短く太い手足で器用に仕事をしている。たまに『その指で、よくペンが持てるなぁ…』と思うコトもあるが、ハシモトの奇跡的にカワイ～一人娘が嫁ぐ日までは黙っていよーと決めている。<br /><br />ハシモトの実家は和歌山のミカン農園で、彼女の父親はミカンのこともハシモトのことも「オレの作品」と呼ぶ、和歌山の正しいミカン・アーティストである。<br /><br />ハシモトの向かい側には、ハシモトの体重半分のムラヤマがいる。<br /><br />ムラヤマは唯一の男性社員で、それゆえ久保田にコキ使われ、直射日光にあたるとアバラ骨が透けて見えるくらい痩せ細ってしまった。「ムラヤマの動く心臓を見た」とゆーウワサもある。「その動きは今にも止まりそーだった」との報告もある。弁当箱が悲しいほどに小さいのも、ワタル的には涙を誘う。<br /><br />実はムラヤマ、オレが撮った写真データを全部消してしまうとゆー大チョンボをしたのだが、理科教室の骨格見本のごとく顔色をなくして風に揺れるムラヤマを、誰ひとりとして罵倒できず、むしろ哀れんだのである。<br /><br /><br />オレの正面は入社間もないヤマサキ(ヤマザキじゃなくてヤマサキね)で、ツアー雑用担当として全国でゾーキンのごとく酷使されている。<br /><br />俺とヤマサキのデスク間には最新MACの大きなモニターが立ちはだかり、彼女の顔を見ることはほとんどないが、声は聞こえる。<br /><br />ヤマサキに関する情報はワタル的には皆無だが、そのイントネーションから２年前に日本に来たものと推測される。出身地は南方の貧しい離島で、か細い声はバナナと海草だけの幼少期を物語っている。この推測が間違っていたとしても、今後のヤマサキは貧しい離島出身者とゆー背景で仕事をつづけて欲しいものである。<br /><br /><br />こんなゴールデン・ファイブが、久保田利伸の全国ツアーをバックアップしているのだ。<br /><br />えっ?　オレ?　オレはただのデイリ業者(笑)!<br /><br />2012年は１月７日の日本ガイシホール(愛知)を皮切りに、アリーナ・ツアー「Party ain't A Party!」がスタートする。<br /><br /><br />ファンキー・ジャムの大部屋ゴールデンズ、まだまだ激務の日々がつづくのだ。<br /><br />頑張れ、大部屋ゴールデンズ!<br /><br />腰を伸ばせ、ホノベ!<br /><br />ビールばっか飲むな、スギー!<br /><br />痩せろ、ハシモト!<br /><br />太れ、ムラヤマ!<br /><br />硬い物も食え、ヤマサキ!<br /><br />オレのことは心配するな!<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

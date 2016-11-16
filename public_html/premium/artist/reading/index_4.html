@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Reading（リーディング）</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【久保田利伸的手放せないモノ?!】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 第22回、今回のNo Diggityは 「久保田利伸的、手放せないモノ」をご紹介。<br /><br /><center><font color="#FFBF17">その1、「プロポリス」</font></center><br /><br />「体も温まるし、喉にもいい。そして、プロポリスを飲むといつもより寝やすくなるんだよね。やっぱり血のめぐりが良くなるからだろうね～。一番は、やっぱりブラジル原産のものが良いです。<br /><br />アメリカのソウルシンガーの多くは　よくステージ上でプロポリスのスプレーをしていて、本当かな？効くのかな？と思っていたところ、YURIやオリビア（久保田ツアーミュージシャン・バックコーラス陣）も当然のごとくスプレーや液体を携帯していたので、昨年のツアーから試してみました。結果、良かったね。プロポリスだけの所為じゃないかもしれないけど（笑）」<br /><br />一時はマヌカハニーを常時携帯していましたが、昨年ツアーからはプロポリスを愛用しています。スプレーや液体に加え、プロポリスキャンディなどなど・・・ツアー時はもちろん、今ではレコーディング時にも欠かせないアイテムとなっているようです。<br /><br /><center><font color="#FFBF17">その2、「レモンとポン酢」</font></center><br /><br />「揚げ物にはこの二つがないとダメ。レモンがかかっていない揚げ物は食べられない！但し、コロッケ以外（笑）。コロッケにレモンをかけると不味いんだよね～、なぜか。カニクリームコロッケはオッケーだけどね。それ以外は、野菜、肉、魚のどの揚げ物でもレモンをかけます。絶対ソースはかけません！あとは・・・ギョーザにもレモンとポン酢をかけます。」<br /><br />この後も、アレは？コレは？・・・と聞いては、あーだこーだと談義をしました。<br /><br />が、一番意外だったのはギョーザ。レモンとポン酢のギョーザ、皆様もぜひお試しあれ。<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/15 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊野古道・伊勢神宮の旅】その4「伊勢参りツアー最終回！」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> <!--本文ここから--><br />すし久のてこね寿司でお腹いっぱいだが、ぐずぐずはしていられない！<br /><br />芸能人なら、ぜーーーったいに行っとけ的な猿田彦神社へGO！<br /><br />猿田彦神社は『みちひらき』開運の神様、そしてお隣に奥様の佐瑠女神社。<br /><br />天岩戸前でお神楽を踊ったので芸能と縁結びのご利益が！<br /><br />境内にある方位を刻んだ石柱の「古殿地」<br /><br />ぐーっと手を押し付けて順番に願いごとをするそうな…。<br /><br />そんでヨッシャヨッシャ感ばりばりの大貴！<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/4-1.jpg" alt="" /><br /><br /><br /><br />今回、伊勢参りにはここに行っとくが良い！と教えてもらった別宮コースが！<br /><br />月読宮（つきよみのみや）月読荒御魂宮（つきよみあらみたまのみや）伊佐奈岐宮（いざなぎのみや）<br /><br />伊佐奈弥宮（いさなみのみや）<br /><br />ちいさなお宮が、一カ所にダダダッとあるので廻りやすかったのだが、人は、ほとんどいない静かな空間。<br /><br />こんな感じの入り口。<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/4-2.jpg" alt="" /><br /><br /><br /><br />参道の屋久島か？！的な巨木を、大貴との対比でお届けします<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/4-3.jpg" alt="" /><br /><br /><br /><br />そしてぇ、弾丸伊勢参りツアーは１３時５８分　宇治山田発名古屋行き特急乗車でぷわーんと終了～～！！<br /><br /><br /><br />なんで、こんな日中に帰ってきちゃったの？っつーと、私が兼ねてから狙っていたMIYAVIのLIVEに名古屋で<br /><br />行くためっ！だから早朝から弾丸！でもって、LIVE終演後に夜走りで東京へ！もちろん運転手は私！<br /><br />お付き合い頂いたイケテマッセメーン大貴を無事早朝の自宅までお送り致して終了～～！！<br /><br /><br /><br />あ～～きつかった…！<br /><br /><!--本文ここまで--></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/09 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！【せっちゃんさん（女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><b>とにかく物が捨てられません。服の捨て際が分からないことから始まり、思い出の品も手放せず困っています。<br />潔く捨てるにはどうすれば良いでしょうか？</b><br /><br /><br />俺ね、この解決方法知ってます！<br />その物が泥棒に盗まれたと仮定して、どうするかというのを基準にして決めるんですよ。捨てるかどうか迷ったときにね。<br />泥棒に盗られて被害届を出してでも、もしくは新しい物を買い直してでも取り戻したいと思うんやったら捨てなきゃいいし、「まぁ盗られてもしゃぁないな～、思い出もあったけど・・・ま、盗られたんやったら仕方ないわ！」と思うんやったら捨ててもいいんじゃないかと、僕はそういうふうに考えるようにしてます。全然ぶった斬ってないけど（笑）<br /><br />服なんて簡単でしょ！1年着なかったら捨てたらいいでしょ？<br />特に女子の方が流行り・廃りがあるでしょ？着るかも、って思ってとっておいたものって<br />8割9割着ないでしょうし・・・と言いつつ、無理して捨てなくていいんじゃないですか？とも思いますね。<br />動物でもいるじゃないですか、色々巣に溜め込んだり、食べない餌を枝に刺して置いておくとか。動物の本能なんですよ、蓄えておきたい、ということが。そのモノがあることによって平静を保てていると思ったら、捨てなくて良いんじゃないですかね！<br />今回は「捨てなくていい！」という結論に至りました（笑）。<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/09/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【オススメ音楽&映画を同時に公開！】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 第21回となる今回は、大好評のオススメ音楽と映画を同時にご紹介します。<br /><br /><br /><center><font color="#FFBF17">【音楽編】　THE DREAM  /  ROC</font></center><br /><center><img src="/premium/artist/essay/kubota2/images/20140930.jpg" /></center><br />「去年になりますが、NYのラジオや僕が聞いている有線でよくかかっていました。<br /><br />アーティストの若さから言うと、僕が好きになるのは珍しいんだけど、こういう王道のR＆Bだったらどうしても好きになるね。プロデューサーとしても分かりやすくて大好きです。R＆Bが好きな人は、ここ数年で聞いておかなきゃいけない男性アーティストの３本指には入るアーティスト。彼のアルバムは間違いなく良いよ。逆にR＆Bが好きじゃない人にとっては、つまらないかも。」<br /><br /><center><font color="#FFBF17">【映画編】　「少年H」</font></center><br /><br />「水谷豊さんと伊藤蘭さんの演技は当然素晴らしいのですが、子役の女の子の表情が一番感動的だった。ストーリーよりも画が印象的。1シーンずつの画作りがとてもプロフェッショナルで、日本映画でよく感じる違和感がなかった。<br /><br />この映画は上映が始まった時に、渋谷の映画館に一人で観に行きました。そういえば・・・一人で観に行ったのは初めてかも！平日の昼間に行ったので、おじいちゃんとおばあちゃんしか居なかった（笑）そういうことも含めて印象に残っている映画です。」<br /><br />「少年H」はすでにDVD化されているようです。皆さんもぜひチェックしてみて下さい！<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/09/30 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part14【無知の知】</p>
+		</div>
+		<div class="texts">
+			<div class="text">  <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20140822.jpg" src="/premium/artist/reading/image/20140930.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/09/11 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊野古道・伊勢神宮の旅】その3「てこね寿司」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> <!--本文ここから--><br />伊勢参りで必須なのは、ピークの時間帯に人と同じ行動を取るとツボルっ！<br /><br />前倒しのスケジュールを組む！これ大事！<br /><br /><br /><br />名古屋駅7:10発の近鉄特急で伊勢市駅着8:31。近いね伊勢！<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/3-1.jpg" alt="" /><br /><br /><br /><br />外宮、内宮を午前中に参拝（神ごとは、午前中が良かろうというにわか信心ぶりを発揮）<br /><br />内宮の別宮、荒祭宮（あらまつりのみや）にお参りしてもう11時！<br /><br />朝食はかる～～くしておいてぇの、ここでランチに突入！めざすは！<br /><br />伊勢神宮に行ったら、もしくはここだけでも行くというおかげ横町！！<br /><br />このおかげ横町が奇麗になってから、伊勢神宮は何年かに一度訪れるところから帰省する度に訪れるところに変化。<br /><br />私財でこの街を作り上げた赤福社長に感謝！<br /><br />しつつ必ず食べるのが『すし久のてこね寿司』五十鈴川の流れを観ながらガッツリ！！<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/3-2.jpg" alt="" /><br /><br /><br /><br />大貴は普通量のてこね寿司を普通に食す男子、<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/3-3.jpg" alt="" /><br /><br /><br /><br />食後おかげ横町散策で、食べ歩くかと思いきやご当地サイダーを１本飲んだだけ。文系男子だなさては！<br /><br />ここで時間は12時。次なるお参りにれっつごー！<br /><br /><br /><br />今回見事に大貴の写真が無い！なぜ撮らなかったのか今となってはもう理由もわからない。<br /><br />次の回には1枚はある！1枚ねっ。<br /><br /><br /><br /><br /><br />◇◆◇西川大貴さん情報◇◆◇<br /><br /><br /><br />○10月29日(水)<br /><br />西川大貴 音楽/表現プロジェクト【かららん】1st Album「若くて青い」リリース。<br /><br /><br /><br />小売店はじめ、Amazon、TSUTAYA等ネット販売、iTunes配信も有。<br /><br />(10/1ライブ会場で、先行発売決定!!サイン会を予定。)<br /><br /><br /><br />○10月1日(水) 19:30～ LIVE「太陽と月とスッポン」@渋谷WWW<br /><br />出演/和音美桜、里アンナ、西川大貴<br /><br /><br /><br />○10月31日(金) 19:30～【かららん】CD発売記念LIVE「若くて青い」@南青山MANDALA<br /><br /><br /><br />予約・詳細は、西川大貴さん公式サイト(http://taikinishikawa.com)、Twitterをチェック！！<br /><br /><!--本文ここまで--><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/09/11 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！【あややさん（女性/6歳）】</p>
+		</div>
+		<div class="texts">
+			<div class="text">※今回のみ特別に年齢を公開しております。<br /><br /><b>いつもご飯を食べるのが遅くて、パパやママに叱られます。<br />大好きなお肉の時は早いのですが、ちょっと苦手なものがあるときは<br />すごく時間がかかるときもあります。<br />どうすれば、早く食べられますか？</b><br /><br /><br />6歳のあややさん、お手紙どうもありがとう！と言いたいところですが<br />これは間違いなくご両親が送ってきているはずですから、本人はそんなに気に留めてないはずですよね（笑）<br /><br />でもね、食べることが遅い人を貫いていると周りがだんだんそれに合わせてくれるようになるからね～。それは俺自身が身をもって体験しているから。<br />デビューしてすぐの頃は、「森君食べるの遅いな～、早く早く」と言われ続けて、<br />でも急がないということを貫き続けていたら誰も何も言わなくなりました（苦笑）。<br />そんなものです！（笑）<br />だから、大人になったら大丈夫だから、今はそれでいいですよお母さん、といいたいです（笑）<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/08/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+			<p class="tit">No Diggity【落ち着く場所ベスト3】</p>
+		</div>
+		<div class="texts">
+			<div class="text">第20回となる今回は、突然ランキングシリーズ"久保田的、落ち着く場所ベスト3"をご紹介します！<br /><br /><br /><center><font color="#FFBF17">■1位　真っ暗なお風呂（電気をつけずに入るお風呂）</font></center><br />「できたら毎日そうしたいくらい好き。どこにいるのかわからない感じがしていい。<br /><br />煮詰まった時などは、何も考えない！というつもりで入るのに、あまりにも自然な状態なので結果良いアイデアが浮かんでしまう。ただ大事なことは、そこに欲を持っちゃだめ！（笑）何も考えない、アイデアなんてどうでもいい！という無心な状態で入ることが大事です（笑）。」<br /><br /><center><font color="#FFBF17">■2位　畳の部屋</font></center><br />「いぐさの匂いが大好き。畳はフローリングより柔らかくて、絨毯よりもさっぱりしていて、座っていても寝ていても気持ちがいい。」<br /><br /><center><font color="#FFBF17">■3位　アメリカの柔らかいベッド</font></center><br />「日本のベッドは腰のためを思って硬いよね。それに比べてアメリカのベッドは柔らかくていいね。車のシートもアメ車は柔らかくって例えばドイツ車は固いでしょ？日本車はその中間かな。とにかくベッドはアメリカ製が好きです。」<br /><br /><br />1位に出た「お風呂ネタ」ですが、朝はどんなに忙しくても必ず湯船につかるそうです。<br /><br />ただ残念ながら朝は自然光が入ってくるため、真っ暗は無理なんだよね～とのこと。<br /><br />少しプライベートが垣間見れた取材でした！<br /><br />※前回の記事にて「オススメの音楽を紹介」と記載しておりましたが、予定を変更してランキングシリーズをお届けしました。</div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/08/27 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊野古道・伊勢神宮の旅】その2「お伊勢参り」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 出身県なだけに、前振り力入って長いです!!（笑）<br /><br />今回は名古屋から近鉄特急で！ちなみに、私が、伊勢まで電車で行ったのは小学６年生の初詣ん時。<br /><br />親戚家族に連れて来てもらって以来…懐かしすぎる。<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/2-1.jpg" alt="" /><br /><br /><br /><br />まずは、外宮へ！お伊勢参りは、順番やらなんやらあるらしいのですが、今回は芸事にご利益が有りそうな順番を重視！<br /><br />そのスタートが、伊勢の方が呼ぶ「外宮さん」→「猿田彦神社」→「内宮さん」→「月夜見宮」という順番！<br /><br /><br /><br />近鉄宇治山田駅下車、歩いて広い参道を抜けるとすぐ外宮さんです。<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/22/2-2.jpg" alt="" /><br /><br /><br /><br />外宮さんでは五穀豊穣を願う。豊かな実りある食をよろしくお願い致したい。と願う。<br /><br />この年になると食がかなり大事。<br /><br />死ぬ前に食べたい最後の一食は、ラーメンライスだと固く心に決めて生きて来たのに。<br /><br />今やさっぱりしたもんです。<br /><br />あ～年取るってこうゆうことなのね。背脂でギラギラしていたあの頃が懐かしっ。<br /><br /><br /><br />ここで食べに行こう～～～！何だかんだお腹はすくもんねぇ～！ちょいはやランチへGO！<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/08/22 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part13【シュノーケリング！】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> <span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20140822.jpg" src="/premium/artist/reading/image/20140822.jpg" width="400" height="567" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span> <div><br /></div></div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/index.html" class="link_page">1</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_2.html" class="link_page">2</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_3.html" class="link_page">3</a></li>&nbsp;
+<li><span class="current_page">4</span></li>&nbsp;
+<li><a href="/premium/artist/reading/index_5.html" class="link_page">5</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_7.html" class="link_page">7</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_8.html" class="link_page">8</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_9.html" class="link_page">9</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_11.html" class="link_page">11</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

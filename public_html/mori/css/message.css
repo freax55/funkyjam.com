@@ -1,0 +1,104 @@
+#contents {
+  color: #333;
+}
+#contents .titleType1 {
+  margin-bottom: 60px;
+}
+#contents .message {
+  display: table;
+  width: 100%;
+  min-height: 510px;
+}
+#contents .message > .inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+#contents .movie {
+  position: relative;
+}
+#contents .movie .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  cursor: pointer;
+}
+#contents .text {
+  display: none;
+  line-height: 1.2;
+  text-align: center;
+  font-family: 'Italianno', cursive;
+}
+#contents .text .fz98 {
+  font-size: 9.8rem;
+}
+#contents .text .fz112 {
+  font-size: 11.2rem;
+}
+#contents .text .fz56 {
+  font-size: 5.6rem;
+}
+#contents .text .fz40 {
+  font-size: 4rem;
+}
+#contents .text .gray {
+  color: #999;
+  font-size: 5.6rem;
+}
+#contents .md {
+  display: none;
+  padding-top: 40px;
+}
+#contents .md .image {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 899px) {
+  #contents .titleType1 {
+    margin-bottom: 30px;
+  }
+  #contents .message {
+    min-height: 255px;
+  }
+  #contents .movie {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  #contents .movie iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #contents .text .fz98 {
+    font-size: 4.9rem;
+  }
+  #contents .text .fz112 {
+    font-size: 5.6rem;
+  }
+  #contents .text .fz56 {
+    font-size: 2.8rem;
+  }
+  #contents .text .fz40 {
+    font-size: 2rem;
+  }
+  #contents .text .gray {
+    font-size: 2.8rem;
+  }
+  #contents .md {
+    padding-top: 20px;
+  }
+  #contents .md .image {
+    margin-bottom: 30px;
+  }
+  #contents .md .image img {
+    width: 200px;
+  }
+}

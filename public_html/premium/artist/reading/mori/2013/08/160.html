@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第160回 「ブラック感光体ユニット」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/08/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/08/02 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第160回 「ブラック感光体ユニット」</p>
+		</div>
+		<div class="texts">
+			<div class="text">7月末は久保田利伸ファンクラブ会報「BARI BARI CREW」の編集時期で、しかも、8月のお盆休みで印刷会社が連休になるため、いつもの半分くらいしか編集時間がなくてアタフタしている。<br /><br />7月28日、日曜の午前8時過ぎ、誰もいないファンキー・ジャムで冷房を18度に設定し、さらにデスクの下でサーキュレーターを最強で回している。<br /><br />流星号で汗まみれになったシャツはハンガーに干し、ファンキー・ジャムに置きっぱの特大ポロシャツに着替えた。<br /><br />会報の人気コーナー「VOICE」のページを仕上げ、文字校正のためにプリントアウトしよーとして、ひぇぇぇぇ～、トラブルになった!<br /><br />プリンターのモニターに「ブラック感光体ユニットを交換してください」とゆー表示が出て、ウンともスンともドーニモならないのだ。<br /><br />そこで、ファンキー・ジャムでは一番メカに詳しーと思われるムラヤマにヘルプ・メールをしたんだけど、これもウンともスンとも連絡がない。<br /><br />まあ日曜日だから仕方ないかと思い、でもやっぱり困るので、ヤマサキにメールをしたら、ヤマサキじゃ分からないのでデスクのハヤマに訊いてみるとなった。<br /><br />ハヤマの回答は「感光体のスペア在庫はないから、今ついている感光体を振ってみてから、また取り付ける」だった。<br /><br />いやいやいや、インクカートリッジじゃないんだから、振ってもダメでしょ!<br /><br />結局どーにもならないので、月曜日に感光体を発注するとゆー結論になった。<br /><br />月曜発注で月曜納品じゃないと、それでなくても時間のない文字校正が、さらにキビシクなるのだが…イチマツの不安を残しつつ、「思い出のメロディ」「西麻布一丁目図書館」の編集に移った。<br /><br />そーこーしているうち、正午くらいにホノベが出社して来た。<br /><br />猛暑で止まらぬ汗を拭き拭きしているホノベの顔色をうかがいつつ、実はプリンターが…と窮地を訴えてみた。<br /><br />するとホノベは、しばし思案のあとヤマサキに電話をかけ、ワタルさんの仕事が間に合わないと大変マルなので、今から自分が感光体を買いに行くと言い放った。<br /><br />ヤマサキの声は聞こえないが、ファンキー・ジャムの大先輩ホノベの「今からアタシが買いに行く」発言は、ヤマサキの対応を軽く非難するよーなニュアンスも漂い、正々堂々の休日とはいえ、10トン級のプレッシャーとなってヤマサキを襲ったに違いない。<br /><br />そしてホノベは、出かけて行った。<br /><br />まだ汗も引かぬまま、猛暑のコンクリートジャングルに、ホノベは再び飛び出したのだ。<br /><br />そのうしろ姿は、クーラーの効いた部屋で休日を満喫しているヤマサキに、無言の長距離ミサイルを発射していた。<br /><br />ホノベの背中は、「ヤマサキ、これがアタシの生き様なのよ!」と、冷たく放熱していた。<br /><br />この状況を深く受け止めると、ワタル自身の立場とか居心地さえも悪くなりそーな気がしたので、まずはホノベの安全な帰還を願うことにした。<br /><br />編集作業を進めながら、ホノベのことが気になって仕方ない。<br /><br />この気持ちは、愛とか恋とか憐憫とかじゃない。<br /><br />大きな荷物を持った妊婦を手助けする気持ちとも違う。<br /><br />ショッピングカートを押して歩く高齢者が横断歩道の途中で信号が赤に変わり、途方に暮れているのを見るに見かねた時の気持ちに少し似ているかもしれない。<br /><br />ホノベ、無事に帰って来てくれ…!<br /><br />ワタル自身の願いが神に届いたのか、ホノベは1時間ほどで無事に戻って来た。<br /><br />大きな袋を下げ、そこにはブラック感光体ユニットが入っていた。<br /><br />だからワタル自身は、ホノベに感謝とねぎらいのココロを込めて「それ、オレが取り付けるよ」と申し出た。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />ホノベの「いえ、アタシがやります」宣言の前に、無抵抗で引き下がるしかなかった。<br /><br />ホノベは、感光体の購入から取り付けまで、すべての作業を単独完遂する決意なのだ。<br /><br />それこそが、猛暑の日曜日に休日出勤した自分に与えられた使命なのだ…いや、ファンキー・ジャム社員として当然の仕事なのだと、ホノベの汗が語っていた。<br /><br />そして再度、「ヤマサキ、これがアタシの生き様なのよ!」と、ヤマサキのデスク周辺に地縛怨念を放射させたのだった。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />本当に大丈夫なんだろーか?　感光体を交換するのは、ちょっと面倒な作業なんだけど…。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />20分後、ホノベはブラック感光体ユニットの交換作業を無事に終え、単独完遂を達成したのだ。<br /><br />思わず安堵するワタル自身。<br /><br />素潜りでアワビを発見し、ギリギリの息でよーやくGET、大急ぎで海面に出てプッファ～とやった時の開放感が、西麻布のファンキー・ジャムで甦る。<br /><br />偉いぞホノベ!　やったぜホノベ!<br /><br />8月下旬、みなさんのポストにBARI BARI CREW VOL.107が届いたら、それはホノベのお陰だと、感謝を忘れないでちょーだいね!<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

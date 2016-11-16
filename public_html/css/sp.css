@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#mainCover{
+	padding: 48px 0 48px;
+	font-size: 200%;
+}
+
+.tksu #mainCover{
+	text-align: center;
+}
+
+.tksu #contentArea .dfTbl3 th{
+	width: 15%;
+	padding: 0 10px;
+}

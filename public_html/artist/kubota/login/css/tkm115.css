@@ -1,0 +1,60 @@
+
+@charset "shift_jis";
+body {
+	line-height:1;
+}
+
+#page {
+	width:850px;
+}
+
+#container {
+	width:848px;
+	margin:0 auto;
+	padding:0;
+	border:1px solid #000;
+}
+
+/* header start */
+#header {
+	width:848px;
+	padding:0;
+}
+#header #logo {
+	width:848px;
+	margin: 0;
+}
+
+/* header end */
+
+/* easter egg start */
+#contents .egg {
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+#contents .egg img {
+	visibility:hidden;
+}
+#contents .img01 {
+	width:848px;
+	margin: 0;
+	background-image:url(../image/115/img1.jpg);
+}
+/* easter egg end */
+
+/* copyright start */
+
+#copyright .copy {
+	float: none;
+	width: 848px;
+	padding: 0 0 18px;
+}
+
+#copyright {
+	width:848px;
+	margin: 0;
+}
+/* copyright end */
+
+/* backNumber start */
+/* backNumber end */

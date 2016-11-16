@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common_insert.html" -->
+<link href="/premium/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_insert.html" -->
+			<div id="section">
+				<div class="secInner">
+					{if $status != "edit"}
+						<h2>新規会員登録</h2>
+					{else}
+						<h2>会員継続</h2>
+					{/if}
+					<p class="lead">
+						{if $smarty.get.p15 == '2' && $smarty.get.p16 == '11'}
+							パスワードの誤り回数が規定回数以上となったため、手続きを停止いたします。<br />
+							カード会社へお電話をお願いいたします。<br />
+							<br />
+							お問合せ先：　東京03-5638-3211、大阪06-6339-4074<br />
+							<br />
+							承り時間：　月曜日〜土曜日・祝日 9:15〜20:00、日曜日 10:00〜20:00<br />
+						{elseif $smarty.get.p15 == '2' && $smarty.get.p16 == '21'}
+							入力されたＩＤまたはカードは、現在、お取扱できません。
+						{elseif $smarty.get.p15 == '2' && $smarty.get.p16 == '22'}
+							入力されたＩＤまたはカードは、現在、お取扱できません。<br />
+							<br />
+							カードの裏面に記載されているお問合せ先へお電話をお願いいたします。
+						{elseif $smarty.get.p15}
+							カード会社との通信が正常に行われませんでした。<br />
+							<br />
+							しばらく時間をおいてから再度お手続きをお願いいたします。
+						{else}
+							お申込み処理が正常に行われませんでした。<br />
+							<br />
+							しばらく時間をおいてから再度お手続きをお願いいたします。
+						{/if}
+						<br />ご不明な点がございましたら、<a href="mailto:premium@funkyjam.com">premium@funkyjam.com</a>までご連絡下さい。
+					</p>
+					<p class="btn btn2"><input type="button" value="TOPへ戻る" onclick="location.href='/premium/';"  /></p>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer_insert.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

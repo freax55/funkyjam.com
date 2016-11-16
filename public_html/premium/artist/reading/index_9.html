@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Reading（リーディング）</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/11/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part4【森流 空芯菜炒めの作り方】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20131108_3.jpg" src="/premium/artist/reading/image/20131108_3.jpg" width="400" height="556" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/11/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/11/05 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その3「優しく教えてくれるのは…」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">＜第三弾！＞<br /><br /><br /><br />知り合いらしい知り合いもいない帝劇で歌稽古は始まった。<br /><br />作品の作られた背景、音楽の構成のされ方、音符の解釈のされ方などなど…。<br /><br />毎週１回数時間のエコールを受ける。<br /><br />分厚い楽曲譜面を膝に乗せ椅子に座って歌うが、パート分けがなされると皆次々に歌いだす…。<br /><br />とんちんかんに歌う番がきても歌えないのは私だけ……。<br /><br />今迄の様に「教えてもらえるもの」と思って待っていても、個人レッスンがあるわけではないらしい…。<br /><br />冷や汗をかきながら毎週エコールは進んでゆく。<br /><br />「おはようございます」と「お疲れさまでした」だけの挨拶を交わし地下鉄に乗って通う足取りは、ずんと重くなって行く。<br /><br />自分がどんどん萎縮していくのがわかる…。<br /><br /><br /><br />このままじゃいかん！<br /><br />ピアノが弾けて、事情が理解してもらえて（私が譜面読めないとか、なのに大きな舞台に立つとかそいうこと）、なおかつ優しく教えてくれる人…果たしてそんな人はいるのか…？<br /><br />割と近い存在のひとが一人!!!!!その名は森大輔!!!!!<br /><br />でも、彼はアーティストだからにして、今更私のレッスンなんか果たして頼めるのか？<br /><br />迷ったあげく『相談あります…。」と電報みたいなメールをしてみた。<br /><br /><img src="/premium/artist/essay/urashima/images/20/musical3-1.jpg" /><br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/10/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/10/24 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！part4【Ｈさん（４０代・女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><div><b>子供ができてから旦那が女性として見ていない気がします。どうしたら良いですか？</b></div><div><br /></div><div>僕が経験したことのない質問ですねー。笑</div><div>旅行に行くといいですね。子供を一回預けて。</div><div>二人だけの時間を一回作るっていうのはやっぱり大事なんじゃないですか？</div><div>･･･もうそのくらいしか言えないです。笑</div><div>そういう月並みなアイディアしか出てこないです。笑</div><div><br /></div><div>あ。松尾潔さんが言ってましたけど、</div><div>夫婦円満の秘訣は、自分の仕事場にときどきに嫁を連れてくることだ。って。</div><div>第三者がいる中である意味夫婦を演じるわけじゃないですか。</div><div>例えば、ちょっと喧嘩して出てきたとしても、</div><div>人がいる中でその喧嘩の続きはできないじゃないですか。</div><div>仲の良い夫婦として振る舞わなきゃいけないってことは、夫婦を演じるっていうことで。</div><div>カップルもそうだと思うけど、友達と一緒にご飯を食べるってなっても喧嘩のことは出せない。仲良く振る舞わなければいけない。</div><div>っていう「演じる」ってところが、意外と自分らにとってはプラスなんじゃないかなって思うんですよね。</div><div>なんとなくですけど。</div><div><br /></div><div>二人だけでいるとわからないことも人を交えて一緒にいることで、</div><div>素敵なところとか良いところを見直せるんじゃないですか？</div><div><br /></div> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/10/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/10/21 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その2「緊張のオーディション」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">＜第二弾！＞<br /><br /><br /><br />日比谷、シアタークリエで舞台は幕を開けた。<br /><br />声が壊れないように、膝を痛めないように、何日も歌うんだから…という全ての守りを捨てて、がむしゃらにぶつかった…。「やればできるじゃないか！」亜門さんに終演後かけてもらった言葉に泣いた。大泣きした。<br /><br />これでダメだと言われたら、本当に終わってしまう。心底怖かった…ハードルはどんどん上がって行く…。<br /><br />私は待たないで進んでハードルを上げに行くことにした。<br /><br /><br /><br /><img src="/premium/artist/essay/urashima/images/20/musical2-1.jpg" /><br /><br />※写真は、亜門さんからの激励後に撮ったファビュラスキャストの三名で！！！<br /><br /><br /><br />春、オーディション初参加、譜面を握りしめたまま歌うと…、演出家ローレンスに「暗譜の完成度のオーディションでは無い、今まで見た事が無いものが見たいんだ」と…。<br /><br />ミュージカルっぽく！手を挙げて歌ってみる…。もっとリアルな芝居をしろとダメ出しをくらう。マダムの心情を教えられ再トライ！ずっと心臓はバクバクしたままで、終了後スタジオを出てもなお、しばらくは治まらなかった。感触は良かったのか、悪かったのか誰も何も教えてくれなかった。<br /><br /><br /><br />当初の予定より大幅に遅れて、オーディション合格の知らせを受ける。嬉しかった！が、新たに恐怖が湧いてくる。アカデミックな事は、何一つ勉強した事のない私が、うまくやれるのか？！<br /><br />エコールと言われる、舞台背景や歌の稽古クラスが2012年11月帝国劇場地下６Fの稽古場で始まった。<br /><br />知った顔は誰もいなかった…<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/10/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/10/10 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【ワタクシのミュージカルな1年こぼれ話大放出！その1「宮本亜門さんの言葉がしみる、、」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">ミュージカル「レ・ミゼラブル」の年だったと言える２０１３年！<br /><br />季節は変わって行きますが、行動は食べて寝て舞台に立つ！これです！<br /><br />そんなワタクシの１年を振り返ってみたいと思います！<br /><br />ブログやTwitter、最近はFacebookもやってんじゃん！いつも読んでるから知ってるわよっぷん！な～んて思いの皆様！<br /><br />いやいや、有料サイトならではの素敵なこぼれ話いっぱいですから！<br /><br />とってあったんですから！このために！それでは、それでは！始めま～～す！<br /><br /><br /><br />〈第一弾！〉<br /><br /><br /><br />２０１２年始め、新演出になるレ・ミゼラブルのオーディション話が持ち上がった。受けよう！と思った、自分を試したい、どこまで評価されるのか知りたい。<br /><br />そう思ったのは、前年「アイ・ガット・マーマン」のゲネプロで演出の宮本亜門氏に酷評され「浦嶋りんこはもう終わったんだな」とこき下ろされたからだ。<br /><br />マーマンは３人編成で３組のキャストが作られていたが、その９人中、胸に響いてこないのはお前ただ一人だけだ。技術的な事では無い、パッションだ…と。<br /><br />明日は初日、それまでになんとかしてこいと言われてパニクった…泣いても明日が初日、そんな暇があったら考えろと思っても、傷ついた自分は立ち直れなかった。<br /><br />努力して、頑張って…「そんなことは当たり前、客は見た事ないものがみたいんだ」亜門さんの言葉がぐるぐる、ぐるぐる…ぐるぐる、ぐるぐる<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/10/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/10/02 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">4コマまんが Part3【スーパーマン】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="20131002_3.jpg" src="/premium/artist/reading/image/20131002_3.jpg" width="400" height="555" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/09/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/09/24 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【「森大輔文学青年風味だった頃」と行くAIKの旅！その7「最後は鵜！！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">あちちっ～！遂に２０１３年も夏がきたぁぁあ！！今年はどこ行く～海か山か！選んだのは川～～～～～！！！<br /><br />行ったのは、愛知県は犬山市の木曽川～！地味めなこの街には、遊ぶところがいっぱい！！<br /><br /><font color="#AD2222">TDLやTDS、USJには無いものがある！それがAIK(愛知県犬山市木曽川）！！！</font><br /><br /><br /><br />＜第七弾！＞<br /><br /><br /><br />いよいよ鵜飼い～！子供の頃に見て以来の◯ン十年ぶりぐらいの感じ！でもあんまり印象が変わっていないのはなぜかしらん。たぶん護岸工事とか川の景色があまり変わらないのかも・・。とっぷりと日が暮れて、川上から鵜舟（うぶね）がやってきた！何羽もの鵜が鵜飼いに操られて船の船首を泳いでいき、時々ポクリポクリと川に潜ってかわいい～！<br /><br />まだデビューしたてのうら若い女性鵜匠が、かがり火の先で鵜を操る姿は美しいわぁ。<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama7-1.jpg" /><br /><br /><br /><br />森大輔、大興奮！<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama7-2.jpg" /><br /><br /><br /><br />川面にかがり火が揺れて幻想的～～！！日本人てホント情緒豊かだと思う！！<br /><br />そして！ここに仙田のおじさんが！おじさんは鵜舟の船頭さんなのだぁーー！！！おじさ～ん！かっこいい！！！<br /><br />ねじり鉢巻！半被！船に長竿！日本の男のかっこいいとこ全部ついとります！！！<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama7-3.jpg" /><br /><br /><br /><br />鵜飼いの説明など聞きながら鵜飼いは終了～！あ～楽しかった！こうして、AIKの旅は美しい終演の美を飾りましたぁ！岸に戻るとかっちゃんが、お土産に自家製野菜をどっさりくれて、「また、こやぁ～」と言って、軽トラでブーンと手を振りながら帰って行きました。「じゃ！りんさん、また！」森大輔は、最後まで爽やかに青い車で西に走って行きました。私の車の中でかっちゃんからもらった冬瓜がコロコロ・・。今頃、森大輔の車でもコロコロしているはず、と思いながら大満足で帰路に着いたのです。。。<br /><br /><br /><br />こうして、AIKの旅は美しい終演の美を飾りました！今回の旅はいかがでしたか？またどこかへ、森大輔を誘って出かけて行きたいと思います（次は何バージョンの彼かなぁ）！お楽しみの最後に、木曽川からの犬山城でお別れしま～～す！！<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama7-4.jpg" /><br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/09/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/09/20 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+			<p class="tit">悩み相談ぶった斬り！part3【Sさん（２０代・女性）】</p>
+		</div>
+		<div class="texts">
+			<div class="text"><div><b>休みの日になると一日寝て過ごしてしまいもったいないと思うのですが、なにか充実させる良い方法はありますか？</b></div><div><br /></div><div>俺もまったくおんなじタイプやから。すごくよくわかんねんけど。</div><div>しいてきっかけを作るとすれば、前の日に自分でタイムスケジュールを組んじゃうことよ。</div><div>それって結構楽しいことのような･･俺はそれをやってんねんけど。</div><div>明日が休みで、やりたいことはいっぱいあるけど、</div><div>たぶん朝早くから動き出さないと全部こなせないな。</div><div>それら一個一個は割と楽しいことのはずなのに、放っとくとやらないから。どうしよう。</div><div>ってなったら。</div><div>前の日に「明日は何時に起床。何時までに洗濯物をやって、何時に出かける。」</div><div>みたいのを携帯に書いておくのよ。</div><div>で、それ通りに過ごす。</div><div>そういうのを結構30分とか時間をかけて作ると、</div><div>30分かけて作ったそのスケジュールに対して、</div><div>その30分ぶんを無駄にしたくないから、ちゃんと守らないとな！</div><div>ちゃんと遂行しないといかんな！っていう気持ちが生まれてくるから。</div><div>学校でもやった宿題は提出し忘れないやん。</div><div>ちゃんと家で宿題やってきた日は「はい」ってだすやん。先生に。</div><div>これを守らないと昨日考えた甲斐がない！って思うと実行できるよ。</div><div>重い腰は上がると思う！</div><div><br /></div> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/09/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/09/09 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【「森大輔文学青年風味だった頃」と行くAIKの旅！その6「屋形船で木曽川遊覧！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">あちちっ～！遂に２０１３年も夏がきたぁぁあ！！今年はどこ行く～海か山か！選んだのは川～～～～～！！！<br /><br />行ったのは、愛知県は犬山市の木曽川～！地味めなこの街には、遊ぶところがいっぱい！！<br /><br /><font color="#AD2222">TDLやTDS、USJには無いものがある！それがAIK(愛知県犬山市木曽川）！！！</font><br /><br /><br /><br />＜第六弾！＞<br /><br /><br /><br />そしていよいよ！今回の旅のお題！木曽川～～！！<br /><br />木曽川は長野、岐阜、愛知、三重の４県を流れ伊勢湾にそそぐ大きな川！でも上流にある犬山市では、まだそれほど川幅が広くないから川遊びにはピッタリ！本日は木曽川鵜飼いと夕膳を楽しみま～～す！！暑い日差しが傾いて木曽川に夕暮れがぁ～。船頭さんが夕日に向かって船を出します！屋形船には予約しておいたお弁当が！本日のお弁当～、割烹堀部の「夕楽」～３０００円也！<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama6-1.jpg"><br /><br /><br /><br />森大輔も思わず「美味しそうですね～！」。<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama6-2.jpg"><br /><br /><br /><br />このコースは、夕方から屋形船に乗って木曽川遊覧、あらかじめ予約しておいたお弁当をそこで頂きマッスル。トイレ休憩の為、いったん船着き場に戻り、３０分ほどで再び出発！かがり火も美しい鵜飼いを観るというモノ！船は夕日の染まる犬山城をみながら静かに走りますぅ～。あぁ、なんか文学青年風味の森大輔と川遊びが、昭和の文豪を思わせてかなりのマッチングゥゥ！<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama6-3.jpg"><br /><br /><br /><br />妄想も川面を滑る木曽川の瀞・・りんこ<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/08/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/08/28 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【「森大輔文学青年風味だった頃」と行くAIKの旅！その5「ワオキツネザル」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">あちちっ～！遂に２０１３年も夏がきたぁぁあ！！今年はどこ行く～海か山か！選んだのは川～～～～～！！！<br /><br />行ったのは、愛知県は犬山市の木曽川～！地味めなこの街には、遊ぶところがいっぱい！！<br /><br /><font color="#AD2222">TDLやTDS、USJには無いものがある！それがAIK(愛知県犬山市木曽川）！！！</font><br /><br /><br /><br />＜第五弾！＞<br /><br /><br /><br />さ～て、犬山城で食べたかき氷のおかげで少し汗が引いたぞぅ！<br /><br />ここからさらに車を走らせて、今度は犬山モンキーパークへ！ここには遊園地やアトラクションステージ、プール、そしてなんと言っても日本モンキーセンター！！あれっ？知らない？世界最多種のお猿がいるんだよぉ～！間近で見られるんだよぉぉ～！！例えばこんなふうに。<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama5-1.jpg" /><br /><br /><br /><br />森大輔、かなりええカメラ持ってきてます。遠くもとれるやつ。めっちゃ遠くも・・でも近い。近すぎて猿が・・。<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama5-2.jpg" /><br /><br /><br /><br />ここはモンキーセンターの中のWAOランド！ワオキツネザルがシマシマのシッポでわーわー走り回ってんの。夕方近くに行ったからお客さんも少なくって、猿くんたちものんびり～私らものんびり～「あ、どうも」みたいなね<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama5-3.jpg" /><br /><br /><br /><br />他のお猿を間近で見られるのはモンキースクランブルで、お猿が上に渡された梯子の道を渡って行くのや、リスザルの島でちっちゃいのんがチョロチョロとまあ可愛いこと！<br /><br /><img src="/premium/artist/essay/urashima/images/19/inuyama5-4.jpg" /><br /><br /><br /><br />これは私の鞄のキーホルダーに遊びにきたとこ～！頭の形が岡本さんや～ん★檻に入って<img src="/premium/artist/essay/urashima/images/19/inuyama5-5.jpg" /><br /><br /><br /><br />森大輔は、この様に進化を遂げたのでした。<br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/index_4.html" class="link_page">4</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_5.html" class="link_page">5</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_7.html" class="link_page">7</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_8.html" class="link_page">8</a></li>&nbsp;
+<li><span class="current_page">9</span></li>&nbsp;
+<li><a href="/premium/artist/reading/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_11.html" class="link_page">11</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_12.html" class="link_page">12</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_13.html" class="link_page">13</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_14.html" class="link_page">14</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第193回 「研究者の憂鬱」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/03/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/03/21 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第193回 「研究者の憂鬱」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 最近はFor Real? なニュースが多くて、あらゆるコトに疑心暗鬼を生ずる状態になっちゃってる。<br /><br />先生とか学者とか博士とか専門家などといった上級ピーポーは、一般ピーポーよりも簡単にダマされる場合が少なくないんだよね。<br /><br />しかも、上級ピーポーは発言力もあるので、おのずと一般ピーポーも右へならえでダマされちゃう。<br /><br />有名なトコでは、イギリスで偽造された原人骨を50年も本物と信じてたピルトダウン人事件、ノーベル賞候補になったヘンドリック・シェーンのインチキ高温超電導、日本考古学界の「神の手」が発掘した旧石器時代の石器は自分が埋めたニセモノ・・・そんな例はキリがない。<br /><br />ワタル自身は武蔵工業大学中退だけど、教授の言葉は今も覚えている。<br /><br /><br /><br />実験を10回して同じ結果を10回得るのが目的ではない。100回200回実験をして、1回出た違う結果の原因を突き止めるコトが重要なのだ。それが、ミスのない新しい発展を産むのだ。<br /><br /><br /><br />それは電子通信工学科の弱電実験で、現在の携帯電話やパソコンの普及につながる基礎の中の基礎段階から、学生は徹底してFor Real? のココロを叩き込まれた。<br /><br /><br /><br />しか～し!<br /><br />そんなジミチな実験よりフォークソングに夢中だったワタル自身は、結果的にドロップアウトしちゃうんだけど、今でもサイエンスの世界には興味がある。<br /><br />あのね、実験室の研究者って、結果を出さないと誰も認めてくれないんだよ。<br /><br />だから正解を発見出来ないと、悩む苦しむ落ち込む恨む。<br /><br /><br /><br />しか～し!<br /><br />いくら試行錯誤しても、正解を発見出来ない場合が多いのだ。<br /><br />そーゆー鬱々悶々の研究者に、サイエンスとは無縁の世界から「正解」を教えてくれる人がいる。<br /><br />科学では不可能だった正解の発見を、独自の宗教論で解いた結果、オウム真理教に高学歴の研究者達が入信したんだと、ワタル自身は思っているんだな。<br /><br />研究者はピュアだから、てゆーか、ピュアじゃないと研究者にはなれないから、まったく違う世界からのアプローチを深読みして、ジグソーパズルの足りないピースにしちゃう。<br /><br />話が大きく逸れちゃったけど、サイエンティストでも熱心な宗教家は大勢いるし、彼等は科学と精神世界を矛盾なく両立させている。<br /><br />だから、問題は宗教じゃない。<br /><br />研究者のココロが、問題なのだ。<br /><br />ピュアゆえに、孤独で傷つきやすく、時として公私の区別さえ見失う。<br /><br />STAP細胞・・・信じたいけど、DNA画像の切り貼りを見せられたら、もー絶体絶命って気になっちゃう・・・。<br /><br />研究所やスポンサーのオトナの事情は多々あるだろーけど、あんなにハッキリ切り貼りだって分かる写真を、そのまんま公表しちゃうなんて、やっぱ学者はピュアだよなぁ～!<br /><br />で、蛇足にもーひとつ、宇宙ファンなら誰でも知ってる話を。<br /><br /><br /><br />1877年、ミラノ天文台長のスキャパレリは、火星の表面にカナル(イタリア語でcanale=水路)のよーな筋を見つけたと発表した。<br /><br />この情報を知ったアメリカの著名な天文学者ローウェルも、火星に多数のcanale→canal→人工運河を「発見」した。<br /><br />いつの間にか「水路のよーな筋」が人工運河に激変してしまったなんて無関係に、さらにローウェルは独創&独走し、様々に変化する運河は、火星人が水不足対策のために建設していると主張して、世界中の学者&一般ピーポーが火星人と運河の存在を信じたのだ。<br /><br />なんと、1960年代に近代的な火星探査が実施されるまで、火星の運河は現実だったのだ。<br /><br />ワタル自身が湘南ワルガキだった頃も、少年誌のグラビアに登場する火星には、運河がハッキリ描かれていた。<br /><br /><br /><br />しか～し!<br /><br />もちろん、火星に運河などない。<br /><br />火星の運河は、18世紀の性能の悪い望遠鏡が造り出した、歪んだ幻影だったのだ。<br /><br />しか～し!<br /><br />21世紀の今でも火星人と運河の存在を確信する人達は、火星文明の発達により運河は地下に埋設され、火星人は地下都市で暮らしていると譲らない。<br /><br />火星人を信じたローウェルは、ハーバード大学で物理や数学を学んだ火星観察の第一人者で、ローウェル天文台を建設して冥王星の存在を指摘した事でも知られている、超一流の天文学者である。<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

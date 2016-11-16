@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>チケット管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../../admin.css" rel="stylesheet" type="text/css">
+{literal}
+<script type="text/javascript">
+<!--
+function removeConfirm(key) {
+	var ret = confirm('削除してもよろしいですか。');
+	
+	if (ret) {
+		location.href = "index.php?action=remove&key=" + key;
+	}
+}
+-->
+</script>
+{/literal}
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../../index.php">管理トップ</a> &gt; 商品管理 &gt; <a href="index.php">チケット</a> &gt; </p>
+<form action="index.php" method="post" enctype="multipart/form-data" name="edit">
+  <table id="list">
+    <tr>
+      <th width="120">商品コード</th>
+      <td>
+        {if $errors.code}<span class="error">※{$errors.code|escape}</span><br />{/if}
+        <input name="item_code" type="text" value="{$item_code|escape}">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">商品名</th>
+      <td>
+        {if $errors.name}<span class="error">※{$errors.name|escape}</span><br />{/if}
+        <input name="name" type="text" value="{$name|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>アーティスト</th>
+      <td>
+	    {if $errors.category}<span class="error">※{$errors.category|escape}</span><br />{/if}
+        <select name="category_code">
+          <option value="">▼選択してください</option>
+          {foreach from=$categoryList item=category}
+          <option value="{$category.category_code}"{if $category.category_code == $category_code} selected="selected"{/if}>{$category.name|escape}</option>
+          {/foreach}
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>区分</th>
+      <td>チケット</td>
+    </tr>
+    <!--tr>
+      <th>在庫</th>
+      <td>
+        {if $errors.stock}<span class="error">※{$errors.stock|escape}</span><br />{/if}
+        <input name="stock" type="text" value="{$stock|escape}">
+      </td>
+    </tr-->
+    <tr>
+      <th>単価</th>
+      <td>
+        {if $errors.price}<span class="error">※{$errors.price|escape}</span><br />{/if}
+        <input name="price" type="text" value="{$price|escape}">
+        円
+      </td>
+    </tr>
+    <tr>
+      <th>公演日</th>
+      <td>
+	    {if $errors.p_date}<span class="error">※{$errors.p_date|escape}</span><br />{/if}
+		例）yyyy-mm-dd<br>
+        <input name="p_date" type="text" value="{$p_date|escape}">
+      </td>
+    </tr>
+    <tr>
+      <th>エリア</th>
+      <td>
+	    {if $errors.area}<span class="error">※{$errors.area|escape}</span><br />{/if}
+        <select name="area">
+          <option value="">▼選択してください</option>
+          {foreach from=$areaList item=obj}
+          <option value="{$obj}"{if $obj == $area}{assign var=hitArea value=1} selected="selected"{/if}>{$obj|escape}</option>
+          {/foreach}
+        </select>
+        <br>
+        その他のエリア
+        <input name="otherArea" type="text" value="{if !$hitArea}{$area|escape}{/if}">
+      </td>
+    </tr>
+    <tr>
+      <th>会場</th>
+      <td>
+	    {if $errors.place}<span class="error">※{$errors.place|escape}</span><br />{/if}
+        <select name="place_no">
+          <option value="">▼選択してください</option>
+          {foreach from=$placeList item=place}
+          <option value="{$place.place_no}"{if $place.place_no == $place_no} selected="selected"{/if}>{$place.name|escape}</option>
+          {/foreach}
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>開場時間</th>
+      <td>
+	    {if $errors.open_time}<span class="error">※{$errors.open_time|escape}</span><br />{/if}
+		例）hh:mm<br>
+        <input name="open_time" type="text" value="{$open_time|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>開演時間</th>
+      <td>
+	    {if $errors.start_time}<span class="error">※{$errors.start_time|escape}</span><br />{/if}
+		例）hh:mm<br>
+        <input name="start_time" type="text" value="{$start_time|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>優先販売日</th>
+      <td>
+	    {if $errors.p_release}<span class="error">※{$errors.p_release|escape}</span><br />{/if}
+		例）yyyy-mm-dd<br>
+        <input name="p_release" type="text" value="{$p_release|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>一般販売日</th>
+      <td>
+	    {if $errors.g_release}<span class="error">※{$errors.g_release|escape}</span><br />{/if}
+		例）yyyy-mm-dd<br>
+        <input name="g_release" type="text" value="{$g_release|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">備考</th>
+      <td>
+	    {if $errors.note}<span class="error">※{$errors.note|escape}</span><br />{/if}
+        <textarea name="note" cols="50" rows="5">{$note|escape}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <th>問い合わせ先</th>
+      <td>
+	    {if $errors.inquiries}<span class="error">※{$errors.inquiries|escape}</span><br />{/if}
+        <input name="inquiries" type="text" value="{$inquiries|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>問い合わせ先連絡先</th>
+      <td>
+	    {if $errors.inquiries_tel}<span class="error">※{$errors.inquiries_tel|escape}</span><br />{/if}
+        <input name="inquiries_tel" type="text" value="{$inquiries_tel|escape}" size="50">
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="更新する" />
+    <input name="action" type="hidden" value="change" />
+    <input name="key" type="hidden" value="{$key}" />
+    <input type="button" name="remove" value="削除する" onclick="removeConfirm('{$key}');" />
+</p>
+</form>
+</body>
+</html>

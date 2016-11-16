@@ -1,0 +1,1 @@
+select mail from premium_users_pc where mail_stamp > '{$start}' and delete_flg = '0';

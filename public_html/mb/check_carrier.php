@@ -1,0 +1,1 @@
+<?phprequire_once($_SERVER['DOCUMENT_ROOT'] . '/../lib0904/simple/DefaultAction.php');require_once($_SERVER['DOCUMENT_ROOT'] . '/../lib0904/util/mobile_premium/Carrier.php');class Action extends DefaultAction {	function execute() {		$this->c = new Carrier();		$this->carrier = $this->c->getCarrierName();		$this->supportUA = $this->c->checkSupportUA();	}}?>

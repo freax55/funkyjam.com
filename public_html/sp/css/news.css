@@ -1,0 +1,52 @@
+/* 
+	Document   : top
+    Created on : 2012/05/23, 13:10:15
+    Author     : staff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#newsUnder .day,
+#newsUnder h3 {
+	padding:0 17px;
+}
+#newsUnder .day{
+	padding-top: 15px;
+	color: #DBC31E;
+}
+#newsUnder h3 {
+	padding-bottom: 20px;
+	font-size: 1.8rem;
+}
+#newsUnder .texts {
+	padding:17px;
+	border-top: 1px solid #4D4D4D;
+}
+#newsUnder .mt-enclosure-image {
+	display:block !important;
+	text-align:center !important;
+}
+#newsUnder img{
+	float:none !important;
+	text-align:center !important;
+}
+#newsUnder #btnBack{
+	padding: 0 17px 38px;
+	height: 35px;
+}
+#newsUnder table.dfTbl {
+	border-collapse: collapse;
+	margin-bottom: 0.5em;
+	width: 99%;
+}
+#newsUnder table.dfTbl th {
+	background-color: #1F1F1F;
+	border: 1px solid #666666;
+	font-weight: normal;
+	text-align: center;
+	color: #D3D3D3;
+}
+#newsUnder table.dfTbl td {
+	border: 1px solid #666666;
+	text-align: left;
+}

@@ -1,0 +1,50 @@
+@charset "shift_jis";
+
+#gnavi li#gnavi02 a {
+	background-position:left bottom;
+}
+#contents #main #navi li#navi07 a {
+	background-position:left bottom;
+}
+#contents #main #navi li#navi08 a {
+	background-position:left bottom;
+}
+
+
+#contents #main #wrapper .section#entries {
+	padding-bottom:0;
+}
+#contents #main #wrapper .section#entries .entry {
+	margin:0 0 25px 0;
+	background-color:#F0F0F0;
+}
+#contents #main #wrapper .title {
+	width:625px;
+	border-bottom:1px solid #333333;
+}
+#contents #main #wrapper .title h2 {
+	float:left;
+	padding:9px 11px;
+	color:#C23102;
+	font-size:143%;
+	line-height:normal;
+}
+#contents #main #wrapper .title h2 img {
+	margin-left:8px;
+	vertical-align:2px;
+}
+#contents #main #wrapper .title .date {
+	float:right;
+	padding:13px 10px 5px 0;
+	line-height:normal;
+	font-size:85%;
+	color:#676767;
+}
+
+#contents #main #wrapper .entry .entryBody {
+	padding:15px;
+	color:#000000;
+}
+#contents #main #wrapper .entry .entryBody p {
+	margin:0 0 0.5em 0;
+}

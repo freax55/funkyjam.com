@@ -1,0 +1,144 @@
+@charset "shift_jis";
+
+#container {
+	width:782px;
+	margin:0 auto;
+	padding:23px 35px 10px 35px;
+	border:1px solid #000;
+}
+
+/* header start */
+#header {
+	width:782px;
+	padding:0;
+}
+#header #logo {
+	width:782px;
+}
+
+/* header end */
+
+/* contents start */
+
+#contents .link {
+	width:185px;
+	margin-top:15px;
+	margin-left:auto;
+	margin-right:0;
+	padding-left:11px;
+	padding-bottom:2px;
+	text-align:right;
+	background-image:url(../image/icon_arrow_blue.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+}
+#contents .link a {
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+}
+#contents .link a:hover {
+	color:#00A2DD;
+}
+#contents .entryWrapper {
+	width:782px;
+}
+#contents .entry#flLeft {
+	float:left;
+	width:259px;
+	padding-right:16px;
+}
+#contents .entry#flLeft .img01 {
+	padding-bottom:25px;
+}
+#contents .entry#flRight {
+	float:left;
+	width:507px;
+}
+#contents .entry#flRight .img03 {
+	padding-bottom:9px;
+}
+#contents .entryWrapper#middle .img05 {
+	padding-right:9px;
+}
+#contents .entryWrapper#bottom .img07 {
+	float:left;
+	width:427px;
+	padding-right:5px;
+}
+#contents .entryWrapper#bottom .img08 {
+	float:left;
+	width:350px;
+}
+#contents .entryWrapper#top {
+	padding-bottom:20px;
+}
+#contents .entryWrapper#middle {
+	padding-bottom:10px;
+}
+#contents .entryWrapper#middle p {
+	float:left;
+}
+#contents .entryWrapper#bottom {
+	padding-bottom:20px;
+}
+/* contents end */
+
+/* easter egg start */
+#contents .egg {
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+#contents .egg img {
+	visibility:hidden;
+}
+#contents .egg.img01 {
+	height:281px;
+	background-image:url(../image/0911/image_01.jpg);
+}
+#contents .egg.img02 {
+	height:367px;
+	background-image:url(../image/0911/image_02.jpg);
+}
+#contents .egg.img03 {
+	height:379px;
+	background-image:url(../image/0911/image_03.jpg);
+}
+#contents .egg.img04 {
+	height:285px;
+	background-image:url(../image/0911/image_04.jpg);
+}
+#contents .egg.img05 {
+	background-image:url(../image/0911/image_05.jpg);
+}
+#contents .egg.img06 {
+	background-image:url(../image/0911/image_06.jpg);
+}
+#contents .egg.img07 {
+	background-image:url(../image/0911/image_07.jpg);
+}
+#contents .egg.img08 {
+	background-image:url(../image/0911/image_08.jpg);
+}
+/* easter egg end */
+
+/* copyright start */
+#copyright {
+	width:627px;
+	margin-left:auto;
+	margin-right:-14px;
+}
+#copyright .copy {
+	float:left;
+	width:528px;
+	padding-right:5px;
+	padding-top:7px;
+}
+#copyright .logoS {
+	float:left;
+	width:94px;
+}
+/* copyright end */
+
+/* backNumber start */
+/* backNumber end */

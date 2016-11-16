@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>会場管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../admin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; <a href="index.php">会場管理</a> &gt; </p>
+<p id="new"><a href="index.php?action=new">追加する</a></p>
+{if $list}
+<p class="paging">{if $pageInfo.prev}<a href="index.php?page={$pageInfo.prev}">＜前の{$pageInfo.amount}件を表示</a>{/if}
+{$pageInfo.first}〜{$pageInfo.last}件 (全{$pageInfo.total}件)
+{if $pageInfo.next}<a href="index.php?page={$pageInfo.next}">次の{$pageInfo.amount}件を表示＞</a>{/if}
+{if $pageInfo.pagePrev}<a href="index.php?page={$pageInfo.pagePrev}">＜</a>{/if}
+|
+{section name=paging loop=$pageInfo.pageLast-$pageInfo.pageFirst+1}
+{if $pageInfo.pageFirst+$smarty.section.paging.index == $pageInfo.page}<strong>{$pageInfo.pageFirst+$smarty.section.paging.index}</strong> |
+{else}
+<a href="index.php?page={$pageInfo.pageFirst+$smarty.section.paging.index}">{$pageInfo.pageFirst+$smarty.section.paging.index}</a> |
+{/if}
+{/section}
+{if $pageInfo.pageNext}<a href="index.php?page={$pageInfo.pageNext}">＞</a>{/if}</p>
+<table id="list">
+  <tr>
+    <th>会場名</th>
+    <th>住所</th>
+    <th>会場種別</th>
+    <th>代表電話</th>
+    <th>地図</th>
+    <th>アクセス</th>
+    <th>備考</th>
+    <th>&nbsp;</th>
+  </tr>
+  {foreach name=place from=$list item=place}
+  <tr class="{cycle values='odd,even'}">
+    <td>{$place.name|escape}</td>
+    <td>{if $place.address}{$place.address|escape}{else}&nbsp;{/if}</td>
+    <td>{$place.type|escape}</td>
+    <td>{if $place.tel}{$place.tel|escape}{else}&nbsp;{/if}</td>
+    <td>{if $place.map}<a href="{$place.map|escape}">あり</a>{else}-{/if}</td>
+    <td>{if $place.access}{$place.access|escape|nl2br}{else}&nbsp;{/if}</td>
+    <td>{if $place.note}{$place.note|escape|nl2br}{else}&nbsp;{/if}</td>
+    <td><div align="center"><a href="index.php?action=edit&key={$place.place_no}">編集する</a></div></td>
+  </tr>
+  {/foreach}
+</table>
+<p class="paging">{if $pageInfo.prev}<a href="index.php?page={$pageInfo.prev}">＜前の{$pageInfo.amount}件を表示</a>{/if}
+{$pageInfo.first}〜{$pageInfo.last}件 (全{$pageInfo.total}件)
+{if $pageInfo.next}<a href="index.php?page={$pageInfo.next}">次の{$pageInfo.amount}件を表示＞</a>{/if}
+{if $pageInfo.pagePrev}<a href="index.php?page={$pageInfo.pagePrev}">＜</a>{/if}
+|
+{section name=paging loop=$pageInfo.pageLast-$pageInfo.pageFirst+1}
+{if $pageInfo.pageFirst+$smarty.section.paging.index == $pageInfo.page}<strong>{$pageInfo.pageFirst+$smarty.section.paging.index}</strong> |
+{else}
+<a href="index.php?page={$pageInfo.pageFirst+$smarty.section.paging.index}">{$pageInfo.pageFirst+$smarty.section.paging.index}</a> |
+{/if}
+{/section}
+{if $pageInfo.pageNext}<a href="index.php?page={$pageInfo.pageNext}">＞</a>{/if}</p>
+{else}
+<p id="notfound">データがありません。</p>
+{/if}
+</body>
+</html>

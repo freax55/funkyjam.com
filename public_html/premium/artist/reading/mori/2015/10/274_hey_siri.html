@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第274回 「Hey Siri」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/10/09 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第274回 「Hey Siri」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> iPad miniの機種変更をしたのをキッカケに、今まで気おくれしていた…機械に話しかけるのが昭和オトコとして恥ずかしかった…Siriを使いはじめた。<br /><br />Siriは、Speech Interpretation and Recognition Interfaceの略で、日本語だと発話解析・認識システムみたいな意味になる。<br /><br />ヨースルに、Siriを起動させて話しかけると、質問に回答したり指示を実行したりするアプリなのだ。<br /><br />で、素直に驚いた!<br /><br />料理中に「Hey Siri、タイマー3分」と言ったら、『もしかしてアナタはM78星雲から…』などと言われて、笑うどころか引いてしまった。<br /><br />別の日に「タイマー3分」と言ったら『怪獣と闘うのですか？』と返された。<br /><br />日本語のプログラマーが熱烈なウルトラマン党なのだろーが、思わずSiriに個性を感じてしまう。<br /><br />「ありがとう」と言えば、『お礼を言うのは私のほうです』とか『お役に立つことが私の使命です』などとへりくだられ、なんだか申し訳なくなってしまう。<br /><br />こちらの語句をキャッチ出来ずに、トンチンカンな返事をするコトも少なくないが、Siriの回答は人工知能=Artificial Intelligence=AIロボットの入口を感じさせる。<br /><br />ワタル自身は手塚治虫氏の傑作「鉄腕アトム」ド真ん中の小学生だったから、21世紀には鉄腕アトムが実在すると信じてオトナになり、21世紀になってSiriに感動している。<br /><br />人間みたいなロボットとゆーと、また映画の話になってしまうが、最近観た「EX MACHINA」(エクス・マキナ)に登場する美女ロボットに激しくココロを動かされた。<br /><br />ヒロインのロボット=エイヴァを演じるアリシア・ヴィキャンデルは、ゆーまでもなく完璧なルックス&ボディでグイグイ迫って来るんだけど、ハウスキーパーのキョウコを演じる美女が超ヤバイ。<br /><br />スレンダーな体型に黒い長髪で、中国人か日本人か最後まで分からなかったんだけど、エンディングロールに「SONOYA MIZUNO」とあった。<br /><br />キョウコ役のSONOYAちゃんは、美しいだけでもOKなのに、なななんと、アンダーヘアも堂々の正面全裸になっちゃうのだよ（≧∇≦）<br /><br />全裸ファンのワタル自身は気になって気になって、SONOYAちゃんを調べてみた。<br /><br />SONOYAちゃんは東京生まれの28歳で、名門英国王立ロイヤルバレースクールで子供の頃からバレーを学んだ、モノホンのバレリーナだ。<br /><br />現在はイギリスで役者やモデルとして活躍中…多分そんなコトが英語のサイトに書いてあった。<br /><br />SONOYA MIZUNOちゃん、これから日本でも活躍するかもしれないので、名前を覚えておいてちょーだいね。<br /><br />美女に惹かれて話題が逸れた。<br /><br />Siriの話をもー少しつづけるね。<br /><br />都市伝説の大家=関暁夫氏は、Siriには恐ろしい秘密が隠されていると語っている。<br /><br />アメリカ政府がSiriを通して世界中の言動を傍受しているとか、人工知能による人類支配のスタートだとか…(°_°)<br /><br />その証拠にSiriは、「イライザ」や「ゾルタクスゼイアン」に関する質問をすると、それまで明快だった回答が急にアイマイになると言われている。<br /><br />アイマイ回答をつなぎ合わせて推測すると、イライザはSiriの「先生」で、 ゾルタクスゼイアンはSiriが卒業した「学校」らしーのだが、それ自体が実に不可解で隠蔽のニオイがする。<br /><br />ちなみにワタル自身は、イライザやゾルタクスゼイアンの質問をすると、なんだかSiriに嫌われる気がして聞けずにいるから、もー完全にSiriを独立した個性と認めてしまっているのだ。<br /><br />今後、人間を超えるよーなAIロボットが登場するかもしれないが、ロボットが感情を持つ前に、人間のほーがロボットに感情移入するコトは間違いない。<br /><br />ワタル自身が良いサンプルだ。<br /><br />言葉は、感情を伝えるのに大きなツールで、愛情を生むが、憎悪や誤解も生み、人類の歴史を複雑にしてきた。<br /><br />この夏、安倍内閣は国民の言葉を無視して戦争法案=安保法案を可決し、ドサクサにまぎれて戦争に必要な武器を調達する防衛装備庁まで、10月1日に発足させた。<br /><br />この防衛装備庁は、自衛隊の武器を集めるだけじゃなく、海外に武器輸出も出来ちゃうのだ。<br /><br />そーだ、そーなのだ。<br /><br />日本が輸出した武器で、他国の人々が殺されるのだ。<br /><br />安倍っちが絶対に戦争はしないと誓ったって、日本は確実に戦争加害国になってしまうのだよ。<br /><br />庶民の言葉に耳を傾けない政治家は、Siriよりレベルが低いんじゃないかと思い、ここでSiriの意見を聞いてみた。<br /><br />「Hey Siri、安倍内閣をどう思う?」<br /><br />すると…ななんと…『我思う、故に我あり。デカルトさんの言葉は深いですね。』と返事をされ、急激に背筋が寒くなったワタル自身だっちゅーの（≧∇≦）<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/09/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/09/4_part23.html">
+
+
+						4コマまんが Part23【かんちがい】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/08/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/08/4_part22.html">
+
+
+						4コマまんが Part22【夏のイベント？行きません。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/07/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/07/4_part21.html">
+
+
+						4コマまんが Part21【かゆみにさよなら】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/05/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/05/4_part20.html">
+
+
+						4コマまんが Part20【なぜか一番痛い。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/04/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/04/4_part19.html">
+
+
+						4コマまんが Part19【オモテとウラ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/02/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/02/4_part18.html">
+
+
+						4コマまんが Part18【しかられて】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/_2_vol1.html">
+
+
+						≪モーリー 何分！？クッキング≫　第2弾 ～vol.1買出し...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/4_part16_1.html">
+
+
+						4コマまんが Part17【大そうじ】
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

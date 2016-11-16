@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第328回 「やるせない日」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/10/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/10/21 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第328回 「やるせない日」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> これは、池袋西口の美味しいラーメン屋で実際に起こった驚きの体験である。<br><br />午後4時半過ぎにラーメンを食べ、代金の690円を払おーと、500円玉1枚+100円玉1枚+50円玉1枚+10円玉4枚を、使い込まれた木のカウンターに置いた。<br><br />間違いないか確認すると、10円玉が5枚出ていたので1枚サイフに戻し、あらためて690円をまとめて握り、レジで「こまかいけど、ちゃんとあるから」と、トレイに入れて若い男性店員に渡した。<br><br />すると店員は硬貨を1つ1つ指で数えて、「すみませんが10円足りません」と言った。<br><br />えッ!? ちゃんと確認したのに!?<br><br /><br><br />しか&#12316;し!<br><br />レジのトレイには10円玉が3枚しかない。<br><br />ずっと見ていたのだから店員が盗むチャンスはないし、盗むんだったら10円玉じゃないべ。<br><br />ならばオレが取り忘れたのか?<br><br />で、まだラーメン丼が置かれたままのカウンターへ戻ってみると、なんだ、10円玉が残っているではないか。<br><br />「ゴメンゴメン、ここにあった」と、照れ笑いしつつ、カウンターの10円玉を取ろーとしたら、なななんと、10円玉がカウンターに貼りついて取れない!<br><br />しかも不思議なコトに、10円玉はカウンターにめり込んでいるよーなのだ!<br><br />ヒェェェェ&#12316;!<br><br />焦るとゆーより、ちょっと不気味な気持ちになり、目を凝らしてよ&#12316;く見ると、なななんと、それは10円玉ではなく、カウンターの木のフシだったのであ&#12316;る(;o;)<br><br />こーゆー時に、人間はシミジミと自分の劣化を思い知らされ、激しく落ち込む。<br><br />かつてビンボー美大生だった茂本ヒデキチ画伯は、他人が吐いたタンを500円玉と間違えて拾った事実があるが、木のフシ=10円玉は不潔じゃないだけで同じレベルだ。<br><br />オレは、カンレキの割には目が良いと自負していた。<br><br />文庫本もスマホの小さな文字も裸眼で問題なく読めるし、針の穴に糸を通すのも5回に1回…8回に1回は成功する。<br><br /><br><br />しか&#12316;し!<br><br />木のフシを10円玉に間違えるとは…ヒェェェェ&#12316;!(≧∀≦)!<br><br /><br><br />しか&#12316;し!<br><br />こーゆー時に素早く立ち直る秘技がある。<br><br />それは、自分より窮地の人を思い、「あの人よりはマシだ」と自分自身を慰める、実に後ろ向きな秘技である。<br><br />最近もっぱら助けてもらっているのはゲスの川谷くんで、ラーメン屋を出てから彼のコトを考えて自分を鼓舞し、駅前の公園でポケモンGOをやったら次から次へとポケモンが登場し、階段に座って30分くらい夢中になった。<br><br />それからワタル部屋に帰りズボンを脱いだら、お尻の部分にピンク色のガムがベタ&#12316;ッと付いていて、ポケモンGOをやった階段で付いたとしか考えられず、アタマに来てまた川谷くんのコトを考えた。<br><br /><br><br />しか&#12316;し!<br><br />もしかしたら川谷くんは、オレが考えてるほど落ち込みも後悔もしてないかも…と思ったら、なんだか絶対に確信的に川谷くんは全然ヘッチャラな気がしてきて、フンマン激しくやるせないワタル自身になったのであるW(`0`)W!</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/08/no_diggity_9.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

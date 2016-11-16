@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第271回 「悪性ウィルス」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/09/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/09/18 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第271回 「悪性ウィルス」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 中国の偉大な思想家=孔子の言葉に、「罪を憎んで人を憎まず」とゆーのがある。<br /><br />これは「犯した罪は憎むべきだが、人が罪を犯すには様々な事情があるので、罪を犯した人までも憎むべきではない」とゆー教えだ。<br /><br /><br /><br />しか～し!<br /><br />一般ピーポーは孔子ほど達観してないから、犯罪と犯人を区別して考えるなんてトーテー無理で、犯罪者は司法で断罪される。<br /><br /><br /><br />しか～し!<br /><br />「罪を憎んで人を憎まず」が実践されるケースも少なくない。<br /><br />それは、被疑者がナンらかの精神疾患を持っていると判断された場合だ。<br /><br />犯罪を犯したのは精神疾患が原因で、被疑者本人の意思ではない…とゆー論理である。<br /><br />そーゆー人は罪に問われず、特別な医療施設で精神治療を受け、社会復帰を目指す。<br /><br /><br /><br />しか～し!<br /><br />それでも被害者関係の多くは「罪を憎んで人を憎まず」のココロにはなれない。<br /><br />たとえば「犯行時は心身膠着状態にあり責任能力を問えない」などと言われても、ワタル自身の身近が被害者だったら、納得するのは困難至極。<br /><br /><br /><br />しか～し!<br /><br />一般ピーポーは司法の判断には従うしかないのである。<br /><br /><br /><br />しか～し!<br /><br />最近、「この男は本当に社会復帰して良いのだろーか?」と、激しく不安になる出来事があった。<br /><br />それは、1997年に日本中を震撼させた「神戸連続児童殺傷事件」の被疑者が、ホームページ(HP)を開設したからだ。<br /><br />事件当時14歳の中学生だった男は、明らかに精神異常があるとされ、少年法によって医療少年院で精神治療を受けるコトになった。<br /><br />少年院は特別な医療チームを編成し、根気強く治療をつづけた結果、男は2005年に本退院して社会復帰を果たした。<br /><br />男は、精神治療で事件を反省し、被害者の遺族にも謝罪、フツーの社会人と生活しても大丈夫とみなされたのだ。<br /><br />そして男は、いつの間にか社会に同化して存在を消す…と思われていた。<br /><br />実際、マスコミもしばらく男を話題にしなかった。<br /><br /><br /><br />しか～し!<br /><br />今年の6月、男は「元少年A」の名義(※1)で「絶歌 神戸連続児童殺傷事件」とゆー手記を発売した。<br /><br />さらに先日、「存在の耐えられない透明さ」(※2)と題したHPをも開設したのである。<br /><br />ワタル自身は、これほどオゾましい自己表現を、いまだかつて見たコトがない。<br /><br />日本の精神医療は、こんなHPを作る男が「正常な社会人としての資格あり」と本気で判断したのか…「やっかい払い」的に男を野に放ったのではないのか…などと勘ぐりたくもなる。<br /><br />爆笑問題の太田光氏は、このHPを「ダサダサ」と斬り捨てた。<br /><br />確かに、稚拙な画像と文章を並べただけのHPはダサいかもしれないが、本質的な問題はそんな表面にない。<br /><br />画面をスクロールすると、今は32歳になった男の、底なしの暗闇が、まるで「リング」の貞子のよーに、モニターから這い出して来る思いがし、ワタル自身は総毛立った。<br /><br />男は間違いなく、今も少年Aであり、酒鬼薔薇聖斗なのだ。<br /><br />医療チームは、男の治療に失敗したのだ。<br /><br />何回か前の拙稿で、ネット社会の悪意拡散を問題にしたが、男のHPは悪意どころじゃない。邪悪な病原菌そのものだ。<br /><br />悪性のウィルスは早期発見で治療しないと、急速に感染を広げ、宿主が滅びるまで蔓延する。<br /><br />孔子に倣えば、問題にすべきは病人ではなく、病巣を根絶出来ない医療なのだ。<br /><br />(記2015年9月13日)<br /><br /><br /><br />※1=彼の父母が「『少年A』この子を生んで…」のタイトルで2001年に手記を刊行している。<br /><br />※2=男は少年の頃から自分を「透明なボク」と表現していた。またHPタイトルは映画化もされた小説「存在の耐えられない軽さ」(原作ミラン・クンデラ)を連想させるが、「…軽さ」はチェコスロバキアの変革運動「プラハの春」を題材にした悲劇である。<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

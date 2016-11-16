@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第179回 「突然のキリバス」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/12/13"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/12/13 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第179回 「突然のキリバス」</p>
+		</div>
+		<div class="texts">
+			<div class="text">バイトから戻り、酒と一緒にニュースを眺めていたら、「キリバス」と聞こえた。<br /><br />キリバスって、地球温暖化の海水面上昇で、国土が飲み込まれそーな島国だよな…と、まあそのくらいの知識はある。<br /><br />ニュースは、キリバスの青年をターゲットにした、日本の水産会社が主宰する「カツオの一本釣」学校を紹介していた。<br /><br /><br /><br />キリバス青年の奮闘&amp;決意には、今の日本青年が反則技を出しても勝てそーにない。<br /><br />仕事のないキリバスでは、技術と言葉を習得し、日本で働くコトが大きな希望なのだ。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />なにより深刻な問題は、やはり国土の水没だ。<br /><br />「国破れて山河あり」とゆーけれど、日本でも天災や人災で暮らせなくなった土地があるし、遠い未来には日本列島そのものが、太平洋プレートと共に海底に没する運命なのだ。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />それでもワタル自身は、遥か南太平洋上の国難を、ただヒトゴトと傍観していた。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />ニュースの最後に耳が止まった。<br /><br />「キリバス共和国のアノテ・トン大統領はフィジーを買収し、国民の移住計画を考えている」<br /><br />このアナウンスを聞いた瞬間、火星移住計画「マーズ・ワン」が浮かんだ。<br /><br />マーズ・ワン計画を知らない方のために簡単に説明すると、オランダのNPOマーズ・ワン財団が全世界から資金と移住者を募り、2023年から実際に火星で生活するとゆー計画。で、すでに16万5千人もの人が火星移住に参加登録済みなのだ。<br /><br />ちなみに1番多い参加者は中国人で、彼等は中華料理on火星を確信している。<br /><br />ワタル自身的には、わずか10年後に火星移住が実現するとは思えないんだけど、マーズ・ワン財団のプロモーションビデオとか見ると、自信たっぷりに実現可能なんだよね。<br /><br />そもそも、現在の地球から火星へ移住し、一体どんなプラスがあるのか…ワタル自身にはトーテー理解できないし、もしも10億円もらったって中国人だらけの火星になんか行きたくない。そもそも火星には10億円使う場所もねーし。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />キリバス国民のフィジー移住計画は現実で、直近の大問題だ。国土が消えつつある今、選択や躊躇の余地などない。マーズ・ワンみたいにアヤフヤな話じゃないのだ。<br /><br />そしてワタル自身は、唐突に明確にクッキリと思ったのだ。<br /><br /><br /><br />キリバスに行きたい!<br /><br /><br /><br />消えゆく国に立ち、そこで見て感じて、どんな気持ちになるのか、どーしても確かめたい。<br /><br />アンリ・ムオのアンコールワット発見記を読み、ナニがナンでもアンコールワットへ行かずには気が済まなくなり、この人生でもっとも沈痛な東日本大震災の現場を自分の目で見ずにはいられなかったよーに、突然の感情発火だった。<br /><br />キリバスに行って、ナニかをしたいとかじゃない。<br /><br />とにかく行って見て感じて、もしかしたらナニか考えるかもしれないし、ナニも思わないかもしれない。<br /><br /><br /><br />とにかくキリバスに行きたい!<br /><br /><br /><br />すぐにネットでキリバスへのルートを調べるも、イマイチよく分からない。<br /><br />イライラしつつ翌日のバイト後、吉祥寺のH.I.S.へ流星号。まったくアバウトな計画なのに、若い男性スタッフは丁寧に調べてくれた。<br /><br />その結果、成田→シドニー(オーストラリア)→ナンディ(フィジー)→タラワ(キリバス)とゆールートが1番早く確実なルートと判明。<br /><br />ワタル的にはチケット代が最大問題だが、オフシーズンなら20万円くらいで往復可能らしく、行きたいココロを強く維持して働けば、ナンとかカンとか捻出できるやもしれぬ。<br /><br />現時点では無責任な机上のプランだけれど、まったく唐突に熱烈に、来年はキリバスを目指して頑張ろーと決意したのである。<br /><br />キリバス情報をお持ちの方がいたら、些細な情報でも構わないから教えてちょーだいm(_ _)m<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第239回 「世俗の外へ」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/02/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/02/06 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第239回 「世俗の外へ」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 最近のニュースをネタにすると陰鬱な気持ちになるばかりなので、今回は理解困難な人間世界を離れて、もっともっとナニがナンだか分からない宇宙のワタル自身だ。<br /><br />オレ達が住んでいる宇宙の年齢には諸説あるけど、現在は137億年前に誕生した…とゆーのが主流意見になっている。<br /><br />137億年といわれても、一般ピーポーにはピンと来ない年数だ。<br /><br />こーゆー時は、数字の単位をオカネに変えるとピンピン来る。<br /><br />毎日100万円のムダ遣いをして、137億円を使い切るには13700日=37年半かかる。<br /><br />ね、137億年がグッと身近に感じたでしょ？<br /><br />で、宇宙が誕生する137億年以前には、ナ～ンにもなかった。<br /><br />唯一、宇宙の卵みたいな「特異点」と呼ばれる「点」があった。<br /><br />特異点は文字通りの「点」ではなく、学者が理論上に考え出した「出発点」だ。<br /><br />えー、早くも意味不明になった方も多いと思うけど、本格的な意味不明はこれからだからガマンしてね。<br /><br />特異点は、限りなく「無」に近い存在なのに、そこに宇宙の「素」が閉じ込められていた。<br /><br />あー、さらに意味不明になった方も、まだまだガマンしてちょーだいm(_ _)m<br /><br />で、その特異点が大爆発(ビッグバン)し、宇宙の素が散らばって今の宇宙になった…とされているのだ。(最近の研究では、宇宙の物質の98パーセントがビッグバンの瞬間に生み出されたとされているけど、細かいコトは気にしないでね)<br /><br />この広大な宇宙や、ワタル自身やアナタ自身を創っている身体の素のすべてが、無に等しい特異点に入っていたなんて、どー考えても納得いかない。<br /><br />しかも、無からのスタートだから、爆発する空間もない。ナンにもない。<br /><br />じゃあどーしたかってゆーと、「空間を作りながら」爆発したんだって(°_°)<br /><br />なんて言われても、3次元空間で生活している一般ピーポーには、「空間を作る」って概念が、いくら想像しても理解出来ない。<br /><br />理解出来ないけど、とにかく空間を作りながら爆発拡散して、宇宙の大きさにまで広がったのだ。<br /><br />で、特異点の大爆発から宇宙の大きさになるまで、どのくらい時間がかかったと思う？<br /><br />なななんと、(10の-30乗)秒！<br /><br />うっ…これまた全然ピンと来ない数字なので、オカネに変えてみるよ。<br /><br />100万円入りの箱を100万個作り、それを1箱に入れる。<br /><br />その100万円100万個入りの箱を100万個作り、それをまた1箱に入れる。<br /><br />さらに、その箱を100万個作り、また1箱に入れる。<br /><br />さらに、その箱を100万個作る！<br /><br />で、その中の1円くらい…(10の-30乗)秒は限りなくゼロ円、いや、ゼロ秒に近いのだ。<br /><br />あまりのケタ数なのでオカネにしても分かりにくかったけど、とにかく一瞬にして、無の特異点から今の宇宙空間が生まれたとゆーコトなのである。<br /><br />それから137億年の間に、98パーセントの残り2パーセントを追加し、現在の宇宙となり、地球に生命が誕生したりしたのだ。<br /><br />しかも、今もまだ宇宙は広がっている。<br /><br />ビッグバンの爆風がつづいていると考えたら分かりやすく、この宇宙は今も空間を作りながら広がっているのだ。<br /><br />んじゃ、宇宙の果てはどーなっているかとゆーと、果てはあるよーで無いみたいなのだ。<br /><br />ウルトラ宇宙船で宇宙の果てを目指したとしても、なななんと、最初の出発点に戻って来てしまうらしーのだ。<br /><br />そんなバカな…と思うかもしれないが、たとえば、地球上のどこでも好きな場所から、好きな方向へ一直線に進んだとする。<br /><br />すると、地球を一周して元の場所に戻って来る…これなら分かるでしょ？<br /><br />宇宙空間でも、これと同じコトが起きるらしーのだ。<br /><br />あのアインシュタイン博士の有名な相対性理論で、ちゃんと証明されてるんだって。<br /><br />空間そのものが曲がっていて、宇宙の果てを目指して一直線に進んでも、結局元の場所に戻っちゃうんだって！<br /><br />宇宙には限りはあるけど果てはない…んだって(°_°)<br /><br />そーしたヤッカイな宇宙の中の太陽系で、地球は知的文明体=人間が生まれた唯一の惑星だ。<br /><br />火星人や金星人が存在するなどと主張する人達もいるけど、その証拠はまだ見つかっていない…ってゆーか、太陽系の知的文明体は地球人だけと断言出来る。<br /><br /><br /><br />しか～し！<br /><br />太陽系は銀河系（天の川銀河）の一員で、銀河系には太陽に似た恒星(自ら燃えている星)が3500個以上もあり、地球みたいに生命が生まれそーな星も100個以上あると言われてる。<br /><br />そして去年、その中に地球そっくりの星が見つかったとゆー報道があったの、覚えてるかな？<br /><br />しかもこの星は、地球のすぐ近くにあるんだよ。<br /><br />たった16.1光年=約152兆キロメートルしか離れてないんだって。<br /><br />え？ スゲー遠いって？<br /><br />うん。ワタル自身もそー思うけど、宇宙的には「お隣さん」の距離なんだって。<br /><br />だって、地球から宇宙の端までは、1440兆キロメートルの1億倍(!)もあるからだ。<br /><br />えー、これをオカネにすると…あーもーヤメた！<br /><br />とにかく宇宙は、人智を超えた広がりなのだ。<br /><br />前回、エントロピーの増大に触れたけれど、137億年の宇宙歴の中で、ほんのわずかでもエントロピー増大のベクトルが変わっていたら、人間の存在はおろか、生命が生まれる地球環境も実現しなかったに違いない。<br /><br />宇宙に広がった無限的な選択肢の中の、たった1本が選ばれ、地球の「今」があるのだ。<br /><br />そー思うと、生命の奇跡と大切さを痛感せずにはいられない。<br /><br />たまには世俗を離れ、人智の及ばぬ宇宙の不思議に触れるのも、アタマとココロのフィルター交換になると、強く思うワタル自身なのである。<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第103回 「インド記3／ガンジス河のアイドル」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/06/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/06/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第103回 「インド記3／ガンジス河のアイドル」</p>
+		</div>
+		<div class="texts">
+			<div class="text">6月は乾季で、茶色によどんだガンジス河も水量が少なく、対岸が思いのほか近くにあった。<br /><br />普段は水没している石段にも多くの信者が座り込み、日没の礼拝を待っている。<br /><br />見渡す限り、ここでも人・人・人・人…その中に、純白の布が張られた3メートル四方くらいのステージが7つ、ガンジス河に正面を向けている。<br /><br />センター・ステージにはひときわ豪華な祭壇があり、日本でもお馴染みのアフロヘアのサティヤ・サイ・ババの遺影が飾られている。<br /><br />サルマン個人に言わせると、サティヤ・サイ・ババは「目が怖い人」なのだが、今でも多くの信者が彼を聖者と崇拝し、ガンジス河のセンター・ステージに祀られているのだった。<br /><br />このアタリのことを書くと泥沼にはまるので詳しくは触れないけれど、サルマンはシルディ・サイ・ババこそ本物の聖者だと言っていた。(サティヤ・サイ・ババはシルディ・サイ・ババの生まれ変わりだと自称して宗教界に登場した)<br /><br />以上、サイ・ババの話は早々オシマイにして、久保田利伸一行は7つのステージ全景を見下ろすテラスから、礼拝のスタートを待つことにした。<br /><br />赤ん坊を抱えて金品をねだる少年、粗末な花を売る少女、三つ又のヤリを手にしたシバ神コスチュームの年齢不詳、カメラを向けた白人女性に右手を伸ばす老婆…それらを黙って見下ろす。<br /><br />陽は沈んだのに、風は昼間の熱をはらんだまま、とてつもなく蒸し暑い。<br /><br />「冷たいビールが飲みたいね」「うん、むちゃくちゃ飲みたい!」の久保田とオレだが、ヒンズー教徒の聖地でビールなど望むべくもない。<br /><br />ビールがないと分かるとヨケーに飲みたく、スピーカーから流れる読経は停電で何度も途切れ、逃げ出したいほどの蒸し暑さが時間の流れを遅くする。<br /><br />それでも、川岸を埋め尽くした信者は、ひたすら礼拝のはじまりを待ちつづけている。<br /><br />サルマンも認めるよーに、インドでは今も、低く深くカースト制が生き残っている。<br /><br />理不尽な差別に人生を支配され、抗えない不公平を受け入れた人々の信仰心は、戦後民主主義の日本に生まれ育ったワタル自身になど、とーてー理解できるはずもないが、ガンジス河に集まった人々の渇望は、外野席から眺めていても、重低音のバスドラムみたいに全身に伝わって来る。<br /><br />なぜ、オレは無神論者なのか…それは、神様がオレの願いを叶えてくれたことがないからだ。<br /><br />だから、わざわざジンジャブッカクに出向いたり、道端のオジゾーサマに手を合わせる気持ちが起きないのだ。<br /><br />しか～し!<br /><br />ガンジス河に詣でるヒンズー教徒は、神様が願いを叶えてくれないのは、自分の信仰心が足りないからだと、自身の日々を律しているのだ。彼らは、オレみたいに神様を恨んだりはしない。<br /><br />カーストに生きる人々の信仰は、ストイックな日常こそが発火点なのかもしれない…深い…深すぎる…あまりに深いコトを考えてしまったりするのが、インドの魔力なのだ…などと思っていると、ガンジス河が闇に落ち、いよいよ礼拝がはじまった。<br /><br />7人の僧侶がステージに立ち、センター・ステージのリーダーらしき人が祝詞(のりと)らしき言葉を述べ、つづいて全員の読経となる。<br /><br />線香の煙にローソクの炎が揺らぎ、7人の読経が信者を濃密に抱擁する。<br /><br />不謹慎な無神論者は、煙と炎を操る7人の僧侶を見て、韓流アイドル・グループのパフォーマンスを見ているよーな錯覚に陥った。<br /><br />それほど7人の僧侶は健康的な青年で、輝く黒髪も扇動的な動きも、見事に信者を捕らえていた。<br /><br />そしてもしかしたら、この錯覚が正解かもしれないと、不意に閃いた。<br /><br />熱烈なヒンズー教徒は、聖地ガンジス河でアイドル僧侶の読経ライヴに心酔し、つかの間でも過酷な日常を忘れ、さらなる信仰を誓う…そう思ったら急に、是非の境界線がアイマイになり、気持ちがぐんと軽くなった。<br /><br />結局、ガンジス河のほとりでもワタル自身は目撃者のまま、沐浴で溺れてガンジスの泥水をピュ～っと吹く、とゆー大胆不敵なマニュフェストは実現できなかった。<br /><br />しか～し!<br /><br />まだチャンスはある!　明朝、沐浴する人々の多い時間帯に、再びガンジス河で撮影なのだ。<br /><br />数時間前に歩いて来た喧騒のストリートを戻りながら、ホテルに戻ったら東京のビビアンにメールしよーと考える。<br /><br />やっぱりオレは、天空の神より地上の女が切実な無神論者なのだよ。<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

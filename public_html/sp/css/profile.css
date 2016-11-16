@@ -1,0 +1,31 @@
+/* 
+    Document   : top
+    Created on : 2012/05/23, 13:10:15
+    Author     : staff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#newsUnder .profile {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#newsUnder .profile h1 {
+	padding: 24px 0 10px;
+	font-size: 2.0rem;
+	font-weight: bold;
+	line-height: 0;
+}
+#newsUnder .profile .name {
+	padding-bottom: 11px;
+	font-size: 0.8rem;
+	color: #AFAFAF;
+}
+#newsUnder .profile .day {
+	font-size: 1.2rem;
+	color: #3F3f3f;
+}
+#newsUnder .detail {
+	padding:17px;
+	border-top: 1px solid #4D4D4D;
+}

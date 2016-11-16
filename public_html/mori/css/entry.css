@@ -1,0 +1,400 @@
+@charset "UTF-8";
+#contents {
+  font-size: 3.2rem;
+}
+#contents .titleType1 {
+  margin-bottom: 3px;
+}
+#contents .progress {
+  display: table;
+  width: 100%;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+#contents .progress li {
+  position: relative;
+  display: table-cell;
+  height: 100px;
+  padding-right: 30px;
+  background-color: #ccc;
+  background-image: url(/mori/images/entry/bg_progress2.jpg);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+#contents .progress li.current {
+  background-color: #666;
+  background-image: url(/mori/images/entry/bg_progress1.jpg);
+}
+#contents .progress li.prev {
+  background-image: url(/mori/images/entry/bg_progress3.jpg);
+}
+#contents .progress li:last-child {
+  padding-right: 0 15px;
+  background-image: none;
+}
+
+.inputWrap {
+  width: 840px;
+  margin: 0 auto;
+}
+.inputWrap .price {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.inputWrap input[type=text],
+.inputWrap input[type=password] {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  border: none;
+  background-color: #F3F3F3;
+  outline: none;
+  font-size: 3.4rem;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.inputWrap input[type=text].error,
+.inputWrap input[type=password].error {
+  background-color: #FFE5E5;
+}
+.inputWrap input[type=text].complete,
+.inputWrap input[type=password].complete {
+  background-color: #DFEEE6;
+}
+.inputWrap .checkType1 {
+  position: relative;
+}
+.inputWrap .checkType1 input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.inputWrap .checkType1 input + label {
+  display: block;
+  padding-left: 80px;
+  background-image: url(/mori/images/entry/bg_checkbox.gif);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+.inputWrap .checkType1 input:checked + label {
+  background-image: url(/mori/images/entry/bg_checkbox_checked.gif);
+}
+.inputWrap .checkType1 label {
+  width: 100%;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.inputWrap .selectType1 {
+  background-color: #F3F3F3;
+  background-image: url(/mori/images/common/bg_arrow1.png);
+  background-position: 90% center;
+  background-repeat: no-repeat;
+}
+.inputWrap .selectType1.error {
+  background-color: #FFE5E5;
+}
+.inputWrap .selectType1.complete {
+  background-color: #DFEEE6;
+}
+.inputWrap .selectType1 select {
+  width: 100%;
+  margin: 0;
+  padding: 20px 80px 20px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 3.4rem;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.inputWrap .selectType1 select::-ms-expand {
+  display: none;
+}
+.inputWrap .wrap1, .inputWrap .wrap2, .inputWrap .wrap3, .inputWrap .wrap4 {
+  margin-bottom: 60px;
+}
+.inputWrap .wrap1 p, .inputWrap .wrap2 p, .inputWrap .wrap3 p, .inputWrap .wrap4 p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.inputWrap .wrap1 p span, .inputWrap .wrap2 p span, .inputWrap .wrap3 p span, .inputWrap .wrap4 p span {
+  margin-left: 10px;
+  color: #F33;
+  font-size: 1.6rem;
+}
+.inputWrap .wrap1 p.error, .inputWrap .wrap2 p.error, .inputWrap .wrap3 p.error, .inputWrap .wrap4 p.error {
+  color: #F33;
+}
+.inputWrap .wrap1 .text, .inputWrap .wrap2 .text, .inputWrap .wrap3 .text, .inputWrap .wrap4 .text {
+  margin: 10px 0 0;
+  font-size: 2rem;
+}
+.inputWrap .wrap1.code div input, .inputWrap .wrap1.zip div input, .inputWrap .wrap2.code div input, .inputWrap .wrap2.zip div input, .inputWrap .wrap3.code div input, .inputWrap .wrap3.zip div input, .inputWrap .wrap4.code div input, .inputWrap .wrap4.zip div input {
+  width: 220px;
+  vertical-align: middle;
+}
+.inputWrap .wrap1.code div a, .inputWrap .wrap1.zip div a, .inputWrap .wrap2.code div a, .inputWrap .wrap2.zip div a, .inputWrap .wrap3.code div a, .inputWrap .wrap3.zip div a, .inputWrap .wrap4.code div a, .inputWrap .wrap4.zip div a {
+  margin-left: 30px;
+  color: #087841;
+  font-size: 2.6rem;
+}
+.inputWrap .wrap1.code div .txt, .inputWrap .wrap1.zip div .txt, .inputWrap .wrap2.code div .txt, .inputWrap .wrap2.zip div .txt, .inputWrap .wrap3.code div .txt, .inputWrap .wrap3.zip div .txt, .inputWrap .wrap4.code div .txt, .inputWrap .wrap4.zip div .txt {
+  font-size: 2.6rem;
+}
+.inputWrap .wrap1.pay .text, .inputWrap .wrap2.pay .text, .inputWrap .wrap3.pay .text, .inputWrap .wrap4.pay .text {
+  display: none;
+}
+.inputWrap .wrap2 > div {
+  overflow: hidden;
+  *zoom: 1;
+}
+.inputWrap .wrap2 > div .checkType1 {
+  float: left;
+  margin-left: 100px;
+}
+.inputWrap .wrap2 > div .checkType1:first-child {
+  margin-left: 0;
+}
+.inputWrap .wrap3 .selectType1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.inputWrap .wrap3 .selectType1 + span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.inputWrap .wrap3 .wrap > div {
+  margin-top: 40px;
+}
+.inputWrap .wrap3 .wrap > div:first-child {
+  margin-top: 0;
+}
+.inputWrap .wrap3 .wrap .md {
+  overflow: hidden;
+  *zoom: 1;
+}
+.inputWrap .wrap3 .wrap .md > div {
+  float: left;
+  margin-left: 100px;
+}
+.inputWrap .wrap3 .wrap .md > div:first-child {
+  margin-left: 0;
+}
+.inputWrap .wrap4 .text {
+  margin: 0 5px;
+  font-size: 2.6rem;
+}
+.inputWrap .wrap4 input {
+  width: 20%;
+  vertical-align: middle;
+}
+.inputWrap .policy {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.inputWrap .policy p {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.inputWrap .policy p.error {
+  margin: 20px 0 0;
+  color: #F33;
+}
+.inputWrap .policy a {
+  color: #087841;
+}
+.inputWrap .policy .checkType1 {
+  display: inline-block;
+}
+.inputWrap .btnType2 {
+  margin: 40px auto 0;
+}
+
+.confirmWrap {
+  width: 840px;
+  margin: 0 auto;
+}
+.confirmWrap .lead {
+  margin-bottom: 60px;
+}
+.confirmWrap .wrap1 {
+  margin-bottom: 60px;
+}
+.confirmWrap .wrap1 p {
+  margin-bottom: 10px;
+  color: #999;
+  font-weight: bold;
+}
+.confirmWrap .wrap1 div {
+  font-weight: bold;
+}
+.confirmWrap .btnType2 {
+  margin: 40px auto 0;
+}
+
+.completeWrap {
+  width: 840px;
+  margin: 0 auto;
+}
+.completeWrap p {
+  margin-bottom: 100px;
+}
+.completeWrap p a {
+  color: #06783F;
+}
+
+.attn {
+  font-size: 2.0rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 899px) {
+  #contents .titleType1 {
+    margin-bottom: 1.5px;
+  }
+  #contents .progress {
+    margin-bottom: 30px;
+  }
+  #contents .progress li {
+    height: 50px;
+    padding-right: 15px;
+    font-size: 1.4rem;
+  }
+  #contents .progress li:last-child {
+    padding-right: 0 7.5px;
+  }
+
+  .inputWrap {
+    width: 93.33333%;
+  }
+  .inputWrap .price {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+  .inputWrap input[type=text],
+  .inputWrap input[type=password] {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+  .inputWrap .checkType1 input + label {
+    padding: 2px 0 2px 35px;
+    font-size: 1.4rem;
+  }
+  .inputWrap .selectType1 {
+    background-size: 20.5px auto;
+  }
+  .inputWrap .selectType1 select {
+    padding: 10px 40px 10px 10px;
+    font-size: 1.4rem;
+  }
+  .inputWrap .wrap1, .inputWrap .wrap2, .inputWrap .wrap3, .inputWrap .wrap4 {
+    margin-bottom: 30px;
+  }
+  .inputWrap .wrap1 p, .inputWrap .wrap2 p, .inputWrap .wrap3 p, .inputWrap .wrap4 p {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+  }
+  .inputWrap .wrap1 p span, .inputWrap .wrap2 p span, .inputWrap .wrap3 p span, .inputWrap .wrap4 p span {
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+  .inputWrap .wrap1 p.error, .inputWrap .wrap2 p.error, .inputWrap .wrap3 p.error, .inputWrap .wrap4 p.error {
+    font-size: 1.2rem;
+  }
+  .inputWrap .wrap1 p.text, .inputWrap .wrap2 p.text, .inputWrap .wrap3 p.text, .inputWrap .wrap4 p.text {
+    margin: 5px 0 0;
+    font-size: 1.4rem;
+  }
+  .inputWrap .wrap1.code div input, .inputWrap .wrap1.zip div input, .inputWrap .wrap2.code div input, .inputWrap .wrap2.zip div input, .inputWrap .wrap3.code div input, .inputWrap .wrap3.zip div input, .inputWrap .wrap4.code div input, .inputWrap .wrap4.zip div input {
+    width: 110px;
+  }
+  .inputWrap .wrap1.code div a, .inputWrap .wrap1.zip div a, .inputWrap .wrap2.code div a, .inputWrap .wrap2.zip div a, .inputWrap .wrap3.code div a, .inputWrap .wrap3.zip div a, .inputWrap .wrap4.code div a, .inputWrap .wrap4.zip div a {
+    margin-left: 15px;
+    font-size: 1.2rem;
+  }
+  .inputWrap .wrap1.code div .txt, .inputWrap .wrap1.zip div .txt, .inputWrap .wrap2.code div .txt, .inputWrap .wrap2.zip div .txt, .inputWrap .wrap3.code div .txt, .inputWrap .wrap3.zip div .txt, .inputWrap .wrap4.code div .txt, .inputWrap .wrap4.zip div .txt {
+    font-size: 1.2rem;
+  }
+  .inputWrap .wrap2 > div .checkType1 {
+    margin-left: 50px;
+  }
+  .inputWrap .wrap3 .selectType1 + span {
+    margin-left: 5px;
+    font-size: 1.4rem;
+  }
+  .inputWrap .wrap3 .wrap > div {
+    margin-top: 20px;
+  }
+  .inputWrap .wrap3 .wrap .md > div {
+    margin-left: 5px;
+  }
+  .inputWrap .wrap4 .text {
+    margin: 0 2.5px;
+    font-size: 1.2rem;
+  }
+  .inputWrap .policy {
+    margin-bottom: 40px;
+  }
+  .inputWrap .policy p {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+  }
+  .inputWrap .policy p.error {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+  }
+  .inputWrap .btnType2 {
+    margin: 20px auto 0;
+  }
+
+  .confirmWrap {
+    width: 93.33333%;
+  }
+  .confirmWrap .lead {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+  }
+  .confirmWrap .wrap1 {
+    margin-bottom: 30px;
+  }
+  .confirmWrap .wrap1 p {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+  }
+  .confirmWrap .wrap1 div {
+    font-size: 1.6rem;
+  }
+  .confirmWrap .btnType2 {
+    margin: 20px auto 0;
+  }
+
+  .completeWrap {
+    width: 93.33333%;
+  }
+  .completeWrap p {
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+  }
+}

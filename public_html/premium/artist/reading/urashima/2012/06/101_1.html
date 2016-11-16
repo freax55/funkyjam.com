@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第101回 「インド記1／右手でカレーを食べてみた」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/06/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/06/15 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第101回 「インド記1／右手でカレーを食べてみた」</p>
+		</div>
+		<div class="texts">
+			<div class="text">予告通りインドへ行き、無事に帰って来た。<br /><br />本場のインドカレーを右手だけで食べたし、ヒンズー教徒の聖地・ガンジス河にも行ったし、道端で笛を吹くヘビ使いにも遭遇した。<br /><br />しか～し!<br /><br />出発前のマニフェスト「三大過酷試練」は、コトゴトク実現できなかった…!<br /><br />まったくもって不本意な結果となったが、それにはキッチリした理由があるのだ。<br /><br />実は、今回の訪印は久保田利伸の同行取材がメインテーマだったのである。<br /><br />その取材紹介は、8月25日発行予定のファンクラブ会報「Bari Bari Crew」103号に譲るとして、ここでは三大過酷試練不成功のエクスキューズを数回にわたり書く次第。<br /><br />まず第一のマニフェスト…インドカレーを右手で食べながら、顔にしたたる汗をその手で拭いてしまい、顔中カレーまみれでヒリヒリになり、その場で「マイ・フェイス・イズ・バーニング!」とかなんとか叫んで転がり回り、インド人もビックリにさせる…とゆー試練不成功について申し開きさせて頂く。<br /><br />早朝の成田から香港経由で、インドの首都デリーに到着したのが夜の8時過ぎ。な・の・に、気温は堂々の38度!　いきなりのカウンターパンチに、貧血低脂肪デブはタタラを踏む。<br /><br />「あっ暑い!　暑すぎるっ!」<br /><br />しか～し!<br /><br />「昼間のデリーは45度ありました」と、出迎えてくれたガイドのサルマン・カーンは平然と言った。<br /><br />えー、ガイドのサルマンは今後もヒンパンに登場予定なので、覚えておいてちょーだい。日本に住んだことはないが、インドの大学で日本語を学び、若干ビミョ～な発音ながらも、かなり難しい慣用句までこなすイスラム教徒だ。<br /><br />到着当夜は取材行程の最終確認を済ませ、早々に就寝。翌早朝から灼熱の陸路を6時間近くバス移動し、砂漠の国ラジャスタンの州都・ジャイプールを目指す。<br /><br />久保田もスタッフも、初体験のインド激烈太陽光線で串焼きにされながらも、観光ポイントから裏路地まで潜入撮影。完全にヘロクタボロになったところで、よーやく宮廷ホテルでの撮影へ移る。<br /><br />ランバーグ パレスとゆー超豪華ホテルで、まさに「絵」になるポイントだらけ。(この撮影模様はBari Bari Crew103号を見てね!)<br /><br />猛暑のデリーから酷暑のジャイプールまで、長く過酷な一日の終わりは、撮影に使ったホテルの豪華絢爛たるメイン・ダイニングで、日本から来たスター・久保田利伸を囲み、格調高い宮廷スタイルのインド・ディナーとなる。<br /><br />移動・撮影＆殺人太陽光線で体力残量ゼロとなった一行だが、宮殿ホテルの威光に射られ、気力で着替えてゴージャスなテーブルに着く。<br /><br />ワイルドなワタル自身には一番居心地の悪い場面で、突然、最初の試練がやってきた。<br /><br />ガイドのサルマンが、右手だけでカレーを食べる作法を教えてくれたのだ。<br /><br />久保田とオレがチャレンジしたが、サラサラした長粒米とカレーを5本の指だけでまとめるのが難しい。それを口に持って行こーとするとパラパラ落ちて食べにくい。<br /><br />しか～し!<br /><br />久保田いわく、「でも、指で食べると味が違うね!」<br /><br />そーなのだ。はじめて指で食べたカレーは、なぜかスプーンで食べるカレー＆ライスよりも優しく、インドの滋味を感じさせてくれた。<br /><br />『うーむ、これは奥が深い…!』などと感心しつつ、顔にカレーを塗りたくるチャンスを狙うが、モノホン(本物)の銀食器が並ぶアンティークなテーブル、高い天井に輝くシャンデリア、隙のないサーブを見せる正装のスタッフ…それらを前に、ワタル自身は礼儀正しく椅子に座りなおしたのだ。<br /><br />だって、この状況じゃ身動き出来ねぇべよ!<br /><br />いくらナンでも宮廷ダイニングで、顔にカレーを塗りたくって「マイ・フェイス・イズ・バーニング!」で転がり回ったら、銀食器やらテーブルやら椅子やら 絨毯やら、下手したらシャンデリアも落ちてきて、弁償金が大変マルだっつーの!<br /><br />もちろん日本のビッグスターと宮廷ディナーは嬉しいよ!　マジに嬉しい!　ウソじゃないって!<br /><br />しか～し!<br /><br />もしもオレひとりで庶民のカレー屋なら、庶民の庶民による庶民のためのカレーで転げ回れたのにっ!<br /><br />初戦完敗の無念と後悔を胸の底に、翌日はデリーに戻りながら途中で撮影をし、夕暮れのオールドデリーでも撮影だ。<br /><br />はじめてのインドは、とてつもなく暑く、そして波乱はまだまだつづく…!<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

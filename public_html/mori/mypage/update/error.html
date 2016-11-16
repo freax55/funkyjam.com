@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>会員更新 完了 - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/entry.css">
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+				<h2 class="titleType1">会員更新</h2>
+				<div class="completeWrap">
+					<p>
+						{if $smarty.get.p15 == '2' && $smarty.get.p16 == '11'}
+							パスワードの誤り回数が規定回数以上となったため、手続きを停止いたします。<br />
+							カード会社へお電話をお願いいたします。<br />
+							<br />
+							お問合せ先：　東京03-5638-3211、大阪06-6339-4074<br />
+							<br />
+							承り時間：　月曜日〜土曜日・祝日 9:15〜20:00、日曜日 10:00〜20:00<br />
+						{elseif $smarty.get.p15 == '2' && $smarty.get.p16 == '21'}
+							入力されたＩＤまたはカードは、現在、お取扱できません。
+						{elseif $smarty.get.p15 == '2' && $smarty.get.p16 == '22'}
+							入力されたＩＤまたはカードは、現在、お取扱できません。<br />
+							<br />
+							カードの裏面に記載されているお問合せ先へお電話をお願いいたします。
+						{elseif $smarty.get.p15}
+							カード会社との通信が正常に行われませんでした。<br />
+							<br />
+							しばらく時間をおいてから再度お手続きをお願いいたします。
+						{else}
+							お申込み処理が正常に行われませんでした。<br />
+							<br />
+							しばらく時間をおいてから再度お手続きをお願いいたします。
+						{/if}
+						<br />ご不明な点がございましたら、<a href="mailto:artist_mori@funkyjam.com">artist_mori@funkyjam.com</a>にお問い合わせください。
+					</p>
+				</div>
+				<div class="btnWrap">
+					<div>
+						<div class="btnType2"><a href="/mori/"><span>TOPページへ戻る</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+</body>
+</html>

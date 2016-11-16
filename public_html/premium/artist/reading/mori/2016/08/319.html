@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第319回 「パクチーが来てる!?」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/08/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/08/19 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第319回 「パクチーが来てる!?」</p>
+		</div>
+		<div class="texts">
+			<div class="text">香菜=中国パセリ=シャンツァイ=コリアンダー…どれも同じハーブだけれど、日本ではパクチーの呼び名が一般的みたいだ。<br><br />パクチーは独特の香りがあり、特に東南アジア系の料理に多用されているが、「カメムシみたいな臭いがする」と苦手な人も少なくない。<br><br /><br><br />しか～し!<br><br />世界一器用な舌を持っている日本人は、異国の妙味を日本流にアレンジするのが得意で、最近はカップヌードル「トムヤムクン」にもパクチーが入っていたり、スーパーのハーブコーナーでパクチーが売られている。<br><br />ワタル自身が最初にパクチーの洗礼を受けたのは30年ほど前、バンコクのタイスキ屋だった。<br><br />当時の日本は今ほどタイやベトナムの料理がポピュラーではなく、初体験の強烈なパクチーの香りにたじろぎ、ヒトクチ食べて「なんだこりゃ!?」になり、たまらず「プリーズ without パクチー!」とギブアップした。<br><br /><br><br />しか～し!<br><br />濡れた毛布を頭から被っているよーなバンコクの毎日に、バブルの日本から来た和デブ族は閉口し、食欲中枢を撹拌するパクチーと、ビビビッと辛い青トウガラシで胃袋方面を奮起せずには、どーにもこーにも食が進まないのだ。<br><br />30年前のバンコクは自動車もガソリンもC級で、海風が止まる時間になると排気ガスが濃霧のよーに滞留し、街が鉛色に沈むのだった。<br><br />それでもオープンカフェとゆーか、電車が来るとテーブルを持って移動しなくちゃならない線路脇のレストラン(?)で、排気ガスと一緒にメコンウィスキーを飲み、バケツで洗った生イカの激辛サラダを食べ、ダラ汗でヒーヒーしながら笑っていると、身体と精神が沸騰してパクチーの刺激を欲するのだ。<br><br />以来、ワタル自身はパクチーが好きになり、東南アジア系の料理が全般的に好きになった。<br><br />特に今年の東京は、バンコクの濡れ毛布をホーフツとさせるクレイジーな湿度&気温で、パクチー&青トウガラシの出番が多い。<br><br /><br><br />しか～し!<br><br />先日、意表を突くパクチーを発見した。<br><br />某大手スーパーの総菜コーナーに、パクチーのかき揚げを発見したのだ。<br><br />パクチーだけの、純粋無垢なパクチーかき揚げである。<br><br />おそらく香り系の野菜…春菊や三つ葉なんかのかき揚げをイメージし、総菜主任も「おっ!　これは斬新じゃん!」かなんかで商品化したのだろーが、かき揚げパクチーの正しい食べ方が分からない。<br><br />醤油なのか天ツユなのか塩なのか…まあ、塩で食べるのが妥当だろーが、そもそも揚げたパクチーはマイウ～なのか?<br><br />なので買って食べてみた。<br><br />塩をパラパラ…うーむ…ナンプラーでもパクリ…パクチーの香りはするが、この程度じゃパクチーを使う意味がマルでnothingだ。<br><br />温かい蕎麦に入れてみたら、和風ダシとパクチーの違和感が際立ち、どーもシックリこない。フツーの野菜かき揚げのほーがよっぽどマイウ～だ。<br><br /><br><br />しか～し!<br><br />その後もパクチーかき揚げの盛衰が気になり、某スーパーへ行くたびに総菜コーナーを視察すると、パクチーかき揚げは不定期発売で、パクチーが売れ残った時だけ作るみたいだと思い当たった。<br><br />すると一般オバチャン2名が「あら、今日は売ってるわね」と嬉しそーに、パクチーかき揚げを3個ずつパックに入れた。<br><br />「これ、冷やし中華に入れるとオイシ～のよ」<br><br />「アタシは卵とじにするのが好き」<br><br />オバチャン2名が立ち去った後、おもむろにパクチーかき揚げを買って帰り、卵とじにして青トーガラシwithナンプラーの激辛ソースでやったら、冷たい焼酎がグビグビ進み、オバチャンの日泰友好レシピに脱帽となった。<br><br />バンコクで初めてパクチーを食べた時、かき揚げにまで変身したパクチーが、日本の食卓に登場するなんて考えてもみなかった。<br><br /><br><br />しか～し!<br><br />パクチーが大嫌いな人も安心してちょーだい。<br><br />料理の鉄人=陳建一氏が言っています。<br><br />「全員が美味しいと言う料理は、この世に存在しない」ってね。<br><br />美味しい食に出逢うコツは、好き嫌いをハッキリ言うコトなのだ。</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/09/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/09/4_part23.html">
+
+
+						4コマまんが Part23【かんちがい】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/08/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/08/4_part22.html">
+
+
+						4コマまんが Part22【夏のイベント？行きません。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/07/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/07/4_part21.html">
+
+
+						4コマまんが Part21【かゆみにさよなら】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/05/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/05/4_part20.html">
+
+
+						4コマまんが Part20【なぜか一番痛い。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/04/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/04/4_part19.html">
+
+
+						4コマまんが Part19【オモテとウラ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/02/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/02/4_part18.html">
+
+
+						4コマまんが Part18【しかられて】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/_2_vol1.html">
+
+
+						≪モーリー 何分！？クッキング≫　第2弾 ～vol.1買出し...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/4_part16_1.html">
+
+
+						4コマまんが Part17【大そうじ】
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

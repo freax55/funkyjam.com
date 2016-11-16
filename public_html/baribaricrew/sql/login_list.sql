@@ -1,0 +1,1 @@
+select mail,pass from premium_users_pc where delete_flg = '0';

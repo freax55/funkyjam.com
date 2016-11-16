@@ -1,0 +1,126 @@
+@charset "shift_jis";
+
+body {
+	background-image:url(../image/bg.jpg);
+	background-position:left top;
+	background-repeat:repeat;
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#FFF;
+}
+a {
+	text-decoration:underline;
+	color:#0000FF;
+}
+a:hover {
+	text-decoration:none;
+}
+#page {
+	padding-bottom:10px;
+}
+#container {
+	width:550px;
+	margin:0 auto;
+}
+
+/* header start */
+#header {
+	height:50px;
+	padding-top:10px;
+	font-size:200%;
+	font-weight:bold;
+	color:#FFA020;
+	text-align:center;
+}
+
+/* header end */
+
+/* contents start */
+#contents {
+	width:520px;
+	margin:0 auto;
+	padding-bottom:20px;
+	line-height:1.8;
+}
+#contents table {
+	width:100%;
+	border:1px solid #CCC;
+}
+#contents table th {
+	background-color:#666;
+}
+#contents table td {
+	background-color:#FFF;
+	color:#333;
+}
+#contents table td.month {
+	font-weight:bold;
+	font-size:110%;
+	color:#000;
+	text-align:center;
+}
+#contents table td.time {
+	text-align:center;
+}
+#contents table tr.plus td {
+	color:#F00;
+	font-weight:bold;
+}
+#contents table strong {
+	color:#F00;
+}
+.pagetop {
+	text-align:right;
+}
+.pagetop a {
+	padding-left:13px;
+	background-image:url(../image/icon_arrow_02.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+	color:#FFF;
+}
+#contents #btnClose {
+	width:84px;
+	margin:0 auto;
+}
+#contents #btnClose a {
+	display:block;
+	width:84px;
+	height:27px;
+	margin:20px 6px 0 auto;
+	background-image:url(../../../../image/popup_common/btn_close.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+/* contents end */
+
+/* footer start */
+#footer {
+	width:515px;
+	padding:13px 20px 24px 15px;
+	background-color:#000;
+}
+#footer #copyright {
+	float:right;
+	width:74px;
+	height:7px;
+	margin-top:3px;
+	background-image:url(../image/copyright.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+
+/* contents end */

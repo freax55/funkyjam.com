@@ -1,0 +1,297 @@
+@charset "shift_jis";
+
+#gnavi li#gnavi02 a {
+	background-position:left bottom;
+}
+
+
+#contents #pageTitle {
+	width:950px;
+	height:30px;
+	margin-bottom:28px;
+	background-image:url(../../image/artists/title.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents h1 {
+	float:left;
+	width:660px;
+	height:29px;
+	margin-bottom:25px;
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents h1#kubota {
+	background-image:url(../image/kubota/name.jpg);
+}
+#contents h1#mori {
+	background-image:url(../image/mori/name.jpg);
+}
+#contents h1#urashima {
+	background-image:url(../image/urashima/name.jpg);
+}
+#contents h1#takahashi {
+	background-image:url(../image/takahashi/name.jpg);
+}
+
+#contents .letter {
+	float:right;
+	width:160px;
+	padding-top:9px;
+	padding-right:6px;
+}
+#contents .letter a {
+	display:block;
+	width:160px;
+	height:13px;
+	background-image:url(../image/common/link_letter.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents .english {
+	float:right;
+	width:104px;
+	padding-top:9px;
+	padding-right:20px;
+}
+#contents .english a {
+	display:block;
+	width:104px;
+	height:15px;
+	background-image:url(../image/common/link_english.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents .letter a:hover,
+#contents .english a:hover {
+	background-position:left bottom;
+}
+#contents #main {
+	float:right;
+	width:665px;
+}
+#contents #main #navi {
+	margin-bottom:7px;
+	border-bottom:1px solid #C23102;
+}
+#contents #main #navi li {
+	float:left;
+	padding-right:1px;
+}
+#contents #main #navi li a {
+	display:block;
+	width:109px;
+	height:30px;
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents #main #navi li a:hover {
+	background-position:left bottom;
+}
+#contents #main #navi li#navi01 a {
+	background-image:url(../image/common/navi_01.jpg);
+}
+#contents #main #navi li#navi02 a {
+	background-image:url(../image/common/navi_02.jpg);
+}
+#contents #main #navi li#navi03 a {
+	background-image:url(../image/common/navi_03.jpg);
+}
+#contents #main #navi li#navi04 a {
+	background-image:url(../image/common/navi_04.jpg);
+}
+#contents #main #navi li#navi05 a {
+	background-image:url(../image/common/navi_05.jpg);
+}
+#contents #main #navi li#navi06 a {
+	background-image:url(../image/common/navi_06.jpg);
+}
+#contents #main #navi li#navi07 a {
+	background-image:url(../image/common/navi_07.jpg);
+}
+#contents #main #navi li#navi08 a {
+	background-image:url(../image/common/navi_08.jpg);
+}
+#contents #main #wrapper {
+	padding-top:10px;
+	background-image:url(../image/common/bg_grid.gif);
+	background-position:left top;
+	background-repeat:repeat;
+	padding-bottom:10px;
+	background-color:#333333;
+	line-height:1.8;
+}
+#contents #main #wrapper .rss {
+	padding:0 20px 0 0;
+	text-align:right;
+}
+#contents #main .section {
+	width:625px;
+	padding:10px 20px 20px 20px;
+}
+#contents #main .section table.default {
+	margin-bottom:0.5em;
+	width:99%;
+	border-collapse:collapse;
+}
+#contents #main .section table.default th {
+	border:1px solid #666666;
+	text-align:center;
+	font-weight:normal;
+}
+#contents #main .section table.default td {
+	border:1px solid #666666;
+	text-align:center;
+}
+
+#contents #main .cross {
+	width:625px;
+	padding:0 20px 5px 20px;
+	text-align:center;
+}
+#contents #main .cross li {
+	display:inline;
+	margin:0 13px 0 0;
+	padding:0 13px 0 0;
+	border-right:1px solid #FFFFFF;
+}
+#contents #main .cross li.last {
+	margin:0;
+	padding:0;
+	border-right:none;
+}
+
+#contents #face {
+	float:left;
+	width:275px;
+}
+#contents #face .inner {
+	width:255px;
+	padding:9px 10px;
+	margin-bottom:20px;
+	background-color:#F0F0F0;
+}
+#contents #face dl {
+	margin-top:8px;
+	padding-bottom:1px;
+	background-color:#999999;
+}
+#contents #face dt {
+	padding:6px 8px 5px 8px;
+	margin-bottom:1px;
+	border-bottom:2px solid #464646;
+	background-image:url(../image/common/bg_slash_999999.gif);
+	color:#FFFFFF;
+	line-height:normal;
+}
+#contents #face dd {
+	margin:1px 1px 0 1px;
+	padding:8px 6px;
+	border:3px solid #FFFFFF;
+	background-color:#CCCCCC;
+}
+#contents #face dd a {
+	display:block;
+	padding-left:13px;
+	background-image:url(../../image/common/icon_arrow_999999.gif);
+	background-position:0 5px;
+	background-repeat:no-repeat;
+	font-size:109%;
+	color:#343434;
+}
+#contents #face .blog {
+	width:275px;
+	padding-bottom:10px;
+	text-align:center;
+}
+#contents #face .twitter {
+	padding-bottom:10px;
+}
+#contents #face .banner {
+	text-align:center;
+	width:275px;
+	padding-bottom:10px;
+	background-image:url(../image/common/fj_shop_frame.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#contents #face .bbc {
+	background-image:none;
+}
+#contents #face .facebook {
+	background-image:none;
+}
+#contents #face .banner a {
+	display:block;
+	padding:2px;
+}
+#contents #face .mixi {
+	width:275px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+
+#contents #recruitment {
+	width:695px;
+	padding:27px 0 0 110px;
+}
+#contents #recruitment li {
+	float:left;
+	width:228px;
+	margin-right:5px;
+}
+#contents #recruitment li#recruitment03 {
+	margin-right:0;
+}
+#contents #recruitment li a {
+	display:block;
+	width:228px;
+	height:49px;
+	margin:0 auto;
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents #recruitment li a:hover {
+	background-position:left bottom;
+}
+#contents #recruitment li#recruitment01 a {
+	background-image:url(../../image/common/btn_mail_magazine.jpg);
+}
+#contents #recruitment li#recruitment02 a {
+	background-image:url(../../image/common/btn_newcomer.jpg);
+}
+#contents #recruitment li#recruitment03 a {
+	background-image:url(../../image/common/btn_staff.jpg);
+}
+

@@ -1,0 +1,159 @@
+#mainvisual {
+  position: relative;
+}
+#mainvisual h1 {
+  position: absolute;
+  top: 3.9039%;
+  left: 0;
+  right: 0;
+  width: 69.375%;
+  max-width: 617px;
+  margin: 0 auto;
+}
+#mainvisual p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#mainvisual .btn {
+  position: absolute;
+  top: 80.88088%;
+  left: 0;
+  right: 0;
+  width: 53.125%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+#menu {
+  padding-bottom: 25%;
+  background-image: url(/mori_teaser/images/top/bg1_sp.gif);
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#menu .inner {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 0.9375% 0;
+  background-color: #2F8A5B;
+}
+#menu .inner > div {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 0.9375%;
+}
+#menu .inner > div:first-child {
+  margin-top: 0;
+}
+#menu .inner .wrap1 .left, #menu .inner .wrap1 .right, #menu .inner .wrap3 .left, #menu .inner .wrap3 .right {
+  width: 49.53125%;
+}
+#menu .inner .wrap2 .left {
+  width: 54.6875%;
+}
+#menu .inner .wrap2 .left a, #menu .inner .wrap2 .left span {
+  margin-top: 1.70455%;
+}
+#menu .inner .wrap2 .left a:first-child, #menu .inner .wrap2 .left span:first-child {
+  margin-top: 0;
+}
+#menu .inner .wrap2 .right {
+  width: 44.375%;
+}
+#menu .inner a, #menu .inner span {
+  display: block;
+  position: relative;
+}
+#menu .inner a div img, #menu .inner span div img {
+  transition: opacity .2s ease;
+}
+#menu .inner a p, #menu .inner span p {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+#privilege h2 {
+  padding: 3.75% 0;
+  background-color: #2F8A5B;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+#privilege .inner {
+  padding: 9.375% 0 17.5%;
+  background-image: url(/mori_teaser/images/top/bg2_sp.gif);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#privilege .inner p {
+  margin-bottom: 12.5%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+#privilege .inner .btn {
+  width: 53.125%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  #mainvisual h1 {
+    top: 55px;
+  }
+  #mainvisual .btn {
+    top: 1155px;
+  }
+
+  #menu {
+    padding-bottom: 174px;
+    border-right: 4px solid #2F8A5B;
+    border-left: 4px solid #2F8A5B;
+    background-image: url(/mori_teaser/images/top/bg1_pc.gif);
+  }
+  #menu .inner {
+    padding: 4px 0;
+  }
+  #menu .inner > div {
+    margin-top: 4px;
+  }
+  #menu .inner .wrap1 .left, #menu .inner .wrap1 .right, #menu .inner .wrap3 .left, #menu .inner .wrap3 .right {
+    width: 444px;
+  }
+  #menu .inner .wrap2 .left {
+    width: 492px;
+  }
+  #menu .inner .wrap2 .left a, #menu .inner .wrap2 .left span {
+    margin-top: 4px;
+  }
+  #menu .inner .wrap2 .right {
+    width: 396px;
+  }
+
+  #privilege {
+    border-right: 4px solid #2F8A5B;
+    border-left: 4px solid #2F8A5B;
+  }
+  #privilege h2 {
+    padding: 24px 0;
+    font-size: 4rem;
+  }
+  #privilege .inner {
+    padding: 60px 0 112px;
+    background-image: url(/mori_teaser/images/top/bg2_pc.gif);
+  }
+  #privilege .inner p {
+    margin-bottom: 80px;
+    font-size: 3.2rem;
+  }
+  #privilege .inner .btn {
+    width: 340px;
+  }
+}

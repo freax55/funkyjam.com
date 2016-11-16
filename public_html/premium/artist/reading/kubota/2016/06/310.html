@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第310回 「熊本で涙目」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/06/17"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/06/17 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第310回 「熊本で涙目」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 3泊4日で熊本に行って来た。<br><br />震災ボランティアではない。<br><br />ただただラーメンを食べるために、熊本へ行ったのだ。<br><br /><br><br />しか～し!<br><br />機上から見下ろす熊本は、家々の屋根にブルーシートが目立ち、嫌が応にも震災の現実を突きつけられた。<br><br />あとで地元ピーポーに聞いたのだが、最高震度7を記録した益城町は壊滅的で、今もアスファルト道路が波を打ち、多くの全壊家屋が放置されたままらしい。<br><br />なのにワタル自身は、ラーメンを食べに熊本へ来たのだ。<br><br />Why Japanese people!?<br><br />ワタル自身が東京の西永福でやっていたラーメン屋「臨機」を、2代目店長夫妻が熊本で継いでくれているのだ。<br><br />ネットや雑誌などで、熊本でも臨機の味が受け入れられているコトは知っていた。<br><br />だから、臨機の創始者として、ワタル自身が臨機in熊本のラーメンを確かめよーと、震災前の2月にホテルと航空券を予約していたのである。<br><br />臨機in熊本は、熊本大学近くの子飼商店街にあった。<br><br />今でこそオールディーズな商店街だが、昭和の時代は買物客でゴッタがえし、当時の商店主達は大金を稼いで土地を買いビルを建て、今では悠々自適の余生を楽しんでいると聞いた。<br><br />その子飼商店も震災を免れず、大きなブルーシートの下に、全壊でペシャンコになった店があった。<br><br />臨機も震災直後はライフラインがストップしたが、幸いにも店に大きなダメージはなく、今は通常通り営業をしている。<br><br />実は、来店日をナイショにしていたので、突然のワタル乱入に店長のケン・ボルケーノは悲鳴を上げたが、まずはホッピーで落ち着く。<br><br />肝心のラーメンは、熊本の食材やケン君のアイデアが活かされ、ワタル臨機の進化系とも言える完成度だった。<br><br />一番気がかりだった麺は3種類を使い分けて、地元業者と試行錯誤をした結果、温冷辛それぞれのスープとの相性も見事だった。<br><br />さらに、たまたま来ていたアフリカの打楽器=ジャンベの奏者がワタル世代だったり、その後に来店した全身タトゥマンやヒップホッパーとも打ち解け、ラーメンを食べホッピーを飲み、2次会へ繰り出し破裂し、熊本初日は記憶を無くして終了した。<br><br />熊本はケン君の出身県だけれど、ワタル自身が創った鮮魚系ラーメンの味を、トンコツ主流の土地に受け入れさせるには、大変マルな努力があったに違いない。<br><br />ケン臨機の人気は、ラーメンの美味しさは当然として、客席と厨房の隔たりを感じさせない、店長夫妻のAS ONEな人柄に因るところが大きい。<br><br />そーした暖かい気持ちにさせられる日々の連続で、ラーメンを14杯、酒をシコタマの3泊4日だった。<br><br />東京へ戻る日、ランチタイムに臨機へ行くと、その日も客足が途絶えない。<br><br />その中に、ケン君とDJユニットを組んでいるハワイアンダンサー(!)がいて、彼女がオレに話してくれた。<br><br />臨機へ来た初日にいた、ヒップホッパーが彼女の知人で、彼から話を聞いたとゆーのだ。<br><br />「ワタルさんがケンさんのラーメンを食べた最初の一言を聞いて、アタシ泣いちゃったんですよ…」<br><br />もちろんオレは覚えていない。<br><br />「ラーメンを一口食べたワタルさんは、ケンさんに『ありがとう』って言ったんですって…。『ありがとう』って、なんて素晴らしい言葉だろーと思ったら、自然に泣けてきちゃったんです…」<br><br />で、その話を聞いて、今度はオレが涙目になったっつーの(＞人＜;)<br><br />熊本の復興には、まだまだ時間が必要だけれど、火の国の熱いオトコと優しいオンナがいれば、この震災も乗り越えられると確信する。<br><br />すでに前進を始めた市街地から、立ち入れない熊本城を遠望し、また涙目になり、熊本再訪を誓った。<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

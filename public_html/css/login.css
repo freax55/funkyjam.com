@@ -1,0 +1,132 @@
+@charset "shift_jis";
+
+#contents {
+	font-size:100%;
+}
+#contents .pageTitle {
+	width:643px;
+	height:27px;
+	background-image:url(../artist/kubota/login/image/title.gif);
+}
+
+#contents .section {
+	line-height:2;
+	padding-bottom:50px;
+}
+
+#contents .entry {
+	line-height:2;
+}
+#contents table#pw {
+	margin-left:148px;
+}
+#contents table#pw th {
+	width:48px;
+	padding-right:30px;
+	background-image:url(../artist/kubota/login/image/lab_pw.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	text-indent:-9999px;
+}
+#contents .btn {
+	padding-bottom:30px;
+	padding-left:250px;
+	padding-top:20px;
+	margin-top:40px;
+}
+#contents .btn input {
+	height:31px;
+	width:157px;
+	background-color:transparent;
+	background-image:url(../artist/kubota/login/image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	border:0 none;
+	cursor:pointer;
+	font-size:118%;
+	font-weight:bold;
+}
+#contents .baribari {
+	width:231px;
+	margin:auto;
+	padding-top:15px;
+}
+#contents #pw input {
+	width:200px;
+}
+#contents .error {
+	font-weight:bold;
+	color:#FF0000;
+}
+
+#contents .entry .text {
+	text-align:center;
+}
+#contents .entry img {
+	margin-bottom:-2px;
+}
+
+#contents strong {
+	color:#A5452E;
+	font-size:120%;
+}
+
+#contents #selection h1 {
+	border-bottom:1px solid #000;
+}
+#contents #selection .btns {
+	padding:200px 0 0 150px;
+}
+#contents #selection .btn {
+	float:left;
+	height:31px;
+	width:157px;
+	padding:0 30px 0 0;
+	margin:0;
+	text-align:center;
+	vertical-align:middle;
+}
+#contents #selection .btn a {
+	display:block;
+	height:25px;
+	width:157px;
+	text-decoration:none;
+	padding-top:6px;
+	font-size:110%;
+	color:#000;
+	background-image:url(../artist/kubota/login/image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-weight:bold;
+}
+#contents #news {
+	line-height:1.8;
+}
+#contents #news .title {
+	width:640px;
+	background-color:#000;
+	text-align:center;
+	color:#FFCC00;
+	font-size:130%;
+	font-weight:bold;
+	padding:10px 0;
+}
+#contents #news dl {
+	width:600px;
+	background-color:#787878;
+	color:#FFF;
+	padding:20px;
+}
+#contents #news dt {
+	padding-bottom:10px;
+	font-size:110%;
+	font-weight:bold;
+}
+#contents #news dd {
+	padding-bottom:20px;
+}
+#contents #news dd.last {
+	padding-bottom:0;
+}

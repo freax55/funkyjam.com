@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common_insert.html" -->
+<link href="/premium/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/select.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_insert.html" -->
+			<div id="section">
+				<form action="index.php" method="post">
+				<div class="secInner">
+					{if $status != "edit"}
+						<h2>新規会員登録</h2>
+					{else}
+						<h2>会員継続</h2>
+					{/if}
+					{if $payment=="コンビニ決済"}
+						<div class="cvs">
+							<p class="txt">お支払い先をお選びください。</p>
+							{if $errors.convenience_store_no}<p class="error">※{$errors.convenience_store_no|escape}</p>{/if}
+							<ul>
+							{foreach from=$units.convenience_stores item=v key=k name=n}
+								<li><input name="convenience_store_no" type="radio" value="{$k}" {if $convenience_sore_no == $k} checked="checked"{/if} id="convenience_sore_no{$k}" /><label for="convenience_sore_no{$k}">&nbsp;&nbsp;{$v.name}</label></li>
+							{/foreach}
+							<ul>
+						</div>
+					{elseif $payment=="カード決済（ペイジェント）"}
+						<div class="card">
+							<p class="txt">カード番号と有効期限をご入力ください。</p><br />
+							<table border="0" cellspacing="0" cellpadding="0" class="formTbl">
+								<tr>
+									<th>カード番号</th>
+									<td>
+										<p><input type="text" istyle="4" MODE="numeric" name="card_no01" value="{$card_no01|escape}" size="4" maxlength="4" />&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" istyle="4" MODE="numeric" name="card_no02" value="{$card_no02|escape}" size="4" maxlength="4" />&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" istyle="4" MODE="numeric" name="card_no03" value="{$card_no03|escape}" size="4" maxlength="4" />&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" istyle="4" MODE="numeric" name="card_no04" value="{$card_no04|escape}" size="4" maxlength="4" />&nbsp;&nbsp;例：9999-9999-9999-9999</p>
+										{if $errors.card_no}<p class="error">※{$errors.card_no|escape}</p>{/if}
+									</td>
+								</tr>
+								<tr>
+									<th>有効期限</th>
+									<td>
+										<div><select name="valid_term01">
+										<option value="">月</option>
+										{foreach from=$valid_term_month item=month}
+										<option value="{$month}"{if $valid_term01 == $month} selected="selected"{/if}>{$month}</option>
+										{/foreach}
+										</select>&nbsp;&nbsp;/&nbsp;&nbsp;<select name="valid_term02">
+										<option value="">年</option>
+										{foreach from=$valid_term_year item=year}
+										<option value="{$year}"{if $valid_term02 == $year} selected="selected"{/if}>{$year}</option>
+										{/foreach}
+										</select>&nbsp;&nbsp;例：12/10</div>
+										{if $errors.valid_term}<p class="error">※{$errors.valid_term|escape}</p>{/if}
+									</td>
+								</tr>
+							</table>
+						</div>
+					{/if}
+					<div class="btns clearfix">
+						<div class="btn btn2"><input type="button" value="修正する" onclick="location.href='index.php?action=confirm';" /></div>
+						<div class="btn btn1"><input type="submit" value="登録する"></div>
+					</div>
+					<p class="attention">※クリックは必ず1回でお願いいたします。（複数回クリックされますと年会費が重複してかかってしまうことがございます） </p>
+					<input type="hidden" name="action" value="process" />
+				</div>
+				</form>
+			</div>
+<!--#include virtual="/premium/include/footer_insert.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

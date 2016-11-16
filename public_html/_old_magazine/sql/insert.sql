@@ -1,0 +1,36 @@
+INSERT INTO "magazine"(
+	account_no,
+	mail,
+	sex,
+	birthday,
+	pref,
+	password,
+	fav_kubota,
+	fav_urashima,
+	fav_mori,
+	fav_takahashi,
+	fav_shigemoto,
+	fav_shima,
+	fav_wataru,
+	c_stamp,
+	u_stamp,
+	d_stamp
+)
+VALUES(
+	(SELECT coalesce(max(account_no), 0) + 1 FROM "magazine"),
+	'{$form.mail}',
+	'{$form.sex}',
+	'{$form.birthday}',
+	'{$form.pref}',
+	'{$form.password}',
+	{$form.fav_kubota|default:NULL},
+	{$form.fav_urashima|default:NULL},
+	{$form.fav_mori|default:NULL},
+	{$form.fav_takahashi|default:NULL},
+	{$form.fav_shigemoto|default:NULL},
+	{$form.fav_shima|default:NULL},
+	{$form.fav_wataru|default:NULL},
+	current_timestamp,
+	current_timestamp,
+	current_timestamp
+);

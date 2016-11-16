@@ -1,0 +1,1 @@
+UPDATE premium_users SET d_stamp = current_timestamp WHERE uid = '{$uid}' AND d_stamp IS NULL

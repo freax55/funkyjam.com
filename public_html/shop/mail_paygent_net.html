@@ -1,0 +1,107 @@
+{$orderDesc.name} 様{assign var=total value=0}{if $admin != 2}{foreach from=$noTourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}{/if}{foreach from=$tourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}
+
+{if $admin}
+{$orderDesc.order_desc_no}
+銀行ネット決済
+{$orderDesc.member_no}
+{$orderDesc.name}
+{$orderDesc.zip}
+{$orderDesc.address1}{$orderDesc.address2}{$orderDesc.address3}
+{$orderDesc.tel}
+{$orderDesc.mail}
+{$total+$orderDesc.carriage}
+{$orderDesc.carriage}
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{/if}{foreach from=$tourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{else}
+
+この度は、FJ SHOPグッズをご購入頂きまして有り難うございました。
+
+お支払い方法は「銀行ネット決済」となります。
+
+お振込みを確認でき次第、商品を発送させていただきます。
+お申し込み内容に誤りがあった場合は、お申込み日から『3日以内』にメールにてご連絡下さい。
+
+
+＜お支払い方法＞
+銀行ネット決済
+
+
+受付番号：{$orderDesc.order_desc_no}
+
+*******************************
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+商品名：{$order.name}
+色：{$order.color}
+サイズ：{$order.size|strip_tags:false}
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+{/foreach}
+*******************************
+
+{/if}{foreach from=$tourGoodsList item=order}
+商品名：{$order.name}
+色：{$order.color}
+サイズ：{$order.size|strip_tags:false}
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+{/foreach}
+*******************************
+
+{if $admin == 2}
+合計：{$total|number_format}円
+{else}
+送料：{$orderDesc.paygentCarriage|number_format}円
+決済手数料：{$orderDesc.paygentFee|number_format}円
+合計：{$total+$orderDesc.carriage|number_format}円
+{/if}
+*******************************
+
+
+＜お願いとお断り＞
+・商品のサイズ,色,規格等をよくご確認の上、お申し込み下さい。
+　尚、商品の交換/返品/サイズ変更は原則的に受け付けておりませんのでご了承ください。
+・原則的にお申し込み後のキャンセル・ご返金はお受け出来ませんので予めご了承下さい。
+・ホームページに掲載されている写真と実際の商品とでは、
+　若干の差がある可能性がございますがご了承下さい。
+・商品は数に限りがございます。ご要望に添えない場合はE-MAIL等でお知らせ致します。
+・特別な包装はお受け致しかねます。
+・商品未着等のトラブルに対処しやすいように当社では宅配便を使っております。
+　商品の大小に関わらず同額の発送梱包料（一律￥700）を頂きますが、どうぞご了承下さい。
+・決済にあたり、購入金額（商品金額＋発送梱包料）に応じて
+　下記決済手数料が別途発生いたしますので、どうぞご了承下さい。
+　1万円未満(9,999円まで)：200円(税込)
+　1万円以上：税込240円(税込)
+・商品は、このメールを確認させて頂いた後、発送させて頂きますが、
+　代金のお引き落としにはお時間がかかる場合がございます。予めご了承下さい。
+・お届けした商品がお申込商品と異なったり、破損等していた場合は、
+　商品到着後8日以内に下記お問い合せ先へお電話もしくはメールにてご連絡下さい。
+
+＜商品のお届けについて＞
+・商品がお手元に届くまで最大4週間程かかります。予めご了承下さい。
+・住所等に不明瞭な点がある場合、発送が遅れます。ご注意下さい。
+　またお申込み後に住所を変更された方はすみやかに下記のお問い合わせ先までご連絡下さい。
+・お申込み時のご住所に宅配便にてお届け致しますので、
+　お留守の場合は「不在通知票」に従いお受け取り下さい。
+　不在通知票投函後、お客様から宅配業者へ再配達の希望連絡がなかった場合、
+　お客様が申込み時に記入された住所が不明瞭だった場合、
+　住所変更の連絡がなく配達出来なかった等の理由で、商品が発送元に返送された場合、
+　再発送手数料700円はお客様のご負担とさせていただきますので、予めご了承下さい。
+
+ * *　総合お問合わせ先　* * *
+商品に関するお問合わせは、
+ファンキー・ジャム内 FJ SHOP係へお願い致します。
+TEL：03-3470-7707（平日10:30〜18：30）
+e-mail：shop@funkyjam.com
+
+{/if}

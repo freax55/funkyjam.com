@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>久保田利伸 ツアーグッズ管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../../../admin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../../../index.php">管理トップ</a> &gt; 商品管理 &gt; <a href="../index.php">グッズ</a> &gt; <a href="index.php">久保田利伸 ツアーグッズ</a> &gt;</p>
+<form action="index.php" method="post" enctype="multipart/form-data" name="new">
+  <table id="list">
+    <tr>
+      <th>表示順</th>
+      <td>{if $errors.inquiries_tel}<span class="error">※{$errors.inquiries_tel|escape}
+        </span><br />
+          {/if}
+          <input name="inquiries_tel" type="text" value="{$inquiries_tel|escape}">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">商品コード</th>
+      <td>
+        {if $errors.code}<span class="error">※{$errors.code|escape}</span><br />{/if}
+        <input name="item_code" type="text" value="{$item_code|escape}">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">商品名</th>
+      <td>
+        {if $errors.name}<span class="error">※{$errors.name|escape}</span><br />{/if}
+        <input name="name" type="text" value="{$name|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>アーティスト</th>
+      <td>久保田利伸ツアー<input type="hidden" name="category_code" value="A013"></td>
+    </tr>
+    <tr>
+      <th>大分類</th>
+      <td>グッズ</td>
+    </tr>
+    <tr>
+      <th>中分類</th>
+      <td>{if $errors.area}<span class="error">※{$errors.area|escape}</span><br />
+      {/if}例）Tシャツ<br>
+        <input name="area" type="text" value="{$area|escape}" size="50"></td>
+    </tr>
+    <tr>
+      <th>色</th>
+      <td>
+        {if $errors.color}<span class="error">※{$errors.color|escape}</span><br />{/if}
+        <input name="color" type="text" value="{$color|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>サイズ</th>
+      <td>
+        {if $errors.size}<span class="error">※{$errors.size|escape}</span><br />{/if}
+        <input name="size" type="text" value="{$size|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>在庫</th>
+      <td>
+        {if $errors.stock}<span class="error">※{$errors.stock|escape}</span><br />{/if}
+        <input name="stock" type="text" value="{$stock|escape}">
+      </td>
+    </tr>
+    <tr>
+      <th>単価</th>
+      <td>
+        {if $errors.price}<span class="error">※{$errors.price|escape}</span><br />{/if}
+        <input name="price" type="text" value="{$price|escape}">
+        円
+      </td>
+    </tr>
+    <tr>
+      <th width="120">コメント</th>
+      <td>
+	    {if $errors.note}<span class="error">※{$errors.note|escape}</span><br />{/if}
+        <textarea name="note" cols="50" rows="5">{$note|escape}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <th>商品写真</th>
+      <td>
+        {if $errors.image}<span class="error">※{$errors.image|escape}</span><br />{/if}
+		{if $image && $image->tmpFilePath}<img src="{$image->tmpFilePath}" width="120"><br />
+		<label><input type="checkbox" name="imageDelete" value="1"{if $imageDelete} checked="checked"{/if}>削除する</label><br>{/if}
+        <input name="image" type="file" />
+      </td>
+    </tr>
+    <tr>
+      <th>備考</th>
+      <td>{if $errors.inquiries}<span class="error">※{$errors.inquiries|escape}
+        </span><br />
+          {/if}
+          <input name="inquiries" type="text" value="{$inquiries|escape}" size="50">
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="追加する" />    
+    <input type="hidden" name="action" value="add" />
+  </p>
+</form>
+</body>
+</html>

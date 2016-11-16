@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第324回 「オールド渋谷ピーポー」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/09/23 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第324回 「オールド渋谷ピーポー」</p>
+		</div>
+		<div class="texts">
+			<div class="text">東京で一番馴染み深い街は…考えるヒツヨーもなく渋谷である。<br><br />大学生の頃から遊ぶのは渋谷で、百軒店商店街のラーメン屋「喜楽」やロック喫茶「B.Y.G」に通い、初めて音楽業界の仕事をしたキティレコードは、渋谷駅前の宮益坂下にあった。<br><br />キティの隣にあった「赤ひょうたん」のレバーステーキ定食は、肉に添えられたサラダの量が大胆で、カネがある時の大きな楽しみだった。<br><br />それからキティの酒飲み先輩に教えられた「渋谷のんべい横丁」にハマり、以来ずっと渋谷が夜のホームグラウンドになっている。<br><br />のんべい横丁は、戦後の渋谷に点在していた屋台がGHQ=連合国軍最高司令官総司令部の指導で整理された飲み屋街で、戦後ヘベレケ渋谷の偉大な文化遺産である。<br><br />ちなみに、道玄坂の恋文横丁も1970年代までは生き残っていたが、109等の新興勢力に抗えず、今は古びた記念碑が残るのみだ。<br><br />このよーに、戦後の渋谷は変わり続け、さらに今また激しく変わりつつある。<br><br />中でもインパクトが大きかったのは、渋谷駅の東口前にあった「東急文化会館」が2003年に取り壊され、2012年に「渋谷ヒカリエ」に生まれ変わったコトだ。<br><br />これで渋谷の「顔」が激変した。<br><br />それまでの渋谷にもオシャレ系の建物は多々あったけれど、駅前の変化は劇的で大規模だった。<br><br />東急東横線の渋谷-代官山間が地下に移ったのをチャンスに、路面線路の跡地に素早く作られた「ログロード代官山」は流行ピーポーで盛況だし、さらに、今は見向きもされていない渋谷川もリバーサイドに様々なショップが立ち並ぶ予定で、すでに工事が進んでいる。<br><br />駅周辺の改築工事は2027年頃まで続ぎ、屋上庭園もある超高層ビルも建てられる。<br><br />完成予想図を見ると、渋谷独特のダークサイドな雰囲気はミジンもない、鉄腕アトムの未来都市だ。<br><br /><br><br />しか&#12316;し!<br><br />オールド渋谷ピーポーのワタル自身には、激しく残念なコトもある。<br><br />まず、渋谷の桜ヶ丘にあるゴチャゴチャした小さな飲み屋地域が、全面的に姿を消すらしい。<br><br />昭和から平成の間も、桜ヶ丘は旧から新へ変わり続けていたが、まだまだ個人経営の小さな店も健在で、ワタル世代も居心地良く酔っ払えた。<br><br /><br><br />しか&#12316;し!<br><br />今度のビッグウェーブは、桜ヶ丘を丸ごと飲み込む気配なのだ。<br><br />ワタル自身が密かに「渋谷のエルドラド」と敬愛しているビル地下の立ち飲み屋も、渋谷駅ホーム延長工事でビルごと余命数年を宣告されているし、山手線沿いの桜ヶ丘周辺から昭和の面影が一掃される日が近い。<br><br /><br><br />しか&#12316;し!<br><br />ナンと言っても、インド人がカレーにはナンと言っても、気になって心配で不安で心細くて仕方ないコトがある。<br><br />とゆーのも、先日ビビアンちのポストに入っていた渋谷駅周辺工事の予告チラシを、熟読吟味しタテヨコナナメどー見ても、あるべき位置に渋谷のんべい横丁が存在しないのである!<br><br />のんべい横丁に隣接する宮下公園あたりに大きなホテルが描かれていて、のんべい横丁があるべき場所は広場なのか駐車場なのか、とにかくナ&#12316;ンニモnothingなのだッ! だッだッだッ!<br><br />我が青春遺産の渋谷Ｍは、久保田利伸と白熱のトークバトルを繰り広げた渋谷Ｍは、一体ドコへ消えてしまうのだッ!? だッだッだッ!?<br><br />渋谷Ｍの店長=ノリオ君によると、現在の建築基準に沿わない渋谷のんべい横丁の改築や移転や立ち退きは、今まで何度も話題に出ていたらしいのだが、今回ばかりは免れられないかもしれない…とのコト。時代は移ろい、生者必滅に異は唱えないが、こんなに寂しい気持ちになるなんて…せめて戦後ヘベレケ渋谷の名残くらいは遺しておいて欲しい…(＞＜)<br><br /><br><br />しか&#12316;し!<br><br />過ぎ去る日々を懐かしんでばかりはいられない。<br><br />新しい渋谷は大いに楽しみだし、リバーサイドに馴染みの飲み屋が見つかるやもしれぬ。<br><br />その日のために痛風と仲良くし、階段や坂道でヘコタレナイよーにしなければ…そー切に願う2016年9月のワタル自身なのである。</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

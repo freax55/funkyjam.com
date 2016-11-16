@@ -1,0 +1,47 @@
+@charset "shift_jis";
+
+body {
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#333333;
+}
+#page {
+	width:850px;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+#container {
+	width:770px;
+	margin:0 auto;
+	padding:30px 40px 10px 40px;
+	border:1px solid #000;
+}
+
+/* header start */
+#header {
+	width:770px;
+	padding:0 0 27px 0;
+}
+
+/* copyright start */
+#copyright {
+	width:627px;
+	margin-left:auto;
+	margin-right:-14px;
+}
+#copyright .copy {
+	float:left;
+	width:528px;
+	padding-right:5px;
+	padding-top:7px;
+}
+#copyright .logoS {
+	float:left;
+	width:94px;
+}
+/* copyright end */
+
+/* backNumber start */
+/* backNumber end */

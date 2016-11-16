@@ -1,0 +1,115 @@
+{$orderDesc.name} 様{assign var=total value=0}{if $admin != 2}{foreach from=$noTourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}{/if}{foreach from=$tourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}
+
+{if $admin}
+{$orderDesc.order_desc_no}
+郵便振込
+{$orderDesc.member_no}
+{$orderDesc.name}
+{$orderDesc.zip}
+{$orderDesc.address1}{$orderDesc.address2}{$orderDesc.address3}
+{$orderDesc.tel}
+{$orderDesc.mail}
+{$total+$orderDesc.carriage}
+{$orderDesc.carriage}
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{/if}{foreach from=$tourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{else}
+
+ファンクラブ先行予約にお申込みいただきありがとうございます。
+
+お支払い方法は「郵便振込」となります。
+【支払期限】2013年9月1日（消印有効）
+
+本メールは購入予約のご確認メールとなります。	
+お振込みを確認でき次第、購入内容を確定とさせていただきます。
+下記のお支払い方法ご確認の上、お振込みください。
+お申込み後、お客様の事情によるキャンセル・変更・追加・返金は、いかなる場合も応じられません。
+すべてのお問い合わせには、下記受付番号が必要です。
+
+
+受付番号：{$orderDesc.order_desc_no}
+
+
+＜お支払い方法＞
+郵便局備え付けの払込取扱票（青色）に下記必要事項をはっきりとご記入の上、お振込ください。
+●口座番号：00110-4-610211
+●金額：本メール下記に記載の合計金額
+●加入者名：バリバリクルー係
+●通信欄：
+＊会員番号（BBC封筒宛名の8ケタの数字です）
+＊申込み公演日
+＊会場名「国際フォーラム」
+＊申込チケット枚数
+＊日中連絡可能な電話番号
+●ご依頼人：BBCにご登録の住所・氏名・電話番号
+
+※右側の振替払込請求書兼受領書はお客様の大切な控えとなります。下記項目もご記入ください。	
+●金額：送料込の合計金額（本メール下記記載）
+●ご依頼人：
+お名前とお申込みの公演日、会場名、チケット枚数を空いている所へお書きください。
+
+
+*******************************
+
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+{/if}{foreach from=$tourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+
+{if $admin == 2}
+合計：{$total|number_format}円
+{else}
+送料：{$orderDesc.carriage|number_format}円
+合計：{$total+$orderDesc.carriage|number_format}円
+{/if}
+
+*******************************
+
+
+＜お願いとお断り＞
+・支払期限内にお振込みください。
+（2013年8月16日（消印有効））
+※支払期限が過ぎ入金のない場合はキャンセル扱いとなり、お申込みは無効となります。
+・振込合計金額（チケット代＋送料）の他に振込手数料が必要です。
+・公演日まで会員継続をされていない場合、チケットが発送できませんのでご注意ください。
+＜チケットのお届けについて＞
+・お申込み公演日の約2週間前です。
+チケット発送状況は、BBCインフォメーション、オフィシャルHPにて随時お知らせ致します。お手元にチケットが届いたら、必ず公演日、チケット枚数をご確認下さい。
+お申込み内容と異なっていた場合、至急バリバリクルーにご連絡ください。
+お申込み公演日10日前になってもチケットが届かない場合、PC/モバイルの方は購入内容確認メールに記載の『受付番号』にてお問合せください。
+・チケットは貴重品の為、ヤマト運輸セキュリティーパッケージにてファンクラブ登録住所へお送りします。郵便局や、ヤマト運輸などの転送サービスはご利用出来ません。変更が間に合わず返送された場合など、お客様都合による再送は着払いとさせて頂きます。
+
+
+***総合お問い合わせ先***
+チケットに関するお問合わせは、
+ファンキー・ジャム内 バリバリクルーへお願い致します。
+TEL：03-3470-7709（平日15:00～18:00以外はインフォメーションテープ）
+e-mail：ticket@funkyjam.com
+
+※このメールは送信専用です。
+　返信いただいてもお答えすることは出来ませんのでご了承ください。
+
+
+{/if}

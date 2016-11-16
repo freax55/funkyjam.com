@@ -1,0 +1,1 @@
+INSERT INTO premium_users(uid, carrier) values('{$uid}', '{$carrier}')

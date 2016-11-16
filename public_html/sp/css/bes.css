@@ -1,0 +1,96 @@
+/* 
+    Document   : top
+    Created on : 2012/05/23, 13:10:15
+    Author     : staff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+html {
+	background-image:url(/sp/images/artist/bes/bg_bes.gif);
+}
+#page #logo {
+	background-image:url(/sp/images/common/bg_page.gif);
+}
+#headline {
+	width:100%;
+}
+#headline .images {
+	text-align:center;
+	width:320px;
+	height:165px;
+	margin:0 auto;
+}
+#headline #navi {
+	width:100%;
+	display:table;
+	overflow-x:hidden;
+    background:-moz-linear-gradient(top, #04234A, #031834);
+    background:-webkit-gradient(linear, left top, left bottom, from(#04234A), to(#031834));
+	text-align:center;
+	border-bottom:2px solid #303030;
+}
+#headline #navi ul {
+	display:table-row;
+}
+#headline #navi li {
+	display:table-cell;
+	border-top:2px solid #303030;
+	border-right:2px solid #303030;
+	width:50%;
+}
+#headline #navi li:nth-child(2n) {
+	border-right:none;
+}
+#headline #navi li.current {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #184E8E, #113763);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#184E8E), to(#113763));
+	font-weight: bold;
+}
+#headline #navi li a {
+	display:block;
+	text-align:center;
+	padding:8px 0;
+	text-decoration: none;
+	color:#4F6075;
+
+}
+#headline #navi li.current a {
+	color:#fff;
+}
+#newsBlock .day {
+	color: #184E8E;
+	font-size: 1.2rem;
+}
+#newsBlock .day strong {
+	padding:3px 5px;
+	margin-right: 5px;
+	background-color: #184E8E;
+	color: #fff;
+	font-size: 1.0rem;
+}
+#newsUnder a{
+	color: #184E8E;
+	text-decoration: none;
+}
+
+#discography .link {
+    background:-moz-linear-gradient(top, #04234A, #031834);
+    background:-webkit-gradient(linear, left top, left bottom, from(#04234A), to(#031834));
+}
+
+#discography .link li.current {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #184E8E, #113763);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#184E8E), to(#113763));
+}
+#discography .link li a {
+	color:#5E5E5E;
+}
+#discography .link li.current a {
+	color:#5E5E5E;
+}
+#discography .section .entry .inner .release {
+	color:#184E8E;
+}
+#discography.detail .images .day {
+    color: #184E8E;
+}

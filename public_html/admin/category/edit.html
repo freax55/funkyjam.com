@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>アーティスト管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../admin.css" rel="stylesheet" type="text/css">
+{literal}
+<script type="text/javascript">
+<!--
+function removeConfirm(key) {
+	var ret = confirm('削除してもよろしいですか。');
+	
+	if (ret) {
+		location.href = "index.php?action=remove&key=" + key;
+	}
+}
+-->
+</script>
+{/literal}
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; <a href="index.php">アーティスト管理</a> &gt; </p>
+<form action="index.php" method="post" name="edit">
+  <table id="list">
+    <tr>
+      <th width="120">アーティストコード</th>
+      <td>
+        {if $errors.code}<span class="error">※{$errors.code|escape}</span><br />{/if}
+        <input name="category_code" type="text" value="{$category_code|escape}">
+		<input name="key" type="hidden" value="{$key|escape}" />
+      </td>
+    </tr>
+    <tr>
+      <th width="120">名前</th>
+      <td>
+        {if $errors.name}<span class="error">※{$errors.name|escape}</span><br />{/if}
+        <input name="name" type="text" value="{$name|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">区分</th>
+      <td>
+        {if $errors.kind}<span class="error">※{$errors.kind|escape}</span><br />{/if}
+        <select name="kind">
+          <option value="">▼選択してください</option>
+		  <option value="ticket"{if $kind == 'ticket'} selected="selected"{/if}>チケット</option>
+		  <option value="goods"{if $kind == 'goods'} selected="selected"{/if}>グッズ</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th width="120">備考</th>
+      <td>
+	    {if $errors.note}<span class="error">※{$errors.note|escape}</span><br />{/if}
+        <textarea name="note" cols="50" rows="5">{$note|escape}</textarea>
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="更新する" />
+    <input name="action" type="hidden" value="change" />
+    <input type="button" name="remove" value="削除する" onclick="removeConfirm('{$key}');" />
+</p>
+</form>
+</body>
+</html>

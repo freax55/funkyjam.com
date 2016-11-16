@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>お問い合わせ - Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、Brown Eyed Soulが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,Brown Eyed Soul,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/lower.css">
+<link rel="stylesheet" type="text/css" href="/css/contact.css">
+<!--#include virtual="/include/head/js.html"-->
+</head>
+<body id="top" class="contact">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header_s.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからmainエリア -->
+	<section id="mainArea">
+		<p id="mainCover">お問い合わせ</p>
+	</section>
+<!-- ここまでmainエリア -->
+
+<!-- ここからcontentエリア -->
+	<article id="contentArea">
+		<div id="contentBox">
+			<p id="pankuzu"><a href="/">TOP</a>&nbsp;>&nbsp;お問い合わせ</p>
+			<div id="contentWrapper">
+				<p class="lead"><span class="indispensability">*</span>は必ずお書きください。</p>
+				<form action="index.php" method="post">
+					<div class="dfTbl">
+						<h1><strong>お問い合わせ</strong></h1>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>お名前<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.name}<p class="error">{$errors.name}</p>{/if}
+									<input type="text" name="form[name]" value="{$form.name|escape}" class="w300" />
+									<p class="attn">記入例：久保田利伸</p>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
+									<input name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
+									<p class="attn">半角英数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス再確認<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
+									<input name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
+									<p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>男女</th>
+								<td>
+									{if $errors.sex}<p class="error">{$errors.sex}</p>{/if}
+									<label>
+										<input type="radio" name="form[sex]" value="女性" {if $form.sex=="女性"}checked{/if} />&nbsp;女性
+									</label>
+									<label>
+										<input type="radio" name="form[sex]" value="男性" {if $form.sex=="男性"}checked{/if} />&nbsp;男性
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>年齢</th>
+								<td>
+									{if $errors.age}<p class="error">{$errors.age}</p>{/if}
+									<input name="form[age]" type="text" value="{$form.age|escape}" maxlength="3" class="w30" />&nbsp;歳
+									<p class="attn">半角数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>職業</th>
+								<td>
+									{if $errors.job}<p class="error">{$errors.job}</p>{/if}
+									<input name="form[job]" type="text" value="{$form.job|escape}" class="w300" />
+								</td>
+							</tr>
+							<tr>
+								<th>お問い合わせ種別<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.type}<p class="error">{$errors.type}</p>{/if}
+									<select name="form[type]">
+										<option value="">下記からお選びください</option>
+										<option value="久保田利伸について"{if $form.type == '久保田利伸について'} selected="selected"{/if}>久保田利伸について</option>
+										<option value="森大輔について"{if $form.type == '森大輔について'} selected="selected"{/if}>森大輔について</option>
+										<option value="浦嶋りんこについて"{if $form.type == '浦嶋りんこについて'} selected="selected"{/if}>浦嶋りんこについて</option>
+										<option value="BROWN EYED SOULについて"{if $form.type == 'BROWN EYED SOULについて'} selected="selected"{/if}>BROWN EYED SOULについて</option>
+										<option value="新人募集について"{if $form.type == '新人募集について'} selected="selected"{/if}>新人募集について</option>
+										<option value="採用について"{if $form.type == '採用について'} selected="selected"{/if}>採用について</option>
+										<option value="ホームページについて"{if $form.type == 'ホームページについて'} selected="selected"{/if}>ホームページについて</option>
+										<option value="その他"{if $form.type == 'その他'} selected="selected"{/if}>その他</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>お問い合わせ内容<span class="indispensability">*</span></th>
+								<td>{if $errors.content}<p class="error">{$errors.content}</p>{/if}
+									<textarea name="form[content]" cols="85" rows="15">{$form.content|escape}</textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>メールマガジン</th>
+								<td>
+									{if $errors.magazine}<p class="error">{$errors.magazine}</p>{/if}
+									<input name="form[magazine]" type="hidden" value="" />
+									<label><input name="form[magazine]" type="checkbox" value="1"{if $form.magazine || $form.magazine|is_null} checked='checked'{/if} />&nbsp;メルマガを購読する</label><br />
+									<p class="attn">ファンキー・ジャム所属アーティストの最新情報をお届けします。<br />不要な方はチェックをはずして下さい。</p>
+								</td>
+							</tr>
+						</table>
+						<p class="btn"><input type="submit" value="内容を確認する" /></p>
+					</div>
+					<input type="hidden" name="action" value="confirm" />
+				</form>
+			</div>
+		</div><!-- /contentBox -->
+		<div id="bottomBorder"></div>
+	</article>
+<!-- ここまでcontentエリア -->
+
+<!-- ここからリンクエリア -->
+<!--#include virtual="/include/link_s.html"-->
+<!-- ここまでリンクエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer_s.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

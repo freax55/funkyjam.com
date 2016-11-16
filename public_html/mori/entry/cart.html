@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>会員登録 入力 - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/entry.css">
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+				<h2 class="titleType1">会員登録</h2>
+				<ul class="progress">
+					<li class="current">入力</li>
+					<li>確認</li>
+					<li>完了</li>
+				</ul>
+				<div class="inputWrap">
+					<form action="./" method="post" name="entryForm">
+						<div class="price">
+							<p>入会金 ￥500(税込)</p>
+							<p>年会費 ￥3,600(税込)</p>
+						</div>
+						<div class="wrap1">
+							<p>お名前<span>登録後の変更は、基本的に不可となります。変更があった場合はお問い合わせ下さい。</span></p>
+							{if $errors.name}<p class="error">※{$errors.name}</p>{/if}
+							<p>【姓】<span>（全角）</span></p>
+							<div><input type="text" name="last_name" value="{$last_name|escape}"{if $errors.name} class="error"{/if} ></div>
+							<p>【名】<span>（全角）</span></p>
+							<div><input type="text" name="first_name" value="{$first_name|escape}"{if $errors.name} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>お名前カナ<span>登録後の変更は、基本的に不可となります。変更があった場合はお問い合わせ下さい。</span></p>
+							{if $errors.kana}<p class="error">※{$errors.kana}</p>{/if}
+							<p>【セイ】<span>（全角カタカナ）</span></p>
+							<div><input type="text" name="last_kana" value="{$last_kana|escape}"{if $errors.kana} class="error"{/if} ></div>
+							<p>【メイ】<span>（全角カタカナ）</span></p>
+							<div><input type="text" name="first_kana" value="{$first_kana|escape}"{if $errors.kana} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>お名前ローマ字<span>登録後の変更は、基本的に不可となります。変更があった場合はお問い合わせ下さい。</span></p>
+							{if $errors.roman}<p class="error">※{$errors.roman}</p>{/if}
+							<p>【Last Name】<span>（半角英字）&nbsp;&nbsp;（例）mori</span></p>
+							<div><input type="text" name="last_roman" value="{$last_roman|escape}"{if $errors.roman} class="error"{/if} ></div>
+							<p>【First Name】<span>（半角英字）&nbsp;&nbsp;(例）daisuke</span></p>
+							<div><input type="text" name="first_roman" value="{$first_roman|escape}"{if $errors.roman} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1 zip">
+							<p>郵便番号<span>（半角数字）</span></p>
+							{if $errors.zip}<p class="error">※{$errors.zip}</p>{/if}
+							<div><input type="text" name="zip1" value="{$zip1|escape}"{if $errors.zip} class="error"{/if} maxlength="3" ><span class="txt">　ー　</span><input type="text" name="zip2" value="{$zip2|escape}"{if $errors.zip} class="error"{/if} maxlength="4" ></div>
+						</div>
+						<div class="wrap1">
+							<p>都道府県</p>
+							{if $errors.address1}<p class="error">{$errors.address1}</p>{/if}
+							<div>
+								<div class="selectType1{if $errors.address1} error{/if}">
+									<select name="address1" class="select" >
+										<option value="">選択する</option>
+										<option value="北海道"{if $address1 == '北海道'} selected="selected"{/if}>北海道</option>
+										<option value="青森県"{if $address1 == '青森県'} selected="selected"{/if}>青森県</option>
+										<option value="岩手県"{if $address1 == '岩手県'} selected="selected"{/if}>岩手県</option>
+										<option value="宮城県"{if $address1 == '宮城県'} selected="selected"{/if}>宮城県</option>
+										<option value="秋田県"{if $address1 == '秋田県'} selected="selected"{/if}>秋田県</option>
+										<option value="山形県"{if $address1 == '山形県'} selected="selected"{/if}>山形県</option>
+										<option value="福島県"{if $address1 == '福島県'} selected="selected"{/if}>福島県</option>
+										<option value="茨城県"{if $address1 == '茨城県'} selected="selected"{/if}>茨城県</option>
+										<option value="栃木県"{if $address1 == '栃木県'} selected="selected"{/if}>栃木県</option>
+										<option value="群馬県"{if $address1 == '群馬県'} selected="selected"{/if}>群馬県</option>
+										<option value="埼玉県"{if $address1 == '埼玉県'} selected="selected"{/if}>埼玉県</option>
+										<option value="千葉県"{if $address1 == '千葉県'} selected="selected"{/if}>千葉県</option>
+										<option value="東京都"{if $address1 == '東京都'} selected="selected"{/if}>東京都</option>
+										<option value="神奈川県"{if $address1 == '神奈川県'} selected="selected"{/if}>神奈川県</option>
+										<option value="新潟県"{if $address1 == '新潟県'} selected="selected"{/if}>新潟県</option>
+										<option value="富山県"{if $address1 == '富山県'} selected="selected"{/if}>富山県</option>
+										<option value="石川県"{if $address1 == '石川県'} selected="selected"{/if}>石川県</option>
+										<option value="福井県"{if $address1 == '福井県'} selected="selected"{/if}>福井県</option>
+										<option value="山梨県"{if $address1 == '山梨県'} selected="selected"{/if}>山梨県</option>
+										<option value="長野県"{if $address1 == '長野県'} selected="selected"{/if}>長野県</option>
+										<option value="岐阜県"{if $address1 == '岐阜県'} selected="selected"{/if}>岐阜県</option>
+										<option value="静岡県"{if $address1 == '静岡県'} selected="selected"{/if}>静岡県</option>
+										<option value="愛知県"{if $address1 == '愛知県'} selected="selected"{/if}>愛知県</option>
+										<option value="三重県"{if $address1 == '三重県'} selected="selected"{/if}>三重県</option>
+										<option value="滋賀県"{if $address1 == '滋賀県'} selected="selected"{/if}>滋賀県</option>
+										<option value="京都府"{if $address1 == '京都府'} selected="selected"{/if}>京都府</option>
+										<option value="大阪府"{if $address1 == '大阪府'} selected="selected"{/if}>大阪府</option>
+										<option value="兵庫県"{if $address1 == '兵庫県'} selected="selected"{/if}>兵庫県</option>
+										<option value="奈良県"{if $address1 == '奈良県'} selected="selected"{/if}>奈良県</option>
+										<option value="和歌山県"{if $address1 == '和歌山県'} selected="selected"{/if}>和歌山県</option>
+										<option value="鳥取県"{if $address1 == '鳥取県'} selected="selected"{/if}>鳥取県</option>
+										<option value="島根県"{if $address1 == '島根県'} selected="selected"{/if}>島根県</option>
+										<option value="岡山県"{if $address1 == '岡山県'} selected="selected"{/if}>岡山県</option>
+										<option value="広島県"{if $address1 == '広島県'} selected="selected"{/if}>広島県</option>
+										<option value="山口県"{if $address1 == '山口県'} selected="selected"{/if}>山口県</option>
+										<option value="徳島県"{if $address1 == '徳島県'} selected="selected"{/if}>徳島県</option>
+										<option value="香川県"{if $address1 == '香川県'} selected="selected"{/if}>香川県</option>
+										<option value="愛媛県"{if $address1 == '愛媛県'} selected="selected"{/if}>愛媛県</option>
+										<option value="高知県"{if $address1 == '高知県'} selected="selected"{/if}>高知県</option>
+										<option value="福岡県"{if $address1 == '福岡県'} selected="selected"{/if}>福岡県</option>
+										<option value="佐賀県"{if $address1 == '佐賀県'} selected="selected"{/if}>佐賀県</option>
+										<option value="長崎県"{if $address1 == '長崎県'} selected="selected"{/if}>長崎県</option>
+										<option value="熊本県"{if $address1 == '熊本県'} selected="selected"{/if}>熊本県</option>
+										<option value="大分県"{if $address1 == '大分県'} selected="selected"{/if}>大分県</option>
+										<option value="宮崎県"{if $address1 == '宮崎県'} selected="selected"{/if}>宮崎県</option>
+										<option value="鹿児島県"{if $address1 == '鹿児島県'} selected="selected"{/if}>鹿児島県</option>
+										<option value="沖縄県"{if $address1 == '沖縄県'} selected="selected"{/if}>沖縄県</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="wrap1">
+							<p>ご住所</p>
+							{if $errors.address2}<p class="error">{$errors.address2}</p>{/if}
+							<div><input type="text" name="address2" value="{$address2|escape}"{if $errors.address2} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>アパート・マンション名,号室<span>建物名・部屋番号まで正確にご入力下さい。</span></p>
+							{if $errors.address3}<p class="error">{$errors.address3}</p>{/if}
+							<div><input type="text" name="address3" value="{$address3|escape}"{if $errors.address3} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>電話番号<span>（半角数字）</span></p>
+							{if $errors.tel}<p class="error">※{$errors.tel}</p>{/if}
+							<div><input type="text" name="tel" value="{$tel|escape}"{if $errors.tel} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>メールアドレス<span>（半角英字）</span></p>
+							{if $errors.mail}<p class="error">※{$errors.mail|escape}</p>{/if}
+							<div><input type="text" name="mail" value="{$mail|escape}"{if $errors.mail} class="error"{/if} ></div>
+						</div>
+						<div class="wrap1">
+							<p>確認用メールアドレス<span>（半角英字）</span></p>
+							<div><input type="text" name="confirm" value="{$confirm|escape}" ></div>
+						</div>
+						<div class="wrap2">
+							<p>性別</p>
+							<div>
+								{if $errors.sex}<p class="error">※{$errors.sex}</p>{/if}
+								<div class="checkType1"><input type="radio" name="sex" value="男性"{if $sex == '男性'} checked="checked"{/if} id="man" /><label for="man">男性</label></div>
+								<div class="checkType1"><input type="radio" name="sex" value="女性"{if $sex == '女性'} checked="checked"{/if} id="woman" /><label for="woman">女性</label></div>
+							</div>
+						</div>
+						<div class="wrap3">
+							<p>生年月日</p>
+							{if $errors.birth}<p class="error">{$errors.birth}</p>{/if}
+							<div class="wrap">
+								<div class="year">
+									<div class="selectType1{if $errors.birth} error{/if}">
+										<select name="birth_year" class="select">
+											<option value="">選択する</option>
+											{foreach name=year from=$yearList item=year}
+												<option value="{$year}"{if $birth_year == $year} selected="selected"{/if}>{$year}</option>
+											{/foreach}
+										</select>
+									</div><span>年</span>
+								</div>
+								<div class="md">
+									<div>
+										<div class="selectType1{if $errors.birth} error{/if}">
+											<select name="birth_month" class="select">
+												<option value="">選択する</option>
+												<option value="1"{if $birth_month == '1'} selected="selected"{/if}>1</option>
+												<option value="2"{if $birth_month == '2'} selected="selected"{/if}>2</option>
+												<option value="3"{if $birth_month == '3'} selected="selected"{/if}>3</option>
+												<option value="4"{if $birth_month == '4'} selected="selected"{/if}>4</option>
+												<option value="5"{if $birth_month == '5'} selected="selected"{/if}>5</option>
+												<option value="6"{if $birth_month == '6'} selected="selected"{/if}>6</option>
+												<option value="7"{if $birth_month == '7'} selected="selected"{/if}>7</option>
+												<option value="8"{if $birth_month == '8'} selected="selected"{/if}>8</option>
+												<option value="9"{if $birth_month == '9'} selected="selected"{/if}>9</option>
+												<option value="10"{if $birth_month == '10'} selected="selected"{/if}>10</option>
+												<option value="11"{if $birth_month == '11'} selected="selected"{/if}>11</option>
+												<option value="12"{if $birth_month == '12'} selected="selected"{/if}>12</option>
+											</select>
+										</div><span>月</span>
+									</div>
+									<div>
+										<div class="selectType1{if $errors.birth} error{/if}">
+											<select name="birth_day" class="select{if $errors.birth} error{/if}">
+												<option value="">選択する</option>
+												<option value="1"{if $birth_day == '1'} selected="selected"{/if}>1</option>
+												<option value="2"{if $birth_day == '2'} selected="selected"{/if}>2</option>
+												<option value="3"{if $birth_day == '3'} selected="selected"{/if}>3</option>
+												<option value="4"{if $birth_day == '4'} selected="selected"{/if}>4</option>
+												<option value="5"{if $birth_day == '5'} selected="selected"{/if}>5</option>
+												<option value="6"{if $birth_day == '6'} selected="selected"{/if}>6</option>
+												<option value="7"{if $birth_day == '7'} selected="selected"{/if}>7</option>
+												<option value="8"{if $birth_day == '8'} selected="selected"{/if}>8</option>
+												<option value="9"{if $birth_day == '9'} selected="selected"{/if}>9</option>
+												<option value="10"{if $birth_day == '10'} selected="selected"{/if}>10</option>
+												<option value="11"{if $birth_day == '11'} selected="selected"{/if}>11</option>
+												<option value="12"{if $birth_day == '12'} selected="selected"{/if}>12</option>
+												<option value="13"{if $birth_day == '13'} selected="selected"{/if}>13</option>
+												<option value="14"{if $birth_day == '14'} selected="selected"{/if}>14</option>
+												<option value="15"{if $birth_day == '15'} selected="selected"{/if}>15</option>
+												<option value="16"{if $birth_day == '16'} selected="selected"{/if}>16</option>
+												<option value="17"{if $birth_day == '17'} selected="selected"{/if}>17</option>
+												<option value="18"{if $birth_day == '18'} selected="selected"{/if}>18</option>
+												<option value="19"{if $birth_day == '19'} selected="selected"{/if}>19</option>
+												<option value="20"{if $birth_day == '20'} selected="selected"{/if}>20</option>
+												<option value="21"{if $birth_day == '21'} selected="selected"{/if}>21</option>
+												<option value="22"{if $birth_day == '22'} selected="selected"{/if}>22</option>
+												<option value="23"{if $birth_day == '23'} selected="selected"{/if}>23</option>
+												<option value="24"{if $birth_day == '24'} selected="selected"{/if}>24</option>
+												<option value="25"{if $birth_day == '25'} selected="selected"{/if}>25</option>
+												<option value="26"{if $birth_day == '26'} selected="selected"{/if}>26</option>
+												<option value="27"{if $birth_day == '27'} selected="selected"{/if}>27</option>
+												<option value="28"{if $birth_day == '28'} selected="selected"{/if}>28</option>
+												<option value="29"{if $birth_day == '29'} selected="selected"{/if}>29</option>
+												<option value="30"{if $birth_day == '30'} selected="selected"{/if}>30</option>
+												<option value="31"{if $birth_day == '31'} selected="selected"{/if}>31</option>
+											</select>
+										</div><span>日</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wrap1">
+							<p>パスワード<span>半角英数字8ケタでご入力ください。&nbsp;&nbsp;例：9999aaaa</span></p>
+							{if $errors.password}<p class="error">※{$errors.password|escape}</p>{/if}
+							<div><input type="password" name="password" value="{$password|escape}"{if $errors.password} class="error"{/if} maxlength="8" ></div>
+						</div>
+						<div class="wrap2 pay">
+							<p>支払い方法</p>
+							{if $errors.payment}<p class="error">※{$errors.payment}</p>{/if}
+							<div>
+								<div class="checkType1"><input type="radio" name="payment" value="カード決済（ペイジェント）"{if $payment == 'カード決済（ペイジェント）'} checked="checked"{/if} id="pay1" /><label for="pay1">クレジットカード</label></div>
+								<div class="checkType1"><input type="radio" name="payment" value="コンビニ決済" {if $payment == 'コンビニ決済'} checked="checked"{/if} id="pay2" /><label for="pay2">コンビニ</label></div>
+							</div>
+							<p class="text pay1">以下のクレジットカードがご利用頂けます。<br>【VISA・MasterCard・Diners Club International・American Express・JCB】</p>
+							<p class="text pay2">別途、決済手数料250円がかかります。</p>
+						</div>
+						<!--<div class="wrap1">
+							<p>カード番号を入力</p>
+							<div><input type="text" name="" value="" ></div>
+						</div>
+						<div class="wrap1 code">
+							<p>セキュリティコード</p>
+							<div><input type="text" name="" value="" ><a href="#">> セキュリティコードとは？</a></div>
+						</div>-->
+						<div class="policy">
+							<p><a href="/mori/policy/">個人情報保護方針</a>および<a href="/mori/promise/">利用規約</a></p>
+							{if $errors.check}<p class="error">※{$errors.check}</p>{/if}
+							<input type="hidden" value="" name="check">
+							<div class="checkType1"><input type="checkbox" name="check" value="1" id="agree"{if $check == '1'} checked="checked"{/if}><label for="agree">同意する</label></div>
+						</div>
+						<div class="btnType1"><a href="javascript:void(0)" onclick="document.entryForm.submit(); return false;"><span>確認</span></a></div>
+						<input type="hidden" name="action" value="confirm" />
+						<input type="hidden" name="total" value="{$total}" />
+						<input type="hidden" name="carriageTotal" value="{$carriage}" />
+					</form>
+				</div>
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+<script src="/mori/js/entry.js"></script>
+</body>
+</html>

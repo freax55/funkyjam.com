@@ -1,0 +1,38 @@
+#policy .inner .lead {
+  margin-bottom: 5.08475%;
+}
+#policy .inner > ul {
+  margin-bottom: 5.08475%;
+}
+#policy .inner > ul > li {
+  margin-top: 5.08475%;
+}
+#policy .inner > ul > li:first-child {
+  margin-top: 0;
+}
+#policy .inner > ul > li > p:first-child {
+  font-weight: bold;
+}
+#policy .inner > ul > li .wrap {
+  margin-top: 5.08475%;
+  font-size: 1.2rem;
+}
+#policy .inner a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 900px) {
+  #policy .inner .lead {
+    margin-bottom: 30px;
+  }
+  #policy .inner > ul {
+    margin-bottom: 30px;
+  }
+  #policy .inner > ul > li {
+    margin-top: 30px;
+  }
+  #policy .inner > ul > li .wrap {
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+}

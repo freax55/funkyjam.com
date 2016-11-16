@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第155回 「親子」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2013/06/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2013/06/28 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第155回 「親子」</p>
+		</div>
+		<div class="texts">
+			<div class="text">ワタル自身は以前から、浅田美代子ちゃんや天海祐希ちゃんや仲間由紀恵ちゃんの大ファンであるコトを公言し、浅田美代子ちゃんとは映画「佐賀のがばいばあちゃん」の舞台挨拶に行って接近遭遇したし、天海祐希ちゃんと仲間由紀恵ちゃんは久保田のバックステージでココロの準備もないまま不意打ち対面、思わずムーンウォークで7メートル後ずさりしたとゆー誇らしい実績がある。<br /><br /><br /><br />しか～し！<br /><br /><br /><br />最近さらに大好きになってしまったのが、ローラちゃんだ。<br /><br />残念ながらTVでしか見たコトないけど、どんな番組に出演しているローラちゃんでも、オレには彼女の欠点が見あたらない。<br /><br />カワイーしスタイル抜群だし、愉快なのに料理の手際も見事だし、ダメな要素が皆無なのだ。<br /><br />バングラデシュ人の父親と、日本とロシアのハーフの母親の遺伝子が、奇跡的複雑的に融合してローラちゃんが誕生したに違いない。<br /><br /><br /><br />しか～し！<br /><br /><br /><br />ここまで書いた時に、ローラちゃんの父親が国際指名手配されたとゆー報道があった。<br /><br />本来、親の罪が子供に及ぶことはないんだけど、天真爛漫な言動で人気のローラちゃんにとって、父親の指名手配は大ダメージだ。<br /><br />ネット上にはローラちゃんを罵倒する一般ピーポーの書き込みがあふれている反面、芸能界ではローラちゃん擁護発言も多い。<br /><br />この辺り、ズバッっと言えない大人の事情もあるのだが、もしもオレの父親が犯罪を起こしたら、可能な限り、オレは被害者に平身低頭謝罪する。「親の罪が子供に及ぶことはない」って書いたけど、親子の心情として、オレも一緒に謝らずにはいられないのだ。<br /><br />ローラちゃんの父親は愚か者と言い捨て、ワタル自身はローラちゃんの未来をココロから案じている。<br /><br />家族の関係は、家族の数だけ千差万別。他人には理想的と思われる親子も、多かれ少なかれ必ず親子の対立は存在する。<br /><br /><br /><br />そんな中、ワタル自身の身近な親子で一番不思議なのが、BBC会報の表紙イラストでお馴染みの、茂本ヒデキチ画伯と娘の親子だ。<br /><br />画伯は熱烈な芸能人ウォッチャーで、「ももいろクローバーＺ」も「新生モー娘。」もアレヤコレヤも、最初に教えてくれたのは画伯で、彼女達のライブに愛娘と2人で行くほど仲良し親子なのだ。<br /><br />さらに画伯は、マニアックな映画やマンガなどサブカルチャーにもアンテナを張り巡らせていて、画伯にアレヤコレヤ教えてもらわなかったら、今回のワタル人生はすこぶる貧弱になっていたと思うと同時に、熱烈感謝が絶えないのである。<br /><br />最近の画伯は、月刊誌「ローリングストーン日本版」で久保田と共に誌面に登場したり、朝の情報TV番組でライブペイントのパフォーマンスを披露したりと意気軒昂で、東京では7年振りとなる個展「黒が動く」を7月12日から渋谷パルコで開催する。<br /><br />画伯の個展は未体験とゆー方も、複数の大作を同時に描き上げるライブペイントも行われるので、ゼヒとも足を運んで感動してもらいたい。<br /><br />画伯は芸術家にありがちな、偏屈とか孤高とか汚濁猥雑狡猾乱暴などとは無縁の人物で、若かりし頃は超ユーメーなＪ事務所のオーディションに応募し写真審査に合格したとゆー、芸術家らしからぬ華麗な経歴を保持している。<br /><br />ちなみに、画伯の愛娘もローラ級モデリッシュなのだが、某美大で彫刻を学んでいて、なぜかオジーサンの顔ばかり制作し、それを卵のパックに入れて展示したりしている。<br /><br />彼女は幼い頃から絵画の才があり、フツーの少女が描くよーなカワイ～系の絵ではなく、稚拙ながらも物や人物をちゃんとスケッチし、ブサイクなオバサンは正しくブサイクに仕上げていた。<br /><br />その絵を見た時、ワタル自身は才能の遺伝を確信し、彼女は画伯を超える大物になるやも知れぬ…と思い、今まさに彼女の「オジーサン彫刻卵パック詰め合わせ」に確信を深めているのだ。<br /><br />そして同時に、ワタル自身の遺伝子を受け継ぐ不幸なガキがいないコトを、しみじみと螺旋の配剤に感謝しつつ、画伯親子が身近にいることを嬉しく思うのである。<br /><br /><br /><br />※茂本ヒデキチ個展「黒が動く」<br /><br />7月12日～24日<br /><br />渋谷パルコpart1 Ｂ1 ロゴスギャラリー<br /><br />ライブペイント=13,20日　14時予定<br /><br />[詳細]http://hidekichi.com<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

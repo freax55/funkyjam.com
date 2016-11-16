@@ -1,0 +1,326 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #333;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+header {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  background-color: #AAA;
+}
+header h1 {
+  float: left;
+  width: 31.09375%;
+  margin-left: 3.28125%;
+}
+header .snsWrap {
+  overflow: hidden;
+  *zoom: 1;
+  float: right;
+  width: 32.8125%;
+  max-width: 210px;
+}
+header .snsWrap > div {
+  float: left;
+  width: 33.33%;
+}
+
+#contents {
+  background-color: #fff;
+}
+
+.wrapType1 .title {
+  padding: 3.75% 0;
+  background-color: #2F8A5B;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapType1 .inner {
+  width: 92.1875%;
+  margin: 0 auto;
+  padding: 12.5% 0 18.75%;
+  font-size: 1.4rem;
+}
+
+footer {
+  padding-bottom: 4.6875%;
+  background-color: #fff;
+}
+footer .check {
+  padding: 1.5625% 0;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+footer .snsWrap {
+  border-bottom: 1px solid #999999;
+}
+footer .snsWrap p {
+  padding: 7.8125% 0;
+  border-top: 1px solid #999999;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+footer .snsWrap p:first-child {
+  border-top: none;
+}
+footer .snsWrap .facebook {
+  background-image: url(/mori_teaser/images/common/icon_facebook.gif);
+  background-position: 3.59375% center;
+  background-repeat: no-repeat;
+  background-size: 7.03125% auto;
+}
+footer .snsWrap .facebook a {
+  color: #3A5998;
+}
+footer .snsWrap .twitter {
+  background-image: url(/mori_teaser/images/common/icon_twitter.gif);
+  background-position: 3.4375% center;
+  background-repeat: no-repeat;
+  background-size: 7.34375% auto;
+}
+footer .snsWrap .twitter a {
+  color: #55ACEE;
+}
+footer .contact {
+  padding: 11.25% 0 28.125%;
+  background-image: url(/mori_teaser/images/common/bg_footer_sp.gif);
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+footer .contact p {
+  margin-bottom: 4.6875%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+footer .contact .btn {
+  max-width: 640px;
+  margin: 0 auto;
+}
+footer .contact .btn a {
+  display: block;
+  padding: 3.125% 0;
+  background-color: #491F19;
+  color: #FFC;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+footer .contact .btn a:hover {
+  text-decoration: none;
+  background-color: #331612;
+}
+footer .btnPagetop a {
+  display: block;
+  padding: 6.25% 0;
+  background-color: #999;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+}
+footer .btnPagetop a img {
+  width: 3.90625%;
+  max-width: 25px;
+  margin-right: 2.34375%;
+  vertical-align: 8%;
+}
+footer .btnPagetop a:hover {
+  text-decoration: none;
+  background-color: #6B6B6B;
+}
+footer .copyrightWrap {
+  display: table;
+  width: 93.75%;
+  margin: 0 auto;
+  padding-top: 3.125%;
+}
+footer .copyrightWrap .icon {
+  display: table-cell;
+  width: 10.33333%;
+  max-width: 62px;
+}
+footer .copyrightWrap .copyright {
+  display: table-cell;
+  color: #999;
+  font-size: 1.2rem;
+  text-align: right;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url(/mori_teaser/images/common/bg1.gif);
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+
+  #page {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .wrapType1 {
+    border-right: 4px solid #2F8A5B;
+    border-left: 4px solid #2F8A5B;
+  }
+  .wrapType1 .title {
+    padding: 24px 0;
+    font-size: 4rem;
+  }
+  .wrapType1 .inner {
+    padding: 80px 0 120px;
+    font-size: 1.6rem;
+  }
+
+  footer {
+    padding-bottom: 30px;
+    border-right: 4px solid #2F8A5B;
+    border-left: 4px solid #2F8A5B;
+  }
+  footer .inner {
+    padding-bottom: 234px;
+    background-image: url(/mori_teaser/images/common/bg_footer_pc.gif);
+  }
+  footer .check {
+    padding: 10px 0;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    font-size: 2.8rem;
+  }
+  footer .snsWrap {
+    border-bottom: 2px solid #999999;
+  }
+  footer .snsWrap p {
+    padding: 50px 0;
+    border-top: 2px solid #999999;
+    font-size: 3rem;
+  }
+  footer .snsWrap .facebook {
+    background-position: 149px center;
+    background-size: 45px auto;
+  }
+  footer .snsWrap .twitter {
+    background-position: 148px center;
+    background-size: 47px auto;
+  }
+  footer .contact {
+    padding: 72px 0 180px;
+    background-image: url(/mori_teaser/images/common/bg_footer_pc.gif);
+  }
+  footer .contact p {
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+  }
+  footer .contact .btn a {
+    font-size: 2.8rem;
+  }
+  footer .btnPagetop a {
+    padding: 40px 0;
+    font-size: 3.2rem;
+    text-decoration: none;
+  }
+  footer .btnPagetop a img {
+    margin-right: 15px;
+  }
+  footer .wrap {
+    padding-top: 20px;
+  }
+  footer .wrap .copyright {
+    font-size: 1.4rem;
+  }
+}

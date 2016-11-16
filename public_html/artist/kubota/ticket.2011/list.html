@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>FJ SHOP - Funky Jam　ファンキー・ジャム</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/artist/kubota/ticket/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/artist/kubota/ticket/css/list.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div id="logo"><a href="/artist/kubota/ticket/">FJSHOP</a></div>
+				<div id="logoFJ"><a href="http://www.funkyjam.com/">Funky Jam</a></div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--グローバルナビここから-->
+			<div id="gnavi">
+				<ul>
+					<li id="gnavi01"><a href="/artist/kubota/ticket/#anchorAttention">ご注意</a></li>
+					<li id="gnavi02"><a href="/artist/kubota/ticket/#anchorPayment">お支払について</a></li>
+					<li id="gnavi03"><a href="/artist/kubota/ticket/#anchorShipping">送料について</a></li>
+					<li id="gnavi04"><a href="/artist/kubota/ticket/#anchorContact">チケットについてのお問い合わせ</a></li>
+					<li id="gnavi05"><a href="/artist/kubota/ticket/#anchorLaw">特定商取引法に基づく表記</a></li>
+				</ul>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--グローバルナビここまで-->
+<!--コンテンツここから-->
+			<div id="contents">
+				<div id="attention">
+					<p class="title">★ご注意★</p>
+					<p>購入内容のご確認メールをパソコンから配信しますので、「<strong>ticket_kubota@funkyjam.com</strong>」からのメールを受信できるように設定してからお申込み下さい。<br />
+					お申込み後に設定の変更をされても<strong>確認メールは届きません</strong>のでご注意下さい。</p>
+					<p class="price">【チケット代金】<strong>1枚7,500円</strong>(税込) 【送料】1公演につき<strong>400円</strong>(税込)<br />
+					【購入条件】1公演につき<strong>4枚</strong>までのお申込みが出来ます。<br />
+					アリーナ公演は<strong>アリーナ席</strong>か<strong>スタンド席</strong>かをお選び下さい。<br />
+					複数公演のお申込みが可能ですが、<strong>お申込みは1公演ごと</strong>となります。</p>
+				</div>
+				<div id="items">
+				{foreach name=monthList from=$monthList item=month}
+					{if $month|array_key_exists:$list}
+					<a name="{$month.date}" id="{$month.date}"></a> 
+					<div class="itemWrapper">
+						<div class="pageLinks">
+							<dl>
+								<dt>商品一覧</dt>
+								<dd>
+									<ul>
+										{foreach name=anchorList from=$monthList item=anchor}
+										{if $anchor.date|array_key_exists:$list}
+										<li {if $smarty.foreach.anchorList.last}class="last"{/if}>▼<a href="#{$anchor.date|escape}">{$anchor.date|strtotime|date_format:'%Y年%m月'|escape}</a></li>
+										{/if}
+										{/foreach}
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<p class="category">{$month.date|strtotime|date_format:'%Y年%m月'|escape}</p>
+						{foreach name=item from=$list[$month.date] item=item}
+						
+						<div class="item">
+							<div class="image">
+								<table>
+									<tr>
+										<td>
+											{if $item.image}
+											<div><a href="{$item.image|escape}" target="_blank"><img src="{$item.image|escape}" alt="{$item.name|escape}" width="148"></a></div>
+											{else}
+											<div>no image</div>
+											{/if}
+										</td>
+									</tr>
+									<tr>
+										<td class="caption">
+											{if $item.image}
+											<div>クリックすると画像が大きくなります</div>
+											{else}
+											{/if}
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="textWrapper">
+								<div class="title">
+									<h2 class="name"><a name="{$item.item_code}" id="{$item.item_code}">{$item.name|escape}</a></h2>
+									<p class="code">（商品コード {$item.item_code|escape}）</p>
+								</div>
+								<div class="comment">
+									開場：{$item.open_time|date_format:'%H:%M'}<br />
+									開演：{$item.start_time|date_format:'%H:%M'}
+								</div>
+								<div class="quality">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<th><p class="color">色</p></th>
+											<td>{$item.color|escape|default:'-'}</td>
+										</tr>
+										<tr>
+											<th><p class="size">サイズ</p></th>
+											<td>{$item.size|escape|default:'-'}</td>
+										</tr>
+										<tr>
+											<th><p class="price">料金</p></th>
+											<td class="priceValue">{$item.price|number_format}円</td>
+										</tr>
+									</table>				
+								</div>
+								<div class="clear">&nbsp;</div>
+								<div class="cart">
+									{if $cart[$item.item_code]} 
+									<p class="added"><strong>すでにカートに入っています</strong><br />
+									（<a href="index.php?action=cart">カートを確認する</a>）</p>
+									{elseif $cart|count} 
+									<p class="added"><strong>他のチケットがカートに入っています</strong><br />
+									（<a href="index.php?action=cart">カートを確認する</a>）</p>
+									{else}
+									<form action="index.php" method="post"> 
+										<input type="hidden" name="action" value="add" />  
+										<input type="hidden" name="item_code" value="{$item.item_code}" />  
+										<input type="hidden" name="category_code" value="{$item.category_code}" />  
+										<input type="hidden" name="p_date" value="{$item.p_date|escape}" />
+										<input type="hidden" name="place_name" value="{$item.place_name|escape}" />
+										<div class="quantity">
+											お申し込み数量
+											<select name="quantity">
+												{section name=stock loop=$item.buy_limit}
+												<option value="{$smarty.section.stock.iteration}">{$smarty.section.stock.iteration}</option>
+												{/section}
+											</select>
+										</div>
+										<div class="btn"><input type="submit" value="カートにいれる" /></div>
+										<div class="clear">&nbsp;</div>
+									</form> 
+									{/if}
+								</div>
+							</div>
+							<div class="clear">&nbsp;</div>
+						</div>
+						{foreachelse}
+						<p>ただいま商品がございません。</p>
+						{/foreach}
+						<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+					</div>
+					{/if}
+				{/foreach}
+				</div>
+				<a name="anchorAttention" id="anchorAttention"></a>
+				<div class="section">
+					<h3>▼ご注意▼</h3>
+					<div class="content">
+						<!--<dl class="confirm tlfly">
+							<dt>【カレンダー及び、カレンダーとその他グッズを同時購入されるお客様へ】</dt>
+							<dd>
+							カレンダーは12月下旬の発送を予定しております。<br />またその他グッズを同時購入の場合もカレンダーと同梱発送の為、通常グッズ発送日とは異なり12月下旬の発送となります。<br />
+							また12/4（土）以降にご入金の場合、年内に発送出来ない可能性がございます。予めご了承下さい。</dd>
+						</dl>
+							<br />-->
+						<ul>
+							<li>* 購入内容のご確認メールをパソコンから配信しますので、「<strong>ticket_kubota@funkyjam.com</strong>」からのメールを受信できるように設定してからお申込み下さい。<br />
+							　お申込み後に設定の変更をされても確認メールは届きませんのでご注意下さい。</li>
+							<li>* お申込み後、お客様の事情によるキャンセル・変更・追加・返金は、いかなる場合も応じられません。</li>
+							<li>* お申込みは会員様ご本人からのみ承ります。</li>
+							<li>* お客様情報入力の際にファンクラブ登録以外の住所を入力されても、その住所へチケットをお届けすることは出来ません。</li>
+							<li>* 同一名義で同一公演を複数お申込みし、チケット申込可能枚数を超えた場合、<strong>すべてのお申込みが無効</strong>となる場合があります。</li>
+							<li>* チケットの不正売買をしたり、会員番号を譲渡するなど、注意事項に従って頂けない場合、次回から会員としての優先受付が出来なくなります。</li>
+							<li>* 譲渡・転売目的の購入はおやめ下さい。</li>
+							<li>* すべてのお問い合わせには購入内容確認メールに記載の『受付番号』が必要です。大切に保管下さい。</li>
+							<li>* 国内のみの発送となります。</li>
+						</ul>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorPayment" id="anchorPayment"></a>
+				<div class="section">
+					<h3>▼お支払について▼</h3>
+					<div class="content">
+						<p>お支払いの方法は、「BariBariCrewカードでのクレジット決済／コンビニ決済／ATM決済」 の中からお選び頂けます。<br /><br />
+						*お申込み毎に、購入内容確認メールが自動配信されます。<br />
+						　（例：2公演お申込みの場合、購入内容確認メールは2通届きます。）<strong>必ずすべてのメールをご確認下さい。</strong><br />
+						<strong>※</strong>決済手数料の詳細は「<a href="#anchorTesuryou">決済手数料について</a>」をご確認ください。
+						</p>
+						<dl>
+							<dt>●BARI BARI CREWカード決済</dt>
+							<dd>・OMC PlusのIDが必要です。お持ちでない方は、先に取得して下さい。</dd>
+							<dd>・一括払いのみのお取り扱いとなります。</dd>
+							<dd>・引落時カードの有効期限が切れている場合、決済が出来ませんので<strong>お申込みは無効</strong>となります。</dd>
+							<dd>・BARI BARI CREWカード決済につきましては、システム上、お申込み完了時点でご購入確定とさせて頂きます。ご注意下さい。</dd>
+							<dd>・購入内容確認画面を保存されることをお勧め致します。</dd>
+							
+							<dt>●コンビニ決済</dt>
+							<dd>申込み完了後に送信されます購入内容確認メール記載のURLよりお支払いに必要な[払込票番号]をメモして、選択されたコンビニエンスストアにてお支払い下さい。<br />
+							<strong>※受付番号とは異なりますのでお気を付け下さい。</strong><br />
+							<div class="lineup">
+								■お支払いただけるコンビニ<br />
+								ローソン・ファミリーマート・セイコーマート・サークルK・サンクス<br />
+								デイリーヤマザキ（ヤマザキデイリーストア・タイムリー）・ミニストップ
+							</div>
+							・コンビニエンスストアからのご入金確認後、購入完了となります。<br />
+							・支払期限内にお振込み下さい。(支払期限は購入内容確認メールに記載しております。)<br />
+							　※支払期限が切れた場合はシステムで自動的にキャンセルされ、<strong>お申込みは無効</strong>となります。<br />
+							　※複数公演お申込みの場合、<strong>支払いに必要な番号はお申込み毎に異なります</strong>。1件ずつお支払い下さい。<br />
+							　　 支払い先を間違えますと<strong>チケットはご用意出来ません</strong>。<br />
+							・振込合計金額（チケット代＋送料）の他に決済手数料※が必要です。<br />
+							　※決済手数料の詳細は「<a href="#anchorTesuryou">決済手数料について</a>」をご確認下さい。<br />
+							・専用振替用紙は送付致しておりません。<br />
+							・購入内容確認画面及び申込み完了画面を保存されることをお勧め致します。</dd>
+							
+							<!--<dt>●銀行ネット決済</dt>
+							<dd>■銀行ネットの支払可能な銀行<br />三菱東京UFJ銀行（旧ＵＦＪ）・三井住友銀行・ジャパンネットバンク銀行・イーバンク銀行</dd>-->
+							<dt>●ATM決済</dt>
+							<dd>ペイジーマークのあるATMにてお支払い頂けます。<br />
+							申込み完了後に送信されます購入内容確認メール記載の「収納機関番号」「お客様番号」「確認番号」をメモして、下記の銀行のATMへ行き、お支払い下さい。<br />
+							<div class="lineup">
+								■お支払いいただける銀行<br />
+								ゆうちょ銀行・三井住友銀行・りそな銀行・埼玉りそな銀行・千葉銀行・京葉銀行・みずほ銀行
+							</div>
+							・ATMからのご入金確認後、購入完了となります。<br />
+							・支払期限内にお振込み下さい。(支払期限は購入内容確認メールに記載しております。)<br />
+							　※支払期限が切れた場合はシステムで自動的にキャンセルされ、<strong>お申込みは無効</strong>となります。<br />
+							※複数公演お申込みの場合、<strong>支払いに必要な番号はお申込み毎に異なります</strong>。1件ずつお支払い下さい。<br />
+							　　 支払い先を間違えますと<strong>チケットはご用意出来ません</strong>。<br />
+							・振込合計金額（チケット代＋送料）の他に決済手数料※が必要です。<br />
+							　※決済手数料の詳細は「<a href="#anchorTesuryou">決済手数料について</a>」をご確認下さい。<br />
+							・購入内容確認画面及び申込み完了画面を保存されることをお勧め致します。</dd>
+						</dl>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorShipping" id="anchorShipping"></a>
+				<div class="section">
+					<h3>▼送料について▼</h3>
+					<div class="content">
+						<p><strong>●1公演につき400円(税込)です。</strong><br />
+						・チケットは貴重品の為、ヤマト運輸セキュリティーパッケージにてファンクラブ登録住所へお送りします。<br />
+						・郵便局や、ヤマト運輸などの<strong>転送サービスはご利用出来ません</strong>。<br />
+						・住所変更が間に合わず返送された場合など、お客様都合による再送は着払いとさせて頂きます。ご了承下さい。</p>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorTesuryou" id="anchorTesuryou"></a>
+				<div class="section">
+					<h3>▼決済手数料について▼</h3>
+					<div class="content">
+						<p><strong>●一律300円（税込）です。</strong><br />
+						・コンビニ決済、ATM決済につきましては、お申込み1件につき上記決済手数料がかかります。ご了承下さい。</p>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorContact" id="anchorContact"></a>
+				<div class="section">
+					<h3>▼チケットについてのお問い合わせ▼</h3>
+					<div class="content">
+						<p>チケットに関するお問合わせは、ファンキー・ジャム内 バリバリクルーへお願い致します。 </p>
+						<p>TEL：03-3470-7709（平日15:00～18:00以外はインフォメーションテープ）</p>
+						<p>e-mail：<a href="mailto:ticket@funkyjam.com">ticket@funkyjam.com</a></p>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorLaw" id="anchorLaw"></a>
+				<div class="section" id="law">
+					<h3>▼特定商取引に基づく表記▼</h3>
+					<div class="content">
+						<dl>
+							<dt>■会社名</dt>
+							<dd>株式会社ファンキー・ジャム<br />
+								東京都港区西麻布1丁目14番2号疋田ビル302号<br />
+								バリバリクルー<br />
+								TEL：03-3470-7709（平日15:00～18:00以外はインフォメーションテープ）<br />
+								e-mail：ticket@funkyjam.com
+							</dd>
+							<dt>■販売価格</dt>
+							<dd>商品毎に表示しています。<br />
+								付帯費用：消費税5%<br />
+								発送梱包料については、<a href="#anchorShipping">送料について</a>をご参照ください。
+							</dd>
+							<dt>■注文方法</dt>
+							<dd>インターネット</dd>
+							<dt>■支払方法</dt>
+							<dd><a href="#anchorPayment">お支払について</a>をご参照ください。</dd>
+							<dt>■商品配送</dt>
+							<dd>チケットのお届けは、お申込み公演の約2週間前です。<br />チケット発送状況は、BBCインフォメーション、オフィシャルHPにて随時お知らせ致します。</dd>
+							<dt>■返品について</dt>
+							<dd>お申し込み完了後の商品の交換/返品/は、弊社の責に帰す場合を除き原則的に受け付けておりませんのでご了承下さい。</dd>
+							<dt>■お問い合わせ</dt>
+							<dd><a href="#anchorContact">チケットについてのお問い合わせ</a>をご参照ください。</dd>
+						</dl>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+</div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div id="copyright">(C)FUNKYJAM</div>
+			</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

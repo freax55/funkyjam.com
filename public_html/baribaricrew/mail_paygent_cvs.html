@@ -1,0 +1,79 @@
+この度は、年会費お支払いのお申込み頂きまして有り難うございます。
+
+お支払い方法は「コンビニ決済」となります。
+{$convenience_stores[$convenience_store_no].detail}
+
+{$payment_limit_date}までにお支払いください。
+
+{foreach from=$convenience_store_item item=v key=k}
+{$k}:{$v}
+{/foreach}
+
+{if $receipt_print_url}お支払いに関する情報
+{$receipt_print_url}
+{/if}
+本メールは購入予約のご確認メールとなります。
+お振込みをこちらで確認でき次第、{if $flg == "input"}ご入会{/if}{if $flg == "edit"}継続{/if}の手続きが完了となります。
+
+
+＜お支払い方法＞
+コンビニ決済
+
+
+受付番号：{$orderDesc.order_desc_no}
+
+*******************************
+{if $flg == "input"}
+入会金：500円
+年会費：5,000円
+手数料:250円
+合計：5,750円
+{/if}
+{if $flg == "edit"}
+年会費：5,000円
+手数料:250円
+合計：5,250円
+{/if}
+*******************************
+
+
+{if $flg == "input"}
+〈新規入会の方〉
+ご入金いただいた月が入会月となります。
+新規特典と会員証を入会月の翌月中旬までに発送いたします。
+
+支払期限を過ぎてしまった場合、再度お申込みからお手続きください。
+※ログインのパスワードは変更する場合がございます。ログイン出来ない場合はバリバリクルーまでお問い合わせください。
+{/if}
+{if $flg == "edit"}
+!!!支払期限を過ぎてしまった場合!!!
+【会員有効期限内の方】再度お申込みからお手続きください。
+【会員有効期限を過ぎてしまった方】一度バリバリクルーまでご連絡ください。
+{/if}
+
+
+* *　お問合わせ先　* * *
+ファンキー・ジャム内 バリバリクルーへお願い致します。
+TEL：03-3470-7709（平日15：00〜18：00）
+e-mail：artist_kubota@funkyjam.com
+※このメールは送信専用です。
+返信いただいてもお答えすることは出来ませんのでご了承ください。
+
+
+＜お客様情報＞
+{if $flg == "edit"}
+会員番号:{$no|escape}
+{/if}
+姓:{$last_name|escape}
+名:{$first_name|escape}
+セイ:{$last_name_kana|escape}
+メイ:{$first_name_kana|escape}
+郵便番号:{$zip1|escape}-{$zip2|escape}
+ご住所:{$address1|escape}{$address2|escape}{$address3|escape}
+電話番号（自宅）:{$tel_home|escape}
+電話番号（携帯）:{$tel_ketai|escape}
+メールアドレス:{$mail|escape}
+{if $flg == "input"}
+性別:{$sex|escape}
+生年月日:西暦{$birth1|escape}年{$birth2|escape}月{$birth3|escape}日
+{/if}

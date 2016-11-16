@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="9"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/blog/index.php?path=index">Staff Blog（スタッフブログ）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;浦嶋 りんこ</div>
+						<div class="section">
+{assign var="blog_id" value="9"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/11/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/11/07 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">よ～く見ると!!!</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg">
+			</div>
+{/if}
+			<p class="text">先日、事務所にフラリと現れたりんさん。<br />折角来たからと、スケジュールの話等、真面目に話し合った後、<br />りんさん「と言う事で、私は帰りますが‥何か気づいた事はないですか？」<br />スタッフ「え～っ、懸念事項は解決しましたし‥?」<br />りんさん「よ～く私を見て!!!」<br />スタッフ「???」<br />りんさん「マジで!!!」<br />スタッフ「あ～～～～～～～～!!!たこ焼き!!!」<br />既に本人のFacebookでも、このTシャツの写真は公開されてますが、ここだけ話をすると実は購入後に少しアレンジしたそうです!!!で、本来1回来たらそれでOKと思っていたそうですが、思いの外気に入ったらしく、気づいたらリピートしているそうです（笑）<br><br />そんな“たこ焼きTシャツ”を着たりんさんにカメラを向けると、全くたこ焼きには不釣り合いな（笑）バッチリポーズをしてくれました。<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/10/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/10/03 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">森の音楽会＠大阪にて</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg">
+			</div>
+{/if}
+			<p class="text">現在Dreams Come Trueさんのライブ“ウラワン”に出演中のりんさん!!!<br />先日、ドリカムさんの大阪公演が事務所の後輩の森大輔の大阪公演と大変近いタイミングで開催されるという事で、数日早めに大阪に入って見に来ました!!!<br />ライブではノリノリで盛り上がってくれていましたが、その姿をよくよく見たら‥<br />スタッフが資料用にと録画しているビデオカメラの目の前でノリまくるりんさん‥(;^_^A　<br />後日カメラをチェックしてみると、案の定、何曲かは見事な赤髪が森の音楽にのって上下に揺れておりました（苦笑）<br />写真は、スケジュールの確認を真面目にしているりんさん!!!<br />この日に、前もって入って森のライブを見に行く事を決めたのでした!!!!</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/09/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/09/05 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">浦嶋先生!?</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2863.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2863.jpg">
+			</div>
+{/if}
+			<p class="text">これまた以前のお話になりますが、日本工学院という学校の講師をさせていただく機会がありました。既に本人のツイッターやFacebookにても、写真と共に掲載したのでご存知の方もいらっしゃるかもしれませんが、その際のお話を少し。<br />この日は、この学校のオープンキャンパスの日で、これからアーティストになりたい!!!と希望に満ちた若人達がどの学校にしようか？と学校見学をして今後の身の振り方を考える大事な日!!!<br />そんな中、浦嶋はヴォーカル科に入学を希望している人や在校生に、昔の自分の体験等を話したのですが、皆一生懸命、その話に耳を傾ける姿や情熱に懐かしさやら、若さへの羨ましさやらを感じた1日でした。また、この日に実際に体験して貰ったゴルフボールでの喉ストレッチは、ここにいた未来のアーティスト達のライブの前のルーティンになるかも‥ですね!!!（笑）<br /><br />写真は、控え室に浦嶋先生と書かれて照れる浦嶋＆講師として別の先生と生徒さん達との交流、それとこの会に来ていた生徒さんと少しだけセッションした時をパチリ!!!<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/08/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/08/08 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">「天使にラブ・ソングを」♪</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2844.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2844.jpg">
+			</div>
+{/if}
+			<p class="text">少し前の話になりますが、浦嶋出演のミュージカル「天使にラブ・ソングを」の東京公演最終日に、同じ事務所の久保田さんが観にきてくれました。<br />終演後、浦嶋の楽屋に来て舞台の感想を言った後、ステージ上での浦嶋の発声について興味があったらしく詳しく聞いては試してみる久保田さん!!中々ない二人のやりとりに、ついつい見とれて写真が撮れなかったと言うのは言い訳‥ですねm(_ _)m<br /><br />という事で、写真は舞台後に浦嶋の楽屋にてくつろぐ二人の写真と浦嶋ツイッターより拝借したバッチリ2ショット写真!!<br /><br />※ちなみに、この「天使にラブ・ソングを」は8月7日に一旦仙台で幕を閉じましたが、2017年1月7日より福岡公演を皮切りに、浜松、長野公演を開催予定です!!!今年見逃した人は、来年お楽しみに!!!<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/01/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2016/01/15 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">明けましておめでとうございます！</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2735.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2735.jpg">
+			</div>
+{/if}
+			<p class="text">本年も、浦嶋りんこの応援宜しくお願い致します!!!!<br />先日、事務所の初詣に出席したりんさん!!!<br />神社にて祈願を受けた後、<br />おみくじを引く久保田や森を優しく見守り<br />　　　↓<br />事務所アーティスト＆スタッフでお昼ご飯!!!<br />　　　↓<br />アーティスト3名で、ワイワイと写真撮影会<br />となった全場面を激写!!!<br /><br />中々、3人で集まる事がないので、集まると賑やか f^_^; で<br />事務所に戻ってからは、写真の通り大盛り上がりでした!!!<br /><br />今年も、りんさんは色々と新しい挑戦もしたいとか…。<br />どのような展開があるかは…乞うご期待!!!!</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/12/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/12/19 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">フックブックロー忘年会</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2501.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2501.jpg">
+			</div>
+{/if}
+			<p class="text">先日、フックブックローの忘年会に出席して来ました!!!<br /> <br />この忘年会、実は、毎年傑作君としおりちゃんが、フックブックローのお馴染みの楽曲で素敵な替歌をご披露して、会場を笑いの渦に包んでくれます!!!!<br /> <br />今年も、そんな替歌や、キャストやスタッフの方々のお話で笑いが絶えない会合でした。<br />もちろんりんさんも、例に漏れずスピーチの際は、やってくれましたよぉ～♪<br />写真は、その際に逃さず撮影!!!<br /> <br />それと、ちょっぴりいい気分になっている服部先生との2ショット（の予定だった）に、すかさず入って来てくれた傑作君と!!!!（笑）<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/11/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/11/05 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">iPad!!!</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2462.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2462.jpg">
+			</div>
+{/if}
+			<p class="text">先日のフックブックロー収録スタジオにて…最近は、iPadを巧みに使いこなすりんさんを激写!!!<br />以前迄は、これって…？これは～…？と質問攻めにされていたような…。<br />最近では、私の方が、教わる事があったりして…（苦笑）<br />これで、ツイッターやダイアリーの写真を、撮ってはサクサクあげております!!!!はい!!!<br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/10/06 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">嵐の代々木で</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2431.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2431.jpg">
+			</div>
+{/if}
+			<p class="text">最近、すっかりご無沙汰だったりんさん!!!<br />何故なら…そう!!!皆様も既に、ご存知の通り、Dreams Come Trueさんのtourに出演させて頂いております!!!<br />スタッフも、10月5日の嵐の日に、拝見させて頂くべくお邪魔したのですが、同じく、今年の頭に浦嶋が出演させて頂いた傑作ミュージカル“フル・モンティ”の大演出家福田雄一さんも、観にいらっしゃってました!!!<br />終演後、久しぶりの２人は、話に花が咲き!!!!止まらない…（笑）<br />そんな中、折角だから!!!と2ショット写真をパシャリ!!!<br />既に、福田さん＆浦嶋のツイッター上では掲載されてますが、それとは別写真をあえて!!!!!（笑）<br />またいつか、福田さんの他作品でも、演じる浦嶋を観たい!!!!!と、心より願うスタッフでした。<br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/08/26 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">NHKでご飯♪</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2383.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2383.jpg">
+			</div>
+{/if}
+			<p class="text">先日、フックブックローの収録後、ちょうどお昼タイムだったので、NHKの社員食堂にてランチを頂きました♪<br /> <br />この収録時のりんさんのスケジュールと言えば、「シスターアクト」で色んな地域での公演に出演→東京に戻ればドリカムさんのRHにと、休みなく動き続けていたので、中々ちゃんとご飯を食べれていなかったようでした。<br /> <br />そのせいか、いつになくウキウキしながら、何を食べようかショーケース内を物色するも、「魚が食べたい!!!」と瞬時に選ばれ、す～っごく美味しそうに食べてました♪<br /> <br /> <br />写真は、きちんとお仕事中!!!!のりんさんと、焼きサバとの2ショットに満面の笑み（笑）のりんさんを激写!!!<br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/08/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}			
+			2014/08/07 UPDATE</div>
+
+
+
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+
+
+			<p class="tit">久しぶりの来社で!!!</p>
+		</div>
+		<div class="texts">
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2349.jpg"|file_exists}
+			<div class="fltLeft">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2349.jpg">
+			</div>
+{/if}
+			<p class="text">「Sister Act」も、無事、大盛況の内に幕を閉じたりんさん!!!!<br />現在は、ドリカムさんのリハーサル真っ最中ですが、ちょっとした用があり、久しぶりの来社!!!<br /><br />いつもなら、ついついあれやこれやと話し込んで、気がつけばあっと言う間に数時間が過ぎ去っているのですが、今日は用が終わると、バタバタと次の現場へ向かわれました!!!!<br /> <br />「Sister Act」では、歌いまくり＆踊りまくり!!だったりんさん、そう言えば少しスリムになられたような!!!!　でも、パワフルさは変わらず!!!<br />だったので、ドリカムさんライブでも、きっとパワフルに歌いまくり＆踊りまくるりんさんを、是非チェキラ!!!!!!<br /> <br />写真は、しばらくこない間に、社内のスタッフが結婚!!!　と言う事で、御祝いの言葉をかけていたりんさんをパシャリ!!!<br /> <br /></p>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/11/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/11/post-61.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						よ～く見ると!!!
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2931.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/10/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/10/post-60.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						森の音楽会＠大阪にて
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2894.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2863.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/09/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/09/post-59.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						浦嶋先生!?
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2863.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2863.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2844.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/08/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/08/post-58.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						「天使にラブ・ソングを」♪
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2844.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2844.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2735.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2016/01/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2016/01/post-56.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						明けましておめでとうございます！
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2735.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2735.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2501.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/12/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2014/12/post-54.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						フックブックロー忘年会
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2501.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2501.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2462.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/11/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2014/11/ipad.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						iPad!!!
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2462.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2462.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2431.jpg"|file_exists}
+		<li class="plusImg clearfix">
+			<div class="info">
+{else}
+		<li class="noImg">
+{/if}
+				<div class="date">
+{assign var="date" value="2014/10/06"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+{assign var=link value='<a href="http://m.funkyjam.com/premium/artist/blog/urashima/2014/10/post-53.html">'}
+{$link|replace:"m.funkyjam":"www.funkyjam"}
+
+
+						嵐の代々木で
+
+					</a>
+				</p>
+{if "/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2431.jpg"|file_exists}
+			</div>
+			<div class="thum">
+				<img src="/premium/image.php?path=/home/funkyjam/public_html/mb/premium/artist/blog/urashima/images/2431.jpg&width=60&height=60">
+			</div>
+{/if}
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+{assign var=list value='<li><span class="current_page">1</span></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/urashima/../../../../../premium/artist/blog/urashima/index_2.html" class="link_page">2</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/urashima/../../../../../premium/artist/blog/urashima/index_3.html" class="link_page">3</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/urashima/../../../../../premium/artist/blog/urashima/index_4.html" class="link_page">4</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/urashima/../../../../../premium/artist/blog/urashima/index_5.html" class="link_page">5</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/urashima/../../../../../premium/artist/blog/urashima/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><a href="http://m.funkyjam.com/premium/artist/blog/urashima/../../../../../premium/artist/blog/urashima/index_7.html" class="link_page">7</a></li>'}
+{$list|replace:"m.funkyjam":"www.funkyjam"}
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

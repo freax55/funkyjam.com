@@ -1,0 +1,23 @@
+#contents .titleType1 {
+  margin-bottom: 60px;
+}
+#contents .text {
+  width: 840px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 3rem;
+}
+#contents .text li {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+@media screen and (max-width: 899px) {
+  #contents .titleType1 {
+    margin-bottom: 30px;
+  }
+  #contents .text {
+    width: 93.33333%;
+    font-size: 1.4rem;
+  }
+}

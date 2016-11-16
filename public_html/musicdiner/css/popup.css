@@ -1,0 +1,253 @@
+@charset "shift_jis";
+
+body {
+	background-color:#FFFFFF;
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#333333;
+	margin:0;
+}
+a {
+	text-decoration:underline;
+	color:#0000FF;
+}
+a:hover {
+	text-decoration:none;
+}
+h1{
+	font-size:240%;
+}
+h1 span{
+	color:#FF0000;
+}
+#page {
+    padding-bottom: 30px;
+    background-image: url(/image/popup_common/bg_wrap.jpg);
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+#container {
+	background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 80px;
+}
+#containerInner {
+	width:858px;
+	margin:0 auto;
+}
+
+/* header start */
+#header {
+	width:100%;
+}
+#header #logo {
+	float:left;
+	width:101px;
+	height:80px;
+	background-image: url(/image/popup_common/logo.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+#header #hnavi {
+	float:right;
+	width:539px;
+}
+#header #btnClose a {
+	display:block;
+	width:84px;
+	height:27px;
+	margin:27px 6px 0 auto;
+	background-image:url(../image/btn_close.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+/* header end */
+
+/* contents start */
+#contents {
+	padding-top: 40px;
+	text-align:center;
+}
+#contents #lead {
+	padding-bottom:24px;
+	text-align:left;
+}
+#contents .section {
+	padding-bottom:25px;
+}
+#contents {
+	width:100%;
+}
+#contents ul{
+	width: 600px;
+	padding-top: 16px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 150%;
+	font-weight: bold;
+}
+#contents ul li.l1{
+	float: left;
+}
+#contents ul li.l2{
+	float: right;
+}
+#contents .detail {
+	width:100%;
+	padding:160px 0 20px;
+	margin-top: 20px;
+	text-align:center;
+}
+#contents .detail#d2{
+	background-color: #6E60AA;
+}
+#contents .detail h2 {
+	padding-bottom: 16px;
+	font-size: 210%;
+	color:#FFF;
+}
+#contents .detail h2 strong{
+	font-size: 150%;
+}
+#contents .detail#d2 h2 {
+	/*color:#000;*/
+}
+#contents .detail .sub {
+	padding-bottom: 10px;
+	font-size: 150%;
+	font-weight: bold;
+	color: #fff;
+}
+#contents .detail#d2 .sub {
+	/*color: #000;*/
+}
+#contents .detail .txt {
+	width: 680px;
+	margin: 0 auto 16px;
+	text-align: left;
+}
+#contents .detail .txt div{
+	clear:both;
+	padding-bottom: 12px;
+}
+#contents .detail .txt .left{
+	float:left
+}
+#contents .detail .txt strong{
+	font-size:134%;
+}
+#contents .detail#d2 .txt {
+	/*color:#000;*/
+}
+#contents .detail .txt span{
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 117%;
+}
+#contents .detail .attn {
+	text-align: left;
+}
+#contents .detail#d2 .attn {
+	/*color:#000;*/
+}
+#contents .detail .tbl2 {
+	width:720px;
+	margin:0 auto;
+	background-color:#FFF;
+	border:1px solid #8A7C6C;
+	font-size: 117%;
+	font-weight: bold;
+}
+#contents .detail .sum {
+	width:720px;
+	margin:0 auto;
+	padding:5px 0 20px 0;
+	text-align: left;
+}
+#contents .detail .tbl2 th{
+	padding: 10px;
+	background-color:#FF0000;
+	border:1px solid #8A7C6C;
+	color:#fff;
+	white-space: nowrap;
+}
+#contents .detail .tbl2 td{
+	padding: 10px;
+	border:1px solid #8A7C6C;
+	text-align: left;
+	white-space: nowrap;
+}
+#contents .detail .tbl1 {
+	width:800px;
+	margin:0 auto;
+	background-color:#FFF;
+	border:1px solid #8A7C6C;
+	text-align:center;
+}
+#contents .detail .tbl1 th {
+	background-color:#E1DED5;
+	border-right:1px solid #8A7C6C;
+	border-bottom:1px solid #8A7C6C;
+	padding:8px 12px;
+	
+}
+#contents .detail .tbl1 td {
+	border-right:1px solid #8A7C6C;
+	border-bottom:1px dotted #8A7C6C;
+	padding:8px 12px;
+}
+#contents .detail .tbl1 td.place {
+	text-align:left;
+}
+
+#contents .attn {
+	width:680px;
+	margin: 0 auto;
+	text-align: left;
+}
+#contents .mobile {
+	padding-bottom:11px;
+}
+/* contents end */
+
+/* footer start */
+#footer {
+	width:800px;
+	height:16px;
+	margin:0 auto;
+	padding:8px 0 0 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: #000000;
+}
+#footer .inner {
+}
+
+#footer #copyright {
+	width:74px;
+	height:7px;
+	margin:0 20px 0 auto;
+	background-image: url(/image/common/copyright.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+/* contents end */

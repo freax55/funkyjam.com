@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第240回 「呑輩スミスとの会話＜1＞」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/02/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/02/12 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第240回 「呑輩スミスとの会話＜1＞」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> <font color="#FFFFFF">S:いやぁ～、やっぱワタルさんと呑むとテンション上がるなぁ～^o^これからキャバクラにでも行っちゃいますかッ!?</font><br /><br /><br /><font color="#FF9900">W:そーしたいトコロだけど、今夜はカイチューフニョイなんだな…。</font><br /><br /><br /><font color="#FFFFFF">S:はぁ？ カイチューフニョイ？ ナンすかソレ？</font><br /><br /><br /><font color="#FF9900">W:オメェ、カイチューフニョイって分からねぇの？</font><br /><br /><br /><font color="#FFFFFF">S:はじめて聞きました。</font><br /><br /><br /><font color="#FF9900">W:カイチューは分かるべ？</font><br /><br /><br /><font color="#FFFFFF">S:ゴジラ！</font><br /><br /><br /><font color="#FF9900">W:それは怪獣！ カイチューだよ、カイチュー！ 懐中時計の懐中だよ！</font><br /><br /><br /><font color="#FFFFFF">S:ああ、懐かしい時計ね。金の鎖とか付いたまーるい時計でしょ？</font><br /><br /><br /><font color="#FF9900">W:あのさぁ、もしかしてオメェは懐中時計の懐中を「懐かしい」って意味だと思ってたの？</font><br /><br /><br /><font color="#FFFFFF">S:懐中って、懐かしい中でしょ？ ナンか違うんすか？</font><br /><br /><br /><font color="#FF9900">W:バカ野郎！ 確かに懐中は懐かしい中って書くけど、懐はフトコロだよ！ で、フトコロの中に入れる時計だから懐中時計！ 懐中電灯と同じだよ！</font><br /><br /><br /><font color="#FFFFFF">S:へー、はじめて知った！</font><br /><br /><br /><font color="#FF9900">W:冬に使うカイロは知ってんべ？</font><br /><br /><br /><font color="#FFFFFF">S:ホッカイロ…とか？</font><br /><br /><br /><font color="#FF9900">W:そうそう。カイロはフトコロの中の暖炉で、懐炉=カイロよ！</font><br /><br /><br /><font color="#FFFFFF">S:そーだったんすね！</font><br /><br /><br /><font color="#FF9900">W:あれ？ なんでカイロの話になったんだっけ？</font><br /><br /><br /><font color="#FFFFFF">S:カイチューフニョイからですよ！</font><br /><br /><br /><font color="#FF9900">W:そうそうそーだった^o^孫悟空は知ってんべ？</font><br /><br /><br /><font color="#FFFFFF">S:ナンすか突然!?</font><br /><br /><br /><font color="#FF9900">W:西遊記の孫悟空、知ってんべ!?</font><br /><br /><br /><font color="#FFFFFF">S:孫悟空くらい知ってますよ。雲ん乗って飛んで来るサルでしょ？</font><br /><br /><br /><font color="#FF9900">W:雑な言い方だけど、まあ正解。その孫悟空が持ってる棒あるべ？</font><br /><br /><br /><font color="#FFFFFF">S:ありましたね～！ 長くなったり短くなったりする棒、ありましたね～！</font><br /><br /><br /><font color="#FF9900">W:そうそう。その棒の名前はナニよ？</font><br /><br /><br /><font color="#FFFFFF">S:名前？ 名前なんてありましたっけ？</font><br /><br /><br /><font color="#FF9900">W:ニョイボーだよ、ニョイ棒！</font><br /><br /><br /><font color="#FFFFFF">S:そーだ、思い出した、ニョイ棒だ！</font><br /><br /><br /><font color="#FF9900">W:そーよ。あの棒は孫悟空の意のままに変化するから、「意の如くの棒」で、如意(ニョイ)棒なんだよ。</font><br /><br /><br /><font color="#FFFFFF">S:へー、そーなんだ！ でも、どーしてワタルさんは、そんなコト知ってんすか？</font><br /><br /><br /><font color="#FF9900">W:いつの間にか知ってんだよ！</font><br /><br /><br /><font color="#FFFFFF">S:はあ…孫悟空の棒は如意棒…。</font><br /><br /><br /><font color="#FF9900">W:てコトで、フニョイは…？</font><br /><br /><br /><font color="#FFFFFF">S:藤村俊二さん！</font><br /><br /><br /><font color="#FF9900">W:わっはっはっ！ バカ野郎！ 思わず笑っちゃったじゃねぇかっ！</font><br /><br /><br /><font color="#FFFFFF">S:ありがとうございます^o^</font><br /><br /><br /><font color="#FF9900">W:ありがとうじゃねぇよ！ 藤村さんはフニョイじゃなくて、オヒョイ^o^見事なボケだけど、今のヤングピーポーは藤村俊二さんのアダ名が「オヒョイ」だなんて知らねーよ！</font><br /><br /><br /><font color="#FFFFFF">S:藤村俊二さんのアダ名が、なんでオヒョイになったか知ってます？</font><br /><br /><br /><font color="#FF9900">W:知らねぇよ！</font><br /><br /><br /><font color="#FFFFFF">S:藤村さん、いつも仕事の現場からヒョイといなくなっちゃうから、オヒョイになったんですよ。</font><br /><br /><br /><font color="#FF9900">W:へー…って、オヒョイじゃなくて、フニョイだよ！</font><br /><br /><br /><font color="#FFFFFF">S:フニョイですねぇ～！</font><br /><br /><br /><font color="#FF9900">W:それは所ジョージさんの「スゴイですね～」^o^あのねぇ、フニョイは不如意って書くの。如意棒の反対で、意のままにならない=自由にならない=不自由…って意味なんだよ。</font><br /><br /><br /><font color="#FFFFFF">S:なるほど。てことは、懐中不如意は…フトコロの中が不自由…どーゆーコトっすか？</font><br /><br /><br /><font color="#FF9900">W:まだ分からねぇの？ オメェは、しみじみとバカ野郎だな！</font><br /><br /><br /><font color="#FFFFFF">S:しみじみとバカって、ナンかイイっすね^o^</font><br /><br /><br /><font color="#FF9900">W:あのね、昔の男は、着物のフトコロにサイフを入れてたの。だから、「今日はフトコロが暖かい」なんてゆーと、サイフが暖かい=オカネがあるって意味になるんだよ。聞いたコトねぇの？</font><br /><br /><br /><font color="#FFFFFF">S:オレの友達で「フトコロが暖かい」なんてゆーヤツいないっすよ。サイフはみんな、ケツのポケットにチェーン付けて入れてますよ！</font><br /><br /><br /><font color="#FF9900">W:まったくオメェはズバ抜けたバカだな！</font><br /><br /><br /><font color="#FFFFFF">S:いやぁ～、ズバ抜けたバカもイイっすね^o^</font><br /><br /><br /><font color="#FF9900">W:あのね、懐中不如意は、フトコロのサイフが思うよーにならない=オカネがないって意味なの。</font><br /><br /><br /><font color="#FFFFFF">S:なーんだ、そーならそーと「カネがないからキャバクラに行けない」って、ハッキリ言えばイイじゃないっすか！ それをカイチューフニョイだとか…^o^</font><br /><br /><br /><font color="#FF9900">W:オメェは本当にブスイなヤツだなぁ…！</font><br /><br /><br /><font color="#FFFFFF">S:また出た！ ブスイってナンすか？</font><br /><br /><br /><font color="#FF9900">W:マジかよ!?  オメェ、ブスイも知らねぇの!?</font><br /><br /><br /><font color="#FFFFFF">S:地下を流れてる汚い水！</font><br /><br /><br /><font color="#FF9900">W:それはゲスイ！ オレが言ってんのは下水じゃなくてブスイ！</font><br /><br /><br /><font color="#FFFFFF">S:そーかそーか、ブスイってアレでしょ、ほら、南に黄色い花とか置くと金運アップとか!?</font><br /><br /><br /><font color="#FF9900">W:それはフースイ！ 風水じゃなくてブスイだよ、ブスイ！</font><br /><br /><br /><font color="#FFFFFF">S:ナンすか？ ブスイって？</font><br /><br /><br /><font color="#FF9900">W:無粋(不粋)って書くの！ 粋じゃない=空気が読めない=失礼…みたいな意味だよ。今夜はカネがないからキャバクラに行けないってズバリゆーんじゃなくて、懐中不如意ってゆーオレの気持ちを察っしろっつーの！</font><br /><br /><br /><font color="#FFFFFF">S:分かりました！ 今夜はキャバクラ諦めました！</font><br /><br /><br /><font color="#FF9900">W:メチャクチャ無粋だなぁ！</font><br /><br /><br /><font color="#FFFFFF">S:残念だなぁ…キャバクラでワタルさんの還暦祝いをしよーと思ってたのに！</font><br /><br /><br /><font color="#FF9900">W:えっ？ そーゆーコトだったの？</font><br /><br /><br /><font color="#FFFFFF">S:いや、でも、実はオレも懐中不如意で！</font><br /><br /><br /><font color="#FF9900">W:オメェ、オレのフトコロをアテにしてたのかよ!?</font><br /><br /><br /><font color="#FFFFFF">S:まあまあ、そんな無粋なコトを言わずに、もう一杯やりましよーよ^o^</font><br /><br /><br /><font color="#FF9900">W:よーし！ つづきは来週だぁ！</font><br /><br /><br /><br /><br />〈以下次回へつづく〉<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/02/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2015/02/4_part18.html">
+
+
+						4コマまんが Part18【しかられて】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/_2_vol1.html">
+
+
+						≪モーリー 何分！？クッキング≫　第2弾 ～vol.1買出し...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/4_part16_1.html">
+
+
+						4コマまんが Part17【大そうじ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/11/4_part16.html">
+
+
+						4コマまんが Part16【忘れ物グゼ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/11/r.html">
+
+
+						悩み相談ぶった斬り！【Rさん（女性）】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/4_part15.html">
+
+
+						4コマまんが Part15【あ、ふ～～～～ん。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/post_40.html">
+
+
+						悩み相談ぶった斬り！【せっちゃんさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/4_part14.html">
+
+
+						4コマまんが Part14【無知の知】
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

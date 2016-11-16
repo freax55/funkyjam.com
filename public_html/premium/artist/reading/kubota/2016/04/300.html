@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第300回 「ネタ放出」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/04/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/04/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第300回 「ネタ放出」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 以前もやったけれど、ネタ候補の気になる言葉が滞留してしまったので、ここで一気に放出しま～す!<br /><br />●テコマイ…古今亭志ん朝の落語「片棒」に「男マゲの芸者衆のテコマイを先頭に…」とあり、テコマイが分からなかったので調べてみた。テコマイ＝手古舞とは、元々は江戸の祭礼で山車(ダシ)を警護した鳶職の男達だったが、近代は鳶職のよーな衣装で祭りを先導する女性を表している。鳶職なので、女性なのに男みたいなマゲ=男マゲを結っているのだ。でもまぁ、こんなコトを知っててもナンの役にも立たないんだけどね…;^_^A<br /><br /><br /><br />●ガンメル・ダンスク…このコーナーで何度か紹介しているアンソニー・ボーディン氏がデンマークで飲んでいた酒の名前。この初耳の酒は、29種類ものハーブやスパイスから造られたビターリキュールと分かった。デンマークには世界一と賞賛される革命的レストラン「noma」があり、そこではこの酒をアイスクリームに合わせていた。トライしてみたいィィ～!<br /><br /><br /><br />●F1…レーシングカーじゃないってコトは文脈で分かったけれど、詳しくは知らなかった。FはFemale(女性)のFで、1は20～34歳までの年齢層を表している。ちなみにF2は35～49歳、F3は50歳以上の女性なんだって。ちなみファンキー・ジャムはF1からF3まで網羅している(^_^*)<br /><br /><br /><br />●内田理央…宮沢りえちゃん以来のフンドシ姿にグラグラ来て、思わずYahooで画像検索しちゃった*＼(^o^)/*<br /><br /><br /><br />●ホーマー・シンプソン…ハチャメチャな家族を描いた米国アニメ「シンプソンズ」に登場する父親の名前。父親失格的な男だが、たまに格言みたいな発言をする。今回の注目発言は…「酒は、あらゆる問題の原因であり、答えである」…御意!<br /><br /><br /><br />●依存症…最近読んだ「快感回路」(デイヴィッド・J・リンデン著/河出書房)に驚くべき事実が書いてあった。薬物中毒になる確率が、ヘロイン35％、コカイン22％、大麻8％、酒4％。<br /><br /><br /><br />しか～し!<br /><br />ダントツに中毒になりやすいのがタバコで、ななんと、80％もの喫煙者が中毒になるんだって!　タバコは合法だから逮捕されないけど、禁煙が難しいハズだよね。<br /><br /><br /><br />●コンキスタドール…コンキスタドールって、響きがイイから使ってみたいんだけど、多分絶対使うコトはないから、ここで使っちゃう。コンキスタドール=Conquistadorは、スペイン語で「征服者」の意味。アメリカでは15～17世紀にアメリカ大陸を開拓したスペイン人&その子孫をコンキスタドールと呼んでいる。ね! 絶対に使うコトないでしょ?<br /><br /><br /><br />●2045…2045年に人工知能が人間の知能を上回ると言われている。この問題をテーマに東京の中学3年生がパソコンで制作した映画「2045」は、とても中学生とは思えないクオリティで本当に驚いた! こーゆー10代に日本の未来を託したい。<br /><br /><br /><br />●プマプンク遺跡…ペルーとボリビアの国境をまたぐ4000m近い高地にあるチチカカ湖の東南に、見事に加工されたH型の巨石が並ぶプマプンク遺跡がある。遺跡はギザのピラミッドよりも1万年以上古く、氷河期の終わり=後期石器時代に造られたと言われている。にわかには信じられないが、とにかく自分の目で見てみた～いッ! <br /><br /><br /><br />●若山牧水(わかやま・ぼくすい)…上野で少し時間が空いたので無料の書道展を観た。そしたら若山牧水の歌を書いた作品が多く、気になって調べてみた。牧水は1885年に宮城県に生まれた歌人で、1928年に静岡県で亡くなっている。プロフィールを読んでワタル自身が気になった理由が分かった。牧水は旅と酒が大好きで、43歳の生涯に詠んだ7000首の内の200首が酒の歌なのだ。「人の世に　たのしみ多し　然れども　酒なしにして　なにのたのしみ」…素晴らしい!<br /><br /><br /><br />●臥龍鳳雛…ガリュウホウスウと読む。寝ている龍と鳳凰の雛(ヒナ)のよーに、今はまだ世の中に出ていないが、素晴らしい力&才能を持っている人のコト。いつか使ってみたい4文字である。<br /><br /><br /><br />●マジカル・ガール…今年日本で公開されたスペイン映画。この数年間で1番意表を突かれたラスト20分。必ず「えっ!? そーゆーコトなの!?」となるので、機会があれば是非観てちょーだいm(_ _)m<br /><br /><br /><br />●長嶋茂雄…ミスターの楽しいエピソードは無数にあるが、最近知って笑い崩れたのは、股間にデッドボールをくらいそーになった長嶋さんの迷言。<br /><br />「危なかったですよ。ギョクですよギョク。当たっていたらギョクが粉々ですよ」…ギョクって寿司屋の玉子じゃないんだから…ワッハッハッハッ!<br /><br /><br /><br />●グアナコ…南米の高地にいるアルパカやリャマみたいな偶蹄哺乳類。なんでメモったかとゆーと、発情期のオスがメスを奪い合う時、なななんと、お互いのギョクに噛みつくのである。負けたオスは出血多量で死ぬコトもある! グアナコに生まれなくて良かったぁぁぁ!<br /><br /><br /><br />●スカルペッタ…イタリア語で「小さな靴」の意味だが、料理では、ちぎったパンで皿のソースをぬぐうコト。「いやぁ～、あまりにシェフの料理が美味しくて、スカルペッタしちゃいましたよ」などと言ってみたいよーな言ーたくないよーな(^_^*)<br /><br /><br /><br />●人狼(ジンロウ)…渋谷に「人狼カフェ」ってのがオープンして、「真昼間から人狼!」などと書いてある。『こりゃ絶対にヤバイ系の店に違いない』と思ったんだけど、健全に大ブームだなんてマッタク知らなかった。詳しく説明すると長くなるから超簡単に「人狼」を説明すると、数人でトークしながら人のフリをした人狼を探し当てる推理ゲーム。サラリーマンとかに大人気らしいが、なんかダークサイドなイメージがあるんだよな(≧∇≦）<br /><br /><br /><br />●SHAKE SHACK(シェイク・シャック)…外苑のイチョウ並木を流星号していたら女性の行列。ナンだと思ったらニューヨークのファストフード店「シェイク・シャック」の日本1号店だった。ファストフードに並ぶって本末転倒だと思うんだけど、渋谷のTACO BELL(タコ・ベル)もいまだに行列だからな…;^_^A<br /><br /><br /><br />今回は以上、またネタが溜まったら放出しま～すp(^_^)q<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

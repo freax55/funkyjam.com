@@ -1,0 +1,52 @@
+@charset "shift_jis";
+
+body {
+    background-image: url("/image/popup_common/bg.jpg");
+    background-position: left top;
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-size: 75%;
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+#contents .entryWrapper {
+    background-color: #333333;
+    background-image: url("/image/popup_common/bg_grid.gif");
+    background-position: left top;
+    background-repeat: repeat;
+    margin-bottom: 20px;
+    padding: 10px 20px 0;
+}
+#contents .pageTitle {
+	font-size:16px;
+	line-height:1.5;
+	height:auto;
+	text-indent:0;
+	padding-bottom:10px;
+	margin-bottom:30px;
+	border-bottom:1px solid #333;
+	text-align:center;
+}
+#contents .pageTitle strong {
+	color:#F00;
+}
+
+#contents .section {
+	line-height:2;
+}
+
+#contents .section a {
+	color:#FFCC00;
+}
+#contents .section .image {
+	float: left;
+	padding:0 20px 20px 0;
+}
+#contents .section p {
+	padding-bottom:20px;
+}
+
+#contents .section .qr {
+	text-align: center;
+}

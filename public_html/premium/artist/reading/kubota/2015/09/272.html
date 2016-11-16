@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第272回 「長編・実録ミステリー」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/09/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/09/25 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第272回 「長編・実録ミステリー」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 【発端】<br /><br />病院などのカーテンやブラインドをメンテナンスする会社フリーダムの現場責任者=カノンが、そのメールに気づいたのは9月18日の早朝だった。<br /><br />発信人は契約社員のブラウンで、午前1時に着信していた。<br /><br />メールの文面はこうだ。<br /><br />「親を殴ってしまいました。自分が許せないので18日の仕事は休みます」<br /><br />意味が分からず、カノンはもう一度読み直した。<br /><br />親を殴った事で自己嫌悪になる気持ちは分からなくもないが、それで仕事を休むのはオカド違いだ。<br /><br />ブラウンは軽度のアスペルガー症候群※で、中学生の頃からイジメのターゲットにされ、高校入学直後から引きこもりになってしまった。<br /><br />けれど、周囲の人々に支えられ、単純作業ならば一般人と変わらぬばかりか、時には一般人以上に才能を発揮するようになった。<br /><br />まさに子供のように無邪気で、打たれ弱いブラウンが、親を殴るなんて…カノンはにわかに信じられず、すぐに電話をかけた。<br /><br />詳しい状況を訊くカノンに対し、ブラウンは苦しそうな声で「今日は仕事に行けません」と繰り返すばかり。<br /><br />これ以上問いただすのは逆効果だと思い、翌日の出勤を約束させてから、カノンは電話を切った。<br /><br />カノンは腑に落ちないまま、18日のシフトを組み直し、ブラウンの欠勤に対処した。<br /><br />これで、この問題は終わるはずだった。<br /><br /><br /><br />【深まる謎】<br /><br />翌19日の現場に現れたブラウンは、首や腕に湿布を貼り、左腕が痛い痛いと言いながら、つらそうに仕事を始めた。<br /><br />親を殴ったんじゃなくて、親に殴られたのか!?<br /><br />それでもなんとか仕事を終えたブラウンは、痛々しい表情満載で「左腕が使い物にならないので明日の仕事を休ませて下さい」と言ったのだ。<br /><br />一体何が、ブラウンの身に起きたのか!?<br /><br />翌20日は給料日で、フリーダムは未だに現金を1人1人に手渡ししている。<br /><br />仕事には出られないが給料は受け取りに来るというブラウンを、いさめる権利は誰にもない。<br /><br />そして20日、ブラウンの欠勤で負担の大きくなったスタッフが、疲れ果てて帰社すると、ほどなくしてブラウンが現れた。<br /><br />その時も首と腕に湿布をし、今にも死にそうな風体で「左腕が使い物にならなくて申し訳ありません」と頭を下げる。<br /><br />リーダーのナッシュが、やや強い口調で「何があったんだ？」と訊いた。<br /><br />するとブラウンは、想いもしなかった返事をしたのだ。<br /><br />「仕事中にバランスを崩して脚立から落ちてしまいました」<br /><br />「どこの現場だ？」<br /><br />「えーと…えーと…御茶ノ水の純金堂大学病院です…」<br /><br />「御茶ノ水の純金堂は16日の現場だぞ。17日の現場では、普通に仕事してたじゃないか。本当に純金堂で落ちたのか?」<br /><br />「はは、はい…」<br /><br />「どうしてすぐに報告しないんだ？」<br /><br />「も…申し訳ありません…」<br /><br />ここで、最初にメールを受け取ったカノンが、たまらず訊いた。<br /><br />「親を殴ったんじゃないの!?」<br /><br />「おお親は殴っていません」<br /><br />「……!?」<br /><br />一体何が、ブラウンの身に起きたのか!?<br /><br /><br /><br />【証言】<br /><br />●19日の現場が一緒だったウォルトの証言<br /><br />痛い痛いと言っていましたが、私が見ていないと普通に仕事してました。医者に行ったと言っていましたが、あの湿布は市販品だし、ケガなんてしていないと思います。<br /><br />●現場主任のカノンの証言<br /><br />17日に脚立から落ちてケガをしたのも怪しいですね。翌18日は一緒に仕事しましたが、いつもと変わらぬ動きでした。左腕が使い物にならないような打撲なら、あんなに動けませんよ。<br /><br />●2月に脚立から落ちて肋骨を折ったルイスの証言<br /><br />ボクの場合はカーテンを取りつける時に、バランスを崩して脚立から落ちてしまいました。すぐに現場主任に報告し、医者へ行きました。左の肋骨が折れて全治3ヶ月という診断結果でした。でも、4、5日休んで仕事に復帰しました。ブラウンの痛がり方は、ボクより重症みたいな感じです。<br /><br />●16日と17日の現場が一緒だったジョーの証言<br /><br />16日は近くで仕事していましたが、脚立から落ちたなんて全然気づかなかったです。それより記憶にあるのは、密閉容器にギュウギュウに詰めた白飯に、フリカケを山ほどかけて食べてたことです。いつもは一緒に現場近くのコンビニや食事処なんかで昼食をとるんですが、16・17日は2日とも白飯ギュウギュウ弁当を持参していました。フリカケだけでオカズはありません。水を飲んで無理矢理食べてた感じです。<br /><br />●ブラウンをよく知るワタルの証言。<br /><br />ギュウギュウ白飯フリカケ弁当は、オレも見たことあります。ここだけの話、あんなの普通の人間は食べられませんよ。あまりにも白飯がギュウギュウで、突き刺した割り箸が折れてましたからね。<br /><br />●カノンの証言。<br /><br />ブラウンは、カネがなくなると白飯だけの弁当を持ってくるんです。給料日直後は値段も見ずに高いコンビニ弁当を買ったり、パチンコに1日12万円も使ったりして、金銭管理が全然ないんです。16日から白飯弁当なら、給料日前でカネがなくなったんだと思いますね。<br /><br />●ウォルトの証言<br /><br />カネがなくなると母親に借りるって言ってました。10日頃にも1万円借りたって言ってました。19日の昼は、一緒にスパゲティを食べたんですよ。私は170円プラスで大盛にしたんですが、ブラウンは悩んで悩んで悩んで普通盛にしてましたから、またカネがないんだと思いました。<br /><br /><br /><br />【推理】<br /><br />給料日前でカネがなくなったブラウンは、ギュウギュウ白飯フリカケ弁当で昼をしのいでいたが、ついに現場までの交通費さえ底をつき、17日の夜、親にカネを無心した。<br /><br />しかし親は、30歳を過ぎても金銭管理が出来ない息子を叱責、カネを渡さなかった。<br /><br />ブラウンは激しく落胆&逆恨みし、心の中で親をボコボコに殴ってウサを晴らす。<br /><br />だが、このままでは明日の現場に行く交通費もない。<br /><br />必死に考えた結果が、冒頭に紹介したメールである。<br /><br />「親を殴ってしまいました。自分が許せないので18日の仕事は休みます」<br /><br />そして、18日は朝から自室に引きこもっていた。<br /><br />仕事に行かないブラウンを心配した親が問い詰めると、給料日まで交通費がないから仕事に行けないと言う。<br /><br />それなら仕方がないと、親は給料日までの交通費と食事代=２千円を渡す。<br /><br />それで19日は出勤し、大盛スパゲティをなんとか我慢し、給料を取りに行く交通費を残す。<br /><br />しかし、給料を取りに行ったら、18日に休んだ言い訳をしなくてはならない。<br /><br />その時すでに、親を殴ったと書いたメールのことなど完全に忘れていたブラウンは、数ヶ月前に脚立から落ちてケガをした同僚=ルイスを思い出し、それを真似ることにした。<br /><br />「バランスを崩して脚立から落ちてしまいました」とルイスは言っていたので、それも真似ることにした。<br /><br />本当はケガなどしていないので20日は出勤出来るのだが、ルイスは数日休んだので、それも真似た。<br /><br />給料を受け取る時、リーダーのナッシュにケガをした現場を訊かれたが、そこまで考えていなかったので動揺したが、ふと浮かんだ御茶ノ水の純金堂大学病院と答えた。<br /><br />最後にカノンが「親を殴ったんじゃないの?」と言ったが、殴ってないので殴ってないと答えた。<br /><br /><br /><br />【結論】<br /><br />パチンコに1日12万円も使うのはやめましょう。<br /><br /><br /><br />※アスペルガー症候群の人は、大きく3つに分けて以下のような傾向があります。<br /><br />1-他者とのコミュニケーション能力が低い<br /><br />2-強烈な固執やこだわり<br /><br />3-変化に弱い<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

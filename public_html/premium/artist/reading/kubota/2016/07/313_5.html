@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第313回 「海外ビビったワースト5」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/07/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/07/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第313回 「海外ビビったワースト5」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 第5位「マンハッタンのパンク」<br><br />ファースト・アベニューは1人で歩いちゃダメだと言われていたのに、イーストヴィレッジあたりから迷い込んだ。<br />『人通りが少ないなぁ～』なんて思っていると突然、ビルの陰から3人のパンク野郎が飛び出して来て、オレの行く手に立って英語で怒鳴りまくるんだけど、英語が全然聞き取れないから日本人得意の曖昧アルカイックスマイルで歩きつづけていると、3人が背後に回ったので『ひゃゃゃゃ～背中から刺されるぅぅ～』と思わず振り向いたら、どーゆーワケかパンク3人は慌てて逃げてった。<br><br />今でもナニが起こったのか不明だけど、初期のニューヨークだったのでビビったビビった!<br><br /><br><br />第4位「バンコクのペガサス」<br><br />バブルの頃、悪人達の手下となってタイへ行ってた。<br><br />「今夜は楽しんでください」と、現地の親分に連れて行かれたのは、翼の生えた白馬がライトアップされている巨大なキャバクラ…とゆーかナンとゆーか…とにかくバンコクでは超有名&激高級な店。<br><br />店内に入ると国際フォーラム1階席くらいの大きなホールがあり、半円形のステージに向かって豪華なソファーが並べられ『ナンじゃこりゃ!?』となりつつ、そこを通り過ぎてファンキー・ジャムくらいある部屋に案内され、いかにも高そーなブランデーのボトルが3本&見たこともないフルーツ盛り合わせが出て、『こりゃもぉ日本に帰れないなぁぁ～』になっていると4人編成のバンドが登場して日本のヒット曲をメドレー。<br><br />悪人達は早くも上機嫌で酒をあおり、オレはバンド演奏で「夜の銀狐」を歌わされ、「そろそろ2階へ」と誘われて階段を上がると、なななんと、そこには見渡す限りの黒ドレス美女100人がスタンバイしていて、「ドーゾお好きな女性を…」などと言われて、ホントーに仕方なく「では日本語の話せる人を…」で日本語美女と酒になり、帰ろーとすると泣き出し、帰ろーとすると泣き出し、気がついたら悪人達はいなくなっていて、それから1人で逃げて帰るハメになって、マジにスゲー恐かった!<br><br /><br><br />第3位「ハジャイのドライバー」<br><br />夜行列車で未明の4時に豪雨のハジャイ(タイ南部のダークサイド都市)に到着。小柄なジーサンが近づいて来て「どこに行く?」と身振り手振り。地図を出してサトゥンとゆー港町を示すと、ジーサンの合図でボロボロの軽トラックと大男のドライバーが現れた。<br><br />まっ暗闇を言葉も通じない大男と2人、助手席の床は抜けていて地面ではねた豪雨が足を濡らし、『無事に着けるのかなぁ』とココロ細くなりはじめたら突然、大男が街灯もナンニモない山道で軽トラを止め、金属のレンチを取り出した。<br><br />『ひぇぇぇぇぇ～!』<br><br />絶対殺されるぅぅぅ～と思ったら、外に出てタイヤのボルトを締め直し、ビショビショになって戻って来た。<br><br />それから3時間、ヒトコトも話さずサトゥンに到着するも、現金の両替銀行が開店前で、さらに2時間、大男と2人…ああ絶望的に恐かったけど、結果的に大男は善人だったのだ。<br><br /><br><br />第2位「イギリスのハイウェイ」<br><br />最初の奥さんにスコットランドのインバネスで離婚を告げられ、傷心のままロンドンへ戻り、現地在住の知人にクルマを借りて1人で巨石遺跡=ストーンヘンジを観に行った。<br><br />イギリスは日本と同じ左側通行だから、ラウンドアバウトとゆー信号のない交差点さえクリアすれば運転に問題はないのだが、ロンドンからストーンヘンジまでは150kmほどあり、離婚ショックで思考も定まらず、一瞬切ない気持ちになった途端、草原を抜けるハイウェイから時速110kmで脱輪し、危うく大事故になるトコだった。日本でも脱輪は経験していなかったので、クルマを停めてブルブル震え、ついでに泣いた。<br><br /><br><br />第1位「シンガポールの吊り橋」<br><br />ファンキー・ジャムの社員旅行でシンガポールへ行った時、「ガーデン・バイ・ザ・ベイ」とゆー広大な植物園を訪れた。<br><br />そこにある人工の「スーパーツリー」をドーシテも観たくて、予想以上の大きさに感嘆してツリーとツリーの上部、地上30mに架かる橋を渡るコトになったのだが、イザ登ってみたら高所恐怖症のワタル自身はドーにもコーにも1歩も踏み出せず、ホノベ嬢に「入園料を払ってくれた大森社長にはナイショにしといて!」と懇願し、地上に降りて隠れてアイスを食べてました。大森[美人]社長、今まで黙っててゴメンなさい!</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

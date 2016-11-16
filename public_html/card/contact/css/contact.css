@@ -1,0 +1,125 @@
+@charset "shift_jis";
+
+#gnavi li#gnavi05 a {
+	background-position:left bottom;
+}
+
+
+#contents h1 {
+	height:40px;
+	background-image:url(../image/page_title.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents .wrapper {
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+#contents .wrapper .inner {
+	padding-top:35px;
+}
+#contents .wrapper span {
+	margin-right:4px;
+	color:#733020;
+}
+#contents .wrapper table {
+	margin-top:20px;
+}
+#contents .wrapper th,
+#contents .wrapper td {
+}
+#contents .wrapper th {
+	width:134px;
+	padding-bottom:20px;
+	vertical-align:top;
+}
+#contents .wrapper td {
+	padding-bottom:10px;
+	padding-left:12px;
+	text-align:left;
+	vertical-align:top;
+}
+#contents .wrapper td select {
+	margin-right:10px;
+}
+#contents .wrapper td p {
+	color:#333333;
+	font-size:85%;
+}
+#contents .wrapper td.indispensability {
+	padding-top:3px;
+	padding-left:2px;
+	color:#733020;
+}
+#contents .wrapper #address input,
+#contents .wrapper #name input,
+#contents .wrapper #company input{
+	width:300px;
+}
+#contents .wrapper #mail input,
+#contents .wrapper #mail2 input{
+	width:420px;
+}
+#contents .wrapper #tel input{
+	width:110px;
+}
+#contents .wrapper #age input{
+	width:2em;
+}
+#contents .wrapper .btn {
+	padding-top:20px;
+	padding-bottom:80px;
+	padding-left:250px;
+}
+#contents .wrapper .btn.double {
+	padding-left:180px;
+}
+#contents .wrapper .btn input {
+	width:157px;
+	height:31px;
+	border:0;
+	background-color:transparent;
+	background-image:url(../image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:118%;
+	font-weight:bold;
+	cursor:pointer;
+}
+#contents .wrapper .mainMassege {
+	font-size:120%;
+	text-align:center;
+}
+
+#contents .wrapper .mainLink {
+	padding-top:50px;
+	text-align:center;
+}
+
+#contents .wrapper td p.error{
+	color:#BB0000;
+}
+
+#contents .wrapper td textarea {
+	width:530px;
+}
+
+/* 2009/12/23 add */
+#contents .holiday {
+	width:300px;
+	margin-left:180px;
+	text-align:center;
+}
+#contents .wrapper .btn {
+	padding-bottom:0;
+}
+#contents .holiday dt {
+	font-weight:bold;
+	color:#BB0000;
+	padding-bottom:10px;
+}

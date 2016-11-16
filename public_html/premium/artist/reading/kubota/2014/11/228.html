@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第228回 「小者征伐」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/11/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/11/21 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第228回 「小者征伐」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 最近お気に入りの居酒屋in板橋のカウンターでホッピーをやっていたら、30代半ばくらいのスーツ男がカウンターに着いた。<br /><br />スーツは店長に、常連客モード丸出しの高い声で「アイツ、焼酎飲みに来た？」と言った。<br /><br />「ええ、来ましたよ。全部飲んで行きました」<br /><br />「えぇぇッ!? 全部飲んだぁ!?」<br /><br />「ほら、空ですよ」と、店長が一升瓶を振る。<br /><br />「えぇぇッ!? 飲んでイイとは言ったけど、全部飲んだら、フツーは新しいボトル入れとくでしょ!? 信じられないなぁ…」などとスーツは小者全開のグチを連発しつつ、新しい一升瓶をキープした。<br /><br />それで黙るかと思っていたら、今度はアルバイトの女子に「今日、金融庁の役人と会議でさぁ、もぉぉ～緊張したぁ!」と、金融庁役人らしき名刺を何枚も見せはじめた。<br /><br /><br /><br />しか～し!<br /><br />バイト女子は「金融庁ってナンですかぁ?」の見事なボケ返し(^o^)!<br /><br />『ワッハッハッ!』と腹の底で爆笑し、ホッピーの中=焼酎を追加すると、バイト女子にコケにされたスーツが、ワタル自身にこー言ったのだ。<br /><br />「ボクの焼酎も自由に飲んで下さいね!」<br /><br />そーかそーか、そーだったのか!<br /><br />この小者スーツは、ダレカレとなく焼酎をすすめ、本気で飲まれるとブツクサ文句の最低のチャラチャラ男だったのだ。<br /><br />焼酎を全部飲んだアイツも、チャラ小者の正体を見抜いてワザと飲み干したかも知れぬ。愛想の良い店長も「チャラ小者が飲んで下さいと言ったんだから、全部飲んじゃってイイんじゃないの?」とか言っていたやも知れぬ。<br /><br />この店で、自分が人気者だと思っているのは本人だけで、店長もバイト女子もアイツもワタルも、チャラ小者を見透かしているのだ。<br /><br />そもそも、ホッピーをやってるオレに、芋焼酎を飲んで下さいなんて、焼酎のコトを1ミリも分かっていない。<br /><br />なので、トーマワシに言ってやった。<br /><br />「申し訳ない。ワタシ、芋は苦手なんですよ」<br /><br /><br /><br />しか&#12316;し!<br /><br />チャラ小者は、想定外の返答をした。<br /><br />「芋? これ、芋焼酎…なの?」<br /><br />えっ!? えぇぇぇっ!?<br /><br />自分が飲んでる焼酎も分からないのに、それを他人にすすめるって、イッタイどーゆー神経構造してるんだよ!?<br /><br />だからキッチリ追い討ちをかけてやった。<br /><br />「ワタシは芋以外も乙類は苦手で、もっぱら甲類なんですよ」<br /><br />「ハァ? オツルイ? コールイ?」<br /><br />ワタル自身の言葉が理解不能ながら、自分の好意を断られたと思ったチャラ小者は急速に不機嫌な顔になり、二度と話しかけて来なかった。<br /><br />焼酎ウンチクは以前も書いたから簡単にゆーと、昔ながらの蒸溜方法で造られ、原材料の香や味が強く残っているのが、一般に本格焼酎と呼ばれる乙類焼酎。<br /><br />甲類焼酎は近代的設備の蒸溜方法で造られたクセのない焼酎で、サワーやホッピー等で割って飲むのが主流。飲みやすい甲類の登場でアルコール初心者もサワーなどを飲むよーになり、焼酎の消費量が飛躍的に増えたのだ。<br /><br />一般的には乙より甲が上ランクを表すが、焼酎では古式豊かで高価な本格焼酎が乙類で、最新の製法で造られた安い焼酎が甲類なのだ。<br /><br />ちなみに、ワタル自身が乙類焼酎が苦手な理由は、風味が強すぎて和の味が台無しになってしまう気がするからだ。ズブロッカやジン、アブサン、テキーラなどに日本の妙味が合わないよーに、乙類焼酎またしかり…のワタル自身なのだ。<br /><br />もちろん書くまでもないが、濃厚なツマミと相性が良い、美味しい乙類焼酎も多数ある。<br /><br />えーと、話を戻すね。<br /><br />チャラ小者が、どーゆーイキサツで酒席の基本を間違えたか知らないが、彼の身近には外道を正すマトモな大人がいなかったに違いない。<br /><br />酒席で初対面の者に話しかけるには、その一挙手一投足を見極め、真剣で斬り込むごとき気合と間合と覚悟が必要なのである…なんてコトはないけど、初対面at酒席は細心の警戒注意が不可欠なのだ。<br /><br /><br /><br />しか&#12316;し!<br /><br />ワタル自身のバイト仲間にも、やたら鈍器を振り回すよーな、大人の会話が出来ない小者がいる。<br /><br />1本150円の焼き鳥を4本食べるより、1杯600円のラーメンを食べたほーがコストパフォーマンスが良いから、自腹で焼き鳥は食べない…などと本気でノタマウ40男と、どんな会話をすればイイのだろーか?<br /><br />どーゆー人生を歩んだら、焼き鳥とラーメンを天秤にかけ、オゴッてもらう以外に焼き鳥は食べない、なんてゆー論外にセコい小者人間になれるのだろーか?<br /><br />あまりにもレベルが低くて低くて低くて、哀れに笑うっきゃない…（≧∇≦）<br /><br />今年も師走が迫り、ワタル自身の自戒も込めて、忘年会やクリスマスパーティでの飲み過ぎ&ハシャギ過ぎに注意しましょーね!<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

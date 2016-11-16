@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/normal.css" rel="stylesheet" type="text/css" media="all" />
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header.html" -->
+			<div id="section" class="remind">
+				<form action="./" method="post">
+				<div class="secInner">
+					<h2>ID再発行</h2>
+					<p class="lead">ID再発行をご利用頂くためにはID(メールアドレス)、パスワードが必要です。下欄に入力し、ログインして再発行手続きをご利用ください。</p>
+					<table border="0" cellspacing="0" cellpadding="0" class="formTbl">
+						<tr>
+							<th><img src="/premium/images/login/text_id.png" alt="ID" /></th>
+							<td>
+								<p><input type="text" name="login_id" id="login_id" value="{$login_id}" /></p>
+								{if $errors.login_id}<p class="error">※{$errors.login_id|escape}</p>{/if}
+							</td>
+						</tr>
+						<tr>
+							<th><img src="/premium/images/login/text_pass.png" alt="PASS" /></th>
+							<td>
+								<p><input type="password" name="login_pass" id="login_pass" value="{$login_pass}" maxlength="8" /></p>
+								{if $errors.login_pass}<p class="error">※{$errors.login_pass|escape}</p>{/if}
+							</td>
+						</tr>
+					</table>
+					<div class="btn btn1"><input type="submit" value="新しいIDを入力する" /></div>
+				</div>
+				<input type="hidden" name="action" value="id_remind_confirm" />
+				</form>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

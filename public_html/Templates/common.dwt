@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<!-- TemplateBeginEditable name="doctitle" --><title> - Funky Jam　ファンキー・ジャム</title><!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="../css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/print.css" rel="stylesheet" type="text/css" media="print" /><!-- TemplateEndEditable -->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="../js/IE7.js" charset="utf-8"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/jquery-1.3.2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/font_size.js" charset="utf-8"></script>
+<!-- TemplateBeginEditable name="js" --><!-- TemplateEndEditable -->
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<!-- TemplateBeginEditable name="logo" --><div id="logo"><a href="/">Funky Jam</a></div><!-- TemplateEndEditable -->
+				<div id="hnavi">
+					<div class="fontSize">
+						<p class="caption">文字サイズ</p>
+						<div class="list">
+							<ul>
+								<li id="fontLarge"><a href="javascript:void(0);">大</a></li>
+								<li id="fontMiddle"><a href="javascript:void(0);">中</a></li>
+								<li id="fontSmall" class="current"><a href="javascript:void(0);">小</a></li>
+							</ul>
+							<div class="clear">&nbsp;</div>
+						</div>
+						<div class="clear">&nbsp;</div>
+					</div>
+<!--グローバルナビここから-->
+					<div id="gnavi">
+						<ul>
+							<li id="gnavi01"><a href="/">トップ</a></li>
+							<li id="gnavi02"><a href="../artists.html">所属アーティスト</a></li>
+							<li id="gnavi03"><a href="../studio.html">レンタルスタジオ</a></li>
+							<li id="gnavi04"><a href="../company.html">会社概要</a></li>
+							<li id="gnavi05"><a href="https://www.funkyjam.com/contact/">お問い合わせ</a></li>
+						</ul>
+						<div class="clear">&nbsp;</div>
+					</div>
+<!--グローバルナビここまで-->
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+			<!-- TemplateBeginEditable name="eyecatch" -->eyecatch<!-- TemplateEndEditable -->
+<!--コンテンツここから-->
+			<div id="contents">
+				<!-- TemplateBeginEditable name="contents" -->contents<!-- TemplateEndEditable -->
+			</div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div class="inner">
+					<div id="fnavi">
+						<ul>
+							<li id="fnavi01"><a href="../privacy.html">個人情報保護方針</a></li>
+							<li id="fnavi02"><a href="../sitemap.html">サイトマップ</a></li>
+						</ul>
+						<div class="clear">&nbsp;</div>
+					</div>
+					<div id="copyright">(C)FUNKYJAM</div>
+					<div class="clear">&nbsp;</div>
+					<!-- TemplateBeginEditable name="jasrac" --><!-- TemplateEndEditable -->
+				</div>
+			</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

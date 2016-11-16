@@ -1,0 +1,79 @@
+<script src="/js/jquery.cookie.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+	function is_mobile() {
+		var useragents = [
+			'iPhone', // Apple iPhone
+			'iPod', // Apple iPod touch
+			//'iPad', // Apple iPad
+			'(Android.+Mobile)', // 1.5+ Android
+			'dream', // Pre 1.5 Android
+			'CUPCAKE', // 1.5+ Android
+			'blackberry9500', // Storm
+			'blackberry9530', // Storm
+			'blackberry9520', // Storm v2
+			'blackberry9550', // Storm v2
+			'blackberry9800', // Torch
+			'webOS', // Palm Pre Experimental
+			'incognito', // Other iPhone browser
+			'webmate' // Other iPhone browser
+		];
+		var pattern = new RegExp(useragents.join('|'), 'i');
+		return pattern.test(navigator.userAgent);
+	};
+	$(function(){
+		if (is_mobile()) {
+
+			//現在のパスを取得
+			var path = "";
+			path = '/sp'
+			path += location.pathname;
+
+			//特別対応
+			var path_set = "";
+			if(path.indexOf("/performance.html") != -1){
+				path_set = "/sp/artist/";
+				if(path.indexOf("/kubota/") != -1){
+					path_set += "kubota";
+				}else if(path.indexOf("/urashima/") != -1){
+					path_set += "urashima";
+				}
+				else if(path.indexOf("/mori/") != -1){
+					path_set += "mori";
+				}
+				else if(path.indexOf("/bes/") != -1){
+					path_set += "bes";
+				}
+				path_set += "/performance/";
+				path = path_set;
+			}
+			else if(path.indexOf("discography.html") != -1){
+				path_set = "/sp/artist/";
+				if(path.indexOf("/kubota/") != -1){
+					path_set += "kubota";
+				}else if(path.indexOf("/urashima/") != -1){
+					path_set += "urashima";
+				}
+				else if(path.indexOf("/mori/") != -1){
+					path_set += "mori";
+				}
+				else if(path.indexOf("/bes/") != -1){
+					path_set += "bes";
+				}
+				path_set += "/discography/album/";
+				path = path_set;
+			}
+
+			if($.cookie("pcview")==1){
+				//PCページの閲覧可能状態なので、SPへ戻るボタンを設置する
+				var banner = '<div id="forSP"><a href="'+path+'" target="_top"><img src="/images/btn_forsp.jpg" alt="FunkyJamスマートフォン専用サイトはこちら" /></a></div>';
+				$('header').after(banner);
+				$('#forSP a').click(function() {
+					$.cookie('pcview', 0, { path:'/' });
+				});
+			}else{
+				//SPの閲覧なので、リダイレクト
+				$(location).attr("href", path);
+			}
+		};
+	});
+</script>

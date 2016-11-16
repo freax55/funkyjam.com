@@ -1,0 +1,750 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+/*                                NEWSページ                                 　*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+
+.news a:hover .hover{
+	opacity: 0.70;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.70;
+	-ms-filter: "alpha(opacity=70)";
+	-khtml-opacity: 0.7; /* Safari 1.x */
+}
+
+
+/*
+mainエリア
+*/
+
+#mainArea #atProfile{
+	width: 980px;
+	margin: auto;
+}
+
+/*kubota*/
+.kubota #mainArea #atProfile{
+	background: url(/images/news/kubota/bg.png) no-repeat;
+	background-position: 227px 0px;
+}
+
+/*urashima*/
+.urashima #mainArea #atProfile{
+	background: url(/images/news/urashima/bg.png) no-repeat;
+	background-position: 227px 0px;
+}
+
+/*mori*/
+.mori #mainArea #atProfile{
+	background: url(/images/news/mori/bg.png) no-repeat;
+	background-position: 227px 0px;
+}
+
+/*bes*/
+.bes #mainArea #atProfile{
+	background: url(/images/news/bes/bg.png) no-repeat;
+	background-position: 227px 0px;
+}
+
+#mainArea #atProfile #mainCover #atImg{
+	vertical-align: bottom;
+	float: left;
+}
+
+#mainArea #atProfile ul li{
+	float: left;
+}
+
+#mainArea #atProfile ul li img{
+	vertical-align: bottom;
+}
+
+#mainArea #atProfile #nameImg{
+	float: left;
+	width: 610px;
+	padding: 24px 0px 0px 15px;
+}
+
+#mainArea #atProfile .thumbnail{
+	float: left;
+}
+
+#mainArea #atProfile #englishBtn{
+	float: right;
+	margin-top: -11px;
+}
+
+#mainArea #atProfile #atSns{
+	float: left;
+	margin: 67px 0px 0px 17px;
+}
+
+#mainArea #atProfile .snsR{
+	margin: 52px 0px 0px 41px;
+}
+
+#mainArea #atProfile #atNav{
+	float: right;
+}
+
+#mainArea #atProfile #atUnique{
+	float: left;
+}
+
+
+/*
+pankuzuエリア
+*/
+#pankuzuArea{
+	background: #000000;
+}
+
+#pankuzu{
+	width: 965px;
+	font-size: 84%;
+	clear: both;
+	margin: auto;
+	background: url(/images/bg.png) repeat;
+	height: 33px;
+	padding:14px 0px 0px 15px;
+}
+
+
+/*
+mainエリア
+*/
+#mainTitle{
+	height: 145px;
+	background:#000000 url(/images/news/titleBg.png) no-repeat center top;
+	text-align: center;
+	clear: both;
+}
+
+#mainTitle .day{
+	font-size: 110%;
+	padding: 30px 0px 11px;
+}
+
+#mainTitle .newsTitle{
+	font-size: 151%;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+
+/*
+contentエリア
+*/
+#contentArea{
+	margin: 0px 0px 45px 0px;
+}
+
+/*kubota*/
+.kubota #contentArea{
+	background: url(/images/news/kubota/kubotaBg.png) repeat;
+}
+
+/*urashima*/
+.urashima #contentArea{
+	background: url(/images/news/urashima/urashimaBg.png) repeat;
+}
+
+/*mori*/
+.mori #contentArea{
+	background: url(/images/news/mori/moriBg.png) repeat;
+}
+
+/*bes*/
+.bes #contentArea{
+	background: url(/images/news/bes/besBg.png) repeat;
+}
+
+#contentArea #contentBox{
+	width: 750px;
+	padding: 52px 115px 55px;
+	background: #ffffff;
+}
+
+#contentArea #contentBox p{
+	display: inline;
+	font-size: 90%;
+	line-height: 2.1em;
+}
+
+#contentArea #contentBox img{
+	/*float: left;*/
+	padding:0px 21px 10px 0px;
+}
+
+
+#contentArea #contentBox #news_snsArea{
+	margin: 45px 0px 30px;
+	clear: both;
+	height: 26px;
+}
+
+#contentArea #contentBox #postNav{
+	position: relative;
+	margin-bottom: 0px;
+	width: 769px;
+}
+
+#contentArea #contentBox #prev{
+	float: left;
+	width: 105px;
+}
+
+#contentArea #contentBox #next{
+	float: right;
+	width: 105px;
+}
+
+#contentArea #contentBox #topBack{
+	position: absolute;
+	left: 310px;
+	font-weight: bold;
+	font-size: 80%;
+	color: #111111;
+}
+
+#contentArea #newsLink {
+	background: url(/images/news/news_linkBg.png) repeat;
+}
+
+#contentArea #newsLink ul{
+	width: 965px;
+	padding: 30px 0px 25px 15px;
+	margin: auto;
+}
+
+#contentArea #newsLink ul li{
+	float: left;
+	margin: 0px 20px 0px 0px;
+	background: #ffffff;
+}
+
+#contentArea #newsLink ul li img{
+	vertical-align: bottom;
+}
+
+
+/*profile*/
+.profile #mainTitle h1{
+	padding-top: 25px;
+	font-size: 200%;
+}
+
+.profile #mainTitle .yomi{
+	padding-bottom: 15px;
+	color: #ABABAB;
+	font-size: 87%;
+}
+
+.profile #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}
+
+.profile #contentArea #contentBox .txt{
+	padding-bottom: 55px;
+}
+
+.profile #contentArea #contentBox section {
+	padding-bottom: 45px;
+}
+
+.profile #contentArea #contentBox section h2{
+	padding-bottom: 15px;
+	margin-left: -20px;
+}
+
+.profile #contentArea #contentBox section .left{
+	float: left;
+}
+
+.profile #contentArea #contentBox section .right{
+	padding-top: 10px;
+	float: right;
+}
+
+.profile #contentArea #contentBox section.gallery li{
+	float: left;
+}
+
+.profile #contentArea #contentBox section.links li{
+	float: left;
+	padding-right: 14px;
+}
+
+.profile.bes #contentArea #contentBox section.live {
+	position: relative;
+}
+
+.profile.bes #contentArea #contentBox section.live .btnDetail{
+	position: absolute;
+	right: 0;
+	bottom: 41px;
+}
+
+/*discography*/
+.discography #mainTitle{
+	height: 73px;
+	background:#000000 url(/images/news/titleBg2.png) no-repeat center top;
+}
+
+.discography #mainTitle ul {
+	padding-top: 27px;
+}
+
+.discography #mainTitle li {
+	padding: 0 25px;
+	display: inline;
+}
+
+.discography #contentArea #contentBox {
+	width: 981px;
+	padding: 32px 0 55px;
+	position: relative;
+}
+
+.discography #contentArea #contentBox p {
+	display: block;
+	font-size: 100%;
+	line-height:inherit;
+}
+
+.discography #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}
+
+.discography #contentArea #contentBox .lead{
+	position: absolute;
+	right: 100px;
+	top:52px;
+	font-size: 87%;
+	color: #737373;
+}
+
+.discography #contentArea #contentBox section {
+	padding-bottom: 20px;
+}
+
+.discography #contentArea #contentBox section h2{
+	padding: 20px 0 10px 95px;
+}
+.discography #contentArea #contentBox section h2.typeF3{
+	background-color: #F3F3F3;
+}
+
+.discography #contentArea #contentBox .entry {
+	position: relative;
+	padding: 20px 115px 5px;
+}
+
+.discography #contentArea #contentBox .entry.odd{
+	background-color: #F3F3F3;
+}
+
+.discography #contentArea #contentBox .entry .image {
+	float: left;
+	width: 190px;
+}
+
+.discography #contentArea #contentBox .entry .image.sp {
+	width: 230px;
+}
+
+.discography #contentArea #contentBox .entry .txt .label{
+	font-size: 75%;
+	font-weight: bold;
+}
+
+.discography #contentArea #contentBox .entry .txt h3{
+	font-size: 125%;
+}
+
+.discography #contentArea #contentBox .entry .txt .release{
+	padding-bottom: 14px;
+	color: #C7A33B;
+	font-size: 81%;
+}
+
+.discography #contentArea #contentBox .entry .txt {
+	float: left;
+}
+
+.discography #contentArea #contentBox .entry .txt ol{
+	padding: 0 0 15px;
+	margin: 0;
+	font-size: 87%;
+}
+
+.discography #contentArea #contentBox .entry .btns{
+	position: absolute;
+	right: 115px;
+	top:20px;
+}
+
+.discography #contentArea #contentBox .entry .btns li{
+	padding-bottom: 5px;
+}
+
+.discography #contentArea #contentBox .upSite{
+	clear: both;
+	margin-left: 190px;
+	text-indent: -110px;
+	padding-left: 110px;
+}
+
+/*performance*/
+.performance #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}
+.performance #contentArea #contentBox p {
+	display: block;
+	font-size: 100%;
+	line-height:inherit;
+}
+
+.performance #contentArea #contentBox .mainTitle{
+	height: 145px;
+	margin: 0 -115px 52px;
+	background:#000000 url(/images/news/titleBg.png) no-repeat center top;
+	text-align: center;
+}
+
+.performance #mainTitle h1,
+.performance #contentArea #contentBox .mainTitle h1{
+	font-size: 151%;
+}
+
+.performance #mainTitle .date,
+.performance #contentArea #contentBox .mainTitle .date{
+	padding-bottom: 15px;
+	color: #ABABAB;
+	font-size: 87%;
+}
+
+.performance #contentArea #contentBox .mainTitle .day{
+	padding: 30px 0px 11px;
+	font-size: 110%;
+}
+
+.performance #contentArea #contentBox section{
+	padding-bottom: 54px;
+}
+
+.performance #contentArea #contentBox section h2{
+	padding-bottom: 5px;
+	font-size: 125%;
+	color: #C5AE0F;
+}
+
+.performance #contentArea #contentBox .lead{
+	padding-bottom: 30px;
+}
+
+.performance #contentArea #contentBox .attn{
+	padding: 28px 0 0 15px;
+	font-size: 87%;
+	color: #4F4F4F;
+}
+
+.performance #contentArea #contentBox .dfTbl2 td.date{
+	color: #7E7E7E;
+}
+
+.performance #contentArea #contentBox .btn{
+	padding-top: 20px;
+	text-align: right;
+}
+
+.performance #contentArea #contentBox .btn li{
+	padding-left: 34px;
+	display: inline;
+}
+
+.performance #contentArea #contentBox .contact{
+	padding-left:15px;
+	font-size: 87%;
+	color: #4F4F4F;
+}
+
+/*fanclub*/
+.fanclub #mainTitle h1{
+	padding-top: 25px;
+	font-size: 200%;
+}
+
+.fanclub #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}
+
+.fanclub #contentArea #contentBox p {
+	display: block;
+	font-size: 100%;
+	line-height:inherit;
+}
+
+.fanclub #contentArea #contentBox .head {
+	text-align:center;
+}
+.fanclub #contentArea #contentBox .lead {
+	padding-bottom: 31px;
+}
+
+.fanclub #contentArea #contentBox .linkBtn {
+	padding-bottom: 18px;
+	text-align: center;
+}
+
+.fanclub #contentArea #contentBox .money {
+	width:415px;
+	margin:0 auto;
+	padding-bottom: 20px;
+}
+.fanclub #contentArea #contentBox .money li {
+	float:left;
+	text-align:left;
+	font-size:95%;
+	line-height:1;
+}
+.fanclub #contentArea #contentBox .money li.first {
+	padding-right:40px;
+}
+.fanclub #contentArea #contentBox .money li strong {
+	font-size:160%;
+}
+.fanclub #contentArea #contentBox .money li span {
+	font-size:80%;
+	color:#C0AB6F;
+}
+
+.fanclub #contentArea #contentBox .btn {
+	padding-bottom: 53px;
+}
+
+.fanclub #contentArea #contentBox .links {
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+.fanclub #contentArea #contentBox .links li{
+	display: inline;
+}
+
+.fanclub #contentArea #contentBox section {
+	padding-bottom: 35px;
+}
+
+.fanclub #contentArea #contentBox section h2{
+	position: relative;
+	height: 36px;
+	margin:0 0 10px -20px;
+	padding-left: 20px;
+	background: url(/images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 100%;
+}
+
+.fanclub #contentArea #contentBox section h2 strong{
+	display: inline-block;
+	height: 20px;
+	padding: 3px 14px;
+	background-color: #000;
+	color: #fff;
+}
+
+.fanclub #contentArea #contentBox section .imageCol {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.fanclub #contentArea #contentBox section dt {
+	color: #CC0000;
+}
+
+.fanclub #contentArea #contentBox section .imageWrapper {
+	text-align: center;
+}
+
+.fanclub #contentArea #contentBox section .set {
+	padding-bottom: 10px;
+}
+
+.fanclub #contentArea #contentBox section .left {
+	float: left;
+}
+
+.fanclub #contentArea #contentBox section .right {
+	float: right;
+	padding: 20px 20px 0;
+}
+
+.fanclub #contentArea #contentBox section .payImage {
+	padding: 15px 0;
+	text-align: center;
+}
+.fanclub #contentArea #contentBox .centerCont {
+	text-align:center;
+}
+.fanclub #contentArea #contentBox .btn.centerCont {
+	padding:50px 0;
+}
+
+/*profileDetail*/
+.profileDetail #contentArea #contentBox p {
+	display: block;
+	font-size: 100%;
+	line-height:inherit;
+}
+
+.profileDetail #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}
+
+.profileDetail #mainTitle .yearList {
+	padding-top: 30px;
+}
+
+.profileDetail #mainTitle ul {
+	padding-bottom: 10px;
+}
+
+.profileDetail #mainTitle li {
+	display: inline;
+}
+
+.profileDetail #contentArea #contentBox .lead {
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+.profileDetail #contentArea #contentBox td li {
+	padding: 0 0 5px 13px;
+	background-image: url(/images/news/kubota/kubotaIcon.gif);
+	background-position: 0 6px;
+	background-repeat: no-repeat;
+}
+
+.profileDetail #contentArea #contentBox .back {
+	padding: 30px 0;
+
+}
+.profileDetail #contentArea #contentBox section.links li {
+    float: left;
+    padding-right: 14px;
+}
+/*discography*/
+.profileDetail.urashima #mainTitle{
+	height: 73px;
+	background:#000000 url(/images/news/titleBg2.png) no-repeat center top;
+}
+.profileDetail.mori #mainTitle{
+	height: 95px;
+	padding-top: 50px;
+}
+.profileDetail.mori #mainTitle .yearList {
+    padding-top: 0;
+}
+
+.profileDetail.urashima #contentArea #contentBox section {
+	padding-bottom: 35px;
+}
+
+.profileDetail.urashima #contentArea #contentBox section h2{
+	position: relative;
+	height: 36px;
+	margin:0 0 10px -20px;
+	padding-left: 20px;
+	background: url(/images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 100%;
+}
+
+.profileDetail.urashima #contentArea #contentBox section h2 strong{
+	display: inline-block;
+	height: 20px;
+	padding: 3px 14px;
+	background-color: #000;
+	color: #fff;
+}
+
+/*diary*/
+
+.diary #mainTitle{
+	height: 147px;
+	background:#000000 url(/images/news/titleBg3.png) no-repeat center top;
+	text-align: center;
+	clear: both;
+}
+
+.diary #contentArea #contentBox .mainTitle{
+	height: 147px;
+	margin: 0 -115px 52px;
+	background:#000000 url(/images/news/titleBg3.png) no-repeat center top;
+	text-align: center;
+}
+
+.diary #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}
+.diary #contentArea #contentBox p {
+	display: block;
+	font-size: 100%;
+	line-height:inherit;
+}
+
+.diary #mainTitle h1,
+.diary #contentArea #contentBox .mainTitle h1{
+	font-size: 151%;
+}
+
+.diary #mainTitle .date,
+.diary #contentArea #contentBox .mainTitle .date{
+	padding-bottom: 15px;
+	color: #ABABAB;
+	font-size: 87%;
+}
+
+.diary #contentArea #contentBox .mainTitle .day{
+	padding: 30px 0px 11px;
+	font-size: 110%;
+}
+
+.diary #contentArea #contentBox section{
+	padding-bottom: 54px;
+}
+
+.diary #contentArea #contentBox section h2{
+	padding-bottom: 5px;
+	font-size: 125%;
+	color: #C5AE0F;
+}
+
+
+/*supporter*/
+.supporter #contentArea #contentBox {
+	text-align:center;
+}
+.supporter #contentArea #contentBox p {
+	display: block;
+	padding-bottom: 40px;
+	font-size: 100%;
+	line-height:inherit;
+}
+.supporter #contentArea #contentBox p.last {
+	padding-bottom: 0;
+}
+.supporter #contentArea #contentBox img{
+	float: none;
+	padding: 0;
+}

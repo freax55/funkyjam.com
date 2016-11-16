@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+/*                                ART MASTERページ                                 　*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+
+
+/*
+pankuzuエリア
+*/
+#pankuzu{
+	width: 960px;
+	padding-bottom: 0;
+	font-size: 76%;
+	clear: both;
+}
+
+
+/*
+contentエリア
+*/
+#contentArea{
+	width: 100%;
+	background: url(/images/lower/bg.png) repeat;
+	margin: 0px 0px 30px 0px;
+}
+
+#contentArea #bottomBorder{
+	width: 100%;
+	height: 4px;
+	background: url(/images/index3_load_80.jpg) repeat-x bottom;
+}
+
+#contentArea #contentBox{
+	width: 950px;
+	margin: auto;
+	padding:26px 15px 130px 15px;
+}
+
+#contentArea #amList{
+	width: 680px;
+	margin: 38px auto 0px;
+	padding-left: 37px;
+}
+
+#contentArea #amList li{
+	width: 700px;
+	margin-bottom: 42px;
+	clear: both;
+}
+
+#contentArea #amList li p{
+	display: block;
+	float: left;
+}
+
+#contentArea #amList li p{
+	display: block;
+	float: left;
+}
+
+#contentArea #amList li p.name{
+	margin: 0px 0px 0px 20px;
+	width: 170px;
+}
+
+#contentArea #amList li p img{
+	vertical-align: bottom;
+}
+
+#contentArea #amList li .amName{
+	width: 160px;
+	margin-top: 30px;
+	font-size: 140%;
+	font-weight: bold;
+	display: block;
+	clear: both;
+}
+
+#contentArea #amList li .amWork{
+	font-size: 82%;
+	color: #b08f51;
+	display: block;
+	clear: both;
+}
+
+#contentArea #amList li .amText{
+	padding-left: 28px;
+	font-size: 90%;
+	border-left: 1px solid #999999;
+	margin-top: 27px;
+	height: 35px;
+	padding-top: 15px;
+}

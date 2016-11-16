@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Reading（リーディング）</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/01/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/01/26 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【冬！遊びに行くならどこがお勧め？】</p>
+		</div>
+		<div class="texts">
+			<div class="text">女は、渋谷から首都高３号線にのった。<br /><br />橋口には、久しぶりのドライブだ。<br /><br />通勤も遊びもほぼ電車で事が足りてしまう。<br />郷里の長崎以外では、車の運転をしたことがなかった。<br /><br />飯倉から大きくカーブすると、東京タワーが見えた。<br /><br />橋口が、綺麗だと思ったその時、東京タワーのライトが消えた。<br /><br /><center>橋口「あっ、消えた！」</center><br />女はこれが見せたかったと言い、この先も綺麗だから期待していいと言う。<br /><br /><br />芝公園から、湾岸線に入ると、素晴らしい景色が見えてきた。<br /><br />ビル群と東京湾とお台場を、レインボーブリッジを渡りながら両サイドに観る・・パノラマだ。<br /><br />羽田空港を左手に観ながら、二人はとりとめもなく話していた。<br /><br />仕事、恋、遊び、夢、・・・etc,etc<br /><br />京浜工業地帯の夜景が続いた。<br />高速道路が、大きなループを描きながらPAまで続いている。大黒ふ頭PAだ。<br /><br />「サザンの曲に出てくるの、知ってる？♪大黒ふ頭で虹を見て～♪って」<br /><br />女が歌ったが、橋口は知らなかった。<br />女のがっかり感とは裏腹に、橋口はすっかり開放的な気分だった。<br /><img src="/premium/artist/essay/urashima/images/05/date4-1.jpg" alt="" /><br /><br />さらに、本牧まで足をのばして、本牧山頂公園へ着いたのは、真夜中だった。<br /><br /><br />車を終車場に停て、街頭がところどころ灯る公園の坂道を二人は上っていった。<br /><br />暗い。<br />明かりと明かりの間が、空いているところはかなり暗かった。<br /><br />橋口「かなり恐くないすか」<br />女「うん」<br /><br />二人は腕を組んでいた。<br />女は胸がドキドキした。<br />振り仰ぐように、空を見上げると星が瞬いていた。<br /><br />女「星が綺麗！」<br />橋口「ホントすね！」<br /><br />橋口がiphoneで調べ始めた<br />「あれ、オリオン座ですね」<br /><br />星座などどうでも良かった。<br /><br />女は息が切れていた・・。<br /><br /><br />見晴らしは最高だった。<br />三方向が見渡せて、やや遠いプラントや本牧埠頭が美しく、幻想的とも言える。<br />穴場のスポットだろう。<br /><br />それに、驚くほど人気のない公園だった。<br />それなりの二人なら、ムードが高まっても可笑しくないが、女はさっきから尿意をもよおしていた。<br /><br />橋口は、はしゃいでいるのか暗い公園を走り回っている。<br /><br /><br />どうにか二人は、理性と平静を装ったまま公園を後にすると、帰る道すがら見かけた◯ンキ・ホーテに寄ることにした。<br /><br />最近、引っ越したばかりだという橋口は、突然、買い物モードになり、カゴに山盛りのお買い上げキングだ。<br /><img src="/premium/artist/essay/urashima/images/05/date4-2.jpg" alt="" /><br /><br />女は、半分やけだった。<br /><img src="/premium/artist/essay/urashima/images/05/date4-3.jpg" alt="" /><br /><br />第三京浜を走って、橋口を最寄り駅まで送った。自転車がおいてあるという。<br /><br />橋口に手を振ってウィンドを上げると、時刻は午前３時をまわっていた。<br /><br /><br />女は、素敵な時間だったと思いながらも、明日から、いや、明後日からちゃんウォーキングしようと心に誓った。<br />若者と遊ぶのに必要なのは、お金じゃなく、体力だと痛感したのだった。<br /><br /><br />女は、また三週間後に、トニガイの広尾店に行って、いつもの椅子に座るのだろう。<br />橋口はいつもように、女の髪を美しく彩るのだろう。<br />そして、いつか女から旅立って行く日がくるのだろう。<br />これまでのスタイリスト達がそうだったように。<br /><br />それでも女は通い続けるだろう、女に髪がある限り。。。<br /><br /><br /><center>完</center><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/01/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/01/20 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【冬！遊びに行くならどこがお勧め？】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 二人は渋谷に向かっていた。<br /><br />橋口「ライブすか？」<br />女「そう、森大輔っていうアーティスト。」<br />橋口「へぇ、好きなんですか？」<br />女「すごく素敵だよ。聞いてソンはない。」<br /><br />今夜は、楽しいことがありそうだと橋口は思った。車を道玄坂の駐車場に入れた。ライヴハウスは、歩いてすぐの元は映画館だったところだ。<br /><img src="/premium/artist/essay/urashima/images/05/date3-1.jpg" alt="" /><br /><br />ビル６Fの客席には、ドリンクホルダーまで付いていて、橋口の想像していたスタンディング・ライヴのイメージとはずいぶん違う。<br />森大輔のライヴが始まった。森は、２０代後半の真面目な王子様キャラに見える。<br /><br />今回は、ピアノ・ヴォーカルとベース、ドラムのトリオらしい。森の歌は、高音がのびやかでせつない、サウンドもスタイリッシュでいかにも女性が好きそうだ。<br />たぶんこの女も、この手に弱いのだろう。だが、森の魅力はそれだけではなかった。小うるさいブラコン、ソウルおたく達も、思わずうなるアレンジが随所に盛り込まれている。橋口にも、森大輔の音楽は心地良く聞こえた。<br /><br />最後の盛り上がりアンコールで、久保田利伸がステージに現れると、客席はさらに興奮に包まれた。この二人のパフォーマンスは、単に歌が上手い・・という範疇のものではなかった。素晴らしいライヴだった。<br /><br /><br />終演後、関係者らしきスタッフに呼ばれると、森大輔の楽屋に連れて行かれた。<br /><br />橋口は、森との写真を撮って欲しいと女に言われた・・緊張する・・内心そう思ったが、顔には出さないで携帯を構えた。<br />その時<br /><br /><center>「オレも」</center><br />突然、久保田がアングルに飛び込んで来た・・<br /><br />ヤバい！ブレる・・橋口は、手の震えを必死に止めてシャッターを押した。<br /><img src="/premium/artist/essay/urashima/images/05/date3-2.jpg" alt="" /><br /><br /><br />橋口は、なんだか、ふわふわした気分のまま外に出た。再び思った。<br />東京の夜は楽しい・・車は２４６を南に向かって走り出した。<br /><br />「このまま走ると、橋口くんの家に着いちゃうんだけど」女が言った<br /><br />「どうする？」<br /><br />橋口は帰りたくはなかった、明日もOFFだ。<br />この気分のまま、もう少し・・<br /><br /><center>「見晴らしの良いところから、夜景が見たいです」</center><br />ちっ！俺、女の子みたいじゃん・・橋口が舌打ちしそうになった瞬間、車が大きくUターンした。。<br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/01/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/01/12 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【冬！遊びに行くならどこがお勧め？】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 橋口は食事をしていないと言った。女は小さな餃子屋へ彼を誘った。<br />店は、中途半端な時間にしては賑わっていたが、二人はすぐに座ることが出来た。<br />一度に注文しなくてはならないシステムで、つい頼みすぎてしまったようだ。<br /><img src="/premium/artist/essay/urashima/images/05/date2-1.jpg" alt="" /><br /><br /><br />食べきれない分は、持ち帰ることにした。<br />支払いは、割り勘にしていた。<br />年若い人間と遊ぶときの、女のルールだ。<br />おごられると、遠慮があって、本音で話したり、楽しんだりしていないような気がするからだった。<br /><br /><br />駐車場まで戻る途中、ゲームセンターがあった<br /><br />女「ゲームする？」<br />橋口「ちょっと、行ってみますか」<br /><br />・・やはり24歳だ・・と女は思った。<br /><br />様々なクレーン・ゲーム機が並ぶ、キャラクターマスコットばかりか、チャイナ・ドレスまである。<br /><br />女「これすごい！」<br /><br />橋口は笑っている・・<br />言いながら女は少し後悔した、判っているが言ってみたかったのだ。<br />欲しいわけでも、着られるわけでもない。。<br />ただ・・はしゃいでみたかったのだ。<br /><img src="/premium/artist/essay/urashima/images/05/date2-2.jpg" alt="" /><br /><br />そんな中、橋口が、俄然燃えだしたのは、エヴァンゲリオン・フィギュアを狙った時だった。<br /><br />店員の女の子が、落としやすい位置に直してくれる。<br />どうやら、一度はそういうサービスをしてくれるようだ。<br />失敗する度に悔しそうな橋口に、彼女が何度かアドバイスをした。<br /><br />とうとう橋口は、成功した・・<br />２千５百円を使っていた。<br /><br />女には、これが、安くあがったのかどうか判らなかった・・<br />ただ・・橋口はとても真剣で、楽しそうだった。<br /><img src="/premium/artist/essay/urashima/images/05/date2-3.jpg" alt="" /><br /><br />女は、歩きながら、携帯で何か検索していた。<br /><br />女「音楽好き？」<br /><br />そう聞くと、車のエンジンをかけた。<br /><br />橋口「好きですよ、でもあんま激しいのはちょっと・・」<br />女「ふ～ん」<br /><br />車は、ライトを点けて走り出した、夜になっていた。。<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/01/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/01/07 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【明けましておめでとうございます！！卯年～～！！今年も飛び跳ねてまいりまするぅぅ！！よろしくお願いします！！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">今年最初の、「行っとくやんかい！自腹かい！」お題は「冬！遊びに行くならどこがお勧め？」<br /><br />来ましたねぇ～～お正月でも何でもないこのテーマ！<br />いや逆に、イベント満載時期だけに、何でも無い場所の方が良いのでは・・<br /><br />ということで、シチュエーションは「ちょっと気になる彼と行くなら！」に決定！<br /><br />ターゲットは行きつけのヘア・サロンの担当くん！<br />じゃぁ～～ん初登場！<br />橋口晃典（ハシグチコウスケ）２４歳！<br />TONI＆GUY JAPAN 広尾店スタイリスト！<br />バシっと実名載せで！今回は、ラジオドラマ風にお届けしま～～す！<br /><br /><br />ある日の夕方、女（４０代）はいつものヘア・サロンに来ていた・・<br /><img src="/premium/artist/essay/urashima/images/05/date1-1.jpg" alt="" /><br /><br /><br />このヘア・サロンには、もう１０年来通い続けている、それだけ信頼度が高いのだ。<br />スタッフも、気持ちの良い若者ばかり、何度かは、皆と食事にも行っている。<br /><br />次の休みにも、２～３人と一緒に出かける相談をしていた。。<br /><br />女「どこにしようか？」<br />アシスタント・米本「八景島シーパラダイスはどうですか？」<br />橋口「・・・」<br /><br />休み当日、橋口を除く、全員の都合が悪くなってしまったようだ。<br /><br />予定を流すことは出来たが、今日一日が無駄になってしまう、すでに冬の日差しは傾き始めていた。<br />二人は出かけることにした、行き先は未定のままだ。<br /><br /><br />女は車を出した、橋口を近くの駅で拾う。<br />郷里が長崎だという橋口は、久しぶりのドライブが楽しそうだ。<br />そこが、サロンではなくスタンドだからか、笑顔もはじけ気味だった。。<br /><img src="/premium/artist/essay/urashima/images/05/date1-2.jpg" alt="" /><br /><br />橋口は、iPodをホルダーに差した。<br />トランス系のサウンドが流れる。女がサラウンドをONにした、サウンドの質が上がり、ヴォリュームを下げても良く聞こえる。<br />これなら、会話の邪魔にならない。<br /><br />二人を乗せた車が走り出した。<br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/12/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/12/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【教えるのが惜しい!!今回はとっておきです!!「ここにお参りして金運ｱｰｰｰｯﾌﾟ!!!　IN 早稲田編！！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">早稲田～～！！<br /><br />早稲田と言えば早稲田大学！<br />創設者は大隈重信・・日本の政治、教育に多大な貢献をなさった方ですね。<br />彼は、現役を退いた後にも、多くの人々を自宅に招いて食事を振る舞ったそうですが、ある年の1年間の来客数23,963人、食事を用意した数、3,714人前だそうです。<br />お店じゃなく、自宅だよ。。すごい！！<br /><br />大隈講堂階段で、早稲田大学の校歌を歌った～！！<br />なんで知ってるかって？<br />元新宿コマ前の広場は、春の新歓コンパの頃、この校歌が良く聞こえてきてた！<br />（私は昔、コマ劇でバイトしてた・・もちろんビール売り場）、朝になると、築地のマグロ卸売り場かと思うくらい人間が寝てた・・まだ寒かったのになぁ。<br /><br />都の西北～わせだっ！わせだっ！<br />Uni Shop &amp; Cafeへ。<br />ここにはWASEDAロゴの入ったグッズがいっぱい！<br />大学キャラクターはWASEDA BEAR・・大学OBの弘兼憲史氏デザイン・・こんなところにも人間交差点が。。<br />外でお茶しましょ～～！<br /><img src="/premium/artist/essay/urashima/images/04/cafe.jpg" alt="" /><br /><br /><br />学食に行ってみた。。<br /><br />安い！メニューも豊富！<br />学生には嬉しいよね。<br />学祭の時期なんだね・・看板がたくさんかかってる。<br />なんだか学生気分を味わえて嬉しい！！観光客も結構多いよ。。<br />予約すればキャンパスツアーにも参加できるんだって。。<br />大学って結構オープンなんだね！<br />中庭も綺麗！学生達はここの芝生で恋も語らってたぞ！く～～！<br /><img src="/premium/artist/essay/urashima/images/04/shiba.jpg" alt="" /><br /><br />大学を後にして、東京で唯一の路面電車！都電荒川線の早稲田駅に。<br /><img src="/premium/artist/essay/urashima/images/04/toden.jpg" alt="" /><br /><br />これがまたいいんだね。。<br />乗り合わせてきた着物のご婦人が、やけに似合う風景だなぁ。<br />一駅の区間が短いんだね。。<br /><br />大塚まで行ってみよう！前の見える席大好き！！<br /><img src="/premium/artist/essay/urashima/images/04/toden2.jpg" alt="" /><br /><br />そして！大塚駅前で売られていたのは、ドーナッツ！！<br />＜国産大豆のおから入り焼きドーナッツ、hana's donut＞<br />軽トラのお店！！<br />ちょうど小腹がすいてきたから、おやつを買ってお家で食べましょう！！<br />山手線に乗って帰るよ～～！！<br /><img src="/premium/artist/essay/urashima/images/04/donut.jpg" alt="" /><br /><br />どうでした？早稲田界隈・・楽しんでもらえましたか？<br />今年はこの回が最後となります・・皆様、どうぞ福を呼び込む良いお年をお迎え下さい！！<br /><br />それでは、来年！！<br />MERRY CHRISTMAS！&amp; A HAPPY NEW YEAR！<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/12/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/12/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【教えるのが惜しい!!今回はとっておきです!!「ここにお参りして金運ｱｰｰｰｯﾌﾟ!!!　IN 早稲田編！！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 今回は、穴八幡宮隣の放生寺じゃ！！<br /><img src="/premium/artist/essay/urashima/images/04/houshouji.jpg" alt="" /><br /><br /><br />再び、わしが説明しようぞ・・オホン！<br /><br />穴八幡宮の＜一陽来復＞と、放生寺の＜一陽来福＞とはどう違うのか・・<br />江戸の昔にはの、神仏習合によって神社、寺院は区別なく一つのものとして栄えてきたんじゃが、明治新政府が神仏分離令を布告して、この二つを分けてしまったんじゃな。<br />それまでは、＜一陽来福＞を授与しておったんじゃよ。<br />この言葉の由来は、観音経の経文にある「海のごとく無量の福が聚（あつ）まる」ことと、一陽来復という易の言葉にちなんで付いたものじゃ！<br />穴八幡宮の御守りも、放生寺の御守りも、どちらも御利益に変わりはなさそうじゃぞ。<br /><br />では、この二つを同時に飾っても良いか？<br />いいんじゃ！！ただし、はかまのように履かせたりしてはいかんぞ。<br />御守りの形態から、穴八幡のを上にし、縦に並べてお祀りされるのが良いであろうと説明されておった。<br />詳しい説明書きが頂けるからの、よ～く読んで取りかかるが良いじゃろう。<br /><br />さらにの、神変大菩薩絵馬というものもある。<br /><img src="/premium/artist/essay/urashima/images/04/ema.jpg" alt="" /><br /><br />これは、足腰の丈夫をお願いする絵馬じゃ。。<br />昔、役の小角（えんのおずぬ）別名、役の行者と言われ、山野を駆けめぐる厳しい行をされた人物じゃよ。<br />この方にちなんで、この絵馬は足腰の弱い方を救って下さるそうじゃ・・<br />わしもお願いするかの。。５００円か。。ふむ<br /><br />わしの講義はこれでおしまいじゃ。<br />次回、浦嶋りんこは早稲田大学へ行くらしいぞ。<br />勉学に励む若者には、迷惑なことじゃろうて。。<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/11/15 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【教えるのが惜しい!!今回はとっておきです!!「ここにお参りして金運ｱｰｰｰｯﾌﾟ!!!　IN 早稲田編！！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">とうとうやって来た！！<br />穴八幡宮ぅぅ～～！！<br /><br />ここは西早稲田。<br />東西線早稲田駅から徒歩3分！近いっ！！<br /><img src="/premium/artist/essay/urashima/images/04/anahachi.jpg" alt="" /><br /><br /><br />オホン。。<br />さて、どんな御利益があるのか、わしが説明しよう。。（博士風じゃ！）<br /><br />まずは、1062年に源義家が兜と太刀を納めて八幡神（やはたのかみ、はちまんしん）をお祀りしたのじゃ。八幡神というのはのぉ・・神功皇后ちゅう、えらいこと昔の皇后が、女ながらに朝鮮と戦って勝ったんじゃよ。<br />その時お腹におったのが応神天皇での、今では、八幡神というと、応神天皇のことみたいになっておる・・お母ちゃんが偉いのにのぉ。<br /><br />その後、1632年に的場が置かれ、八幡神を守護神としたんじゃな。<br />むかぁしは、神社やお寺の区別が無く、一つのものとしておったんじゃよ。<br />そして、放生寺建立ために、山裾を切り開いたら、横穴が見つかっての。<br />中から、金剛阿弥陀如来像が出てきたんじゃ！！<br />すごいじゃろ！<br />それ以来、穴八幡宮と呼ばれるようになったんじゃぞ！オホン！<br /><img src="/premium/artist/essay/urashima/images/04/anahachi2.jpg" alt="" /><br /><br />その後ず～と経って、1728年、三代目将軍、徳川家光が子供の疱瘡治癒祈願ために流鏑馬を奉納したところ！<br /><br />見事に直った！！<br />それからは、歴代将軍の参拝や庶民の信仰を集めたんじゃ。。<br />特に、虫封じの祈祷が有名での、出産、育児、恋愛、良縁と御利益はあるんじゃそうな。<br /><img src="/premium/artist/essay/urashima/images/04/anahachi3.jpg" alt="" /><br /><br />一番の御利益は～～～！<br /><br />金銀融通じゃ！！<br /><br />なんといっても＜一陽来復＞の御守りが有名なんじゃ！<br /><br />一陽来復とはな・・「冬が終わり、春が来ること・悪いことが長く続いた後、ようやく良い方向に向かうこと・陰暦10月に隠きわまって、11月の冬至に初めて陽が生ずること」とある。<br />その＜一陽来復＞の御守りは、冬至（今年は12月22日）、大晦日、節分の夜中の12時に、来年の恵方に向けておまつりするのじゃぞ。<br />方位神の一つに「歳徳神・としとくじん」という神様がおるんじゃ。<br />その年の福徳をつかさどる神様での。。<br />この歳徳神のおる方角は、全てにおいて大吉とされておる。。<br />この方角を、「恵方」や「明けの方」と呼ぶんじゃ！<br /><br />オッホォン！！すでに、御守りをまつっておる方。。<br />去年は冬至にお祀りしたけど、今年も同じじゃなきゃいかんということは無いぞよ。<br />冬至、大晦日、節分、いつ新しくしても良いと神社の方がゆうておられた。<br />さらには、この御守りをおまつりしたら、急にお金持ちになるということでは無い。。<br />お金の融通がスムーズに行く。。ということです。。ともな。<br />今は、まだ御守りは売られておらんぞ。。<br />冬至のから節分までしか売られんのじゃ。。<br />ケチじゃのう。<br />じゃが、その時期は境内にも出店が並んでにぎやかじゃ！<br />人出も多いぞよ！<br />わしも行かにゃ！！<br /><img src="/premium/artist/essay/urashima/images/04/anahachi4.jpg" alt="" /><br /><br />続いては、お隣、放生寺じゃ！<br />ここには＜一陽来”福”＞と一文字違いの御守りがあるんじゃ！！<br />どう違うのぉぉ～～か、知りたいじゃろ？<br /><br /> </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/11/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【教えるのが惜しい!!今回はとっておきです!!「ここにお参りして金運ｱｰｰｰｯﾌﾟ!!!　IN 早稲田編！！」】</p>
+		</div>
+		<div class="texts">
+			<div class="text">自腹企画も続き、そろそろ取材費がぁああ。。。<br />ここは、神頼みしかない！！<br /><br />神様！！仏様！！どーーぞ、落とし主のない大金を拾いますように！！<br />もしくは、社長がポンッと取材費をくれますように！！<br /><br />そんなお願いをするために、早稲田に行かねば！！<br />しかぁーし、その前に・・朝ご飯を消化すべく、まずは目白の椿山荘庭園へ！！<br />こんな高級ホテル、お泊まりすることは無いにしても、行って見とくやないかぁ。<br /><br />ここの、お庭が有名ですが、なんと無料！！<br />綺麗！豪華！<br />都会の真ん中だよね？！ここ！！的な。<br /><img src="/premium/artist/essay/urashima/images/04/chinzansou.jpg" alt="" /><br /><br />＜無茶庵＞なるおそば処もありまして、かなりそそられましたが外観だけで我慢。。<br />ランチ予約してるの。。別んとこで。<br /><img src="/premium/artist/essay/urashima/images/04/soba.jpg" alt="" /><br /><br />三重塔まである！<br /><img src="/premium/artist/essay/urashima/images/04/sanjyuu.jpg" alt="" /><br /><br />観光旅行気分だね！素敵なお庭を見たお礼に、ショップでお買い物。。<br />ウィーンのお菓子屋、DEMELのチョコ！<br />中身は、チョコが猫の舌の形してるんだよ！<br /><br /><img src="/premium/artist/essay/urashima/images/04/shop.jpg" alt="" /><br /><br />なんと、このホテルには限定プランがあるじゃないか！！<br />4万5千円以上の宿泊料金が1万8千円！！<br /><br />奥様！！お得ですわよぉぉぉ～～！！<br /><br />よ～し、叫んでお腹が空いてきた！！<br />予約してたのは高田馬場＜L'MITIE/ラミティエ＞おフレンチざ～ます。<br /><img src="/premium/artist/essay/urashima/images/04/ramithie.jpg" alt="" /><br /><br /><br />なのに、リーズナブル＆ボリューミー！！ランチは1200円なり！！<br />私のチョイスは、前菜にブロッコリーヴィネグレットのソースあえ。<br /><img src="/premium/artist/essay/urashima/images/04/burokkori.jpg" alt="" /><br /><br /><br />メインは牛ハラミステーキとフライドポテト（＋420）<br /><img src="/premium/artist/essay/urashima/images/04/gyuharami.jpg" alt="" /><br /><br /><br />美味しかったし、かなりのボリューム！！<br />予約しないと入れないのがよ～～くわかりましたぁ！！<br /><br />お腹もいっぱい！エネルギーチャージ完了！<br />いよいよ行きますよぉぉ！◯◯◯宮！！神頼み！！<br /><br />  </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/11/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/11/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【お勧めの夜景スポットを教えてぇ～～！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">エレベーターで下に降りたらクマちゃんがお出迎え。。<br />＜すばらしき地球の仲間たち＞<br />なるイベントのお客様呼び込みのクマちゃんですわ。。確かに安男さんも地球の仲間ですわね。。<br />後ろでチケット売りのお兄さんが「お化粧割引します！」。。<br />安男さんが「地顔なんですよぉぉ」<br /><br />・・こわいですわ。。<br /><img src="/premium/artist/essay/urashima/images/03/kuma.jpg" alt="" /><br /><br />お外の「Thank you」のトンネルを抜けて東京タワーにさよならですわ。。東京タワー。。<br />安男さんとの、素敵な思い出を忘れませんわ。。<br /><img src="/premium/artist/essay/urashima/images/03/thankyou.jpg" alt="" /><br /><br />大人な時間・・それはお酒の時間でもありますわ。。<br />代官山の<br />＜nagomi　DAIKANYAMA＞<br />へ参りましょう。。<br /><br />代官山の住宅街にひっそりとたたずむBarが。。<br />螺旋階段を昇ってまいりますわ。。<br /><img src="/premium/artist/essay/urashima/images/03/rasen.jpg" alt="" /><br /><br />実は・・ここは高田安男氏ことKAZZ氏の店ですの。。<br /><br />では。。今夜のわたくしたちに乾杯ですわ。。<br />わたくしは大人の水割りですけど、安男さんは・・トロピカルカクテルですのね。。<br /><img src="/premium/artist/essay/urashima/images/03/kakuteru.jpg" alt="" /><br /><br />もう一人のスタッフ、智くんは吉川晃司似ですわよ。。<br />幅広い年齢層のご婦人に指示されていますわ。。<br /><img src="/premium/artist/essay/urashima/images/03/kikkawa.jpg" alt="" /><br /><br />こうして、素敵なわたくしたちの夜は更けてゆくのですわ。。<br /><br />みなさま、お楽しみ頂けましたか？<br />時々、こんな感じもいいですわよね。。<br /><br />それでは、また。<br /><br /><br />  </div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/10/29 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+			<p class="tit">いっとくやんかい!自腹かい!!【お勧めの夜景スポットを教えてぇ～～！】</p>
+		</div>
+		<div class="texts">
+			<div class="text">展望台ですわ～～～！！<br />きゃぁ～～！夜景が綺麗ですわ！！360度のパノラマですわよぉ！<br /><img src="/premium/artist/essay/urashima/images/03/yakei.jpg" alt="" /><br /><br />床に所々、スケルトンのスペースが・・立ってみますわ。。<br /><br /><center>きょ、きょわいですわぁぁぁ～～！！</center><br />・・先ほど、下から見上げていた場所を、今度は見下ろしていますの・・<br />お尻がムズムズしますわね。。<br /><br /><img src="/premium/artist/essay/urashima/images/03/sukeruton.jpg" alt="" /><br /><br />素敵な音色が聞こえて来ましたわ。。<br />今日は LIVE演奏がある日ですのね。。<br />ストリングスの女性３人ユニットが奏でるインストゥルメンタルな楽曲は夜景にぴったりですわ。<br />あちこちでもカップルがうっとり・・わたくしたちも・・<br />ロマンチックですわぁ～。。<br /><img src="/premium/artist/essay/urashima/images/03/ensoukai.jpg" alt="" /><br /><br />そろそろ、最後の記念撮影をいたしましょう。<br />プリクラ～～～で～ございますわ！！<br />なにしろバックが東京タワーのプリクラはここにしかございませんでしょう？！<br />恥ずかしがらずにレッツ・トライですわ！！<br />最近のプリクラは・・・と・・<br />ぎょえ～～照明がすごい！<br />まるでアーチスト写真が撮れるくらいの明るさですわ！！<br />背景をきめてハイ！<br />コレハ、タワーヲ、カジッテイルトコロダヨ！！<br /><img src="/premium/artist/essay/urashima/images/03/purikura.jpg" alt="" /><br /><br />らくがきもいっぱい書いて・・<br />なになに？・・ 印刷中に、写真のデータを携帯にも転送してくれる？！<br />すっ、すっごい・・わたくしも安男さんも驚いてしまいましたの！！<br />そして出来上がりですわ！！<br /><img src="/premium/artist/essay/urashima/images/03/purikura2.jpg" alt="" /><br /><br />東京タワーを、たっぷり楽しみましたわ！！<br />安男さん、次の場所を相談いたしましよう。。<br />できれば。。さらに大人な場所へ。。。<br /><br /><br />  </div>
+		</div>
+	</div>
+</div>
+
+
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/11/music_vol3.html">
+
+
+						オススメMUSIC vol.3
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/book_vol2.html">
+
+
+						オススメBOOK vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/10/post_44.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/10/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/10/music_vol2.html">
+
+
+						オススメMUSIC vol.2
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2016/09/post_43.html">
+
+
+						自腹だぜッ!!
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/book.html">
+
+
+						おすすめBOOKをご紹介！
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2016/09/music.html">
+
+
+						新コーナー！オススメMUSIC！
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+								<div class="pagenate">
+									<ul>
+										<li><a href="/premium/artist/reading/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_11.html" class="link_page">11</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_12.html" class="link_page">12</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_13.html" class="link_page">13</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_14.html" class="link_page">14</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_15.html" class="link_page">15</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_16.html" class="link_page">16</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_17.html" class="link_page">17</a></li>&nbsp;
+<li><a href="/premium/artist/reading/index_18.html" class="link_page">18</a></li>&nbsp;
+<li><span class="current_page">19</span></li>&nbsp;
+<li><a href="/premium/artist/reading/index_20.html" class="link_page">20</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

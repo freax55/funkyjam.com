@@ -1,0 +1,3 @@
+Header set x-jphone-copyright "no-store"
+Header append x-jphone-copyright "no-transfer"
+Header append x-jphone-copyright "no-peripheral"

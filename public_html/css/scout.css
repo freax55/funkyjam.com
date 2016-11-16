@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#mainCover{
+	padding: 48px 0 48px;
+	font-size: 200%;
+}
+
+#contentWrapper .attr{
+	color: #CC0000;
+}

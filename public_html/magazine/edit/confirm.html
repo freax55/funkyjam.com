@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>登録情報変更 - Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、Brown Eyed Soulが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,Brown Eyed Soul,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/lower.css">
+<link rel="stylesheet" type="text/css" href="/css/magazine.css">
+<!--#include virtual="/include/head/js.html"-->
+</head>
+<body id="top" class="contact">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header_s.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからmainエリア -->
+	<section id="mainArea">
+		<p id="mainCover">MAIL MAGAZINE</p>
+	</section>
+<!-- ここまでmainエリア -->
+
+<!-- ここからcontentエリア -->
+	<article id="contentArea">
+		<div id="contentBox">
+			<p id="pankuzu"><a href="/">TOP</a>&nbsp;>&nbsp;登録情報変更</p>
+			<div id="contentWrapper">
+				<p class="lead">下記の内容で変更しますか？</p>
+				<form action="index.php" method="post">
+					<div class="dfTbl">
+						<h1><strong>登録情報変更</strong></h1>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>メールアドレス</th>
+								<td>{$form.mail|escape}</td>
+							</tr>
+							<tr>
+								<th>性別</th>
+								<td>{$form.sex|escape}</td>
+							</tr>
+							<tr>
+								<th>生年月日</th>
+								<td>西暦{$form.birthday_year|escape}年{$form.birthday_month|escape}月{$form.birthday_day|escape}日</td>
+							</tr>
+							<tr>
+								<th>都道府県</th>
+								<td>{$form.pref|escape}</td>
+							</tr>
+							<tr>
+								<th>気になっているアーティスト</th>
+								<td>
+									{foreach item=artist from=$form.favorite}
+										{$artist|escape}<br />
+									{/foreach}
+								</td>
+							</tr>
+						</table>
+						<p class="btn"><input type="submit" value="上記の内容で変更する" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="戻る" onclick="location.href='./?action=input';" /></p>
+					</div>
+					<input type="hidden" name="action" value="process" />
+				</form>
+			</div>
+		</div><!-- /contentBox -->
+		<div id="bottomBorder"></div>
+	</article>
+<!-- ここまでcontentエリア -->
+
+<!-- ここからリンクエリア -->
+<!--#include virtual="/include/link_s.html"-->
+<!-- ここまでリンクエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer_s.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

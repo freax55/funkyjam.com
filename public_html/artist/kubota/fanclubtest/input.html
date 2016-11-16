@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FANCLUB - Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、Brown Eyed Soulが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,Brown Eyed Soul,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/lower.css">
+<link rel="stylesheet" type="text/css" href="/css/fanclub.css">
+<!--#include virtual="/include/head/js.html"-->
+</head>
+<body id="top" class="contact">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header_s.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからmainエリア -->
+	<section id="mainArea">
+		<p id="mainCover">FANCLUB</p>
+	</section>
+<!-- ここまでmainエリア -->
+
+<!-- ここからcontentエリア -->
+	<article id="contentArea">
+		<div id="contentBox">
+			<p id="pankuzu"><a href="http://www.funkyjam.com/">TOP</a>&nbsp;>&nbsp;FANCLUB</p>
+			<div id="contentWrapper">
+				<p class="lead">久保田利伸 2015年ツアー決定！<br>
+				ファンクラブチケット優先予約は11/25～スタート！ご入会まだ間に合います！！<br>
+				下記必要項目入力し送信後すぐに(1)ご入会方法と(2)チケットお申込み方法のご案内の2通<br>
+				メールをお送りいたします。内容ご確認の上、お手続きください。<br>
+				<br>
+				※届かない場合はバリバリクルーまでお問い合わせください。<br>
+				〈E-mail〉<a href="mailto:artist_kubota@funkyjam.com">artist_kubota@funkyjam.com</a><br>
+				<br>
+				久保田利伸オフィシャルファンクラブ「Bari Bari Crew」に、ご興味を持っていただきありがとうございます。<br />
+				以下必要事項にご記入の上、「送信内容を確認する」ボタンを押してください。<br />
+				<span class="indispensability">*</span>は必ずお書きください。</p>
+				<form action="index.php" method="post">
+					<div class="dfTbl">
+						<h1><strong>ファンクラブ</strong></h1>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>お名前<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.name}<p class="error">{$errors.name}</p>{/if}
+									<input type="text" name="form[name]" value="{$form.name|escape}" class="w300" />
+									<p class="attn">記入例：久保田利伸</p>
+								</td>
+							</tr>
+							<tr>
+								<th>お名前カナ<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.kana}<p class="error">{$errors.kana}</p>{/if}
+									<input type="text" name="form[kana]" value="{$form.kana|escape}" class="w300" />
+									<p class="attn">記入例：クボタ トシノブ</p>
+								</td>
+							</tr>
+							<tr>
+								<th>ご住所<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.address}<p class="error">{$errors.address}</p>{/if}
+									<input type="text" name="form[zip1]" value="{$form.zip1|escape}" class="w30" />&nbsp;-&nbsp;<input type="text" name="form[zip2]" value="{$form.zip2|escape}" class="w30" />
+									<p class="attn">半角英数字でご記入ください。</p>
+									<select name="form[pref]">
+										<option value="">都道府県を選んでください</option>
+										{foreach from=$prefs item=pref}
+											<option {if $pref==$form.pref}selected="selected"{/if}>{$pref}</option>
+										{/foreach}
+									</select><br />
+									<div class="detail">
+										<input type="text" name="form[address1]" value="{$form.address1|escape}" class="w420" />
+										<p class="attn">記入例：港区西麻布</p>
+										<input type="text" name="form[address2]" value="{$form.address2|escape}" class="w420" />
+										<p class="attn">記入例：1丁目14番2号疋田ビル302号</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>お電話番号<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.tel}<p class="error">{$errors.tel}</p>{/if}
+									<input name="form[tel_1]" type="text" value="{$form.tel_1|escape}" maxlength="4" />&nbsp;-&nbsp;<input name="form[tel_2]" type="text" value="{$form.tel_2|escape}" maxlength="4" />&nbsp;-&nbsp;<input name="form[tel_3]" type="text" value="{$form.tel_3|escape}" maxlength="4" />
+									<p class="attn">日中連絡が取れる番号をお願いします。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.mail}<p class="error">{$errors.mail}</p>{/if}
+									<input name="form[mail]" type="text" value="{$form.mail|escape}" class="w420" />
+									<p class="attn">半角英数字でご記入ください。</p>
+									<p class="attn">必ず｢@funkyjam.com｣のメールが受信できるよう設定お願い致します。<br />なおご入会後、入力いただいたメールアドレスをファンクラブの登録に反映させていただきます。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス再確認<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.mail2}<p class="error">{$errors.mail2}</p>{/if}
+									<input name="form[mail2]" type="text" value="{$form.mail2|escape}" class="w420" />
+									<p class="attn">確認のため再度ご記入ください。半角英数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>性別<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.sex}<p class="error">{$errors.sex}</p>{/if}
+									<span><input name="form[sex]" type="radio" value="男性"{if $form.sex=='男性'} checked='checked'{/if} />&nbsp;男性</span><span><input name="form[sex]" type="radio" value="女性"{if $form.sex=='女性'} checked='checked'{/if}  />&nbsp;女性</span>
+								</td>
+							</tr>
+							<tr>
+								<th>生年月日<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.birth}<p class="error">{$errors.birth}</p>{/if}
+									<span>西暦&nbsp;<input type="text" maxlength="4" name="form[birth_year]" value="{$form.birth_year}" />&nbsp;年</span>
+									<span><select name="form[birth_month]">
+										<option value="">▼</option>
+										<option value="1"{if $form.birth_month=='1'} selected="selected"{/if}>1</option>
+										<option value="2"{if $form.birth_month=='2'} selected="selected"{/if}>2</option>
+										<option value="3"{if $form.birth_month=='3'} selected="selected"{/if}>3</option>
+										<option value="4"{if $form.birth_month=='4'} selected="selected"{/if}>4</option>
+										<option value="5"{if $form.birth_month=='5'} selected="selected"{/if}>5</option>
+										<option value="6"{if $form.birth_month=='6'} selected="selected"{/if}>6</option>
+										<option value="7"{if $form.birth_month=='7'} selected="selected"{/if}>7</option>
+										<option value="8"{if $form.birth_month=='8'} selected="selected"{/if}>8</option>
+										<option value="9"{if $form.birth_month=='9'} selected="selected"{/if}>9</option>
+										<option value="10"{if $form.birth_month=='10'} selected="selected"{/if}>10</option>
+										<option value="11"{if $form.birth_month=='11'} selected="selected"{/if}>11</option>
+										<option value="12"{if $form.birth_month=='12'} selected="selected"{/if}>12</option>
+									</select>&nbsp;月</span>
+									<span><select name="form[birth_day]">
+										<option value="">▼</option>
+										<option value="1"{if $form.birth_day=='1'} selected="selected"{/if}>1</option>
+										<option value="2"{if $form.birth_day=='2'} selected="selected"{/if}>2</option>
+										<option value="3"{if $form.birth_day=='3'} selected="selected"{/if}>3</option>
+										<option value="4"{if $form.birth_day=='4'} selected="selected"{/if}>4</option>
+										<option value="5"{if $form.birth_day=='5'} selected="selected"{/if}>5</option>
+										<option value="6"{if $form.birth_day=='6'} selected="selected"{/if}>6</option>
+										<option value="7"{if $form.birth_day=='7'} selected="selected"{/if}>7</option>
+										<option value="8"{if $form.birth_day=='8'} selected="selected"{/if}>8</option>
+										<option value="9"{if $form.birth_day=='9'} selected="selected"{/if}>9</option>
+										<option value="10"{if $form.birth_day=='10'} selected="selected"{/if}>10</option>
+										<option value="11"{if $form.birth_day=='11'} selected="selected"{/if}>11</option>
+										<option value="12"{if $form.birth_day=='12'} selected="selected"{/if}>12</option>
+										<option value="13"{if $form.birth_day=='13'} selected="selected"{/if}>13</option>
+										<option value="14"{if $form.birth_day=='14'} selected="selected"{/if}>14</option>
+										<option value="15"{if $form.birth_day=='15'} selected="selected"{/if}>15</option>
+										<option value="16"{if $form.birth_day=='16'} selected="selected"{/if}>16</option>
+										<option value="17"{if $form.birth_day=='17'} selected="selected"{/if}>17</option>
+										<option value="18"{if $form.birth_day=='18'} selected="selected"{/if}>18</option>
+										<option value="19"{if $form.birth_day=='19'} selected="selected"{/if}>19</option>
+										<option value="20"{if $form.birth_day=='20'} selected="selected"{/if}>20</option>
+										<option value="21"{if $form.birth_day=='21'} selected="selected"{/if}>21</option>
+										<option value="22"{if $form.birth_day=='22'} selected="selected"{/if}>22</option>
+										<option value="23"{if $form.birth_day=='23'} selected="selected"{/if}>23</option>
+										<option value="24"{if $form.birth_day=='24'} selected="selected"{/if}>24</option>
+										<option value="25"{if $form.birth_day=='25'} selected="selected"{/if}>25</option>
+										<option value="26"{if $form.birth_day=='26'} selected="selected"{/if}>26</option>
+										<option value="27"{if $form.birth_day=='27'} selected="selected"{/if}>27</option>
+										<option value="28"{if $form.birth_day=='28'} selected="selected"{/if}>28</option>
+										<option value="29"{if $form.birth_day=='29'} selected="selected"{/if}>29</option>
+										<option value="30"{if $form.birth_day=='30'} selected="selected"{/if}>30</option>
+										<option value="31"{if $form.birth_day=='31'} selected="selected"{/if}>31</option>
+									</select>&nbsp;日</span>
+									<p class="attn">半角英数字でご記入ください。</p>
+								</td>
+							</tr>
+							<tr>
+								<th>会員番号</th>
+								<td>
+									{if $errors.member_no}<p class="error">{$errors.member_no}</p>{/if}
+									<strong>※既存会員の方は会員番号をお願いします。</strong><br />
+									No.&nbsp;<input name="form[member_no]" maxlength="8" type="text" value="{$form.member_no|escape}" />
+									<p class="attn">半角数字でご記入ください。(8桁)</p>
+								</td>
+							</tr>
+							<tr>
+								<th>Bari Bari Crewを<br>
+								どこでお知りになりましたか？<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.know}<p class="error">{$errors.know}</p>{/if}
+									<input name="form[know]" type="radio" value="ファンキージャムホームページ"{if $form.know=='ファンキージャムホームページ'} checked='checked'{/if} />&nbsp;ファンキー・ジャムホームページ<br />
+									<input name="form[know]" type="radio" value="友人、知人"{if $form.know=='友人、知人'} checked='checked'{/if} />&nbsp;友人、知人<br />
+									<input name="form[know]" type="radio" value="OMC"{if $form.know=='OMC'} checked='checked'{/if} />&nbsp;OMC<br />
+									<input name="form[know]" type="radio" value="雑誌"{if $form.know=='雑誌'} checked='checked'{/if} />&nbsp;雑誌<br />
+									<input name="form[know]" type="radio" value="その他"{if $form.know=='その他'} checked='checked'{/if} />&nbsp;その他<br />
+									<textarea name="form[know_other]" cols="85" rows="15">{$form.know_other|escape}</textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>ご希望の申込み書類<span class="indispensability">*</span></th>
+								<td>
+									{if $errors.doc}<p class="error">{$errors.doc}</p>{/if}
+									<input name="form[doc]" type="radio" value="Bari Bari Crew CARD （クレジット機能付き）入会案内書"{if $form.doc=='Bari Bari Crew CARD （クレジット機能付き）入会案内書'} checked='checked'{/if} />&nbsp;Bari Bari Crew CARD&nbsp;（クレジット機能付き）入会案内書<br />
+									　　今回のコンサートツアーのチケットをBari Bari Crew CARDで購入の方の中から抽選で<br>
+									　　合計3,000席分最前列を含んで優待席をご用意いたします！！<br>
+									<input name="form[doc]" type="radio" value="郵便振込入会案内書"{if $form.doc=='郵便振込入会案内書'} checked='checked'{/if} />&nbsp;郵便振込入会案内書<br />
+									<input name="form[doc]" type="radio" value="両方"{if $form.doc=='両方'} checked='checked'{/if} />&nbsp;両方<br />
+								</td>
+							</tr>
+							<tr>
+								<th>メールマガジン</th>
+								<td>
+									{if $errors.magazine}<p class="error">{$errors.magazine}</p>{/if}
+									<input name="form[magazine]" type="hidden" value="" />
+									<label><input name="form[magazine]" type="checkbox" value="1"{if $form.magazine || $form.magazine|is_null} checked='checked'{/if} />&nbsp;メルマガを購読する</label><br />
+									<p class="attn">ファンキー・ジャム所属アーティストの最新情報をお届けします。<br />不要な方はチェックをはずして下さい。</p>
+								</td>
+							</tr>
+						</table>
+						<p class="btn"><input type="submit" value="内容を確認する" /></p>
+					</div>
+					<input type="hidden" name="action" value="confirm" />
+				</form>
+			</div>
+		</div><!-- /contentBox -->
+		<div id="bottomBorder"></div>
+	</article>
+<!-- ここまでcontentエリア -->
+
+<!-- ここからリンクエリア -->
+<!--#include virtual="/include/link_s.html"-->
+<!-- ここまでリンクエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer_s.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

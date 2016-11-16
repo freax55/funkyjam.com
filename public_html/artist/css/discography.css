@@ -1,0 +1,195 @@
+@charset "shift_jis";
+
+.inner a {
+	color:#0000EE;
+}
+
+#contents #main #navi li#navi04 a {
+	background-position:left bottom;
+}
+#main .lead {
+	padding:10px 10px 10px 20px;
+}
+#main .pageLink {
+	padding-top:5px;
+	padding-bottom:17px;
+	text-align:center;
+}
+#main .pageLink li {
+	display:inline;
+	padding:0 13px;
+	border-left:1px solid #FFFFFF;
+}
+#main .pageLink li.first {
+	border-left:0;
+}
+#main .section h2 {
+	width:625px;
+	height:21px;
+	margin-bottom:17px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-size:1px;
+	line-height:0;
+	text-indent:-9999px;
+}
+#main .section#single h2 {
+	background-image:url(../image/common/discography/tit_single.gif);
+}
+#main .section#album h2 {
+	background-image:url(../image/common/discography/tit_album.gif);
+}
+#main .section#dvd h2 {
+	background-image:url(../image/common/discography/tit_dvd.gif);
+}
+#main .section#dvdVideo h2 {
+	background-image:url(../image/common/discography/tit_dvd_video.gif);
+}
+#main .section#dom h2 {
+	background-image:url(../image/common/discography/tit_dom.gif);
+}
+#main .section .entry {
+	padding-bottom:10px;
+}
+#main .section .entry .inner {
+	width:625px;
+	background-color:#F0F0F0;
+	background-image:url(../image/common/discography/bg_discography.gif);
+	background-repeat:repeat-y;
+	background-position:left top;
+}
+#main .section .entry .imageWrapper {
+	float:left;
+	width:160px;
+	padding:10px;
+	text-align:center;
+}
+#main .section .entry .textWrapper {
+	float:right;
+	width:420px;
+	padding:10px 10px 10px 0;
+	color:#010101;
+}
+#main .section .entry h3 {
+	clear:left;
+	color:#C23102;
+	font-size:130%;
+	line-height:1;
+}
+#main .section .entry .notice {
+	text-align:right;
+}
+#main .section .entry .label {
+	float:left;
+	margin-bottom:5px;
+	padding:2px 9px 0 9px;
+	background-color:#C23102;
+	color:#FFFFFF;
+	font-size:90%;
+	line-height:1;
+}
+#main .section .entry .release {
+	padding-top:5px;
+	padding-bottom:17px;
+	font-size:85%;
+	line-height:1;
+}
+#main .section .entry .release02 {
+	padding-top:17px;
+	padding-bottom:5px;
+	font-size:85%;
+	line-height:1;
+}
+#main .section .entry .tieup {
+	font-size:85%;
+	line-height:1.5;
+}
+#main .section .entry .btn li {
+	float:left;
+	padding-bottom:5px;
+}
+#main .section .entry .btn li a {
+	display:block;
+	width:195px;
+	height:30px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-size:1px;
+	line-height:0;
+	text-indent:-9999px;
+	text-decoration:none;
+	outline:none;
+}
+#main .section .entry .btn li a:hover {
+	background-position:left bottom;
+}
+#main .section .entry .btn li.wmp {
+	padding-right:5px;
+}
+#main .section .entry .btn li.wmp a {
+	background-image:url(../image/common/discography/btn_audition_wmp.gif);
+}
+#main .section .entry .btn li.rp a {
+	background-image:url(../image/common/discography/btn_audition_rp.gif);
+}
+#main .section .entry p.btn {
+	padding-top:5px;
+}
+#main .section .entry p.btn a {
+	display:block;
+	width:95px;
+	height:30px;
+	background-image:url(../image/common/discography/btn_audition.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-size:1px;
+	line-height:0;
+	text-indent:-9999px;
+	text-decoration:none;
+	outline:none;
+}
+#main .section .entry p.btn a {
+	background-position:left bottom;
+}
+#main .section .entry .buy {
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:right;
+	font-size:1px;
+	line-height:0;
+}
+#main .section .entry .buyKubota {
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:right;
+	font-size:1px;
+	line-height:0;
+}
+#main .section .entry .buyOther {
+	padding-top:5px;
+	text-align:right;
+}
+#main .section .entry .buyOther a {
+	padding-left:13px;
+	background-image:url(../../image/common/icon_arrow.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+}
+#main .section .entry ol li {
+	padding-bottom:7px;
+	padding-left:0.8em;
+	text-indent:-0.8em;
+	line-height:1.2;
+}
+#main .section .entry ol.twoRows {
+	float:left;
+	width:200px;
+	padding-right:10px;
+}
+#main .section .entry .text {
+	padding-top:10px;
+}
+#main .pagetop {
+	padding-right:20px;
+	padding-bottom:10px;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第28回「黄金の男」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2010/12/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2010/12/31 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第28回「黄金の男」</p>
+		</div>
+		<div class="texts">
+			<div class="text">クリスマス・イヴ…だからといってSWEETな予定があるワケもなく、ラーメン屋の早朝仕込みを済ませてから、私用を片づけにファンキー・ジャムへ流星号した。<br /><br />いつものよーにファンキー・ジャムのスタッフが、出入り業者のオレにさえ<br /><center>「おはようございま～す!」</center>と健康的な挨拶をしてくれる。<br /><br />が、新人のセキは苦学のヒトで、楽学のワタル自身など眼中になく、いつものよーにシカトされる。<br />来年こそは、新人のセキにも挨拶してもらえるよーな立派な人物になろう。<br />そんな決意を胸に素早く私用を終え、「クリスマス・イヴだもの、せめて美しいもので癒されたい」と、<br /><br /><center>ダ・ヴィンチ<br />～モナ・リザ25の秘密～</center><br />が開催されている日比谷公園の特設会場へ向かった。<br />会場に入ると最初に目に飛び込んだのが、やたら笑顔が派手なモナ・リザだ。<br />モナ・リザと、黒柳徹子さんのCG合成…(笑)。<br />このモナ・テツコ、時々しゃべったり動いたりする。<br />これが笑える。<br />「あれ?　そーゆーお笑い企画なの?」と思ってしまうが、このイベントの核は、モナ・リザの絵に隠された25の秘密を解くこと。<br />ダ・ヴィンチの遺したスケッチを参考に作られた様々な機械、たとえば飛行機や戦車や自動車などの展示もあるが、最大の注目は、赤外線撮影やデジタル解析などの最新テクノロジーで、600年前の微笑みを徹底的に分析したことなのだ。<br /><br />その25の秘密は…会場に足を運んで自分の目で確かめて欲しい。<br /><br /><center>それよりも今のワタル自身は、強力に言いたいコトがあるのだ。</center><br />ダ・ヴィンチの「ウィトルウィウス的人体図」と言われ、すぐに分るヒトがいるだろうか?<br />正円と正方形の中に裸の男性が両腕を広げて立っている、茶色っぽい線画…と言えば、ナンとなく「ああ、あれか」と思い浮かべるヒトもいるだろう。<br /><br />分らないヒトには検索してもらい、話をススメる。<br /><br /><center>なにしろ今のオレは、強力に言いたいコトがあるのだ。</center><br />ダ・ヴィンチは、このウィトルウィウス的人体図で、人体に隠されている「黄金比」を解き明かしている。<br />黄金比(1:1.618)とゆー比率は、ヒトが最も美しいと思うバランスなのだ。<br />黄金比は自然界にも無数に存在し、ヒトの美的感覚は黄金比が基底になっているとさえ思われるのだ。<br />詳しく説明すると大変マルなので、黄金比も検索してもらい、話をススメる。<br /><br /><center>とにかく今のオレは、強力に言いたいコトがあるのだ。</center><br />よーするに、ダ・ヴィンチのウィトルウィウス的人体図は、最も美しい身体バランスを描いているのだ。<br /><br />そしてナンと、「ダ・ヴィンチ～モナ・リザ25の秘密～」では、自分の黄金比を測定できるのだ。<br />しかも無料で。<br /><br />ウィトルウィウス的人体図が映し出されたスクリーンの前に立ち、赤外線で全身をスキャンされ、理想的な人体バランス=黄金比と自分バランスを比較できるのである。<br /><br />「これはワタル自身のネタになる」と確信したワタル自身は、測定担当のオネーサンに<br /><br /><center>「お願いですから測ってください!」</center><br />と直訴した。<br />オネーサンは『後悔するわよ』とデブ体形のオレをココロで嘲笑し、赤外線マーカーを渡してくれた。<br /><br />正円と正方形の中心になるヘソの位置にマーカーをバンドし、スクリーンのウィトルウィウス的人体図と同じポーズをとる。<br /><br />オレのシルエットが人体図と重なり、準備OKで赤外線撮影スタート。<br />3秒のカウントが終り測定終了。<br /><br />すぐさま結果がスクリーンに映し出される。<br /><br /><center>「アナタの比率は…1:1.607…<br />黄金比に近い理想のバランスです」</center><br /><br />その表示を見たオネーサン、思わず「うわぁ!　今まで測定した男性の中では最高ですぅ!」とアンビリーバボーな顔面。<br /><br /><center>どーよ?　どーなのよ?<br />そーよ!　そーなのよ!</center><br />誰もがオレのデブ体形に気を取られているけれど、その下には、ピッカピカの黄金比が隠されているんだよね。<br /><br />今まで言わなかったけどさ、脂肪はオレの着ぐるみだから。<br />黄金バランスを隠すカモフラージュなんだよね。<br /><br />バレるまで自慢しない…みたいな?　あえて隠す…みたいな?<br /><br />望むなら、恐竜みたいに骨だけの化石になったオレを未来の考古学者が発見し、見事な黄金バランスに驚愕して、昭和日本人の歴史を書き換えて欲しいくらいなんだよね。<br /><br />ちなみに「ダ・ヴィンチ～モナ・リザ25の秘密～」は2011年2月20日まで開催しているから、アナタも自分の黄金比をチェックしてみたら?<br /><br />まあ、オレの黄金バランスには遠く及ばないだろーけどね。<br />ふっふっふっ…。<br /><br />そんな黄金のワタルは、今年も皆さんに感謝!<br />こんな無意味な「週刊ワタル自身」への多大なアクセス感謝!<br /><br />そして全人類の笑顔を願いつつ、2011年もヨロシク!<br /><br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

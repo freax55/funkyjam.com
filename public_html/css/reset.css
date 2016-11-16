@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- 
+   reset.css
+   Author: Issey Yamaki --  +D inc.  --  http://www.plus-d.co.jp/
+   * Resets default browser CSS.
+-------------------------------------------------------------- */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+border:0;
+outline:0;
+vertical-align:baseline;
+margin:0;
+padding:0;
+}
+
+body{
+font:14px sans-serif;
+*font-size:small;
+*font:x-small;
+-webkit-text-size-adjust: none;
+}
+
+body, textarea { font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+input, select { font-family: Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+select,input,button,textarea {font:99% sans-serif}
+
+pre,code,kbd,samp,tt {
+*font-size:108%;
+line-height:100%;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+font-size:inherit;
+font:100%;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block}
+
+ul,ol {list-style:none}
+
+blockquote,q {quotes:none}
+
+:focus {outline:0}
+
+ins {text-decoration:none}
+
+del {text-decoration:line-through}
+
+em {font-style:normal}
+
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #cccccc;
+margin: 1em 0;
+padding: 0;
+}
+
+a,
+a:hover{
+	color:#000000;
+	text-decoration:none;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+ 
+.clearfix {
+  min-height: 1px;
+}
+ 
+* html .clearfix {
+  height: 1px;
+  /*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+  zoom: 1 } /* IE6 */
+*:first-child+html .clearfix { zoom: 1 } /* IE7 */

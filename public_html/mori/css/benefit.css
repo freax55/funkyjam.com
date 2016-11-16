@@ -1,0 +1,126 @@
+#contents {
+  color: #333;
+}
+#contents .titleType1 {
+  margin-bottom: 60px;
+}
+
+#benefit {
+  width: 93.33333%;
+  margin: 0 auto;
+}
+#benefit > ul {
+  margin-bottom: 60px;
+  color: #067840;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#benefit section h3 {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 2px 10px;
+  background-color: #3A2E2C;
+  color: #fff;
+  font-size: 3.6rem;
+}
+#benefit .benefit1 {
+  margin-bottom: 120px;
+}
+#benefit .benefit1 .wrap > div {
+  margin-top: 30px;
+}
+#benefit .benefit1 .wrap > div:first-child {
+  margin-top: 0;
+}
+#benefit .benefit1 .wrap .title {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+#benefit .benefit1 .wrap .title + p {
+  font-size: 2.6rem;
+}
+#benefit .benefit1 .wrap .image {
+  margin-top: 15px;
+  text-align: center;
+}
+#benefit .benefit1 .wrap .btnType4 {
+  margin-top: 30px;
+}
+#benefit .benefit2 table {
+  border-top: 4px solid #3A2E2C;
+  border-left: 4px solid #3A2E2C;
+}
+#benefit .benefit2 th, #benefit .benefit2 td {
+  padding: 30px;
+  border-right: 4px solid #3A2E2C;
+  border-bottom: 4px solid #3A2E2C;
+}
+#benefit .benefit2 th {
+  background-color: #491F19;
+  color: #fff;
+  font-size: 3.4rem;
+  text-align: center;
+  vertical-align: middle;
+}
+#benefit .benefit2 .image {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#benefit .benefit2 .title {
+  font-weight: bold;
+}
+#benefit .benefit2 p {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 899px) {
+  #contents .titleType1 {
+    margin-bottom: 30px;
+  }
+
+  #benefit > ul {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+  }
+  #benefit section h3 {
+    margin-bottom: 15px;
+    padding: 2px 5px;
+    font-size: 1.6rem;
+  }
+  #benefit .benefit1 {
+    margin-bottom: 60px;
+  }
+  #benefit .benefit1 .wrap > div {
+    margin-top: 15px;
+  }
+  #benefit .benefit1 .wrap .title {
+    font-size: 1.6rem;
+  }
+  #benefit .benefit1 .wrap .title + p {
+    font-size: 1.4rem;
+  }
+  #benefit .benefit1 .wrap .image {
+    margin-top: 7.5px;
+  }
+  #benefit .benefit1 .wrap .btnType4 {
+    margin-top: 15px;
+  }
+  #benefit .benefit2 table {
+    border-top: 2px solid #3A2E2C;
+    border-left: 2px solid #3A2E2C;
+  }
+  #benefit .benefit2 th, #benefit .benefit2 td {
+    padding: 15px;
+    border-right: 2px solid #3A2E2C;
+    border-bottom: 2px solid #3A2E2C;
+  }
+  #benefit .benefit2 th {
+    font-size: 1.6rem;
+  }
+  #benefit .benefit2 .image {
+    margin-bottom: 15px;
+  }
+  #benefit .benefit2 p {
+    font-size: 1.4rem;
+  }
+}

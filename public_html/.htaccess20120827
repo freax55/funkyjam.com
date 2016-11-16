@@ -1,0 +1,126 @@
+# Auto Update
+RewriteEngine On
+RewriteBase /
+
+# Xmas->Normal
+RewriteCond %{REMOTE_ADDR} ^59\.146\.75\.44$ [OR]
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20101226
+RewriteCond %{DOCUMENT_ROOT}/css/common_20091226.css -f
+RewriteRule ^css/common\.css$ css/common_20091226.css [L]
+
+RewriteCond %{REMOTE_ADDR} ^59\.146\.75\.44$ [OR]
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20101226
+RewriteCond %{DOCUMENT_ROOT}/image/top/top_20101226.mp3 -f
+RewriteRule ^image/top/top\.mp3$ image/top/top_20101226.mp3 [L]
+
+RewriteCond %{REMOTE_ADDR} ^59\.146\.75\.44$ [OR]
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20101226
+RewriteCond %{DOCUMENT_ROOT}/image/top/eyecatch_20091226.swf -f
+RewriteRule ^image/top/eyecatch\.swf$ image/top/eyecatch_20091226.swf [L]
+
+RewriteCond %{REMOTE_ADDR} ^59\.146\.75\.44$ [OR]
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20101226
+RewriteCond %{DOCUMENT_ROOT}/image/top/speaker_20091226.swf -f
+RewriteRule ^image/top/speaker.swf$ image/top/speaker_20091226.swf [L]
+
+
+# /
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20120825
+RewriteCond %{DOCUMENT_ROOT}/index_20120825.html -f
+RewriteRule ^(index\.html)?$ index_20120825.html [L]
+
+# /news/
+#RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20090419
+#RewriteCond %{DOCUMENT_ROOT}/news/20090419.html -f
+#RewriteRule ^news/20090420.html$ news/20090419.html [L]
+
+# /artist/kubota/fanclub.html
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20120825
+RewriteCond %{DOCUMENT_ROOT}/artist/kubota/fanclub_20120825.html -f
+RewriteRule ^artist/kubota/fanclub\.html$ /artist/kubota/fanclub_20120825.html [L]
+
+# /artist/kubota/performance/
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20110803
+RewriteCond %{DOCUMENT_ROOT}/artist/kubota/performance_20110803.html -f
+RewriteRule ^artist/kubota/performance\.html$ artist/kubota/performance_20110803.html [L]
+
+# /artist/kubota/performance/
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20110803
+RewriteCond %{DOCUMENT_ROOT}/artist/kubota/performance_20110803.html -f
+RewriteRule ^artist/kubota/performance\.html$ artist/kubota/performance_20110803.html [L]
+
+# /artist/kubota/popup/
+#RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20100202
+#RewriteCond %{DOCUMENT_ROOT}/artist/kubota/popup/news_media_20100202.html -f
+#RewriteRule ^artist/kubota/popup/news_media\.html$ artist/kubota/popup/news_media_20100202.html [L]
+
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20100202
+RewriteCond %{DOCUMENT_ROOT}/artist/kubota/popup/subscribe_201002_20100202.html -f
+RewriteRule ^artist/kubota/popup/subscribe_201002\.html$ artist/kubota/popup/subscribe_201002_20100202.html [L]
+
+# /artist/urashima/
+#RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20100109
+#RewriteCond %{DOCUMENT_ROOT}/artist/urashima/index_20100109.html -f
+#RewriteRule ^artist/urashima/(index\.html)?$ artist/urashima/index_20100109.html [L]
+
+#RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20100112
+#RewriteCond %{DOCUMENT_ROOT}/artist/urashima/performance_20100112.html -f
+#RewriteRule ^artist/urashima/performance\.html$ artist/urashima/performance_20100112.html [L]
+
+# /artist/mori/
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20110209
+RewriteCond %{DOCUMENT_ROOT}/artist/mori/index_20110209.html -f
+RewriteRule ^artist/mori/(index\.html)?$ /artist/mori/index_20110209.html [L]
+
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20110209
+RewriteCond %{DOCUMENT_ROOT}/artist/mori/performance_20110209.html -f
+RewriteRule ^artist/mori/performance\.html$ artist/mori/performance_20110209.html [L]
+
+# /card/contact/
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} !<20100901
+RewriteCond %{DOCUMENT_ROOT}/card/contact/input_20100901.html -f
+RewriteRule ^card/contact/(index\.html|index\.php)?$ card/contact/input_20100901.html [L]
+
+
+# maintenance
+#RewriteCond %{REMOTE_ADDR} !^59\.146\.75\.44|121\.103\.171\.12$
+#RewriteCond %{REQUEST_URI} !img/
+#RewriteCond %{REQUEST_URI} !css/
+#RewriteRule ^shop/.* shop/under_constraction.html [L]
+
+
+# Kubota Login
+RewriteRule ^artist/kubota/login/index\.html$ artist/kubota/login/ [R=301,L]
+RewriteRule ^artist/kubota/login/(bbcm_tkm[0-9]{3})\.html$ artist/kubota/login/index.php?action=auth&old_page=$1 [L]
+#RewriteRule ^artist/kubota/login/(bbcm_tkm[0-9]{3})\.html$ artist/kubota/login/$1/magazine.html
+RewriteRule ^artist/kubota/login/(bbcm_tkm[0-9]{3})/magazine\.html$ artist/kubota/login/$1/index.php?action=magazine [L]
+
+# kubota album 2011 page
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} <20110803 [OR]
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} >20110831
+RewriteRule ^k-tour1112/ / [R,L]
+
+# kubota single 2011 page
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} <20110928 [OR]
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} >20111020
+RewriteRule ^pap-cd/ / [R,L]
+
+
+#mb
+RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} (DoCoMo|J-PHONE|Vodafone|SoftBank|KDDI|UP.Browser|DDIPOCKET|WILLCOM|PDA)
+RewriteRule ^inquiry\.html$ http://m.funkyjam.com/inquiry.html [R,L]
+
+RewriteCond %{REQUEST_URI} !/image/
+RewriteCond %{HTTP_USER_AGENT} (DoCoMo|J-PHONE|Vodafone|SoftBank|KDDI|UP.Browser|DDIPOCKET|WILLCOM|PDA)
+RewriteRule .* http://m.funkyjam.com/ [R=301,L]
+
+
+# for SSI
+Options +Includes
+AddHandler server-parsed html
+
+# for PHP
+SetEnv USER_ROOT /home/funkyjam
+SetEnv SITE_ROOT /home/funkyjam/public_html

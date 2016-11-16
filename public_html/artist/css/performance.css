@@ -1,0 +1,127 @@
+@charset "shift_jis";
+
+#gnavi li#gnavi02 a {
+	background-position:left bottom;
+}
+#contents #main #navi li#navi03 a {
+	background-position:left bottom;
+}
+
+#contents #main .section#none {
+	padding-top:240px;
+	padding-bottom:240px;
+	text-align:center;
+}
+#contents #main .illust {
+	background-image:url(../image/takahashi/illust_02.gif);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+
+
+#contents #main #wrapper .title {
+	width:625px;
+	margin-bottom:20px;
+	background-color:#C23102;
+	background-image:url(../image/common/news/tit_bg.gif);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}
+#contents #main #wrapper .title h2 {
+	float:left;
+	padding:9px 11px;
+	color:#FFFFFF;
+	font-size:143%;
+	line-height:normal;
+}
+#contents #main #wrapper p {
+	padding-bottom:0.5em;
+}
+#contents #main #wrapper .title h2 img {
+	margin-left:8px;
+	vertical-align:2px;
+}
+#contents #main #wrapper .title .date {
+	float:right;
+	padding:13px 10px 5px 0;
+	font-size:85%;
+	line-height:normal;
+}
+#contents #main #wrapper .imageWrapper {
+	width:166px;
+}
+#contents #main .section .imageWrapper {
+	float:right;
+}
+#contents #main .section.even .imageWrapper {
+	float:left;
+}
+#contents #main #wrapper .textWrapper {
+	/*width:445px;*/
+	width:600px;
+}
+#contents #main .section .textWrapper {
+	float:left;
+}
+#contents #main .section.even .textWrapper {
+	float:right;
+}
+#contents #main .section .small {
+	font-size:85%;
+}
+#contents #main .section table#osaka {
+	width:30%;
+}
+#contents #main .section table.default .holiday {
+	background-color:#1F1F1F;
+}
+#contents #main .section table.schedule {
+}
+#contents #main .section table.schedule th {
+	background-color:#1F1F1F;
+}
+#contents #main .section table.schedule td.left {
+	text-align:left;
+	padding-left:5px;
+}
+#contents #main .section table tr.plus {
+	color:#C23102;
+	font-weight:bold;
+}
+#contents #main .section strong.attention {
+	color:#FFCC00;
+}
+#contents #main .section .logo {
+	text-align:center;
+	padding-top:10px;
+	font-weight:bold;
+	font-size:120%;
+}
+#contents #main .section ol {
+	list-style-type:decimal;
+	padding:0 0 20px 20px;
+}
+
+
+.textWrapper #top.btn a {
+	font-size:85%;
+	width:157px;
+	margin:0 0 0 auto;
+}
+.textWrapper .btn a {
+    background: url("/contact/image/bg_btn.gif") no-repeat scroll left top transparent;
+    border: 0 none;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-size: 118%;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    width: 157px;
+}
+

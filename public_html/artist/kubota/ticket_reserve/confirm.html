@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>FJ SHOP - Funky Jam　ファンキー・ジャム</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/artist/kubota/ticket_reserve/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/artist/kubota/ticket_reserve/css/cart.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div id="logo"><a href="/artist/kubota/ticket_reserve/">FJSHOP</a></div>
+				<div id="logoFJ"><a href="http://www.funkyjam.com/">Funky Jam</a></div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--グローバルナビここから-->
+			<div id="gnavi">
+				<ul>
+					<li id="gnavi01"><a href="/artist/kubota/ticket_reserve/#anchorAttention">ご注意</a></li>
+					<li id="gnavi02"><a href="/artist/kubota/ticket_reserve/#anchorPayment">お支払について</a></li>
+					<li id="gnavi03"><a href="/artist/kubota/ticket_reserve/#anchorShipping">送料について</a></li>
+					<li id="gnavi04"><a href="/artist/kubota/ticket_reserve/#anchorContact">チケットについてのお問い合わせ</a></li>
+					<li id="gnavi05"><a href="/artist/kubota/ticket_reserve/#anchorLaw">特定商取引法に基づく表記</a></li>
+				</ul>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--グローバルナビここまで-->
+<!--コンテンツここから-->
+			<div id="contents">
+				<h1>購入内容確認画面</h1>
+				<p class="save">このページを保存されることをお勧め致します。</p>
+<form action="index.php" method="post">
+				<p class="lead">お申し込み内容は以下の通りです。よろしければ、{if $payment == 'コンビニ決済'}お支払い先コンビニ選択後{/if}<strong>「ご注文を確定」ボタン</strong>をおしてください。</p>
+				<div id="itemList">
+					<table cellpadding="0" cellspacing="0">
+					  
+						<tr>
+							<th>商品画像</th>
+							<th>商品名</th>
+							<th>色・サイズ</th>
+							<th>料金</th>
+							<th>個数</th>
+						</tr>
+						{assign var=total value=0}
+						{assign var=quantity value=0}
+						{foreach name=cart from=$cart item=item}
+						<tr>
+							<td class="image">{if $itemList[$item.item_code].image}
+								<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><img src="{$itemList[$item.item_code].image}" alt="" width="100" /></td>
+								</tr>
+							</table>
+								{else}
+								no image
+								{/if}
+							</td>
+							<td class="itemName">
+								{$itemList[$item.item_code].name|escape}
+								（商品コード {$item.item_code|escape}）
+							</td>
+							<td>
+								{if $itemList[$item.item_code].color}{$itemList[$item.item_code].color|escape}{/if}
+								{if $itemList[$item.item_code].color && $itemList[$item.item_code].size}<br />{/if}
+								{if $itemList[$item.item_code].size}{$itemList[$item.item_code].size|escape}{else}&nbsp;{/if}
+							</td>
+							<td>
+								{$itemList[$item.item_code].price|number_format|escape}
+								円
+								{assign var=total value=$total+$itemList[$item.item_code].price*$item.quantity}
+							</td>
+							<td>
+								{$item.quantity}
+								個
+								{assign var=quantity value=$quantity+$item.quantity}
+							</td>
+						</tr>
+						{/foreach}
+					</table>
+				</div>
+				<div id="sum">
+					商品点数：
+					{$quantity|number_format}
+					個<br />
+					商品金額：
+					{$total|number_format}
+					円<br />
+						送料：{if $payment=="コンビニ決済" || $payment=="ATM決済"}
+						{$paygentCarriage|number_format}円<br />
+						決済手数料： {$paygentFee|number_format}円
+						{else}
+						{$carriage|number_format}円
+						{/if}
+					<p class="all">合計：{$total+$carriageTotal|number_format} 円</p>
+				</div>
+				<div class="section">
+					<h2>お支払い方法</h2>
+					<div class="inner">
+						<dl class="confirm">
+						{if $payment == 'クレジットカード'}
+							<dt>BariBariCrewカードを利用する</dt>
+							<dd>						
+								※<a href="http://www.omc-card.co.jp/omcplus.html" target="_blank">OMC Plus</a>のみのお取扱いとなっております。<br />
+								まだOMC PlusのIDをお持ちで無い方は、先のお手続に進む前に必ず<a href="http://www.omc-card.co.jp/omcplus.html" target="_blank">OMC PlusのIDを取得</a>してください。
+							</dd>
+						{elseif $payment=="コンビニ決済"}
+							<dt>コンビニ決済を利用する - お支払いにご利用のコンビニを以下からお選び下さい</dt>
+							<dd>
+								{if $errors.convenience_store_no}<p class="error">※{$errors.convenience_store_no|escape}</p>{/if}
+								{foreach from=$units.convenience_stores item=v key=k name=n}
+									<input name="convenience_store_no" type="radio" value="{$k}" {if $convenience_sore_no == $k} checked="checked"{/if} id="convenience_sore_no{$k}" /><label for="convenience_sore_no{$k}">{$v.name}</label><br />
+								{/foreach}
+								
+							</dd>
+						{elseif $payment=="予約"}
+							<dt>BARI BARI CREW カード決済（予約）</dt>
+						{/if}
+						</dl>
+					</div>
+				</div>
+				<div class="section">
+					<h2>お客様情報入力</h2>
+					<div class="inner">
+						<table class="confirm" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>FC会員番号</th>
+								<td>{if $member_no}{$member_no|escape}{else}&nbsp;{/if}</td>
+							</tr>
+							<tr>
+								<th>お名前</th>
+								<td>{$last_name|escape}{$first_name|escape}</td>
+							</tr>
+							<tr>
+								<th>お名前（カナ）</th>
+								<td>{$last_kana|escape}{$first_kana|escape}</td>
+							</tr>
+							<tr>
+								<th>住所</th>
+								<td>
+									〒{$zip1|escape}-{$zip2|escape}<br />
+									{$address1|escape}
+									{if $address2}<br />{$address2|escape}{/if}
+									{if $address3}<br />{$address3|escape}{/if}
+								</td>
+							</tr>
+							<tr>
+								<th>Email</th>
+								<td>{$mail|escape}</td>
+							</tr>
+							<tr>
+								<th>連絡先電話番号</th>
+								<td>{$tel|escape}</td>
+							</tr>
+							<tr id="magazine">
+								<th>メールマガジン</th>
+								<td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<p class="confirmTxt">お申し込み内容は上記の通りです。よろしければ、<strong>「ご注文を確定」ボタンを1度だけ</strong>おしてください。<br />
+				※お申込み完了後「ticket_kubota@funkyjam.com」より確認メールを送信いたします。必ず内容をご確認ください。<br />
+				
+				{if $payment == 'クレジットカード'}<!--<strong>このお申込みはBARI BARI CREW CARDご優待キャンペーン対象です。</strong>-->{/if}</p>
+				<p class="btn"><input type="submit" id="postal" value="ご注文を確定"  /></p>
+				<input type="hidden" name="carriageTotal" value="{$carriageTotal}" />
+				<input type="hidden" name="total" value="{$total}" />
+				<input type="hidden" name="action" value="process" />
+				<p class="btn" id="back"><input type="button" id="postal" value="内容を修正する" onclick="location.href='index.php?action=cart';"  /></p>
+				</form>
+</div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div id="copyright">(C)FUNKYJAM</div>
+			</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

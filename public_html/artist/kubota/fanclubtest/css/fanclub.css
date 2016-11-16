@@ -1,0 +1,256 @@
+@charset "shift_jis";
+
+#contents h1 {
+	width:950px;
+	height:30px;
+	margin-bottom:28px;
+	background-image:url(../image/page_title.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents .wrapper {
+	width:950px;
+	margin-bottom:30px;
+	padding-bottom:13px;
+	background-image:url(../../../../image/common/bg_lower_contents_bottom.gif);
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+#contents .wrapper .inner {
+	width:832px;
+	padding:35px 0 20px 118px;
+	background-image:url(../../../../image/common/bg_lower_contens.gif);
+	background-position:left bottom;
+	background-repeat:repeat;
+}
+#contents .wrapper h2 {
+	float:left;
+	width:125px;
+	height:18px;
+	margin-right:50px;
+	margin-bottom:70px;
+	background-image:url(../image/title.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+#contents .wrapper span {
+	margin-right:4px;
+	color:#FFFF00;
+}
+#contents .wrapper th {
+	width:134px;
+	background-repeat:no-repeat;
+	background-position:right top;
+	text-indent:-9999px;
+	font-size:1px;
+	line-height:0;
+}
+#contents .wrapper #name th {
+	background-image:url(../image/lab_name.gif);
+}
+#contents .wrapper #kana th {
+	background-image:url(../image/lab_kana.gif);
+}
+#contents .wrapper #address th {
+	background-image:url(../image/lab_address.gif);
+}
+#contents .wrapper #tel th {
+	background-image:url(../image/lab_tel.gif);
+}
+#contents .wrapper #mail th{
+	background-image:url(../image/lab_mail.gif);
+}
+#contents .wrapper #mail2 th {
+	background-image:url(../image/lab_mail_conf.gif);
+}
+#contents .wrapper #sex th {
+	background-image:url(../image/lab_sex.gif);
+}
+#contents .wrapper #birth th {
+	background-image:url(../image/lab_birth.gif);
+}
+#contents .wrapper #member_no th {
+	background-image:url(../image/lab_mem_no.gif);
+}
+#contents .wrapper #know th {
+	background-image:url(../image/lab_know_where.gif);
+}
+#contents .wrapper #documents th {
+	background-image:url(../image/lab_doc.gif);
+}
+#contents .wrapper #magazine th{
+	background-image:url(../image/lab_magazine.gif);
+}
+
+#contents .wrapper td {
+	padding-bottom:10px;
+	padding-left:12px;
+	text-align:left;
+	vertical-align:top;
+}
+#contents .wrapper td span {
+	color:#FFFFFF;
+	margin:0;
+}
+#contents .wrapper td p {
+	color:#CCCCCC;
+	font-size:85%;
+}
+#contents .wrapper td .detail {
+	padding-top:6px;
+}
+#contents .wrapper td.indispensability {
+	padding-top:3px;
+	padding-left:2px;
+	color:#FFFF00;
+}
+#contents .wrapper #name input,
+#contents .wrapper #kana input {
+	width:300px;
+}
+#contents .wrapper #address input {
+	width:45px;
+}
+#contents .wrapper #address .detail input {
+	width:415px;
+}
+
+#contents .wrapper #tel input {
+	width:46px;
+}
+
+#contents .wrapper #mail input,
+#contents .wrapper #mail2 input {
+	width:415px;
+}
+
+#contents .wrapper #sex span {
+	padding-right:30px;
+}
+#contents .wrapper #birth input {
+	width:60px;
+}
+#contents .wrapper #birth span {
+	padding-right:10px;
+}
+
+#contents .wrapper #member_no strong {
+	color:#FF3334;
+	font-size:90%;
+	font-weight:normal;
+}
+#contents .wrapper #member_no input {
+	width:60px;
+}
+
+#contents .wrapper #know textarea {
+	width:499px;
+	height:40px;
+}
+#contents .wrapper #know th .row1 {
+	display:block;
+	width:134px;
+	height:60px;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+
+
+
+#contents .wrapper .btn {
+	padding-top:20px;
+	padding-bottom:80px;
+	padding-left:250px;
+}
+#contents .wrapper .btn.double {
+	padding-left:180px;
+}
+#contents .wrapper .btn input {
+	width:157px;
+	height:31px;
+	border:0;
+	background-color:transparent;
+	background-image:url(../image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:118%;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#contents .wrapper .btn p.pagenext,
+#contents .wrapper .btn p.pageback {
+	float:left;
+	width:157px;
+	margin-right:4px;
+}
+#contents .wrapper .btn p.pageback a {
+	display:block;
+	width:157px;
+	height:31px;
+	background-image:url(../image/btn_cancel.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+
+#contents .wrapper .mainMassege {
+	padding:0 0 50px 180px;
+	font-size:120%;
+}
+
+#contents .wrapper .mainLink {
+	padding:0 0 0 180px;
+}
+
+#contents .wrapper td p.error{
+	color:#BB0000;
+}
+
+/* 2009/12/23 add */
+#contents .holiday {
+	width:300px;
+	margin-left:180px;
+	text-align:center;
+}
+#contents .wrapper .btn {
+	padding-bottom:40px;
+}
+#contents .holiday dt {
+	font-weight:bold;
+	color:#BB0000;
+	padding-bottom:10px;
+}
+
+#contents .inner #documents .attention {
+	background-color:#DDDDDD;
+	color:#333;
+	width:480px;
+	 padding:10px;
+	 margin-bottom:10px;
+	 font-weight:bold;
+}
+
+#contents .inner #documents .attention .title {
+	color:#BB0000;
+	font-size:100%;
+	font-weight:bold;
+}
+

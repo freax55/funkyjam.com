@@ -1,0 +1,110 @@
+{$orderDesc.name} 様{assign var=total value=0}{if $admin != 2}{foreach from=$noTourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}{/if}{foreach from=$tourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}
+
+{if $admin}
+{$orderDesc.order_desc_no}
+コンビニ決済
+{$orderDesc.member_no}
+{$orderDesc.name}
+{$orderDesc.zip}
+{$orderDesc.address1}{$orderDesc.address2}{$orderDesc.address3}
+{$orderDesc.tel}
+{$orderDesc.mail}
+{$total+$orderDesc.carriage}
+{$orderDesc.carriage}
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{/if}{foreach from=$tourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{else}
+
+ご購入頂きまして有り難うございました。
+
+お支払い方法は「コンビニ決済」となります。
+{$convenience_stores[$convenience_store_no].detail}
+
+{$payment_limit_date}23：59までにお支払いください。
+
+{foreach from=$convenience_store_item item=v key=k}
+{$k}:{$v}
+{/foreach}
+
+{if $receipt_print_url}お支払いに関する情報
+{$receipt_print_url}
+{/if}
+
+本メールは購入予約のご確認メールとなります。
+お振込みを確認でき次第、購入内容を確定とさせていただきます。
+お申込み後、お客様の事情によるキャンセル・変更・追加・返金は、いかなる場合も応じられません。
+すべてのお問い合わせには、下記受付番号が必要です。
+
+
+＜お支払い方法＞
+コンビニ決済
+
+
+受付番号：{$orderDesc.order_desc_no}
+
+*******************************
+
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+{/if}{foreach from=$tourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+
+{if $admin == 2}
+合計：{$total|number_format}円
+{else}
+送料：{$orderDesc.paygentCarriage|number_format}円
+決済手数料：{$orderDesc.paygentFee|number_format}円
+合計：{$total+$orderDesc.carriage|number_format}円
+{/if}
+
+*******************************
+
+
+＜お願いとお断り＞
+・支払期限内にお振込み下さい。(支払期限は本メールに記載しております。)
+　※支払期限が切れた場合はシステムで自動的にキャンセルされ、お申込みは無効となります。
+・振込合計金額（チケット代＋送料）の他に決済手数料300円（税込）が必要です。ご了承下さい。
+
+＜チケットのお届けについて＞
+・お申込み公演日の約2週間前です。チケット発送状況は、インフォメーションテープ、オフィシャルHPにて
+　お知らせ致します。お手元にチケットが届いたら、必ず公演日、チケット枚数をご確認下さい。
+　お申込み内容と異なっていた場合、至急バリバリクルーにご連絡下さい。
+・お申込み公演日10日前になってもチケットが届かない場合、至急ご連絡ください。
+　公演日の７日前までにご連絡頂けなかった場合、対応できない可能性がございます。
+・チケットは貴重品の為、ヤマト運輸セキュリティーパッケージにてファンクラブ登録住所へお送りします。
+　郵便局や、ヤマト運輸などの転送サービスはご利用出来ません。変更が間に合わず返送された場合など、
+　お客様都合による再送は着払いとさせて頂きます。
+
+
+ * *　総合お問合わせ先　* * *
+チケットに関するお問合わせは、
+ファンキー・ジャム内 バリバリクルーへお願い致します。 
+TEL：03-3470-7709（平日15:00～18:00以外はインフォメーションテープ）
+e-mail：ticket@funkyjam.com
+
+※このメールは送信専用です。
+　返信いただいてもお答えすることは出来ませんのでご了承ください。
+
+{/if}

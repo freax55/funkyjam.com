@@ -1,0 +1,1 @@
+SELECT coalesce(max(order_desc_no), 0) + 1 AS new_no FROM order_desc;

@@ -1,0 +1,20 @@
+チケット販売（PC）について
+BariBariCrewカードでの申込みがありました。
+
+お申込み番号：{$orderDesc.order_desc_no}
+FC会員番号：{$member_no}
+お名前：{$orderDesc.name} 様
+
+{foreach from=$orderList item=order}
+公演日：{$order.p_date|date_format:'%Y/%m/%d'}
+会場：{$order.place}
+枚数：{$order.quantity}枚
+チケット料金：{$order.price|number_format}円
+手数料：{$carriage|default:"400"|number_format}円
+
+{/foreach}
+
+合計金額：{$total|number_format}円
+メールアドレス：{$mail}
+ご連絡先：{$tel}
+

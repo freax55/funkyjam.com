@@ -1,0 +1,421 @@
+@charset "euc-jp";
+
+/* initialize
+------------------------------------------------------------------------------*/
+* {
+	margin:0;
+	padding:0;
+}
+
+html,
+body {
+	height:100%;
+}
+
+body {
+	font-family:"¥á¥¤¥ê¥ª", "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3", Arial, Helvetica, "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", "Osaka", sans-serif;
+}
+
+ul,
+ol,
+dl {
+	list-style-type:none;
+}
+
+img,
+a img {
+	border:0;
+	vertical-align: bottom;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+textarea {
+	font-size:100%;
+}
+
+br {
+	letter-spacing:0;
+}
+
+option {
+	padding:0 10px 0 0;
+}
+
+
+/* clearfix
+------------------------------------------------------------------------------*/
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+
+/* clearfix IE6 and IE7
+------------------------------------------------------------------------------*/
+.clearfix {
+	/zoom:1;
+}
+
+
+/* tag
+------------------------------------------------------------------------------*/
+body {
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#fff;
+}
+a {
+	text-decoration:;
+	color:;
+}
+a:hover {
+	text-decoration:;
+}
+
+
+/* page
+------------------------------------------------------------------------------*/
+#page {
+	background-image: url(/baribaricrew/images/bg_page2.gif);
+	background-repeat:repeat;
+	background-position:0 0;
+}
+
+
+/* header
+------------------------------------------------------------------------------*/
+#header {
+	padding:15px 0;
+	background-image: url(/baribaricrew/images/bg_page1.gif);
+	background-repeat:repeat;
+	background-position:0 0;
+	text-align: center;
+}
+
+
+/* contents
+------------------------------------------------------------------------------*/
+#contents {
+	width:850px;
+	margin: 0 auto;
+}
+#contents h1 {
+	padding:40px 0 35px;
+	font-size: 250%;
+	text-align: center;
+}
+#contents .nav {
+	width: 872px;
+	margin-right: -22px;
+	padding-bottom: 55px;
+	font-size: 167%;
+}
+#contents .nav li{
+	float: left;
+	height: 40px;
+	margin-right: 9px;
+	padding-right: 11px;
+	background-image: url(/baribaricrew/images/bg_arrow2.png);
+	background-repeat:no-repeat;
+	background-position:right 0;
+}
+#contents .nav li.cur{
+	background-image: url(/baribaricrew/images/bg_arrow1.png);
+}
+#contents .nav li p{
+	height: 35px;
+	padding: 5px 0 0 22px;
+	background-color: #333333;
+}
+#contents .nav li.step1 {
+	width: 116px;
+}
+#contents .nav li.step2 {
+	width: 156px;
+}
+#contents .nav li.step3 {
+	width: 136px;
+}
+#contents .nav li.step4 {
+	width: 116px;
+}
+#contents .nav li.step5 {
+	width: 236px;
+}
+#contents .nav li.cur p{
+	background-color: #757575;
+}
+#contents #main .form {
+	margin-bottom: 4px;
+	padding: 10px;
+	background-image: url(/baribaricrew/images/bg_br3.png);
+	background-repeat: repeat;
+	background-position:0 0;
+}
+#contents #main .form th {
+	width: 30%;
+	padding: 0 12px 0 4px;
+	font-size: 150%;
+	text-align: left;
+}
+#contents #main .form td {
+	vertical-align: middle;
+	font-size: 125%;
+}
+#contents #main .form .text {
+	width: 268px;
+	height: 40px;
+	border: 2px solid #fff;
+	font-size: 150%;
+	outline:none;
+	vertical-align: middle;
+}
+#contents #main .form .text.focus {
+	border-color: #77B2EE;
+	outline:none;
+}
+#contents #main .form .select {
+	border: 2px solid #fff;
+	font-size: 150%;
+	outline:none;
+}
+#contents #main .form .error {
+	font-size: 125%;
+	font-weight: bold;
+	color: #cc0000;
+}
+#contents #main .btn {
+	width: 289px;
+	height: 43px;
+	margin: 37px auto 18px;
+	padding-top: 17px;
+	background-image: url(/baribaricrew/images/bg_btn.jpg);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-align: center;
+	color: #000;
+	font-size: 175%;
+	font-weight: bold;
+	cursor: pointer;
+}
+#contents #main .return a{
+	display: block;
+	width: 289px;
+	height: 43px;
+	margin: 37px auto 18px;
+	padding-top: 17px;
+	background-image: url(/baribaricrew/images/bg_btn2.jpg);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-align: center;
+	color: #000;
+	font-size: 175%;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+#contents #main .back a{
+	display: block;
+	width: 459px;
+	height: 43px;
+	margin: 37px auto 18px;
+	padding-top: 17px;
+	background-image: url(/baribaricrew/images/bg_btn3.jpg);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-align: center;
+	color: #000;
+	font-size: 175%;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#contents #main .btnInput input{
+	display: block;
+	border: none;
+	width: 289px;
+	height: 60px;
+	margin: 37px auto 18px;
+	background-image: url(/baribaricrew/images/bg_btn.jpg);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-align: center;
+	color: #000;
+	font-size: 200%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#contents #main .btnInput.notClock input{
+	opacity: 0.5;
+}
+
+#contents #main .next{
+	padding-top: 10px;
+	font-size: 150%;
+	text-align: center;
+}
+#contents #main.top{
+	margin-bottom: 40px;
+	background-image: url(/baribaricrew/images/bg_br1.png);
+	background-repeat: repeat-y;
+	background-position: center 0;
+}
+#contents #main.top .left {
+	float: left;
+	width: 400px;
+}
+#contents #main.top .right {
+	float: right;
+	width: 400px;
+}
+#contents #main.top h2 {
+	padding:6px 6px 3px;
+	background-image: url(/baribaricrew/images/bg_br2.png);
+	background-repeat: repeat;
+	background-position:0 0;
+	text-align: center;
+	font-size: 225%;
+	font-weight:normal;
+}
+#contents #main.top .caption {
+	padding: 16px 0;
+	color: #FF9900;
+	font-size: 184%;
+	text-align: center;
+}
+#contents #main.top .rule {
+	overflow-y:auto;
+	width: 398px;
+	height: 278px;
+	margin-bottom: 12px;
+	padding: 10px 0;
+	background-color: #fff;
+	border: 1px solid #343434;
+	color: #000;
+}
+#contents #main.top .rule p{
+	padding: 5px 3px 5px 10px;
+}
+#contents #main.top .form .note {
+	padding-top: 6px;
+	font-size: 80%;
+}
+#contents #main.top .form .no .note {
+	padding-bottom: 18px;
+}
+#contents #main.lower {
+	margin-bottom: 40px;
+}
+#contents #main.lower h2 {
+	margin-bottom: 18px;
+	padding:6px 6px 3px;
+	background-image: url(/baribaricrew/images/bg_br2.png);
+	background-repeat: repeat;
+	background-position:0 0;
+	font-size: 225%;
+	font-weight:normal;
+}
+#contents #main.lower .attn {
+	padding-bottom: 23px;
+	font-size: 137%;
+}
+#contents #main.lower h2 img {
+	padding-right: 8px;
+	vertical-align: 7px;
+}
+#contents #main.lower .form table {
+	width: 100%;
+}
+#contents #main.lower .form th {
+	width: 20%;
+	vertical-align: middle;
+}
+#contents #main.lower .form td {
+	font-size: 125%;
+	vertical-align: middle;
+}
+#contents #main.lower .form .text {
+	width: 208px;
+	height: 29px;
+}
+#contents #main.lower .form .name .text {
+	width: 106px;
+}
+#contents #main.lower .form .text.zip1 {
+	width: 68px;
+}
+#contents #main.lower .form .text.zip2 {
+	width: 108px;
+}
+#contents #main.lower .form .address2 .text {
+	width: 638px;
+}
+#contents #main.lower .form .address2 {
+	padding-bottom: 12px;
+}
+#contents #main.lower .form .tel1 {
+	padding-bottom: 12px;
+}
+#contents #main.lower .form .error {
+	font-size: 100%;
+}
+#contents #main.input .form .note {
+	padding-top: 6px;
+	font-size: 80%;
+}
+#contents #main.confirm .conf{
+	padding:5px 10px;
+	background-color: #333;
+	line-height: 2;
+}
+#contents #main.select .form {
+	padding: 20px;
+	font-size: 175%;
+}
+#contents #main.select .form p {
+	padding-bottom: 20px;
+}
+#contents #main.select .btn {
+	margin-top: 17px;
+}
+#contents #main.complete .note {
+	text-align: center;
+}
+#contents #main.complete .note .thx{
+	padding-bottom: 22px;
+	font-size: 200%;
+}
+#contents #main.complete .note .txt{
+	padding-bottom: 52px;
+	font-size: 170%;
+}
+#contents #main.complete .note .contact{
+	font-size: 170%;
+}
+#contents #main.complete .note .contact a{
+	color: #fff;
+	text-decoration: none;
+}
+#contents #main.complete .note .contact a:hover{
+	text-decoration: underline;
+}
+/* footer
+------------------------------------------------------------------------------*/
+#footer {
+	background-image: url(/baribaricrew/images/bg_page1.gif);
+	background-repeat:repeat;
+	background-position:left top;
+}
+#footer .inner {
+	width:850px;
+	margin: 0 auto;
+	padding:24px 0 42px;
+	text-align: right;
+}

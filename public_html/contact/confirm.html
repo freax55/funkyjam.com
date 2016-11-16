@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>お問い合わせ - Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、Brown Eyed Soulが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,Brown Eyed Soul,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/lower.css">
+<link rel="stylesheet" type="text/css" href="/css/contact.css">
+<!--#include virtual="/include/head/js.html"-->
+</head>
+<body id="top" class="contact">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header_s.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからmainエリア -->
+	<section id="mainArea">
+		<p id="mainCover">お問い合わせ</p>
+	</section>
+<!-- ここまでmainエリア -->
+
+<!-- ここからcontentエリア -->
+	<article id="contentArea">
+		<div id="contentBox">
+			<p id="pankuzu"><a href="/">TOP</a>&nbsp;>&nbsp;お問い合わせ</p>
+			<div id="contentWrapper">
+				<p class="lead">下記の内容で送信しますか？</p>
+				<form action="index.php" method="post">
+					<div class="dfTbl">
+						<h1><strong>お問い合わせ</strong></h1>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>お名前</th>
+								<td>{$form.name|escape}</td>
+							</tr>
+							<tr>
+								<th>メールアドレス</th>
+								<td>{$form.mail|escape}</td>
+							</tr>
+							{if $form.sex}
+							<tr>
+								<th>男女</th>
+								<td>{$form.sex}</td>
+							</tr>
+							{/if}
+							{if $form.age}
+							<tr>
+								<th>年齢</th>
+								<td>{$form.age|escape}&nbsp;歳</td>
+							</tr>
+							{/if}
+							{if $form.job}
+							<tr>
+								<th>職業</th>
+								<td>{$form.job|escape}</td>
+							</tr>
+							{/if}
+							<tr>
+								<th>お問い合わせ種別</th>
+								<td>{$form.type|escape}</td>
+							</tr>
+							<tr>
+								<th>お問い合わせ内容</th>
+								<td>{$form.content|escape|nl2br}</td>
+							</tr>
+							<tr>
+								<th>メールマガジン</th>
+								<td>メルマガを購読{if $form.magazine}する{else}しない{/if}</td>
+							</tr>
+						</table>
+						<p class="btn">
+							<input type="submit" value="上記の内容で送信する" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="return" type="button" value="戻る" onclick="location.href='./?action=input';" />
+						</p>
+					</div>
+					<input type="hidden" name="action" value="process" />
+				</form>
+			</div>
+		</div><!-- /contentBox -->
+		<div id="bottomBorder"></div>
+	</article>
+<!-- ここまでcontentエリア -->
+
+<!-- ここからリンクエリア -->
+<!--#include virtual="/include/link_s.html"-->
+<!-- ここまでリンクエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer_s.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

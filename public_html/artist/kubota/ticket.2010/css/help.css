@@ -1,0 +1,53 @@
+@charset "shift_jis";
+
+
+#contents {
+	width:910px;
+	margin:0 auto;
+	color:#000;
+}
+#contents .section {
+	background-color:#FFF;
+	margin:20px 0 5px 0;
+}
+#contents .section h3 {
+	background-color:#333333;
+	text-align:center;
+	font-size:115%;
+	color:#FFF;
+}
+#contents .section .content {
+	padding:12px 12px 12px 14px;
+}
+#contents .section .content a {
+	color:#00F;
+}
+#contents .section .content .lead {
+	padding-bottom:10px;
+}
+#contents .section .content li{
+	padding:0 0 5px 13px;
+	background-image:url(../image/icon_arrow.gif);
+	background-position:0 4px;
+	background-repeat:no-repeat;
+	padding-left:13px;
+}
+#contents .section .content dt {
+	margin-top:1.5em;
+	font-weight:bold;
+	color:#CC0000;
+}
+#contents .section .content dd {
+}
+#contents .section .content strong {
+	font-weight:bold;
+	color:#CC0000;
+}
+#contents .section#law .content dt {
+	color:#333333;
+	margin-top:0;
+}
+#contents .section#law .content dd {
+	margin:0 0 1.5em 15px;
+}
+

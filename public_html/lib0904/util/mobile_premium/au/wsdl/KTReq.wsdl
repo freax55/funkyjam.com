@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="CtGKDR01060Service"
+    targetNamespace="http://www.ctgkdr01060.com/wsdl/CtGKDR01060RemoteInterface"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:binding="http://www.ctgkdr01060.com/definitions/CtGKDR01060RemoteInterface"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://www.ctgkdr01060.com/wsdl/CtGKDR01060RemoteInterface"
+    xmlns:xsd1="http://www.ctgkdr01060.com/schemas/CtGKDR01060RemoteInterface">
+    
+<types>
+<schema attributeFormDefault="qualified" elementFormDefault="qualified"
+    targetNamespace="http://www.ctgkdr01060.com/schemas/CtGKDR01060RemoteInterface"
+    xmlns="http://www.w3.org/2001/XMLSchema">
+    <complexType name="prkd.j.KTResp">
+        <all>
+            <element name="rslt_cd" nillable="true" type="string"/>
+            <element name="rsn_cd" nillable="true" type="string"/>
+        </all>
+    </complexType>
+    <complexType name="prkd.j.KTReq">
+        <all>
+            <element name="cp_cd" nillable="true" type="string"/>
+            <element name="commit_limit" type="long"/>
+            <element name="commit_limit_unit" nillable="true" type="string"/>
+            <element name="odr_sts" nillable="true" type="string"/>
+            <element name="tran_id" nillable="true" type="string"/>
+        </all>
+    </complexType>
+</schema>
+</types>
+
+    <message name="trx_KTReqRequest">
+        <part name="request" type="xsd1:prkd.j.KTReq"/>
+    </message>
+    <message name="trx_KTReqResponse">
+        <part name="result" type="xsd1:prkd.j.KTResp"/>
+    </message>
+    <portType name="CtGKDR01060">
+        <operation name="trx_KTReq" parameterOrder="request">
+            <input message="tns:trx_KTReqRequest" name="trx_KTReqRequest"/>
+            <output message="tns:trx_KTReqResponse" name="trx_KTReqResponse"/>
+        </operation>
+    </portType>
+    <binding name="CtGKDR01060Binding" type="tns:CtGKDR01060">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="trx_KTReq">
+            <soap:operation soapAction="" style="rpc"/>
+            <input name="trx_KTReqRequest">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/KTReq" use="encoded"/>
+            </input>
+            <output name="trx_KTReqResponse">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/KTReq" use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="CtGKDR01060Service">
+        <port binding="tns:CtGKDR01060Binding" name="CtGKDR01060Port">
+            <soap:address location="https://session.collect.kddi.com/soap/rpcrouter"/>
+        </port>
+    </service>
+</definitions>

@@ -1,0 +1,47 @@
+@charset "shift_jis";
+
+#contents .pageTitle {
+	background-image:url(../image/recruit/title.gif);
+}
+
+
+#contents table {
+	width:100%;
+	border-right:1px solid #333333;
+	border-bottom:1px solid #333333;
+}
+
+#contents thead td {
+	padding:4px 12px 5px 12px;
+	border-top:1px solid #333333;
+	border-left:1px solid #333333;
+	background-color:#F2E6E6;
+	background-image:url(../image/recruit/bg_thead.gif);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	text-align:left;
+	vertical-align:top;
+	font-weight:bold;
+	color:#CC3300;
+}
+#contents tbody th,
+#contents tbody td {
+	padding:7px 15px;
+	border-top:1px solid #333333;
+	border-left:1px solid #333333;
+	line-height:2;
+	text-align:left;
+	vertical-align:top;
+	font-weight:normal;
+}
+#contents tbody th {
+	background-color:#999999;
+	text-align:center;
+	color:#FFF;
+}
+#contents tbody td {
+	background-color:#F0F0F0;
+}
+#contents tbody td img {
+	margin-bottom:-2px;
+}

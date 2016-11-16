@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第122回 「宇宙人」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/11/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/11/09 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第122回 「宇宙人」</p>
+		</div>
+		<div class="texts">
+			<div class="text">ファンキー・ジャムでBBC会報の編集をしていると、ヤマサキが「久保田さんの"WRITE TO YOU"は受け取りましたが、ヘンシュウゴキはまだです」と発した。<br />話の流れから、ヤマサキのゆー「ヘンシュウゴキ」とは「編集後記」のことだと察しられたが、小学校の音楽教師になった時も、ファンキー・ジャムの社員として久保田利伸25周年ツアーで全国を巡った時でさえも、ヤマサキは編集後記をヘンシュウゴキと読んでいたのかと思うと…背筋に冷たい汗が流れ、密かにムーンウォークでファンキー・ジャムを早退しよーと思った。<br /><br />しか～し!<br /><br />締め切り間近の仕事があり、久保田チョイスの椅子に腰を戻した。(久保田チョイスの椅子の詳細は今月25日発行のBBC104号でね!)<br />しばらく仕事に熱中していると、BBC会員にとって大切なURLのスペルが微妙に違っていることに気づいた。<br /><br />「ヤマサキ、このURLのスペルって意図的に変えたの?」<br />「いえ、アタシは指示していません。すぐに確認します!」と、ウェブサイト屋さんの担当者に電話をした。<br />「もしもし…○○のURLのスペルが違うんですが、これは意図的に変えたんでしょうか?」と、ヘンシュウゴキの赤恥反動で、年上の担当者に、しかも美人の担当者に、ヤマサキは上から目線で問いただした。<br /><br />しか～し!<br /><br />ヤマサキの上から目線もソコマデ…すぐさま形勢逆転となった。<br />「えっ!?　ちょちょちょっと待って下さい…確認しますから…あぁぁぁ…ああ…そーですね…アタシが…間違ってました…スミマセン…」<br />そーなのだ。案の定そーなのだった。<br />最初にヤマサキが送ったURLのスペルが間違っていたのだ。<br />ヘンシュウゴキ&amp;間違いスペルのヤマサキ2連打で、完全に勤労意欲を失ったワタル自身は、ムーンウォークの余力もなく、堂々と前進歩行でファンキー・ジャムを早退した。<br />そのままザクザク歩いて渋谷へ行き、「宇宙人王(ワン)さんとの遭遇」を観た。<br />ずっと観たかった作品なのだが、東京では渋谷のNシアターとゆー小さな劇場でしか上映しておらず、なかなかタイミングが合わなかった。<br />そーゆー意味では、ヤマサキに感謝とも言えなくもないが、やっぱり言えない。<br />ストーリーは単純で、宇宙人が地球で一番多くの人が話している言語、すなわち、中国語をマスターして地球に来る。<br /><br />しか～し!<br /><br />宇宙人のワンさんが降り立った場所は中国じゃなくて、なぜかイタリア。中国語が分からない当局関係者は、中国語の翻訳をしているカワイイ女子を通訳にして、ワンさんと意思の疎通を計る。<br />ワンさんはカタクナに、地球と友好関係を築きたいのだと中国語で訴えるが、当局はワンさんの言葉を全然信じない。<br />「本当は地球侵略が目的なんだろ!?」<br />「違うアルヨ。ホントに地球と友好関係を築きたいアルヨ」と、同じことを繰り返すワンさん。<br />アタマに来た当局は、ワンさんを電気ショックで拷問する。<br /><br />ビャビャビャビャ～!<br /><br />それでもワンさんは地球人と仲良くしたいアルヨと、流暢な中国語で訴えるばかり。<br />カワイイ通訳は見るに見かね、拷問を止めさせよーとするが…。<br /><br />その結末は「やっぱり!」のオチなんだけど、中国人のウラオモテを痛烈に皮肉った作品で、イタリア人にとって中国人は宇宙人みたいに不可解な存在なんだとゆーことがズキズキ伝わる。<br />ちなみに、この作品を上映したNシアターは100人程度のミニ・シアターで、マニアックな映画を上映しつづけて来たが、今年の12月で閉館になってしまう。<br />いくらマニアが頑張っても多勢に無勢、デジタルの本流には逆らえなかった結果だ。<br />だから地球もワンさんに…もし、ワタル自身が宝くじで3億円とかGETしたら、「宇宙人ヤマサキとの遭遇」を製作し、意味不明な日本語をしゃべる宇宙人に手を焼くとゆーコメディにするのも面白いけど、やっぱり3億円もあったら、そんなクダラナイ映画なんて撮らないで、借金返して昼寝してやるぜ!<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>久保田利伸 ツアーグッズ管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../../../admin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../../../index.php">管理トップ</a> &gt; 商品管理 &gt; <a href="../index.php">グッズ</a> &gt; <a href="index.php">久保田利伸 ツアーグッズ</a> &gt;</p>
+<p id="new"><a href="index.php?action=new">追加する</a></p>
+{if $list}
+<p class="paging">{if $pageInfo.prev}<a href="index.php?page={$pageInfo.prev}">＜前の{$pageInfo.amount}件を表示</a>{/if}
+{$pageInfo.first}〜{$pageInfo.last}件 (全{$pageInfo.total}件)
+{if $pageInfo.next}<a href="index.php?page={$pageInfo.next}">次の{$pageInfo.amount}件を表示＞</a>{/if}
+{if $pageInfo.pagePrev}<a href="index.php?page={$pageInfo.pagePrev}">＜</a>{/if}
+|
+{section name=paging loop=$pageInfo.pageLast-$pageInfo.pageFirst+1}
+{if $pageInfo.pageFirst+$smarty.section.paging.index == $pageInfo.page}<strong>{$pageInfo.pageFirst+$smarty.section.paging.index}</strong> |
+{else}
+<a href="index.php?page={$pageInfo.pageFirst+$smarty.section.paging.index}">{$pageInfo.pageFirst+$smarty.section.paging.index}</a> |
+{/if}
+{/section}
+{if $pageInfo.pageNext}<a href="index.php?page={$pageInfo.pageNext}">＞</a>{/if}</p>
+<table id="list">
+  <tr>
+    <th>表示順</th>
+    <th>商品コード</th>
+    <th>商品名</th>
+    <th>アーティスト</th>
+    <th>分類</th>
+    <th>色・サイズ</th>
+    <th>在庫</th>
+    <th>単価</th>
+    <th>コメント</th>
+    <th>商品写真</th>
+    <th>備考</th>
+    <th>&nbsp;</th>
+  </tr>
+  {foreach name=item from=$list item=item}
+  <tr class="{cycle values='odd,even'}">
+    <td>{$item.inquiries_tel|escape}</td>
+    <td>{$item.item_code|escape}</td>
+    <td>{$item.name|escape}</td>
+    <td>{$categoryList[$item.category_code].name|escape}</td>
+    <td>{if $item.area}{$item.area|escape}{else}&nbsp;{/if}</td>
+    <td>
+	  {if $item.color}{$item.color|escape}{/if}
+	  {if $item.color && $item.size}<br>{/if}
+	  {if $item.size}{$item.size|escape}{else}&nbsp;{/if}
+	</td>
+    <td>{if $item.stock}{$item.stock|escape}{else}&nbsp;{/if}</td>
+    <td>{if $item.price}{$item.price|number_format|escape}円{else}&nbsp;{/if}</td>
+    <td>{if $item.note}{$item.note|escape|nl2br}{else}&nbsp;{/if}</td>
+    <td>{if $item.image}<img src="{$item.image}" width="60">{else}&nbsp;{/if}</td>
+    <td>{if $item.inquiries}{$item.inquiries|escape}{else}&nbsp;{/if}</td>
+    <td><div align="center"><a href="index.php?action=edit&key={$item.item_code}">編集する</a></div></td>
+  </tr>
+  {/foreach}
+</table>
+<p class="paging">{if $pageInfo.prev}<a href="index.php?page={$pageInfo.prev}">＜前の{$pageInfo.amount}件を表示</a>{/if}
+{$pageInfo.first}〜{$pageInfo.last}件 (全{$pageInfo.total}件)
+{if $pageInfo.next}<a href="index.php?page={$pageInfo.next}">次の{$pageInfo.amount}件を表示＞</a>{/if}
+{if $pageInfo.pagePrev}<a href="index.php?page={$pageInfo.pagePrev}">＜</a>{/if}
+|
+{section name=paging loop=$pageInfo.pageLast-$pageInfo.pageFirst+1}
+{if $pageInfo.pageFirst+$smarty.section.paging.index == $pageInfo.page}<strong>{$pageInfo.pageFirst+$smarty.section.paging.index}</strong> |
+{else}
+<a href="index.php?page={$pageInfo.pageFirst+$smarty.section.paging.index}">{$pageInfo.pageFirst+$smarty.section.paging.index}</a> |
+{/if}
+{/section}
+{if $pageInfo.pageNext}<a href="index.php?page={$pageInfo.pageNext}">＞</a>{/if}</p>
+{else}
+<p id="notfound">データがありません。</p>
+{/if}
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/shop.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<!-- InstanceBeginEditable name="doctitle" --><title>FJ SHOP - Funky Jam　ファンキー・ジャム</title><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="../css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/list.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/print.css" rel="stylesheet" type="text/css" media="print" /><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="js" --><!-- InstanceEndEditable -->
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div id="logo"><a href="../shop/">FJSHOP</a></div>
+				<div id="logoFJ"><a href="/">Funky Jam</a></div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--グローバルナビここから-->
+			<div id="gnavi">
+				<ul>
+					<li id="gnavi01"><a href="/shop/#anchorAttention">ご注意</a></li>
+					<li id="gnavi02"><a href="/shop/#anchorPayment">お支払について</a></li>
+					<li id="gnavi03"><a href="/shop/#anchorShipping">送料について</a></li>
+					<li id="gnavi04"><a href="/shop/#anchorContact">商品についてのお問い合わせ</a></li>
+					<li id="gnavi05"><a href="/shop/#anchorLaw">特定商取引法に基づく表記</a></li>
+				</ul>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--グローバルナビここまで-->
+<!--コンテンツここから-->
+			<div id="contents"><!-- InstanceBeginEditable name="contents" -->
+				<!-- <p class="lead" style="font-size:200%; font-weight:bold;">TOSHINOBU KUBOTA CONCERT TOUR 2015"L.O.K"オフィシャルツアーグッズ<br />ＦＪ ＳＨＯＰ先行販売申込受付スタート！</p> -->
+				<p class="lead" style="font-size:120%;">
+				<strong>◆◇◆お申込み前に必ずご確認ください◆◇◆</strong><br />
+				<br />
+				商品の発送は在庫状況やお住まいの地域によってお手元に届くまで2〜3週間お時間いただく場合がございます。<br />
+				予めご了承くださいますよう、お願いいたします。</p>
+				<!--<br />
+				一部、会場限定販売の商品がございます。<br /></p>
+				<a href="only.html" target="_blank">会場限定販売商品はこちら！</a>-->
+				<div id="items">
+					{foreach name=orderList from=$orderList item=order_name key=order_code}
+					{if $order_code|array_key_exists:$list}
+					<a name="{$order_code}" id="{$order_code}"></a> 
+					<div class="itemWrapper">
+						<div class="pageLinks">
+							<dl>
+								<dt>商品一覧</dt>
+								<dd>
+									<ul>
+										<li>▼<a href="#A030">森大輔</a></li>
+										<li class="last">▼<a href="#lok2">TOSHINOBU KUBOTA CONCERT TOUR 2015 "L.O.K"</a></li>
+										<li>▼<a href="#tktu">久保田利伸 in the Universe</a></li>
+										<li>▼<a href="#tkpa">久保田利伸 Party aint A Party!</a></li>
+										<li>▼<a href="#tkgs">久保田利伸 Gold Skool</a></li>
+										<li>▼<a href="#tktf">久保田利伸 TIMELESS FLY</a></li>
+										<li>▼<a href="#A020">浦嶋りんこ</a></li>
+										<li class="last">▼<a href="#A000">FJショップ</a></li>
+										<!--{foreach name=anchorList from=$orderList item=anchor_name key=anchor_code}
+										{if $anchor_code|array_key_exists:$list}
+										<li {if $smarty.foreach.anchorList.last}class="last"{/if}>▼<a href="#{$anchor_code|escape}">{$anchor_name|escape}</a></li>
+										{/if}
+										{/foreach}-->
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<p class="category">{$order_name|escape}</p>
+						<!--
+						{if $order_name == '久保田利伸'}
+						<div class="headLogo"><img src="img/logo2012.jpg" width="900" height="108" /></div>
+						{/if}-->
+
+						{foreach name=item from=$list[$order_code] item=item}
+
+						{if $item.item_code == 'TKTL0140'}
+							<div class="headLogo"><a name="lok2"></a><img src="img/lok2.jpg" /></div>
+						{/if}
+
+						{if $item.item_code == 'TKTL0010'}
+							<div class="headLogo"><a name="lok"></a><img src="img/lok.jpg" /></div>
+						{/if}
+
+							{if $item.item_code == 'TKGS0050'}
+							<div class="headLogo"><a name="tkgs"></a><img src="img/logo2011.jpg" width="900" height="108" /></div>
+							{elseif $item.item_code == 'TKTF0100'}
+							<div class="headLogo"><a name="tktf"></a><img src="img/logo2010.jpg" width="900" height="108" /></div>
+							{elseif $item.item_code == 'TKGS9950'}
+							<div class="headLogo"><a name="tkpa"></a><center><img src="img/logo2012.jpg" /></center></div>
+							{elseif $item.item_code == 'TKTU0040'}
+							<div class="headLogo"><a name="tktu"></a><center><img src="img/logo2013.jpg" /></center></div>
+							{/if}
+						<div class="item{if $item.item_code == 'TKKB0010'} special{/if}"{if $item.item_code == 'TKKB0010'} id="kubotaPhotos"{/if}>
+
+							<div class="image">
+								<table>
+									<tr>
+										<td>
+											{if $item.image}
+											<div>
+												{if $item.item_code != 'TKTU0040' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0010' && $item.item_code != 'TKTU0011' && $item.item_code != 'TKTU0012' && $item.item_code != 'TKTU0020' && $item.item_code != 'TKTU0021' && $item.item_code != 'TKTU0022' && $item.item_code != 'TKTU0050' && $item.item_code != 'TKTU0090' && $item.item_code != 'TKTU0110' && $item.item_code != 'TKGS9950' && $item.item_code != 'TKGS9980' && $item.item_code != 'TKGS9990' && $item.item_code != 'TKGS0010' && $item.item_code != 'TKGS9960' && $item.item_code != 'TKGS9970' && $item.item_code != 'TKGS0040' && $item.item_code != 'TKGS0020' && $item.item_code != 'TKGS0050' && $item.item_code != 'TKGS0090' && $item.item_code != 'TKGS0110' && $item.item_code != 'TKGS0120' && $item.item_code != 'TKGS0060' && $item.item_code != 'TKGS0070' && $item.item_code != 'TKGS0150' && $item.item_code != 'TKGS0130' && $item.item_code != 'TKTF0100' && $item.item_code != 'TKTF0310' && $item.item_code != 'TKTF0320' && $item.item_code != 'TKTF0110' && $item.item_code != 'UR0002' && $item.item_code != 'UR0001' && $item.item_code != 'TK2617'}<a href="{$item.image|replace:".jpg":"_b.jpg"|escape}" target="_blank">{/if}
+													<img src="{$item.image|escape}" alt="{$item.name|escape}" width="148">
+												{if $item.item_code != 'TKTU0040' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0010' && $item.item_code != 'TKTU0011' && $item.item_code != 'TKTU0012' && $item.item_code != 'TKTU0020' && $item.item_code != 'TKTU0021' && $item.item_code != 'TKTU0022' && $item.item_code != 'TKTU0050' && $item.item_code != 'TKTU0090' && $item.item_code != 'TKTU0110' && $item.item_code != 'TKGS9950' && $item.item_code != 'TKGS9980' && $item.item_code != 'TKGS9990' && $item.item_code != 'TKGS0010' && $item.item_code != 'TKGS9960' && $item.item_code != 'TKGS9970' && $item.item_code != 'TKGS0040' && $item.item_code != 'TKGS0020' && $item.item_code != 'TKGS0050' && $item.item_code != 'TKGS0090' && $item.item_code != 'TKGS0110' && $item.item_code != 'TKGS0120' && $item.item_code != 'TKGS0060' && $item.item_code != 'TKGS0070' && $item.item_code != 'TKGS0150' && $item.item_code != 'TKGS0130' && $item.item_code != 'TKTF0100' && $item.item_code != 'TKTF0310' && $item.item_code != 'TKTF0320' && $item.item_code != 'TKTF0110' && $item.item_code != 'UR0002' && $item.item_code != 'UR0001' && $item.item_code != 'TK2617'}</a>{/if}
+											</div>
+											{else}
+											<div><img src="img/nowprinting.gif" alt="now printing" width="100" height="50"></div>
+											{/if}
+										</td>
+									</tr>
+									{if $item.item_code != 'TKTU0040' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0070' && $item.item_code != 'TKTU0010' && $item.item_code != 'TKTU0011' && $item.item_code != 'TKTU0012' && $item.item_code != 'TKTU0020' && $item.item_code != 'TKTU0021' && $item.item_code != 'TKTU0022' && $item.item_code != 'TKTU0050' && $item.item_code != 'TKTU0090' && $item.item_code != 'TKTU0110' && $item.item_code != 'TKGS9950' && $item.item_code != 'TKGS9980' && $item.item_code != 'TKGS9990' && $item.item_code != 'TKGS0010' && $item.item_code != 'TKGS9960' && $item.item_code != 'TKGS9970' && $item.item_code != 'TKGS0040' && $item.item_code != 'TKGS0020' && $item.item_code != 'TKGS0050' && $item.item_code != 'TKGS0090' && $item.item_code != 'TKGS0110' && $item.item_code != 'TKGS0120' && $item.item_code != 'TKGS0060' && $item.item_code != 'TKGS0070' && $item.item_code != 'TKGS0150' && $item.item_code != 'TKGS0130' && $item.item_code != 'TKTF0100' && $item.item_code != 'TKTF0310' && $item.item_code != 'TKTF0320' && $item.item_code != 'TKTF0110' && $item.item_code != 'UR0002' && $item.item_code != 'UR0001' && $item.item_code != 'TK2617'}
+									<tr>
+										<td class="caption">
+											{if $item.image}
+											<div>クリックすると画像が大きくなります</div>
+											{else}
+											{/if}
+										</td>
+									</tr>
+									{/if}
+								</table>
+							</div>
+							<div class="textWrapper">
+								<div class="title">
+									<h2 class="name"><a name="{$item.item_code}" id="{$item.item_code}">{$item.name|escape}</a></h2>
+									<p class="code">（商品コード {$item.item_code|escape}）</p>
+								</div>
+								<div class="comment">{if $item.note}{$item.note|nl2br}{else}&nbsp;{/if}{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}<br /><strong style="color: #FF0000; font-size:137%;"> SOLD OUT </strong>{/if}</div>
+								<div class="quality">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<th><p class="color">色</p></th>
+											<td>{$item.color|escape|default:'-'}</td>
+										</tr>
+										<tr>
+											<th><p class="size">サイズ</p></th>
+											<td>{$item.size|default:'-'}</td>
+										</tr>
+										<tr>
+											<th><p class="price">料金</p></th>
+											<td class="priceValue">{$item.price|number_format}円</td>
+										</tr>
+									</table>				
+								</div>
+								<div class="clear">&nbsp;</div>
+								<div class="cart">
+									{if $item.item_code == 'TKTL0180' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153'}
+									&nbsp;
+									{elseif $cart[$item.item_code]} 
+									<p class="added"><strong>すでにカートに入っています</strong><br />
+									（<a href="index.php?action=cart">カートを確認する</a>）</p>
+									{else}
+									<form action="index.php" method="post"> 
+										<input type="hidden" name="action" value="add" />  
+										<input type="hidden" name="item_code" value="{$item.item_code}" />  
+										<input type="hidden" name="category_code" value="{$item.category_code}" />  
+										<input type="hidden" name="area" value="{$item.area|escape}" /> 
+										<div class="quantity">
+											お申し込み数量
+											{if $item.item_code == 'TKTL0140' || $item.item_code == 'TKTL0151' || $item.item_code == 'TKTL0152' || $item.item_code == 'TKTL0153' || $item.item_code == 'TKTL0160' || $item.item_code == 'TKTL0170' || $item.item_code == 'TKTL0180'}
+												{assign var=max_quantity value=3}
+											{else}
+												{assign var=max_quantity value=10}
+											{/if}
+											<select name="quantity">
+												{section name=stock loop=$max_quantity}
+												<option value="{$smarty.section.stock.iteration}">{$smarty.section.stock.iteration}</option>
+												{/section}
+											</select>
+										</div>
+										<div class="btn"><input type="submit" value="カートにいれる" /></div>
+										<div class="clear">&nbsp;</div>
+									</form> 
+									{/if}
+								</div>
+							</div>
+							<div class="clear">&nbsp;</div>
+						</div>
+						{foreachelse}
+						<p>ただいま商品がございません。</p>
+						{/foreach}
+						<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+					</div>
+					{/if}
+					{/foreach}
+				</div>
+				<a name="anchorAttention" id="anchorAttention"></a>
+				<div class="section">
+					<h3>▼ご注意▼</h3>
+					<div class="content">
+						<!--<dl class="confirm tlfly">
+							<dt>【カレンダー及び、カレンダーとその他グッズを同時購入されるお客様へ】</dt>
+							<dd>
+							カレンダーは12月下旬の発送を予定しております。<br />またその他グッズを同時購入の場合もカレンダーと同梱発送の為、通常グッズ発送日とは異なり12月下旬の発送となります。<br />
+							また12/4（土）以降にご入金の場合、年内に発送出来ない可能性がございます。予めご了承下さい。</dd>
+						</dl>
+							<br />-->
+						<ul>
+							<li>* 商品のサイズ、色、規格等をよくご確認の上、お申し込み下さい。尚、お申し込み完了後の商品の交換/返品/サイズ変更は原則的に受け付けておりませんのでご了承下さい。</li>
+							<li>* 原則的にお申し込み後のキャンセル・ご返金はお受け出来ませんので予めご了承下さい。</li>
+							<li>* ホームページに掲載されている写真と実際の商品とでは、若干の差がある可能性がございますがご了承下さい。</li>
+							<li>* 商品は数に限りがございます。ご要望に添えない場合もございますが、ご了承下さい。</li>
+							<li>* 特別な包装はお受け致しかねます。</li>
+							<li>* 商品未着等のトラブルに対処しやすいように当社では宅配便を使っております。</li>
+							<li>* お申込み完了後、購入内容の確認メールを「shop@funkyjam.com」よりお送りします。必ず内容をご確認ください。<!--<br />　※銀行ネットにてお申込みのお客様は、必ず銀行サイト最後のページから当サイトへお戻りください。お戻りにならない場合、確認メールは送信されません。--></li>
+							<li>* お申込み後、確認メールが受信出来ない際は、メールにてお問合せください。</li>
+							<li>* 国内のみの発送となります。</li>
+						</ul>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorPayment" id="anchorPayment"></a>
+				<div class="section">
+					<h3>▼お支払について▼</h3>
+					<div class="content">
+						<p>お支払いの方法は、代金引換またはBariBariCrewカードでのクレジット決済です。<br /></p>
+						<dl>
+							<dt>●代金引換</dt>
+							<dd>購入確認メールをご覧頂き、お申込み内容に誤りがあった場合、お申込み日の翌日中にメールにてご連絡下さい。<br />
+							期間内にご連絡がなかった時点でお申し込み完了とさせて頂き、商品を発送させて頂きます。<br />
+							尚、お支払いは現金のみとさせて頂きます。</dd>
+							<dt>●BARI BARI CREWカード決済</dt>
+							<dd>・BARI BARI CREWカード決済、につきましては、システム上、お申し込み完了時点でご購入確定とさせて頂きます。ご注意下さい。</dd>
+							<dd>・１回払いのみのお取り扱いになります。</dd>
+						</dl>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorShipping" id="anchorShipping"></a>
+				<div class="section">
+					<h3>▼送料について▼</h3>
+					<div class="content">
+						<p>商品の大小に関わらず、発送梱包料として、以下の料金がかかります。ご了承下さい。</p>
+						<p><strong>●代金引換　\1,000（代引代行料含）　●BariBariCrewカードでのクレジット決済　\800</strong></p>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorTesuryou" id="anchorTesuryou"></a>
+				<a name="anchorContact" id="anchorContact"></a>
+				<div class="section">
+					<h3>▼商品についてのお問い合わせ▼</h3>
+					<div class="content">
+						<p>商品に関するお問合わせは、ファンキー・ジャム内 FJ SHOP係へお願い致します。 </p>
+						<p>TEL：03-3470-7707（平日10:30〜18：30）</p>
+						<p>e-mail：<a href="mailto:shop@funkyjam.com">shop@funkyjam.com</a></p>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+				<a name="anchorLaw" id="anchorLaw"></a>
+				<div class="section" id="law">
+					<h3>▼特定商取引に基づく表記▼</h3>
+					<div class="content">
+						<dl>
+							<dt>■会社名</dt>
+							<dd>株式会社ファンキー・ジャム<br />
+								東京都港区西麻布1丁目14番2号疋田ビル302号<br />
+								TEL：03-3470-7707（平日10:30〜18：30）<br />
+								e-mail：shop@funkyjam.com
+							</dd>
+							<dt>■販売価格</dt>
+							<dd>商品毎に表示しています。<br />
+								付帯費用：消費税8%<br />
+								発送梱包料については、<a href="#anchorShipping">送料について</a>をご参照ください。
+							</dd>
+							<dt>■注文方法</dt>
+							<dd>インターネット</dd>
+							<dt>■支払方法</dt>
+							<dd><a href="#anchorPayment">お支払について</a>をご参照ください。</dd>
+							<dt>■商品配送</dt>
+							<dd>商品の発送は、通常、ご注文確認後4週間以内を予定しております。</dd>
+							<dt>■返品について</dt>
+							<dd>お申し込み完了後の商品の交換/返品/サイズ変更は、弊社の責に帰す場合を除き原則的に受け付けておりませんのでご了承下さい。</dd>
+							<dt>■お問い合わせ</dt>
+							<dd><a href="#anchorContact">商品についてのお問い合わせ</a>をご参照ください。</dd>
+						</dl>
+					</div>
+				</div>
+				<p class="pagetop"><a href="#pagetop">ページ上部へ</a></p>
+			<!-- InstanceEndEditable --></div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div id="copyright">(C)FUNKYJAM</div>
+			</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+<!-- InstanceEnd --></html>

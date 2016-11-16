@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>BARI BARI CREW  FAN CLUB会費コンビニ決済</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="/baribaricrew/css/baribaricrew.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/baribaricrew/js/jquery-1.9.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/baribaricrew/js/script.js" charset="utf-8"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/baribaricrew/js/jquery.belatedPNG.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/baribaricrew/js/alphafix.js" charset="utf-8"></script>
+<![endif]-->
+</head>
+<body>
+<div id="page">
+	<div id="header"><img src="/baribaricrew/images/logo.png" alt="BARI BARI CREW" /></div>
+	<div id="contents">
+		<h1>久保田利伸FANCLUB<br />
+		年会費コンビニ決済</h1>
+		<ul class="nav clearfix">
+			<li class="step1"><p>スタート</p></li>
+			<li class="step2"><p>基本情報入力</p></li>
+			<li class="step4 cur"><p>内容確認</p></li>
+			<li class="step3"><p>支払先選択</p></li>
+			<li class="step5"><p>コンビニ決済申込完了</p></li>
+		</ul>
+		<div id="main" class="confirm lower clearfix">
+			<h2><img src="/baribaricrew/images/icon1.gif" alt="" />内容確認{if $flg == "input"}（新規会員の方）{elseif $flg == "edit"}（会員継続の方）{/if}</h2>
+			<p class="attn">入力内容にお間違えございませんか？</p>
+			<form action="index.php" method="post">
+				<input type="hidden" name="action" value="select" />
+				<input type="hidden" name="total" value="{$total}" />
+				<input type="hidden" name="convenience_store_no" value="" />
+				<input type="hidden" name="payment" value="コンビニ決済" />
+				<input type="hidden" name="carriageTotal" value="{$carriage}" />
+				{if $flg == "edit"}
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr class="name">
+							<th>会員番号</th>
+							<td>
+								<span class="conf">{$no|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				{/if}
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr class="name">
+							<th>お名前</th>
+							<td>
+								姓&nbsp;&nbsp;<span class="conf">{$last_name|escape}</span>&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;<span class="conf">{$first_name|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr class="name">
+							<th>フリガナ</th>
+							<td>
+								セイ&nbsp;&nbsp;<span class="conf">{$last_name_kana|escape}</span>&nbsp;&nbsp;&nbsp;&nbsp;メイ&nbsp;&nbsp;<span class="conf">{$first_name_kana|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>郵便番号</th>
+							<td>
+								<span class="conf">{$zip1|escape}</span>&nbsp;-&nbsp;<span class="conf">{$zip2|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>都道府県</th>
+							<td>
+								<span class="conf">{$address1|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>ご住所</th>
+							<td>
+								<p class="address2"><span class="conf">{$address2|escape}</span></p>
+								<p class="address3"><strong>アパート・マンション名,号室</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span class="conf">{$address3|escape}</span></P>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>電話番号（自宅）</th>
+							<td>
+								<p class="tel1"><span class="conf">{$tel|escape}</span></p>
+							</td>
+						</tr>
+						<tr>
+							<th>　　　　（携帯）</th>
+							<td>
+								<span class="conf">{$tel2|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>メールアドレス</th>
+							<td>
+								<span class="conf">{$mail|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				{if $flg == "input"}
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>性　別</th>
+							<td>
+								<span class="conf">{$sex|escape}</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="form">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>生年月日</th>
+							<td>
+								<span class="conf">西暦&nbsp;&nbsp;{$birth1|escape}</span>&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;<span class="conf">{$birth2|escape}</span>&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;<span class="conf">{$birth3|escape}</span>&nbsp;&nbsp;日
+							</td>
+						</tr>
+					</table>
+				</div>
+				{/if}
+			</form>
+			<div class="btns clearfix">
+				<div class="return left"><a href="/baribaricrew/index.php?action=cart">修正する</a></div>
+				<div class="btn right">支払先選択へ進む</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner"><img src="/baribaricrew/images/copyright.png" alt="BARI BARI CREW" /></div>
+	</div>
+</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

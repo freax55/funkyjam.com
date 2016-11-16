@@ -1,0 +1,92 @@
+/* 
+    Document   : top
+    Created on : 2012/05/23, 13:10:15
+    Author     : staff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#headline {
+	width:100%;
+	text-align:center;
+}
+#headline .images {
+	position:relative;
+	overflow:hidden;
+	width:320px;
+	height:165px;
+	margin:0 auto;
+}
+#headline .images ul {
+	position:absolute;
+	width:1280px;
+}
+#headline .images ul li {
+	float:left;
+	text-align:center;
+	width:320px;
+}
+#headline .images ul li {
+	margin:0 auto;
+}
+#headline .paginate {
+	padding: 8px 0 16px;
+}
+#headline .paginate li {
+    display: inline-block;
+    height: 16px;
+    line-height: 1rem;
+    margin:8px 5px;
+    width: 16px;
+}
+#headline .paginate ul li span {
+    background: none repeat scroll 0 0 #000000;
+    display: inline-block;
+    font-size: 1px;
+    height: 11px;
+    line-height: 0;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+}
+#headline .paginate ul li#kubotaIcon.current span {
+    background: none repeat scroll 0 0 #D9BF10;
+    color: #D9BF10;
+}
+#headline .paginate ul li#urashimaIcon.current span {
+    background: none repeat scroll 0 0 #CB2135;
+    color: #CB2135;
+}
+#headline .paginate ul li#moriIcon.current span {
+    background: none repeat scroll 0 0 #289B28;
+    color: #289B28;
+}
+#headline .paginate ul li#besIcon.current span {
+    background: none repeat scroll 0 0 #184E8E;
+    color: #184E8E;
+}
+
+#newsBlock .news .new{
+	position: absolute;
+	left: 0;
+	top:0;
+	line-height: 0;
+}
+#newsBlock .news .wrap {
+	display:table;
+	width: 100%;
+}
+#newsBlock .news .icon{
+	/*float: left;*/
+	display:table-cell;
+	width: 20%;
+	padding-right: 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+#newsBlock .news .detail{
+	/*float: left;*/
+	display:table-cell;
+	width: 75%;
+	padding-top: 5px;
+}

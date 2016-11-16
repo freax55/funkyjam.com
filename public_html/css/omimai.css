@@ -1,0 +1,31 @@
+@charset "shift_jis";
+
+
+#contents {
+	padding-bottom:0;
+}
+#contents h1 {
+	text-align:center;
+	font-weight:bold;
+	font-size:170%;
+	padding-bottom:50px;
+}
+#contents .section {
+	width:550px;
+	margin:0 auto;
+}
+#contents .section p.name {
+	text-align:right;
+	padding:20px 0;
+}
+#contents .btns {
+	text-align:center;
+	font-size:140%;
+	padding-top:30px;
+}
+#contents .btns .top {
+	padding-bottom:20px;
+}
+#contents .btns .top a {
+	color:#000;
+}

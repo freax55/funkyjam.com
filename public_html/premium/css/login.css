@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* loginBox
+------------------------------------------------------------------------------*/
+#loginBox {
+	width:420px;
+	padding:15px;
+	margin:0 auto 20px;
+	text-align:center;
+	border:1px solid #424242;
+}
+#loginBox a {
+	color:#A5A5A5;
+	text-decoration:none;
+}
+#loginBox .boxInner {
+	width:420px;
+	background-image:url(/premium/images/login/bg.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding:30px 0 36px;
+}
+#loginBox .boxInner .lead {
+	width:350px;
+	padding:17px 0 24px;
+	margin:0 auto;
+}
+#loginBox .boxInner table {
+	width:229px;
+	margin:0 auto;
+	vertical-align:middle;
+}
+#loginBox .boxInner th {
+	padding-right:8px;
+}
+#loginBox .boxInner td input {
+	width:185px;
+	border:1px solid #666666;
+	min-height:29px;
+	margin-bottom:12px;
+}
+#loginBox .boxInner .links {
+	text-align:left;
+	padding-left:137px;
+}
+#loginBox .boxInner .links p {
+	padding-bottom:7px;
+}
+#loginBox .boxInner .links p img {
+	padding:0 8px 2px 0;
+}
+#loginBox .boxInner .btn {
+	padding:7px 0 30px;
+}
+#loginBox .boxInner .entryArea {
+	width:397px;
+	margin:0 auto;
+	padding-top:30px;
+	border-top:1px solid #424242;
+}
+#loginBox .boxInner .entryArea .btn {
+	width:288px;
+	padding:19px 32px;
+	margin:10px auto 0;
+	background-color:#424242;
+}

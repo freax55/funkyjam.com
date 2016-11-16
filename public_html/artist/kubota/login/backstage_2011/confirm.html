@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>萬壽特典申込 - Funky Jam　ファンキー・ジャム</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="../../../../css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../../../css/popup.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../../../css/login.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/backstage.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../../../css/print.css" rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" src="../../../js/jquery-1.3.2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../js/popup.js" charset="utf-8"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div id="logo">Funky Jam</div>
+				<div id="hnavi">
+					<div id="btnClose"><a href="javascript:void(0);">閉じる</a></div>
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--コンテンツここから-->
+			<div id="contents">
+				<h1 class="pageTitle" id="second">萬壽特典のお申込み</h1>
+				<div class="wrapper">
+					<div class="inner">
+						<form action="index.php" method="post">
+							<input type="hidden" name="action" value="process" />
+							
+							<table border="0" cellspacing="0" cellpadding="0" class="enquete">
+								<tr class="enq01" id="stage">
+									<th><p>ご希望の公演</p></th>
+								</tr>
+								<tr class="enq01">
+									<td><span>{$units.places[$data.place]|escape}</span></td>
+								</tr>
+							</table>
+							<div id="personal">
+								<ul>
+									<li id="number"><span>{$data.member_no|escape}</span></li>
+									<li id="name"><span>{$data.last_name|escape}{$data.first_name|escape}</span></li>
+									<li id="mail"><span>{$data.mail|escape}</span></li>
+									<li id="address"><span>〒{$data.zip1|escape}-{$data.zip2|escape}<br />
+									{$data.pref_city|escape}
+									{if $data.address}<br />{$data.address|escape}{/if}
+									{if $data.other_address}<br />{$data.other_address|escape}{/if}</span></li>
+									<li id="tel"><span>{$data.tel1|escape}-{$data.tel2|escape}-{$data.tel3|escape}</span></li>
+								</ul>
+								<div class="clear">&nbsp;</div>
+							</div>
+                            <div class="section">
+                            	<div class="wrapp">
+                                  <p class="title">！お申込みの際のご注意！<br />ご注意をよくお読みのうえ、画面最下部の送信ボタンを押してください。</p>
+                                      <ul class="attention">
+                                          <li>お申込みは1送信のみとさせて頂きます。（PC/モバイルどちらか1度のみの送信しか出来ないシステムです。）</li>
+                                          <li>取消し、変更はいかなる場合においてもお受け出来ません。お申込み内容にお間違いがないかご確認の上送信して下さい。</li>
+                                          <li>送信頂いたメールアドレスに確認メールを配信します。<br />
+                                          <center>「<strong>artist_kubota@funkyjam.com</strong>」</center>
+                                          よりPCメールにて配信しますので、このメールを受信できるように設定してからお申込み下さい。チケットお申込み時とは違うアドレスです。ご注意下さい。</li>
+                                          <li>お申込み後に設定の変更をされても確認メールは届きませんのでご注意下さい。<br />
+										  （特に携帯メールの方でよくわからない場合は、お使いの携帯電話ショップにお問い合わせの上、設定の変更をお願いします。また、yahooメールやgメールは迷惑メールフォルダに振り分けられている可能性が高いので、迷惑メールフォルダもご確認下さい。）</li>
+                                      </ul>
+                                 </div>
+                              *11月17日（木）、11月18日（金）NHKホールはかなりのご希望の集中が予想されます。あらかじめ別公演チケットをお持ちの方は、そちらの公演にお申込み頂くことをお勧め致します。 <br />
+							  また、バックステージご案内は終演後となります。バックステージご案内により、最終電車を逃された場合などの補償は一切致しかねます。<br />
+							  必ずご了承の上、お申込み下さい。<br />
+                              <br />
+                             <strong>お申込み内容にお間違いはございませんか？<br />今一度ご確認の上、よろしければ「送信する」ボタンを<font color="#FF0000">一度だけ</font>押して下さい。</strong>
+                          </div>
+							<p class="btns"><input type="button" onclick="location.href='index.php?action=input';" value="内容を修正する" /><input type="submit" value="送信" /></p>
+							</form>
+                            <p class="clear">&nbsp;</p>
+						</div>
+					</div>
+				</div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div class="inner">
+					<p id="copyright">(C)FUNKYJAM</p>
+					<p id="privacy"><a href="../../../../privacy.html" target="_blank">個人情報保護方針</a></p>
+				</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+</body>
+</html>

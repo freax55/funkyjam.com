@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+#mainCover{
+	padding: 48px 0 48px;
+	font-size: 200%;
+}
+
+#contentArea #contentWrapper {
+	width: 765px;
+}
+
+#contentArea #contentWrapper section{
+	padding-bottom: 60px;
+}
+
+#contentArea #contentWrapper section#artistCorner{
+	padding-bottom: 20px;
+}
+
+#contentArea #contentWrapper section#otherContents{
+	padding-bottom: 30px;
+}
+
+#contentArea #contentWrapper section#qrContact{
+	padding: 38px 0;
+	margin: 0 -107px 0;
+	background-color: #F5F5F5;
+}
+
+#contentArea #contentWrapper section h2{
+	margin: 0 -107px 50px;
+}
+
+#contentArea #contentWrapper .left{
+	float: left;
+}
+
+#contentArea #contentWrapper .right{
+	float: right;
+}
+
+#mobileAbout .titBlock{
+	padding-bottom: 35px;
+}
+
+#mobileAbout .titBlock .right{
+	padding-top: 10px;
+}
+
+#mobileAbout .titBlock .right h1{
+	line-height: 0;
+}
+
+#mobileAbout .aboutBlock .right{
+	width: 467px;
+	padding-top: 56px;
+}
+
+#mobileAbout .aboutBlock .about{
+	padding-bottom: 28px;
+}
+
+#mobileAbout .aboutBlock .about img{
+	vertical-align: bottom;
+}
+
+#mobileAbout .aboutBlock .qr{
+	width: 340px;
+	margin: 0 auto;
+	padding-bottom: 39px;
+}
+
+#mobileAbout .aboutBlock .qr .right{
+	width: 206px;
+	padding: 0;
+}
+
+#mobileAbout .aboutBlock .qr .attn{
+	line-height: 0;
+}
+
+#mobileAbout .aboutBlock .qr .url{
+	padding-top: 8px;
+	font-size: 87%;
+	text-align: center;
+	font-weight: bold;
+}
+
+#mobileAbout .aboutBlock .access{
+	padding-left: 18px;
+}
+
+#mobileAbout .aboutBlock .access .tit{
+	padding-bottom: 17px;
+	background-image: url(/images/mobile/br1.gif);
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+	line-height: 0;
+}
+
+#mobileAbout .aboutBlock .access dl{
+	padding-bottom: 6px;
+	background-image: url(/images/mobile/br1.gif);
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+}
+
+#mobileAbout .aboutBlock .access dl{
+	font-size: 70%;
+}
+#mobileAbout .aboutBlock .access dt{
+	clear: both;
+	float: left;
+	padding:10px 0 0 6px;
+}
+#mobileAbout .aboutBlock .access dd{
+	border-top: 1px solid #7C7C7C;
+	padding:8px 0 8px 80px;
+	color: #444444;
+}
+
+#mobileAbout .aboutBlock .access dd.docomo{
+	border-top: none;
+}
+
+#mobileAbout .aboutBlock .access dd.au{
+	background-color: #F5F5F5;
+}
+
+#artistCorner {
+	color: #666666;
+}
+
+#artistCorner strong{
+	color: #111;
+}
+
+#artistCorner .kubota{
+	padding:25px 0 55px 102px;
+	background-image: url(/images/mobile/bg_kubota.png);
+	background-repeat:no-repeat;
+	background-position: 0 0;
+}
+
+#artistCorner .urashima{
+	padding:5px 0 55px 102px;
+	background-image: url(/images/mobile/bg_urashima.png);
+	background-repeat:no-repeat;
+	background-position: 0 0;
+}
+
+#artistCorner .mori{
+	padding:0 0 55px 102px;
+	background-image: url(/images/mobile/bg_mori.png);
+	background-repeat:no-repeat;
+	background-position: 0 0;
+}
+
+#artistCorner .urashima .images {
+	padding-top: 37px;
+}
+
+#artistCorner .urashima .images img{
+	padding-right: 15px;
+}
+
+#otherContents {
+	color: #666666;
+	font-size: 87%;
+}
+
+#otherContents strong{
+	color: #111;
+}
+
+#otherContents .other1,
+#otherContents .other2,
+#otherContents .other3,
+#otherContents .other4,
+#otherContents .other5 {
+	width: 355px;
+	padding-bottom: 37px;
+}
+
+#otherContents .other1 {
+	width: auto;
+}
+
+#otherContents h3 {
+	padding-bottom: 8px;
+}
+
+#otherContents .other4 div{
+	float: left;
+	padding-right: 14px;
+}
+
+#otherContents .other2 div,
+#otherContents .other3 div,
+#otherContents .other5 div{
+	float: right;
+	padding-left: 14px;
+}
+
+#otherContents .other3 div,
+#otherContents .other5 div{
+	margin-top: -15px;
+}
+
+#qrContact p {
+	line-height: 0;
+}
+
+#qrContact .clearfix {
+	width: 634px;
+	margin: 0 auto;
+}
+
+#qrContact p {
+	line-height: 0;
+}
+
+#qrContact .right {
+	position: relative;
+}
+
+#qrContact .url {
+	position: absolute;
+	left:320px;
+	top:68px;
+	line-height: normal;
+	font-weight: bold;
+	font-size: 87%;
+}

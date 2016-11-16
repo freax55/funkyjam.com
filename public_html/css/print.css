@@ -1,0 +1,5 @@
+@charset "shift_jis";
+
+#main #hotTopics .textWrapper img {
+	display:none;
+}

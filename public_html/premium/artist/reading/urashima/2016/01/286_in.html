@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第286回 「ワタル in ベトナム」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/01/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/01/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第286回 「ワタル in ベトナム」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> ベトナムとゆーと、ワタル世代はベトナム戦争(1960~75)を思い出さずにはいられない。<br /><br />東南アジア大好きのワタル自身がベトナムに二の足を踏んでいたのは、実はワタル人生の中でベトナム戦争が、一番身近に感じた戦争だからでもある。<br /><br />戦争以前の背景に触れると大日本帝国なんかも登場して大変マルなので、激しく簡単にゆーけど、ベトナム戦争は北ベトナムVS南ベトナムとの覇権戦争だ。<br /><br />当時のベトナムは、ダナンの北隣にある古都フエを流れているベンハイ川=17度線で南北に分断され、北軍を支援していたのがソビエト・中国・北朝鮮などのアンチ民主主義国で、南軍支援がアメリカ・韓国・中華民国(台湾)などの民主主義国だった。<br /><br />ヨースルにベトナム戦争は、ベトナム全土を戦場にした民主主義VS共産主義…結果的にはアメリカVS共産圏の代理戦争だったとも言えるのだ。<br /><br />平成ピーポーも「ベトコン」とゆー言葉を聞いたコトがあると思うが、ベトコンは正式名「南ベトナム解放民族戦線」の差別用語で、太平洋戦争時にアメリカ人が日本人を「ジャップ」などと蔑称していたのと同じなのだが、米軍経由で日本のマスコミにもベトコン=北軍ベトナム兵の呼称みたいに定着した。<br /><br />「ベトナム戦記」を著した開高健氏も、北軍ベトナム兵士=南ベトナム解放民族戦線=National Liberation Frontと理解した上で「ベトコン」と記しているので、ここでもベトコンの呼称をお許し願いたいm(_ _)m<br /><br /><br /><br />しか～し!<br /><br />上から目線のアメリカだったが、ベトコンの奇襲攻撃でコテンパンにされてしまい、アタマに来て1965年から北側に爆撃機を飛ばしまくり、悪名高き「北爆」を開始する。<br /><br />この時に落とされた爆弾は、太平洋戦争でジャップ本土の爆撃に使われた爆弾の、なななんと20倍もの量で、いかにアメリカがベトコンに激怒していたかが分かる。<br /><br /><br /><br />しか～し!<br /><br />それでもベトコンは古タイヤで作ったホーチミンサンダルでジャングルを駆けまわり、地下に網の目のトンネルを掘り、最新兵器で武装した米兵を映画「ランボー」さながらのゲリラ戦術で恐怖に陥し入れて徹底抗戦した。<br /><br />そして1975年3月=ワタル自身が20歳になったばかり、ついに南の首都サイゴン(現ホーチミン)を陥落し、大国アメリカが支援した南軍チームに勝利したのである…って、たったコレだけの書き飛ばしでも、ベトコンの凄みが伝わったんじゃないかな？<br /><br />戦争当時のダナンは北爆の最前線基地で、沖縄・岩国・グアムの米軍基地からも爆撃機が北ベトナムに飛び立っていた。<br /><br />平成ピーポーにはショックかもしれないけれど、ベトナム北爆には日本の基地が直接的に関与していて、嘉手納を飛び立つB52爆撃機や、岩国に帰還した負傷兵の姿など、TVニュースの記憶は今もワタル自身に鮮明なのだよ。<br /><br />それから40年、ダナンの歴史博物館でベトナム戦争の残滓を目の前にした。<br /><br />展示ケースの中のボロボロのクタクタの、粗末な装備には今さらながら「ベトコンの不屈」を感じ、米軍が投下したナパーム弾の大きさには、身震いせずにはいられなかった。<br /><br />ナパーム弾は1000度にもなるドロドロの火焔ゼリーを四方八方に撒き散らし、あたり一面テッテーテキに焼きつくす焼夷爆弾だ。そればかりか、爆発時に多量の酸素を瞬時に消費しするので、ドロドロ火焔ゼリーを逃れた人も動物も、ことごとく窒息死する。<br /><br />キリバスの海岸に遺された迎撃砲にも落涙したが、実際に使用された兵器には、恐怖と死と絶望と怨念が封印されているばかりで、平和や正義や良心など微塵も感じられない、<br /><br /><br /><br />しか～し!<br /><br />さらに米軍は、ナパーム弾より悪魔的な「枯葉剤」をベトコンが潜むジャングルに撒き散らし、土も水も空気も人もすべてを汚染し、罪のない一般ピーポーの奇形児出産など大問題を残した。<br /><br />街並から戦争の陰は消えた今も、ベトナム戦争の悲劇は長い長い尾を引いているのだ。<br /><br /><br /><br />しか～し!<br /><br />ここからワタル余談を少々(._.)<br /><br />米軍の非道が伝わるにつれてアメリカでは反戦運動が高まり、ボブ・ディランやジョーン・バエズ、ピーター・ポール&マリー等が歌う反戦歌に触発され、日本でもオリジナルの反戦歌が生まれてフォークソングが一気にブームとなった。<br /><br />ジョン・レノンやマーヴィン・ゲイ、エルトン・ジョンetc.…など多くのアーティストも反戦歌を歌っていたが、当時の日本は音楽的に単純な4コードのフォークソングが受け入れられ、湘南のワタル小僧もベトナム戦争の実態も知らないくせに、高校2年で初めて作ったオリジナル曲が「戦場に咲く花」…とにかく思春期ド真ん中だったのである。<br /><br />ちなみに久保田利伸も最初のオリジナル曲は高校生の時に作った「ジャマイカに帰ろう」で、行ったコトもないジャマイカに帰ろーとしていた…男の思春期とゆーのは、トカクそーゆーモノなのである(^_^;)<br /><br />えー、話をベトナムに戻します。<br /><br />そして戦後40年=2015年のベトナムは、ベトナム共産党が一党支配する社会主義共和国になっているが、世界中の観光客をWelcomeしてくれる国になった…よーに見える。<br /><br />南沙諸島に基地を築いている中国にはアメリカと協力して対抗しているし、日本からも多数の企業が進出しているから、日本人観光客にすれば「イイ国じゃん」である。<br /><br />前出「ベトナム戦記」で、ベトナム仏教の僧侶が「はじめのうちは共産主義者は宗教に対してひどくやわらかで妥協的ですが、やがて宗教を否定し、弾圧します。かならずそうです」と語っているが、その仏僧の予言は今はまだ当たっていない…よーにも見える。<br /><br />これも「ベトナム戦記」の仏僧発言の要約だが、「ベトコンのほぼ100パーセントが農民仏教徒で、本物の共産主義者は1パーセントくらい」…が真実なら、これからもベトナム共産党は仏教徒を弾圧しないよーな気がするし、是非そーあり続けて欲しいと切に願うm(_ _)m<br /><br /><br /><br />ホイアン市場近くのカフェの壁に、古式ゆかしい結婚式と思われるモノクロ写真が飾ってあったので、「これはベトナム戦争以前の写真ですか?」と訊くと、店主が笑顔でこー言った。<br /><br />「これは7年前のオレの結婚式の写真だよ。ほら、ここにオレが写ってるだろ」<br /><br />こんな会話にカンレキ独り旅のワタル自身は、平穏な日々とゆーのはナニモノにも変えがたい…そうしみじみと実感する。<br /><br /><br /><br />しか～し!<br /><br />世界は2015年も平穏に遠く、無力なワタル自身は大晦日に酔って候m(_ _)m<br /><br /><br /><br /><br /><br />[追記]ベトナム戦争に関して伝えたい事実は、まだまだ多くあります。たとえば日本の「ベ平連」の活動や、その後の影響とかも昭和史には欠かせませんが、ここで紹介するには荷が重すぎます。興味のある平成ピーポーは是非、昭和史を紐解いてみて下さいm(_ _)m<br /><br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

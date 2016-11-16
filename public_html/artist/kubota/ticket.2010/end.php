@@ -1,0 +1,1 @@
+<?phprequire_once('auth.php');class ticketAction extends AuthAction {	function execute() {		unset($_SESSION["ticketLoginID"]);	}}?>

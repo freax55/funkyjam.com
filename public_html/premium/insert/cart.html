@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common_insert.html" -->
+<link href="/premium/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/insert.js"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_insert.html" -->
+			<div id="section">
+				<form action="index.php" method="post">
+				<input type="hidden" value="" name="check">
+				<div class="secInner">
+					{if $status != "edit"}
+						<h2 style="padding-bottom:0;">新規会員登録 ※年会費3,000円（税込）</h2>
+					{else}
+						<h2 style="padding-bottom:0;">会員継続</h2>
+					{/if}
+					<p style="color:#FF0000; padding-bottom:30px; font-weight: bold;">※当サイトは2017年9月末にて終了致します。ご了承の上ご登録ください。サイト終了に関する詳細は<a href="/message/" style="color:#FF0000; text-decoration: underline;">コチラ</a></p>
+					<p class="lead">下記項目すべてご入力ください</p>
+					<table border="0" cellspacing="0" cellpadding="0" class="formTbl">
+						<tr class="mail">
+							<th>メールアドレス（ID）</th>
+							<td>
+								<p><input type="text" name="mail" id="mail" value="{$mail|escape}" />&nbsp;&nbsp;例：info@funkyjam.com</p>
+								{if $status == "edit"}<p class="attn">現在ご登録のメールアドレス(ID)をご入力ください</p>{/if}
+								<p class="attn">受信設定確認してからご登録ください</p>
+								{if $errors.cart}<p class="error">※{$errors.cart|escape}</p>{/if}
+								{if $errors.mail}<p class="error">※{$errors.mail|escape}</p>{/if}
+							</td>
+						</tr>
+						{if $status != "edit"}
+						<tr class="mail">
+							<th>メールアドレス確認用(ID)</th>
+							<td>
+								<p><input type="text" name="confirm" id="confirm" value="{$confirm|escape}" />&nbsp;&nbsp;例：info@funkyjam.com</p>
+								{if $errors.cart}<p class="error">※{$errors.cart|escape}</p>{/if}
+							</td>
+						</tr>
+						{/if}
+						<tr class="pass">
+							<th>パスワード</th>
+							<td>
+								<p><input type="password" name="member_no" id="member_no" value="{$member_no|escape}" maxlength="8"/>&nbsp;&nbsp;※半角英数字8ケタでご入力ください。&nbsp;&nbsp;例：9999aaaa</p>
+								{if $status == "edit"}<p class="attn">現在ご登録のパスワードをご入力ください</p>{/if}
+								{if $errors.member_no}<p class="error">※{$errors.member_no|escape}</p>{/if}
+							</td>
+						</tr>
+						<tr class="name">
+							<th>お名前</th>
+							<td>
+								<p>姓&nbsp;&nbsp;<input type="text" name="last_name" value="{$last_name|escape}" class="text" />&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;<input type="text" name="first_name" value="{$first_name|escape}" class="text" />&nbsp;&nbsp;例：久保田　利伸</p>
+								{if $errors.name}<p class="error">※{$errors.name}</p>{/if}
+							</td>
+						</tr>
+						<tr class="name">
+							<th>フリガナ</th>
+							<td>
+								<p>セイ&nbsp;&nbsp;<input type="text" name="last_kana" value="{$last_kana|escape}" class="text" />&nbsp;&nbsp;&nbsp;&nbsp;メイ&nbsp;&nbsp;<input type="text" name="first_kana" value="{$first_kana|escape}" class="text" />&nbsp;&nbsp;例：クボタ　トシノブ</p>
+								{if $errors.kana}<p class="error">※{$errors.kana}</p>{/if}
+							</td>
+						</tr>
+						<tr class="tel">
+							<th>電話番号</th>
+							<td>
+								<p><input type="text" name="tel" value="{$tel|escape}" class="text" />&nbsp;&nbsp;※半角数字でご入力ください。&nbsp;&nbsp;例：01-222-3333</p>
+								{if $errors.tel}<p class="error">※{$errors.tel}</p>{/if}
+							</td>
+						</tr>
+						<tr class="select">
+							<th>決済方法</th>
+							<td>
+								<p><label><input type="radio" name="payment" value="カード決済（ペイジェント）"{if $payment == 'カード決済（ペイジェント）'} checked="checked"{/if} />&nbsp;&nbsp;クレジットカード決済</label><br />
+								　　　【VISA・MasterCard・Diners Club International・American Express・JCB】がご利用いただけます。<br />
+								<label><input type="radio" name="payment" value="コンビニ決済" {if $payment == 'コンビニ決済'} checked="checked"{/if} />&nbsp;&nbsp;コンビニ決済</label></p>
+								{if $status == "edit"}<p class="attn">※以前の決済方法と異なっても問題ございません</p>{/if}
+								{if $errors.payment}<p class="error">※{$errors.payment}</p>{/if}
+							</td>
+						</tr>
+					</table>
+					<div id="agreementBlock">
+						<div class="agreement">
+							<div class="inner">
+								<p class="tit">利用規約</p>
+								<dl>
+									<dt>第 1 条　本規約の適用範囲及び変更</dt>
+									<dd>本規約は、株式会社ファンキー・ジャム(以下当社)が運営するファンキー・ジャム オフィシャルプレミアムサイトサービス(以下本サービス)のサービスを利用することができるプレミアムメンバーズに伴うすべての事項にわたり適用するものとします。</dd>
+									<dt>第 2 条　プレミアムメンバーズ</dt>
+									<dd>本規約において「プレミアムメンバーズ」（以下利用者）とは、本規約を承諾の上、当社所定の方法により登録の申込み、年会費の入金等の手続きを完了した方をいいます。</dd>
+									<dt>第 3 条　規約の変更、承諾</dt>
+									<dd>当社は、利用者の事前の了承を得ることなく本規約を変更できるものとし、利用者はこれを承諾します。この変更は当社が提供する手段を通じて随時利用者に発表するものとします。</dd>
+									<dt>第 4 条　売買契約</dt>
+									<dd>利用者は本規約および当社が定める指示に従い、本サービスをご利用できるものとします。<br />
+									利用者は本サービスを通じて利用者が発信する情報につき一切の責任を負うものとし、当社に何等の迷惑または損害を与えないものとします。<br />
+									利用者が本サービスに関して損害を被ることがあっても、当社は一切、賠償の責任を負いません。<br />
+									本サービスの利用に関連して、利用者が他の利用者あるいは第三者あるいは権利者に対して損害を与えた場合、または利用者が他の利用者あるいは第三者あるいは権利者と紛争を生じた場合、利用者は自己の費用と責任で解決するものとし、当社に何等の迷惑または損害を与えないものとします。<br />
+									利用者が未成年者の場合、本サービスの利用については親権者の承諾を必要とします。<br />
+									利用者のプライバシーについては「プライバシーポリシー」に依拠するものとします。</dd>
+									<dt>第 5 条　登録と抹消</dt>
+									<dd>当社は、別途定める方法にて登録申込みを受け付け、登録希望者の会員情報の登録、年会費の入金等、必要な手続きが完了したことを確認後、当サイトへのアクセスを承認するものとします。<br />
+									年会費は一律年間3,000円とします。<br />
+									<br />
+									登録日は登録希望者が新規登録のお申込みを行った日からとします。<br />
+									<br />
+									コンビニ決済につきましては、登録希望者が支払いを行ったことを<br />
+									当社が確認した後入金確認メールをお送りいたします。<br />
+									そのメールが届いた時点より利用が可能となります。<br />
+									<br />
+									会員登録申請者が過去に本利用規約違反、もしくは当社での利用規約違反などにより会員登録の停止・抹消処分を受けていることが判明した場合、登録者の登録内容に虚偽の事項が含まれている場合、その他登録申請を承認することが不適当であると当社が判断する場合には、登録を承認しない場合があります。<br />
+									利用者は、当社に申告した住所、氏名、電話番号、その他申し込み情報に変更が生じた場合、当社が別途指定する方法により速やかに届け出るものとします。<br />
+									また、第7条（禁止項目）の行為を行った場合、その他本規約に違反した場合、当社は利用者に事前に通知することなく本サービスの提供の停止、または利用登録の抹消を行うことができるものとします。</dd>
+									<dt>第 6 条　IDおよびパスワードの管理</dt>
+									<dd>利用者は、自身が設定したIDおよびパスワード、または、当社が発行したIDおよびパスワードを使用して本サービスを利用するものとします。<br />
+									利用者は、自身が設定したIDおよびパスワード、または、当社が発行したIDおよびパスワードの使用、管理について一切の責任を負うものとします。<br />
+									利用者は、自己の責任においてIDおよびパスワードの使用、管理につき責任を持ち、第三者に譲渡、貸与、開示、使用させてはなりません。<br />
+									IDおよびパスワードの第三者の使用等による不利益、損害、改ざん等は、そのIDを保有する利用者が一切の責任を負うものとし、当社は一切責任を負わないとものとします。<br />
+									利用者は、IDおよびパスワードが第三者によって不正に使用されていることが判明した場合には、直ちに当社に連絡するものとします。<br />
+									利用者は、本サービス利用の際に行う、クレジットカード番号の送信行為等に伴う漏洩等の危険性を認識し、自己の責任の下にこれを行うものとします。</dd>
+									<dt>第 7 条　禁止項目</dt>
+									<dd>
+										<p class="space">利用者は本サービスを利用するにあたり以下の行為を行ってはならないものとします。また、以下に定めのない事由が生じた場合は、その都度当社が判断し対処するものとします。</p>
+										<ol>
+											<li>（1）会員登録の際に、虚偽の内容を登録する行為</li>
+											<li>（2）本サービスの運営を妨げる行為、その他本サービスに支障を来す恐れのある行為</li>
+											<li>（3）クレジットカードを不正使用して本サービスを利用する行為</li>
+											<li>（4）利用者IDおよびパスワードを不正に使用する行為</li>
+											<li>（5）他の利用者、第三者もしくは当社の商標権、著作権、プライバシーその他の権利を侵害する行為、または迷惑、不利益もしくは損害等それらの恐れのある行為</li>
+											<li>（6）本サービスの内容（情報・文章・画像・音等）を無断で連載、複写または転送する行為。</li>
+											<li>（7）アーテイストその他の第三者の財産、プライバシーもしくは肖像権を侵害する行為、又はそのおそれのある行為。</li>
+											<li>（8）アーティストその他の第三者を誹謗中傷し、その名誉又は信用を毀損すること、又はそのおそれを生じさせる行為。</li>
+										</ol>
+									</dd>
+									<dt>第 8 条　著作権</dt>
+									<dd>当サイトの画面に掲載されるいかなる画像、デザイン等に関する著作権または商標権、その他の知的財産権は、すべて当社またはその他の著作権等正当な権利者に帰属するものであり、利用者はこれらの権利を侵害する行為を行わないものとします。</dd>
+									<dt>第 9 条　権利の譲渡</dt>
+									<dd>利用者は、本サービスの提供を受ける権利その他利用者に認められている権利を譲渡することはできません。</dd>
+									<dt>第 10 条　支払い</dt>
+									<dd>本サービスでの年会費、および入金方法につきましては、利用ガイドに準ずるものとします。利用者がクレジットカードでお支払いする場合は、利用者がカード会社との間の別途契約条件に従うものとします。なお、利用者と当該クレジットカード会社などの間で何等かの紛争が発生した場合は、当該当事者双方で解決するものとし、当社は一切責任を負わないものとします。</dd>
+									<dt>第 11 条　商品等の配送</dt>
+									<dd>商品等の配送先は日本国内の住所に限るものとします。
+									商品の引渡し期日は、当社が任意に定めるものとし、商品申し込み時の配送日指定はできないものとします。<br />
+									利用者は、当社所定の方式により届け出ない限り、商品等の配送先の変更する事は出来ないものとします。</dd>
+									<dt>第 12 条　送料及び手数料</dt>
+									<dd>コンビニ決済利用者においては年会費の他に別途決済手数料が発生いたします。<br />
+									こちらは利用者が負担するものとします。<br />
+									<br />
+									商品等の配送に関る送料は当社が指定した商品を除き、全て利用者が負担するものとします。(但し、不良品･商品の相違による返品･交換の際の送料は、当社が負担いたします。)<br />
+									また、支払時の手数料は利用者が負担するものとします。</dd>
+									<dt>第 13 条　商品の返金・返品・交換</dt>
+									<dd>
+										<p>登録後の年会費はいかなる場合でも、返金することができません。<br />
+										コンビニ決済利用者の決済手数料も同様に返金することができません</p>
+										<p class="space">利用者は以下に定める事由の何れかに該当する場合に限り、当社に対し商品の交換を求めることができるものとします。</p>
+										<ol>
+											<li>（１）当社の過失により、注文商品と異なる商品が届けられた場合（注文した商品と利用者が意図または期待した商品等と異なる商品等が届けられた場合を除く）</li>
+											<li>（２）届けられた商品が不良品と明らかになった場合<br />
+											ただし、以下に定める事由の何れかに該当する場合、返品は一切受け付けないものとします。<br />
+											▼一度、ご使用・ご着用になった商品<br />
+											▼利用者側の過失、責任により、キズや汚れ、その他破損が生じた商品<br />
+											▼商品到着後、3日以内に当社の指定する連絡先への通達無く返品された商品。<br />
+											▼返品の連絡後4日以上経過した商品。<br />
+											▼箱・保証書等全ての付属品について破損・欠如、もしくはご使用になった商品<br />
+											▼サイズ調節済みの商品（時計・リング）は返品不可とさせていただきます。</li>
+										</ol>
+									</dd>
+									<dt>第 14 条　サービスの停止</dt>
+									<dd>
+										<p>当社は本サービスの運営管理にあたって、次のような場合は、利用者へ事前の通知、承諾なく、サービスを変更・追加または停止および中止できるものとします。またそれにより、サービスが中止、変更等されたことにより利用者が被った損害について、基本的に当社は責任を負わないものとします。</p>
+										<ol>
+											<li>（1）システムの定期保守および緊急保守のために必要な場合</li>
+											<li>（2）火災、停電、第三者による妨害行為等によりシステム運営が困難になった場合</li>
+											<li>（3）天災地変によりサービスの提供ができないとき</li>
+											<li>（4）その他、当社が必要と判断した場合</li>
+										</ol>
+									</dd>
+									<dt>第 15 条　免責事項</dt>
+									<dd>
+										<p class="space">当社は、利用者の登録内容に従って事務を処理することにより、免責されるものとします。</p>
+										<p class="space">当社は利用者に対して通知義務を負う場合は、利用者があらかじめ登録している Eメールアドレスへ通知を発信することにより、その義務を果たしたものとします。</p>
+										<p class="space">当社は、本規約および利用ガイド等に定める場合を除き、当社の責任に帰すべからざる事由から発生した損害、当社の予見の有無にかかわらず、特別の事情から生じた障害、逸失利得、および第三者からの損害賠償請求に基づく利用者の損害についてはその責任は負わないものとします。<br />
+										利用者が本サービスの利用に関して、利用者間または利用者と第三者との間で何らかの紛争が発生した場合には、関係する利用者がその責任で解決し、当社に一切の迷惑、損害を与えないものとします。<br />当社は、利用者がパスワードの変更を行う場合は、当社が指示する所定の方法で変更を行うことにより免責されるものとします。</p>
+									<dt>第 16 条　準拠法及び合意管轄</dt>
+									<dd>本規約の解釈、適用については日本法に準拠します。<br />
+									お客様と当社とのの間で本規約に関連して訴訟の必要が生じた場合、訴額に応じ、東京簡易裁判所又は東京地方裁判所を第一審合意管轄裁判所とします。</dd>
+
+									<dt>第17 条　お問い合わせ先</dt>
+									<dd>当社へのお問い合わせ先は、次に定めるとおりとします。尚、ご利用されるサービスによって、お問い合わせ窓口が別に案内されている場合は、該当の窓口へご連絡ください。</dd>
+								</dl>
+								<p>(株)ファンキー・ジャム  <a href="mailto:info@funkyjam.com">info@funkyjam.com</a></p>
+							</div>
+						</div>
+						{if $errors.check}<p class="error">※{$errors.check}</p>{/if}
+						<p class="check"><label for="c1"><input type="checkbox" name="check" value="1" id="c1"{if $check == '1'} checked="checked"{/if}>&nbsp;&nbsp;同意する</label></p>
+						<p class="next">次に進むには同意していただく必要がございます。</p>
+					</div>
+					<div class="btn btn1"><input type="submit" value="登録内容確認" /></div>
+				</div>
+				<input type="hidden" name="action" value="confirm" />
+				<input type="hidden" name="total" value="{$total}" />
+				<input type="hidden" name="carriageTotal" value="{$carriage}" />
+				</form>
+			</div>
+<!--#include virtual="/premium/include/footer_insert.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

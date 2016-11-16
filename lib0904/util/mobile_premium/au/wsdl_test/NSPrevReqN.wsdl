@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="CtGKDR01011Service"
+    targetNamespace="http://www.ctgkdr01011.com/wsdl/CtGKDR01011RemoteInterface"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:binding="http://www.ctgkdr01011.com/definitions/CtGKDR01011RemoteInterface"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://www.ctgkdr01011.com/wsdl/CtGKDR01011RemoteInterface"
+    xmlns:xsd1="http://www.ctgkdr01011.com/schemas/CtGKDR01011RemoteInterface">
+
+<types>
+<schema attributeFormDefault="qualified" elementFormDefault="qualified"
+    targetNamespace="http://www.ctgkdr01011.com/schemas/CtGKDR01011RemoteInterface"
+    xmlns="http://www.w3.org/2001/XMLSchema">
+    <complexType name="prkd.j.NSPrevResp">
+        <all>
+            <element name="rslt_cd" nillable="true" type="string"/>
+            <element name="rsn_cd" nillable="true" type="string"/>
+            <element name="tran_id" nillable="true" type="string"/>
+        </all>
+    </complexType>
+    <complexType name="prkd.j.NSPrevReqN">
+        <all>
+            <element name="cp_cd" nillable="true" type="string"/>
+            <element name="cp_srv_cd" nillable="true" type="string"/>
+            <element name="ok_url" nillable="true" type="string"/>
+            <element name="ng_url" nillable="true" type="string"/>
+            <element name="item_cd" nillable="true" type="string"/>
+            <element name="odr_id" nillable="true" type="string"/>
+        </all>
+    </complexType>
+</schema>
+</types>
+
+    <message name="trx_NSPrevReqNRequest">
+        <part name="request" type="xsd1:prkd.j.NSPrevReqN"/>
+    </message>
+    <message name="trx_NSPrevReqNResponse">
+        <part name="result" type="xsd1:prkd.j.NSPrevResp"/>
+    </message>
+    <portType name="CtGKDR01011">
+        <operation name="trx_NSPrevReqN" parameterOrder="request">
+            <input message="tns:trx_NSPrevReqNRequest" name="trx_NSPrevReqNRequest"/>
+            <output message="tns:trx_NSPrevReqNResponse" name="trx_NSPrevReqNResponse"/>
+        </operation>
+    </portType>
+    <binding name="CtGKDR01011Binding" type="tns:CtGKDR01011">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="trx_NSPrevReqN">
+            <soap:operation soapAction="" style="rpc"/>
+            <input name="trx_NSPrevReqNRequest">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/NSPrevReqN" use="encoded"/>
+            </input>
+            <output name="trx_NSPrevReqNResponse">
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="http://session.collect.kddi.com/NSPrevReqN" use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="CtGKDR01011Service">
+        <port binding="tns:CtGKDR01011Binding" name="CtGKDR01011Port">
+            <soap:address location="https://session-stg.collect.kddi.com/soap/rpcrouter"/>
+        </port>
+    </service>
+</definitions>

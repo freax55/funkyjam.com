@@ -1,0 +1,25 @@
+@charset "shift_jis";
+
+#container {
+	width:785px;
+}
+body {
+	/* for IE6 */
+	zoom:100% !important;
+	zoom:75%;
+}
+
+/* contents start */
+#contents .link {
+	visibility:hidden;
+}
+/* contents end */
+
+/* easter egg start */
+#contents .egg {
+	background:none !important;
+}
+#contents .egg img {
+	visibility:visible;
+}
+/* easter egg end */

@@ -1,0 +1,222 @@
+#contents .titleWrap {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 60px;
+  padding: 30px 25px;
+  background-color: #000;
+}
+#contents .titleWrap h2 {
+  float: left;
+}
+#contents .titleWrap p {
+  float: right;
+  padding-top: 10px;
+  color: #CCC;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+#contents .detailWrap {
+  position: relative;
+  width: 840px;
+  margin: 0 auto 60px;
+}
+#contents .detailWrap .date {
+  color: #333;
+  font-size: 2.6rem;
+}
+#contents .detailWrap h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 6rem;
+  font-weight: bold;
+}
+#contents .detailWrap > .inner .image, #contents .detailWrap > .inner p {
+  margin-top: 30px;
+}
+#contents .detailWrap > .inner .image:first-child, #contents .detailWrap > .inner p:first-child {
+  margin-top: 0;
+}
+#contents .detailWrap > .inner .image {
+  text-align: center;
+}
+#contents .detailWrap > .inner .image.br img {
+  border: 3px solid #000;
+}
+#contents .detailWrap > .inner p {
+  font-size: 3.4rem;
+}
+#contents .detailWrap > .inner p span {
+  color: #067840;
+}
+#contents .detailWrap > .inner p span.big {
+  font-weight: bold;
+  color: #333;
+  font-size: 4.0rem;
+}
+#contents .detailWrap > .inner p span.sml {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.8rem;
+}
+#contents .detailWrap > .inner.over {
+  height: 1200px;
+  overflow: hidden;
+}
+#contents .detailWrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 500px;
+  background-image: url(/mori/images/contents/bg_overlay.png);
+  background-position: 0 top;
+  background-repeat: repeat-x;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contents .detailWrap .overlay > .inner {
+  height: 100%;
+  padding-top: 120px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contents .detailWrap .overlay .error {
+  margin-bottom: 10px;
+  color: #F33;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+#contents .detailWrap .overlay .price {
+  margin-bottom: 75px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+#contents .detailWrap .overlay .btnWrap > div {
+  margin-top: 120px;
+}
+#contents .detailWrap .overlay .btnWrap > div:first-child {
+  margin-top: 0;
+}
+#contents .detailWrap .overlay .btnWrap > div p {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+#contents .detailWrap .youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+#contents .detailWrap .youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+#contents .backnumber h3 {
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  background-color: #000;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 899px) {
+  #contents .titleWrap {
+    margin-bottom: 30px;
+    padding: 15px 12.5px;
+    text-align: center;
+  }
+  #contents .titleWrap h2 {
+    float: none;
+    margin: 0 auto 10px;
+  }
+  #contents .titleWrap h2.morichannel {
+    width: 153.5px;
+  }
+  #contents .titleWrap h2.morikomi {
+    width: 92px;
+  }
+  #contents .titleWrap h2.morinews {
+    width: 127.5px;
+  }
+  #contents .titleWrap h2.moripushing {
+    width: 92px;
+  }
+  #contents .titleWrap h2.moriroom {
+    width: 90px;
+  }
+  #contents .titleWrap h2.moristagram {
+    width: 166.5px;
+  }
+  #contents .titleWrap h2.moriura {
+    width: 66.5px;
+  }
+  #contents .titleWrap p {
+    float: none;
+    padding-top: 0;
+    font-size: 1.2rem;
+  }
+  #contents .detailWrap {
+    width: 93.33333%;
+    margin: 0 auto 30px;
+  }
+  #contents .detailWrap .date {
+    font-size: 1.2rem;
+  }
+  #contents .detailWrap h3 {
+    margin-bottom: 7.5px;
+    font-size: 1.8rem;
+  }
+  #contents .detailWrap > .inner .image, #contents .detailWrap > .inner p {
+    margin-top: 15px;
+  }
+  #contents .detailWrap > .inner p {
+    font-size: 1.4rem;
+  }
+  #contents .detailWrap > .inner p span.big {
+    font-size: 1.8rem;
+  }
+  #contents .detailWrap > .inner p span.sml {
+    font-size: 0.8rem;
+  }
+  #contents .detailWrap > .inner.over {
+    height: 600px;
+  }
+  #contents .detailWrap .overlay {
+    padding-top: 250px;
+    background-image: url(/mori/images/contents/bg_overlay.png);
+    background-size: 1px 250px;
+  }
+  #contents .detailWrap .overlay > .inner {
+    padding-top: 60px;
+  }
+  #contents .detailWrap .overlay .error {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+  }
+  #contents .detailWrap .overlay .price {
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+  }
+  #contents .detailWrap .overlay .btnWrap > div {
+    margin-top: 25px;
+  }
+  #contents .detailWrap .overlay .btnWrap > div p {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
+  #contents .backnumber h3 {
+    margin-bottom: 15px;
+    padding: 7.5px 12.5px;
+    font-size: 1.4rem;
+  }
+}

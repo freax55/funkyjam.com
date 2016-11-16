@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/normal.css" rel="stylesheet" type="text/css" media="all" />
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header.html" -->
+			<div id="section" class="remind">
+				<form action="./" method="post">
+				<div class="secInner">
+					<h2>パスワード再発行</h2>
+					<p class="lead">パスワード再発行をご利用頂くためにはID(メールアドレス)が必要です。下欄にIDを入力して再発行手続きをご利用ください。</p>
+					<table border="0" cellspacing="0" cellpadding="0" class="formTbl">
+						<tr>
+							<th><img src="/premium/images/login/text_id.png" alt="ID" /></th>
+							<td>
+								<p><input type="text" name="login_id" id="login_id" value="{$login_id}" /></p>
+								{if $errors.login_id}<p class="error">※{$errors.login_id|escape}</p>{/if}
+							</td>
+						</tr>
+					</table>
+					<p class="lost">※ID、パスの両方を忘れた場合は、<br />
+					別途<a href="mailto:premium@funkyjam.com">premium@funkyjam.com</a>よりお問い合わせください</p>
+					<div class="btn btn1"><input type="submit" value="再発行する" /></div>
+				</div>
+				<input type="hidden" name="action" value="pass_remind_confirm" />
+				</form>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

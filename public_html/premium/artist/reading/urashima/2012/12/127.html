@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第127回 「岡本太郎大先生」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2012/12/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2012/12/14 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第127回 「岡本太郎大先生」</p>
+		</div>
+		<div class="texts">
+			<div class="text">「グラスの底に顔があってもいいじゃないか」とゆーセリフを、懐かしぃ～と思った方は、間違いなく1970年に開かれた日本万国博覧会世代だ。<br /><br />万博の巨大なモニュメント「太陽の塔」を創った岡本太郎大先生(1911-1996)は、たちまち日本中のアイドルとなって、ビデオテープのＣＭで「芸術は爆発だ!」と叫び、ウィスキーのCMで「グラスの底に顔があってもいいじゃないか!」と断言した。<br />当時高校1年生だったワタル自身は大阪の親戚宅に泊まり込み、万博会場で長蛇の列に何度も並んだ。<br />そして、太陽の塔の背面の黒い太陽に目を奪われ、内部の不気味なグラデーションがちょっと怖かったりした。<br />とにかく、太陽の塔はインパクト大で、作者の岡本太郎大先生もインパクト大で、ワタル自身にはマスクを被ったプロレスラーみたいに、正体不明の異彩人だった。<br />以来、大先生の作品、特に絵画は理解不能のまま、人生にナンの影響も与えず、損得もなく過ごして来た。<br /><br />大先生の目標は「ピカソを超えること」で、「芸術は心地悪くなければいけない」なんてシャウトし、ナニがナンだか解らないけど、常に強烈なインパクトを放っていた。<br /><br />ファンキー・ジャムの近くにある岡本太郎記念館は、大先生が住居＆アトリエとしていた建物で、大先生ワールド満載のオモシロ空間として有名だが、つい最近、川崎市にも岡本太郎美術館があることを知った。<br />川崎市岡本太郎美術館は1999年の開館だから、まったくもって我の無知を恥じるばかり。<br />そこで、オトナになった今なら大先生のココロに触れられるかもしれぬと、キンと冷えた冬晴れの日、流星号で川崎へ向かった。<br /><br />岡本太郎美術館は、生田緑地とゆー緑深く小高い山のフモトにある。<br />見事に整備された広い敷地には、美術館の他に日本民家園やプラネタリウムなどもあり、平日だとゆーのに多くの人が憩っていた。<br />中でも大先生の美術館は、周囲の環境が素晴らしかった。<br />広い庭園を抜けると、メタセコイアの落葉が地面を赤茶に染めた林が現れる。<br />思わず仰いでしまう巨木の向こうに、湧水が流れ落ちる階段が見える。それを登ると、右にカフェ、左に美術館の入口。<br />小さな入口を入ると、広々としたエントランスに、どこからかフランス語が聴こえた。<br />その日の展示は、大先生の少年時代を中心に、「小野佐世男/モガ・オン・パレード」とゆー企画展が開かれていた。<br />小野佐世男氏(1905～1954)は戦前戦後に活躍した風俗画家だが、彼の紹介はネット検索に譲るとして、大先生の話をつづける。<br /><br />えー、結論からゆーと、大先生の絵画は、やっぱりナニがナンだか解らなかった。<br /><br />それでも、書は少し解った。茂本ヒデキチ氏のタッチに少し似ていて、親近感があったのだ。<br />立体は、絵画よりは解ったつもりだ。タイトルの意味が見え隠れしたから、あくまでも「つもり」だ。<br />ちなみに、エントランスで聴いたフランス語を話していたのは、大先生だった。<br />フランスの取材で、「芸術は爆発だ!」の大先生とは思えないほど、流暢なフランス語で真摯に芸術を語っている。<br />フランス語でも爆発して欲しーなーのココロで館を進んで行くと、「夜」(1947)とゆー作品があった。<br /><br />足が止まった。<br /><br />それまでの抽象画とは違い、力強いデッサンで少女の後姿が描かれている。<br />少女が対峙しているのは不気味に抽象化された森で、少女は背後で鋭いナイフを手にしている。<br />なびく髪、広がるスカート、邪悪な森の息づかいが少女に迫る。<br /><br />いい。すごくいい。ビンビン響く。<br /><br />ピカソやダリが若い時に描いた具象画を、はじめて見た時と同じ気持ちになったのだ。<br />「夜」に出逢え、はじめて大先生の絵画が少しだけ解ったよーな気がした。<br />と同時に、オレはやっぱり絵画も音楽も、抽象を理解できる脳ミソが皆無なことを思い知った。<br />岡本太郎大先生に興味のない方も、生田緑地は本当に素晴らしい所なので、暖かな日にでもお出かけあれ!<br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

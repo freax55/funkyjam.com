@@ -1,0 +1,25 @@
+メルマガ会員へのご登録情報を変更いたしました。
+
+
+▼登録情報
+-------------------------------------
+[メールアドレス]
+{$form.mail}
+
+[性別]
+{$form.sex}
+
+[生年月日]
+西暦{$form.birthday_year}年{$form.birthday_month}月{$form.birthday_day}日
+
+[都道府県]
+{$form.pref}
+
+[パスワード]
+{$form.password}
+
+[気になっているアーティスト]
+{foreach item=artist from=$form.favorite}
+{$artist}
+{/foreach}
+-------------------------------------

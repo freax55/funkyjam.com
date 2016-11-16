@@ -1,0 +1,165 @@
+{$orderDesc.name} 様{assign var=total value=0}{if $admin != 2}{foreach from=$noTourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}{/if}{foreach from=$tourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}
+
+{if $admin}
+
+ファンクラブチケット優先予約にお申込みいただきありがとうございます。
+
+お支払い方法は「BARI BARI CREW カード決済（予約）」となります。
+
+本メールは購入予約のご確認メールとなります。	
+カードの発行を確認でき次第、購入内容を確定とさせていただきます。
+下記のお支払い方法ご確認の上、お振込みください。
+お申込み後、お客様の事情によるキャンセル・変更・追加・返金は、いかなる場合も応じられません。
+すべてのお問い合わせには、下記受付番号が必要です。
+
+
+受付番号：{$orderDesc.order_desc_no}
+
+
+*******************************
+
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+{/if}{foreach from=$tourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+
+{if $admin == 2}
+合計：{$total|number_format}円
+{else}
+送料：{$orderDesc.carriage|number_format}円
+合計：{$total+$orderDesc.carriage|number_format}円
+{/if}
+
+*******************************
+
+
+＜お願いとお断り＞
+・チケットの購入、抽選3,000席分最前列ふくむ良席の抽選対象になる為には2015年1月10日までにBARI BARI CREW CARDが発行されていることが条件です。
+・チケットお申し込み後、受付期間内にカードが発行された場合は再度申込の手続きの必要はございません。
+・2015年1月10日までにカードが発行されなかった場合別途お支払い方法をご案内させていただきます。
+・公演日まで会員継続をされていない場合、チケットが発送できませんのでご注意ください。
+＜チケットのお届けについて＞
+・お申込み公演日の約2週間前です。
+チケット発送状況は、BBCインフォメーション、オフィシャルHPにて随時お知らせ致します。お手元にチケットが届いたら、必ず公演日、チケット枚数をご確認下さい。
+お申込み内容と異なっていた場合、至急バリバリクルーにご連絡ください。
+お申込み公演日10日前になってもチケットが届かない場合、PC/モバイルの方は購入内容確認メールに記載の『受付番号』にてお問合せください。
+・チケットは貴重品の為、ヤマト運輸セキュリティーパッケージにてファンクラブ登録住所へお送りします。郵便局や、ヤマト運輸などの転送サービスはご利用出来ません。変更が間に合わず返送された場合など、お客様都合による再送は着払いとさせて頂きます。
+
+
+***総合お問い合わせ先***
+チケットに関するお問合わせは、
+ファンキー・ジャム内 バリバリクルーへお願い致します。
+TEL：03-3470-7709（平日15:00～18:00以外はインフォメーションテープ）
+e-mail：ticket@funkyjam.com
+
+※このメールは送信専用です。
+　返信いただいてもお答えすることは出来ませんのでご了承ください。
+
+--------------------------------------------------------------
+
+{$orderDesc.order_desc_no}
+BARI BARI CREW カード決済（予約）
+{$orderDesc.member_no}
+{$orderDesc.name}
+{$orderDesc.zip}
+{$orderDesc.address1}{$orderDesc.address2}{$orderDesc.address3}
+{$orderDesc.tel}
+{$orderDesc.mail}
+{$total+$orderDesc.carriage}
+{$orderDesc.carriage}
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{/if}{foreach from=$tourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+
+-------------------------------------------------------------
+
+{else}
+
+ファンクラブチケット優先予約にお申込みいただきありがとうございます。
+
+お支払い方法は「BARI BARI CREW カード決済（予約）」となります。
+
+本メールは購入予約のご確認メールとなります。	
+カードの発行を確認でき次第、購入内容を確定とさせていただきます。
+下記のお支払い方法ご確認の上、お振込みください。
+お申込み後、お客様の事情によるキャンセル・変更・追加・返金は、いかなる場合も応じられません。
+すべてのお問い合わせには、下記受付番号が必要です。
+
+
+受付番号：{$orderDesc.order_desc_no}
+
+
+*******************************
+
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+{/if}{foreach from=$tourGoodsList item=order}
+商品名：{$order.name}{if $order.item_code == "KT20130914p"} プレミアムシート{/if}
+
+価格：{$order.price|number_format}円
+個数：{$order.quantity}個
+
+{/foreach}
+*******************************
+
+{if $admin == 2}
+合計：{$total|number_format}円
+{else}
+送料：{$orderDesc.carriage|number_format}円
+合計：{$total+$orderDesc.carriage|number_format}円
+{/if}
+
+*******************************
+
+
+＜お願いとお断り＞
+・チケットの購入、抽選3,000席分最前列ふくむ良席の抽選対象になる為には2015年1月10日までにBARI BARI CREW CARDが発行されていることが条件です。
+・チケットお申し込み後、受付期間内にカードが発行された場合は再度申込の手続きの必要はございません。
+・2015年1月10日までにカードが発行されなかった場合別途お支払い方法をご案内させていただきます。
+・公演日まで会員継続をされていない場合、チケットが発送できませんのでご注意ください。
+＜チケットのお届けについて＞
+・お申込み公演日の約2週間前です。
+チケット発送状況は、BBCインフォメーション、オフィシャルHPにて随時お知らせ致します。お手元にチケットが届いたら、必ず公演日、チケット枚数をご確認下さい。
+お申込み内容と異なっていた場合、至急バリバリクルーにご連絡ください。
+お申込み公演日10日前になってもチケットが届かない場合、PC/モバイルの方は購入内容確認メールに記載の『受付番号』にてお問合せください。
+・チケットは貴重品の為、ヤマト運輸セキュリティーパッケージにてファンクラブ登録住所へお送りします。郵便局や、ヤマト運輸などの転送サービスはご利用出来ません。変更が間に合わず返送された場合など、お客様都合による再送は着払いとさせて頂きます。
+
+
+***総合お問い合わせ先***
+チケットに関するお問合わせは、
+ファンキー・ジャム内 バリバリクルーへお願い致します。
+TEL：03-3470-7709（平日15:00～18:00以外はインフォメーションテープ）
+e-mail：ticket@funkyjam.com
+
+※このメールは送信専用です。
+　返信いただいてもお答えすることは出来ませんのでご了承ください。
+
+
+{/if}

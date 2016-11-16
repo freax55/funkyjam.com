@@ -1,0 +1,1 @@
+select id from premium_users_pc where delete_flg = '0' and mail = '{$id}' and pass = '{$pass}';

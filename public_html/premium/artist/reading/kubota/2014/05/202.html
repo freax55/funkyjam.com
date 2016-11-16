@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第202回 「恥ずかしながら知りませんでした!」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/05/23"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/05/23 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第202回 「恥ずかしながら知りませんでした!」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 書こーか書くまいか悩んだけれど、自分の無知を正直に認めるコトにした。<br /><br />先日、CATVでアメリカの犯罪ドキュメントを見ていたら、小柄な老人がアップになった。<br /><br />誰だよコイツ？<br /><br /><br /><br />しか～し!<br /><br />その名前を見て、ワタル自身は冗談抜きにフリーズした。<br /><br />Harvey Phillip Spector=フィル・スペクター!?<br /><br />ゲゲッ!? フィル・スペクター!?<br /><br />えっ!? まだ生きてたの!?<br /><br />ひぇぇぇぇ～!!<br /><br />ホント～にホント～に失礼大変マルだが、オレはフィル・スペクターはとっくに亡くなっていると思っていたのだ。<br /><br />今これを読んで、呆れかえったPOPSピーポーの顔が目に浮かぶ(･･;)<br /><br />あぁぁ～恥ずかしいぃ～!!<br /><br />フィル・スペクターは、あまりにもレジェンドな存在だから、とっくに勝手に神格化しちゃっていたのだ。<br /><br />1960～70年代に思春期を迎えた日本人なら、フィル・スペクターのサウンドを避けて通るコトなんて出来なかった。<br /><br />日本人はアットーテキに、彼のサウンドが好きだったのだ。<br /><br />平成ピーポーにも分かりやすくゆーと、ビートルズのアルバム「Let It Be」('70)のプロデューサーがフィル・スペクターだ。<br /><br />それだけでもスゴイけれど、「Let It Be」は彼のキャリアの一部分でしかない。<br /><br />たとえば、フィルの最初の世界制覇曲「Be My Baby」(ザ・ロネッツ/'63)は日本でも大ヒットし、今でもタイトルを聞いただけでメロディが浮かぶ人も多いに違いない。<br /><br />ワタルの記憶が正しければ、ロネッツはシュープリームスよりも前に、日本人が最初に受け入れた黒人女性のコーラスグループだ。(COMPLEXの「Be My Baby」は全然別の曲だからね^^;)<br /><br />この「Be My Baby」を聴くと、フィル・スペクターの豊かな叙情表現力、プロデューサーとしての意識が明確に伝わって来る。<br /><br /><br /><br />しか～し!<br /><br />CATVの番組でロネッツのメンバーは、なぜかフィルはイギリス公演の最中ずっと、普段より高い声で話しつづけ、「どーしてそんな声を出すのか意味が分からず、恥ずかしかった」と言っていたから、当時からかなりエキセントリックな人物だったのだ。<br /><br /><br /><br />しか～し!<br /><br />最大の問題は、この番組が犯罪ドキュメントだってゆーコトだ。<br /><br />なんと、フィル・スペクターは、2003年2月に女優を射殺した罪で裁かれていたのだ!<br /><br />彼の存命も知らなかったワタル自身が、この大事件を知るヨシがない。<br /><br />2003年2月とゆーと、父親が亡くなった事後処理とか、2度目の離婚とかで、アレコレ落ち着かない時期だったので気づかなかったのか…とにかく、レジェンドの大事件をまったく知らなかったのである!<br /><br />番組の中で、フィルが秘書に撮らせたビデオが流れる。<br /><br />自分は無実だ、女優は自殺したんだ…と訴え、フィル自らYouTubeにアップしたビデオだ。<br /><br /><br /><br />しか～し!<br /><br />ヤバい目つきのフィル・スペクターが、いくら自己弁護をしても説得力ゼロで、2度目の裁判で有罪となり、現在も刑務所に収監されている。<br /><br />かつて彼がプロデュースした多くのセレブ達に嘆願書を依頼したが、誰1人としてフィルの願いに応じなかったと言う。<br /><br />番組の最後に警察で撮影された、ヅラを取ったゲーハーの老フィル・スペクターが映し出される。<br /><br />そのルックスから、この男がかつて世界中のPOPSピーポーを熱狂させたなんて、想像すらつかない。<br /><br />若くして巨万の富を築いても、ほとんどの人は、人生を見事にまっとうする。<br /><br /><br /><br />しか～し!<br /><br />フィル・スペクターのよーに、富と名声に囚われて、孤独な晩年を迎える人も少なくない。<br /><br />ネットで調べてみたら、彼は1980年を最後に、プロデュースの仕事をしていない。<br /><br />それでも、過去から届く莫大な印税で、カリフォルニアの大豪邸に暮らし、夜な夜な酒とドラッグと女に溺れていた。<br /><br />その豪邸で、彼は女優の口の中に、弾丸を撃ち込んだのだ。<br /><br />フィル・スペクターがPOPS界に果たした偉業は変わらないが、あまりに悲惨で、あまりに愚かな結末だ。<br /><br />フィル・スペクターを懐かしむ人も、そーでない人も、このあとYouTubeでザ・ロネッツの「Be My Baby」を、当時の動画で是非とも聴いてちょーだい。<br /><br />はじめて聴く人にも、POPS黎明期の高揚が必ず伝わって来るよ!<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

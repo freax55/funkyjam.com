@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第190回 「負け食」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/02/28 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第190回 「負け食」</p>
+		</div>
+		<div class="texts">
+			<div class="text">「負け食」=マケショクは、ワタル自身の造語だ。<br /><br />正確にゆーと「男の負け食」で、もっと正確にゆーと「デブ男の負け食」である。<br /><br />食べたいけれど、食べたらデブ男のコケンに関わる、デブの尊厳を粉々にするフードが、負け食の定義だ。<br /><br />全デ保連(全日本デブ保護連盟)のアンケート調査によると、一般ピーポーがデブに抱いているイメージは、汗っかき+脂ギッシュ+甘味好き+運動不足+高血圧+XL…といったトコロで当たらずとも遠からず…負のイメージしかない。<br /><br />ワタル自身はそれほど甘党ではないが、それでも、たまにムショーに濃い牛乳でカステラを流し込みたくなったりする。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />そんな時でも、コンビニで濃い牛乳とカステラを買ったりしたら、負け食になってしまう。<br /><br />濃い牛乳+カステラ=脂ギッシュ+甘味好き=典型的デブの方程式だ。<br /><br />コンビニの店員は笑顔の裏で「やっぱデブよね、ふん」などと嘲笑している。<br /><br />デブが濃い牛乳とカステラを渇望したら、細心の注意を払い、大手スーパーで他の食材と一緒に買わなければならない。<br /><br />「ウチの子供がカステラ好きでね、あっ、濃い牛乳は愛犬のベス…ゴールデンレトリバーなんだけど…このベスが濃い牛乳じゃないと飲まなくて、はっはっはっ!」といったテレパシーをレジのお姉さんに放射させ、「オレの買い物は野菜サラダだけだから、そこんトコよろしく!」と納得させなければならないのだ。<br /><br />ちなみに、デブが5メートル以内に近づいたら逃れられない負け食ナンバー1は、不二家の「カントリーマアム」だ。<br /><br />困ったコトに、カントリーマアムは芸能活動に不可欠らしく、久保田利伸のバックステージやPV撮影の現場にも必ず登場する。<br /><br />ナンなのだろー、あの求心力は？ カントリーマアムに接近遭遇したデブは、食べずにはイラレナイのだ。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />この場の正しいデブ対応は、すぐに食べたい欲求を抑え…なんだカントリーマアムか、甘いの好きじゃないけど、せっかくだから食べてみよーかな…でなければならない。<br /><br />好きじゃないけど仕方ない…の姿勢を忘れず、間違ってもバニラとココアの同時食いなどしてはナラナイ。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />先日、ワタル自身としたコトが、とんでもない失態をさらしてしまった。<br /><br />住みたい街ナンバー1といわれる吉祥寺に、「クロワッサン鯛焼き」の店が登場し、ヤングな女子が行列を作っている。<br /><br />店の前を通り過ぎつつ、さり気なく見ると、「24層に仕上げたクロワッサン生地」を鯛焼き型下部に入れ、そこに「クロワッサンに合う特製のアンコ」を投入、その上にまた24層クロワッサン生地をONして、鯛焼き型上部でガバチョと挟んでいる。<br /><br />周囲には焦げたバターと砂糖の芳香が漂い、むむむむ…デブの食欲中枢を強烈に刺激する。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />ここで食べたら、全国のデブ族に申し訳が立たない。<br /><br />女子の行列にデブ男が立ち入り、クロワッサン鯛焼きを買うなんて、考えただけで身の毛がよだつ。<br /><br />行列女子に「やっぱデブはバターとアンコが好きよね」と白眼視されるだけならマダシモ、「デブが並んでるから今日は帰ります」の事態になったら、営業妨害で店に訴えられる可能性も否定できない。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />吉祥寺に行くたびにクロワッサン鯛焼きが気になり、行列女子の観察と焦げバターの芳香吸引だけは怠らなかった。<br /><br />チャンスは、突然おとずれた。<br /><br />2月下旬の平日午前、店内に3人の女子店員が見えるだけで、行列女子がいないのだ。<br /><br />チャンスか? チャンスなのか!?<br /><br />それでもワタル自身は決心がつかず、動揺しつつ店を通り過ぎ、無関係な店の商品を眺めたりして呼吸を整え、さらに悩んで自問自答。<br /><br />いいのか？ 自分がデブだってコトを忘れるなよ！ 女子店員のサゲスミに堪えられるのか!?<br /><br /><br /><br />しか～し!<br /><br /><br /><br />ワタル自身は意を決した。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />クロワッサン鯛焼きの店に戻ると、2人の女子が店内にいるのだ。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />意を決したワタル自身は、もはや押しとどめられぬ。<br /><br />堂々と店内に歩を進めて、焼きたてのクロワッサン鯛焼きを睥睨した。<br /><br /><br /><br />しか～し!<br /><br /><br /><br />前の女子2人が会計でマゴマゴし、オレは入口付近で待たされる緊急事態に陥ってしまった。<br /><br />サラシモノだ。住みたい街ナンバー1の吉祥寺で、クロワッサン鯛焼きを買うデブ男がサラシモノになっている(ｰ ｰ;)<br /><br />オレはすでに、クロワッサン鯛焼き1個用に100円玉2個をポケットの中で握りしめ、最短購入時間の準備バンタンなのに、オバサン予備軍の女子は今になってバッグからサイフを取り出している。<br /><br />ナニやってんだよ、先に200円用意してろよ！<br /><br />もーダメだ、ガマン出来ない、退散だ退散だ、と思った時に、店員が「お客様は何個でしょうか？」と聞いてきた。<br /><br /><br /><br />「1個」<br /><br />「はい！ 1個でございますね！」と、オレの100倍快活に店員が復唱する。<br /><br /><br /><br />いいから早くしろっつーの！<br /><br /><br /><br />「こちら、クロワッサン鯛焼き1個で、200円になります！」<br /><br />分かってるっつーの！ 早くしろっつーの！<br /><br />「すぐにお召し上がりになりますか？」<br /><br />うんうんうん！<br /><br />「それではこのままで失礼しま～す！」<br /><br />紙に包まれた温かいクロワッサン鯛焼きを手に、オレは小走りで店を離れ、コピス吉祥寺のテラスでガブリとやった。<br /><br />その味は…自分で買って確かめなさいっ！<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/05/no_diggity_1.html">
+
+
+						No Diggity【オススメの映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/03"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/04/no_diggity.html">
+
+
+						No Diggity【今、行きたい国は？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/02/no_diggityi_do_love_you_gq.html">
+
+
+						No Diggity【I Do Love You / GQ】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/01/blurred_lines_robin_thicke.html">
+
+
+						No Diggity【Robin Thicke】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/03/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/03/post_37.html">
+
+
+						No Diggity【テルマエ・ロマエ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/02/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/02/post_36.html">
+
+
+						No Diggity【好きな焼酎ベスト３】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2013/01/31"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2013/01/revolvert-pain.html">
+
+
+						No Diggity【rEVOLVEr/T-PAIN】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

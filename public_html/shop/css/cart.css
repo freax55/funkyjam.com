@@ -1,0 +1,197 @@
+@charset "shift_jis";
+
+#contents .lead {
+	padding:30px 0 40px;
+}
+
+#itemList table {
+	width:100%;
+	margin-bottom:18px;
+	border-collapse:collapse;
+	border:1px solid #999999;
+}
+#itemList table th,
+#itemList table td {
+	border:1px solid #999999;
+	text-align:center;
+	vertical-align:middle;
+}
+#itemList table th {
+	background-color:#F0F0F0;
+	font-weight:normal;
+}
+#itemList table td {
+	padding:8px;
+}
+#itemList .itemName {
+	text-align:left;
+}
+#itemList .image {
+	width:100px;
+}
+#itemList .image table {
+	width:auto;
+	margin:auto;
+}
+#itemList .image table td {
+	width:100px;
+	height:100px;
+	padding:0;
+	text-align:center;
+}
+#contents #btnWrapper table {
+	width:100%;
+	margin:0 0 18px;
+}
+#contents #btnWrapper td {
+	text-align:right;
+}
+#contents #btnWrapper td.buy {
+	text-align:left;
+}
+#sum {
+	padding:10px;
+	border:3px solid #333333;
+	font-size:115%;
+	text-align:right;
+}
+#sum strong {
+	color:#FF0000;
+}
+#sum .all {
+	margin-top:4px;
+	padding-top:5px;
+	background-image:url(../img/dotline.gif);
+	background-repeat:repeat-x;
+	background-position:left top;
+}
+#contents .confirmTxt {
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+}
+.error {
+	color:#FF0000;
+	font-weight:bold;
+}
+
+#contents .section {
+	margin:20px 0;
+	border:1px solid #000000;
+}
+#contents .section h2 {
+	padding-left:12px;
+	background-color:#333333;
+	color:#FFFFFF;
+	font-size:115%;
+}
+#contents .section .inner {
+	padding:10px;
+}
+#contents .section .inner dt {
+	padding-bottom:3px;
+	font-size:115%;
+	font-weight:bold;
+	line-height:normal;
+}
+#contents .section .inner .confirm dt {
+	padding-left:10px;
+}
+#contents .section .inner dd {
+	padding-bottom:28px;
+	padding-left:20px;
+}
+#contents .section .inner dd.omc {
+	padding-bottom:0;
+}
+#contents .section .inner .confirm dd {
+	padding-bottom:0;
+	padding-left:10px;
+}
+#contents .section .inner dd strong {
+	color:#FF0000;
+}
+#contents .section .inner dd strong {
+	font-weight:normal;
+}
+#contents .section .asterisk {
+	color:#FF0000;
+}
+#contents .section th,
+#contents .section td {
+	padding:0 0 5px 10px;
+	text-align:left;
+	vertical-align:top;
+}
+#contents .section th {
+	font-weight:normal;
+}
+#contents .section th strong {
+	color:#FF0000;
+}
+#contents .section td {
+	color:#333333;
+}
+#contents .section .confirm td {
+	color:#333333;
+}
+#contents .section td input {
+	border:1px solid #999999;
+}
+#contents .section table.cvsList {
+	width:845px;
+	border:1px solid #999;
+}
+#contents .section table.cvsList th {
+	width:300px;
+	padding:10px;
+	color:#FFF;
+	background-color:#999;
+	border-bottom:1px solid #FFF;
+	text-align:left;
+	vertical-align:middle;
+}
+#contents .section table.cvsList td {
+	border:1px solid #999;
+	padding:10px;
+}
+#contents .btn#back {
+	padding-top:20px;
+}
+#contents .btn {
+	text-align:center;
+}
+#contents .link {
+	padding-top:50px;
+	text-align:center;
+}
+#contents .link a {
+	padding-bottom:10px;
+	padding-left:13px;
+	background-image:url(../../image/common/icon_arrow.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+	line-height:normal;
+}
+#empty {
+	margin-bottom:20px;
+	padding:20px;
+	border:3px solid #333333;
+	font-size:115%;
+}
+
+#contents .section .inner .tlfly {
+	font-weight:bold;
+	text-align:center;
+	font-size:110%;
+}
+#contents .section .inner .tlfly dt {
+	margin-top:0;
+	margin-bottom:10px;
+	font-size:120%;
+	color:#CC0000;
+}
+
+#contents .notClock input{
+	opacity: 0.5;
+}

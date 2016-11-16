@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Staff Only"
+AuthUserFile /home/funkyjam/.htpasswd
+AuthGroupFile /dev/null
+require valid-user

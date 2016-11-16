@@ -1,0 +1,1 @@
+select account_no from mori_user where delete_flg = '0';

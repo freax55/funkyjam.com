@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第311回 「スピーチ」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/06/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/06/24 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第311回 「スピーチ」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> え&#12316;、最近のコトでありますが、大リーグのイチロー選手がピート・ローズの通算安打記録を塗り替えました。<br><br />ピート・ローズは野球賭博で大リーグを永久追放されているのに、イチローの新記録にイチャモンをつけるなんて…え&#12316;、ソレはソレとして、とにかくイチロー選手の活躍は、日本人として大きな誇りであります。<br><br /><br><br />しか&#12316;し!<br><br />個人的に言えば、イチロー選手の他にも誇らしいプロ選手がいます。<br><br />それは女子プロレスラーのASUKAです。<br><br />え&#12316;、2列目の赤いドレスのアナタ、今「えっ!?　女子プロレス!?」と思ったでしょ(笑)?<br><br />まあまあ、少しシンボーして聞いて下さい。<br><br />ASUKAは2004年に日本マットでデビュー以来、数々のタイトルを獲得するも紆余曲折あって独立、2015年に世界最大のプロレス団体=WWEと単身契約し、いきなりスター選手の仲間入りをした逸材であります。<br><br />そして今年の4月には日本女子初のNXTチャンピオンとなり、6月には自分の3倍もある巨体レスラーの挑戦を跳ね返し、見事に初防衛を果たしました。<br><br /><br><br />しか&#12316;し!<br><br />ドンドン(演壇を叩く音)!<br><br />ご存知のよーに、プロレスは男も女も実力本位の格闘技ではなく、肉体を駆使したエンターテイメントで、ただ強ければチャンピオンになれる世界ではありません。<br><br />いくら強くても、パフォーマンスに華があり、魅せる試合が出来なければ、メーンイベンターにはなれないのであります。<br><br />特にアメリカの女子プロレスラーは、鍛えあげられたセクシーな肉体美女が必須で…そりゃもーグラマラスなボインボインで…え&#12316;、ついついコーフンして失礼しました(笑)。<br><br />とにかく、そーゆー意味では、日本人のASUKA=160cm/62kgは、どーしても見劣りがします。<br><br /><br><br />しか&#12316;し!<br><br />そのハンデをASUKAは、日本人ならではの繊細なテクニックと大胆なパフォーマンスで、見事に乗り越えたのであります。<br><br />プロレスのチャンピオンは最高のレスラー、すなわち、最高に集客力のあるレスラーだけが手に入れられる地位で、ASUKAは現在のアメリカ女子プロレス界で、最も商品価値のあるヤマトナデシコなのであります!<br><br />アメリカ人が日本人のASUKAに、大声援を送っているのであります!<br><br />嬉しいじゃあ&#12316;りませんか!?<br><br />ドンドン(演壇を叩く音)!<br><br />野球もプロレスもバスケットボールもフットボールも、本場のアメリカで自分の実力を試したいと願っている日本人は少なくありません。<br><br /><br><br />しか&#12316;し!<br><br />ジャンルに限らず、本場で勝負出来る日本人は絶対的に少数派です。<br><br /><br><br />しか&#12316;し!<br><br />映画「迷宮のレンブラント」の中で、老いた贋作絵師が、やはり贋作絵師になった息子に言っています。<br><br />「おまえはイタリアに行くべきだった。ダ・ヴィンチやリッピ、カラヴァッジョやドナテッロの作品を先に見るべきだった…」と。<br><br />このよーに、本場で本物に触れ、そこからインスパイアを得るコトは、限りない高みを目指す者にとって、何物にも代えがたいのであります。<br><br />ですから、この場でワタクシが強く言いたいのは、久保田利伸が日本のポジションに甘んじず、R&Bの本場ニューヨークに渡ったのは、高みを極める者としての必然だったとゆーコトであります。<br><br /><br><br />しか&#12316;し!<br><br />アーティストとして、まだまだ久保田利伸は旅の途中であります。<br><br />もっともっと新しい世界を生み出し、さらに素晴らしい楽曲を聞かせてくれるコトを、ファンの1人として願わずにはいられません。<br><br />ドンドン(演壇を叩く音)!<br><br />以上をもって、久保田利伸デビュー30周年記念の祝辞といたします。<br><br />ご清聴感謝いたします。<br><br />え!? はい!?<br><br />熊本に行ったんだからボランティアをするべき…?<br><br />それはワタクシ個人の問題で、この場では…はい…え&#12316;、確かにラーメンばかり食べていましたが、不適切でも違法とまでは…あのですねぇ、ラーメンを食べると原稿がスムーズに書けるんですよ!　書けるって言ったら書けるんだから仕方ねーじゃねーか!?　なんで警備員が来るんだよ?　放せっつーの!　ちょちょちょっと待てっつーの……!<br><br />ピ&#12316;ピ&#12316;ピ&#12316;(ワタルが強制退場させられてマイクがハウリングを起こした音)!</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/07/no_diggity_3.html">
+
+
+						No Diggity【オススメの本～第二弾～】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/06/no_diggity_2.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

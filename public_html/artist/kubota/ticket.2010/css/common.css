@@ -1,0 +1,237 @@
+@charset "shift_jis";
+
+body {
+	background-image:url(../image/bg.jpg);
+	background-position:left top;
+	background-repeat:repeat;
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#FFF;
+}
+a {
+	text-decoration:underline;
+	color:#FFFFFF;
+}
+.section a {
+	color:#0000FF;
+}
+a:hover {
+	text-decoration:none;
+}
+#page {
+	padding-bottom:30px;
+	background-image:url(../image/header_bg.jpg);
+	background-position:left top;
+	background-repeat:repeat-x;
+}
+#container {
+	width:950px;
+	margin:0 auto;
+}
+
+/* header start */
+#header {
+	height:155px;
+}
+#header .inner {
+}
+#header #logo {
+	float:left;
+	width:364px;
+	padding-left:123px;
+}
+#header #logo a {
+	display:block;
+	width:396px;
+	height:145px;
+	background-image:url(../image/logo.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+#header #logoFJ {
+	float:left;
+	width:151px;
+	padding-top:62px;
+}
+#header #logoFJ a {
+	display:block;
+	width:151px;
+	height:83px;
+	background-image:url(../image/logo_fj.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+/* header end */
+
+/* gnavi start */
+#gnavi {
+	width:778px;
+	margin:0 0 0 auto;
+}
+#gnavi li {
+	float:left;
+	margin-right:30px;
+}
+#gnavi li a {
+	display:block;
+	height:22px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+#gnavi li.current a,
+#gnavi li a:hover {
+	background-position:left bottom;
+}
+#gnavi li#gnavi01 a {
+	width:176px;
+	background-image:url(../image/gnavi_01.jpg);
+}
+#gnavi li#gnavi02 a {
+	width:153px;
+	background-image:url(../image/gnavi_02.jpg);
+}
+#gnavi li#gnavi03 a {
+	width:106px;
+	background-image:url(../image/gnavi_03.jpg);
+}
+#gnavi li#gnavi04 a {
+	width:161px;
+	background-image:url(../image/gnavi_04.jpg);
+}
+#gnavi li#gnavi04 {
+	margin:0;
+}
+#gnavi li#gnavi05 a {
+	width:62px;
+	background-image:url(../image/gnavi_05.jpg);
+}
+
+/* gnavi end */
+
+/* contents start */
+#contents {
+	width:910px;
+	margin:0 auto;
+	padding-bottom:20px;
+	line-height:1.8;
+}
+#contents .btn input {
+	width:157px;
+	height:31px;
+	border:0;
+	background-color:transparent;
+	background-image:url(../image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:118%;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#path {
+	padding:0 0 33px 2px;
+	font-size:90%;
+}
+.pagetop {
+	text-align:right;
+}
+.pagetop a {
+	padding-left:13px;
+	background-image:url(../image/icon_arrow_02.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+	color:#FFF;
+}
+
+#flow {
+	padding:20px 0;
+	color:#000;
+}
+#flow table {
+	width:100%;
+}
+#flow table td.text {
+	width:130px;
+	padding:5px;
+	background-color:#666666;
+	line-height:1.3;
+}
+#flow table td.current {
+	background-color:#F0F0F0;
+	font-weight:bold;
+}
+#flow table td.icon {
+	padding:0 20px;
+}
+/*
+#flow li {
+	float:left;
+	width:140px;
+	text-align:center;
+	vertical-align:middle;
+	padding-right:51px;
+	background-image:url(../image/icon_arrow.gif);
+	background-position:160px 20px;
+	background-repeat:no-repeat;
+}
+#flow li .step {
+	min-height:40px;
+	height:40px !important;
+	height:40px;
+	padding:5px;
+	background-color:#666666;
+	font-size:110%;
+	line-height:1.3;
+}
+#flow li.last {
+	background-image:none;
+	padding-right:0;
+}*/
+#flow dt {
+	font-weight:bold;
+}
+#flow dd {
+}
+
+
+/* contents end */
+
+/* footer start */
+#footer {
+	width:915px;
+	padding:13px 20px 24px 15px;
+	background-image:url(../image/bg_footer.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#footer #copyright {
+	float:right;
+	width:74px;
+	height:7px;
+	margin-top:3px;
+	background-image:url(../image/copyright.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:1px;
+	line-height:0;
+	outline:none;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+/* contents end */

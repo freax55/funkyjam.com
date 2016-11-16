@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>FJ SHOP - Funky Jam　ファンキー・ジャム</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/artist/kubota/ticket/css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/artist/kubota/ticket/css/cart.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div id="logo"><a href="/artist/kubota/ticket/">FJSHOP</a></div>
+				<div id="logoFJ"><a href="http://www.funkyjam.com/">Funky Jam</a></div>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--グローバルナビここから-->
+			<div id="gnavi">
+				<ul>
+					<li id="gnavi01"><a href="/artist/kubota/ticket/#anchorAttention">ご注意</a></li>
+					<li id="gnavi02"><a href="/artist/kubota/ticket/#anchorPayment">お支払について</a></li>
+					<li id="gnavi03"><a href="/artist/kubota/ticket/#anchorShipping">送料について</a></li>
+					<li id="gnavi04"><a href="/artist/kubota/ticket/#anchorContact">チケットについてのお問い合わせ</a></li>
+					<li id="gnavi05"><a href="/artist/kubota/ticket/#anchorLaw">特定商取引法に基づく表記</a></li>
+				</ul>
+				<div class="clear">&nbsp;</div>
+			</div>
+<!--グローバルナビここまで-->
+<!--コンテンツここから-->
+			<div id="contents">
+				<h1>お客様情報入力画面</h1>
+<p class="lead">お申し込み内容は以下の通りです。よろしければ、お支払い方法とお客様情報を入力し、「<strong>登録内容を確認</strong>」ボタンをおしてください。</p>
+				{if $errors.cart}<p class="error">※{$errors.cart|escape}</p>{/if}
+				{if $cart}
+				<div id="itemList">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<th>商品画像</th>
+						<th>商品名</th>
+						<th>色・サイズ</th>
+						<th>料金</th>
+						<th>個数</th>
+						<th>&nbsp;</th>
+					</tr>
+					{assign var=total value=0}
+					{assign var=quantity value=0}
+					{foreach name=cart from=$cart item=item}
+					<tr>
+						<td class="image">
+							{if $itemList[$item.item_code].image}
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><img src="{$itemList[$item.item_code].image}" alt="" width="100" /></td>
+								</tr>
+							</table>
+							{else}
+							no image
+							{/if}
+						</td>
+						<td class="itemName">
+								{if $errors.item[$item.item_code]}
+								<p class="error">※
+								{$errors.item[$item.item_code]|escape}
+								</p>
+								{/if}
+								{$itemList[$item.item_code].name|escape}
+								　 （商品コード {$item.item_code|escape}）
+						</td>
+						<td>
+								{if $itemList[$item.item_code].color}
+								{$itemList[$item.item_code].color|escape}
+								{/if}
+								{if $itemList[$item.item_code].color && $itemList[$item.item_code].size}
+								<br />
+								{/if}
+								{if $itemList[$item.item_code].size}
+								{$itemList[$item.item_code].size|escape}
+								{else}
+								&nbsp;
+								{/if}
+						</td>
+						<td>
+							{$itemList[$item.item_code].price|number_format|escape}
+							円
+							{assign var=total value=$total+$itemList[$item.item_code].price*$item.quantity}
+						</td>
+						<td>
+							{$item.quantity}
+							個
+							{assign var=quantity value=$quantity+$item.quantity}
+						</td>
+						<td width="7%" align="middle"><form action="index.php" method="post" style="margin: 0; padding:0; ">
+							<input type="submit" name="Submit" value="取消" />
+							<input type="hidden" name="action" value="remove" />
+							<input type="hidden" name="item_code" value="{$item.item_code}" />
+						</form></td>
+					</tr>
+					{/foreach}
+				</table>
+				</div>
+				<div id="btnWrapper">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td><form action="index.php" method="post" style="padding-bottom:5px;">
+								<input type="submit" name="Submit" value="すべて取消" />
+								<input type="hidden" name="action" value="remove" />
+							</form></td>
+						</tr>
+						<!--<tr>
+							<td><form action="index.php" method="post">
+								<input type="submit" value="他の公演を購入する" />
+							<input type="hidden" name="action" value="list" /></form>
+							<strong>※札幌公演のみ、プレミアムシート、ブロック指定を同時にご購入いただくことができます。</strong></td>
+						</tr>-->
+					</table>
+			</div>
+				<form action="index.php" method="post">
+					<div id="sum">
+						商品点数： {$quantity|number_format}個<br />
+						商品金額： {$total|number_format}円<br />
+						<strong>発送梱包料（手数料）：別途記載</strong>
+					</div>
+					<div class="section">
+						<h2>お支払い方法</h2>
+						<div class="inner">
+							{if $errors.payment}<p class="error">※{$errors.payment|escape}</p>{/if}
+							<dl>
+							<dt><label><input type="radio" name="payment" value="クレジットカード"{if $payment == 'クレジットカード'} checked="checked"{/if} />
+								Bari Bari Crew CARD決済</label></dt>
+							<dd>
+								※<a href="http://www.omc-card.co.jp/omcplus.html" target="_blank">OMC Plus</a>のみのお取扱いとなっております。まだOMC PlusのIDをお持ちで無い方は、先のお手続に進む前に必ず<a href="http://www.omc-card.co.jp/omcplus.html" target="_blank">OMC PlusのIDを取得</a>してください。
+							</dd>
+
+							<dt>
+								<label>
+									<input name="payment" type="radio" value="コンビニ決済" {if $payment == 'コンビニ決済'} checked="checked"{/if} />
+									コンビニ決済
+								</label>
+							</dt>
+							<dd>
+								お振込みに必要な番号をご購入完了後、メールにてお知らせいたします。<br />
+								お支払いただけるコンビニは以下の通りです。<br />
+								セブンイレブン・ローソン・ファミリーマート・セイコーマート・サークルＫサンクス・デイリーヤマザキ<br />
+								<br />
+								各コンビニでのお支払方法は下記をご確認ください。<br /><strong>※お支払い期限：6/3受付分までは6/5 23：59まで、6/4・5受付分は6/7 23：59まで</strong>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="cvsList">
+									<tr>
+										<th>セブンイレブン</th>
+										<td>商品購入時にECサイトより提示された払込票をプリントアウトしてお持ちいただくか、「払込票番号」（13桁）をメモして、セブンイレブン店舗へ行きます。<br />
+										店頭レジにて「インターネット代金の支払い」と伝え、「払込票番号」を伝えます。</td>
+									</tr>
+									<tr>
+										<th>ローソン</th>
+										<td>商品購入後にお送りする完了メールに記載された「お客様番号」と「確認番号（400008）」をメモして、ローソン店舗へ行きます。<br />
+										店内に設置されているマルチメディア端末Loppiに番号を入力し、発券される申込券でレジにてお支払いください。
+										</td>
+									</tr>
+									<tr>
+										<th>ファミリーマート</th>
+										<td>商品購入後にお送りする完了メールに記載された「お客様番号」と「確認番号（400008）」をメモして、ファミリーマート店舗へ行きます。<br />
+										店内に設置されているマルチメディア端末Famiportに番号を入力し、発券される申込券でレジにてお支払いください。
+									</tr>
+									<tr>
+										<th>セイコーマート</th>
+										<td>商品購入後にお送りする完了メールに記載された「受付番号」をメモして、セイコーマート店舗へ行きます。<br />
+										店内に設置されているマルチメディア端末クラブステーションに番号を入力し、発券される申込券でレジにてお支払いください。</td>
+									</tr>
+									<tr>
+										<th>サークルKサンクス・デイリーヤマザキ（ヤマザキデイリーストア・タイムリー</th>
+										<td>商品購入後にお送りする完了メールに記載された「オンライン決済番号」をメモして、各コンビニ店舗へ行きます。<br />
+										店頭レジにて「オンライン決済」と伝え、レジのお客さま用画面に「オンライン決済番号」を入力し、代金をお支払いください。</td>
+									</tr>
+								</table>
+
+							</dd>
+
+							<!-- <dt>
+								<label>
+									<input name="payment" type="radio" value="予約" {if $payment == '予約'} checked="checked"{/if} />
+									予約
+								</label>
+							</dt>
+							<dd>説明文</dd> -->
+							</dl>
+						</div>
+					</div>
+					<div class="section">
+						<h2>お客様情報入力</h2>
+						<div class="inner">
+							<p class="asterisk">*は必須項目です。必ずご記入ください。</p>
+							<table cellspacing="0" cellpadding="0">
+								<tr>
+								<th>FC会員番号<strong>*</strong></th>
+								<td>
+									{if $errors.member_no}<p class="error">※{$errors.member_no|escape}</p>{/if}
+									<input name="member_no" id="member_no" value="{$member_no|escape}" size="50" maxlength="40" />
+									（BBC封筒宛名の8ケタの数字です）
+								</td>
+								</tr>
+								<tr>
+								<th>お名前<strong>*</strong></th>
+								<td>
+										{if $errors.name}<p class="error">※{$errors.name|escape}</p>{/if}
+								姓
+								<input name="last_name" type="text" id="last_name" value="{$last_name|escape}" />
+								名
+								<input name="first_name" type="text" id="first_name" value="{$first_name|escape}" />
+								(例：久保田　利伸)</td>
+								</tr>
+								<tr>
+								<th>お名前（カナ）<strong>*</strong></th>
+								<td>
+										{if $errors.kana}<p class="error">※{$errors.kana|escape}</p>{/if}
+								セイ
+								<input name="last_kana" type="text" id="last_kana" value="{$last_kana|escape}" />
+								メイ
+								<input name="first_kana" type="text" id="first_kana" value="{$first_kana|escape}" />
+								
+								(例：クボタ　トシノブ)</td>
+								</tr>
+								<tr>        
+								<th>住所<strong>*</strong></th>
+								<td>
+										{if $errors.zip}<p class="error">※{$errors.zip|escape}</p>{/if}
+								〒
+								<input name="zip1" type="text" id="zip1" value="{$zip1|escape}" size="3" maxlength="3" /> - <input name="zip2" type="text" id="zip2" value="{$zip2|escape}" size="4" maxlength="4" />
+								(例：111-1111)
+								<a href="http://yuujirou.enia.co.jp/zips/" target="_blank">郵便番号検索サイト</a><br />
+								
+										{if $errors.address}<p class="error">※{$errors.address|escape}</p>{/if}
+								<input name="address1" value="{$address1|escape}" size="50" maxlength="40" />
+								(例：東京都港区西麻布)<br />
+								<input name="address2" value="{$address2|escape}" size="50" maxlength="40" />
+								(例：1-2-3)<br />
+								<input name="address3" value="{$address3|escape}" size="40" maxlength="30" />
+								(例：久保田マンション100号室)</td>
+								</tr>
+								<tr>
+								<th>Email<strong>*</strong></th>
+								<td>
+										{if $errors.mail}<p class="error">※{$errors.mail|escape}</p>{/if}
+								<input name="mail" id="mail" value="{$mail|escape}" size="50" maxlength="50" />
+								(例：info@funkyjam.com)<br />
+								（こちらに入力されたアドレスに確認メールが届きます。）<br />
+								▼確認のためもう一度入力してください<br /><input name="confirm" id="confirm" value="{$confirm|escape}" size="50" maxlength="50" /></td>
+								</tr>
+								<tr>
+								<th>連絡先電話番号<strong>*</strong></th>
+								<td>
+									{if $errors.tel}<p class="error">※{$errors.tel|escape}</p>{/if}
+									<input name="tel" id="tel" value="{$tel|escape}" size="50" maxlength="40" />
+									(日中ご連絡のつく電話番号をおいれください)</td>
+								</tr>
+								<tr id="magazine">
+									<th>メールマガジン</th>
+									<td>
+										{if $errors.magazine}<p class="error">{$errors.magazine}</p>{/if}
+										<input name="form[magazine]" type="hidden" value="" />
+										<label><input name="form[magazine]" type="checkbox" value="1"{if $form.magazine || $form.magazine|is_null} checked='checked'{/if} />&nbsp;メルマガを購読する</label><br />
+										<p>不要な方はチェックをはずして下さい。</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<p class="btn"><input type="submit" value="登録内容を確認" /></p>
+					<input type="hidden" name="action" value="confirm" />
+					<input type="hidden" name="total" value="{$total}" />
+					<input type="hidden" name="carriageTotal" value="{$carriage}" />
+				</form>
+				{else}
+				<div id="empty">
+					<p class="error">※カートに商品がございません。<br />
+					「その他の商品を購入する」ボタンをクリックして商品をお選びください。</p>
+				</div>
+				<form action="index.php" method="post"><input type="submit" value="その他の商品を購入する" /><input type="hidden" name="action" value="list" /></form>
+				{/if}
+</div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div id="copyright">(C)FUNKYJAM</div>
+			</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

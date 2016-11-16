@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+/*                                  STUDIOページ                                   　*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+
+#contentArea #mainCopy{
+	width: 759px;
+	margin:38px auto 0px;
+	clear: both;
+}
+
+#contentArea #studioIl{
+	width: 759px;
+	height: 284px;
+	margin:38px auto 0px;
+	clear: both;
+}
+
+#contentArea .studioTitle{
+	position: absolute;
+	top:0px;
+	left: -20px;
+}
+
+#contentArea #cashList{
+	width:759px;
+	margin: auto;
+	clear: both;
+	position: relative;
+	font-size: 87%;
+}
+
+#contentArea #cashList ul{
+    width: 597px;
+    margin-top: 29px;
+	clear: both;
+	padding-top: 25px;
+}
+
+#contentArea #cashList ul li.first{
+    padding: 14px 0px;;
+	border-top:1px solid #bbbbbb;
+	clear: both;
+}
+
+#contentArea #cashList ul li{
+    padding: 13px 0px;;
+	border-bottom:1px solid #bbbbbb;
+	clear: both;
+}
+
+#contentArea #cashList ul li p{
+	float: left;
+}
+
+#contentArea #cashList ul li .cTitle{
+    width: 210px;
+	color: #7e7e7e;
+	font-weight: bold;
+}
+
+#contentArea #cashList .cap{
+	height: 20px;
+	padding-top: 7px;
+	color: #777777;
+	font-size: 65%;
+	clear: both;
+}
+
+#imgBox{
+	float: right;
+	position: relative;
+	top: -289px;
+	right: 95px;
+}
+
+#contentArea .studioImg1{
+	position: absolute;
+	top:2px;
+	right: 0px;
+}
+
+#contentArea .studioImg2{
+	position: absolute;
+	top:105px;
+	right: 0px;
+}
+
+#contentArea .studioImg3{
+	position: absolute;
+	top:208px;
+	right: 0px;
+}
+
+#contentArea .attn{
+	padding:20px 94px 0 0;
+	text-align: right;
+	font-size: 87%;
+}
+
+#contentArea #studiFooter{
+	width: 759px;
+	margin:63px auto 60px;
+}
+
+#contentArea #studiFooter ul li{
+	float: left;
+}
+
+#contentArea #studiFooter p{
+	float: left;
+	text-align: right;
+}
+
+#contentArea #studiFooter .btn1{
+	margin-right: 34px;
+}
+
+#contentArea #studiFooter .btn2{
+	margin-right: 150px;
+}
+
+#contentArea #studiFooter p span{
+	display: block;
+	clear: both;
+	font-size: 87%;
+	color: #757575;
+}
+
+#contentArea #studiFooter p span.tel{
+	height: 30px;
+	font-size: 154%;
+	color: #b08f51;
+}

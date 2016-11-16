@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第34回「猪木に学べ!」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2011/02/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2011/02/16 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第34回「猪木に学べ!」</p>
+		</div>
+		<div class="texts">
+			<div class="text">ワタル自身が人生の師と仰ぐアントニオ猪木は、多くのビッグマッチの前に、対戦相手とリハーサルをした。<br />これは猪木個人に限ったことではなく、プロレスとは、そーゆー世界なのだ。<br /><br />その中でも猪木のプロレスを突出して輝かせたのは、自分の肉体を犠牲にしてまで試合を盛り上げる「過激」な演出だ。<br /><br />プロレスラーとしての猪木は、それほど大きな身体には恵まれなかったが、驚くほど柔軟な筋肉と骨格を持っていた。<br /><br />試合経験を重ねた猪木は、<br /><br /><center>&lt;打たれ強い&gt;</center><br />自分の身体に、絶対的な自信を持つ。<br /><br />それが自分のセールス・ポイントだと悟った猪木は、対戦レスラーの長所とパワーを全開にさせるリハーサルに辿り着く。<br /><br />当然ながら、相手の大技を全身で受け止める猪木は、打ちのめされてピンチに陥る。<br />観客は対戦相手の強さに息をのみ、猪木に声援を送る。<br /><br />そこで逆転!　猪木は相手のスキをつき、必殺技で勝利するのだ。<br /><br />普段はパッとしない二流レスラーでも、猪木と試合をすると別人のよーに素晴らしいファイトになり、たちまち注目される。<br /><br />だから、猪木に負けると分かっていても、多くのレスラーが猪木と試合をしたがった。<br /><br /><br />猪木は、レスラーの潜在能力を存分に発揮させる最高のキャンバスであり、不出生の格闘パフォーマーなのだ。<br /><br />誤解を畏れず分かりやすく言えば、明石家さんまや島田紳助が、新人タレントから笑いを引き出すバラエティー番組と、猪木の試合は同じなのだ。<br />そして、過激なプロレスに触発された観客は、さらなる過激を求めるよーになり、猪木のパフォーマンスは境界線を失う。<br /><br /><br />猪木は、当時の妻・倍賞美津子さんと新宿で買い物をしている自分を、&gt;インドの狂える虎&gt;タイガー・ジェット・シンに襲わせたのだ。<br /><br /><br />猪木は伊勢丹デパートでボコボコにされ、買物客の目の前で血ダルマになった。<br /><br />これは事件だ。フツーなら傷害事件で大変マルだ。<br /><br /><center>しか～し!</center><br />猪木サイドの始末書で一件落着。<br />「あれ?　なんか変じゃね?」…そんな疑問を猪木信者は1ミリも抱かない。<br /><br />このアクションで、その後に展開されるアントニオ猪木VSタイガー・ジェット・シン戦は猪木の復讐劇と化し、一気に注目が集まった。<br /><br /><center>しか～し!</center><br />それでも、猪木の過激は加速する。<br /><br />シンの得意技はコブラ・クローといって、相手のノドを手で締めつけ窒息させるとゆー荒技だ。<br />「手でノドを締めつけ窒息させる」のはゴンゴドーダンの反則なんだけど、そんな疑問を猪木信者は1ミリも抱かない。<br /><br />凶悪だけど決め技の少ないシンを、コブラ・クローで引き立てることにした猪木は、なんと試合中に観客の死角で、レフリーに自分のノドをカミソリで切らせたのだ!<br /><br /><center>OH, MY GOD!</center><br />シンの強烈なコブラ・クローがノドに食い込み流血…シンのコブラ・クローはマジにヤバい…とゆー説得力だ。<br /><br />オデコを自ら切るレスラーは沢山いるけど、ノドを切ったのはアトにもサキにも猪木だけ。<br />一歩間違えば大量出血覚悟の、まさに、命を賭けた過激パフォーマンス!<br /><br />こーした血みどろ試合を積み重ねた結果、猪木は最後のタイトル・マッチで、シンの右腕を折ってしまう…<br />もちろんホントーに骨折はしていないんだけど、インドの狂える虎は義理堅く、ちゃんと翌日からギプスをした(笑)。<br /><br />猪木のプロレスは、ドキドキ&amp;ワクワクの劇的演出で、目が離せないロング・ストーリーを生み出す、見事な格闘パフォーマンスだったのだ。<br /><br /><br />それをワタル自身は、絶対に「八百長」とは言わない。<br /><br />アントニオ猪木に「ありがとう!」と感謝はしても、「だましたのか!?」と批難はしない。<br /><br />最近の世間は、相撲が八百長などと騒ぎ立てているけれど、以前にも書いたよーに、相撲は格闘技ではなく「神事」なのだ。<br />伝統を受け継ぐ様式美が相撲なのだ。<br />そんな「儀式」の勝敗を八百長と呼ぶなど、わっはっはっ…笑止千万なり!<br /><br /><br /> </div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/4_part10.html">
+
+
+						4コマまんが Part10【心の中でツッこむ！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/05/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/05/part10.html">
+
+
+						悩み相談ぶった斬り！part10【マー子さん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/4_part9.html">
+
+
+						4コマまんが Part9【ゆるキャラ考案！？】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/04/part9f.html">
+
+
+						悩み相談ぶった斬り！part9【PALさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/4_part8.html">
+
+
+						4コマまんが Part8【ここだけの秘密・・・】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/03/07"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/03/part8f.html">
+
+
+						悩み相談ぶった斬り！part8【Fさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/02/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/02/4_part7.html">
+
+
+						4コマまんが Part7【スパゲティの茹で方】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "shift_jis";
+
+#contents .lead {
+	padding:30px 50px 40px;
+}
+#contents .contactus {
+	margin:0 50px;
+	padding:10px;
+	border:1px solid #000000;
+	font-size:115%;
+	text-align:center;
+}
+#contents .link {
+	padding-top:30px;
+	padding-left:400px;
+}
+#contents .link li {
+	padding-bottom:10px;
+	padding-left:13px;
+	background-image:url(../../image/common/icon_arrow.gif);
+	background-position:0 2px;
+	background-repeat:no-repeat;
+	line-height:normal;
+}
+#contents .about {
+	margin:20px 50px;
+	border:1px solid #000000;
+	background-color:#FFF;
+	color:#333;
+}
+#contents .about h2 {
+	padding-left:12px;
+	background-color:#333333;
+	color:#FFFFFF;
+	font-size:115%;
+}
+#contents .about ul {
+	padding:10px;
+}
+#contents .about li {
+	padding:0 0 5px 13px;
+	background-image:url(../image/icon_arrow.gif);
+	background-position:0 4px;
+	background-repeat:no-repeat;
+	padding-left:13px;
+}
+#contents .section .content strong {
+	font-weight:bold;
+	color:#CC0000;
+}
+#contents .section#law .content dt {
+	color:#333333;
+	margin-top:0;
+}
+#contents .section#law .content dd {
+	margin:0 0 1.5em 15px;
+}

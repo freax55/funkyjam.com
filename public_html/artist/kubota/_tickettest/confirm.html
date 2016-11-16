@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/ticket.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<!-- InstanceBeginEditable name="doctitle" --><title>BARI BARI CREW  TICKET STORE - Funky Jam　ファンキー・ジャム</title><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="../../../css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/common.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/cart.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../../css/print.css" rel="stylesheet" type="text/css" media="print" /><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="js" --><!-- InstanceEndEditable -->
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--ヘッダーここから-->
+			<div id="header">
+				<div class="inner">
+					<div id="logoFJ"><a href="http://www.funkyjam.com/">Funky Jam</a></div>
+					<div id="logo"><a href="../ticket/">BARI BARI CREW TICKET STORE</a></div>
+					<div class="clear">&nbsp;</div>
+				</div>
+			</div>
+<!--ヘッダーここまで-->
+<!--グローバルナビここから-->
+			<div id="gnavi">
+				<ul>
+					<li id="gnavi05"><a href="../ticket/help.html#anchorFlow">BARIBARICREW会員規約</a></li>
+					<li id="gnavi01"><a href="../ticket/help.html#anchorMember">BARIBARICREW会員規約</a></li>
+					<li id="gnavi02"><a href="../ticket/help.html#anchorAttention">お申込みにあたっての注意</a></li>
+					<li id="gnavi03"><a href="../ticket/help.html#anchorPayment">お支払について</a></li>
+					<li id="gnavi04"><a href="../ticket/help.html#anchorLaw">特定商取引法に基づく表記</a></li>
+				</ul>
+				<div class="clear">&nbsp;</div>
+			</div>			
+<!--グローバルナビここまで-->
+<!--コンテンツここから-->
+			<div id="contents"><!-- InstanceBeginEditable name="contents" -->
+				<div id="flow">
+					<table width="760" cellspacing="1" cellpadding="2" border="0">
+						<tr align="center">
+							<td nowrap="" class="text">公演日・<br/>お申し込み枚数選択</td>
+							<td class="icon"><img src="image/icon_arrow_flow.gif"/></td>
+							<td nowrap="" class="text">お支払い方法<br/>お客様情報入力</td>
+							<td class="icon"><img src="image/icon_arrow_flow.gif"/></td>
+							<td nowrap="" class="text current">内容確認</span></font></td>
+							<td class="icon"><img src="image/icon_arrow_flow.gif"/></td>
+							<td nowrap="" class="text">（クレジットの場合）<br/>カード情報入力</td>
+							<td class="icon"><img src="image/icon_arrow_flow.gif"/></td>
+							<td nowrap="" class="text">お申し込み完了</td>
+						</tr>
+					</table>
+				</div>
+				<p class="lead">お申し込み内容は以下の通りです。よろしければ、<strong>「予約申込する」ボタン</strong>をおしてください。<br />
+					<strong>※お支払い方法がBariBariCrewカードの場合、「予約申込する」ボタンを押しますと、OMC社の決済確認ページに移動します。</strong></p>
+				<div id="itemList">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<th>日時</th>
+							<th>会場</th>
+							<th>開場</th>
+							<th>開演</th>
+							<th>枚数</th>
+							<th>料金</th>
+						</tr>
+						{assign var=total value=0}
+						{assign var=quantity value=0}
+						{foreach name=cart from=$cart item=item}
+						<tr>
+							<td>{$item.p_date|date_format:'%m月%d日（%a）'|escape}</td>
+							<td class="itemName">{$item.place_name|escape}</td>
+							<td>{$item.open_time|date_format:'%H:%M'|escape|mb_convert_kana:'A'}</td>
+							<td>{$item.start_time|date_format:'%H:%M'|escape|mb_convert_kana:'A'}</td>
+							<td>
+								{$item.quantity}
+								個
+								{assign var=quantity value=$quantity+$item.quantity}
+							</td>
+							<td>
+								{$item.price|number_format|mb_convert_kana:'A'}
+								円
+								{assign var=total value=$total+$item.price*$item.quantity}
+							</td>
+						</tr>
+						{/foreach}
+					</table>
+				</div>
+				<div id="sum">
+					商品点数：
+					{$quantity|number_format}
+					個<br />
+					商品金額：
+					{$total|number_format}
+					円<br />
+					発送手数料・送料： {$carriage|number_format}円×{$smarty.foreach.cart.total|number_format} = {$smarty.foreach.cart.total*$carriage|number_format}円　（１公演につき {$carriage|number_format}円かかります）
+					<p class="all">合計：{$total+$carriageTotal|number_format} 円</p>
+				</div>
+				<div class="section">
+					<h2>支払い方法</h2>
+					<div class="inner">
+						<dl class="confirm">
+						{if $payment == 'コンビニ（PAYGENT）'}
+							<dt>コンビニ決済を利用する</dt>
+							<dd>
+								説明が入ります。説明が入ります。説明が入ります。<br />
+								説明が入ります。説明が入ります。
+							</dd>
+						{elseif $payment == 'クレジットカード'}
+							<dt>BariBariCrewカードを利用する</dt>
+							<dd>						
+								※<a href="http://www.omc-card.co.jp/omcplus.html" target="_blank">OMC Plus</a>のみのお取扱いとなっております。<br />
+								まだOMC PlusのIDをお持ちで無い方は、先のお手続に進む前に必ず<a href="http://www.omc-card.co.jp/omcplus.html" target="_blank">OMC PlusのIDを取得</a>してください。
+							</dd>
+						{/if}
+						</dl>
+					</div>
+				</div>
+				<div class="section">
+					<h2>お客様情報入力</h2>
+					<div class="inner">
+						<table class="confirm" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>FC会員番号</th>
+								<td>{$member_no|escape}</td>
+							</tr>
+							<tr>
+								<th>お名前</th>
+								<td>{$last_name|escape}{$first_name|escape}</td>
+							</tr>
+							<tr>
+								<th>お名前（カナ）</th>
+								<td>{$last_kana|escape}{$first_kana|escape}</td>
+							</tr>
+							<tr>
+								<th>住所</th>
+								<td>
+									〒{$zip1|escape}-{$zip2|escape}<br />
+									{$address1|escape}
+									{if $address2}<br />{$address2|escape}{/if}
+									{if $address3}<br />{$address3|escape}{/if}
+								</td>
+							</tr>
+							<tr>
+								<th>Email</th>
+								<td>{$mail|escape}</td>
+							</tr>
+							<tr>
+								<th>連絡先電話番号</th>
+								<td>{$tel|escape}</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<p class="confirmTxt">お申し込み内容は上記の通りです。よろしければ、<strong><span>「予約申込する」</span>ボタン</strong>をおしてください。<br />
+					<strong>※お支払い方法がBariBariCrewカードの場合、「予約申込する」ボタンを押しますと、OMC社の決済確認ページに移動します。</strong></p>
+				<form action="index.php" method="post">
+					<div class="btns">
+						<p class="btn" id="back"><a href="javascript:void(0);" onclick="location.href='index.php?action=cart';">内容を修正する</a></p>
+						<p class="btn"><input type="submit" id="postal" value="予約申込する"  /></p>
+					</div>
+					<p class="clear">&nbsp;</p>
+					<input type="hidden" name="carriageTotal" value="{$carriageTotal}" />
+					<input type="hidden" name="total" value="{$total}" />
+					<input type="hidden" name="action" value="process" />
+				</form>
+				<p class="link"><a href="http://www.funkyjam.com/">FUNKYJAM　ホームページへ</a></p>
+			<!-- InstanceEndEditable --></div>
+<!--コンテンツここまで-->
+<!--フッターここから-->
+			<div id="footer">
+				<div id="copyright">(C)FUNKYJAM</div>
+			</div>
+<!--フッターここまで-->
+		</div>
+	</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+<!-- InstanceEnd --></html>

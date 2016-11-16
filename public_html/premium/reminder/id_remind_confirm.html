@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/normal.css" rel="stylesheet" type="text/css" media="all" />
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header.html" -->
+			<div id="section" class="remind">
+				<form action="./" method="post">
+				<div class="secInner">
+					<h2>ID再発行</h2>
+					<p class="lead">下欄に新しいID(メールアドレス)を入力して下さい。</p>
+					<table border="0" cellspacing="0" cellpadding="0" class="formTbl">
+						<tr>
+							<th>ID</th>
+							<td>
+								<p><input type="text" name="new_id" id="new_id" value="{$new_id}" /></p>
+								{if $errors.new_id}<p class="error">※{$errors.new_id|escape}</p>{/if}
+							</td>
+						</tr>
+						<tr>
+							<th>ID（確認）</th>
+							<td>
+								<p><input type="text" name="new_conf" id="new_conf" value="{$new_conf}" /></p>
+								{if $errors.new_conf}<p class="error">※{$errors.new_conf|escape}</p>{/if}
+						</td>
+						</tr>
+					</table>
+					<div class="btn btn1"><input type="submit" value="再発行する" /></div>
+				</div>
+				<input type="hidden" name="insert_id" value="{$no_id.id}" />
+				<input type="hidden" name="action" value="id_remind_confirm2" />
+				</form>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

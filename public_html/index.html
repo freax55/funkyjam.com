@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Funky Jam　ファンキー・ジャム</title>
+<!--#include virtual="/include/head/og.html"-->
+<!--#include virtual="/include/head/common.html"-->
+<meta name="description" content="久保田利伸、浦嶋りんこ、森大輔、BROWN EYED SOULが所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<meta name="keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,BROWN EYED SOUL,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム" />
+<!--#include virtual="/include/head/css.html"-->
+<link rel="stylesheet" type="text/css" href="/css/top.css">
+<!--#include virtual="/include/head/js.html"-->
+<script type="text/javascript" src="/js/toppage.js"></script>
+<!--#include virtual="/include/head/change.html"-->
+</head>
+<body id="top" class="topIndex">
+<!--#include virtual="/include/pagetop.html"-->
+
+<!-- ここからheaderエリア -->
+<!--#include virtual="/include/header.html"-->
+<!-- ここまでheaderエリア -->
+
+<!-- ここからスライドエリア -->
+	<div id="load"><img src="/images/load.gif"></div>
+	<section id="slideBox">
+		<div id="slide">
+			<ul id="topicImage" class="clearfix">
+				<!--#include virtual="/news/main_images.html"-->
+			</ul>
+			<ul id="topicNav">
+				<!--#include virtual="/news/sub_images.html"-->
+			</ul>
+		</div><!-- /#slide -->
+	</section><!-- /#slideBox -->
+<!-- ここまでスライドエリア -->
+
+<!-- ここからTwitter＆各リンクエリア -->
+	<section id="twlkArea">
+		<div id="twitterBox">
+			<p class="flBtn"><a href="http://www.twitter.com/funky_manager" target="_blank"><img id="twIcon" src="/images/twitterIcon.png" alt="久保田利伸マネージャー"></a></p>
+			<p class="flBtn"><a href="http://www.twitter.com/funky_manager" target="_blank"><img id="twfollow" src="/images/follow.png" alt="フォロー"></a></p>
+			　　　　<div id="TargetTweet">
+				<script>
+					function callback(response){
+						//console.log(response);
+						document.write(response.body);
+					}
+				</script>
+				<script src="https://cdn.syndication.twimg.com/widgets/timelines/374473778211733505?override_name=funky_manager&override_type=user&callback=callback" type="text/javascript"></script>
+			</div>
+		</div><!-- /twitterBox -->
+		<div id="innerBox">
+			<ul>
+				<li><a href="/premium/" target="_blank"><img src="/images/innerNav01.png" alt="FUNKYJAM PREMIUM FOR MEMBERS"></a></li>
+				<li><a href="/shop/" target="_blank"><img src="/images/innerNav02.png" alt="FUNKYJAM ONLINE STORE FJ SHOP"></a></li>
+				<li class="noR"><a href="/magazine/"><img src="/images/innerNav03.png" alt="MAILMAGAZINE"></a></li>
+			</ul>
+		</div><!-- /innerBox -->
+	</section>
+<!-- ここまでTwitter＆各リンクエリア -->
+
+<!-- ここからアーティストエリア -->
+	<section id="artistBox">
+		<div id="artistList">
+			<p class="title"><img src="/images/titleArtist.png" alt="ARTIST"></p>
+<script>
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+ 
+var player;
+var player2;
+var player3;
+function onYouTubeIframeAPIReady() {
+player = new YT.Player('player', {
+height: '225',
+width: '225',
+videoId: 'sDx-V5VABoM',
+wmode: 'transparent',
+playerVars:{
+'loop': '0',
+'rel': '0',
+'showinfo': '0',
+'color': 'red',
+},
+events: {
+'onReady': onPlayerReady,
+'onStateChange': onPlayerStateChange
+}
+});
+player2 = new YT.Player('player2', {
+height: '225',
+width: '225',
+videoId: 'zUFGe-ze6JE',
+wmode: 'transparent',
+playerVars:{
+'loop': '0',
+'rel': '0',
+'showinfo': '0',
+'color': 'red',
+},
+events: {
+'onReady': onPlayerReady,
+'onStateChange': onPlayerStateChange
+}
+});
+player3 = new YT.Player('player3', {
+height: '225',
+width: '225',
+videoId: 'y6gTJBDABPI',
+wmode: 'transparent',
+playerVars:{
+'loop': '0',
+'rel': '0',
+'showinfo': '0',
+'color': 'red',
+},
+events: {
+'onReady': onPlayerReady,
+'onStateChange': onPlayerStateChange
+}
+});
+}
+function onPlayerReady(event) {
+event.target.playVideo();
+event.target.mute();
+}
+function onPlayerStateChange(event) {
+}
+</script>
+			<ul>
+				<li>
+					<div id="player"></div>
+					<a href="/artist/kubota/">
+						<h2 class="a1"><img src="/images/artistImg_01_n.png" alt="久保田 利伸 TOSHINOBU KUNOTA"></h2>
+					</a>
+					<a href="/artist/kubota/fanclub.html">
+						<span><img src="/images/artistLink01_on.png" alt="OFFICIALFAN CLUB BARIBARI CREW"></span>
+					</a>
+				</li>
+				<li class="linkNo">
+					<a href="/artist/urashima/">
+						<h3 class="a2"><img src="/images/artistImg_02_n.png" alt="浦島りんこ RINKO URASHIMA"></h3>
+					</a>
+				</li>
+				<li>
+					<div id="player2"></div>
+					<a href="/artist/mori/">
+						<h3 class="a3"><img src="/images/artistImg_03_n.png" alt="森 大輔 DAISUKE MORI"></h3>
+					</a>
+					<a href="/mori/" target="_blank">
+						<span><img src="/images/artistLink05.jpg" alt="OFFICIALFAN CLUB モリノナカマ"></span>
+					</a>
+				</li>
+				<li class="linkNo">
+				<div id="player3"></div>
+					<a href="/artist/bes/">
+						<h3 class="a4"><img src="/images/artistImg_04_n.png" alt="ブラウン・アイド・ソウル BROWN EYED SOUL"></h3>
+					</a>
+				</li>
+			</ul>
+		</div><!-- /artistList -->
+	</section><!-- /artistBox -->
+<!-- ここまでアーティストエリア -->
+
+<!-- ここからニュースエリア -->
+	<section id="newsBox" class="clearfix">
+		<div id="newsList">
+			<p class="title"><img src="/images/titleNews.png" alt="NEWS"></p>
+			<ul class="clearfix">
+				<!--#include virtual="/news/news_ssi.html"-->
+			</ul>
+		</div>
+	</section><!-- /newsBox -->
+<!-- ここまでニュースエリア -->
+
+<!-- ここからfooterエリア -->
+<!--#include virtual="/include/footer.html"-->
+<!-- ここまでfooterエリア -->
+
+</body>
+</html>

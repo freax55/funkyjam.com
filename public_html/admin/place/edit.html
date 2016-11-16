@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>会場管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../admin.css" rel="stylesheet" type="text/css">
+{literal}
+<script type="text/javascript">
+<!--
+function removeConfirm(key) {
+	var ret = confirm('削除してもよろしいですか。');
+	
+	if (ret) {
+		location.href = "index.php?action=remove&key=" + key;
+	}
+}
+-->
+</script>
+{/literal}
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; <a href="index.php">会場管理</a> &gt; </p>
+<form action="index.php" method="post" name="edit">
+  <table id="list">
+    <tr>
+      <th width="120">会場名</th>
+      <td>
+        {if $errors.name}<span class="error">※{$errors.name|escape}</span><br />{/if}
+        <input name="name" type="text" value="{$name|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">住所</th>
+      <td>
+	    {if $errors.address}<span class="error">※{$errors.address|escape}</span><br />{/if}
+        <input name="address" type="text" value="{$address|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">会場種別</th>
+      <td>
+        {if $errors.type}<span class="error">※{$errors.type|escape}</span><br />{/if}
+        <input name="type" type="text" value="{$type|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">代表電話</th>
+      <td>
+        {if $errors.tel}<span class="error">※{$errors.tel|escape}</span><br />{/if}
+        <input name="tel" type="text" value="{$tel|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th width="120">会場までの地図</th>
+      <td>
+        {if $errors.map}<span class="error">※{$errors.map|escape}</span><br />{/if}
+        <input name="map" type="text" value="{$map|escape}" size="50">
+      </td>
+    </tr>
+    <tr>
+      <th>アクセス</th>
+      <td>
+        {if $errors.access}<span class="error">※{$errors.access|escape}</span><br />{/if}
+        <textarea name="access" cols="50" rows="5">{$access|escape}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <th width="120">備考</th>
+      <td>
+	    {if $errors.note}<span class="error">※{$errors.note|escape}</span><br />{/if}
+        <textarea name="note" cols="50" rows="5">{$note|escape}</textarea>
+      </td>
+    </tr>
+  </table>
+  <p id="submit">
+    <input type="submit" name="Submit" value="更新する" />
+    <input name="action" type="hidden" value="change" />
+    <input name="key" type="hidden" value="{$key}" />
+    <input type="button" name="remove" value="削除する" onclick="removeConfirm({$key});" />
+</p>
+</form>
+</body>
+</html>

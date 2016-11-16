@@ -1,0 +1,228 @@
+@charset "shift_jis";
+
+body {
+	background-color:#F0F0F0;
+	line-height:1.5;
+	letter-spacing:normal;
+	font-size:75%;
+	color:#333333;
+}
+a {
+	text-decoration:underline;
+	/*color:#FFCC00;*/
+}
+a:hover {
+	text-decoration:none;
+}
+#page {
+	width:900px;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+#container {
+}
+
+/* header start */
+#header {
+	width:100%;
+}
+#header #logo {
+	width:73px;
+	margin:4px 0 6px auto;
+}
+#header #logo a {
+	display:block;
+	width:73px;
+	height:40px;
+	background-image:url(../image/logo.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+/* header end */
+
+/* contents start */
+#contents {
+	width:896px;
+	border:2px solid #010101;
+	background-color:#FFF;
+}
+
+#contents .header {
+	width:100%;
+	background-image:url(../image/bg_header.gif);
+	background-repeat:repeat-y;
+	background-position:381px 0;
+}
+#contents .header .title {
+	float:right;
+	width:513px;
+}
+#contents .header .title h1 {
+	width:453px;
+	padding:30px;
+	background-color:#000;
+	font-size:24px;
+	color:#FFF;
+}
+#contents .header .title .lead {
+	margin:9px 20px 0 30px;
+	letter-spacing:1px;
+	font-weight:bold;
+	color:#D20F0B;
+}
+#contents .header .title .writer {
+	margin:5px 20px 5px 30px;
+	text-align:right;
+	letter-spacing:1px;
+}
+#contents .header .logo {
+	float:left;
+	width:381px;
+	height:187px;
+	background-image:url(../image/logo_sengoku.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+
+#contents .content {
+	width:878px;
+	padding:29px 0 29px 18px;
+	border-top:2px solid #010101;
+}
+#contents .content .wrapper {
+	width:100%;
+	background-image:url(../image/bg_content.gif);
+	background-repeat:repeat-y;
+	background-position:539px 0;
+}
+#contents .textWrapper {
+	float:left;
+	width:521px;
+	margin:0 39px 0 0;
+	background-image:url(../image/bg_text_wrapper.gif);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+#contents .textWrapper2 {
+	width:860px;
+}
+#contents .imageWrapper {
+	float:right;
+	width:318px;
+}
+#contents .imageWrapper div {
+	margin-bottom:15px;
+}
+#contents .imageWrapper p {
+	margin-bottom:15px;
+}
+
+#contents .imageWrapper .caption {
+	width:290px;
+	font-size:90%;
+	line-height:1.8;
+}
+#contents .note {
+	width:100%;
+	background-image:url(../image/line.gif);
+	background-repeat:repeat;
+	background-position:left top;
+	line-height:25px;
+	font-size:14px;
+}
+#contents .note p {
+	margin-bottom:1.8em;
+}
+#contents .note .firstChar {
+	float:left;
+	width:34px;
+	height:28px;
+	margin:2px 0 0 0;
+	padding:10px;
+	background-image:url(../image/bg_first_char.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-size:26px;
+	color:#FFF;
+}
+
+/* contents end */
+
+/* footer start */
+#footer {
+	width:100%;
+}
+#footer #copyright {
+	padding:5px 0 0 0;
+	text-align:center;
+}
+/* contents end */
+
+
+/* add start */
+#contents .header #logo02.logo {
+	margin-top:50px;
+}
+#contents .header .logo#logo02 {
+	margin-top:32px;
+}
+#contents .header .logo#logo03 {
+	margin-top:31px;
+}
+#contents .header .logo#logo04 {
+	margin-top:40px;
+}
+#contents .header .logo#logo05 {
+	margin-top:63px;
+}
+#contents .header .logo#logo06 {
+	margin-top:42px;
+}
+#contents .header .logo#logo10 {
+	margin-top:20px;
+}
+/* add end */
+#contents .textWrapper2 .humetu {
+	text-align:center;
+	font-weight:bold;
+	font-size:110%;
+}
+#contents .textWrapper2 .humetu .kan {
+	color:#D20F0B;
+	font-size:150%;
+}
+
+/* backnumber start */
+#contents .note .year {
+	float:left;
+	width:90px;
+	margin:2px 0 0 0;
+	padding:10px;
+	background-image:url(../image/bg_year.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-size:26px;
+	color:#FFF;
+}
+#contents .note .listWrapper {
+	float:left;
+}
+#contents .backnumber {
+	background-image:url(../image/bg_content2.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+	margin-top:23px;
+	padding-top:25px;
+	width:860px;
+}
+/* backnumber end */

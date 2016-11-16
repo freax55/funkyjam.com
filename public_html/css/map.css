@@ -1,0 +1,5 @@
+@charset "shift_jis";
+
+#contents .pageTitle {
+	background-image:url(../image/map/title.gif);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<title>BARI BARI CREW  FAN CLUB会費コンビニ決済</title>
+<meta name="Keywords" content="ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン" />
+<meta name="Description" content="久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。" />
+<link href="/baribaricrew/css/baribaricrew.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/baribaricrew/js/jquery-1.9.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/baribaricrew/js/script.js" charset="utf-8"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/baribaricrew/js/jquery.belatedPNG.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/baribaricrew/js/alphafix.js" charset="utf-8"></script>
+<![endif]-->
+</head>
+<body>
+<div id="page">
+	<div id="header"><img src="/baribaricrew/images/logo.png" alt="BARI BARI CREW" /></div>
+	<div id="contents">
+		<h1>久保田利伸FANCLUB<br />
+		年会費コンビニ決済</h1>
+		<ul class="nav clearfix">
+			<li class="step1"><p>スタート</p></li>
+			<li class="step2"><p>基本情報入力</p></li>
+			<li class="step4"><p>内容確認</p></li>
+			<li class="step3 cur"><p>支払先選択</p></li>
+			<li class="step5"><p>コンビニ決済申込完了</p></li>
+		</ul>
+		<div id="main" class="select lower clearfix">
+			<h2><img src="/baribaricrew/images/icon1.gif" alt="" />支払先選択{if $flg == "input"}（新規会員の方）{elseif $flg == "edit"}（会員継続の方）{/if}</h2>
+			<p class="attn">お支払い先をお選びください。</p>
+			<form action="index.php" method="post">
+				<input type="hidden" name="carriageTotal" value="{$carriageTotal}" />
+				<input type="hidden" name="total" value="{$total}" />
+				<input type="hidden" name="action" value="process" />
+				<div class="form">
+					{if $errors.convenience_store_no}<p class="error">※{$errors.convenience_store_no|escape}</p>{/if}
+					{foreach from=$units.convenience_stores item=v key=k name=n}
+						<p><input name="convenience_store_no" type="radio" value="{$k}" {if $convenience_sore_no == $k} checked="checked"{/if} id="convenience_sore_no{$k}" />&nbsp;&nbsp;<label for="convenience_sore_no{$k}">{$v.name}</label></p>
+					{/foreach}
+				</div>
+				<div class="btns clearfix">
+					<div class="return left"><a href="/baribaricrew/index.php?action=confirm">内容確認に戻る</a></div>
+					<div class="next">※完了画面に進むまでに少しお時間がかかる場合がございますが、<br />複数回クリックせず必ず1クリックでお願いいたします。</div>
+					<div class="btnInput right"><input type="submit" value="コンビニ決済申し込み"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="inner"><img src="/baribaricrew/images/copyright.png" alt="BARI BARI CREW" /></div>
+	</div>
+</div>
+<script type="text/javascript"><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var pageTracker = _gat._getTracker("UA-8577032-1");
+pageTracker._trackPageview();
+//--></script>
+</body>
+</html>

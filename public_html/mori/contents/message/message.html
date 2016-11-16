@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>SPECIAL MESSAGE - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/message.css">
+<link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+				<h2 class="titleType1">SPECIAL MESSAGE</h2>
+{if $param == 'login'}
+				<div class="message">
+					<div class="inner">
+						<div class="movie">
+							<div class="image"><img src="/mori/images/contents/movie_image.jpg" alt=""></div>
+							<div id="player"></div>
+						</div>
+						<div class="text">
+							<span class="fz98">Happy Birthday</span><br>
+							<span class="gray">to</span><br>
+							<span class="fz112">{$login_user_first_roman}</span><br>
+							<span class="gray">from</span><br>
+							<span class="fz56">Mori Daisuke</span><br>
+							<span class="fz40">{$login_user_birth_month}.{$login_user_birth_day}</span>
+						</div>
+						<div class="md">
+							<div class="image"><img src="/mori/images/contents/md.gif" alt=""></div>
+							<div class="btnType3"><a href="#">もう一度みる</a></div>
+						</div>
+					</div>
+				</div>
+{elseif $param == 'out'}
+				<div class="messageBlock">
+					<div class="inner">
+						<p class="error">現在閲覧できません。<br />その時まで楽しみにお待ち頂けますでしょうか</p>
+						<div class="btnWrap">
+							<div>
+								<div class="btnType2"><a href="/mori/"><span>TOPページへ戻る</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+{else}
+				<div class="messageBlock">
+					<div class="inner">
+						<p class="error">このコンテンツをご覧になるには<br>有料会員登録が必要となります</p>
+						<p class="price">入会金 ￥500（税込）、 年会費 ￥3,600（税込）</p>
+						<div class="btnWrap">
+							<div>
+								<p>会員登録がお済みでない方はこちら</p>
+								<div class="btnType1"><a href="/mori/entry/"><span>会員登録する</span></a></div>
+							</div>
+							<div>
+								<p>会員登録がお済みの方はこちら</p>
+								<div class="btnType4"><a href="/mori/login/"><span>ログイン</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+{/if}
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+<script src="/mori/js/message.js"></script>
+</body>
+</html>

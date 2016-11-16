@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第234回 「賀正」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2015/01/05"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2015/01/05 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第234回 「賀正」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 新年あけましておめでとうございますm(_ _)m<br /><br /><br /><br />しか～し!<br /><br />毎年の年末進行で、この原稿は12月末に書いている。<br /><br />だから新年のコトは分からないので、新年にフサワシー話題で2015年をスタートしよーと思うのだ。<br /><br />えー、ここ数年、鼻から顎までカバーする大きなマスクをしている人を、冬に限らず見かけるコトが多くなった。<br /><br />ワタル自身も、バイトで病院の隔離室などに入る時には、青いビニールのカバーオールみたいなのを着て、手袋&マスクを装着させられる。<br /><br />その格好で看護士さんに「これじゃドクターXじゃなくて、ドクターXLでしょ?」と、ワタル節をかましたら爆笑された(^o^)<br /><br />で、ドクターXLに変身したワタル自身は、すぐに瀕死状態になってしまう。<br /><br />大きなマスクで口呼吸が困難になり、ハァハァゼェゼェ…苦しくて苦しくて大変マルになってしまうのである。<br /><br />他のスタッフは、隔離じゃない病室でも念のためマスクをして平気なのに、ワタル自身は看護士さんにマスクを差し出されただけで、酸欠の恐怖にムーンウォークで4メートルほど尻ごみする。<br /><br />デブにとって、口呼吸こそがライフラインなのである。<br /><br />デブにとって鼻呼吸など、シャープペンのカートリッジに付いている小さな消しゴムと同じ、ナイよりマシ程度の存在で、トニもカクにもデブは口呼吸なのだ! だっだっだっ!<br /><br />STAP細胞は作れなかったけれど、今の日本の技術力なら、デブに優しい口呼吸マスクくらい作れるはずだ。<br /><br />世界は、まだまだデブにとって冷酷なのである。<br /><br />たとえば電車に、弱冷房車はあるのに強冷房車がないのは、「ダラ汗デブは、なるべく電車に乗らないよーにね」と同義語であるコトは、冬に弱暖房車がない事実が裏づけている。<br /><br />デブ族の悲願は、夏の強冷房車&冬の無暖房車の実現なのだ。<br /><br /><br /><br />しか～し!<br /><br />世の中にはトンデモナイ人がいる。<br /><br />その人は、ディスカバリー・チャンネルのドキュメント番組「潜入! 巨大アナコンダの体の中」の主役、ポール・ロゾリー氏だ。<br /><br />ポール氏はアメリカの博物学者で、なななんと、自ら巨大アナコンダに丸飲みにされ、その生態を観察するとゆーのだ! ヒェェ～（≧∇≦）<br /><br />全身タイツのよーな特殊スーツを着て、とにかく巨大なアナコンダに飲み込まれるとゆーのである。 ビェビェェ～（≧∇≦）<br /><br />こんな状況を考えただけで、全世界のデブ族は酸欠の恐怖で発狂する。<br /><br />てゆーか、ポール氏のプライベートは知らないけど、いくら博物学のためとは言え、頭から足までゴムスーツでカバーし、アナコンダに飲み込まれて体内を観察しよーなんて、一般ピーポーの発想じゃアリエナイ。<br /><br />ポール氏はアナコンダを研究しすぎて、異次元の快楽に目覚めたとしか思えないのだ。<br /><br />番組の予告編は、宇宙人みたいな格好のポール氏が巨大アナコンダに近づくシーンで終わっているが、もーそれだけで、デブは窒息寸前なのだ。<br /><br />1月24日に放送されるから、閉所も酸欠もアナコンダも大丈夫な人は、観てみてちょーだい(ーー;)<br /><br /><br /><br />しか～し!<br /><br />アナコンダに飲み込まれる学者より、久保田利伸のほーが好きとゆー方々には、2015年は全国ツアーのオタノシミがある^o^<br /><br />ファンキー・ジャム社内も、昨年末から「ツアー前の緊張感」が漂い、盛り上がりの坂道がスタートしている。<br /><br />そして誰よりも、久保田利伸自身が、皆さんとツアー会場で会えるのを楽しみにしているから、皆さんも酸欠やアナコンダに気をつけ、万全の体調でツアーに参加してちょーだい!<br /><br />年末、渋谷Mで飲んでいたら、顔見知りの久保田利伸ファンがオヒトリ様で来店した。<br /><br />彼女は今年のツアーも何カ所か参加し、仕事との折り合いがつけば、地方会場へ行ったついでに、観光や美味探訪をしたいと言う。<br /><br />久保田のツアーを、プラス観光旅行で楽しんでもらえるのは、美しい景色のBGMが久保田サウンドになるやもしれず、ファンクラブの仕事をしている者にとって本当に嬉しーコトで、久保田利伸の正しい楽しみ方だと思っている。<br /><br />時間は万人に平等だが、時間の使い方は千差万別。<br /><br />2015年の皆さんが、多くの有意義な時間を得られるコトを祈りつつ、週刊ワタル自身を今年もよろしくお願い致しますデスm(_ _)m<br /><br /><br /><br />※次回の更新は1月9日(金)です。以降、毎週金曜日更新に戻ります。<br /><br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/_2_vol1.html">
+
+
+						≪モーリー 何分！？クッキング≫　第2弾 ～vol.1買出し...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/12/4_part16_1.html">
+
+
+						4コマまんが Part17【大そうじ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/11/4_part16.html">
+
+
+						4コマまんが Part16【忘れ物グゼ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/11/r.html">
+
+
+						悩み相談ぶった斬り！【Rさん（女性）】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/4_part15.html">
+
+
+						4コマまんが Part15【あ、ふ～～～～ん。】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/post_40.html">
+
+
+						悩み相談ぶった斬り！【せっちゃんさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/4_part14.html">
+
+
+						4コマまんが Part14【無知の知】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/6_5.html">
+
+
+						悩み相談ぶった斬り！【あややさん（女性/6歳）】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

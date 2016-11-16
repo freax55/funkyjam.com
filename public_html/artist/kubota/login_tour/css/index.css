@@ -1,0 +1,41 @@
+@charset "shift_jis";
+
+#contents {
+	font-size:100%;
+	text-align:center;
+}
+
+#contents strong {
+	font-size:120%;
+	color:#A5452E;
+}
+
+#contents #selection {
+	padding-top:50px;
+}
+#contents #selection .btns {
+	padding:50px 0 0 150px;
+}
+#contents #selection .btn {
+	float:left;
+	padding:0 30px 0 0;
+	margin:0;
+	text-align:center;
+	vertical-align:middle;
+}
+#contents #selection .btn a {
+	display:block;
+	width:157px;
+	height:25px;
+	padding-top:6px;
+	background-image:url(../image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:110%;
+	color:#000;
+}
+#contents #selection .btn a:hover {
+	color:#F40202;
+}

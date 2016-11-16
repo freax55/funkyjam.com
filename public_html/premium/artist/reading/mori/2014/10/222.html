@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=mori/index">森 大輔</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第222回 「酸素カプセル」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2014/10/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2014/10/10 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第222回 「酸素カプセル」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 数回前に予告していた、酸素カプセルの体験報告をしま～す。<br /><br />ワタル自身が通うコトになった酸素カプセル屋さんは、銀座・歌舞伎座近くのビルにあり、もーそれだけで「一流」や「高級」や「セレブ」といってサシツカエない。<br /><br />エレベーターを降りると、いきなり薄暗い部屋の中。種類は分からないが、グリーン系のアロマが適度に漂う。<br /><br />タイトな黒い制服姿のオネーサンが3人ほどいて、やはり「一流」や「高級」や「セレブ」といってサシツカエない。<br /><br />酸素カプセルは横置きのタイプだけだと思っていたが、そこには縦置きのカプセルもあり、中で加圧トレーニングも出来るとのコト。<br /><br />「でも最初は横になったほーがヨロシーと思います」とオネーサンに言われ、サカラウ理由もないので酸素カプセル横置きを選択する。<br /><br />カプセルのサイズは長さ2m強&直径1m弱で、デブ族のワタル自身でも寝たまま本を読めるヨユーがある。<br /><br />この中に、1.2気圧の酸素が充填され、寝ながらにして高気圧トレーニングしちゃうとゆーお手軽便利システムなのである。<br /><br />そーなると、酸素もアルプス山脈の無垢な酸素とか、白神山地のフィトンチッドたっぷりの酸素だろーと思っていたら、「この部屋の酸素を1.2気圧に加圧します」とゆーコトで、酸素は銀座の現地調達だった。<br /><br />ちなみに、最初は3日に1度のペースで1回50分のInto The酸素カプセルが効果的だと言われたが、ワタル自身は今までの3週間で4回しか行けていない。<br /><br />カプセルに入ると、徐々に気圧が高くなるのが分かる。<br /><br />なぜなら、気圧が高いので飛行機に乗った時みたいに、耳が詰まったよーな感じになるのだ。だから耳抜きが必要で、それが出来ない人は耳が痛くなって酸素カプセルどころじゃないから注意してちょーだい。<br /><br />3分ほどで1.2気圧になると、あとは寝てたり本を読んだりスマホいじったりの50分。<br /><br />ただそれだけで、酸素カプセルには素晴らしー効果があると、パンフレットには書いてある。<br /><br />良いコトだらけの一部を書いてみるね。<br /><br />&#9899;病気予防&改善　&#9899;体脂肪燃焼　&#9899;睡眠促進　&#9899;脳の活性化　&#9899;ストレス解消　&#9899;美肌効果　&#9899;アンチエイジング……<br /><br />どーよ、どーなのよ、この万能薬的効果は、どーなのよ!?<br /><br /><br /><br />しか～し!<br /><br />今のところ、これらの効果の実感がワタル自身にはナッシング(~_~;)<br /><br />やっぱ3日に1回行かなきゃダメなのかなぁ～。<br /><br /><br /><br />しか～し!<br /><br />パンフレットには書いてなかったけど、オネーサンが笑顔で言ったのだ。<br /><br />「酸素カプセルの後は食事が美味しいですよ。お酒も美味しくて何杯でも飲めちゃいます!』は、実際にソノトーリだった。<br /><br /><br /><br />しか～し!<br /><br />オレの場合、いつでも食事と酒はウマいから、やはり酸素カプセルの効果は不明のままなのである。<br /><br />でも、まだ8回分の無料権があるから、効果実感報告が出来るよーに、もーしばらくInto The酸素カプセルしてみる所存。<br /><br />乞うご期待m(_ _)m?<br /><br /><br /><br />※高い山に登る時に酸素マスクが必要なよーに、気圧が低いと空気中の酸素量は減り、気圧が高いと酸素量が増えます。酸素カプセルは、その原理を利用して体内に高濃度の酸素を送り込み、毛細管レベルから人体を活性化させる…とゆーシステムです。(参考文献:高気圧・高濃度酸素処方の原理と効果by京都大学大学院人間・環境学研究科:石原昭彦)<br /></div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/09"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/10/post_40.html">
+
+
+						悩み相談ぶった斬り！【せっちゃんさん（女性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/4_part14.html">
+
+
+						4コマまんが Part14【無知の知】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/09/6_5.html">
+
+
+						悩み相談ぶった斬り！【あややさん（女性/6歳）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/22"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/08/4_part13.html">
+
+
+						4コマまんが Part13【シュノーケリング！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/07/_vol1.html">
+
+
+						≪モーリー 何分！？クッキング≫　vol.1...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/07/4_part12.html">
+
+
+						4コマまんが Part12【アメ横の思い出】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/07/16"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/07/post_39.html">
+
+
+						悩み相談ぶった斬り！【ヤマーマンさん（男性）】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/06/20"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_mori.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/mori/2014/06/4_part11.html">
+
+
+						4コマまんが Part11【夏にやりたいこと】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

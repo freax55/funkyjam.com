@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common_insert.html" -->
+<link href="/premium/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_insert.html" -->
+			<div id="section">
+				<div class="secInner">
+					{if $status != "edit"}
+						<h2>新規会員登録</h2>
+					{else}
+						<h2>会員継続</h2>
+					{/if}
+					<p class="lead">
+						大変申し訳ございません。<br />
+						ただ今決済処理に失敗したため、ご注文をキャンセルいたしました。<br />
+						<br />
+						処理が混み合っている可能性がございます。<br />
+						入力内容などのご確認と、再度のご注文をお願い申し上げます。<br />
+						<br />
+						ご不明な点がございましたら、<a href="mailto:premium@funkyjam.com">premium@funkyjam.com</a>までご連絡下さい。
+					</p>
+					<p class="btn btn2"><input type="button" value="TOPへ戻る" onclick="location.href='/premium/';"  /></p>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer_insert.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第321回「日本を(限定的に)誇る」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/09/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/09/02 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第321回「日本を(限定的に)誇る」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 今回のリオ五輪では多くの日本選手が活躍したが、ワタル的に一番シビレたのは、男子100m×4リレーの決勝戦だ。<br><br />ぶっちゃけ、1人も9秒代で走れない日本選手では、3位ですら難しいと思っていた。<br><br />なのに銀メダル!<br><br />あまりに感動したので日本選手全員の名前と(最高タイム)を書いておく。<br><br />1走=山縣亮太(10.05)<br><br />2走=飯塚翔太(10.22)<br><br />3走=桐生祥秀(10.01)<br><br />4走=ケンブリッジ飛鳥(10.10)<br><br />この4人が走って37.60秒のアジア新記録を出したのだ。<br><br />平均すると各自が、なななんと、100mを9.4秒で走っているコトになるのだ!<br><br />これは、ウサイン・ボルト選手の世界記録9.58秒より、ゼーンゼーン速いのだ!<br><br />ちなみに、37.27秒で金メダルのジャマイカは、以下の選手が走った。<br><br />1走=アサファ・パウエル(9.72)<br><br />2走=ヨハン・ブレーク(9.69)<br><br />3走=ニッケル・アシュミード(9.90)<br><br />4走=ウサイン・ボルト(9.58)<br><br />平均すると、1人9.31秒で100mを走ったコトになり、さすがに全員9秒代のチームなのだ。<br><br /><br><br />しか～し!<br><br />日本が2.78秒も記録を縮めたのに対し、ジャマイカは1.62秒しか縮めていないのは…Why Japanese People!?<br><br />どーしてこんな奇跡が起きたのか？<br><br />TVの解説なんかを聞いてると、日本はバトンパスの技術が世界一らしく、各選手がスピードを落とさずにバトンの受け渡しが出来るんだって。<br><br />それを何度も何度も練習して磨きをかけ、その結果が37.60秒の銀メダルなんだって。<br><br />3走の桐生選手から4走のケンブリッジ選手への走りなんて、無神論者のオレにも神がかりに見えるのだ。<br><br />不利な部分を技術でカバーするって、いかにもJapanese Peopleだよね。<br><br />ワタル的には、だからヨケーに嬉しい銀メダルなのだ。<br><br /><br><br />しか～し!<br><br />こんなに喜ばしい快挙なのに、ネットのコメント欄には(日本に負けた)隣国を揶揄するコメントが見られるのは、本当に残念で仕方ない。<br><br />ワタル自身も中国の南沙諸島問題など、納得いかない部分は多々あるけれど、日本のリレー銀メダルとはマッタク次元の違う問題だ。<br><br />あとひとつ、どーしてもオリンピック関係で言いたいコトがある。<br><br />某有名人が、剣道が五輪競技にならない理由は、剣道連盟が拒否しているからとブログしていたが、それはイカガナモノかと思うのだ。<br><br />そもそも剣道は五輪競技には似合わないと、ワタル自身は思うのだよ。<br><br />剣道の勝敗はフェンシングみたいに、有効ポイントに剣が決まれば1本じゃないのだ。<br><br />コテ・メン・ドウ・ツキの各ポイントに入れば無条件で1本なら、センサーを付けて機械的に判定出来る。<br><br /><br><br />しか～し!<br><br />剣道の勝敗は、「ザンシン」とゆーヤッカイで難解なファクターがあるのだ。<br><br />ザンシンは残心で、文字通り「心を残す」ことで、いくら有効打を決めたとしても、心が残っていなかったら1本にならないのだ。<br><br />残心は、敵の反撃に備える心=勝った後も油断しない心である。<br><br />心を残す…こんなアイマイな精神論で勝敗を決める剣道は、目が効く審判を育てるのが、一流剣士を育てる以上に難しいと言えるのだ。<br><br />だから誤解を恐れずに言ってしまうと、海外の日本人以外が行う剣道の試合は、おそらくほとんど正しくジャッジされていない。<br><br />もしも剣道が五輪競技になったら、裸になって抗議するコーチが続出するし、剣道が剣道のままでいたいなら、五輪の外で泰然自若と正眼の構えでいれば良い…とワタル自身は思うのだ。<br><br />ナンでもカンでも、ワールドスタンダードになればイイってもんじゃないのだよ。<br><br /><br><br />しか～し!<br><br />剣聖・宮本武蔵の有名な言葉=「構えあって構えなし」は、世界中の人々に知って欲しいのだ。</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/08/no_diggity_9.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/08/no_diggity3.html">
+
+
+						No Diggity【落ち着く場所ベスト3】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

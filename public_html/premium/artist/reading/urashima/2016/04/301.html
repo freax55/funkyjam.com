@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第301回 「ガイドブック」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/04/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/04/15 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第301回 「ガイドブック」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 今年発売された「ミシュランガイド京都・大阪2016」に掲載された、「鮨　千陽(ちはる)」が話題になっている。<br /><br />なぜなら、その寿司屋をやっているのが、寿司学校にわずか3ヶ月だけ通った、寿司初体験の人達だからである。<br /><br />寿司職人とゆーと、ガンコな親方の厳しい指導に耐えながら、何年も修行をして一人前…とゆーイメージがあるが、それは既に時代遅れになったのかもしれない。<br /><br />ワタル自身もラーメン屋をやっていたから分かるのだが、美味しい料理を作れるか作れないかは、修行年数よりも本人のセンスが大切なのだ。<br /><br />エジソンをしのぐ天才発明家=ニコラ・テスラは、頭の中で複雑な機械の設計図を書き、それを頭の中で組み立て試運転までさせていたが、センスのある料理人も頭の中で食材を調理し、味見が出来る。<br /><br />修行で身につくセンスは技術的な割合が多く、味覚センスは生来の才なのだ。<br /><br /><br /><br />しか～し!<br /><br />だからと言って、厳しい職人修行に意味がないとは言わない。<br /><br />ストイックな師弟関係は、職人として必要な精神修行で、21世紀の料理人に精神修行など必要ないとゆーのは間違いだ。<br /><br />ラーメン屋を閉めたワタル自身がゆーのもナンだが、プロの料理人は、自分に甘えたらオシマイなのだ。<br /><br />だから、ミシュランガイドに掲載された「鮨　千陽」の真価が問われるのは、これからの問題で、ミシュランに無視された寿司屋がトヤカクゆーのは、いかにも狭量だ。<br /><br /><br /><br />しか～し!<br /><br />寿司修行ウンヌンの前に、ワタル自身は名店紹介的なガイドブックを信用していない。<br /><br />味の好みは千差万別なのだから、ミシュランガイドがマイウ～と言っても、自分にとってマイウ～とは限らない。<br /><br /><br /><br />しか～し!<br /><br />食でも旅でもナンでも、ガイドブックは信用しないが、頼りにはなる。<br /><br />ワタル自身が東京に出て来た頃、最初に頼りにしたのは、文芸春秋社が1967年から現在も改訂発行している「東京いい店うまい店」とゆー食のガイドブックで、これを参考に…高級店には行けなかったが…下町グルメを多いに楽しんだ。<br /><br />人形町「玉ひで」の親子丼、上野「ぽん多」のとんかつ、赤坂「天茂」のかき揚げ丼、吉祥寺「ほさか」の手打蕎麦、自由が丘「金田」の肴…数え上げたらキリがないが、それ以上にガッカリ店も多かった。<br /><br />そもそもガイド=GUIDEの意味を大辞林で調べてみると「案内すること。また、その人」などと書いてあり、ガイドブックの基本は情報提供なのである。<br /><br />情報は教えるから、好き嫌いは自分で決めなさい…が、ガイドブックの本質なのだ。<br /><br />以前、久保田利伸の写真撮影でインドへ行った時、一般観光ピーポーが好きそーな名所ばかりを案内するインド人ガイドに対し、ファンキー・ジャムの大森[美人]社長が、「私達は観光名所を観たいんじゃないんだよ!」と怒鳴りつけたよーに、ガイドばかりに頼るのは、あまりに主体性がない。<br /><br />だから、ワタルの手下が大阪でマイウ～なカレー屋をオープンしたと言っても、マルっと信用しないほーが良い。<br /><br />手下は、久保田利伸とブラックニッカ クリアブレンドのCMに出ていた松尾貴史氏が経営しているカレー屋の味を決めていた男であり、真摯な味の探求者だとしても、その評価は自分の舌と足で確かめるのが、お気に入りの店を見つける唯一のヒケツである。<br /><br /><br /><br />しか～し!<br /><br />場所が分からなければ確かめよーもないので、一応ガイドを掲載する。<br /><br /><br /><br />渡邊&#21654;&#21937; (WATANABE CURRY)<br /><br />大阪府大阪市北区曽根崎新地2-2-5 第一シンコウビル 3F<br /><br />tel 06-6346-3338<br /><br />平日・土曜日　●ランチ 11:30～14:30　●ディナー18:00～22:00<br /><br />日曜日・祝日　●ランチ 11:30～17:00<br /><br />定休日　●月曜日<br /><br /><br /><br />さあ、アナタはどー評価する？</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

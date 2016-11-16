@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=========================* common *=========================*/
+
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body{
+	border-top: 3px solid #333333;
+	background-image: url(/images/bg.png);
+	background-repeat: repeat;
+	background-position: left top;
+}
+
+body .e-entry-title {
+    color: #000 !important;
+}
+
+iframe{
+	/*width: 980px !important;*/
+	margin: auto;
+	display: block;
+}
+
+.noT{margin-top: 0px !important;}
+.noR{margin-right: 0px !important;}
+.noB{margin-bottom: 0px !important;}
+.noL{margin-left: 0px !important;}
+
+
+#newsList ul li a:hover,
+ul.fnav li a:hover,
+#innerBox ul li a:hover,
+.flBtn a:hover,
+#copy a:hover,
+#slide #topicNav li img:hover,
+nav ul li a:hover,
+#artistList ul li span:hover,
+.studio a:hover .hover,
+a:hover .hover{
+	opacity: 0.70;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.70;
+	-ms-filter: "alpha(opacity=70)";
+	-khtml-opacity: 0.7; /* Safari 1.x */
+}
+
+a{
+	color: #9E7427;
+	text-decoration: underline;
+}
+
+a:hover{
+	color: #9E7427;
+	text-decoration: none;
+}
+
+/*========* header *========*/
+
+#float{
+	position: absolute;
+	right: 0px;
+	top: 520px;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+header{
+    position: relative;
+	width: 943px;
+	margin: auto;
+	padding:10px 0px 2px 37px;
+}
+
+header #sound{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	cursor: pointer;
+}
+
+header .play-pause{
+	width: 84px !important;
+	height: 18px !important;
+}
+
+header .audiojs{
+	width: 84px;
+	height: 18px;
+	background: none !important; /*リセット*/
+	background-image: none !important; /*リセット*/
+}
+
+header #sound img{
+   vertical-align:top;
+}
+
+header #logo{
+	margin: 0px 67px 0px 0px;
+    float: left;
+	cursor: pointer;
+}
+
+header nav{
+	margin: 25px 0px 0px 0px;
+    float: right;
+}
+
+header nav ul li{
+	margin: 0px 23px 0px 0px;
+	float: left;
+}
+
+/*========* footer *========*/
+
+footer{
+	height: 54px;
+    clear: both;
+	border-top:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+}
+
+footer .fnav{
+	height: 56px;
+	overflow: hidden;
+}
+
+footer #footerBox{
+	width: 990px;
+	margin: auto;
+}
+
+footer #footerBox ul li{
+	float: left;
+}
+
+footer #copy{
+	width: 360px;
+	padding: 9px 0px 9px;
+	font-size: 76%;
+	color: #848080;
+	float: right;
+	text-align: right;
+}
+
+footer #copy a{
+	color: #848080;
+}
+
+footer #snsArea{
+	width: 500px;
+    margin: 8px 0px 0px 0px;
+	float: right;
+	overflow: hidden;
+}
+
+footer #snsArea ul li{
+    width: 100px;
+    float: left;
+}
+
+footer .switchBtnStop{
+	display: none;
+}
+
+footer .jasrac{
+	float: left;
+    padding: 9px 0px 9px;
+}
+
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+/*                                  STUDIOページ                                   　*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　*/
+
+
+/*=========================* topics *=========================*/
+
+#load{
+	background: #000000;
+	height: 4px;
+	width: 100%;
+	display: none;
+}
+
+#load img{
+   width: 980px;
+   margin: auto;
+   display: block;
+   vertical-align:top;
+}
+
+#slideBox{
+	background: #000000;
+    position: relative;
+	margin: auto;
+}
+
+#slide{
+	width: 980px;
+	margin: auto;
+	height: 352px;
+}
+
+#slide img {
+   vertical-align:bottom;
+}
+
+#slide #topicImage{
+	position: relative;
+	height: 352px;
+	width: 822px;
+	float: left;
+}
+
+#slide #topicImage li{
+	position: absolute;
+	height: 352px;
+	overflow: hidden;
+	width: 821px;
+}
+
+#slide #topicImage li a{
+	width: 821px;
+	height: 352px;
+	position: absolute;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 169%;
+	top: 0px;
+	left: 0px;
+}
+
+#slide #topicImage li a p{
+	position: absolute;
+	bottom: 20px;
+	left: 32px;
+}
+
+#slide #topicNav{
+    margin: 6px 2px;
+    float: right;
+}
+
+#slide #topicNav li{
+    background: #ffffff;
+	margin: 0px 0px 4px 0px;
+	clear: both;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.tpImg{
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+
+/*=========================* Twitter＆各リンク *=========================*/
+
+
+#twNew{
+text-decoration: underline;
+}
+
+#twNew:hover{
+text-decoration: none;
+}
+
+#innerBox {
+	height: 62px;
+	padding: 8px 0px 0px 19px;
+    background: url(/images/innerNav_bg.png) no-repeat center top;
+}
+
+#innerBox ul{
+	width: 960px;
+	height: 70px;
+	margin: auto;
+}
+
+#innerBox ul li{
+    background: #ffffff;
+	margin: 0px 12px 0px 0px;
+	float: left;
+	height: 53px;
+}
+
+
+#TargetTweet{
+	  width:980px;
+	  margin:auto;
+	  position:relative;
+}
+#twitterBox{
+	  width:980px;
+	  margin:auto;
+	  height:38px;
+	  position:relative;
+}
+.timeline{
+	  position:absolute;
+	  top:-20px;
+	  width:750px;
+	  width:750px;
+	  left:91px;;
+	  font-size:87%;
+	  left:98px;
+}
+.e-entry-title{
+	  white-space:nowrap;
+	  width:100%;
+	  overflow:hidden;
+	  -o-text-overflow:ellipsis;
+	  text-overflow:ellipsis;
+	  color: #414140 !important;
+	  font-size: 87%;
+}					
+#twIcon{
+	  position:absolute;
+	  top:2px;
+	  left:0px;
+}
+#twfollow{
+	  position:absolute;
+	  top:11px;
+	  right:0px;
+}
+
+/*=========================* artist *=========================*/
+
+
+.title{
+    width: 200px;
+	padding:28px 0px 19px;
+	position: relative;
+	left: -45px;
+}
+
+#artistBox{
+	height: 440px;
+	margin: auto;
+	padding: 0px 0px 0px 0px;
+    background: url(/images/artistImgBg.png);
+}
+
+#artistBox img {
+   vertical-align:bottom;
+}
+
+#artistList{
+	width: 980px;
+	margin: auto;
+    background: url(/images/artistImgBg.png) repeat;
+}
+
+#artistBox ul li{
+	float: left;
+	margin: 0px 21px 0px 0px;
+	background: url(/images/artistBg.png) no-repeat top right;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+#artistBox ul li span{
+    display: block;
+	clear: both;
+	margin-top: -1px;
+}
+
+
+/*=========================* news *=========================*/
+
+#newsBox .title{
+    padding-bottom: 12px !important;
+}
+
+#newsBox{
+	margin:0px auto 39px;
+    background: url(/images/index3_load_80.jpg) repeat-x top;
+}
+
+#newsList{
+	width: 980px;
+	margin:0px auto 0px;
+}
+
+#newsBox ul li{
+	min-height: 150px;
+	float: left;
+	margin: 0px 26px 0px 0px;
+	position: relative;
+}
+
+#newsBox ul li a{
+	overflow: hidden;
+	display: block;
+	height: 128px;
+	width: 225px;
+}
+
+#newsBox .newsCover;
+#newsBox .newsText{
+	display: block;
+	clear: both;
+}
+
+#newsBox .newsText{
+	width: 218px;
+	margin-top: -7px;
+	padding: 8px 0px 7px 7px;
+	font-size: 77%;
+	color: #444444;
+	background: #e3e3e3;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.new{
+	position: absolute;
+	top:10px;
+	left: -10px;
+	z-index: 9999;
+}
+
+
+#forSP {
+	text-align: center;
+}
+#forSP img{
+	padding:50px 0;
+	text-align: center;
+}
+
+.fnav {
+margin:0 auto;
+width:710px;
+}
+
+.fnav .br{
+height:55px;
+border-left:1px solid #CCCCCC;
+}

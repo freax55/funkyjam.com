@@ -1,0 +1,226 @@
+@charset "shift_jis";
+
+#contents {
+	font-size:100%;
+}
+#contents .pageTitle {
+	width:643px;
+	height:26px;
+	padding-bottom:5px;
+	padding-top:10px;
+	padding-left:10px;
+	border-bottom:1px solid #666666;
+	font-size:110%;
+	text-indent:0;
+	line-height:1;
+}
+#contents .pageTitle strong {
+	font-size:150%;
+}
+#contents .pageTitle#vol93 {
+	background-image:url(../enquete/image/title93.gif);
+}
+#contents .pageTitle#vol94 {
+	background-image:url(../enquete/image/title94.gif);
+}
+#contents .pageTitle#vol95 {
+	background-image:url(../enquete/image/title95.gif);
+}
+#contents .pageTitle#vol96 {
+	background-image:url(../enquete/image/title96.gif);
+}
+#contents .pageTitle#vol97 {
+	background-image:url(../enquete/image/title97.gif);
+}
+#contents .pageTitle .link {
+	float:right;
+	width:90px;
+	padding-top:15px;
+	margin-left:auto;
+	margin-right:0;
+	padding-left:11px;
+	text-align:right;
+	background-image:url(../image/icon_arrow.gif);
+	background-position:0 14px;
+	background-repeat:no-repeat;
+}
+#contents .pageTitle .link a {
+	/*color:#733020;*/
+	color:#000;
+	text-decoration:none;
+}
+#contents .pageTitle .link a:hover {
+	color:#733020;
+}
+#contents .inner {
+	width:570px;
+	margin:0 auto;
+}
+#contents .caption {
+	width:130px;
+	margin-left:440px;
+	text-align:right;
+}
+#contents span {
+	color:#733020;
+	margin-right:5px;
+}
+#contents table {
+	width:570px;
+	margin:0 auto;
+	border:1px solid #333333;
+}
+#contents table.enquete th {
+	background-color:#EAEAEA;
+}
+#contents table.enquete th p {
+	display:block;
+	height:13px;
+	margin:6px 12px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	text-align:left;
+	font-weight:normal;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+#contents table.enquete .enq01 th p {
+	background-image:url(../enquete/image/enq_01.gif);
+}
+#contents table.enquete .enq02 th p {
+	background-image:url(../enquete/image/enq_02.gif);
+}
+#contents table.enquete .enq03 th p {
+	background-image:url(../enquete/image/enq_03.gif);
+}
+#contents table.enquete td {
+	padding:9px 0 9px 18px;
+}
+#contents table.enquete input {
+	width:530px;
+	height:18px;
+}
+#contents table.enquete .enq03 textarea {
+	width:530px;
+	height:77px;
+}
+#contents #personal {
+	width:570px;
+	margin:0 auto;
+	padding-top:20px;
+}
+#contents #personal li {
+	padding-bottom:15px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-size:90%;
+}
+#contents #personal li#name {
+	background-image:url(../enquete/image/enq_name.gif);
+}
+#contents #personal li#number {
+	background-image:url(../enquete/image/enq_number.gif);
+}
+#contents #personal li#mail {
+	background-image:url(../enquete/image/enq_mail.gif);
+}
+#contents #personal li input {
+	width:220px;
+	height:18px;
+}
+#contents #personal li input {
+	margin:0 10px 0 130px;
+}
+#contents .attention {
+	color:#F00;;
+}
+#contents #personal li .attention {
+	margin-left:130px;
+}
+#contents #present {
+	width:570px;
+	margin:0 auto;
+}
+#contents #present .title {
+	width:185px;
+	height:27px;
+	margin:0 auto;
+	margin-top:25px;
+	padding-bottom:15px;
+	background-image:url(../enquete/image/title_present.gif);
+	background-position:center top;
+	background-repeat:no-repeat;
+	text-align:left;
+	font-weight:normal;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+#contents #present .note {
+	padding-bottom:11px;
+	text-align:center;
+	font-weight:bold;
+	color:#F40202;
+}
+#contents #present li {
+	padding-bottom:10px;
+	padding-left:18px;
+	text-indent:-18px;
+	line-height:1.8;
+}
+#contents .btn {
+	padding-left:205px;
+	padding-top:20px;
+}
+#contents .btn input {
+	width:157px;
+	height:31px;
+	background-color:transparent;
+	background-image:url(../image/bg_btn.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	border:0 none;
+	cursor:pointer;
+	font-size:118%;
+	font-weight:bold;
+}
+#contents .btn input:hover {
+	color:#F00;
+}
+#footer {
+	height:24px;
+	margin-top:0;
+}
+#footer .inner {
+	padding:6px 20px 0 15px;
+}
+#footer #copyright {
+	float:right;
+	margin:2px 0 0 0;
+}
+#footer #privacy {
+	float:left;
+}
+#footer #privacy a {
+	width:93px;
+	height:11px;
+	display:block;
+	background-image:url(../../../../image/common/fnavi01.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	text-align:left;
+	font-weight:normal;
+	outline:none;
+	line-height:0;
+	text-decoration:none;
+	text-indent:-9999px;
+	font-size:1px;
+}
+#footer #privacy a:hover {
+	background-position:left bottom;
+}

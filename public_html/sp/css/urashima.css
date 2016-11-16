@@ -1,0 +1,98 @@
+/* 
+    Document   : top
+    Created on : 2012/05/23, 13:10:15
+    Author     : staff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+html {
+	background-image:url(/sp/images/artist/urashima/bg_urashima.gif);
+}
+#page #logo {
+	background-image:url(/sp/images/common/bg_page.gif);
+}
+#headline {
+	width:100%;
+}
+#headline .images {
+	text-align:center;
+	width:320px;
+	height:165px;
+	margin:0 auto;
+}
+#headline #navi {
+	width:100%;
+	display:table;
+	overflow-x:hidden;
+    background:-moz-linear-gradient(top, #A50000, #6F0000);
+    background:-webkit-gradient(linear, left top, left bottom, from(#A50000), to(#6F0000));
+	text-align:center;
+	border-bottom:2px solid #303030;
+}
+#headline #navi ul {
+	display:table-row;
+}
+#headline #navi li {
+	display:table-cell;
+	border-top:2px solid #303030;
+	border-right:2px solid #303030;
+	background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #630F0F, #450A0A);
+	background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#630F0F), to(#450A0A));
+	width:50%;
+}
+#headline #navi li:nth-child(2n) {
+	border-right:none;
+}
+#headline #navi li.current {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #CB2135, #8E1725);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#CB2135), to(#8E1725));
+	font-weight: bold;
+}
+#headline #navi li a {
+	display:block;
+	text-align:center;
+	padding:8px 0;
+	text-decoration: none;
+	color:#885656;
+}
+#headline #navi li.current a {
+	color:#fff;
+}
+#newsBlock .day {
+	color: #A70000;
+	font-size: 1.2rem;
+}
+#newsBlock .day strong {
+	padding:3px 5px;
+	margin-right: 5px;
+	background-color: #A70000;
+	color: #fff;
+	font-size: 1.0rem;
+}
+#newsUnder a{
+	color: #A70000;
+	text-decoration: none;
+}
+
+#discography .link {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #630F0F, #450A0A);
+	background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#630F0F), to(#450A0A));
+}
+#discography .link li.current {
+    background:url(/sp/images/common/bg_icon.png), -moz-linear-gradient(top, #CB2135, #8E1725);
+    background:url(/sp/images/common/bg_icon.png), -webkit-gradient(linear, left top, left bottom, from(#CB2135), to(#8E1725));
+}
+#discography .link li {
+	color:#885656;
+}
+#discography .link li a {
+	color:#885656;
+}
+#discography .link li.current a {
+	color:#885656;
+}
+#newsUnder .detail .day,
+#discography .section .entry .release,
+#discography .images .day{
+	color: #A70000;
+}

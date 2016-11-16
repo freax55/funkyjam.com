@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>会場管理 - Funky Jam　ファンキー・ジャム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="../admin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>FUNKY JAM 管理ページ</h1>
+<p id="path"><a href="../index.php">管理トップ</a> &gt; <a href="index.php">会員管理</a> &gt; </p>
+<p id="new"><a href="index.php?action=new">インポートする</a></p>
+{if $list}
+<p class="paging">{if $pageInfo.prev}<a href="index.php?page={$pageInfo.prev}">＜前の{$pageInfo.amount}件を表示</a>{/if}
+{$pageInfo.first}〜{$pageInfo.last}件 (全{$pageInfo.total}件)
+{if $pageInfo.next}<a href="index.php?page={$pageInfo.next}">次の{$pageInfo.amount}件を表示＞</a>{/if}
+{if $pageInfo.pagePrev}<a href="index.php?page={$pageInfo.pagePrev}">＜</a>{/if}
+|
+{section name=paging loop=$pageInfo.pageLast-$pageInfo.pageFirst+1}
+{if $pageInfo.pageFirst+$smarty.section.paging.index == $pageInfo.page}<strong>{$pageInfo.pageFirst+$smarty.section.paging.index}</strong> |
+{else}
+<a href="index.php?page={$pageInfo.pageFirst+$smarty.section.paging.index}">{$pageInfo.pageFirst+$smarty.section.paging.index}</a> |
+{/if}
+{/section}
+{if $pageInfo.pageNext}<a href="index.php?page={$pageInfo.pageNext}">＞</a>{/if}</p>
+<table id="list">
+  <tr>
+    <th>会員番号</th>
+  </tr>
+  {foreach name=member from=$list item=member}
+  <tr class="{cycle values='odd,even'}">
+    <td>{$member.member_no|escape}</td>
+  </tr>
+  {/foreach}
+</table>
+<p class="paging">{if $pageInfo.prev}<a href="index.php?page={$pageInfo.prev}">＜前の{$pageInfo.amount}件を表示</a>{/if}
+{$pageInfo.first}〜{$pageInfo.last}件 (全{$pageInfo.total}件)
+{if $pageInfo.next}<a href="index.php?page={$pageInfo.next}">次の{$pageInfo.amount}件を表示＞</a>{/if}
+{if $pageInfo.pagePrev}<a href="index.php?page={$pageInfo.pagePrev}">＜</a>{/if}
+|
+{section name=paging loop=$pageInfo.pageLast-$pageInfo.pageFirst+1}
+{if $pageInfo.pageFirst+$smarty.section.paging.index == $pageInfo.page}<strong>{$pageInfo.pageFirst+$smarty.section.paging.index}</strong> |
+{else}
+<a href="index.php?page={$pageInfo.pageFirst+$smarty.section.paging.index}">{$pageInfo.pageFirst+$smarty.section.paging.index}</a> |
+{/if}
+{/section}
+{if $pageInfo.pageNext}<a href="index.php?page={$pageInfo.pageNext}">＞</a>{/if}</p>
+{else}
+<p id="notfound">データがありません。</p>
+{/if}
+</body>
+</html>

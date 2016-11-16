@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include virtual="/mori/include/common/common.html"-->
+<title>ログイン - MORI DAISUKE OFFICIAL FANCLUB モリノナカマ</title>
+<!--#include virtual="/mori/include/common/common_css.html"-->
+<link rel="stylesheet" href="/mori/css/entry.css">
+<!--#include virtual="/mori/include/analytics.html"-->
+</head>
+<body>
+	<div id="page">
+<!--#include virtual="/mori/include/header/header.html"-->
+		<div id="contents">
+			<h1 class="logo ro"><a href="/mori/"><img src="/mori/images/common/logo.jpg" alt="モリノナカマ"></a></h1>
+			<div class="inner">
+
+				<h2 class="titleType1">ログイン</h2>
+{if $param == 'login'}
+				<div class="messageBlock">
+					<div class="inner">
+						<p class="error">既にログインされておりますので、モリノナカマをご覧頂けます！</p>
+						<div class="btnWrap">
+							<div>
+								<div class="btnType2"><a href="/mori/"><span>TOPページへ戻る</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+{else}
+				<ul class="progress">
+					<li class="current">入力</li>
+					<li>完了</li>
+				</ul>
+				<div class="inputWrap">
+					<form action="./" method="post" name="entryForm">
+						<div class="wrap1">
+							<p>会員番号</p>
+							{if $errors.login_id}<p class="error">※{$errors.login_id}</p>{/if}
+							<div><input type="text" name="login_id" value="{$login_id|escape}"{if $errors.login_id} class="error"{/if} ></div>
+							<p class="attn">会員番号を忘れた方は、<a href="/mori/acount/">こちら</a></p>
+						</div>
+						<div class="wrap1">
+							<p>パスワード</p>
+							{if $errors.login_pass}<p class="error">※{$errors.login_pass|escape}</p>{/if}
+							<div><input type="password" name="login_pass" value="{$login_pass|escape}"{if $errors.login_pass} class="error"{/if} ></div>
+							<p class="attn">パスワードを忘れた方は、<a href="/mori/password/">こちら</a></p>
+						</div>
+						<div class="btnType1"><a href="javascript:void(0)" onclick="document.entryForm.submit(); return false;"><span>ログイン</span></a></div>
+						<input type="hidden" name="action" value="complete" />
+					</form>
+				</div>
+{/if}
+			</div>
+		</div>
+<!--#include virtual="/mori/include/footer/footer.html"-->
+	</div>
+<!--#include virtual="/mori/include/menu/menu.html"-->
+<!--#include virtual="/mori/include/common/common_js.html"-->
+<script src="/mori/js/entry.js"></script>
+</body>
+</html>

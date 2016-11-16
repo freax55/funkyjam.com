@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=urashima/index">浦嶋 りんこ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第309回 「アリ・ボンバイエ」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/06/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/06/10 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第309回 「アリ・ボンバイエ」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> つい最近、本当にガクゼンとさせられるコトがあった。<br><br />それは…布などを織る時に「タテ糸とヨコ糸で編む」なんて言い方をするけれど、ワタル自身はタテ糸=縦糸、ヨコ糸=横糸だと信じて疑う余地など1ミリもなかった。<br><br /><br><br />しか&#12316;し!<br><br />こーゆー場合のタテ糸は経糸で、ヨコ糸は緯糸が正しい漢字であると、カンレキを過ぎてヨーヤク知ったのだ。<br><br />音は同じでも、縦ではなくて「経」、横ではなくて「緯」…そうして織られた布には、自然の移ろいや織人の気持ちまで編み込まれているよーで、あらためて漢字の妙に感服させられた…と、ここまで書いた時に、モハメド・アリの訃報が届いた!>_<!<br><br />久保田利伸はスティービー・ワンダーやボブ・マーリーの歌を聴いて黒人に憧れたとゆーが、ワタル自身が初めて黒人をカッコイイと思ったのは、モハメド・アリの試合を観た時だ。<br><br />ヘビー級なのにライト級のよーに軽やかなステップでリングを動き回り、素早く相手にパンチを叩き込むアリ。<br><br />ロープに追いつめられても、見事なスウェイバック(※1)で追撃をかわし、逆転のパンチを繰り出すアリ。<br><br />アリは、飛び抜けたテクニックを持ったスーパースターとして、小学生のワタル自身を魅了した。<br><br /><br><br />しか&#12316;し!<br><br />1967年=25歳のアリは、ベトナム戦争への徴兵を拒否する。<br><br />その理由を問われたアリは「ベトナム人に恨みはない」と答え、真っ向からアメリカ政府に刃向かった。<br><br /><br><br />しか&#12316;し!<br><br />そのためにアリはタイトルを剥奪され、3年7ヶ月も試合に出られなくなる。ヘビー級ボクサーの全盛期に、1度も試合が出来なかったのだ。<br><br />もし、この時期にアリが試合をしていたら…それはボクシング・ファンの見果てぬ夢なのだ。<br><br /><br><br />しか&#12316;し!<br><br />当時のワタル自身は知らなかったのだが、アリは黒人公民権運動のリーダーだったマルコム・X等と親交が深く、アメリカ政府はアリの過激かつ影響力のある言動を恐れていたのだ。<br><br />そもそもアリは、アメリカの白人社会にとって厄介者だった。<br><br />まだカシアス・クレイと名乗っていたアマチュア時代=1960年ローマ五輪のボクシング・ライトヘビー級で金メダリストになった時も、帰国後に受けた黒人差別に抗議してメダルを川に投げ捨てるとゆー暴挙を演じ、プロ転向と同時にモハメド・アリと改名したのだ(※2)。<br><br />そーした背景がアリの排除につながったのは間違いなく、今になって振り返れば、ベトナム戦争下のアメリカが透けて見える。<br><br /><br><br />しか&#12316;し!<br><br />アリはそーした逆風にも屈せず、全盛期をはるかに過ぎた74年、のちに「キンシャサの奇跡」と呼ばれる試合で、当時のWBA・WBC統一チャンピオンのジョージ・フォアマンをKOで倒し、2冠王に返り咲いたのだ。<br><br />以後、なんと10度もの防衛を重ね、81年に波瀾万丈のボクシング人生から身を引いた。<br><br />ワタル的には76年のアントニオ猪木VSアリの異種格闘技戦は忘れられないが、それに触れるとベクトルが変ってしまうので、今日は割愛する。<br><br />後年は病に苦しめられたが、ワタル自身の記憶に残るモハメド・アリこそ、真に偉大なファイターだった。<br><br />世界中のボクシング・ファンに色あせぬ緯糸を遺した、モハメド・アリの冥福を祈り…合掌m(_ _)m<br><br /><br><br />※1/スウェイバック(SWAY-BACK)とは、相手の動きを見定めて上半身を前後左右に動かし、パンチをかわすボクシングの技法。<br><br />※2/元々の姓名はカシアス・マーセラス・クレイ・ジュニア。しかし、イスラム運動組織への参加を機に、クレイ姓は奴隷時代にアメリカ人が勝手に付けた名前だと反発し、イスラム色の強いモハメド・アリに改名した。以後、アリはカシアス・クレイの名前を侮辱と感じ続け、その名を呼ぶ者を許さなかった。<br><br />★ヴィジュアル系ワタル自身のサイトにベトナム・ダナンの写真をアップしました。興味のある方は<a href="http://www.funkyjam.com">funkyjam.com</a>のトップページ下部のバナーからお入り下さいm(_ _)m</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/28"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/6_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2015/01/14"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2015/01/5_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/24"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/4_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/12/10"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/12/3_6.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/2_8.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/11/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/11/1_4.html">
+
+
+						いっとくやんかい!自腹かい!!【ちょこっと五反田こんなデート...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/15"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/10/_4_1.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_urashima.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/urashima/2014/09/_3.html">
+
+
+						いっとくやんかい!自腹かい!!【そうだ三重に行こう!!! 熊...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>

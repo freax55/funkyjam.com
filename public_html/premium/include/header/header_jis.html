@@ -1,0 +1,36 @@
+		<header>
+			<div class="new">
+				<div class="wrap">
+					<a href="/mori/contents/moriura/detail/82.html">2016.9.29 【モリ裏】 〆の一杯... 更新</a>
+				</div>
+			</div>
+			<ul class="navi">
+				<li>
+					<div class="wrap">
+{if $login_flg == 'login_ON'}
+						<a href="/mori/logout/"><span class="login">ログアウト</span></a>
+{else}
+						<a href="/mori/login/"><span>ログイン</span></a>
+{/if}
+					</div>
+				</li>
+				<li>
+					<div class="wrap">
+{if $login_flg == 'login_ON'}
+	{if $turnParam == 'tar'}
+						<a href="/mori/mypage/"><span style="color:#FF0000;">マイページ 期限 <img src="/mori/images/common/attn.png" alt=""></span></a>
+	{else}
+						<a href="/mori/mypage/"><span>マイページ</span></a>
+	{/if}
+{else}
+						<a href="/mori/entry/"><span>新規会員登録</span></a>
+{/if}
+					</div>
+				</li>
+				<li class="btn ro">
+					<div class="wrap">
+						<a href="#"><img src="/mori/images/common/btn_menu.png" alt=""></a>
+					</div>
+				</li>
+			</ul>
+		</header>
