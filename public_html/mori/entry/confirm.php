@@ -78,10 +78,10 @@ class Action extends DatabaseAction {
 			$result = $db->statement('mori/entry/sql/mail_exist_check.sql');
 			$tree = $db->buildTree($result, 'item_code');
 			function array_flattent($item,$key,$ret){
-			if(is_array($item)) array_walk($item,"array_flattent",&$ret);
+			if(is_array($item)) array_walk($item,"array_flattent",$ret);
 				else $ret[]=$item;
 			}
-			array_walk($tree,"array_flattent",&$new_arr);
+			array_walk($tree,"array_flattent",$new_arr);
 			if ($this->mail != $this->confirm ) {
 			$this->errors['mail'] = '確認入力と一致していません。';
 			}
