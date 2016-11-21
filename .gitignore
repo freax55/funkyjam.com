@@ -1,9 +1,9 @@
 /.DS_Store
 /._.DS_Store
-/.htaccess
-/.htpasswd
-/Database.php
-/mt-config.cgi
+.htaccess
+.htpasswd
+Database.php
+mt-config.cgi
 /mail.ini
 /image/
 /images/

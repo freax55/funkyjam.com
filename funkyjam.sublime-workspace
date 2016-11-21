@@ -1,0 +1,634 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "[admin]\nsubject=\"ホームページからの問い合わせが届いています（会社）\"\nfromName=\"FunkyJam\"\nfromMail=\"info@funkyjam.com\"\ntoName=\"FunkyJam\"\ntoMail=\"info@funkyjam.com\"\n\n[customer]\nsubject=\"FunkyJam Contact\"\n",
+			"file": "public_html/contact/mail.ini",
+			"file_size": 211,
+			"file_write_time": 131237679100000000,
+			"settings":
+			{
+				"buffer_size": 177,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><!-- InstanceBegin template=\"/Templates/sengoku.dwt\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=shift_jis\" />\n<meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\" />\n<meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />\n<meta http-equiv=\"Imagetoolbar\" content=\"no\" />\n<!-- InstanceBeginEditable name=\"doctitle\" --><title>なんたって戦国</title><!-- InstanceEndEditable -->\n<!-- InstanceBeginEditable name=\"head\" --><meta name=\"Keywords\" content=\"ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン\" />\n<meta name=\"Description\" content=\"久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。\" />\n<link href=\"../../css/base.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n<link href=\"../css/common.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n<link href=\"../css/print.css\" rel=\"stylesheet\" type=\"text/css\" media=\"print\" /><!-- InstanceEndEditable -->\n<script type=\"text/javascript\" src=\"../../artist/wataru/js/minmax.js\"></script>\n<!-- InstanceBeginEditable name=\"js\" --><!-- InstanceEndEditable -->\n</head>\n<body>\n	<a id=\"pagetop\" name=\"pagetop\"></a>\n	<div id=\"page\">\n		<div id=\"container\">\n<!--ヘッダーここから-->\n			<div id=\"header\">\n				<div id=\"logo\"><a href=\"/\">Funky Jam</a></div>\n			</div>\n<!--ヘッダーここまで-->\n<!--コンテンツここから-->\n			<div id=\"contents\"><!-- InstanceBeginEditable name=\"contents\" -->\n				<div class=\"header\">\n					<div class=\"title\">\n						<h1>第一回「直江兼続〜世渡り上手な愛妻家」</h1>\n						<p class=\"lead\"> 第一回目の戦国武将は、NHK大河ドラマ「天地人」の主人公・　直江兼続(ナオエ・カネツグ)。ドラマでは正義を貫いたヒーローとして描かれていますが、 拙者のカネツグ像は、ちと違う。そのアタリのことを自分勝手に語ります。</p>\n						<p class=\"writer\">原案：マネージャー高橋　文責：ワタル</p>\n					</div>\n					<h2 class=\"logo\">なんたって戦国</h2>\n					<div class=\"clear\">&nbsp;</div>\n				</div>\n				<div class=\"content\">\n					<div class=\"wrapper\">\n						<div class=\"textWrapper\">\n							<div class=\"note\">\n								<strong class=\"firstChar\">物</strong>語のはじまりは、豊臣秀吉(トヨトミ・ヒデヨシ)が天下を統一する少し前。現在の新潟を支配していた上杉謙信(ウエスギ・ケンシン)という武将がいました。ケンシンは直江景綱(ナオエ・カゲツナ)というオジサンを信頼し、いろいろな仕事を任せていました。ところがカゲツナには男の子がいなくて、このままだと直江家が途絶えてしまいます。そこで娘のお船(オセン)を、地元の人気者・信綱(ノブツナ)と結婚させ、婿養子にしました。その直後、カゲツナは死んでしまいますが、ノブツナが跡継となり、直江家は安泰です。<br />\n								<br />\n								時代は移り、豊臣秀吉が天下人になった安土桃山時代後期。上杉景勝(ウエスギ・カゲカツ)はケンシンの養子ですが、チーム秀吉トップ5の1人となって、ケンシンの死後も新潟を治めていました。そんなある日、オセンちゃんのダンナさん・ノブツナが亡くなってしまうのです。直江家は呪われているのか!?泣き崩れるオセンちゃんを見かねた親分のカゲカツは、一計を案じます。「ケンシンも信頼していた樋口兼豊(ヒグチ・カネトヨ)の息子・カネツグくんを、オセンちゃんと結婚させよう!　カネツグくんは頭も良くてスポーツも万能。うん、我ながら名案だ。これで直江家は子々孫々安泰だぞ!」カゲカツ親分の言葉は絶対です。<br />\n								<br />\n								カネツグくんはオセンちゃんと結婚して、直江家の婿養子になります。ちなみに大河ドラマではカネツグくんの役を妻夫木聡さん、オセンちゃんを常磐貴子さんが演じています。あれほど美男美女だったとは思えませんが、カネツグくんはオセンちゃんをメチャ愛して、側室を作りませんでした。え?側室ってなんだってですか?側室は、まあ、なんとゆーか、浮気相手ですね。本妻=「正室」に対しての「側室」です。側室は、このコーナーが100回続いたら行う「なんたって戦国検定試験」に必ず出る問題なので、ここでキッチリ覚えておいてください。<br />\n								<br />\n								それはともかく、この養子縁組で樋口兼続は直江兼続になり、よーやく大河ドラマの主人公になれたのです。養子になってからのカネツグくんは、さらにバリバリ仕事をし、ついに天下の豊臣秀吉から「チーム秀吉でフォワードやらんか?　移籍料30万石あげるで」とヘッドハンティングされるのです。けれど、義に篤いカネツグくんは「私は上杉景勝に仕える身です」とかなんとか言っちゃって、こんなに美味しい話を断わります。「さすが正義のカネツグくん!」と思うなかれ。なんと、あとで「やっぱり30万石ちょうだい」だって!「カゲカツ親分がもらったことにして、実は自分が仕切りますから」みたいな言い訳カネツグくんなのです。念のために30万石って、石コロを30万個もらうんじゃありませんよ。1石は10斗=180リットル。お米を年間30マンゴク収穫できるくらいの領土を、秀吉さんはカネツグくんにプレゼントしたのです。義に篤いカネツグくんだって、そりゃもらいますよね。<br />\n								<br />\n								さらにカネツグくん、かなりファンキーなのです。カネツグくんがオセンちゃんを熱愛してたことは書きましたが、もっとファンキーな愛の表現方法をカネツグくんは思いつきます。なんと、兜(カブト)に漢字の「愛」って付けちゃうんです。本当です。愛兜で突撃し、バッタバッタと敵を斬り殺しちゃうんです。ファンキー超えて、シュールですねぇ〜。現代なら、LOVEって書いたキャップをかぶった殺人鬼です。かなりヤバイです。でも実際には、あんなに重たい兜はかぶれません。あんな兜で戦ったら、自分の首が折れちゃいます。ボクサーがチャンピオンベルトをして戦わないのと同じで、多分、愛兜はカネツグくんのイメージ・キャラクターとして使われていたんでしょう。<br />\n							</div>\n						</div>\n						<div class=\"imageWrapper\">\n							<div><img src=\"../image/01/image_01.jpg\" alt=\"\" /></div>\n							<div><img src=\"../image/01/image_02.jpg\" alt=\"\" /></div>\n						</div>\n						<div class=\"clear\">&nbsp;</div>\n					</div>\n					<div class=\"textWrapper2\">\n						<div class=\"note\">\n							<br />\n							そうこうしている内に天下の秀吉サマが亡くなり、有名な関ヶ原の合戦でチーム家康が勝つと、人々は一気に徳川家康に迎合します。チーム秀吉だったカネツグくんですが、やっぱり保身に走ります。チーム家康に「ごめんなさい。もう逆らわないから許してください」と謝るのです。なんだか、ちょっと切ないですよね。愛兜のカネちゃんだったのに。その後のカネツグくんは、米沢で農作業や土木工事なんかをしながら余生を送り、60歳で病死しました。義に篤いというよりも、人間味あふれる愛妻家のカネツグくんの人生を、大河ドラマはどう演出するのか、拙者も楽しみにしています。<br />\n							<br />\n							さて、もしも次回があるならば、久保田利伸ファンなら誰もが敬愛するキーボードプレーヤー・柿崎洋一郎さんの大先祖!? カネツグくんと同じ、上杉ファミリーの一員だった柿崎家を紹介したいと思います。\n						</div>\n					</div>\n				</div>\n			<!-- InstanceEndEditable --></div>\n<!--コンテンツここまで-->\n		</div>\n<!--フッターここから-->\n		<div id=\"footer\">\n			<div id=\"copyright\">(c)funkyjam</div>\n		</div>\n<!--フッターここまで-->\n	</div>\n<script type=\"text/javascript\"><!--\nvar gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");\ndocument.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n//--></script>\n<script type=\"text/javascript\"><!--\nvar pageTracker = _gat._getTracker(\"UA-8577032-1\");\npageTracker._trackPageview();\n//--></script>\n</body>\n<!-- InstanceEnd --></html>\n",
+			"file": "public_html/feature/backnumber/takahashi_01.html",
+			"file_size": 7203,
+			"file_write_time": 131237679100000000,
+			"settings":
+			{
+				"buffer_size": 5085,
+				"line_ending": "Unix",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><!-- InstanceBegin template=\"/Templates/sengoku.dwt\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=shift_jis\" />\n<meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\" />\n<meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />\n<meta http-equiv=\"Imagetoolbar\" content=\"no\" />\n<!-- InstanceBeginEditable name=\"doctitle\" --><title>なんたって戦国</title><!-- InstanceEndEditable -->\n<!-- InstanceBeginEditable name=\"head\" --><meta name=\"Keywords\" content=\"ファンキージャム,funkyjam,久保田利伸,浦嶋りんこ,森大輔,R&amp;B,ファンキー,ブラックミュージック,soul,ドリカム,エヴァンゲリオン\" />\n<meta name=\"Description\" content=\"久保田利伸、浦嶋りんこ、森大輔が所属する芸能プロダクション。最新情報、ディスコグラフィー、グッズ販売等。\" />\n<link href=\"../../css/base.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n<link href=\"../css/common.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n<link href=\"../css/print.css\" rel=\"stylesheet\" type=\"text/css\" media=\"print\" /><!-- InstanceEndEditable -->\n<script type=\"text/javascript\" src=\"../../artist/wataru/js/minmax.js\"></script>\n<!-- InstanceBeginEditable name=\"js\" --><!-- InstanceEndEditable -->\n</head>\n<body>\n	<a id=\"pagetop\" name=\"pagetop\"></a>\n	<div id=\"page\">\n		<div id=\"container\">\n<!--ヘッダーここから-->\n			<div id=\"header\">\n				<div id=\"logo\"><a href=\"/\">Funky Jam</a></div>\n			</div>\n<!--ヘッダーここまで-->\n<!--コンテンツここから-->\n			<div id=\"contents\"><!-- InstanceBeginEditable name=\"contents\" -->\n				<div class=\"header\">\n					<div class=\"title\">\n						<h1>第二回「柿崎景家…柿ヤンの先祖は戦国時代の光と影」</h1>\n						<p class=\"lead\">第二回目に紹介する戦国武将は、久保田利伸をデビュー前から支えるキーボード・プレーヤー、柿崎洋一郎氏の大先祖…柿崎景家(カキザキ・カゲイエ)です。柿ヤンの御先祖様は、一体どんな人だったのか…そのアタリのことを自分勝手に語ります。</p>\n						<p class=\"writer\">原案：マネージャー高橋　文責：ワタル</p>\n					</div>\n					<h2 class=\"logo\" id=\"logo02\">なんたって戦国</h2>\n					<div class=\"clear\">&nbsp;</div>\n				</div>\n				<div class=\"content\">\n					<div class=\"wrapper\">\n						<div class=\"textWrapper\">\n							<div class=\"note\">\n								<strong class=\"firstChar\">カ</strong>ゲイエが活躍した時代は、天下人も定まらぬ戦国時代から安土桃山時代…おおよそ1500年代の中期。越後(新潟県)の戦国大名、上杉謙信の家臣であり、柿崎城と猿毛(サルゲ)城のダブル城主でした。分かりやすく言うと、上杉建設の重役をやりつつ、自分でも柿崎ハウジングと猿毛土木を経営してた感じです。<br />\n								<br />\n								柿ヤンはトークボックス四天王と呼ばれていますが(?)、カゲイエは上杉四天王と呼ばれていました。え?　あとの3人は誰かって?お教えしましょう。前回登場した直江景綱(ナオエ・カゲツナ)と、宇佐美定満(ウサミ・サダミツ)、甘粕景持(アマカス・カゲモチ)です。サダミッちゃんとカゲモッちゃんの紹介は、またの機会にしましょう。今回の主役はカキザキ・カゲイエです。<br />\n								<br />\n								とにかくカゲイエは戦に強く、上杉謙信のもとで突撃隊300騎の大将として大活躍しました。遠い子孫の柿ヤンは演奏中に居眠りをしちゃうけど、カゲイエは居眠りなんかすることなくガンガンに攻めて攻めて攻めまくって、第4回川中島の合戦では武田信玄の本隊を壊滅寸前にまで追い込んでいます。<br />\n								さあ、ここで気になるワードが出て来ましたね。<br />\n								<br />\n								「第4回川中島の合戦」です。<br />\n								第4回レコード大賞とか、第4回ベスト・ジーニスト賞だったら分かります。んーと、第4回川中島の歌合戦でも分かるよね。でも、本物のセンソーなのに第4回って…。実は、川中島の合戦は5回もやっているんです。毎回、上杉謙信VS武田信玄のタイトル・マッチで、最初が1553年。最後が1564年。11年間に5回の定期イベント。久保田利伸の全国ツアーよりもマメであります(笑)。<br />\n								しかし、こんなに頑張ったのに結果はいつも引き分け。その間にウマイこと立ち回った織田信長に、まんまと勢力を拡大されちゃうんですね。だから余計に、上杉サイドにとって第4回のカゲイエの活躍が賞賛され、かつ、ヒジョーに残念なのであります。<br />\n							</div>\n						</div>\n						<div class=\"imageWrapper\">\n							<div><img src=\"../image/02/image_01.jpg\" alt=\"\" /></div>\n						</div>\n						<div class=\"clear\">&nbsp;</div>\n					</div>\n					<div class=\"textWrapper2\">\n						<div class=\"note\">\n							<br />\n							カゲイエの才能は、腕力だけではありません。カゲイエは、上杉サイドと仲が悪かった北条氏康(ホウジョウ・ウジヤス)と仲良し同盟を結び、自分の実子、晴家(ハルイエ)を人質として北条家の小田原城へ送るなど、政治的フィクサーの手腕もあるのです。<br />\n							このように、上杉謙信のもとで大活躍したカゲイエですが、上杉謙信その人の命令で、なんと死刑にされちゃうんです。カゲイエは織田信長のスパイだという噂を、謙信が信じたと言われていますが、本当のところは分からないままです。<br />\n							<br />\n							ここで、なんたって流の大胆な仮説です。<br />\n							上杉謙信が若い時、敵将の娘・伊勢姫(イセヒメ)に恋をしちゃったのです。まさに、戦国時代のロミオとジュリエット!しか〜し!　上杉家に忠誠を誓ったカゲイエは、敵の娘を愛する謙信を許しませんでした。頭に来たカゲイエは、ブログやメールで誹謗中傷…なんてことはしませんでしたが、とにかく2人を強引に別れさせたのです。なんたって戦国時代。恋愛よりも家督が大事なのです。<br />\n							そして悲劇が起きます。心傷ついたイセヒメちゃんは出家し、とうとう自殺したのです。この出来事は、上杉謙信の心も深く傷つけたに違いありません。その時のカゲイエへの恨みが、もしかしたら、謙信のどこかにずっとくすぶっていたのでは…。カゲイエは信長のスパイでないと知りつつも、若き日の恨みを晴らす…考えれば考えるほど、ミステリーの世界に迷い込みます。<br />\n							ちなみに謙信は、イセヒメちゃん以外の女性にも何度か恋をしましたが(したのかよっ!しかも何度も!?)、結婚はせず生涯独身を貫きました。<br />\n							<br />\n							忠誠を尽したボスに死罪を告げられたカキザキ・カゲイエは、戦国時代の光と影を体現した武将だったのです。<br />\n							<br />\n							さて次回は、今回のカキザキ・カゲイエが討ち倒した武田信玄の軍師、山本勘助(ヤマモト・カンスケ)を、なんたって流に紹介してみたいと思います。お楽しみに…している人がいるかどーか…!<br />\n						</div>\n					</div>\n				</div>\n			<!-- InstanceEndEditable --></div>\n<!--コンテンツここまで-->\n		</div>\n<!--フッターここから-->\n		<div id=\"footer\">\n			<div id=\"copyright\">(c)funkyjam</div>\n		</div>\n<!--フッターここまで-->\n	</div>\n<script type=\"text/javascript\"><!--\nvar gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");\ndocument.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n//--></script>\n<script type=\"text/javascript\"><!--\nvar pageTracker = _gat._getTracker(\"UA-8577032-1\");\npageTracker._trackPageview();\n//--></script>\n</body>\n<!-- InstanceEnd --></html>\n",
+			"file": "public_html/feature/backnumber/takahashi_02.html",
+			"file_size": 6729,
+			"file_write_time": 131237679100000000,
+			"settings":
+			{
+				"buffer_size": 4889,
+				"line_ending": "Unix",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<!--#include virtual=\"/premium/include/common.html\" -->\n<link href=\"/premium/css/top.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n<script type=\"text/javascript\" src=\"/premium/js/jquery.easing.1.3.js\"></script>\n<script type=\"text/javascript\" src=\"/premium/js/top.js\"></script>\n<title>Funky Jam PREMIUM FOR MEMBERS </title>\n</head>\n<body>\n	<a id=\"pagetop\" name=\"pagetop\"></a>\n	<div id=\"page\">\n		<div id=\"container\">\n{if $login_flg == 'login_ON'}\n<!--#include virtual=\"/premium/include/header_login.html\" -->\n{else}\n<!--#include virtual=\"/premium/include/header.html\" -->\n{/if}\n			<div id=\"eyecatch\" class=\"clearfix\">\n				<div class=\"login\">\n					{if $login_flg == 'login_ON'}\n					<div class=\"looutBlock\">\n						<div><img src=\"images/top/login.jpg\" alt=\"ログイン中です\" /></div>\n					{else}\n					<h2><img src=\"/premium/images/top/txt_eyecatch.jpg\" alt=\"動画やオフショットなど、最新情報が満載！\" /></h2>\n					<div class=\"btn\"><a href=\"/premium/insert/\"><img src=\"/premium/images/top/btn_login.jpg\" alt=\"新規会員登録はこちらから\" /></a></div>\n					<div class=\"loginBlock\">\n						<form action=\"./\" method=\"post\">\n							{if !$errors.login_id and !$errors.login_pass}\n								<h3><img src=\"/premium/images/top/tit_login.jpg\" alt=\"Login\" /></h3>\n							{else}\n								<div class=\"errBlock\">\n									{if $errors.login_id}<p class=\"error\">※{$errors.login_id|escape}</p>{/if}\n									{if $errors.login_pass}<p class=\"error\">※{$errors.login_pass|escape}</p>{/if}\n								</div>\n							{/if}\n							<dl class=\"clearfix\">\n								<dt><img src=\"/premium/images/top/txt_login.jpg\" alt=\"ID\" /></dt>\n								<dd><input type=\"text\" name=\"login_id\" id=\"login_id\" value=\"{$login_id}\" /></dd>\n								<dt><img src=\"/premium/images/top/txt_login2.jpg\" alt=\"PASS\" /></dt>\n								<dd><input type=\"password\" name=\"login_pass\" id=\"login_pass\" value=\"{$login_pass}\" maxlength=\"8\" /></dd>\n							</dl>\n							<ul>\n								<li><img src=\"/premium/images/top/icon_login.gif\" alt=\"\" />&nbsp;&nbsp;<a href=\"/premium/reminder/index.php?action=pass_remind\">パスワードを忘れた</a></li>\n								<li><img src=\"/premium/images/top/icon_login.gif\" alt=\"\" />&nbsp;&nbsp;<a href=\"/premium/reminder/index.php?action=id_remind\">ID再発行はこちら</a></li>\n							</ul>\n							<p class=\"btn\"><input type=\"image\" src=\"/premium/images/top/btn_login2.jpg\" alt=\"ログイン\" /></p>\n							<input type=\"hidden\" name=\"action\" value=\"confirm\" />\n						</form>\n					{/if}\n					</div>\n				</div>\n				<div class=\"slide clearfix\">\n					<div class=\"bar none\" id=\"kubotaBar\"><img src=\"/premium/images/top/slide_kubota.jpg\" alt=\"Toshinobu Kubota\" /></div>\n					<div class=\"block\" id=\"kubotaBlock\">\n						<div class=\"inner\">\n							<p class=\"name\"><img src=\"/premium/images/top/tit_kubota.png\" alt=\"Toshinobu Kubota\" /></p>\n							<ul>\n								<li><a href=\"/premium/artist/movie/index.php?path=kubota/index\"><img src=\"/premium/images/top/btn_movie.png\" alt=\"Movie\" /></a></li>\n								<li><a href=\"/premium/artist/offshot/index.php?path=kubota/index\"><img src=\"/premium/images/top/btn_offshot.png\" alt=\"Offshot\" /></a></li>\n								<li><a href=\"/premium/artist/reading/index.php?path=kubota/index\"><img src=\"/premium/images/top/btn_reading.png\" alt=\"Reading\" /></a></li>\n								<li><a href=\"/premium/artist/blog/index.php?path=kubota/index\"><img src=\"/premium/images/top/btn_blog.png\" alt=\"Staff Blog\" /></a></li>\n							</ul>\n						</div>\n					</div>\n					<div class=\"bar\" id=\"uraBar\"><a href=\"javascript:void(0)\"><img src=\"/premium/images/top/slide_urashima.jpg\" alt=\"Rinko Urashima\" /></a></div>\n					<div class=\"block\" id=\"uraBlock\">\n						<div class=\"inner\">\n							<p class=\"name\"><img src=\"/premium/images/top/tit_urashima.png\" alt=\"Rinko Urashima\" /></p>\n							<ul>\n								<li><a href=\"/premium/artist/movie/index.php?path=urashima/index\"><img src=\"/premium/images/top/btn_movie_urashima.png\" alt=\"Movie\" /></a></li>\n								<li><a href=\"/premium/artist/offshot/index.php?path=urashima/index\"><img src=\"/premium/images/top/btn_offshot_urashima.png\" alt=\"Offshot\" /></a></li>\n								<li><a href=\"/premium/artist/reading/index.php?path=urashima/index\"><img src=\"/premium/images/top/btn_reading_urashima.png\" alt=\"Reading\" /></a></li>\n								<li><a href=\"/premium/artist/blog/index.php?path=urashima/index\"><img src=\"/premium/images/top/btn_blog_urashima.png\" alt=\"Staff Blog\" /></a></li>\n							</ul>\n						</div>\n					</div>\n					<div class=\"bar\" id=\"moriBar\"><a href=\"javascript:void(0)\"><img src=\"/premium/images/top/slide_mori.jpg\" alt=\"Daisuke Mori\" /></a></div>\n					<div class=\"block\" id=\"moriBlock\">\n						<div class=\"inner\">\n							<p class=\"name\"><img src=\"/premium/images/top/tit_mori.png\" alt=\"DAISUKE MORI\" /></p>\n							<ul>\n								<li><a href=\"/premium/artist/movie/index.php?path=mori/index\"><img src=\"/premium/images/top/btn_movie_mori.png\" alt=\"Movie\" /></a></li>\n								<li><a href=\"/premium/artist/offshot/index.php?path=mori/index\"><img src=\"/premium/images/top/btn_offshot_mori.png\" alt=\"Offshot\" /></a></li>\n								<li><a href=\"/premium/artist/reading/index.php?path=mori/index\"><img src=\"/premium/images/top/btn_reading_mori.png\" alt=\"Reading\" /></a></li>\n								<li><a href=\"/premium/artist/blog/index.php?path=mori/index\"><img src=\"/premium/images/top/btn_blog_mori.png\" alt=\"Staff Blog\" /></a></li>\n							</ul>\n						</div>\n					</div>\n				</div>\n			</div>\n			<div id=\"contentWrap\">\n				<div id=\"contents\" class=\"clearfix\">\n					<div id=\"movieWrap\">\n						<h2><img src=\"/premium/images/top/tit_movie.png\" alt=\"HOT MOVIE\" /></h2>\n						<div id=\"movie\">\n							<p class=\"txt\"><br />　　貴重な動画をプレミアム・メンバーズに公開！</p>\n							<div id=\"movieBlock\">\n								{if $login_flg == 'login_ON'}\n<script>\n{literal}\nvar tag = document.createElement('script');\ntag.src = \"https://www.youtube.com/iframe_api\";\nvar firstScriptTag = document.getElementsByTagName('script')[0];\nfirstScriptTag.parentNode.insertBefore(tag, firstScriptTag);\n \nfunction onYouTubeIframeAPIReady() {\nplayer = new YT.Player('player', {\nheight: '156',\nwidth: '278',\nvideoId: 'SC1xyT9kSxM',\nwmode: 'transparent',\nplayerVars:{\n'loop': '0',\n'rel': '0',\n'showinfo': '0',\n'color': 'red',\n},\nevents: {\n'onReady': onPlayerReady,\n'onStateChange': onPlayerStateChange\n}\n});\n}\nfunction onPlayerReady(event) {\nevent.target.setVolume(50);\n}\nfunction onPlayerStateChange(event) {\n}\n{/literal}\n</script>\n								<div id=\"player\"></div>\n								{else}\n									<p style=\"text-align:center;\"><a href=\"/premium/login/\"><img src=\"images/top/movie.jpg\" alt=\"\" height=\"156\" /></a></p>\n								{/if}\n							</div>\n						</div>\n					</div>\n					<div id=\"news\">\n						<div id=\"hotNews\" class=\"clearfix\">\n							<h2><img src=\"/premium/images/top/tit_hot_news.jpg\" alt=\"Hot News\" /></h2>\n							<ul class=\"txtBlock clearfix\">\n\n								<li><img src=\"/premium/images/top/icon_offshot.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/offshot/index.php?path=kubota/index\">【久保田利伸】オフショットを更新しました</a></li>\n\n								<li><img src=\"/premium/images/top/icon_movie.gif\" alt=\"movie\" />&nbsp;&nbsp;<a href=\"/premium/artist/movie/index.php?path=kubota/index\">【久保田利伸】動画を更新しました</a></li>\n\n								<li><img src=\"/premium/images/top/icon_reading.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/others/index.php?path=index\">【ワタル自身】大仕事の後、聖地で気づいたこと</a></li>\n\n								<li><img src=\"/premium/images/top/icon_staffblog.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/blog/index.php?path=kubota/index\">【久保田利伸】スタッフブログを更新しました</a></li>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--\n\n								<li><img src=\"/premium/images/top/icon_offshot.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/offshot/index.php?path=urashima/index\">【浦嶋りんこ】オフショットを更新しました</a></li>\n\n\n								<li><img src=\"/premium/images/top/icon_staffblog.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/blog/index.php?path=mori/index\">【森大輔】岡山でのエピソード</a></li>\n\n\n								<li><img src=\"/premium/images/top/icon_reading.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/reading/index.php?path=mori/index\">【森大輔】今回のオススメMUSICはサウンドトラック！</a></li>\n\n\n								<li><img src=\"/premium/images/top/icon_staffblog.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/blog/index.php?path=urashima/index\">【浦嶋りんこ】スタッフブログを更新しました</a></li>\n\n\n\n\n								<li><img src=\"/premium/images/top/icon_reading.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/reading/index.php?path=urashima/index\">【浦嶋りんこ】自腹企画を更新しました</a></li>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n-->\n\n							</ul>\n						</div>\n						<div id=\"topNews\" class=\"clearfix\">\n							<h2><img src=\"/premium/images/top/tit_news.gif\" alt=\"最新情報\" /></h2>\n							<ul>\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;<a href=\"/message/\" style=\"color:#FF0000;\">＜ご利用の皆様へ＞重要なお知らせ</a></li>\n{if $user_mail}\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;<span style=\"color:#C29C02;\">【！！有効期限が今月末まで！！】 継続のお手続きは<a href=\"/premium/insert/index.php?action=edit\">こちら</a></span></li>\n{else}\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;ご要望等お問い合わせは<a href=\"mailto:premium@funkyjam.com\">premium@funkyjam.com</a>まで！</li>\n{/if}\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.15&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_offshot.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/offshot/index.php?path=kubota/index\">TOSHINOBU KUBOTA　のオフショットを更新しました</a></li>\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.14&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_movie.gif\" alt=\"movie\" />&nbsp;&nbsp;<a href=\"/premium/artist/movie/index.php?path=kubota/index\">TOSHINOBU KUBOTA　の動画を更新しました</a></li>\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.11&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_reading.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/others/index.php?path=index\">ワタル　の【ワタル自身】を更新しました</a></li>\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.10&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_staffblog.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/blog/index.php?path=kubota/index\">TOSHINOBU KUBOTA　のスタッフブログを更新しました</a></li>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.10&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_offshot.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/offshot/index.php?path=urashima/index\">RINKO URASHIMA　のオフショットを更新しました</a></li>\n\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.09&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_staffblog.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/blog/index.php?path=mori/index\">DAISUKE MORI　のスタッフブログを更新しました</a></li>\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.08&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_reading.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/reading/index.php?path=mori/index\">DAISUKE MORI　のオススメMUSICを更新しました</a></li>\n\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.07&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_staffblog.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/blog/index.php?path=urashima/index\">RINKO URASHIMA　のスタッフブログを更新しました</a></li>\n\n\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.11.02&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_offshot.gif\" alt=\"offshot\" />&nbsp;&nbsp;<a href=\"/premium/artist/offshot/index.php?path=mori/index\">DAISUKE MORI　のオフショットを更新しました</a></li>\n\n\n\n\n								<li><img src=\"/premium/images/top/icon_news.gif\" alt=\"\" />&nbsp;&nbsp;2016.10.26&nbsp;&nbsp;&nbsp;<img src=\"/premium/images/top/icon_reading.gif\" alt=\"reading\" />&nbsp;&nbsp;<a href=\"/premium/artist/reading/index.php?path=urashima/index\">RINKO URASHIMA　の【浦嶋自腹企画】を更新しました</a></li>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n-->\n\n							</ul>\n						</div>\n					</div>\n				</div>\n			</div>\n<!--#include virtual=\"/premium/include/footer.html\" -->\n		</div>\n	</div>\n<!--#include virtual=\"/premium/include/analytics.html\" -->\n</body>\n</html>\n",
+			"file": "public_html/premium/top.html",
+			"file_size": 13058,
+			"file_write_time": 131237679170000000,
+			"settings":
+			{
+				"buffer_size": 12289,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimerge",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kondoukiyoshi/Projects/funkyjam",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html/feature",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html/mori/acount",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html/premium"
+	],
+	"file_history":
+	[
+		"/Users/kondoukiyoshi/Projects/funkyjam/lib/ShopAction.php",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html/mori/acount/acount.html",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html/mori/acount/complete.php",
+		"/Users/kondoukiyoshi/Projects/funkyjam/public_html/premium/agreement.html",
+		"/Users/kondoukiyoshi/仕事/フリークス株式会社/機能仕様/ファンキー・ジャム/phpini/新/php.ini",
+		"/Users/kondoukiyoshi/仕事/フリークス株式会社/機能仕様/ファンキー・ジャム/phpini/旧/php.ini",
+		"/Users/kondoukiyoshi/仕事/フリークス株式会社/機能仕様/ファンキー・ジャム/httpd/新VPS/conf/httpd_new.conf",
+		"/Users/kondoukiyoshi/仕事/フリークス株式会社/機能仕様/ファンキー・ジャム/httpd/新VPS/conf/httpd.conf",
+		"/Users/kondoukiyoshi/仕事/フリークス株式会社/機能仕様/ファンキー・ジャム/httpd/新/conf/httpd.conf",
+		"/Users/kondoukiyoshi/Downloads/mt (1).cgi",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Layouts/error.ctp",
+		"/Users/kondoukiyoshi/Projects/km/lib/cake1.3/cake/tests/test_app/views/posts/sequencial_nocache.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Shop/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/work/hotel-deli.com/Header.ctp",
+		"/Users/kondoukiyoshi/Projects/d-ok.net/app/View/Elements/pagination.ctp",
+		"/Users/kondoukiyoshi/Projects/d-ok.net/app/View/Elements/part_shop_list.ctp",
+		"/Users/kondoukiyoshi/Projects/d-ok.net/app/Controller/PrefController.php",
+		"/Users/kondoukiyoshi/Projects/work/loveimage.jp/houston2/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Elements/part_girl_shift_list.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Elements/script_shop_admin.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/Controller/HotelController.php",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Elements/script_girl_shift.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Ranking/pref.ctp",
+		"/Users/kondoukiyoshi/Projects/zuva.jp/app/View/Elements/part_girl_list.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Girl/pref.ctp",
+		"/Users/kondoukiyoshi/Projects/zuva.jp/app/View/Prefecture/index.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Recruit/pref.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Recruit/index.ctp",
+		"/Users/kondoukiyoshi/Projects/www.loveimage.jp/loveimage.jp/cakeapp/controllers/offer_controller.php",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Top/index.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Elements/part_shop_list.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Hotel/detail.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Elements/part_girl_list.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist/app/View/Hotel/detail.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Recruit/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Hotel/mm.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Pref/index.ctp",
+		"/Users/kondoukiyoshi/Projects/work/hotel-deli.com/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/www.hotel-deli.com/hotel-deli.com/app/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/www.soku-apo.jp/soku-apo.jp/cakeapp/config/deployment_prod.php",
+		"/Users/kondoukiyoshi/Projects/www.soku-apo.jp/soku-apo.jp/cakeapp/config/deployment_local.php",
+		"/Users/kondoukiyoshi/Projects/work/tokyo-komadam.jp/stage/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/work/tokyo-komadam.jp/houston2/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/work/soku-apo.jp/houston2/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/www.loveimage.jp/loveimage.jp/manage/database/migration-2016-07-16-issues_78.sql",
+		"/Users/kondoukiyoshi/Projects/www.soku-apo.jp/soku-apo.jp/manage/database/migration-2016-07-16-issues_131.sql",
+		"/Users/kondoukiyoshi/Projects/ikulist.me のコピー/app/View/Hotel/pref.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me のコピー/app/View/Girl/pref.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me のコピー/app/View/Elements/side_shop_detail.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Elements/side_common.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Hotel/lists.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Member/send.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Girl/detail.ctp",
+		"/Users/kondoukiyoshi/Projects/www.hotel-deli.com/hotel-deli.com/app/views/area/sp_pref.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/Shop/girls.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/Controller/RecruitController.php",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Elements/part_shop_list_recruit.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/manage/database/recruits-area/2016-05-06_recruits_add.sql",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/manage/database/recruit.sql",
+		"/Users/kondoukiyoshi/Projects/d-ok/app/Config/deployment.php",
+		"/Users/kondoukiyoshi/Projects/d-ok/app/Controller/HotelController.php",
+		"/Users/kondoukiyoshi/仕事/フリークス株式会社/障害対応/即アポ/sokuapo_db_20160621_main.sql",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Layouts/Header.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Member/login.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Shop/detail.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Elements/part_analytics.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Shop/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/Controller/SubscriptionController.php",
+		"/Users/kondoukiyoshi/Projects/work/loveimage.jp/テスト用/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Elements/part_side_login.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/manage/database/ranking/shops_ranking_add.sql",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Layouts/Footer.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/manage/database/migration.sql",
+		"/Users/kondoukiyoshi/Projects/naitora/app/Controller/QuestionsController.php",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Questions/answered.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/CurriculumTag/admin_index.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Questions/admin_answer.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Helper/CommonHelper.php",
+		"/Users/kondoukiyoshi/Projects/marunage/app/View/User/login.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Subscription/index.ctp",
+		"/Users/kondoukiyoshi/Projects/naitora/app/View/Subscription/admin_index.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/Config/deployment_prod.php",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/Config/deployment.php",
+		"/Users/kondoukiyoshi/Projects/work/soku-apo.jp/deployment.php",
+		"/Users/kondoukiyoshi/Projects/work/tokyo-komadam.jp/テスト用/deployment.php",
+		"/Users/kondoukiyoshi/Projects/work/soku-apo.jp/offer_controller.php",
+		"/Users/kondoukiyoshi/Projects/work/loveimage.jp/houston2/deployment.php",
+		"/Users/kondoukiyoshi/Projects/work/loveimage.jp/テスト用/offer_controller.php",
+		"/Users/kondoukiyoshi/Projects/work/loveimage.jp/本番環境/deployment.php",
+		"/Users/kondoukiyoshi/Projects/work/soku-apo.jp/houston2/deployment.php",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Shop/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/work/offer_controller.php",
+		"/Users/kondoukiyoshi/Projects/marunage/app/Config/deployment.php",
+		"/Users/kondoukiyoshi/Projects/marunage/app/Config/database.php",
+		"/Users/kondoukiyoshi/Projects/work/app_controller.php",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/Shop/admin_tag.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/Config/database.php",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/Config/routes.php",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Ranking/index.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Ranking/admin_index.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/Console/Command/CountShell.php",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/Shop/admin_index.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/Model/CategoryRelation.php",
+		"/Users/kondoukiyoshi/Projects/www.hotel-deli.com/hotel-deli.com/app/app_controller.php_.php",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/Pref/index.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/CosTag/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Elements/part_shop_list.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Shop/detail.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Girl/admin_index.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/GirlTag/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Pref/admin_edit.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/Pref/admin_index.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Elements/script_shop_admin.ctp",
+		"/Users/kondoukiyoshi/Projects/ikulist.me/app/View/News/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/www.hotel-deli.com/hotel-deli.com/app/views/shop/admin_add.ctp",
+		"/Users/kondoukiyoshi/Projects/hg-deli.com/app/View/Elements/side_common.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/CosTag/costume.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/Elements/part_shop_list.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/Elements/side_shop_detail.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/View/CosTag/index.ctp",
+		"/Users/kondoukiyoshi/Projects/roysta.net/app/View/Group/detail.ctp",
+		"/Users/kondoukiyoshi/Projects/roysta.net/app/View/Elements/part_shop_list.ctp",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/Model/Wp_post のコピー.php",
+		"/Users/kondoukiyoshi/Projects/cole2.net/app/Config/database.php",
+		"/Users/kondoukiyoshi/Projects/roysta.net/app/View/Group/admin_basic.ctp",
+		"/Users/kondoukiyoshi/Projects/roysta.net/app/Controller/PrefController.php",
+		"/private/var/www/lib/Cake2.7.6/Cake/Cache/Cache.php",
+		"/Users/kondoukiyoshi/Projects/km/www.soku-apo.jp/soku-apo.jp/index.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"HEAD",
+			"$action",
+			"data_shops_b",
+			"document",
+			"女の子",
+			"girls",
+			"print",
+			"add",
+			"data_banners_endorsement_girl",
+			"$v",
+			"total_min",
+			"殿堂",
+			"$s",
+			"HEAD",
+			"pagena",
+			"index",
+			"error",
+			"data_pickup_girl",
+			"callShop",
+			"main",
+			"shopPref",
+			"cnt_shops",
+			"$data_area",
+			"area",
+			"＄sc",
+			"出勤中",
+			"style",
+			"url",
+			"在籍店",
+			"url",
+			"getimagesize",
+			"shop",
+			"Recruit",
+			"login",
+			"getimagesize",
+			"$dg",
+			"美女ランキング",
+			"data_ranking1",
+			"CurriculumTag",
+			"station",
+			"role_id",
+			"tax_users",
+			"questions",
+			"Ques",
+			"mb_send_mail",
+			"qd_param",
+			"HEAD",
+			"/pref",
+			"$pref_id",
+			"pr(",
+			"$tags",
+			"530",
+			"$tags",
+			"Shop",
+			"cnt_total_shop",
+			"派遣可能",
+			"派遣",
+			"in_array",
+			"総額料金",
+			"総額",
+			"エリア",
+			"-1",
+			"part_shop_list",
+			"$s",
+			"Shop",
+			"高級",
+			"クレジット",
+			"公開",
+			"ShopPrefId",
+			"getAreas",
+			"getAreasOption",
+			"pref_id",
+			"getAreasOption",
+			"action",
+			"Shop.to_top_datetime",
+			"paging",
+			"part_shop_list",
+			"data_shops",
+			"$s",
+			"key_sort_id",
+			"key_time_start",
+			"shop",
+			"getPvRanking",
+			"girls",
+			"girl_images",
+			"girls_images",
+			"subscriptions",
+			"SQL_NO_CACHE",
+			"SQL_NO_CA",
+			"SQL_",
+			"css_dir",
+			"SQL_NO_CA",
+			"FeedController",
+			"FreeCont"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public_html/contact/mail.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"incomplete_sync": null,
+							"origin_encoding": "EUC-JP",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public_html/feature/backnumber/takahashi_01.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"incomplete_sync": null,
+							"is_xml": false,
+							"origin_encoding": "SHIFT_JIS",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public_html/feature/backnumber/takahashi_02.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"incomplete_sync": null,
+							"is_xml": false,
+							"origin_encoding": "SHIFT_JIS",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public_html/premium/top.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12289,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										85,
+										88
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"incomplete_sync": null,
+							"is_xml": false,
+							"origin_encoding": "SHIFT_JIS",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "funkyjam.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bnner",
+				"app/Controller/BannerController.php"
+			],
+			[
+				"area",
+				"app/Controller/AreaController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/etc/nginx/sites-enabled/h2k.conf:"
+			]
+		],
+		"width": 422.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

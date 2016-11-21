@@ -20,10 +20,10 @@ class Action extends CommonAction {
 		$list = $db->buildTree($result);		
 				
 		function array_flattent($item,$key,$ret){
-		if(is_array($item)) array_walk($item,"array_flattent",&$ret);
+		if(is_array($item)) array_walk($item,"array_flattent",$ret);
 			else $ret[]=$item;
 		}
-		array_walk($tree,"array_flattent",&$new_arr);
+		array_walk($tree,"array_flattent",$new_arr);
 		if (!$this->login_id) {
 			$this->errors['login_id'] = 'IDを入力してください。';
 		}elseif (!$this->isMail($this->login_id)) {
