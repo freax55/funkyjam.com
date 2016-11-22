@@ -19,7 +19,7 @@ INSERT INTO "magazine"(
 )
 VALUES(
 	(SELECT coalesce(max(account_no), 0) + 1 FROM "magazine"),
-	'{mb_convert_encoding($form.mail},"EUC-JP"',
+	'{$form.mail}',
 	'{$form.sex}',
 	'{$form.birthday}',
 	'{$form.pref}',
