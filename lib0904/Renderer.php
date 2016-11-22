@@ -16,7 +16,8 @@ class Renderer extends Smarty {
 			$this->load_filter('output','euc2sjis');
 		} else if (preg_match('/\/contact|magazine|fanletter|fanclub|fanclubtest\//',$_SERVER['REQUEST_URI'])) {
 //			$this->load_filter('pre','utf82euc');
-			$this->load_filter('output','utf82utf8');
+			$this->load_filter('post','utf82euc');
+			$this->load_filter('output','euc2utf8');
 		} else {
 			$this->load_filter('pre','sjis2euc');
 			$this->load_filter('output','euc2sjis');
