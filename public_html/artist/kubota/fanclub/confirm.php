@@ -28,7 +28,7 @@ class Action extends DatabaseAction {
 		if(empty($f[$key])){
 			$e[$key] = $d['emp'];
 		}
-		elseif(!$this->isKatakana($f[$key])){
+		elseif(!$this->isKatakanaUtf8($f[$key])){
 			$e[$key] = $d['fom'];
 		}
 		

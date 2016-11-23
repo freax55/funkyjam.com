@@ -203,9 +203,9 @@ class AbstractAction extends Debug {
 		return mb_convert_kana(mb_convert_kana($value,'KV'), 'c');
 	}
 	
-//	function isKatakana($value) {
-//		return preg_match('/^(\xA5[\xA1-\xF6]|\xA1\xBC|\xA1\xA6|\xA1\xA1|\x20)+$/', $value);
-//	}
+	function isKatakana($value) {
+		return preg_match('/^(\xA5[\xA1-\xF6]|\xA1\xBC|\xA1\xA6|\xA1\xA1|\x20)+$/', $value);
+	}
 	function isKatakanaUtf8($value) {
 		return preg_match("/^[ァ-ヶー]+$/u", $value);
 	}
