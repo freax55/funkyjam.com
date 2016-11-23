@@ -207,7 +207,7 @@ class AbstractAction extends Debug {
 		return preg_match('/^(\xA5[\xA1-\xF6]|\xA1\xBC|\xA1\xA6|\xA1\xA1|\x20)+$/', $value);
 	}
 	function isKatakanaUtf8($value) {
-		return preg_match("/^[ァ-ヶー]+$/u", $value);
+		return preg_match('/^(¥xe3¥x82[¥xa1-¥xbf]|¥xe3¥x83[¥x80-¥xbe])+$/u', $value);
 	}
 	function toKatakana($value) {
 		return mb_convert_kana(mb_convert_kana($value,'KV'), 'C');
