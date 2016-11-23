@@ -1,0 +1,1 @@
+LOCK TABLE "paygent_diff", "order_desc", "order";

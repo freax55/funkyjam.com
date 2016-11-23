@@ -1,0 +1,13 @@
+通常の処理で、正しくデータを取得出来ないレコードがありました。
+
+念のため、以下のpayment_notice_idのデータを確認してください。
+
+----
+{foreach from=$fallList item=fallID}
+{$fallID}
+{/foreach}
+----
+
+{foreach from=$fallList item=fallID}
+SELECT * FROM paygent_diff WHERE payment_notice_id = {$fallID};
+{/foreach}

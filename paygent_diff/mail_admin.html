@@ -1,0 +1,24 @@
+{$orderDesc.name} —l{assign var=total value=0}{if $admin != 2}{foreach from=$noTourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}{/if}{foreach from=$tourGoodsList item=order}{assign var=total value=$total+$order.price*$order.quantity}{/foreach}
+
+{$orderDesc.order_desc_no}
+{$orderDesc.payment}
+{$orderDesc.member_no}
+{$orderDesc.name}
+{$orderDesc.zip}
+{$orderDesc.address1}{$orderDesc.address2}{$orderDesc.address3}
+{$orderDesc.tel}
+{$orderDesc.mail}
+{$total+$orderDesc.carriage}
+{$orderDesc.carriage}
+{if $admin != 2}{foreach from=$noTourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
+{/if}{foreach from=$tourGoodsList item=order}
+{$order.item_code}
+{$order.name}
+{$order.quantity}
+{$order.price*$order.quantity}
+{/foreach}
