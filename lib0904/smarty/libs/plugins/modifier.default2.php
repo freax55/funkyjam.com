@@ -24,7 +24,7 @@ function smarty_modifier_default2($string, $default = '')
     if (!isset($string) || $string === '')
         return $default;
     else
-        return mb_convert_encoding($string,"UTF-8","EUC-JP");
+        return mb_convert_encoding($string,"EUC-JP");
 }
 
 /* vim: set expandtab: */
