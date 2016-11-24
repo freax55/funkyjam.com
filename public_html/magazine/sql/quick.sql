@@ -20,9 +20,9 @@ INSERT INTO "magazine"(
 VALUES(
 	(SELECT coalesce(max(account_no), 0) + 1 FROM "magazine"),
 	'{$form.mail}',
-	{if $form.sex}'{$form.sex}'{else}NULL{/if},
+	'{$form.sex|default2:NULL}',
 	{if $form.birth_year && $form.birth_month && $form.birth_day}'{$form.birth_year}-{$form.birth_month}-{$form.birth_day}'{else}NULL{/if},
-	{if $form.pref}'{$form.pref}'{else}NULL{/if},
+	'{$form.pref|default2:NULL}',
 	NULL,
 	NULL,
 	NULL,
