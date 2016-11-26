@@ -8,53 +8,53 @@
  */
 
 /*
- * 儡鲁モジュ〖ル　儡鲁エラ〖脱Exception
+ * 愙懕儌僕儏乕儖丂愙懕僄儔乕梡Exception
  *
- * @version $Revision: 1.6 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 
 	define("PaygentB2BModuleConnectException__serialVersionUID", 1);
 
 	/**
-	 * モジュ〖ルパラメ〖タエラ〖
+	 * 儌僕儏乕儖僷儔儊乕僞僄儔乕
 	 */
 	define("PaygentB2BModuleConnectException__MODULE_PARAM_REQUIRED_ERROR", "E02001");
 
 	/**
-	 * 排矢妥滇パラメ〖タエラ〖
+	 * 揹暥梫媮僷儔儊乕僞僄儔乕
 	 */
 	define("PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR", "E02002");
 
 	/**
-	 * 排矢妥滇パラメ〖タ盖年猛鳞年嘲エラ〖
+	 * 揹暥梫媮僷儔儊乕僞屌掕抣憐掕奜僄儔乕
 	 */
 	define("PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR", "E02003");
 
 	/**
-	 * 沮汤今エラ〖
+	 * 徹柧彂僄儔乕
 	 */
 	define("PaygentB2BModuleConnectException__CERTIFICATE_ERROR", "E02004");
 
 	/**
-	 * 疯貉センタ〖儡鲁エラ〖
+	 * 寛嵪僙儞僞乕愙懕僄儔乕
 	 */
 	define("PaygentB2BModuleConnectException__KS_CONNECT_ERROR", "E02005");
 
 	/**
-	 * 炳批滦炳硷侍エラ〖
+	 * 墳摎懳墳庬暿僄儔乕
 	 */
 	define("PaygentB2BModuleConnectException__RESPONSE_TYPE_ERROR", "E02007");
 
  
  class PaygentB2BModuleConnectException {
  
-	/** エラ〖コ〖ド */
+	/** 僄儔乕僐乕僪 */
 	var $errorCode = "";
 
 	/**
-	 * コンストラクタ
+	 * 僐儞僗僩儔僋僞
 	 * 
 	 * @param errorCode String
 	 * @param msg String
@@ -64,7 +64,7 @@
 	}
 
 	/**
-	 * エラ〖コ〖ドを手す
+	 * 僄儔乕僐乕僪傪曉偡
 	 * 
 	 * @return String errorCode
 	 */
@@ -73,7 +73,7 @@
 	}
 	
 	/**
-	 * メッセ〖ジを手す
+	 * 儊僢僙乕僕傪曉偡
 	 * 
 	 * @return String code=message
 	 */

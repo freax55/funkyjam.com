@@ -2,49 +2,54 @@
 /**
  * PAYGENT B2B MODULE
  * PaygentB2BModuleException.php
- * 
+ *
  * Copyright (C) 2007 by PAYGENT Co., Ltd.
  * All rights reserved.
  */
 
 /*
- * ÀÜÂ³¥â¥¸¥å¡¼¥ë¡¡³Æ¼ï¥¨¥é¡¼ÍÑException
+ * Ú‘±ƒ‚ƒWƒ…[ƒ‹@ŠeŽíƒGƒ‰[—pException
  *
- * @version $Revision: 1.6 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
- 
+
 	define("PaygentB2BModuleException__serialVersionUID", 1);
 
 	/**
-	 * ÀßÄê¥Õ¥¡¥¤¥ë¤Ê¤·¥¨¥é¡¼
+	 * Ý’èƒtƒ@ƒCƒ‹‚È‚µƒGƒ‰[
 	 */
 	define("PaygentB2BModuleException__RESOURCE_FILE_NOT_FOUND_ERROR", "E01001");
 
 	/**
-	 * ÀßÄê¥Õ¥¡¥¤¥ëÉÔÀµ¥¨¥é¡¼
+	 * Ý’èƒtƒ@ƒCƒ‹•s³ƒGƒ‰[
 	 */
 	define("PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR", "E01002");
 
 	/**
-	 * ¤½¤ÎÂ¾¤Î¥¨¥é¡¼
+	 * ‚»‚Ì‘¼‚ÌƒGƒ‰[
 	 */
 	define("PaygentB2BModuleException__OTHER_ERROR", "E01901");
 
 	/**
-	 * CSV½ÐÎÏ¥¨¥é¡¼
+	 * CSVo—ÍƒGƒ‰[
 	 */
 	define("PaygentB2BModuleException__CSV_OUTPUT_ERROR", "E01004");
 
+	/**
+	 * Žæˆøƒtƒ@ƒCƒ‹ƒGƒ‰[
+	 */
+	define("PaygentB2BModuleException__FILE_PAYMENT_ERROR", "E01005");
+
 
  class PaygentB2BModuleException {
- 	
-	/** ¥¨¥é¡¼¥³¡¼¥É */
+
+	/** ƒGƒ‰[ƒR[ƒh */
 	var $errorCode = "";
 
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿
-	 * 
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	 *
 	 * @param errorCode String
 	 * @param msg String
 	 */
@@ -53,21 +58,21 @@
 	}
 
 	/**
-	 * ¥¨¥é¡¼¥³¡¼¥É¤òÊÖ¤¹
-	 * 
+	 * ƒGƒ‰[ƒR[ƒh‚ð•Ô‚·
+	 *
 	 * @return String errorCode
 	 */
 	function getErrorCode() {
 		return $this->errorCode;
 	}
-	
+
 	/**
-	 * ¥á¥Ã¥»¡¼¥¸¤òÊÖ¤¹
-	 * 
+	 * ƒƒbƒZ[ƒW‚ð•Ô‚·
+	 *
 	 * @return String code=message
 	 */
     function getLocalizedMessage() {
     }
- 
+
 }
 ?>

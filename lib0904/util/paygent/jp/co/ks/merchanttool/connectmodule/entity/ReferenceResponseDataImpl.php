@@ -16,84 +16,84 @@ include_once("jp/co/ks/merchanttool/connectmodule/util/StringUtil.php");
 include_once("jp/co/ks/merchanttool/connectmodule/entity/ResponseData.php");
 
 /**
- * ¾È²ñ·Ï±şÅúÅÅÊ¸½èÍı¥¯¥é¥¹
+ * Æ‰ïŒn‰“š“d•¶ˆ—ƒNƒ‰ƒX
  * 
- * @version $Revision: 1.4 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 
 	/**
-	 * ¹ÔÈÖ¹æ¡Ê¥Ø¥Ã¥À¡¼Éô¡Ë= "1"
+	 * s”Ô†iƒwƒbƒ_[•”j= "1"
 	 */
 	define("ReferenceResponseDataImpl__LINENO_HEADER", "1");
 
 	/**
-	 * ¹ÔÈÖ¹æ¡Ê¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼Éô¡Ë", "2"
+	 * s”Ô†iƒf[ƒ^ƒwƒbƒ_[•”j", "2"
 	 */
 	define("ReferenceResponseDataImpl__LINENO_DATA_HEADER", "2");
 
 	/**
-	 * ¹ÔÈÖ¹æ¡Ê¥Ç¡¼¥¿Éô¡Ë", "3"
+	 * s”Ô†iƒf[ƒ^•”j", "3"
 	 */
 	define("ReferenceResponseDataImpl__LINENO_DATA", "3");
 
 	/**
-	 * ¹ÔÈÖ¹æ¡Ê¥È¥ì¡¼¥é¡¼Éô¡Ë", "4"
+	 * s”Ô†iƒgƒŒ[ƒ‰[•”j", "4"
 	 */
 	define("ReferenceResponseDataImpl__LINENO_TRAILER", "4");
 
 	/**
-	 * ¥ì¥³¡¼¥É¶èÊ¬ °ÌÃÖ", 0
+	 * ƒŒƒR[ƒh‹æ•ª ˆÊ’u", 0
 	 */
 	define("ReferenceResponseDataImpl__LINE_RECORD_DIVISION", 0);
 
 	/**
-	 * ¥Ø¥Ã¥À¡¼Éô ½èÍı·ë²Ì °ÌÃÖ 1
+	 * ƒwƒbƒ_[•” ˆ—Œ‹‰Ê ˆÊ’u 1
 	 */
 	define("ReferenceResponseDataImpl__LINE_HEADER_RESULT", 1);
 
 	/**
-	 * ¥Ø¥Ã¥À¡¼Éô ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É °ÌÃÖ", 2
+	 * ƒwƒbƒ_[•” ƒŒƒXƒ|ƒ“ƒXƒR[ƒh ˆÊ’u", 2
 	 */
 	define("ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_CODE", 2);
 
 	/**
-	 * ¥Ø¥Ã¥À¡¼Éô ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ °ÌÃÖ", 3
+	 * ƒwƒbƒ_[•” ƒŒƒXƒ|ƒ“ƒXÚ× ˆÊ’u", 3
 	 */
 	define("ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_DETAIL", 3);
 
 	/**
-	 * ¥È¥ì¡¼¥é¡¼Éô ¥Ç¡¼¥¿·ï¿ô °ÌÃÖ", 1
+	 * ƒgƒŒ[ƒ‰[•” ƒf[ƒ^Œ” ˆÊ’u", 1
 	 */
 	define("ReferenceResponseDataImpl__LINE_TRAILER_DATA_COUNT", 1);
 
 	/**
-	 * ²ş¹ÔÊ¸»ú
+	 * ‰üs•¶š
 	 */
 	define("ReferenceResponseDataImpl__LINE_SEPARATOR", "\r\n");
 
 class ReferenceResponseDataImpl extends ResponseData {
-	/** ½èÍı·ë²Ì */
+	/** ˆ—Œ‹‰Ê */
 	var $resultStatus;
 
-	/** ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É */
+	/** ƒŒƒXƒ|ƒ“ƒXƒR[ƒh */
 	var $responseCode;
 
-	/** ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ */
+	/** ƒŒƒXƒ|ƒ“ƒXÚ× */
 	var $responseDetail;
 
-	/** ¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼ */
+	/** ƒf[ƒ^ƒwƒbƒ_[ */
 	var $dataHeader;
 
-	/** ¥Ç¡¼¥¿ */
+	/** ƒf[ƒ^ */
 	var $data;
 
-	/** ¸½ºß¤ÎIndex */
+	/** Œ»İ‚ÌIndex */
 	var $currentIndex;
 
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
 	 */
 	function ReferenceResponseDataImpl() {
 		$this->dataHeader = array();
@@ -102,70 +102,70 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * data ¤òÊ¬²ò
+	 * data ‚ğ•ª‰ğ
 	 * 
 	 * @param data
-	 * @return mixed TRUE:À®¸ù¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É 
+	 * @return mixed TRUE:¬Œ÷A‘¼FƒGƒ‰[ƒR[ƒh 
 	 */
 	function parse($body) {
 
 		$csvTknzr = new CSVTokenizer(CSVTokenizer__DEF_SEPARATOR, 
 			CSVTokenizer__DEF_ITEM_ENVELOPE);
 
-		// Êİ»ı¥Ç¡¼¥¿¤ò½é´ü²½
+		// •Ûƒf[ƒ^‚ğ‰Šú‰»
 		$this->data = array();
 
-		// ¸½ºß°ÌÃÖ¤ò½é´ü²½
+		// Œ»İˆÊ’u‚ğ‰Šú‰»
 		$this->currentIndex = 0;
 		
-		// ¥ê¥¶¥ë¥È¾ğÊó¤Î½é´ü²½
+		// ƒŠƒUƒ‹ƒgî•ñ‚Ì‰Šú‰»
 		$this->resultStatus = "";
 		$this->responseCode = "";
 		$this->responseDetail = "";
 
-		$lines = split(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
+		$lines = explode(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
 		foreach($lines as $i => $line) {
 			$lineItem = $csvTknzr->parseCSVData($line);
 
 			if (0 < count($lineItem)) {
 				if ($lineItem[ReferenceResponseDataImpl__LINE_RECORD_DIVISION]
 						== ReferenceResponseDataImpl__LINENO_HEADER) {
-					// ¥Ø¥Ã¥À¡¼Éô¤Î¹Ô¤Î¾ì¹ç
+					// ƒwƒbƒ_[•”‚Ìs‚Ìê‡
 					if (ReferenceResponseDataImpl__LINE_HEADER_RESULT < count($lineItem)) {
-						// ½èÍı·ë²Ì¤òÀßÄê
+						// ˆ—Œ‹‰Ê‚ğİ’è
 						$this->resultStatus = $lineItem[ReferenceResponseDataImpl__LINE_HEADER_RESULT];
 					}
 					if (ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_CODE < count($lineItem)) {
-						// ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤òÀßÄê
+						// ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ğİ’è
 						$this->responseCode = $lineItem[ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_CODE];
 					}
 					if (ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_DETAIL < count($lineItem)) {
-						// ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤òÀßÄê
+						// ƒŒƒXƒ|ƒ“ƒXÚ×‚ğİ’è
 						$this->responseDetail = $lineItem[ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_DETAIL];
 					}
 				} else if ($lineItem[ReferenceResponseDataImpl__LINE_RECORD_DIVISION]
 						== ReferenceResponseDataImpl__LINENO_DATA_HEADER) {
-					// ¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼Éô¤Î¹Ô¤Î¾ì¹ç
+					// ƒf[ƒ^ƒwƒbƒ_[•”‚Ìs‚Ìê‡
 					$this->dataHeader = array();
 
 					for ($i = 1; $i < count($lineItem); $i++) {
-						// ¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼¤òÀßÄê¡Ê¥ì¥³¡¼¥É¶èÊ¬¤Ï½ü¤¯¡Ë
+						// ƒf[ƒ^ƒwƒbƒ_[‚ğİ’èiƒŒƒR[ƒh‹æ•ª‚Íœ‚­j
 						$this->dataHeader[] = $lineItem[$i];
 					}
 				} else if ($lineItem[ReferenceResponseDataImpl__LINE_RECORD_DIVISION]
 						== ReferenceResponseDataImpl__LINENO_DATA) {
-					// ¥Ç¡¼¥¿Éô¤Î¹Ô¤Î¾ì¹ç
-					// ¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼Éô¤¬´û¤ËÅ¸³«ºÑ¤ß¤Ç¤¢¤ë»ö¤òÁÛÄê
+					// ƒf[ƒ^•”‚Ìs‚Ìê‡
+					// ƒf[ƒ^ƒwƒbƒ_[•”‚ªŠù‚É“WŠJÏ‚İ‚Å‚ ‚é–‚ğ‘z’è
 					$map = array();
 
 					if (count($this->dataHeader) == (count($lineItem) - 1)) {
-						// ¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼¿ô¤È¡¢¥Ç¡¼¥¿¹àÌÜ¿ô¡Ê¥ì¥³¡¼¥É¶èÊ¬½ü¤¯¡Ë¤Ï°ìÃ×
+						// ƒf[ƒ^ƒwƒbƒ_[”‚ÆAƒf[ƒ^€–Ú”iƒŒƒR[ƒh‹æ•ªœ‚­j‚Íˆê’v
 						for ($i = 1; $i < count($lineItem); $i++) {
-							// ÂĞ±ş¤¹¤ë¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼¤ò Key ¤Ë¡¢Map¤ØÀßÄê
+							// ‘Î‰‚·‚éƒf[ƒ^ƒwƒbƒ_[‚ğ Key ‚ÉAMap‚Öİ’è
 							$map[$this->dataHeader[$i - 1]] = $lineItem[$i];
 						}
 					} else {
-						// ¥Ç¡¼¥¿¥Ø¥Ã¥À¡¼¿ô¤È¡¢¥Ç¡¼¥¿¹àÌÜ¿ô¤¬°ìÃ×¤·¤Ê¤¤¾ì¹ç
+						// ƒf[ƒ^ƒwƒbƒ_[”‚ÆAƒf[ƒ^€–Ú”‚ªˆê’v‚µ‚È‚¢ê‡
 						$sb = PaygentB2BModuleException__OTHER_ERROR . ": ";
 						$sb .= "Not Mutch DataHeaderCount=";
 						$sb .= "" . count($this->dataHeader);
@@ -176,21 +176,21 @@ class ReferenceResponseDataImpl extends ResponseData {
 					}
 
 					if (0 < count($map)) {
-						// Map ¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤ë¾ì¹ç
+						// Map ‚ªİ’è‚³‚ê‚Ä‚¢‚éê‡
 						$this->data[] = $map;
 					}
 				} else if ($lineItem[ReferenceResponseDataImpl__LINE_RECORD_DIVISION]
 						== ReferenceResponseDataImpl__LINENO_TRAILER) {
-					// ¥È¥ì¡¼¥é¡¼Éô¤Î¹Ô¤Î¾ì¹ç
+					// ƒgƒŒ[ƒ‰[•”‚Ìs‚Ìê‡
 					if (ReferenceResponseDataImpl__LINE_TRAILER_DATA_COUNT < count($lineItem)) {
-						// ¥Ç¡¼¥¿¥µ¥¤¥º
+						// ƒf[ƒ^ƒTƒCƒY
 					}
 				}
 			}
 		}
 
 		if (StringUtil::isEmpty($this->resultStatus)) {
-			// ½èÍı·ë²Ì¤¬ ¶õÊ¸»ú ¤â¤·¤¯¤Ï null ¤Î¾ì¹ç
+			// ˆ—Œ‹‰Ê‚ª ‹ó•¶š ‚à‚µ‚­‚Í null ‚Ìê‡
 			trigger_error(PaygentB2BModuleConnectException__KS_CONNECT_ERROR
 				 . ": resultStatus is Nothing.", E_USER_WARNING);
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
@@ -199,10 +199,10 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * data ¤òÊ¬²ò ¥ê¥¶¥ë¥È¾ğÊó¤Î¤ß¡¢ÊÑ¿ô¤ËÀßÄê
+	 * data ‚ğ•ª‰ğ ƒŠƒUƒ‹ƒgî•ñ‚Ì‚İA•Ï”‚Éİ’è
 	 * 
 	 * @param body
-	 * @return mixed TRUE:À®¸ù¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É 
+	 * @return mixed TRUE:¬Œ÷A‘¼FƒGƒ‰[ƒR[ƒh 
 	 */
 	function parseResultOnly($body) {
 
@@ -210,35 +210,35 @@ class ReferenceResponseDataImpl extends ResponseData {
 			CSVTokenizer__DEF_ITEM_ENVELOPE);
 		$line = "";
 
-		// Êİ»ı¥Ç¡¼¥¿¤ò½é´ü²½
+		// •Ûƒf[ƒ^‚ğ‰Šú‰»
 		$this->data = array();
 
-		// ¸½ºß°ÌÃÖ¤ò½é´ü²½
+		// Œ»İˆÊ’u‚ğ‰Šú‰»
 		$this->currentIndex = 0;
 		
-		// ¥ê¥¶¥ë¥È¾ğÊó¤Î½é´ü²½
+		// ƒŠƒUƒ‹ƒgî•ñ‚Ì‰Šú‰»
 		$this->resultStatus = "";
 		$this->responseCode = "";
 		$this->responseDetail = "";
 
-		$lines = split(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
+		$lines = explode(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
 		foreach($lines as $i => $line) {
 			$lineItem = $csvTknzr->parseCSVData($line);
 
 			if (0 < count($lineItem)) {
 				if ($lineItem[ReferenceResponseDataImpl__LINE_RECORD_DIVISION]
 						== ReferenceResponseDataImpl__LINENO_HEADER) {
-					// ¥Ø¥Ã¥À¡¼Éô¤Î¹Ô¤Î¾ì¹ç
+					// ƒwƒbƒ_[•”‚Ìs‚Ìê‡
 					if (ReferenceResponseDataImpl__LINE_HEADER_RESULT < count($lineItem)) {
-						// ½èÍı·ë²Ì¤òÀßÄê
+						// ˆ—Œ‹‰Ê‚ğİ’è
 						$this->resultStatus = $lineItem[ReferenceResponseDataImpl__LINE_HEADER_RESULT];
 					}
 					if (ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_CODE < count($lineItem)) {
-						// ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤òÀßÄê
+						// ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ğİ’è
 						$this->responseCode = $lineItem[ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_CODE];
 					}
 					if (ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_DETAIL < count($lineItem)) {
-						// ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤òÀßÄê
+						// ƒŒƒXƒ|ƒ“ƒXÚ×‚ğİ’è
 						$this->responseDetail = $lineItem[ReferenceResponseDataImpl__LINE_HEADER_RESPONSE_DETAIL];
 					}
 				}
@@ -246,7 +246,7 @@ class ReferenceResponseDataImpl extends ResponseData {
 		}
 		
 		if (StringUtil::isEmpty($this->resultStatus)) {
-			// ½èÍı·ë²Ì¤¬ ¶õÊ¸»ú ¤â¤·¤¯¤Ï null ¤Î¾ì¹ç
+			// ˆ—Œ‹‰Ê‚ª ‹ó•¶š ‚à‚µ‚­‚Í null ‚Ìê‡
 			trigger_error(PaygentB2BModuleConnectException__KS_CONNECT_ERROR
 				. ": resultStatus is Nothing.", E_USER_WARNING);
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
@@ -256,7 +256,7 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * ¼¡¤Î¥Ç¡¼¥¿¤ò¼èÆÀ
+	 * Ÿ‚Ìƒf[ƒ^‚ğæ“¾
 	 * 
 	 * @return Map
 	 */
@@ -274,9 +274,9 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * ¼¡¤Î¥Ç¡¼¥¿¤¬Â¸ºß¤¹¤ë¤«È½Äê
+	 * Ÿ‚Ìƒf[ƒ^‚ª‘¶İ‚·‚é‚©”»’è
 	 * 
-	 * @return boolean true=Â¸ºß¤¹¤ë false=Â¸ºß¤·¤Ê¤¤
+	 * @return boolean true=‘¶İ‚·‚é false=‘¶İ‚µ‚È‚¢
 	 */
 	function hasResNext() {
 		$rb = false;
@@ -289,7 +289,7 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * resultStatus ¤ò¼èÆÀ
+	 * resultStatus ‚ğæ“¾
 	 * 
 	 * @return String
 	 */
@@ -298,7 +298,7 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * responseCode ¤ò¼èÆÀ
+	 * responseCode ‚ğæ“¾
 	 * 
 	 * @return String
 	 */
@@ -307,7 +307,7 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * responseDetail ¤ò¼èÆÀ
+	 * responseDetail ‚ğæ“¾
 	 * 
 	 * @return String
 	 */
@@ -316,10 +316,10 @@ class ReferenceResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * ¥Ç¡¼¥¿·ï¿ô¤ò¼èÆÀ
+	 * ƒf[ƒ^Œ”‚ğæ“¾
 	 * 
 	 * @param data InputStream
-	 * @return int -1:¥¨¥é¡¼ 
+	 * @return int -1:ƒGƒ‰[ 
 	 */
 	function getDataCount($body) {
 		$ri = 0;
@@ -329,16 +329,16 @@ class ReferenceResponseDataImpl extends ResponseData {
 			CSVTokenizer__DEF_ITEM_ENVELOPE);
 		$line = "";
 
-		$lines = split(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
+		$lines = explode(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
 		foreach($lines as $i => $line) {
 			$lineItem = $csvTknzr->parseCSVData($line);
 
 			if (0 < count($lineItem)) {
 				if ($lineItem[ReferenceResponseDataImpl__LINE_RECORD_DIVISION]
 						== ReferenceResponseDataImpl__LINENO_TRAILER) {
-					// ¥È¥ì¡¼¥é¡¼Éô¤Î¹Ô¤Î¾ì¹ç
+					// ƒgƒŒ[ƒ‰[•”‚Ìs‚Ìê‡
 					if (ReferenceResponseDataImpl__LINE_TRAILER_DATA_COUNT < count($lineItem)) {
-						// ¥Ç¡¼¥¿·ï¿ô¤ò¼èÆÀ while¤«¤éÈ´¤±¤ë
+						// ƒf[ƒ^Œ”‚ğæ“¾ while‚©‚ç”²‚¯‚é
 						if (StringUtil::isNumeric($lineItem[ReferenceResponseDataImpl__LINE_TRAILER_DATA_COUNT])) {
 							$strCnt = $lineItem[ReferenceResponseDataImpl__LINE_TRAILER_DATA_COUNT];
 						}
@@ -351,35 +351,35 @@ class ReferenceResponseDataImpl extends ResponseData {
 		if ($strCnt != null && StringUtil::isNumeric($strCnt)) {
 			$ri = intval($strCnt);
 		} else {
-			return PaygentB2BModuleException__OTHER_ERROR;		//¥¨¥é¡¼
+			return PaygentB2BModuleException__OTHER_ERROR;		//ƒGƒ‰[
 		}
 
 		return $ri;
 	}
 
 	/**
-	 * CSV ¤òºîÀ®
+	 * CSV ‚ğì¬
 	 * 
 	 * @param resBody
 	 * @param resultCsv String
-	 * @return boolean true¡§À®¸ù¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É
+	 * @return boolean trueF¬Œ÷A‘¼FƒGƒ‰[ƒR[ƒh
 	 */
 	function writeCSV($body, $resultCsv) {
 		$rb = false;
 
-		// CSV ¤ò 1¹Ô¤º¤Ä½ĞÎÏ
+		// CSV ‚ğ 1s‚¸‚Âo—Í
 		$csvWriter = new CSVWriter($resultCsv);
 		if ($csvWriter->open() === false) {
-			// ¥Õ¥¡¥¤¥ë¥ª¡¼¥Ö¥ó¥¨¥é¡¼
+			// ƒtƒ@ƒCƒ‹ƒI[ƒuƒ“ƒGƒ‰[
 			trigger_error(PaygentB2BModuleException__CSV_OUTPUT_ERROR
 				. ": Failed to open CSV file.", E_USER_WARNING);
 			return PaygentB2BModuleException__CSV_OUTPUT_ERROR;
 		}
 
-		$lines = split(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
+		$lines = explode(ReferenceResponseDataImpl__LINE_SEPARATOR, $body);
 		foreach($lines as $i => $line) {
 			if (!$csvWriter->writeOneLine($line)) {
-				// ½ñ¤­¹ş¤á¤Ê¤«¤Ã¤¿¾ì¹ç
+				// ‘‚«‚ß‚È‚©‚Á‚½ê‡
 				trigger_error(PaygentB2BModuleException__CSV_OUTPUT_ERROR
 					. ": Failed to write to CSV file.", E_USER_WARNING);
 				return PaygentB2BModuleException__CSV_OUTPUT_ERROR;

@@ -2,7 +2,7 @@
 /**
  * PAYGENT B2B MODULE
  * PaymentResponseDataImpl.php
- * 
+ *
  * Copyright (C) 2007 by PAYGENT Co., Ltd.
  * All rights reserved.
  */
@@ -14,47 +14,47 @@ include_once("jp/co/ks/merchanttool/connectmodule/util/StringUtil.php");
 include_once("jp/co/ks/merchanttool/connectmodule/entity/ResponseData.php");
 
 /**
- * ·èºÑ·Ï±şÅúÅÅÊ¸½èÍı¥¯¥é¥¹
- * 
- * @version $Revision: 1.4 $
- * @author $Author: t-mori $
+ * ŒˆÏŒn‰“š“d•¶ˆ—ƒNƒ‰ƒX
+ *
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 	/**
-	 * ±şÅúÅÅÊ¸ÍÑ¶èÀÚ¤êÊ¸»ú
+	 * ‰“š“d•¶—p‹æØ‚è•¶š
 	 */
 	define("PaymentResponseDataImpl__PROPERTIES_REGEX", "=");
-	
+
 	/**
-	 * ±şÅúÅÅÊ¸ÍÑ¶èÀÚ¤ê¿ô 
+	 * ‰“š“d•¶—p‹æØ‚è”
 	 */
 	define("PaymentResponseDataImpl__PROPERTIES_REGEX_COUNT", 2);
-	
+
 	/**
-	 * ²ş¹ÔÊ¸»ú
+	 * ‰üs•¶š
 	 */
 	define("PaymentResponseDataImpl__LINE_SEPARATOR", "\r\n");
 
 
 class PaymentResponseDataImpl extends ResponseData {
 
-	/** ½èÍı·ë²Ì Ê¸»úÎó*/
+	/** ˆ—Œ‹‰Ê •¶š—ñ*/
 	var $resultStatus;
 
-	/** ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É Ê¸»úÎó*/
+	/** ƒŒƒXƒ|ƒ“ƒXƒR[ƒh •¶š—ñ*/
 	var $responseCode;
 
-	/** ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ */
+	/** ƒŒƒXƒ|ƒ“ƒXÚ× */
 	var $responseDetail;
 
-	/** ¥Ç¡¼¥¿ array*/
+	/** ƒf[ƒ^ array*/
 	var $data;
 
-	/** ¸½ºß¤ÎIndex */
+	/** Œ»İ‚ÌIndex */
 	var $currentIndex;
 
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
 	 */
 	function PaymentResponseDataImpl() {
 		$this->data = array();
@@ -62,83 +62,85 @@ class PaymentResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * body ¤òÊ¬²ò
-	 * 
-	 * @param ¥ì¥¹¥İ¥ó¥¹¥Ü¥Ç¥£
-	 * @return boolean TRUE: À®¸ù¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É 
+	 * body ‚ğ•ª‰ğ
+	 *
+	 * @param ƒŒƒXƒ|ƒ“ƒXƒ{ƒfƒB
+	 * @return boolean TRUE: ¬Œ÷A‘¼FƒGƒ‰[ƒR[ƒh
 	 */
 	function parse($body) {
 
 		$line = "";
-		// Êİ»ı¥Ç¡¼¥¿¤ò½é´ü²½
+		// •Ûƒf[ƒ^‚ğ‰Šú‰»
 		$this->data = array();
 		$map = array();
 
-		// ¸½ºß°ÌÃÖ¤ò½é´ü²½
+		// Œ»İˆÊ’u‚ğ‰Šú‰»
 		$this->currentIndex = 0;
-		
-		// ¥ê¥¶¥ë¥È¾ğÊó¤Î½é´ü²½
+
+		// ƒŠƒUƒ‹ƒgî•ñ‚Ì‰Šú‰»
 		$this->resultStatus = "";
 		$this->responseCode = "";
 		$this->responseDetail = "";
-		
-		// "_html" ¥­¡¼Â¸ºß¥Õ¥é¥°
+
+		// "_html" ƒL[‘¶İƒtƒ‰ƒO
 		$htmlKeyFlg = false;
-		
-		// "_htmk" ¥­¡¼ÃÍ
+
+		// "_htmk" ƒL[’l
 		$htmlKey = "";
-		
-		// "_html" ¥­¡¼½Ğ¸½°Ê¸å¤Î¥Ç¡¼¥¿Êİ»ı
+
+		// "_html" ƒL[oŒ»ˆÈŒã‚Ìƒf[ƒ^•Û
 		$htmlValue = "";
 
-		$lines = split(PaymentResponseDataImpl__LINE_SEPARATOR, $body);
+		$lines = explode(PaymentResponseDataImpl__LINE_SEPARATOR, $body);
+
 		foreach($lines as $i => $line) {
-			$lineItem = StringUtil::split($line, PaymentResponseDataImpl__PROPERTIES_REGEX, 
+			$lineItem = StringUtil::split($line, PaymentResponseDataImpl__PROPERTIES_REGEX,
 				PaymentResponseDataImpl__PROPERTIES_REGEX_COUNT);
-			// ÆÉ¹ş½ªÎ»
+
+			// “ÇI—¹
 			$tmpLen = strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM);
-			if ($tmpLen >= 0 
-				&&  strpos($lineItem[0], ResponseData__HTML_ITEM, $tmpLen) 
+			if ($tmpLen >= 0
+				&&  strpos($lineItem[0], ResponseData__HTML_ITEM, $tmpLen)
 				=== $tmpLen) {
-				// Key ¤¬ "_html" ¤Î¾ì¹ç
+				// Key ‚ª "_html" ‚Ìê‡
 				$htmlKey = $lineItem[0];
 				$htmlKeyFlg = true;
 			}
 			if ($htmlKeyFlg) {
-				if (!(strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM) >= 0 
+				if (!(strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM) >= 0
 					&& strpos($lineItem[0], ResponseData__HTML_ITEM,
-						strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM)) 
+						strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM))
 					=== strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM))) {
-					// "_html" Key ¤¬ÆÉ¤ß¼è¤é¤ì¤¿¾ì¹ç
+					// "_html" Key ‚ª“Ç‚İæ‚ç‚ê‚½ê‡
 					$htmlValue .= $line;
 					$htmlValue .= PaymentResponseDataImpl__LINE_SEPARATOR;
 				}
 			} else {
-				if (0 < count($lineItem)) {
+				if (1 < count($lineItem)) {
 					if ($lineItem[0] == ResponseData__RESULT) {
-						// ½èÍı·ë²Ì¤òÀßÄê
+						// ˆ—Œ‹‰Ê‚ğİ’è
 						$this->resultStatus = $lineItem[1];
 					} else if ($lineItem[0] == ResponseData__RESPONSE_CODE) {
-						// ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤òÀßÄê
+						// ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ğİ’è
 						$this->responseCode = $lineItem[1];
 					} else if ($lineItem[0] == ResponseData__RESPONSE_DETAIL) {
-						// ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤òÀßÄê
+						// ƒŒƒXƒ|ƒ“ƒXÚ×‚ğİ’è
 						$this->responseDetail = $lineItem[1];
 					} else {
-						// Map¤ËÀßÄê
+						// Map‚Éİ’è
 						$map[$lineItem[0]] = $lineItem[1];
 					}
 				}
 			}
 		}
-		
+
 		if ($htmlKeyFlg) {
-			// "_html" Key ¤¬½Ğ¸½¤·¤¿¾ì¹ç¡¢ÀßÄê
+			// "_html" Key ‚ªoŒ»‚µ‚½ê‡Aİ’è
 			if (strlen(PaymentResponseDataImpl__LINE_SEPARATOR) <= strlen($htmlValue)) {
 				if (strpos($htmlValue, PaymentResponseDataImpl__LINE_SEPARATOR,
-						strlen($htmlValue) - strlen(PaymentResponseDataImpl__LINE_SEPARATOR)) 
+						strlen($htmlValue) - strlen(PaymentResponseDataImpl__LINE_SEPARATOR))
 					=== strlen($htmlValue) - strlen(PaymentResponseDataImpl__LINE_SEPARATOR)) {
-					$htmlValue = substr($htmlValue, 0, 
+					$htmlValue = substr($htmlValue, 0,
 						strlen($htmlValue) - strlen(PaymentResponseDataImpl__LINE_SEPARATOR));
 				}
 			}
@@ -146,68 +148,68 @@ class PaymentResponseDataImpl extends ResponseData {
 		}
 
 		if (0 < count($map)) {
-			// Map ¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤ë¾ì¹ç
+			// Map ‚ªİ’è‚³‚ê‚Ä‚¢‚éê‡
 			$this->data[] = $map;
 		}
 
 		if (StringUtil::isEmpty($this->resultStatus)) {
-			// ½èÍı·ë²Ì¤¬ ¶õÊ¸»ú ¤â¤·¤¯¤Ï null ¤Î¾ì¹ç
+			// ˆ—Œ‹‰Ê‚ª ‹ó•¶š ‚à‚µ‚­‚Í null ‚Ìê‡
 			trigger_error(PaygentB2BModuleConnectException__KS_CONNECT_ERROR
 			. ": resultStatus is Nothing.", E_USER_WARNING);
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 		}
-		
+
 		return true;
 	}
 
 	/**
-	 * data ¤òÊ¬²ò ¥ê¥¶¥ë¥È¾ğÊó¤Î¤ß¡¢ÊÑ¿ô¤ËÈ¿±Ç
-	 * 
+	 * data ‚ğ•ª‰ğ ƒŠƒUƒ‹ƒgî•ñ‚Ì‚İA•Ï”‚É”½‰f
+	 *
 	 * @param data
-	 * @return boolean TRUE: À®¸ù¡¢FALSE¡§¼ºÇÔ 
+	 * @return boolean TRUE: ¬Œ÷AFALSEF¸”s
 	 */
 	function parseResultOnly($body) {
 
 		$line = "";
 
-		// Êİ»ı¥Ç¡¼¥¿¤ò½é´ü²½
+		// •Ûƒf[ƒ^‚ğ‰Šú‰»
 		$this->data = array();
 
-		// ¸½ºß°ÌÃÖ¤ò½é´ü²½
+		// Œ»İˆÊ’u‚ğ‰Šú‰»
 		$this->currentIndex = 0;
-		
-		// ¥ê¥¶¥ë¥È¾ğÊó¤Î½é´ü²½
+
+		// ƒŠƒUƒ‹ƒgî•ñ‚Ì‰Šú‰»
 		$this->resultStatus = "";
 		$this->responseCode = "";
 		$this->responseDetail = "";
 
-		$lines = split(PaymentResponseDataImpl__LINE_SEPARATOR, $body);
+		$lines = explode(PaymentResponseDataImpl__LINE_SEPARATOR, $body);
 		foreach($lines as $i => $line) {
 			$lineItem = StringUtil::split($line, PaymentResponseDataImpl__PROPERTIES_REGEX);
-			// ÆÉ¹ş½ªÎ»
-			if (strpos($lineItem[0], ResponseData__HTML_ITEM) 
+			// “ÇI—¹
+			if (strpos($lineItem[0], ResponseData__HTML_ITEM)
 				=== strlen($lineItem[0]) - strlen(ResponseData__HTML_ITEM)) {
-				// Key ¤¬ "_html" ¤Î¾ì¹ç
+				// Key ‚ª "_html" ‚Ìê‡
 				break;
 			}
 
-			if (0 < count($lineItem)) {
-				// 1¹Ô¤º¤ÄÆÉ¹ş(¹àÌÜ¿ô¤¬2°Ê¾å¤Î¾ì¹ç)
+			if (1 < count($lineItem)) {
+				// 1s‚¸‚Â“Ç(€–Ú”‚ª2ˆÈã‚Ìê‡)
 				if ($lineItem[0] == ResponseData__RESULT) {
-					// ½èÍı·ë²Ì¤òÀßÄê
+					// ˆ—Œ‹‰Ê‚ğİ’è
 					$this->resultStatus = $lineItem[1];
 				} else if ($lineItem[0] == ResponseData__RESPONSE_CODE) {
-					// ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤òÀßÄê
+					// ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ğİ’è
 					$this->responseCode = $lineItem[1];
 				} else if ($lineItem[0] == ResponseData__RESPONSE_DETAIL) {
-					// ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤òÀßÄê
+					// ƒŒƒXƒ|ƒ“ƒXÚ×‚ğİ’è
 					$this->responseDetail = $lineItem[1];
 				}
 			}
 		}
-		
+
 		if (StringUtil::isEmpty($this->resultStatus)) {
-			// ½èÍı·ë²Ì¤¬ ¶õÊ¸»ú ¤â¤·¤¯¤Ï null ¤Î¾ì¹ç
+			// ˆ—Œ‹‰Ê‚ª ‹ó•¶š ‚à‚µ‚­‚Í null ‚Ìê‡
 			trigger_error(PaygentB2BModuleConnectException__KS_CONNECT_ERROR
 				. ": resultStatus is Nothing.", E_USER_WARNING);
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
@@ -216,9 +218,9 @@ class PaymentResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * ¼¡¤Î¥Ç¡¼¥¿¤ò¼èÆÀ
-	 * 
-	 * @return Map ¥Ç¡¼¥¿¤¬¤Ê¤¤¾ì¹ç¡¢NULL¤òÌá¤¹
+	 * Ÿ‚Ìƒf[ƒ^‚ğæ“¾
+	 *
+	 * @return Map ƒf[ƒ^‚ª‚È‚¢ê‡ANULL‚ğ–ß‚·
 	 */
 	function resNext() {
 		$map = null;
@@ -228,15 +230,15 @@ class PaymentResponseDataImpl extends ResponseData {
 			$map =$this->data[$this->currentIndex];
 
 			$this->currentIndex++;
-		} 
-		
+		}
+
 		return $map;
 	}
 
 	/**
-	 * ¼¡¤Î¥Ç¡¼¥¿¤¬Â¸ºß¤¹¤ë¤«È½Äê
-	 * 
-	 * @return boolean true=Â¸ºß¤¹¤ë false=Â¸ºß¤·¤Ê¤¤
+	 * Ÿ‚Ìƒf[ƒ^‚ª‘¶İ‚·‚é‚©”»’è
+	 *
+	 * @return boolean true=‘¶İ‚·‚é false=‘¶İ‚µ‚È‚¢
 	 */
 	function hasResNext() {
 		$rb = false;
@@ -249,8 +251,8 @@ class PaymentResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * resultStatus ¤ò¼èÆÀ
-	 * 
+	 * resultStatus ‚ğæ“¾
+	 *
 	 * @return String
 	 */
 	function getResultStatus() {
@@ -258,8 +260,8 @@ class PaymentResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * responseCode ¤ò¼èÆÀ
-	 * 
+	 * responseCode ‚ğæ“¾
+	 *
 	 * @return String
 	 */
 	function getResponseCode() {
@@ -267,8 +269,8 @@ class PaymentResponseDataImpl extends ResponseData {
 	}
 
 	/**
-	 * responseDetail ¤ò¼èÆÀ
-	 * 
+	 * responseDetail ‚ğæ“¾
+	 *
 	 * @return String
 	 */
 	function getResponseDetail() {

@@ -11,29 +11,29 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleConn
 include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleException.php");
 
 /**
- * ±şÅúÅÅÊ¸½èÍıÍÑ¥¤¥ó¥¿¡¼¥Õ¥§¡¼¥¹
+ * ‰“š“d•¶ˆ——pƒCƒ“ƒ^[ƒtƒF[ƒX
  * 
- * @version $Revision: 1.4 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 	/**
-	 * ½èÍı·ë²Ì
+	 * ˆ—Œ‹‰Ê
 	 */
 	define("ResponseData__RESULT", "result");
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É
+	 * ƒŒƒXƒ|ƒ“ƒXƒR[ƒh
 	 */
 	define("ResponseData__RESPONSE_CODE", "response_code");
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ
+	 * ƒŒƒXƒ|ƒ“ƒXÚ×
 	 */
 	define("ResponseData__RESPONSE_DETAIL", "response_detail");
 
 	/**
-	 * HTML¹àÌÜ
+	 * HTML€–Ú
 	 */
 	define("ResponseData__HTML_ITEM", "_html");
 
@@ -42,53 +42,53 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 class ResponseData {
 
 	/**
-	 * ¼õ¿®ÅÅÊ¸¤òÊ¬²ò¤·¡¢¥á¥â¥ê¾å¤ËÊİ»ı
+	 * óM“d•¶‚ğ•ª‰ğ‚µAƒƒ‚ƒŠã‚É•Û
 	 * 
-	 * @param data ¼õ¿®ÅÅÊ¸
-	 * @return boolean TRUE: À®¸ù¡¢FALSE¡§¼ºÇÔ 
+	 * @param data óM“d•¶
+	 * @return boolean TRUE: ¬Œ÷AFALSEF¸”s 
 	 */
 	function parse($data){}
 
 	/**
-	 * ¼õ¿®ÅÅÊ¸¤òÊ¬²ò¡¢½èÍı·ë²Ì¡¢¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¡¢¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤Î¤ßÊİ»ı
+	 * óM“d•¶‚ğ•ª‰ğAˆ—Œ‹‰ÊAƒŒƒXƒ|ƒ“ƒXƒR[ƒhAƒŒƒXƒ|ƒ“ƒXÚ×‚Ì‚İ•Û
 	 * 
-	 * @param data ¼õ¿®ÅÅÊ¸
-	 * @return boolean TRUE: À®¸ù¡¢FALSE¡§¼ºÇÔ 
+	 * @param data óM“d•¶
+	 * @return boolean TRUE: ¬Œ÷AFALSEF¸”s 
 	 */
 	function parseResultOnly($data){}
 
 	/**
-	 * ½èÍı·ë²Ì¤ò¼èÆÀ
+	 * ˆ—Œ‹‰Ê‚ğæ“¾
 	 * 
-	 * @return String ½èÍı·ë²Ì
+	 * @return String ˆ—Œ‹‰Ê
 	 */
 	function getResultStatus(){}
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤ò¼èÆÀ
+	 * ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ğæ“¾
 	 * 
-	 * @return String ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É
+	 * @return String ƒŒƒXƒ|ƒ“ƒXƒR[ƒh
 	 */
 	function getResponseCode(){}
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤ò¼èÆÀ
+	 * ƒŒƒXƒ|ƒ“ƒXÚ×‚ğæ“¾
 	 * 
-	 * @return String ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ
+	 * @return String ƒŒƒXƒ|ƒ“ƒXÚ×
 	 */
 	function getResponseDetail(){}
 
 	/**
-	 * ¼õ¿®ÅÅÊ¸¤è¤ê¡¢1¥ì¥³¡¼¥ÉÊ¬¼èÆÀ
+	 * óM“d•¶‚æ‚èA1ƒŒƒR[ƒh•ªæ“¾
 	 * 
-	 * @return Map 1¥ì¥³¡¼¥ÉÊ¬¤Î¾ğÊó;¤Ê¤¤¾ì¹ç¡¢NULL¤òÊÖ¤¹
+	 * @return Map 1ƒŒƒR[ƒh•ª‚Ìî•ñ;‚È‚¢ê‡ANULL‚ğ•Ô‚·
 	 */
 	function resNext(){}
 
 	/**
-	 * ¼¡¤Î¥ì¥³¡¼¥É¤¬Â¸ºß¤¹¤ë¤«È½Äê
+	 * Ÿ‚ÌƒŒƒR[ƒh‚ª‘¶İ‚·‚é‚©”»’è
 	 * 
-	 * @return boolean È½Äê·ë²Ì
+	 * @return boolean ”»’èŒ‹‰Ê
 	 */
 	function hasResNext(){}
 

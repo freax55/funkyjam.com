@@ -2,7 +2,7 @@
 /**
  * PAYGENT B2B MODULE
  * ResponseDataFactory.php
- * 
+ *
  * Copyright (C) 2007 by PAYGENT Co., Ltd.
  * All rights reserved.
  */
@@ -11,33 +11,37 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 include_once("jp/co/ks/merchanttool/connectmodule/system/PaygentB2BModuleResources.php");
 include_once("jp/co/ks/merchanttool/connectmodule/entity/ReferenceResponseDataImpl.php");
 include_once("jp/co/ks/merchanttool/connectmodule/entity/PaymentResponseDataImpl.php");
+include_once("jp/co/ks/merchanttool/connectmodule/entity/FilePaymentResponseDataImpl.php");
 
 /**
- * ±şÅúÅÅÊ¸½èÍıÍÑ¥ª¥Ö¥¸¥§¥¯¥ÈºîÀ®¥¯¥é¥¹
- * 
- * @version $Revision: 1.4 $
- * @author $Author: t-mori $
+ * ‰“š“d•¶ˆ——pƒIƒuƒWƒFƒNƒgì¬ƒNƒ‰ƒX
+ *
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 class ResponseDataFactory {
 
 	/**
-	 * ResponseData ¤òºîÀ®
-	 * 
+	 * ResponseData ‚ğì¬
+	 *
 	 * @param kind
 	 * @return ResponseData
 	 */
-	function create($kind) {
+	static function create($kind) {
 		$resData = null;
 		$masterFile = null;
-		
+
 		$masterFile = PaygentB2BModuleResources::getInstance();
-		
+
 		// Create ResponseData
-		if ($masterFile->isTelegramKindRef($kind)) {
-			// ¾È²ñ¤Î¾ì¹ç
+		if (PaygentB2BModule__TELEGRAM_KIND_FILE_PAYMENT_RES == $kind) {
+			// ƒtƒ@ƒCƒ‹ŒˆÏŒ‹‰ÊÆ‰ï‚Ìê‡
+			$resData = new FilePaymentResponseDataImpl();
+		} elseif ($masterFile->isTelegramKindRef($kind)) {
+			// Æ‰ï‚Ìê‡
 			$resData = new ReferenceResponseDataImpl();
 		} else {
-			// ¾È²ñ°Ê³°¤Î¾ì¹ç
+			// Æ‰ïˆÈŠO‚Ìê‡
 			$resData = new PaymentResponseDataImpl();
 		}
 

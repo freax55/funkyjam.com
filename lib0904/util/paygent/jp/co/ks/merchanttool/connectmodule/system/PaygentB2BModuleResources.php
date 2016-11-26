@@ -2,16 +2,16 @@
 /**
  * PAYGENT B2B MODULE
  * PaygentB2BModuleResources.php
- * 
+ *
  * Copyright (C) 2007 by PAYGENT Co., Ltd.
  * All rights reserved.
  */
 
 /*
- * ¥×¥í¥Ñ¥Æ¥£¥Õ¥¡¥¤¥ëÆÉ¹ş¡¢ÃÍÊİ»ı¥¯¥é¥¹
- * 
- * @version $Revision: 1.7 $
- * @author $Author: yoseeme $
+ * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹“ÇA’l•ÛƒNƒ‰ƒX
+ *
+ * @version $Revision: 46830 $
+ * @author $Author: takahiro.b.ito $
  */
 
 include_once("jp/co/ks/merchanttool/connectmodule/util/StringUtil.php");
@@ -19,169 +19,210 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleConn
 include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleException.php");
 
 	/**
-	 * ¥×¥í¥Ñ¥Æ¥£¥Õ¥¡¥¤¥ëÌ¾
+	 * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹–¼
 	 */
 	define("PaygentB2BModuleResources__PROPERTIES_FILE_NAME", "modenv_properties.php");
 
 	/**
-	 * ¾È²ñ·ÏÅÅÊ¸¼ïÊÌ¤Î¶èÀÚ¤êÊ¸»ú
+	 * Æ‰ïŒn“d•¶í•Ê‚Ì‹æØ‚è•¶š
 	 */
 	define("PaygentB2BModuleResources__TELEGRAM_KIND_SEPARATOR", ",");
-	
+
 	/**
-	 * ÅÅÊ¸¼ïÊÌ¤ÎÀèÆ¬·å¿ô¡ÊÀÜÂ³ÀèURL¼èÆÀ¡Ë
+	 * “d•¶í•Ê‚Ìæ“ªŒ…”iÚ‘±æURLæ“¾j
 	 */
 	define("PaygentB2BModuleResources__TELEGRAM_KIND_FIRST_CHARS", 2);
 
 	/**
-	 * ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹
+	 * ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX
 	 */
 	define("PaygentB2BModuleResources__CLIENT_FILE_PATH", "paygentB2Bmodule.client_file_path");
 
+    /**
+     * ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è
+     */
+    define("PaygentB2BModuleResources__NOT_USE_CLIENT_CERT", "paygentB2Bmodule.not_use_client_cert");
+
 	/**
-	 * CA¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹
+	 * CAØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX
 	 */
 	define("PaygentB2BModuleResources__CA_FILE_PATH", "paygentB2Bmodule.ca_file_path");
 
+    /**
+     * CAØ–¾‘–¢g—pİ’è
+     */
+    define("PaygentB2BModuleResources__NOT_USE_CA_CERT", "paygentB2Bmodule.not_use_ca_cert");
+
 	/**
-	 * Proxy¥µ¡¼¥ĞÌ¾
+	 * ProxyƒT[ƒo–¼
 	 */
 	define("PaygentB2BModuleResources__PROXY_SERVER_NAME", "paygentB2Bmodule.proxy_server_name");
 
 	/**
-	 * ProxyIP¥¢¥É¥ì¥¹
+	 * ProxyIPƒAƒhƒŒƒX
 	 */
 	define("PaygentB2BModuleResources__PROXY_SERVER_IP", "paygentB2Bmodule.proxy_server_ip");
 
 	/**
-	 * Proxy¥İ¡¼¥ÈÈÖ¹æ
+	 * Proxyƒ|[ƒg”Ô†
 	 */
 	define("PaygentB2BModuleResources__PROXY_SERVER_PORT", "paygentB2Bmodule.proxy_server_port");
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥ÈID
+	 * ƒfƒtƒHƒ‹ƒgID
 	 */
 	define("PaygentB2BModuleResources__DEFAULT_ID", "paygentB2Bmodule.default_id");
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É
+	 * ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh
 	 */
 	define("PaygentB2BModuleResources__DEFAULT_PASSWORD", "paygentB2Bmodule.default_password");
 
 	/**
-	 * ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ
+	 * ƒ^ƒCƒ€ƒAƒEƒg’l
 	 */
 	define("PaygentB2BModuleResources__TIMEOUT_VALUE", "paygentB2Bmodule.timeout_value");
 
 	/**
-	 * ¥í¥°½ĞÎÏÀè
+	 * ƒƒOo—Íæ
 	 */
 	define("PaygentB2BModuleResources__LOG_OUTPUT_PATH", "paygentB2Bmodule.log_output_path");
 
 	/**
-	 * ¾È²ñMAX·ï¿ô
+	 * Æ‰ïMAXŒ”
 	 */
 	define("PaygentB2BModuleResources__SELECT_MAX_CNT", "paygentB2Bmodule.select_max_cnt");
 
 	/**
-	 * ¾È²ñ·ÏÅÅÊ¸¼ïÊÌID
+	 * Æ‰ïŒn“d•¶í•ÊID
 	 */
 	define("PaygentB2BModuleResources__TELEGRAM_KIND_REFS", "paygentB2Bmodule.telegram_kind.ref");
 
 	/**
-	 * ÀÜÂ³ÀèURL¡Ê¶¦ÄÌ¡Ë
+	 * Ú‘±æURLi‹¤’Êj
 	 */
 	define("PaygentB2BModuleResources__URL_COMM", "paygentB2Bmodule.url.");
 
+	/**
+	 * ƒfƒoƒbƒOƒIƒvƒVƒ‡ƒ“
+	 */
+	define("PaygentB2BModuleResources__DEBUG_FLG", "paygentB2Bmodule.debug_flg");
 
  class PaygentB2BModuleResources {
- 	
-	/** ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹ */
-	var $clientFilePath = "";
 
-	/** CA¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹ */
+    /** ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX */
+    var $clientFilePath = "";
+
+    /** ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è */
+    var $notUseClientCert = "";
+
+	/** CAØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX */
 	var $caFilePath = "";
 
-	/** Proxy¥µ¡¼¥ĞÌ¾ */
+    /** CAØ–¾‘–¢g—pİ’è */
+    var $notUseCaCert = "";
+
+	/** ProxyƒT[ƒo–¼ */
 	var $proxyServerName = "";
 
-	/** ProxyIP¥¢¥É¥ì¥¹ */
+	/** ProxyIPƒAƒhƒŒƒX */
 	var $proxyServerIp = "";
 
-	/** Proxy¥İ¡¼¥ÈÈÖ¹æ */
+	/** Proxyƒ|[ƒg”Ô† */
 	var $proxyServerPort = 0;
 
-	/** ¥Ç¥Õ¥©¥ë¥ÈID */
+	/** ƒfƒtƒHƒ‹ƒgID */
 	var $defaultId = "";
 
-	/** ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É */
+	/** ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh */
 	var $defaultPassword = "";
 
-	/** ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ */
+	/** ƒ^ƒCƒ€ƒAƒEƒg’l */
 	var $timeout = 0;
 
-	/** ¥í¥°½ĞÎÏÀè */
+	/** ƒƒOo—Íæ */
 	var $logOutputPath = "";
 
-	/** ¾È²ñMAX·ï¿ô */
+	/** Æ‰ïMAXŒ” */
 	var $selectMaxCnt = 0;
-	
-	/** ÀßÄê¥Õ¥¡¥¤¥ë¡Ê¥×¥í¥Ñ¥Æ¥£¡Ë */
+
+	/** İ’èƒtƒ@ƒCƒ‹iƒvƒƒpƒeƒBj */
 	var $propConnect = null;
 
-	/** ¾È²ñ·ÏÅÅÊ¸¼ïÊÌ¥ê¥¹¥È */
+	/** Æ‰ïŒn“d•¶í•ÊƒŠƒXƒg */
 	var $telegramKindRefs = null;
 
+	/** ƒfƒoƒbƒOƒIƒvƒVƒ‡ƒ“ */
+	var $debugFlg = 0;
+
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
 	 */
 	function PaygentB2BModuleResources() {
 	}
 
 	/**
-	 * PaygentB2BModuleResources ¤ò¼èÆÀ
-	 * 
-	 * @return PaygentB2BModuleResources¡¡¼ºÇÔ¤Î¾ì¹ç¡¢¥¨¥é¡¼¥³¡¼¥É
+	 * PaygentB2BModuleResources ‚ğæ“¾
+	 *
+	 * @return PaygentB2BModuleResources@¸”s‚Ìê‡AƒGƒ‰[ƒR[ƒh
 	 */
-	function &getInstance() {
+	static function &getInstance() {
 		static $resourceInstance = null;
-		
-		if (isset($resourceInstance) == false 
+
+		if (isset($resourceInstance) == false
 			|| $resourceInstance == null
 			|| is_object($resourceInstance) != true) {
-			
+
 			$resourceInstance = new PaygentB2BModuleResources();
 			$rslt = $resourceInstance->readProperties();
 			if ($rslt === true) {
 			} else {
 				$resourceInstance = $rslt;
-			} 
+			}
 		}
 
 		return $resourceInstance;
 	}
 
 	/**
-	 * ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹¤ò¼èÆÀ¡£
-	 * 
+	 * ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX‚ğæ“¾B
+	 *
 	 * @return clientFilePath
 	 */
 	function getClientFilePath() {
 		return $this->clientFilePath;
 	}
 
+    /**
+     * ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è‚ğæ“¾B
+     *
+     * @return notUseClientCert
+     */
+    function getNotUseClientCert() {
+        return $this->notUseClientCert;
+    }
+
 	/**
-	 * CA¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹¤ò¼èÆÀ¡£
-	 * 
+	 * CAØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX‚ğæ“¾B
+	 *
 	 * @return caFilePath
 	 */
 	function getCaFilePath() {
 		return $this->caFilePath;
 	}
 
+    /**
+     * CAØ–¾‘–¢g—pİ’è‚ğæ“¾B
+     *
+     * @return notUseCaCert
+     */
+    function getNotUseCaCert() {
+        return $this->notUseCaCert;
+    }
+
 	/**
-	 * Proxy¥µ¡¼¥ĞÌ¾¤ò¼èÆÀ¡£
-	 * 
+	 * ProxyƒT[ƒo–¼‚ğæ“¾B
+	 *
 	 * @return proxyServerName
 	 */
 	function getProxyServerName() {
@@ -189,8 +230,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ProxyIP¥¢¥É¥ì¥¹¤ò¼èÆÀ¡£
-	 * 
+	 * ProxyIPƒAƒhƒŒƒX‚ğæ“¾B
+	 *
 	 * @return proxyServerIp
 	 */
 	function getProxyServerIp() {
@@ -198,8 +239,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * Proxy¥İ¡¼¥ÈÈÖ¹æ¤ò¼èÆÀ¡£
-	 * 
+	 * Proxyƒ|[ƒg”Ô†‚ğæ“¾B
+	 *
 	 * @return proxyServerPort
 	 */
 	function getProxyServerPort() {
@@ -207,8 +248,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥ÈID¤ò¼èÆÀ¡£
-	 * 
+	 * ƒfƒtƒHƒ‹ƒgID‚ğæ“¾B
+	 *
 	 * @return defaultId
 	 */
 	function getDefaultId() {
@@ -216,8 +257,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É¤ò¼èÆÀ¡£
-	 * 
+	 * ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh‚ğæ“¾B
+	 *
 	 * @return defaultPassword
 	 */
 	function getDefaultPassword() {
@@ -225,8 +266,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ¤ò¼èÆÀ¡£
-	 * 
+	 * ƒ^ƒCƒ€ƒAƒEƒg’l‚ğæ“¾B
+	 *
 	 * @return timeout
 	 */
 	function getTimeout() {
@@ -234,8 +275,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ¥í¥°½ĞÎÏÀè¤ò¼èÆÀ¡£
-	 * 
+	 * ƒƒOo—Íæ‚ğæ“¾B
+	 *
 	 * @return logOutputPath
 	 */
 	function getLogOutputPath() {
@@ -243,8 +284,8 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ¾È²ñMAX·ï¿ô¤ò¼èÆÀ¡£
-	 * 
+	 * Æ‰ïMAXŒ”‚ğæ“¾B
+	 *
 	 * @return selectMaxCnt
 	 */
 	function getSelectMaxCnt() {
@@ -252,68 +293,77 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * ÀÜÂ³ÀèURL¤ò¼èÆÀ¡£
-	 * 
+	 * Ú‘±æURL‚ğæ“¾B
+	 *
 	 * @param telegramKind
-	 * @return FALSE: ¼ºÇÔ(PaygentB2BModuleConnectException::TEREGRAM_PARAM_OUTSIDE_ERROR)¡¢À®¸ù:¼èÆÀ¤·¤¿ URL
+	 * @return FALSE: ¸”s(PaygentB2BModuleConnectException::TEREGRAM_PARAM_OUTSIDE_ERROR)A¬Œ÷:æ“¾‚µ‚½ URL
 	 */
 	function getUrl($telegramKind) {
 		$rs = null;
 		$sKey = null;
 
-		// ¥×¥í¥Ñ¥Æ¥£¥Á¥§¥Ã¥¯
+		// ƒvƒƒpƒeƒBƒ`ƒFƒbƒN
 		if ($this->propConnect == null) {
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR 
-				. ": HTTP request contains unexpected value.", E_USER_WARNING);
-			return false;
-		}
-		
-		// °ú¿ô¥Á¥§¥Ã¥¯
-		if (StringUtil::isEmpty($telegramKind)) {
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR 
+			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR
 				. ": HTTP request contains unexpected value.", E_USER_WARNING);
 			return false;
 		}
 
-		// Á´·å¿ô¤Ç¥×¥í¥Ñ¥Æ¥£¤«¤éURL¤ò¼èÆÀ
+		// ˆø”ƒ`ƒFƒbƒN
+		if (StringUtil::isEmpty($telegramKind)) {
+			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR
+				. ": HTTP request contains unexpected value.", E_USER_WARNING);
+			return false;
+		}
+
+		// ‘SŒ…”‚ÅƒvƒƒpƒeƒB‚©‚çURL‚ğæ“¾
 		$sKey = PaygentB2BModuleResources__URL_COMM . $telegramKind;
 		if (array_key_exists($sKey, $this->propConnect)) {
 			$rs = $this->propConnect[$sKey];
 		}
-		
-		// Á´·å¿ô¤Ç¼èÆÀ¤Ç¤­¤¿¾ì¹ç¡¢¤½¤ÎÃÍ¤òÌá¤¹
+
+		// ‘SŒ…”‚Åæ“¾‚Å‚«‚½ê‡A‚»‚Ì’l‚ğ–ß‚·
 		if (!StringUtil::isEmpty($rs)) {
 			return $rs;
 		}
-		
-		// ÀèÆ¬£²·å¤Ç¥×¥í¥Ñ¥Æ¥£¤«¤éURL¤ò¼èÆÀ
+
+		// æ“ª‚QŒ…‚ÅƒvƒƒpƒeƒB‚©‚çURL‚ğæ“¾
 		if (strlen($telegramKind) > PaygentB2BModuleResources__TELEGRAM_KIND_FIRST_CHARS) {
-			$sKey = PaygentB2BModuleResources__URL_COMM 
+			$sKey = PaygentB2BModuleResources__URL_COMM
 				. substr($telegramKind, 0, PaygentB2BModuleResources__TELEGRAM_KIND_FIRST_CHARS);
 		} else {
-			// Á´·å¿ô¤È¤Ê¤ê¡¢¥¨¥é¡¼¤È¤¹¤ë
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR 
+			// ‘SŒ…”‚Æ‚È‚èAƒGƒ‰[‚Æ‚·‚é
+			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR
 				. ": HTTP request contains unexpected value.", E_USER_WARNING);
 			return false;
 		}
 		if (array_key_exists($sKey, $this->propConnect)) {
 			$rs = $this->propConnect[$sKey];
 		}
-		
-		// Á´·å¿ô¤ÈÀèÆ¬£²·å¤Ç¼èÆÀ¤Ç¤­¤Ê¤«¤Ã¤¿¾ì¹ç¡¢¥¨¥é¡¼¤òÌá¤¹
+
+		// ‘SŒ…”‚Ææ“ª‚QŒ…‚Åæ“¾‚Å‚«‚È‚©‚Á‚½ê‡AƒGƒ‰[‚ğ–ß‚·
 		if (StringUtil::isEmpty($rs)) {
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR 
+			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR
 				. ": HTTP request contains unexpected value.", E_USER_WARNING);
 			return false;
 		}
-		
+
 		return $rs;
 	}
 
 	/**
-	 * PropertiesFile ¤ÎÃÍ¤ò¼èÆÀ¤·¡¢ÀßÄê¡£
+	 * ƒfƒoƒbƒOƒIƒvƒVƒ‡ƒ“‚ğæ“¾B
 	 *
-	 * @return mixed À®¸ù¡§TRUE¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É 
+	 * @return debugFlg
+	 */
+	function getDebugFlg() {
+		return $this->debugFlg;
+	}
+
+	/**
+	 * PropertiesFile ‚Ì’l‚ğæ“¾‚µAİ’èB
+	 *
+	 * @return mixed ¬Œ÷FTRUEA‘¼FƒGƒ‰[ƒR[ƒh
 	 */
 	function readProperties() {
 
@@ -322,93 +372,105 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 
 		$prop = PaygentB2BModuleResources::parseJavaProperty(PaygentB2BModuleResources__PROPERTIES_FILE_NAME);
 		if ($prop === false) {
-			// Properties File ÆÉ¹ş¥¨¥é¡¼
+			// Properties File “ÇƒGƒ‰[
 			trigger_error(PaygentB2BModuleException__RESOURCE_FILE_NOT_FOUND_ERROR
 				. ": Properties file doesn't exist.", E_USER_WARNING);
-			return PaygentB2BModuleException__RESOURCE_FILE_NOT_FOUND_ERROR; 
+			return PaygentB2BModuleException__RESOURCE_FILE_NOT_FOUND_ERROR;
 		}
 
-		// É¬¿Ü¹àÌÜ¥¨¥é¡¼¥Á¥§¥Ã¥¯
-		if (!($this->isPropertiesIndispensableItem($prop) 
-			&& $this->isPropertiesSetData($prop) 
+		// •K{€–ÚƒGƒ‰[ƒ`ƒFƒbƒN
+		if (!($this->isPropertiesIndispensableItem($prop)
+			&& $this->isPropertiesSetData($prop)
 			&& $this->isPropertieSetInt($prop))
 			|| $this->isURLNull($prop)) {
-			// É¬¿Ü¹àÌÜ¥¨¥é¡¼
+			// •K{€–ÚƒGƒ‰[
 			$propConnect = null;
 			trigger_error(PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR
 				. ": Properties file contains inappropriate value.", E_USER_WARNING);
-			return PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR; 
+			return PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR;
 		}
 		$this->propConnect = $prop;
-		
-		// ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹
+
+		// ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX
 		if (array_key_exists(PaygentB2BModuleResources__CLIENT_FILE_PATH, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__CLIENT_FILE_PATH]))) {
 			$this->clientFilePath = $prop[PaygentB2BModuleResources__CLIENT_FILE_PATH];
 		}
 
-		// CA¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹
+        // ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è
+        if (array_key_exists(PaygentB2BModuleResources__NOT_USE_CLIENT_CERT, $prop)
+                && !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__NOT_USE_CLIENT_CERT]))) {
+            $this->notUseClientCert = $prop[PaygentB2BModuleResources__NOT_USE_CLIENT_CERT];
+        }
+
+		// CAØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX
 		if (array_key_exists(PaygentB2BModuleResources__CA_FILE_PATH, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__CA_FILE_PATH]))) {
 			$this->caFilePath = $prop[PaygentB2BModuleResources__CA_FILE_PATH];
 		}
 
-		// Proxy¥µ¡¼¥ĞÌ¾
+        // CAØ–¾‘–¢g—pİ’è
+        if (array_key_exists(PaygentB2BModuleResources__NOT_USE_CA_CERT, $prop)
+                && !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__NOT_USE_CA_CERT]))) {
+            $this->notUseCaCert = $prop[PaygentB2BModuleResources__NOT_USE_CA_CERT];
+        }
+
+		// ProxyƒT[ƒo–¼
 		if (array_key_exists(PaygentB2BModuleResources__PROXY_SERVER_NAME, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__PROXY_SERVER_NAME]))) {
 			$this->proxyServerName = $prop[PaygentB2BModuleResources__PROXY_SERVER_NAME];
 		}
 
-		// ProxyIP¥¢¥É¥ì¥¹
+		// ProxyIPƒAƒhƒŒƒX
 		if (array_key_exists(PaygentB2BModuleResources__PROXY_SERVER_IP, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__PROXY_SERVER_IP]))) {
 			$this->proxyServerIp = $prop[PaygentB2BModuleResources__PROXY_SERVER_IP];
 		}
 
-		// Proxy¥İ¡¼¥ÈÈÖ¹æ
+		// Proxyƒ|[ƒg”Ô†
 		if (array_key_exists(PaygentB2BModuleResources__PROXY_SERVER_PORT, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__PROXY_SERVER_PORT]))) {
 			if (StringUtil::isNumeric($prop[PaygentB2BModuleResources__PROXY_SERVER_PORT])) {
 				$this->proxyServerPort = $prop[PaygentB2BModuleResources__PROXY_SERVER_PORT];
 			} else {
-				// ÀßÄêÃÍ¥¨¥é¡¼
+				// İ’è’lƒGƒ‰[
 				trigger_error(PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR
 					. ": Properties file contains inappropriate value.", E_USER_WARNING);
-				return PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR; 
+				return PaygentB2BModuleException__RESOURCE_FILE_REQUIRED_ERROR;
 			}
 		}
 
-		// ¥Ç¥Õ¥©¥ë¥ÈID
+		// ƒfƒtƒHƒ‹ƒgID
 		if (array_key_exists(PaygentB2BModuleResources__DEFAULT_ID, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__DEFAULT_ID]))) {
 			$this->defaultId = $prop[PaygentB2BModuleResources__DEFAULT_ID];
 		}
 
-		// ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É
+		// ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh
 		if (array_key_exists(PaygentB2BModuleResources__DEFAULT_PASSWORD, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__DEFAULT_PASSWORD]))) {
 			$this->defaultPassword = $prop[PaygentB2BModuleResources__DEFAULT_PASSWORD];
 		}
 
-		// ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ
+		// ƒ^ƒCƒ€ƒAƒEƒg’l
 		if (array_key_exists(PaygentB2BModuleResources__TIMEOUT_VALUE, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__TIMEOUT_VALUE]))) {
 			$this->timeout = $prop[PaygentB2BModuleResources__TIMEOUT_VALUE];
 		}
 
-		// ¥í¥°½ĞÎÏÀè
+		// ƒƒOo—Íæ
 		if (array_key_exists(PaygentB2BModuleResources__LOG_OUTPUT_PATH, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__LOG_OUTPUT_PATH]))) {
 			$this->logOutputPath = $prop[PaygentB2BModuleResources__LOG_OUTPUT_PATH];
 		}
 
-		// ¾È²ñMAX·ï¿ô
+		// Æ‰ïMAXŒ”
 		if (array_key_exists(PaygentB2BModuleResources__SELECT_MAX_CNT, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__SELECT_MAX_CNT]))) {
 			$this->selectMaxCnt = $prop[PaygentB2BModuleResources__SELECT_MAX_CNT];
 		}
 
-		// ¾È²ñÅÅÊ¸¼ïÊÌ¥ê¥¹¥È
+		// Æ‰ï“d•¶í•ÊƒŠƒXƒg
 		if (array_key_exists(PaygentB2BModuleResources__TELEGRAM_KIND_REFS, $prop)
 				&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__TELEGRAM_KIND_REFS]))) {
 			$telegramKindRef = $prop[PaygentB2BModuleResources__TELEGRAM_KIND_REFS];
@@ -417,25 +479,31 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 		if ($this->telegramKindRefs == null) {
 			$this->telegramKindRefs = array();
 		}
-		
+
+		// ƒfƒoƒbƒOƒIƒvƒVƒ‡ƒ“
+		if (array_key_exists(PaygentB2BModuleResources__DEBUG_FLG, $prop)
+			&& !(StringUtil::isEmpty($prop[PaygentB2BModuleResources__DEBUG_FLG]))) {
+			$this->debugFlg = $prop[PaygentB2BModuleResources__DEBUG_FLG];
+		}
+
 		return true;
 	}
 
 	/**
-	 * Properties É¬¿Ü¹àÌÜ¥Á¥§¥Ã¥¯
-	 * 
+	 * Properties •K{€–Úƒ`ƒFƒbƒN
+	 *
 	 * @param Properties
-	 * @return boolean true=É¬¿Ü¹àÌÜÍ­¤ê false=É¬¿Ü¹àÌÜÌµ¤·
+	 * @return boolean true=•K{€–Ú—L‚è false=•K{€–Ú–³‚µ
 	 */
 	function isPropertiesIndispensableItem($prop) {
 		$rb = false;
 
-		if ((array_key_exists(PaygentB2BModuleResources__CLIENT_FILE_PATH, $prop)
-				&& array_key_exists(PaygentB2BModuleResources__CA_FILE_PATH, $prop)
+		if (((array_key_exists(PaygentB2BModuleResources__CLIENT_FILE_PATH, $prop) || array_key_exists(PaygentB2BModuleResources__NOT_USE_CLIENT_CERT, $prop))
+                && (array_key_exists(PaygentB2BModuleResources__CA_FILE_PATH, $prop) || array_key_exists(PaygentB2BModuleResources__NOT_USE_CA_CERT, $prop))
 				&& array_key_exists(PaygentB2BModuleResources__TIMEOUT_VALUE, $prop)
 				&& array_key_exists(PaygentB2BModuleResources__LOG_OUTPUT_PATH, $prop)
 				&& array_key_exists(PaygentB2BModuleResources__SELECT_MAX_CNT, $prop))) {
-			// É¬¿Ü¹àÌÜÍ­¤ê
+			// •K{€–Ú—L‚è
 			$rb = true;
 		}
 
@@ -443,19 +511,21 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * Properties ¥Ç¡¼¥¿ÀßÄê¥Á¥§¥Ã¥¯
-	 * 
+	 * Properties ƒf[ƒ^İ’èƒ`ƒFƒbƒN
+	 *
 	 * @param prop Properties
-	 * @return boolean true=¥Ç¡¼¥¿Ì¤ÀßÄê¹àÌÜÌµ¤· false=¥Ç¡¼¥¿Ì¤ÀßÄê¹àÌÜÍ­¤ê
+	 * @return boolean true=ƒf[ƒ^–¢İ’è€–Ú–³‚µ false=ƒf[ƒ^–¢İ’è€–Ú—L‚è
 	 */
 	function isPropertiesSetData($prop) {
 		$rb = true;
 
-		if (StringUtil::isEmpty($prop[PaygentB2BModuleResources__CLIENT_FILE_PATH])
-				|| StringUtil::isEmpty($prop[PaygentB2BModuleResources__CA_FILE_PATH])
+		if (((!isset($prop[PaygentB2BModuleResources__CLIENT_FILE_PATH]) || StringUtil::isEmpty($prop[PaygentB2BModuleResources__CLIENT_FILE_PATH]))
+                && (!isset($prop[PaygentB2BModuleResources__NOT_USE_CLIENT_CERT]) || StringUtil::isEmpty($prop[PaygentB2BModuleResources__NOT_USE_CLIENT_CERT])))
+                || ((!isset($prop[PaygentB2BModuleResources__CA_FILE_PATH]) || StringUtil::isEmpty($prop[PaygentB2BModuleResources__CA_FILE_PATH]))
+                && (!isset($prop[PaygentB2BModuleResources__NOT_USE_CA_CERT]) || StringUtil::isEmpty($prop[PaygentB2BModuleResources__NOT_USE_CA_CERT])))
 				|| StringUtil::isEmpty($prop[PaygentB2BModuleResources__TIMEOUT_VALUE])
 				|| StringUtil::isEmpty($prop[PaygentB2BModuleResources__SELECT_MAX_CNT])) {
-			// É¬¿Ü¹àÌÜÌ¤ÀßÄê¥¨¥é¡¼
+			// •K{€–Ú–¢İ’èƒGƒ‰[
 			$rb = false;
 		}
 
@@ -463,37 +533,37 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 	}
 
 	/**
-	 * Properties ¿ôÃÍ¥Á¥§¥Ã¥¯
-	 * 
+	 * Properties ”’lƒ`ƒFƒbƒN
+	 *
 	 * @param prop Properties
-	 * @return boolean true=¿ôÃÍÀßÄê false=¿ôÃÍÌ¤ÀßÄê
+	 * @return boolean true=”’lİ’è false=”’l–¢İ’è
 	 */
 	function isPropertieSetInt($prop) {
 		$rb = false;
 
 		if (StringUtil::isNumeric($prop[PaygentB2BModuleResources__TIMEOUT_VALUE])
 				&& StringUtil::isNumeric($prop[PaygentB2BModuleResources__SELECT_MAX_CNT])) {
-			// ¿ôÃÍÀßÄê
+			// ”’lİ’è
 			$rb = true;
 		}
 
 		return $rb;
 	}
-	
+
 	/**
-	 * ÀÜÂ³ÀèURL¤Ï¥Ì¥ë¤«¤É¤¦¤«¤Î¥Á¥§¥Ã¥¯
-	 * 
+	 * Ú‘±æURL‚Íƒkƒ‹‚©‚Ç‚¤‚©‚Ìƒ`ƒFƒbƒN
+	 *
 	 */
 	function isURLNull($prop) {
 		$rb = false;
 		if (!is_array($prop)) {
 			return true;
 		}
-		
+
 		foreach($prop as $key => $value) {
-			
+
 			if (strpos($key, PaygentB2BModuleResources__URL_COMM) === 0) {
-				if (isset($value) == false 
+				if (isset($value) == false
 					|| strlen(trim($value)) == 0) {
 					$rb = true;
 					break;
@@ -502,74 +572,74 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 		}
 		return $rb;
 	}
-	
+
 	/**
-	 * »ØÄê¤µ¤ì¤¿¶èÀÚ¤êÊ¸»ú¤ÇÊ¸»úÎó¤òÊ¬³ä¤·¡¢¥È¥ê¥à¤¹¤ë
-	 * 
-	 * @param str Ê¸»úÎó
-	 * @param separator ¶èÀÚ¤êÊ¸»ú
-	 * @return ¥ê¥¹¥È
+	 * w’è‚³‚ê‚½‹æØ‚è•¶š‚Å•¶š—ñ‚ğ•ªŠ„‚µAƒgƒŠƒ€‚·‚é
+	 *
+	 * @param str •¶š—ñ
+	 * @param separator ‹æØ‚è•¶š
+	 * @return ƒŠƒXƒg
 	 */
 	function split($str, $separator) {
 		$list = array();
-		
+
 		if ($str == null) {
 			return $list;
 		}
-		
+
 		if ($separator == null || strlen($separator) == 0) {
 			if (!StringUtil::isEmpty(trim($str))) {
 				$list[] = trim($str);
 			}
 			return $list;
 		}
-		
+
 		$arr = explode($separator, $str);
 		for ($i=0; $arr && $i < sizeof($arr); $i++) {
 			if (!StringUtil::isEmpty(trim($arr[$i]))) {
 				$list[] = trim($arr[$i]);
 			}
 		}
-		
+
 		return $list;
 	}
-	
+
 	/**
-	 * ¾È²ñÅÅÊ¸¥Á¥§¥Ã¥¯
-	 * @param telegramKind ÅÅÊ¸¼ïÊÌ
-	 * @return true=¾È²ñÅÅÊ¸ false=¾È²ñÅÅÊ¸°Ê³°
+	 * Æ‰ï“d•¶ƒ`ƒFƒbƒN
+	 * @param telegramKind “d•¶í•Ê
+	 * @return true=Æ‰ï“d•¶ false=Æ‰ï“d•¶ˆÈŠO
 	 */
 	function isTelegramKindRef($telegramKind) {
 		$bRet = false;
-		
+
 		if ($this->telegramKindRefs == null) {
 			return $bRet;
 		}
 		$bRet = in_array($telegramKind, $this->telegramKindRefs);
 		return $bRet;
 	}
- 	
+
  	/**
- 	 * Java¥Õ¥©¡¼¥Ş¥Ã¥È¤Î¥×¥í¥Ñ¥Æ¥£¥Õ¥¡¥¤¥ë¤«¤éÃÍ¤ò¼èÆÀ¤·¤Æ
- 	 * ÇÛÎó¤ËÆş¤ì¤ÆÊÖ¤¹
- 	 * 
- 	 * @param fileName ¥×¥í¥Ñ¥Æ¥£¥Õ¥¡¥¤¥ëÌ¾
- 	 * @param commentChar ¥³¥á¥ó¥ÈÍÑÊ¸»ú
- 	 * @return FALSE: ¼ºÇÔ¡¢Â¾:KEY=VALUE·Á¼°¤ÎÇÛÎó,
+ 	 * JavaƒtƒH[ƒ}ƒbƒg‚ÌƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚©‚ç’l‚ğæ“¾‚µ‚Ä
+ 	 * ”z—ñ‚É“ü‚ê‚Ä•Ô‚·
+ 	 *
+ 	 * @param fileName ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹–¼
+ 	 * @param commentChar ƒRƒƒ“ƒg—p•¶š
+ 	 * @return FALSE: ¸”sA‘¼:KEY=VALUEŒ`®‚Ì”z—ñ,
  	 */
  	function parseJavaProperty($fileName, $commentChar = "#") {
 
 		$properties = array();
-		
+
 		$lines = @file($fileName, FILE_USE_INCLUDE_PATH | FILE_IGNORE_NEW_LINES);
  		if ($lines === false) {
-			// Properties File ÆÉ¹ş¥¨¥é¡¼
+			// Properties File “ÇƒGƒ‰[
 			return $lines;
  		}
- 		
+
  		foreach ($lines as $i => $line) {
  			$lineData = trim($line);
- 			
+
  			$index = strpos($lineData, '\r');
  			if (!($index === false)) {
  				$lineData = trim(substr($lineData, 0, $index));
@@ -583,16 +653,16 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
  				continue;
  			}
  			$firstChar = substr($lineData, 0, strlen($commentChar));
- 			
+
  			if ($firstChar == $commentChar) {
  				continue;
  			}
- 			
+
 			$quotationIndex = strpos($lineData, '=');
 			if ($quotationIndex <= 0) {
 				continue;
 			}
-			
+
 			$key = trim(substr($lineData, 0, $quotationIndex));
 			$value = null;
 			if (strlen($lineData) > $quotationIndex) {
@@ -600,9 +670,9 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 			}
 			$properties[$key] = $value;
  		}
- 		
+
  		return $properties;
  	}
-	
+
  }
 ?>

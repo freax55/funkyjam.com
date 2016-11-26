@@ -2,7 +2,7 @@
 /**
  * PAYGENT B2B MODULE
  * HttpsRequestSender.php
- * 
+ *
  * Copyright (C) 2007 by PAYGENT Co., Ltd.
  * All rights reserved.
  */
@@ -13,52 +13,52 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 include_once("jp/co/ks/merchanttool/connectmodule/util/PaygentB2BModuleLogger.php");
 
 /**
- * httpsÍ×µá¤ò¤ª¤³¤Ê¤¦¥æ¡¼¥Æ¥£¥ê¥Æ¥£¥¯¥é¥¹¡£
- * 
- * @vesrion $Revision: 1.5 $
- * @author $Author: t-mori $
+ * https—v‹‚ğ‚¨‚±‚È‚¤ƒ†[ƒeƒBƒŠƒeƒBƒNƒ‰ƒXB
+ *
+ * @vesrion $Revision: 47101 $
+ * @author $Author: takahiro.b.ito $
  */
- 
-	// cURL ¥¨¥é¡¼¥³¡¼¥É 
+
+	// cURL ƒGƒ‰[ƒR[ƒh
 	// http://curl.haxx.se/libcurl/c/libcurl-errors.html
 	define("HttpsRequestSender__CURLE_COULDNT_CONNECT", 7);
-	define("HttpsRequestSender__CURLE_SSL_CERTPROBLEM", 58);	
+	define("HttpsRequestSender__CURLE_SSL_CERTPROBLEM", 58);
 	define("HttpsRequestSender__CURLE_SSL_CACERT", 60);
 	define("HttpsRequestSender__CURLE_SSL_CACERT_BADFILE", 77);
 	define("HttpsRequestSender__CURLE_HTTP_RETURNED_ERROR", 22);
 
 	/**
-	 * HTTP POST ÄÌ¿®ÍÑ¸ÇÄêÃÍ
+	 * HTTP POST ’ÊM—pŒÅ’è’l
 	 */
 	define("HttpsRequestSender__POST", "POST");
 
 	/**
-	 * HTTP¥×¥í¥È¥³¥ë¤òÉ½¤¹Äê¿ô
+	 * HTTPƒvƒƒgƒRƒ‹‚ğ•\‚·’è”
 	 */
 	define("HttpsRequestSender__HTTP", "HTTP");
 
 	/**
-	 * HTTP/1.0¤òÉ½¤¹Äê¿ô
+	 * HTTP/1.0‚ğ•\‚·’è”
 	 */
 	define("HttpsRequestSender__HTTP_1_0", "HTTP/1.0");
 
 	/**
-	 * HTTPÄÌ¿®¤ÎÀ®¸ù¥³¡¼¥É
+	 * HTTP’ÊM‚Ì¬Œ÷ƒR[ƒh
 	 */
 	define("HttpsRequestSender__HTTP_1_0_200", "HTTP/1.0 200");
-	
+
 	/**
-	 * HTTPÄÌ¿®¤ÎÀ®¸ù¥³¡¼¥É¡§200
+	 * HTTP’ÊM‚Ì¬Œ÷ƒR[ƒhF200
 	 */
 	define("HttpsRequestSender__HTTP_SUCCESS", 200);
-	
+
 	/**
-	 * HTTPÄÌ¿®¤ÎÀ®¸ù¥³¡¼¥É¡§206
+	 * HTTP’ÊM‚Ì¬Œ÷ƒR[ƒhF206
 	 */
 	define("HttpsRequestSender__HTTP_PARTIAL_CONTENT", 206);
 
 	/**
-	 * ÅÅÊ¸Ä¹
+	 * “d•¶’·
 	 */
 	define("HttpsRequestSender__TELEGRAM_LENGTH", 10240);
 
@@ -68,22 +68,22 @@ include_once("jp/co/ks/merchanttool/connectmodule/util/PaygentB2BModuleLogger.ph
 	define("HttpsRequestSender__DEFAULT_PORT", 443);
 
 	/**
-	 * ¥ê¥¯¥¨¥¹¥È¡¦¥ì¥¹¥İ¥ó¥¹¤Î²ş¹Ô¥³¡¼¥É
+	 * ƒŠƒNƒGƒXƒgEƒŒƒXƒ|ƒ“ƒX‚Ì‰üsƒR[ƒh
 	 */
 	define("HttpsRequestSender__CRLF", "\r\n");
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥È¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
+	 * ƒfƒtƒHƒ‹ƒg‚ÌƒGƒ“ƒR[ƒfƒBƒ“ƒO
 	 */
 	define("HttpsRequestSender__DEFAULT_ENCODING", "SJIS-win");
 
 	/**
-	 * HTTP¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥ÉÊÑ¿ô¤Î½é´üÃÍ
+	 * HTTPƒXƒe[ƒ^ƒXƒR[ƒh•Ï”‚Ì‰Šú’l
 	 */
 	define("HttpsRequestSender__HTTP_STATUS_INIT_VALUE", -1);
 
 	/**
-	 * ¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤ÎÄ¹¤µ
+	 * ƒXƒe[ƒ^ƒXƒR[ƒh‚Ì’·‚³
 	 */
 	define("HttpsRequestSender__REGEXPSTATUS_LEN", 3);
 
@@ -102,91 +102,126 @@ include_once("jp/co/ks/merchanttool/connectmodule/util/PaygentB2BModuleLogger.ph
 	 */
 	define("HttpsRequestSender__CONTENT_TYPE", "Content-Type=application/x-www-form-urlencoded");
 	define("HttpsRequestSender__HTTP_ENCODING", "charset=Windows-31J");
-	
+
+	/**
+	 * ƒ}ƒXƒN•¶š
+	 */
+	define("HttpsRequestSender__MASK_STRING", "X");
+
 class HttpsRequestSender {
 	/**
 	 * KeyStore Password
 	 */
 	var $KEYSTORE_PASSWORD = "changeit";
 
-	/** ¥ì¥¹¥İ¥ó¥¹¥Ø¥Ã¥À */
+	/** ƒŒƒXƒ|ƒ“ƒXƒwƒbƒ_ */
 	var $responseHeader;
 
-	/** ¥ì¥¹¥İ¥ó¥¹¥Ü¥Ç¥£ */
+	/** ƒŒƒXƒ|ƒ“ƒXƒ{ƒfƒB */
 	var $responseBody;
 
-	/** ¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¡¡*/
+	/** ƒXƒe[ƒ^ƒXƒR[ƒh@*/
 	var $statusCode;
-	
-	/** ÀÜÂ³Àè URL */
+
+	/** Ú‘±æ URL */
 	var $url;
 
-	/** ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Ñ¥¹ */
+	/** ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒpƒX */
 	var $clientCertificatePath;
 
-	/** Ç§¾Ú¶É¾ÚÌÀ½ñ¥Ñ¥¹ */
+    /** ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è */
+    var $notUseClientCert;
+
+	/** ”FØ‹ÇØ–¾‘ƒpƒX */
 	var $caCertificatePath;
 
-	/** SSLÄÌ¿®ÍÑ¥½¥±¥Ã¥È */
+    /** CAØ–¾‘–¢g—pİ’è */
+    var $notUseCaCert;
+
+	/** SSL’ÊM—pƒ\ƒPƒbƒg */
 	var $ch;
 
-	/** ¥È¥ó¥Í¥ë¥½¥±¥Ã¥È */
+	/** ƒgƒ“ƒlƒ‹ƒ\ƒPƒbƒg */
 	//var $tunnelSocket;
 
-	/** ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ int */
+	/** ƒ^ƒCƒ€ƒAƒEƒg’l int */
 	var $timeout;
 
-	/** Proxy¥Û¥¹¥ÈÌ¾ */
+	/** ProxyƒzƒXƒg–¼ */
 	var $proxyHostName;
 
-	/** Proxy¥İ¡¼¥ÈÈÖ¹æ int */
+	/** Proxyƒ|[ƒg”Ô† int */
 	var $proxyPort;
 
-	/** ProxyÀÜÂ³¥¿¥¤¥à¥¢¥¦¥ÈÃÍ */
+	/** ProxyÚ‘±ƒ^ƒCƒ€ƒAƒEƒg’l */
 	var $proxyConnectTimeout;
 
-	/** ProxyÅÁÁ÷¥¿¥¤¥à¥¢¥¦¥ÈÃÍ */
+	/** Proxy“`‘—ƒ^ƒCƒ€ƒAƒEƒg’l */
 	var $proxyCommunicateTimeout;
 
-	/** Proxy»ÈÍÑÈ½Äê */
+	/** Proxyg—p”»’è */
 	var $isUsingProxy = false;
 
+	/** ƒfƒoƒbƒOƒƒOƒ}ƒXƒN‘ÎÛ€–Ú */
+	var $MASK_COLUMNS = array("card_number", "card_conf_number");
+
+	/** ˆ—Œ‹‰ÊƒƒbƒZ[ƒW */
+	var $resultMessage = '';
+
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿<br>
-	 * ÀÜÂ³ÀèURL¤òÀßÄê
-	 * 
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^<br>
+	 * Ú‘±æURL‚ğİ’è
+	 *
 	 * @param url String
 	 */
 	function HttpsRequestSender($url) {
 		$this->url = $url;
 		$this->proxyHostName = "";
 		$this->proxyPort = 0;
-		
+
 		$this->responseBody = null;
 		$this->responseHeader = null;
 	}
 
 	/**
-	 * ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Ñ¥¹¤òÀßÄê
-	 * 
+	 * ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒpƒX‚ğİ’è
+	 *
 	 * @param fileName String
 	 */
 	function setClientCertificatePath($fileName) {
 		$this->clientCertificatePath = $fileName;
 	}
 
+    /**
+     * ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è‚ğƒZƒbƒg
+     *
+     * @param $notUseClientCert String
+     */
+    function setNotUseClientCert($notUseClientCert) {
+        $this->notUseClientCert = $notUseClientCert;
+    }
+
 	/**
-	 * Ç§¾Ú¶É¾ÚÌÀ½ñ¥Ñ¥¹¤òÀßÄê
-	 * 
+	 * ”FØ‹ÇØ–¾‘ƒpƒX‚ğİ’è
+	 *
 	 * @param fileName String
 	 */
 	function setCaCertificatePath($fileName) {
 		$this->caCertificatePath = $fileName;
 	}
 
+    /**
+     * CAØ–¾‘–¢g—pİ’è‚ğƒZƒbƒg
+     *
+     * @param $notUseCaCert String
+     */
+    function setNotUseCaCert($notUseCaCert) {
+        $this->notUseCaCert = $notUseCaCert;
+    }
+
 	/**
-	 * ¥¿¥¤¥à¥¢¥¦¥È¤òÀßÄê
-	 * 
+	 * ƒ^ƒCƒ€ƒAƒEƒg‚ğİ’è
+	 *
 	 * @param timeout int
 	 */
 	function setTimeout($timeout) {
@@ -194,8 +229,8 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ProxyÀÜÂ³¥¿¥¤¥à¥¢¥¦¥È¤òÀßÄê
-	 * 
+	 * ProxyÚ‘±ƒ^ƒCƒ€ƒAƒEƒg‚ğİ’è
+	 *
 	 * @param proxyConnectTimeout int
 	 */
 	function setProxyConnectTimeout($proxyConnectTimeout) {
@@ -203,8 +238,8 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ProxyÅÁÁ÷¥¿¥¤¥à¥¢¥¦¥È¤òÀßÄê
-	 * 
+	 * Proxy“`‘—ƒ^ƒCƒ€ƒAƒEƒg‚ğİ’è
+	 *
 	 * @param proxyCommunicateTimeout int
 	 */
 	function setProxyCommunicateTimeout($proxyCommunicateTimeout) {
@@ -212,8 +247,8 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ProxyHostName, ProxyPort ¤òÀßÄê
-	 * 
+	 * ProxyHostName, ProxyPort ‚ğİ’è
+	 *
 	 * @param proxyHostName String
 	 * @param proxyPort int
 	 */
@@ -223,39 +258,49 @@ class HttpsRequestSender {
 		$this->isUsingProxy = false;
 
 		if (!StringUtil::isEmpty($this->proxyHostName) && 0 < $this->proxyPort) {
-			// Proxy¾ğÊó¤¬ÀßÄê¤µ¤ì¤¿°Ù¡¢true ¤òÀßÄê
+			// Proxyî•ñ‚ªİ’è‚³‚ê‚½ˆ×Atrue ‚ğİ’è
 			$this->isUsingProxy = true;
 		}
 	}
 
 	/**
-	 * Post¤ò¼Â»Ü
-	 * 
-	 * @param formData Map
-	 * @return mixed TRUE:À®¸ù¡¢Â¾:¥¨¥é¡¼¥³¡¼¥É
+	 * ˆ—Œ‹‰ÊƒƒbƒZ[ƒW
+	 *
+	 * @return resultMessage String
 	 */
-	function postRequestBody($formData) {
+	function getResultMessage() {
+		return $this->resultMessage;
+	}
 
-		// ÄÌ¿®³«»Ï
+	/**
+	 * Post‚ğÀ{
+	 *
+	 * @param formData Map
+	 * @param debugFlg
+	 * @return mixed TRUE:¬Œ÷A‘¼:ƒGƒ‰[ƒR[ƒh
+	 */
+	function postRequestBody($formData, $debugFlg) {
+
+		// ’ÊMŠJn
 		$this->initCurl();
 
 		if ($this->isUsingProxy) {
-			// ¥×¥í¥­¥··ĞÍ³¤ÇÄÌ¿®Àè¤ËÀÜÂ³
+			// ƒvƒƒLƒVŒo—R‚Å’ÊMæ‚ÉÚ‘±
 			$this->setProxy();
 		}
 
-		// ¥ê¥¯¥¨¥¹¥È¤òÁ÷¿®
-		$retCode = $this->send($formData);
+		// ƒŠƒNƒGƒXƒg‚ğ‘—M
+		$retCode = $this->send($formData, $debugFlg);
 
-		// ¥ì¥¹¥İ¥ó¥¹¤ò¼õ¿®
+		// ƒŒƒXƒ|ƒ“ƒX‚ğóM
 		$this->closeCurl();
 
 		return $retCode;
 	}
 
 	/**
-	 * ¼õ¿®¥Ç¡¼¥¿¤òÊÖ¤¹
-	 * 
+	 * óMƒf[ƒ^‚ğ•Ô‚·
+	 *
 	 * @return InputStream
 	 */
 	function getResponseBody() {
@@ -263,32 +308,42 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ÅÅÊ¸Ä¹¥Á¥§¥Ã¥¯
-	 * 
-	 * @return boolean true=NotError false=Error
+	 * “d•¶’·æ“¾
+	 *
+	 * @return telegramLength(byte)
 	 */
-	function isTelegramLength($formData) {
-		$rb = false;
-
-		// URL Length Check
-		$sb = $this->url;
-		$sb .= "?";
-		$sb .= $this->convertToUrlEncodedString($formData);
-
-		if (strlen($sb) <= HttpsRequestSender__TELEGRAM_LENGTH) {
-			$rb = true;
+	function getTelegramLength($formData) {
+		if ($formData == null) {
+			return 0;
 		}
 
-		return $rb;
+		$sb = $this->url;
+		$sb .= "?";
+
+		foreach($formData as $key => $value) {
+			$sb .= $key;
+			$sb .= "=";
+			$sb .= $value;
+			$sb .= "&";
+		}
+
+		$rs = "";
+
+		if (0 < strlen($sb)) {
+			$rs = substr($sb, 0, strlen($sb) - 1);
+		}
+
+		return strlen($rs);
 	}
 
 	/**
-	 * Í×µáÅÅÊ¸¤òºîÀ®
-	 * 
-	 * @param formData Map Í×µáÅÅÊ¸
-	 * @return String ºîÀ®¤·¤¿Í×µáÅÅÊ¸¡ÊURL¡Ë
+	 * —v‹“d•¶‚ğì¬
+	 *
+	 * @param formData Map —v‹“d•¶
+	 * @param debugLogFlg ƒfƒoƒbƒOƒƒOƒtƒ‰ƒO
+	 * @return String ì¬‚µ‚½—v‹“d•¶iURLj
 	 */
-	function convertToUrlEncodedString($formData) {
+	function convertToUrlEncodedString($formData, $debugLogFlg) {
 		$encodedString = "";
 		if ($formData == null) {
 			return "";
@@ -296,6 +351,12 @@ class HttpsRequestSender {
 
 		foreach($formData as $key => $value) {
 //			$this->outputDebugLog("param: " . $key . " = \"" . $value . "\"");
+
+			if ($debugLogFlg and in_array($key, $this->MASK_COLUMNS) and !StringUtil::isEmpty($value)) {
+				// ƒfƒoƒbƒOƒƒOo—ÍAƒ}ƒXƒN‘ÎÛ€–Ú‚Ìê‡‚Í‰º1Œ…ˆÈŠO‚ğƒ}ƒXƒN•¶š‚Åo—Í‚·‚é
+				$value = str_repeat(HttpsRequestSender__MASK_STRING, strlen($value) - 1) . substr($value, -1);
+			}
+
 			$tmp = $key;
 			$encodedString .= urlencode($tmp);
 			$encodedString .= "=";
@@ -313,13 +374,13 @@ class HttpsRequestSender {
 		return $rs;
 
 	}
-	
+
 	/**
-	 * ¥Ç¥Ğ¥Ã¥°¥í¥°½ĞÎÏ¥á¥½¥Ã¥É
-	 * ¥í¥°½ĞÎÏ¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹À¸À®¤Ë¼ºÇÔ¤·¤¿¤éÉ¸½à½ĞÎÏ¤Ë¥¨¥é¡¼¥á¥Ã¥»¡¼¥¸¤ò
-	 * ½ĞÎÏ¤¹¤ë¡£
-	 * 
-	 * @param msg String ½ĞÎÏ¥á¥Ã¥»¡¼¥¸
+	 * ƒfƒoƒbƒOƒƒOo—Íƒƒ\ƒbƒh
+	 * ƒƒOo—ÍƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX¶¬‚É¸”s‚µ‚½‚ç•W€o—Í‚ÉƒGƒ‰[ƒƒbƒZ[ƒW‚ğ
+	 * o—Í‚·‚éB
+	 *
+	 * @param msg String o—ÍƒƒbƒZ[ƒW
 	 */
 	function outputDebugLog($msg) {
 		if(StringUtil::isEmpty($msg)) return;
@@ -331,137 +392,124 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ProxyÀÜÂ³ÍÑ
-	 * 
+	 * ProxyÚ‘±—p
+	 *
 	 */
 	function setProxy() {
-		//curl_setopt($this->ch, CURLOPT_HTTPPROXYTUNNEL, true);
-		$this->curl_opts[] = '--proxytunnel';
-		//curl_setopt($this->ch, CURLOPT_PROXY, "http://" . $this->proxyHostName . ":" . $this->proxyPort);
-		$this->curl_opts[] = '--proxy ' . "http://" . $this->proxyHostName . ":" . $this->proxyPort;
+		curl_setopt($this->ch, CURLOPT_HTTPPROXYTUNNEL, true);
+		curl_setopt($this->ch, CURLOPT_PROXY, "http://" . $this->proxyHostName . ":" . $this->proxyPort);
+
 	}
 
-	var $curl_opts = array();
-	var $curl_command = '/usr/local/curl/bin/curl';
-
 	/**
-	 * ÀÜÂ³¤Î¤¿¤á¤Î½é´ü²½½èÍı
-	 * 
+	 * Ú‘±‚Ì‚½‚ß‚Ì‰Šú‰»ˆ—
+	 *
 	 */
 	function initCurl() {
 		$rslt = true;
-		// ½é´ü²½
-		//$this->ch = curl_init($this->url);
+		// ‰Šú‰»
+		$this->ch = curl_init($this->url);
 
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0 );
-		$this->curl_opts[] = '--http1.0';
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
-		// ¢¬ÉÔÍ×
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_POST, true);
-		// ¢¬--data¤Ç¼«Æ°Åª¤ËPOST¤Î¤Ê¤ë¤Î¤ÇÉÔÍ×
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_HEADER, true);
-		$this->curl_opts[] = '--include';
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0 );
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_POST, true);
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_HEADER, true);
 
-		// ¾ÚÌÀ½ñ
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, true);
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSL_VERIFYHOST, false);
-		// ¢¬¤³¤ÎÁÈ¤ß¹ç¤ï¤»¤òËşÂ­¤¹¤ë¥³¥Ş¥ó¥É¥é¥¤¥ó¥ª¥×¥·¥ç¥ó¤ÏÂ¸ºß¤·¤Ê¤¤¤Î¤ÇVERIFYPEER¤Ï¼Î¤Æ¤Ş¤¹
-		$this->curl_opts[] = '--insecure';
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSLCERT, $this->clientCertificatePath);
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSLKEYPASSWD, $this->KEYSTORE_PASSWORD);
-		$this->curl_opts[] = '--cert ' . $this->clientCertificatePath . ':' . $this->KEYSTORE_PASSWORD;
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_CAINFO, $this->caCertificatePath);
-		$this->curl_opts[] = '--cacert ' . $this->caCertificatePath;
-		
-		// ¥¿¥¤¥à¥¢¥¦¥È
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_TIMEOUT, $this->timeout);
-		$this->curl_opts[] = '--max-time ' . $this->timeout;
-		//$rslt = $rslt && curl_setopt($this->ch, CURLOPT_CONNECTTIMEOUT, $this->proxyConnectTimeout);
-		$this->curl_opts[] = '--connect-timeout ' . $this->proxyConnectTimeout;
+		// Ø–¾‘
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSL_VERIFYHOST, false);
+
+        // ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘g—p
+        if ($this->notUseClientCert != "true") {
+            $rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSLCERT, $this->clientCertificatePath);
+            $rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSLKEYPASSWD, $this->KEYSTORE_PASSWORD);
+        }
+
+        // CAØ–¾‘g—p
+        if ($this->notUseCaCert === "true") {
+            $rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, false);
+        } else {
+            $rslt = $rslt && curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, true);
+            $rslt = $rslt && curl_setopt($this->ch, CURLOPT_CAINFO, $this->caCertificatePath);
+        }
+
+		// ƒ^ƒCƒ€ƒAƒEƒg
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_TIMEOUT, $this->timeout);
+		$rslt = $rslt && curl_setopt($this->ch, CURLOPT_CONNECTTIMEOUT, $this->proxyConnectTimeout);
 
 		return $rslt;
 	}
 
 	/**
-	 * ¥ê¥¯¥¨¥¹¥ÈÀ¸À®¤ÈÁ÷¿®
-	 * 
-	 * @param formData Map Í×µáÅÅÊ¸
-	 * @return mixed TRUE:À®¸ù¡¢Â¾:¥¨¥é¡¼¥³¡¼¥É
+	 * ƒŠƒNƒGƒXƒg¶¬‚Æ‘—M
+	 *
+	 * @param formData Map —v‹“d•¶
+	 * @param debugFlg ƒfƒoƒbƒOƒtƒ‰ƒO
+	 * @return mixed TRUE:¬Œ÷A‘¼:ƒGƒ‰[ƒR[ƒh
 	 */
-	function send($formData) {
-		// ¥ê¥¯¥¨¥¹¥È¤ò Map ¤«¤é String ¤ËÊÑ´¹
+	function send($formData, $debugFlg) {
+		// ƒŠƒNƒGƒXƒg‚ğ Map ‚©‚ç String ‚É•ÏŠ·
 
-		$query = $this->convertToUrlEncodedString($formData);
+		$query = $this->convertToUrlEncodedString($formData, false);
 
 		$header = array();
-		//$header[] = HttpsRequestSender__CONTENT_TYPE;
-		//$header[] = HttpsRequestSender__HTTP_ENCODING;
-		$header[] = 'Content-Type: application/x-www-form-urlencoded; charset=Windows-31J';
-		$header[] = HttpsRequestSender__CONTENT_LENGTH . ": " 
+		$header[] = HttpsRequestSender__CONTENT_TYPE;
+		$header[] = HttpsRequestSender__HTTP_ENCODING;
+		$header[] = HttpsRequestSender__CONTENT_LENGTH . ": "
 			. (StringUtil::isEmpty($query)? "0" : strlen($query));
 		$header[] = HttpsRequestSender__USER_AGENT . ": " . "curl_php";
+		curl_setopt($this->ch, CURLOPT_HTTPHEADER, $header);
+		curl_setopt($this->ch, CURLOPT_POSTFIELDS, $query);
 
-		//curl_setopt($this->ch, CURLOPT_HTTPHEADER, $header);
-		foreach ($header as $h) {
-			$this->curl_opts[] = '--header \'' . $h . '\'';
+		// ƒŠƒNƒGƒXƒg“à—e ƒƒOo—Í
+		if ($debugFlg) {
+			$debugQuery = $this->convertToUrlEncodedString($formData, true);
+			$this->outputDebugLog("request: " . $debugQuery);
 		}
-		//curl_setopt($this->ch, CURLOPT_POSTFIELDS, $query);
-		$this->curl_opts[] = '--data \'' . $query . '\'';
-		
-		$this->curl_opts[] = '--silent';
 
-//		$this->outputDebugLog("Query: " . $query);		
-		//$str = curl_exec($this->ch);
-		$command = 
-                 $this->curl_command . ' ' . 
-                 implode(' ', $this->curl_opts) . ' \'' . $this->url . '\'';
-		exec($command, $str, $return_var);
+		$str = curl_exec($this->ch);
 
-		// join lines.
-		$str = implode("\r\n", $str);
-		echo $str, "\n";
-
-		//if ($str === false && curl_errno($this->ch) != 0) {
-		if ($return_var != 0) {
-			//return $this->procError($this->ch);
-			return $this->procError($return_var, $str);
+		if ($str === false && curl_errno($this->ch) != 0) {
+			return $this->procError();
 		}
-		
-		$this->outputDebugLog("Response: " . $str);		
+
 		$data = $str;
 		$retCode = $this->parseResponse($data);
+
+		// ƒŒƒXƒ|ƒ“ƒX“à—e ƒƒOo—Í
+		if ($debugFlg) {
+			$this->outputDebugLog("response: \r\n" . $this->responseBody);
+		}
 
 		return $retCode;
 	}
 
 	/**
-	 * Curl¤Î¥¨¥é¡¼½èÍı
-	 * @return mixed True:ÌäÂê¤Ê¤·¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É
+	 * Curl‚ÌƒGƒ‰[ˆ—
+	 * @return mixed True:–â‘è‚È‚µA‘¼FƒGƒ‰[ƒR[ƒh
 	 */
-	function procError($errorNo, $msg) {
-		//$errorNo = curl_errno($this->ch);
-		//$errorMsg = $errorNo . ": " . curl_error($this->ch); 
-		$errorMsg = $errorNo . ": " . $msg;
+	function procError() {
+		$errorNo = curl_errno($this->ch);
+		$errorMsg = $errorNo . ": " . curl_error($this->ch);
 		$retCode = true;
-		
+
 		if ($errorNo <= HttpsRequestSender__CURLE_COULDNT_CONNECT) { // 7
-			// ÀÜÂ³ÌäÂê
+			// Ú‘±–â‘è
 			$retCode = PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 			$this->outputDebugLog($errorMsg);
 		} else if ($errorNo == HttpsRequestSender__CURLE_COULDNT_CONNECT) { // 7
-			// ÀÜÂ³ÌäÂê
+			// Ú‘±–â‘è
 			$retCode = PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 			$this->outputDebugLog($errorMsg);
-		} else if ($errorNo == HttpsRequestSender__CURLE_SSL_CERTPROBLEM) { 
-			// Ç§¾ÚÌäÂê
+		} else if ($errorNo == HttpsRequestSender__CURLE_SSL_CERTPROBLEM) {
+			// ”FØ–â‘è
 			$retCode = PaygentB2BModuleConnectException__CERTIFICATE_ERROR;
 			$this->outputDebugLog($errorMsg);
 		} else if ($errorNo == HttpsRequestSender__CURLE_SSL_CACERT) {
-			// Ç§¾ÚÌäÂê
+			// ”FØ–â‘è
 			$retCode = PaygentB2BModuleConnectException__CERTIFICATE_ERROR;
 			$this->outputDebugLog($errorMsg);
-		} else if ($errorNo == HttpsRequestSender__CURLE_SSL_CACERT_BADFILE) {	// CURLE_SSL_CACERT_BADFILE 
-			// Ç§¾ÚÌäÂê
+		} else if ($errorNo == HttpsRequestSender__CURLE_SSL_CACERT_BADFILE) {	// CURLE_SSL_CACERT_BADFILE
+			// ”FØ–â‘è
 			$retCode = PaygentB2BModuleConnectException__CERTIFICATE_ERROR;
 			$this->outputDebugLog($errorMsg);
 		} else if ($errorNo == HttpsRequestSender__CURLE_HTTP_RETURNED_ERROR) {
@@ -469,9 +517,19 @@ class HttpsRequestSender {
 			$retCode = PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 			$this->outputDebugLog($errorMsg);
 		} else {
-			// ¤½¤ÎÂ¾¤Î¥¨¥é¡¼
+			// ‚»‚Ì‘¼‚ÌƒGƒ‰[
 			$retCode = PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 			$this->outputDebugLog($errorMsg);
+		}
+		$this->resultMessage = "$retCode: $errorMsg";
+
+		// Ø–¾‘ƒtƒ@ƒCƒ‹‚Ìó‘Ôƒ`ƒFƒbƒN
+		foreach (array($this->clientCertificatePath, $this->caCertificatePath) as $path) {
+			if (!file_exists($path)) {
+				$this->resultMessage .= "(file is not exists: $path)";
+			} elseif (!is_readable($path)) {
+				$this->resultMessage .= "(file is not readable: $path)";
+			}
 		}
 
 		trigger_error("$retCode: Http request ended with errors.", E_USER_WARNING);
@@ -479,30 +537,30 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¤ò¼õ¿®¡£
-	 * 
-	 * @param $data ¥ì¥¹¥İ¥ó¥¹Ê¸»úÎó
-	 * @return mixed TRUE:À®¸ù¡¢Â¾:¥¨¥é¡¼¥³¡¼¥É
+	 * ƒŒƒXƒ|ƒ“ƒX‚ğóMB
+	 *
+	 * @param $data ƒŒƒXƒ|ƒ“ƒX•¶š—ñ
+	 * @return mixed TRUE:¬Œ÷A‘¼:ƒGƒ‰[ƒR[ƒh
 	 */
 	function parseResponse($data) {
 
-		// ¥ì¥¹¥İ¥ó¥¹¼õ¿®
+		// ƒŒƒXƒ|ƒ“ƒXóM
 		$line = null;
 		$retCode = HttpsRequestSender__HTTP_STATUS_INIT_VALUE;
 		$bHeaderOver = false;
 		$resBodyStart = 0;
-	
+
 		$lines = mb_split(HttpsRequestSender__CRLF, $data);
-		// ¥Ø¥Ã¥À¤Ş¤Ç¤òÆÉ¤ß¹ş¤à
+		// ƒwƒbƒ_‚Ü‚Å‚ğ“Ç‚İ‚Ş
 		foreach($lines as $i => $line) {
-			
+
 			if (StringUtil::isEmpty($line)) {
-				 break;	
+				 break;
 			}
 			$resBodyStart += strlen($line) + strlen(HttpsRequestSender__CRLF);
-			
+
 			if ($retCode === HttpsRequestSender__HTTP_STATUS_INIT_VALUE) {
-				// ¥¹¥Æ¡¼¥¿¥¹¤Î²òÀÏ
+				// ƒXƒe[ƒ^ƒX‚Ì‰ğÍ
 				$retCode = $this->parseStatusLine($line);
 				if ($retCode === true) {
 					continue;
@@ -511,29 +569,31 @@ class HttpsRequestSender {
 				return $retCode;
 			}
 
-			// ¥Ø¥Ã¥À¤Î²òÀÏ
+			// ƒwƒbƒ_‚Ì‰ğÍ
 			if (!$this->parseResponseHeader($line)) {
 				continue;
 			}
 		}
-		$resBodyStart += strlen(HttpsRequestSender__CRLF);
+		$info = curl_getinfo($this->ch);
+		// linuxƒT[ƒo‚Åheader_size‚ÉŒë‚Á‚½’l‚ªİ’è‚³‚ê‚é–Û‚ªŒ©‚ç‚ê‚½‚½‚ßsize_download‚ÅƒLƒƒƒvƒ`ƒƒ‚µ‚Ä‚¢‚é
+		$resBodyStart = -($info['size_download']);
 		$this->responseBody = substr($data, $resBodyStart);
 
 		return true;
 	}
 
 	/**
-	 * ¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥ó¤ò²òÀÏ
+	 * ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ğ‰ğÍ
 	 * (HTTP-Version SP Status-Code SP Reason-Phrase CRLF)
-	 * 
-	 * @param line String ¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥ó
-	 * @return mixed TRUE:À®¸ù¡¢Â¾:¥¨¥é¡¼¥³¡¼¥É
+	 *
+	 * @param line String ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“
+	 * @return mixed TRUE:¬Œ÷A‘¼:ƒGƒ‰[ƒR[ƒh
 	 */
 	function parseStatusLine($line) {
 
 		if (StringUtil::isEmpty($line)) {
-				
-			// ÉÔÀµ¤Ê¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤ò¼õ¤±¼è¤Ã¤¿
+
+			// •s³‚ÈƒXƒe[ƒ^ƒXƒR[ƒh‚ğó‚¯æ‚Á‚½
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 		}
 
@@ -542,22 +602,22 @@ class HttpsRequestSender {
 		if (StringUtil::isNumeric($statusLine[1])) {
 			$this->statusCode = intVal($statusLine[1]);
 		} else {
-			
-			// ÉÔÀµ¤Ê¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤ò¼õ¤±¼è¤Ã¤¿
+
+			// •s³‚ÈƒXƒe[ƒ^ƒXƒR[ƒh‚ğó‚¯æ‚Á‚½
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 		}
 
-		if (strpos($statusLine[0], HttpsRequestSender__HTTP . "/") != 0 
+		if (strpos($statusLine[0], HttpsRequestSender__HTTP . "/") != 0
 				|| !StringUtil::isNumericLength($statusLine[1], HttpsRequestSender__REGEXPSTATUS_LEN)) {
 
-			// ÉÔÀµ¤Ê¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤ò¼õ¤±¼è¤Ã¤¿
+			// •s³‚ÈƒXƒe[ƒ^ƒXƒR[ƒh‚ğó‚¯æ‚Á‚½
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 		}
-		
-		if (!((HttpsRequestSender__HTTP_SUCCESS <= $this->statusCode) 
+
+		if (!((HttpsRequestSender__HTTP_SUCCESS <= $this->statusCode)
 			&& ($this->statusCode <= HttpsRequestSender__HTTP_PARTIAL_CONTENT))) {
 
-			// HTTP Status ¤¬ Success Code (200 - 206) ¤Ç¤Ê¤¤¾ì¹ç
+			// HTTP Status ‚ª Success Code (200 - 206) ‚Å‚È‚¢ê‡
 			return PaygentB2BModuleConnectException__KS_CONNECT_ERROR;
 		}
 
@@ -565,15 +625,15 @@ class HttpsRequestSender {
 	}
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¥Ø¥Ã¥À¤ò°ì¹Ô²òÀÏ¤·¤Æ¡¢ÆâÉô¤Ë³ÊÇ¼¡£<br>
-	 * ¥ì¥¹¥İ¥ó¥¹¥Ø¥Ã¥À¤ÎÃÍ¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤Ï¡¢null¤òÀßÄê¡£
-	 * 
-	 * @param line String ¥µ¡¼¥Ğ¤«¤é¼õ¤±¼è¤Ã¤¿¥ì¥¹¥İ¥ó¥¹¹Ô
-	 * @return boolean true=¥Ø¥Ã¥À²òÀÏ¡¦³ÊÇ¼´°Î», false=¥Ø¥Ã¥À¤Ç¤Ï¤Ê¤¤¡Ê¥Ø¥Ã¥ÀÉô½ªÎ»¡Ë
+	 * ƒŒƒXƒ|ƒ“ƒXƒwƒbƒ_‚ğˆês‰ğÍ‚µ‚ÄA“à•”‚ÉŠi”[B<br>
+	 * ƒŒƒXƒ|ƒ“ƒXƒwƒbƒ_‚Ì’l‚ª‘¶İ‚µ‚È‚¢ê‡‚ÍAnull‚ğİ’èB
+	 *
+	 * @param line String ƒT[ƒo‚©‚çó‚¯æ‚Á‚½ƒŒƒXƒ|ƒ“ƒXs
+	 * @return boolean true=ƒwƒbƒ_‰ğÍEŠi”[Š®—¹, false=ƒwƒbƒ_‚Å‚Í‚È‚¢iƒwƒbƒ_•”I—¹j
 	 */
 	function parseResponseHeader($line) {
 		if (StringUtil::isEmpty($line)) {
-			// HEADER½ªÎ»
+			// HEADERI—¹
 			return false;
 		}
 
@@ -584,7 +644,7 @@ class HttpsRequestSender {
 		}
 
 		if (count($headerStr) == 1 || strlen(trim($headerStr[1])) == 0) {
-			// ÃÍ¤¬Â¸ºß¤·¤Ê¤¤ or ÃÍ¤¬¶õÊ¸»úÎó
+			// ’l‚ª‘¶İ‚µ‚È‚¢ or ’l‚ª‹ó•¶š—ñ
 			$this->responseHeader[$headerStr[0]] = null;
 		} else {
 			$this->responseHeader[$headerStr[0]] = trim($headerStr[1]);
@@ -595,10 +655,10 @@ class HttpsRequestSender {
 
 	/**
 	 * Close curl
-	 * 
+	 *
 	 */
 	function closeCurl() {
-		// ¥×¥í¥­¥·¥½¥±¥Ã¥ÈCLOSE
+		// ƒvƒƒLƒVƒ\ƒPƒbƒgCLOSE
 		if ($this->ch != null) {
 			curl_close($this->ch);
 			$this->ch = null;

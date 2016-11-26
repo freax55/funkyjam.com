@@ -8,36 +8,36 @@
  * /
 
 /**
- * ÀÜÂ³¥â¥¸¥å¡¼¥ë¡¡StringUtitily
+ * Ú‘±ƒ‚ƒWƒ…[ƒ‹@StringUtitily
  *
- * @version $Revision: 1.6 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 class StringUtil{
 
-	/** ¶¦ÄÌ¤ÇÊÑ´¹¤¹¤ë¥«¥¿¥«¥ÊÊ¸»úÎó¤Î¥Ş¥Ã¥Ô¥ó¥°¾ğÊó¤ò³ÊÇ¼¤·¤Æ¤¤¤ë¥Ş¥Ã¥× */
+	/** ‹¤’Ê‚Å•ÏŠ·‚·‚éƒJƒ^ƒJƒi•¶š—ñ‚Ìƒ}ƒbƒsƒ“ƒOî•ñ‚ğŠi”[‚µ‚Ä‚¢‚éƒ}ƒbƒv */
 	var $katakanaMap = array();
 	
-	var $zenKana = array("¥¢", "¥¤", "¥¦", "¥¨", "¥ª", "¥«", "¥­", "¥¯", "¥±", "¥³", 
-			"¥µ", "¥·", "¥¹", "¥»", /*"¥½", */"¥¿", "¥Á", "¥Ä", "¥Æ", "¥È", "¥Ê", "¥Ë",
-			"¥Ì", "¥Í", "¥Î", "¥Ï", "¥Ò", "¥Õ", "¥Ø", "¥Û", "¥Ş", "¥ß", "¥à", "¥á",
-			"¥â", "¥ä", "¥æ", "¥è", "¥é", "¥ê", "¥ë", "¥ì", "¥í", "¥ï", "¥ò", "¥ó",	
-			"¥¬", "¥®", "¥°", "¥²", "¥´", "¥¶", "¥¸", "¥º", "¥¼", "¥¾", "¥À", "¥Â",
-			"¥Å", "¥Ç", "¥É", "¥Ğ", "¥Ó", "¥Ö", "¥Ù", "¥Ü", "¥ô", "¥Ñ", "¥Ô", "¥×",
-			"¥Ú", "¥İ", "¥¡", "¥£", "¥¥", "¥§", "¥©", "¥ã", "¥å", "¥ç", "¥Ã", "¡¼" );
+	var $zenKana = array("ƒA", "ƒC", "ƒE", "ƒG", "ƒI", "ƒJ", "ƒL", "ƒN", "ƒP", "ƒR", 
+			"ƒT", "ƒV", "ƒX", "ƒZ", /*"ƒ\", */"ƒ^", "ƒ`", "ƒc", "ƒe", "ƒg", "ƒi", "ƒj",
+			"ƒk", "ƒl", "ƒm", "ƒn", "ƒq", "ƒt", "ƒw", "ƒz", "ƒ}", "ƒ~", "ƒ€", "ƒ",
+			"ƒ‚", "ƒ„", "ƒ†", "ƒˆ", "ƒ‰", "ƒŠ", "ƒ‹", "ƒŒ", "ƒ", "ƒ", "ƒ’", "ƒ“",	
+			"ƒK", "ƒM", "ƒO", "ƒQ", "ƒS", "ƒU", "ƒW", "ƒY", "ƒ[", "ƒ]", "ƒ_", "ƒa",
+			"ƒd", "ƒf", "ƒh", "ƒo", "ƒr", "ƒu", "ƒx", "ƒ{", "ƒ”", "ƒp", "ƒs", "ƒv",
+			"ƒy", "ƒ|", "ƒ@", "ƒB", "ƒD", "ƒF", "ƒH", "ƒƒ", "ƒ…", "ƒ‡", "ƒb", "[" );
 
-	var $hanKana = array("±", "²", "³", "´", "µ", "¶", "·", "¸", "¹", "º",
-			"»", "¼", "½", "¾", "¿", "À", "Á", "Â", "Ã", "Ä", "Å", "Æ",
-			"Ç", "È", "É", "Ê", "Ë", "Ì", "Í", "Î", "Ï", "Ğ", "Ñ", "Ò",
-			"Ó", "Ô", "Õ", "Ö", "×", "Ø", "Ù", "Ú", "Û", "Ü", "¦", "İ",
-			"¶Ş", "·Ş", "¸Ş", "¹Ş", "ºŞ", "»Ş", "¼Ş", "½Ş", "¾Ş", "¿Ş",
-			"ÀŞ", "ÁŞ", "ÂŞ", "ÃŞ", "ÄŞ", "ÊŞ", "ËŞ", "ÌŞ", "ÍŞ", "ÎŞ",
-			"³Ş", "Êß", "Ëß", "Ìß", "Íß", "Îß", "§", "¨", "©", "ª", "«",
-			"¬", "­", "®", "¯", "°" );
+	var $hanKana = array("±", "²", "³", "´", "µ", "¶", "·", "¸", "¹", "º",
+			"»", "¼", "½", "¾", "¿", "À", "Á", "Â", "Ã", "Ä", "Å", "Æ",
+			"Ç", "È", "É", "Ê", "Ë", "Ì", "Í", "Î", "Ï", "Ğ", "Ñ", "Ò",
+			"Ó", "Ô", "Õ", "Ö", "×", "Ø", "Ù", "Ú", "Û", "Ü", "¦", "İ",
+			"¶Ş", "·Ş", "¸Ş", "¹Ş", "ºŞ", "»Ş", "¼Ş", "½Ş", "¾Ş", "¿Ş",
+			"ÀŞ", "ÁŞ", "ÂŞ", "ÃŞ", "ÄŞ", "ÊŞ", "ËŞ", "ÌŞ", "ÍŞ", "ÎŞ",
+			"³Ş", "Êß", "Ëß", "Ìß", "Íß", "Îß", "§", "¨", "©", "ª", "«",
+			"¬", "­", "®", "¯", "°" );
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥È¥³¥ó¥¹¥È¥é¥¯¥¿
+	 * ƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^
 	 */
 	function StringUtil() {
 
@@ -51,24 +51,24 @@ class StringUtil{
 	}
 	
 	/**
-	 * ¥Ñ¥é¥á¡¼¥¿¤¬ null ¤Ş¤¿¤Ï¶õÊ¸»ú¤«¤òÈ½ÃÇ¤¹¤ë
+	 * ƒpƒ‰ƒ[ƒ^‚ª null ‚Ü‚½‚Í‹ó•¶š‚©‚ğ”»’f‚·‚é
 	 * 
-	 * @param str String È½Äê¤¹¤ëÊ¸»úÎó
-	 * @return <code>null</code>¤Ş¤¿¤Ï¶õÊ¸»ú¤Î¾ì¹ç¡¢<code>true</code>
+	 * @param str String ”»’è‚·‚é•¶š—ñ
+	 * @return <code>null</code>‚Ü‚½‚Í‹ó•¶š‚Ìê‡A<code>true</code>
 	 */
-	function isEmpty($str) {
+	static function isEmpty($str) {
 		return (!isset($str) || strlen(trim($str)) <= 0);
 	}
 
 	/**
-	 * split(Ê¬³ä¿ôÀ©¸ÂÈÇ)
+	 * split(•ªŠ„”§ŒÀ”Å)
 	 * 
-	 * @param str String Ê¬³äÂĞ¾İÊ¸»úÎó
-	 * @param delim String ¶èÀÚ¤êÊ¸»ú
-	 * @param limit int ·ë²Ì¤ÎïçÃÍ
-	 * @return String[] Ê¬³ä¸å¤ÎÊ¸»úÇÛÎó
+	 * @param str String •ªŠ„‘ÎÛ•¶š—ñ
+	 * @param delim String ‹æØ‚è•¶š
+	 * @param limit int Œ‹‰Ê‚Ìè‡’l
+	 * @return String[] •ªŠ„Œã‚Ì•¶š”z—ñ
 	 */
-	function split($str, $delim, $limit = -1) {
+	static function split($str, $delim, $limit = -1) {
 		
 		$delimLength = strlen($delim);
 		$pos = 0;
@@ -96,7 +96,7 @@ class StringUtil{
 		$rs = &$list;
 
 		if ((0 < $limit) && ($limit < count($rs))) {
-			// limit ¤è¤ê¡¢Ê¬³ä¿ô¤¬Â¿¤¤¾ì¹ç¡¢Ê¬³ä¿ô¤ò limit ¤Ë¹ç¤ï¤»¤ë
+			// limit ‚æ‚èA•ªŠ„”‚ª‘½‚¢ê‡A•ªŠ„”‚ğ limit ‚É‡‚í‚¹‚é
 			$temp = array();
 
 			$pos = 0;
@@ -117,25 +117,25 @@ class StringUtil{
 	}
 
 	/**
-	 * ¿ôÃÍÈ½Äê
+	 * ”’l”»’è
 	 * 
-	 * @param str String ¿ôÃÍÈ½ÄêÂĞ¾İÊ¸»úÎó
-	 * @return boolean true=¿ôÃÍ false=¿ôÃÍ°Ê³°
+	 * @param str String ”’l”»’è‘ÎÛ•¶š—ñ
+	 * @return boolean true=”’l false=”’lˆÈŠO
 	 */
-	function isNumeric($str) {
+	static function isNumeric($str) {
 		$rb = is_numeric($str);
 
 		return $rb;
 	}
 
 	/**
-	 * ¿ôÃÍ¡¢·å¿ôÈ½Äê
+	 * ”’lAŒ…””»’è
 	 * 
-	 * @param str String ¿ôÃÍÈ½ÄêÂĞ¾İÊ¸»úÎó
-	 * @param len int È½ÄêÂĞ¾İ Length
-	 * @return boolean true=·å¿ôÆâ¿ôÃÍ false=¿ôÃÍ¤Ç¤Ê¤¤ or ·å¿ô°ã¤¤
+	 * @param str String ”’l”»’è‘ÎÛ•¶š—ñ
+	 * @param len int ”»’è‘ÎÛ Length
+	 * @return boolean true=Œ…”“à”’l false=”’l‚Å‚È‚¢ or Œ…”ˆá‚¢
 	 */
-	function isNumericLength($str, $len) {
+	static function isNumericLength($str, $len) {
 		$rb = false;
 
 		if (StringUtil::isNumeric($str)) {
@@ -148,12 +148,12 @@ class StringUtil{
 	}
 
 	/**
-	 * Á´³Ñ¥«¥¿¥«¥ÊÊ¸»ú¤òÈ¾³Ñ¥«¥¿¥«¥Ê¤Î³ºÅöÊ¸»ú¤ËÊÑ´¹¤¹¤ë¡£ »ØÄê¤µ¤ì¤¿Ê¸»úÎó¤¬null¤Î¾ì¹ç¤Ïnull¤òÊÖ¤¹¡£
+	 * ‘SŠpƒJƒ^ƒJƒi•¶š‚ğ”¼ŠpƒJƒ^ƒJƒi‚ÌŠY“–•¶š‚É•ÏŠ·‚·‚éB w’è‚³‚ê‚½•¶š—ñ‚ªnull‚Ìê‡‚Ínull‚ğ•Ô‚·B
 	 * 
-	 * @param src String ÊÑ´¹¤¹¤ë¸µ¤ÎÊ¸»úÎó
-	 * @return String ÊÑ´¹¸å¤ÎÊ¸»úÎó
+	 * @param src String •ÏŠ·‚·‚éŒ³‚Ì•¶š—ñ
+	 * @return String •ÏŠ·Œã‚Ì•¶š—ñ
 	 */
-	function convertKatakanaZenToHan($src) {
+	static function convertKatakanaZenToHan($src) {
 		if ($src == null ) {
 			return null;
 		}
@@ -162,14 +162,14 @@ class StringUtil{
 	}
 
 	/**
-	 * »ØÄê¤µ¤ì¤¿Ê¸»úÎó¤ò»ØÄê¤µ¤ì¤¿¥Ş¥Ã¥Ô¥ó¥°¾ğÊó¤Ë´ğ¤Å¤­ ÊÑ´¹¤·¤¿·ë²Ì¤ÎÊ¸»úÎó¤òÊÖ¤¹¡£ »ØÄê¤µ¤ì¤¿Ê¸»úÎó¤¬null¤Î¾ì¹ç¤Ïnull¤òÊÖ¤¹¡£
+	 * w’è‚³‚ê‚½•¶š—ñ‚ğw’è‚³‚ê‚½ƒ}ƒbƒsƒ“ƒOî•ñ‚ÉŠî‚Ã‚« •ÏŠ·‚µ‚½Œ‹‰Ê‚Ì•¶š—ñ‚ğ•Ô‚·B w’è‚³‚ê‚½•¶š—ñ‚ªnull‚Ìê‡‚Ínull‚ğ•Ô‚·B
 	 * 
-	 * @param src String ÊÑ´¹¤¹¤ë¸µ¤ÎÊ¸»úÎó
+	 * @param src String •ÏŠ·‚·‚éŒ³‚Ì•¶š—ñ
 	 * @param convertMap
-	 *            Map ÊÑ´¹¤ÎÂĞ¾İ¤È¤Ê¤ëÊ¸»ú¤ÈÊÑ´¹¸å¤Î¥Ş¥Ã¥Ô¥ó¥°¾ğÊó¤ò³ÊÇ¼¤·¤Æ¤¤¤ë¥Ş¥Ã¥×
-	 * @return String ÊÑ´¹¸å¤ÎÊ¸»úÎó
+	 *            Map •ÏŠ·‚Ì‘ÎÛ‚Æ‚È‚é•¶š‚Æ•ÏŠ·Œã‚Ìƒ}ƒbƒsƒ“ƒOî•ñ‚ğŠi”[‚µ‚Ä‚¢‚éƒ}ƒbƒv
+	 * @return String •ÏŠ·Œã‚Ì•¶š—ñ
 	 */
-	function convert($src, $convertMap) {
+	static function convert($src, $convertMap) {
 		if ($src == null) {
 			return null;
 		}
@@ -185,7 +185,7 @@ class StringUtil{
 		return $result;
 	}
 
-	function toChars($str) {
+	static function toChars($str) {
 		
 		$chars = array();
 		for($i=0; $i<mb_strlen($str); $i++) {
@@ -196,7 +196,7 @@ class StringUtil{
 		return $chars;
 	}
 }
-	// ½é´ü²½
+	// ‰Šú‰»
 	$StringUtilInit = new StringUtil();
 	$StringUtilInit = null;
 ?>

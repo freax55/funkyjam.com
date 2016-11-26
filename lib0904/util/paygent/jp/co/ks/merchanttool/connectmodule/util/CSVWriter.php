@@ -8,10 +8,10 @@
  */
 
 /**
- * CSVWriter CSV·Á¼°¤Ç¥Õ¥¡¥¤¥ë¤ò½ĞÎÏ¤¹¤ë¡£
- * »ÈÍÑÊıË¡¡§<br />
+ * CSVWriter CSVŒ`®‚Åƒtƒ@ƒCƒ‹‚ğo—Í‚·‚éB
+ * g—p•û–@F<br />
  * <pre><code>
- * // writer¥ª¥Ö¥¸¥§¥¯¥È¤òºî¤ë¡£¥Ç¥Õ¥©¥ë¥È¤ÏShift_JIS¥¨¥ó¥³¡¼¥É
+ * // writerƒIƒuƒWƒFƒNƒg‚ğì‚éBƒfƒtƒHƒ‹ƒg‚ÍShift_JISƒGƒ“ƒR[ƒh
  * CSVWriter writer = null;
  * try {
  *     writer = new CSVWriter(
@@ -22,7 +22,7 @@
  *     list.add("abc");
  *     list.add("");
  *     list.add(",");
- *     list.add("¤Ë¤Û¤ó¤´");
+ *     list.add("‚É‚Ù‚ñ‚²");
  *     writer.writeOneLine(list);
  *     list.remove(0);
  *     list.add(0, "2");
@@ -31,21 +31,21 @@
  *     writer.close();
  * }
  * </code></pre>
- * @version $Revision: 1.4 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
-	/** ¥Õ¥¡¥¤¥ë½ĞÎÏÍÑEncoding Shift_JIS */
+	/** ƒtƒ@ƒCƒ‹o—Í—pEncoding Shift_JIS */
 	define("CSVWriter__ENCODING_SJIS", "Shift_JIS");
-	/** ¥Õ¥¡¥¤¥ë½ĞÎÏÍÑEncoding EUC-JP */
+	/** ƒtƒ@ƒCƒ‹o—Í—pEncoding EUC-JP */
 	define("CSVWriter__ENCODING_EUC", "EUC_JP");
-	/** ¥Õ¥¡¥¤¥ë½ĞÎÏÍÑEncoding MS932 */
+	/** ƒtƒ@ƒCƒ‹o—Í—pEncoding MS932 */
 	define("CSVWriter__ENCODING_MS932", "SJIS-win");	//"Windows-31J";
-	    /** ¥Õ¥¡¥¤¥ë½ĞÎÏ»ş¤Î²ş¹Ô¥³¡¼¥É \r\n */
+	    /** ƒtƒ@ƒCƒ‹o—Í‚Ì‰üsƒR[ƒh \r\n */
 	define("CSVWriter__WINDOWS_NEWLINE", "\r\n");
-	    /** ¥Õ¥¡¥¤¥ë½ĞÎÏ»ş¤Î²ş¹Ô¥³¡¼¥É \n */
+	    /** ƒtƒ@ƒCƒ‹o—Í‚Ì‰üsƒR[ƒh \n */
 	define("CSVWriter__UNIX_NEWLINE", "\n");
-	    /** ¥Õ¥¡¥¤¥ë½ĞÎÏ»ş¤Î²ş¹Ô¥³¡¼¥É \r */
+	    /** ƒtƒ@ƒCƒ‹o—Í‚Ì‰üsƒR[ƒh \r */
 	define("CSVWriter__MAC_NEWLINE", "\r");
 
 class CSVWriter {
@@ -57,10 +57,10 @@ class CSVWriter {
     var $newLine = CSVWriter__WINDOWS_NEWLINE;
 
     /**
-     * ¥³¥ó¥¹¥È¥é¥¯¥¿¡£¥¨¥ó¥³¡¼¥ÉµÚ¤Ó¹àÌÜ¥Ç¡¼¥¿°Ï¤ßÊ¸»ú¤Î»ØÄê¤ò¹Ô¤¤Writer¤òºîÀ®¤¹¤ë¡£
-     * @param filePath ¥Õ¥¡¥¤¥ë¥Ñ¥¹
-     * @param encoding ¥Õ¥¡¥¤¥ë¤Î¥¨¥ó¥³¡¼¥É
-     * @param envelop ¹àÌÜ¥Ç¡¼¥¿°Ï¤ßÊ¸»ú
+     * ƒRƒ“ƒXƒgƒ‰ƒNƒ^BƒGƒ“ƒR[ƒh‹y‚Ñ€–Úƒf[ƒ^ˆÍ‚İ•¶š‚Ìw’è‚ğs‚¢Writer‚ğì¬‚·‚éB
+     * @param filePath ƒtƒ@ƒCƒ‹ƒpƒX
+     * @param encoding ƒtƒ@ƒCƒ‹‚ÌƒGƒ“ƒR[ƒh
+     * @param envelop €–Úƒf[ƒ^ˆÍ‚İ•¶š
      */
     function CSVWriter($filePath, $encoding = CSVWriter__ENCODING_MS932, $envelop = CSVTokenizer__DEF_ITEM_ENVELOPE) {
         $this->filePath = $filePath;
@@ -69,9 +69,9 @@ class CSVWriter {
     }
 
     /**
-     * ½ĞÎÏ¥Õ¥¡¥¤¥ë¤ò³«¤¯¡£
-     * ¥Õ¥¡¥¤¥ë½ĞÎÏ¤¬²ÄÇ½¤Ê¾õÂÖ¤Ë¤¹¤ë¡£
-      * @return boolean TRUE:À®¸ù¡¢FALSE¡§¼ºÇÔ
+     * o—Íƒtƒ@ƒCƒ‹‚ğŠJ‚­B
+     * ƒtƒ@ƒCƒ‹o—Í‚ª‰Â”\‚Èó‘Ô‚É‚·‚éB
+      * @return boolean TRUE:¬Œ÷AFALSEF¸”s
      */
     function open() {
 
@@ -82,8 +82,8 @@ class CSVWriter {
 			return false;        	
         }
         
-        // ¥Á¥§¥Ã¥¯¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-        if (mb_convert_encoding("¥¨¥ó¥³¡¼¥É", $this->encoding) === false){
+        // ƒ`ƒFƒbƒNƒGƒ“ƒR[ƒfƒBƒ“ƒO
+        if (mb_convert_encoding("ƒGƒ“ƒR[ƒh", $this->encoding) === false){
 			trigger_error("Unsupported Encoding " . $this->encoding . ".", E_USER_NOTICE);
 			return false;        	
         }
@@ -91,8 +91,8 @@ class CSVWriter {
     }
 
     /**
-     * ½ĞÎÏ¥Õ¥¡¥¤¥ë¤òÊÄ¤¸¤ë¡£
-     * ºÆÅÙ¥Õ¥¡¥¤¥ë¤òºîÀ®¤¹¤ë¾ì¹ç¤ÏOpen¤«¤é¹Ô¤¦¤³¤È¡£
+     * o—Íƒtƒ@ƒCƒ‹‚ğ•Â‚¶‚éB
+     * Ä“xƒtƒ@ƒCƒ‹‚ğì¬‚·‚éê‡‚ÍOpen‚©‚çs‚¤‚±‚ÆB
      */
     function close() {
         if ($this->csvFile != null) {
@@ -102,18 +102,18 @@ class CSVWriter {
     }
 
     /**
-     * ²ş¹Ô¥³¡¼¥É¤òÀßÄê¤¹¤ë¡£Ì¤ÀßÄê¤Î¾ì¹ç¡¢\n¤Ç½ĞÎÏ¤¹¤ë¡£
-     * @param newLine ²ş¹Ô¥³¡¼¥É¤ÎÊ¸»úÎó
+     * ‰üsƒR[ƒh‚ğİ’è‚·‚éB–¢İ’è‚Ìê‡A\n‚Åo—Í‚·‚éB
+     * @param newLine ‰üsƒR[ƒh‚Ì•¶š—ñ
      */
     function setNewLine($newLine) {
         $this->newLine = $newLine;
     }
 
     /**
-     * ¥Õ¥¡¥¤¥ë¤ò°ì¹ÔÊ¬½ñ¤­¹ş¤à¡£ËöÈø¤Ë²ş¹Ô¥³¡¼¥É¤òÄÉ²Ã¤¹¤ë¡£
-     * List¤Î¾ì¹ç¡¢List¤ÎÃæ¿È¤òCSV·Á¼°¤Î°ì¹Ô¤ËÊÑ´¹¤·¡¢½ĞÎÏ¤ò¹Ô¤¦¡£
-     * @param line °ì¹ÔÊ¬¤ÎÊ¸»úÎó(String)°¿¤¤¤ÏÇÛÎó(array)
-     * @return ½ñ¤­¹ş¤á¤¿¤étrue¡£
+     * ƒtƒ@ƒCƒ‹‚ğˆês•ª‘‚«‚ŞB––”ö‚É‰üsƒR[ƒh‚ğ’Ç‰Á‚·‚éB
+     * List‚Ìê‡AList‚Ì’†g‚ğCSVŒ`®‚Ìˆês‚É•ÏŠ·‚µAo—Í‚ğs‚¤B
+     * @param line ˆês•ª‚Ì•¶š—ñ(String)ˆ½‚¢‚Í”z—ñ(array)
+     * @return ‘‚«‚ß‚½‚çtrueB
      */
     function writeOneLine($line) {
 
@@ -158,11 +158,11 @@ class CSVWriter {
     }
 
     /**
-     * Ê¸»úÎóÃæ¤Ë¥«¥ó¥Ş¤¬Â¸ºß¤¹¤ë¾ì¹ç¤Ï""¤Ç°Ï¤à¡£
-     * Ê¸»úÎóÃæ¤Ë¥À¥Ö¥ë¥¯¥©¡¼¥Æ¡¼¥·¥ç¥ó¤¬Â¸ºß¤¹¤ë¾ì¹ç¤Ï¥À¥Ö¥ë¥¯¥©¡¼¥Æ¡¼¥·¥ç¥ó¤Ç¥¨¥¹¥±¡¼¥×¤·¡¢
-     * ¥À¥Ö¥ë¥¯¥©¡¼¥Æ¡¼¥·¥ç¥ó¤Ç°Ï¤à¡£
-     * @param str ÊÑ´¹ÂĞ¾İÊ¸»úÎó
-     * @return ÊÑ´¹·ë²ÌÊ¸»úÎó
+     * •¶š—ñ’†‚ÉƒJƒ“ƒ}‚ª‘¶İ‚·‚éê‡‚Í""‚ÅˆÍ‚ŞB
+     * •¶š—ñ’†‚Éƒ_ƒuƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚ª‘¶İ‚·‚éê‡‚Íƒ_ƒuƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚ÅƒGƒXƒP[ƒv‚µA
+     * ƒ_ƒuƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚ÅˆÍ‚ŞB
+     * @param str •ÏŠ·‘ÎÛ•¶š—ñ
+     * @return •ÏŠ·Œ‹‰Ê•¶š—ñ
      */
     function cnvKnmString($str) {
         if ($str == null) {

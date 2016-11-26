@@ -10,19 +10,19 @@
 include_once("jp/co/ks/merchanttool/connectmodule/system/PaygentB2BModuleResources.php");
 
 /**
- * ÀÜÂ³¥â¥¸¥å¡¼¥ëÍÑ Logger ¥¯¥é¥¹
+ * Ú‘±ƒ‚ƒWƒ…[ƒ‹—p Logger ƒNƒ‰ƒX
  * 
- * @version $Revision: 1.6 $
- * @author $Author: t-mori $
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 class PaygentB2BModuleLogger {
 
-	/** FileAppender Êİ»ı */
+	/** FileAppender •Û */
 	var $filename = null;
 
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
 	 */
 	function PaygentB2BModuleLogger() {
 		$inst = PaygentB2BModuleResources::getInstance();
@@ -33,11 +33,11 @@ class PaygentB2BModuleLogger {
 	}
 	
 	/**
-	 * PaygentB2BModuleLogger ¤ò¼èÆÀ
+	 * PaygentB2BModuleLogger ‚ğæ“¾
 	 * 
 	 * @return PaygentB2BModuleLogger
 	 */
-	function &getInstance() {
+	static function &getInstance() {
 		static $logInstance = null;		
 		if (isset($logInstance) == false
 			|| $logInstance == null
@@ -49,20 +49,20 @@ class PaygentB2BModuleLogger {
 	}
 
 	/**
-	 * ¥Ç¥Ğ¥Ã¥°¥í¥°¤ò½ĞÎÏ
+	 * ƒfƒoƒbƒOƒƒO‚ğo—Í
 	 * 
-	 * @param className String ¥í¥°¤Î½ĞÎÏ¸µ¥¯¥é¥¹Ì¾ ½ĞÎÏ¸µ¤ò¼±ÊÌ
-	 * @param message Object ¥í¥°¥á¥Ã¥»¡¼¥¸
+	 * @param className String ƒƒO‚Ìo—ÍŒ³ƒNƒ‰ƒX–¼ o—ÍŒ³‚ğ¯•Ê
+	 * @param message Object ƒƒOƒƒbƒZ[ƒW
 	 */
 	function debug($className, $message) {
 		if(is_null($this->filename) == false && $this->filename != "") {
 			if(! $handle = fopen( $this->filename, 'a')) {
-				// ¥Õ¥¡¥¤¥ë¤¬³«¤±¤Ê¤¤
+				// ƒtƒ@ƒCƒ‹‚ªŠJ‚¯‚È‚¢
 				trigger_error(PaygentB2BModuleException__OTHER_ERROR. ":File doesn't open.(".$this->filename.").", E_USER_WARNING);
 				return;
 			}
 			if(! fwrite($handle, $this->outputMsg($message, $className))) {
-				// ¥Õ¥¡¥¤¥ë¤Ë½ñ¤­¹ş¤á¤Ê¤¤
+				// ƒtƒ@ƒCƒ‹‚É‘‚«‚ß‚È‚¢
 				trigger_error(PaygentB2BModuleException__OTHER_ERROR. ":It is not possible to write it in the file(".$this->filename.").", E_USER_WARNING);
 				return;
 			}
@@ -71,11 +71,11 @@ class PaygentB2BModuleLogger {
 	}
 	
 	/**
-	 * ½ĞÎÏ¥á¥Ã¥»¡¼¥¸¤òÀ°·Á¤¹¤ë
+	 * o—ÍƒƒbƒZ[ƒW‚ğ®Œ`‚·‚é
 	 * 
-	 * @param message ¥í¥°¥á¥Ã¥»¡¼¥¸
-	 * @param className ¥¯¥é¥¹Ì¾
-	 * @return À°·Á¸å¤Î¥á¥Ã¥»¡¼¥¸
+	 * @param message ƒƒOƒƒbƒZ[ƒW
+	 * @param className ƒNƒ‰ƒX–¼
+	 * @return ®Œ`Œã‚ÌƒƒbƒZ[ƒW
 	 */
 	function outputMsg($message, $className) {
 		return date("Y/m/d H:i:s")." $className ".$message."\n";

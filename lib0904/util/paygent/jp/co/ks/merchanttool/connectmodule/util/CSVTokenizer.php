@@ -8,44 +8,44 @@
  */
 
 /**
- * CSVデ〖タの豺老クラス。<BR>
- * １乖尸の矢机误デ〖タを、灌誊リスト∈矢机误芹误∷に恃垂する。<BR>
- * 跋い矢机の面に、デ〖タとして跋い矢机を蝗脱したい眷圭は、跋い矢机2つで、
- * 1つの跋い矢机デ〖タとみなす。<BR>
- * 跋い矢机の面に赂哼する、惰磊り矢机は、惰磊り矢机としてみない。<BR>
- * 惰磊り矢机の木稿の矢机が、跋み矢机かどうかで跋み矢机があるかどうかを冉们する。<BR>
- * デ〖タ、惰磊り矢机、跋い矢机笆嘲の途纷な矢机
- * ∈惰磊り矢机の涟稿のスペ〖ス、タブなども∷はみとめない。
- * @version $Revision: 1.3 $
- * @author $Author: t-mori $
+ * CSV僨乕僞偺夝愅僋儔僗丅<BR>
+ * 侾峴暘偺暥帤楍僨乕僞傪丄崁栚儕僗僩乮暥帤楍攝楍乯偵曄姺偡傞丅<BR>
+ * 埻偄暥帤偺拞偵丄僨乕僞偲偟偰埻偄暥帤傪巊梡偟偨偄応崌偼丄埻偄暥帤2偮偱丄
+ * 1偮偺埻偄暥帤僨乕僞偲傒側偡丅<BR>
+ * 埻偄暥帤偺拞偵懚嵼偡傞丄嬫愗傝暥帤偼丄嬫愗傝暥帤偲偟偰傒側偄丅<BR>
+ * 嬫愗傝暥帤偺捈屻偺暥帤偑丄埻傒暥帤偐偳偆偐偱埻傒暥帤偑偁傞偐偳偆偐傪敾抐偡傞丅<BR>
+ * 僨乕僞丄嬫愗傝暥帤丄埻偄暥帤埲奜偺梋寁側暥帤
+ * 乮嬫愗傝暥帤偺慜屻偺僗儁乕僗丄僞僽側偳傕乯偼傒偲傔側偄丅
+ * @version $Revision: 15878 $
+ * @author $Author: orimoto $
  */
 
 
-	/** デフォルトの灌誊惰磊り矢机 */
+	/** 僨僼僅儖僩偺崁栚嬫愗傝暥帤 */
 	define("CSVTokenizer__DEF_SEPARATOR", ',');
-	/** デフォルトの灌誊デ〖タ跋み矢机 */
+	/** 僨僼僅儖僩偺崁栚僨乕僞埻傒暥帤 */
 	define("CSVTokenizer__DEF_ITEM_ENVELOPE", '"');
-	/** 灌誊デ〖タ跋み矢机(跋み极挛なし) */
+	/** 崁栚僨乕僞埻傒暥帤(埻傒帺懱側偟) */
 	define("CSVTokenizer__NO_ITEM_ENVELOPE", chr(0));
 
 class CSVTokenizer {
 
-	/** 灌誊惰磊り矢机 */
+	/** 崁栚嬫愗傝暥帤 */
 	var $separator = null;
-	/** 灌誊デ〖タ跋み矢机 */
+	/** 崁栚僨乕僞埻傒暥帤 */
 	var $itemEnvelope = null;
 
-	/** 豺老滦据デ〖タ */
+	/** 夝愅懳徾僨乕僞 */
 	var $line;
-	/** 肌の粕み叫し倡幌疤弥 */
+	/** 師偺撉傒弌偟奐巒埵抲 */
 	var $currentPos;
-	/** 呵姜粕哈み疤弥 */
+	/** 嵟廔撉崬傒埵抲 */
 	var $maxPos;
 
 	/**
-	 * コンストラクタ
-	 * @param separator 灌誊惰磊り矢机
-	 * @param envelope 灌誊デ〖タ跋み矢机
+	 * 僐儞僗僩儔僋僞
+	 * @param separator 崁栚嬫愗傝暥帤
+	 * @param envelope 崁栚僨乕僞埻傒暥帤
 	 */
 	function CSVTokenizer($separator = ',', 
 		$envelope = '"') {
@@ -54,9 +54,9 @@ class CSVTokenizer {
 	}
 
 	/**
-	 * CSVデ〖タ矢机误から灌誊デ〖タ芹误を艰评する。
-	 * @param value 豺老滦据矢机误∈1乖尸のデ〖タ∷
-	 * @return        デ〖タ芹误
+	 * CSV僨乕僞暥帤楍偐傜崁栚僨乕僞攝楍傪庢摼偡傞丅
+	 * @param value 夝愅懳徾暥帤楍乮1峴暘偺僨乕僞乯
+	 * @return        僨乕僞攝楍
 	 */
 	function parseCSVData($value) {
 		if (isset($value) == false) {
@@ -66,23 +66,23 @@ class CSVTokenizer {
 		$this->maxPos = strlen($this->line);
 		$this->currentPos = 0;
 
-		// 灌誊デ〖タを呈羌する
+		// 崁栚僨乕僞傪奿擺偡傞
 		$items = array();
-		// 跋み矢机あり】なしの觉轮冉年フラグ
+		// 埻傒暥帤偁傝乛側偟偺忬懺敾掕僼儔僌
 		$existEnvelope = false;
 
 		while ($this->currentPos <= $this->maxPos) {
-			/* デ〖タ惰磊り疤弥を艰评する */
+			/* 僨乕僞嬫愗傝埵抲傪庢摼偡傞 */
 			$endPos = $this->getEndPosition($this->currentPos);
 
-			/* １灌誊尸のデ〖タを粕み艰る */
+			/* 侾崁栚暘偺僨乕僞傪撉傒庢傞 */
 			$temp = substr($this->line, $this->currentPos, $endPos - $this->currentPos);
 			$work = "";
-			// 灌誊デ〖タなしの眷圭
+			// 崁栚僨乕僞側偟偺応崌
 			if (strlen($temp) == 0) {
 				$work = "";
 			} else {
-				// 跋い矢机があるかチェックする
+				// 埻偄暥帤偑偁傞偐僠僃僢僋偡傞
 				if ($this->itemEnvelope != null
 					&& $temp{0} == $this->itemEnvelope) {
 					$existEnvelope = true;
@@ -99,8 +99,8 @@ class CSVTokenizer {
 								&& ($this->itemEnvelope != null
 									&& $temp{$i}
 										== $this->itemEnvelope)) {
-								/* 跋み矢机が２つ鲁けて附れたときは、
-								 * 矢机デ〖タとして艰评する */
+								/* 埻傒暥帤偑俀偮懕偗偰尰傟偨偲偒偼丄
+								 * 暥帤僨乕僞偲偟偰庢摼偡傞 */
 								$work .= $temp{$i++};
 							} else {
 								$isData = !$isData;
@@ -113,35 +113,35 @@ class CSVTokenizer {
 					}
 				}
 			}
-			/* １灌誊尸のデ〖タを判峡する */
+			/* 侾崁栚暘偺僨乕僞傪搊榐偡傞 */
 			$items[] = $work;
 
-			/* 肌の粕艰疤弥の构糠 */
+			/* 師偺撉庢埵抲偺峏怴 */
 			$this->currentPos = $endPos + 1;
 		}
 		return $items;
 	}
 
 	/**
-	 *    デ〖タ惰磊り疤弥を手す。
-	 *    @param        start    浮瑚倡幌疤弥
-	 *    @return        １デ〖タの惰磊り疤弥を手す
+	 *    僨乕僞嬫愗傝埵抲傪曉偡丅
+	 *    @param        start    専嶕奐巒埵抲
+	 *    @return        侾僨乕僞偺嬫愗傝埵抲傪曉偡
 	 */
 	function getEndPosition($start) {
-		// 矢机误】矢机误嘲の觉轮冉年フラグ
+		// 暥帤楍乛暥帤楍奜偺忬懺敾掕僼儔僌
 		$state = false;
-		// 跋み矢机あり】なしの觉轮冉年フラグ
+		// 埻傒暥帤偁傝乛側偟偺忬懺敾掕僼儔僌
 		$existEnvelope = false;
-		// 粕み哈んだ矢机
+		// 撉傒崬傫偩暥帤
 		$ch = null;
-		// 惰磊り疤弥
+		// 嬫愗傝埵抲
 		$end = 0;
 
 		if ($start >= $this->maxPos) {
 			return $start;
 		}
 
-		// 跋み矢机の铜痰冉年
+		// 埻傒暥帤偺桳柍敾掕
 		if ($this->itemEnvelope != null
 			&& $this->line{$start} == $this->itemEnvelope) {
 			$existEnvelope = true;
@@ -150,33 +150,33 @@ class CSVTokenizer {
 		$end = $start;
 
 		while ($end < $this->maxPos) {
-			// １矢机粕み哈む
+			// 侾暥帤撉傒崬傓
 			$ch = $this->line{$end};
-			// 矢机の冉年
+			// 暥帤偺敾掕
 			if ($state == false
 				&& $this->separator != null
 				&& $ch == $this->separator) {
-				// 矢机误面の惰磊り矢机でなければ、デ〖タ惰磊り
+				// 暥帤楍拞偺嬫愗傝暥帤偱側偗傟偽丄僨乕僞嬫愗傝
 				break;
 			} else if (
 				$existEnvelope == true && $ch == $this->itemEnvelope) {
-				// 跋み矢机が附れたら、矢机误】矢机误嘲の觉轮冉年を瓤啪
+				// 埻傒暥帤偑尰傟偨傜丄暥帤楍乛暥帤楍奜偺忬懺敾掕傪斀揮
 				if ($state) {
 					$state = false;
 				} else {
 					$state = true;
 				}
 			}
-			// 矢机疤弥のカウントアップ
+			// 暥帤埵抲偺僇僂儞僩傾僢僾
 			$end++;
 		}
 		return $end;
 	}
 
 	/**
-	 * 矢机误面にカンマが赂哼する眷圭は""で跋む。
-	 * @param str 恃垂滦据矢机误
-	 * @return 恃垂冯蔡矢机误
+	 * 暥帤楍拞偵僇儞儅偑懚嵼偡傞応崌偼""偱埻傓丅
+	 * @param str 曄姺懳徾暥帤楍
+	 * @return 曄姺寢壥暥帤楍
 	 */
 	function cnvKnmString($str) {
 		if (isset($str) == false) {

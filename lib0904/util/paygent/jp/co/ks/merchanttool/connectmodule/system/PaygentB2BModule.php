@@ -2,7 +2,7 @@
 /**
  * PAYGENT B2B MODULE
  * PaygentB2BModule.php
- * 
+ *
  * Copyright (C) 2007 by PAYGENT Co., Ltd.
  * All rights reserved.
  */
@@ -17,152 +17,178 @@ include_once("jp/co/ks/merchanttool/connectmodule/exception/PaygentB2BModuleExce
 include_once("jp/co/ks/merchanttool/connectmodule/util/StringUtil.php");
 
 /**
- * ÀÜÂ³¥â¥¸¥å¡¼¥ë ¥á¥¤¥ó½èÍıÍÑ¥¯¥é¥¹
- * 
- * @version $Revision: 1.4 $
- * @author $Author: t-mori $
+ * Ú‘±ƒ‚ƒWƒ…[ƒ‹ ƒƒCƒ“ˆ——pƒNƒ‰ƒX
+ *
+ * @version $Revision: 46785 $
+ * @author $Author: takahiro.b.ito $
  */
 
-
 	/**
-	 * ÅÅÊ¸¥Ñ¥é¥á¡¼¥¿ Key Length
+	 * “d•¶ƒpƒ‰ƒ[ƒ^ Key Length
 	 */
 	define("PaygentB2BModule__TELEGRAM_KEY_LENGTH", 30);
 
 	/**
-	 * ÅÅÊ¸¥Ñ¥é¥á¡¼¥¿ Valeu Length
+	 * “d•¶ƒpƒ‰ƒ[ƒ^ Valeu Length
 	 */
-	define("PaygentB2BModule__TELEGRAM_VALUE_LENGTH", 10240);
+	define("PaygentB2BModule__TELEGRAM_VALUE_LENGTH", 102400);
 
 	/**
-	 * ÅÅÊ¸¥Ñ¥é¥á¡¼¥¿ ¹àÌÜ¿ô
+	 * “d•¶’·F102400byteiƒtƒ@ƒCƒ‹ŒˆÏˆÈŠOj
 	 */
-	define("PaygentB2BModule__TELEGRAM_ITEM_COUNT", 50);
+	define("PaygentB2BModule__TELEGRAM_LENGTH", 102400);
 
 	/**
-	 * ÀÜÂ³ID
+	 * “d•¶’·F10MBiƒtƒ@ƒCƒ‹ŒˆÏj
+	 */
+	define("PaygentB2BModule__TELEGRAM_LENGTH_FILE", 10 * 1024 * 1024);
+
+	/**
+	 * Ú‘±ID
 	 */
 	define("PaygentB2BModule__CONNECT_ID_KEY", "connect_id");
 
 	/**
-	 * ÀÜÂ³¥Ñ¥¹¥ï¡¼¥É
+	 * Ú‘±ƒpƒXƒ[ƒh
 	 */
 	define("PaygentB2BModule__CONNECT_PASSWORD_KEY", "connect_password");
 
 	/**
-	 * ÅÅÊ¸¼ïÊÌID
+	 * “d•¶í•ÊID
 	 */
 	define("PaygentB2BModule__TELEGRAM_KIND_KEY", "telegram_kind");
 
 	/**
-	 * ºÇÂç¸¡º÷¿ô
+	 * Å‘åŒŸõ”
 	 */
 	define("PaygentB2BModule__LIMIT_COUNT_KEY", "limit_count");
-	
+
 	/**
-	 * ½èÍı·ë²Ì¡§1
+	 * æˆøƒtƒ@ƒCƒ‹ƒf[ƒ^
+	 */
+	define("PaygentB2BModule__DATA_KEY", "data");
+
+	/**
+	 * ˆ—Œ‹‰ÊF1
 	 */
 	define("PaygentB2BModule__RESULT_STATUS_ERROR", "1");
-	
+
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¡§9003
+	 * ƒŒƒXƒ|ƒ“ƒXƒR[ƒhF9003
 	 */
 	define("PaygentB2BModule__RESPONSE_CODE_9003", "9003");
 
+	/**
+	 * “d•¶í•ÊF201iƒtƒ@ƒCƒ‹ŒˆÏŒ‹‰ÊÆ‰ïj
+	 */
+	define("PaygentB2BModule__TELEGRAM_KIND_FILE_PAYMENT_RES", "201");
+
 
 class PaygentB2BModule {
+
 	/**
-	 * ¥«¥ÊÊÑ´¹ÍÑ Í×µáÅÅÊ¸ POST¥Ñ¥é¥á¡¼¥¿Ì¾
+	 * ƒJƒi•ÏŠ·—p —v‹“d•¶ POSTƒpƒ‰ƒ[ƒ^–¼
 	 */
 	var $REPLACE_KANA_PARAM = array("customer_family_name_kana", "customer_name_kana",
 			"payment_detail_kana", "claim_kana", "receipt_name_kana");
 
-	/** ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹ */
+	/** ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX */
 	var $clientFilePath;
 
-	/** CA¾ÚÌÀ½ñ¥Õ¥¡¥¤¥ë¥Ñ¥¹ */
+	/** CAØ–¾‘ƒtƒ@ƒCƒ‹ƒpƒX */
 	var $caFilePath;
 
-	/** Proxy¥µ¡¼¥ĞÌ¾ */
+	/** ProxyƒT[ƒo–¼ */
 	var $proxyServerName;
 
-	/** ProxyIP¥¢¥É¥ì¥¹ */
+	/** ProxyIPƒAƒhƒŒƒX */
 	var $proxyServerIp;
 
-	/** Proxy¥İ¡¼¥ÈÈÖ¹æ */
+	/** Proxyƒ|[ƒg”Ô† */
 	var $proxyServerPort;
 
-	/** ¥Ç¥Õ¥©¥ë¥ÈID */
+	/** ƒfƒtƒHƒ‹ƒgID */
 	var $defaultId;
 
-	/** ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É */
+	/** ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh */
 	var $defaultPassword;
 
-	/** ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ */
+	/** ƒ^ƒCƒ€ƒAƒEƒg’l */
 	var $timeout;
 
-	/** ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾ */
+	/** Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼ */
 	var $resultCsv;
 
-	/** ¾È²ñMAX·ï¿ô */
+	/** Æ‰ïMAXŒ” */
 	var $selectMaxCnt;
 
-	/** ÅÅÊ¸¼ïÊÌID */
+	/** ƒtƒ@ƒCƒ‹ŒˆÏ—p‘—Mƒtƒ@ƒCƒ‹ƒpƒX */
+	var $sendFilePath;
+
+	/** “d•¶í•ÊID */
 	var $telegramKind;
 
-	/** PropertiesFile ÃÍÊİ»ı */
+	/** PropertiesFile ’l•Û */
 	var $masterFile;
 
-	/** °ú¿ôÊİ»ı */
+	/** ˆø”•Û */
 	var $telegramParam = array();
 
-	/** ÄÌ¿®½èÍı */
+	/** ’ÊMˆ— */
 	var $sender;
 
-	/** ½èÍı·ë²Ì */
+	/** ˆ—Œ‹‰Ê */
 	var $responseData;
 
 	/** Logger */
 	var $logger = null;
 
+	/** ƒfƒoƒbƒOƒIƒvƒVƒ‡ƒ“ */
+	var $debugFlg;
+
+	/** ˆ—Œ‹‰ÊƒƒbƒZ[ƒW */
+	var $resultMessage = '';
+
 	/**
-	 * ¥³¥ó¥¹¥È¥é¥¯¥¿
+	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
 	 *
-	 * @return ¤Ê¤· À®¸ù¤·¤Æ¤¤¤ë¤«¤Î¥Á¥§¥Ã¥¯¤Ï 
+	 * @return ‚È‚µ ¬Œ÷‚µ‚Ä‚¢‚é‚©‚Ìƒ`ƒFƒbƒN‚Í
 	 */
 	function PaygentB2BModule() {
 
-		// ÊÑ¿ô½é´ü²½
+		// •Ï”‰Šú‰»
 		$this->telegramParam = array();
 
 	}
-	
+
 	/**
-	 * ¥¯¥é¥¹¤ò½é´ü²½½èÍı
-	 * @return mixed true:À®¸ù¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É
+	 * ƒNƒ‰ƒX‚ğ‰Šú‰»ˆ—
+	 * @return mixed true:¬Œ÷A‘¼FƒGƒ‰[ƒR[ƒh
 	 */
 	function init() {
-		// ÀßÄêÃÍ¤ò¼èÆÀ
+		// İ’è’l‚ğæ“¾
 		$this->masterFile = PaygentB2BModuleResources::getInstance();
 
-		// Logger ¤ò¼èÆÀ
+		// Logger ‚ğæ“¾
 		$this->logger = PaygentB2BModuleLogger::getInstance();
-		
+
 		if ($this->masterFile == null
 			|| strcasecmp(get_class($this->masterFile), "PaygentB2BModuleResources") != 0) {
-			// ¥¨¥é¡¼¥³¡¼¥É
+			// ƒGƒ‰[ƒR[ƒh
 			return $this->masterFile;
 		}
 
-		if ($this->logger == null 
+		if ($this->logger == null
 			|| strcasecmp(get_class($this->logger), "PaygentB2BModuleLogger") != 0) {
-			// ¥¨¥é¡¼¥³¡¼¥É
+			// ƒGƒ‰[ƒR[ƒh
 			return $this->logger;
 		}
-		
-		// ÀßÄêÃÍ¤ò¥»¥Ã¥È
-		$this->clientFilePath = $this->masterFile->getClientFilePath();
+
+		// İ’è’l‚ğƒZƒbƒg
+        $this->clientFilePath = $this->masterFile->getClientFilePath();
+        $this->notUseClientCert = $this->masterFile->getNotUseClientCert();
 		$this->caFilePath = $this->masterFile->getCaFilePath();
+        $this->notUseCaCert = $this->masterFile->getNotUseCaCert();
 		$this->proxyServerName = $this->masterFile->getProxyServerName();
 		$this->proxyServerIp = $this->masterFile->getProxyServerIp();
 		$this->proxyServerPort = $this->masterFile->getProxyServerPort();
@@ -170,13 +196,14 @@ class PaygentB2BModule {
 		$this->defaultPassword = $this->masterFile->getDefaultPassword();
 		$this->timeout = $this->masterFile->getTimeout();
 		$this->selectMaxCnt = $this->masterFile->getSelectMaxCnt();
+		$this->debugFlg = $this->masterFile->getDebugFlg();
 
 		return true;
 	}
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥ÈID¤òÀßÄê
-	 * 
+	 * ƒfƒtƒHƒ‹ƒgID‚ğİ’è
+	 *
 	 * @param defaultId String
 	 */
 	function setDefaultId($defaultId) {
@@ -184,8 +211,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥ÈID¤ò¼èÆÀ
-	 * 
+	 * ƒfƒtƒHƒ‹ƒgID‚ğæ“¾
+	 *
 	 * @return String defaultId
 	 */
 	function getDefaultId() {
@@ -193,8 +220,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É¤òÀßÄê
-	 * 
+	 * ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh‚ğİ’è
+	 *
 	 * @param defaultPassword String
 	 */
 	function setDefaultPassword($defaultPassword) {
@@ -202,8 +229,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É¤ò¼èÆÀ
-	 * 
+	 * ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh‚ğæ“¾
+	 *
 	 * @return String defaultPassword
 	 */
 	function getDefaultPassword() {
@@ -211,8 +238,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ¤òÀßÄê
-	 * 
+	 * ƒ^ƒCƒ€ƒAƒEƒg’l‚ğİ’è
+	 *
 	 * @param timeout int
 	 */
 	function setTimeout($timeout) {
@@ -220,8 +247,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¥¿¥¤¥à¥¢¥¦¥ÈÃÍ¤ò¼èÆÀ
-	 * 
+	 * ƒ^ƒCƒ€ƒAƒEƒg’l‚ğæ“¾
+	 *
 	 * @return int timeout
 	 */
 	function getTimeout() {
@@ -229,8 +256,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾¤òÀßÄê
-	 * 
+	 * Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼‚ğİ’è
+	 *
 	 * @param resultCsv String
 	 */
 	function setResultCsv($resultCsv) {
@@ -238,8 +265,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾¤ò¼èÆÀ
-	 * 
+	 * Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼‚ğæ“¾
+	 *
 	 * @return String resultCsv
 	 */
 	function getResultCsv() {
@@ -247,8 +274,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¾È²ñMAX·ï¿ô¤òÀßÄê
-	 * 
+	 * Æ‰ïMAXŒ”‚ğİ’è
+	 *
 	 * @param selectMaxCnt int
 	 */
 	function setSelectMaxCnt($selectMaxCnt) {
@@ -256,8 +283,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¾È²ñMAX·ï¿ô¤ò¼èÆÀ
-	 * 
+	 * Æ‰ïMAXŒ”‚ğæ“¾
+	 *
 	 * @return String selectMaxCnt
 	 */
 	function getSelectMaxCnt() {
@@ -265,24 +292,51 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * °ú¿ô¤òÀßÄê
-	 * 
+	 * ƒtƒ@ƒCƒ‹ŒˆÏ—p‘—Mƒtƒ@ƒCƒ‹ƒpƒX
+	 *
+	 * @param sendFilePath String
+	 */
+	function setSendFilePath($sendFilePath) {
+		$this->sendFilePath = $sendFilePath;
+	}
+
+	/**
+	 * ƒtƒ@ƒCƒ‹ŒˆÏ—p‘—Mƒtƒ@ƒCƒ‹ƒpƒX
+	 *
+	 * @return String sendFilePath
+	 */
+	function getSendFilePath() {
+		return $this->sendFilePath;
+	}
+
+	/**
+	 * ˆ—Œ‹‰ÊƒƒbƒZ[ƒW
+	 *
+	 * @retunr resultMessage String
+	 */
+	function getResultMessage() {
+		return $this->resultMessage;
+	}
+
+	/**
+	 * ˆø”‚ğİ’è
+	 *
 	 * @param key String
 	 * @param valuet String
 	 */
 	function reqPut($key, $value) {
 		$tempVal = $value;
-		
-		if ($tempVal == null) {
-			// Value ÃÍ¤Î null ÀßÄê¤ÏÇ§¤á¤Ê¤¤
+
+		if ($tempVal === null) {
+			// Value ’l‚Ì null İ’è‚Í”F‚ß‚È‚¢
 			$tempVal = "";
 		}
 		$this->telegramParam[$key] = $tempVal;
 	}
 
 	/**
-	 * °ú¿ô¤ò¼èÆÀ
-	 * 
+	 * ˆø”‚ğæ“¾
+	 *
 	 * @param key Stirng
 	 * @return String value
 	 */
@@ -291,53 +345,64 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¾È²ñ½èÍı¤ò¼Â¹Ô
-	 * 
-	 * @return String true¡§À®¸ù¡¢Â¾:¥¨¥é¡¼¥³¡¼¥É¡¢
+	 * Æ‰ïˆ—‚ğÀs
+	 *
+	 * @return String trueF¬Œ÷A‘¼:ƒGƒ‰[ƒR[ƒhA
 	 */
 	function post() {
 
 		$rslt = "";
-		
-		// ÅÅÊ¸¼ïÊÌID ¤ò¼èÆÀ
+
+		// “d•¶í•ÊID ‚ğæ“¾
 		$this->telegramKind = "";
-		
+
 		if (array_key_exists(PaygentB2BModule__TELEGRAM_KIND_KEY, $this->telegramParam)) {
 			$this->telegramKind = $this->telegramParam[PaygentB2BModule__TELEGRAM_KIND_KEY];
 		}
 
-		// Í×µáÅÅÊ¸¥Ñ¥é¥á¡¼¥¿Ì¤ÀßÄêÃÍ¤ÎÀßÄê
+		// —v‹“d•¶ƒpƒ‰ƒ[ƒ^–¢İ’è’l‚Ìİ’è
 		$this->setTelegramParamUnsetting();
 
-		// Post»ş¥¨¥é¡¼¥Á¥§¥Ã¥¯
+		// PostƒGƒ‰[ƒ`ƒFƒbƒN
 		$rslt = $this->postErrorCheck();
 		if (!($rslt === true)) {
-			// ¥¨¥é¡¼¥³¡¼¥É
+			// ƒGƒ‰[ƒR[ƒh
 			return 	$rslt;
 		}
 
-		// URL¼èÆÀ
+		// æˆøƒtƒ@ƒCƒ‹İ’è
+		$this->convertFileData();
+
+		// URLæ“¾
 		$url = $this->masterFile->getUrl($this->telegramKind);
 		if ($url === false) {
+			$this->resultMessage = PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR
+				. ": HTTP request contains unexpected value.";
 			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR;
 		}
 
-		// HttpsRequestSender¼èÆÀ
+		// HttpsRequestSenderæ“¾
 		$this->sender = new HttpsRequestSender($url);
 
-		// ¥¯¥é¥¤¥¢¥ó¥È¾ÚÌÀ½ñ¥Ñ¥¹ÀßÄê
-		$this->sender->setClientCertificatePath($this->clientFilePath);
+        // ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘ƒpƒXİ’è
+        $this->sender->setClientCertificatePath($this->clientFilePath);
 
-		// CA¾ÚÌÀ½ñ¥Ñ¥¹ÀßÄê
+        // ƒNƒ‰ƒCƒAƒ“ƒgØ–¾‘–¢g—pİ’è
+        $this->sender->setNotUseClientCert($this->notUseClientCert);
+
+		// CAØ–¾‘ƒpƒXİ’è
 		$this->sender->setCaCertificatePath($this->caFilePath);
 
-		// ¥¿¥¤¥à¥¢¥¦¥ÈÀßÄê
+        // CAØ–¾‘–¢g—pİ’è
+        $this->sender->setNotUseCaCert($this->notUseCaCert);
+
+		// ƒ^ƒCƒ€ƒAƒEƒgİ’è
 		$this->sender->setTimeout($this->timeout);
 
-		// ProxyÀÜÂ³¥¿¥¤¥à¥¢¥¦¥ÈÀßÄê
+		// ProxyÚ‘±ƒ^ƒCƒ€ƒAƒEƒgİ’è
 		$this->sender->setProxyConnectTimeout($this->timeout);
 
-		// ProxyÅÁÁ÷¥¿¥¤¥à¥¢¥¦¥ÈÀßÄê
+		// Proxy“`‘—ƒ^ƒCƒ€ƒAƒEƒgİ’è
 		$this->sender->setProxyCommunicateTimeout($this->timeout);
 
 		if ($this->isProxyDataSet()) {
@@ -348,19 +413,17 @@ class PaygentB2BModule {
 			}
 		}
 
-		// ¥«¥ÊÊÑ´¹½èÍı
+		// ƒJƒi•ÏŠ·ˆ—
 		$this->replaceTelegramKana();
 
-		// ÅÅÊ¸Ä¹¥Á¥§¥Ã¥¯
-		if (!$this->sender->isTelegramLength($this->telegramParam)) {
-			// ÅÅÊ¸Ä¹¥¨¥é¡¼
-			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
-		}
+		// “d•¶’·ƒ`ƒFƒbƒN
+		$this->validateTelegramLengthCheck();
 
 		// Post
-		$rslt =	$this->sender->postRequestBody($this->telegramParam);
+		$rslt =	$this->sender->postRequestBody($this->telegramParam, $this->debugFlg);
 		if (!($rslt === true)) {
-			// ¥¨¥é¡¼¥³¡¼¥É
+			$this->resultMessage = $this->sender->getResultMessage();
+			// ƒGƒ‰[ƒR[ƒh
 			return $rslt;
 		}
 
@@ -376,42 +439,55 @@ class PaygentB2BModule {
 		} else {
 			$rslt = $this->responseData->parseResultOnly($resBody);
 		}
+		$this->resultMessage = $this->getResponseCode().': '.$this->getResponseDetail() ;
+
+		// ƒGƒ‰[
 
 		if (!($rslt === true)) {
 			return $rslt;
 		}
 
-		// CSV File½ĞÎÏÈ½Äê
+		// CSV Fileo—Í”»’è
 		if ($this->isCSVOutput()) {
-			// CSV File ½ĞÎÏ
+			// CSV File o—Í
 			if (strcasecmp(get_class($this->responseData), "ReferenceResponseDataImpl") == 0) {
-				
-				$rslt = $this->responseData->writeCSV($resBody, $this->resultCsv); 
+
+				$rslt = $this->responseData->writeCSV($resBody, $this->resultCsv);
+				if (!($rslt === true)) {
+					// CSV File Output Error
+					return $rslt;
+				}
+			}
+		} elseif ($this->isFilePaymentOutput()) {
+			// ƒtƒ@ƒCƒ‹ŒˆÏŒ‹‰Êƒtƒ@ƒCƒ‹o—Í
+			if (strcasecmp(get_class($this->responseData), "FilePaymentResponseDataImpl") == 0) {
+
+				$rslt = $this->responseData->writeCSV($resBody, $this->resultCsv);
 				if (!($rslt === true)) {
 					// CSV File Output Error
 					return $rslt;
 				}
 			}
 		}
-		
+
 		return true;
 	}
 
 	/**
-	 * ½èÍı·ë²Ì¤òÊÖ¤¹
-	 * 
-	 * @return Map¡¨¤Ê¤¤¾ì¹ç¡¢NULL
+	 * ˆ—Œ‹‰Ê‚ğ•Ô‚·
+	 *
+	 * @return MapG‚È‚¢ê‡ANULL
 	 */
 	function resNext() {
 		if ($this->responseData == null) {
-			return null;			
+			return null;
 		}
 		return $this->responseData->resNext();
 	}
 
 	/**
-	 * ½èÍı·ë²Ì¤¬Â¸ºß¤¹¤ë¤«È½Äê
-	 * 
+	 * ˆ—Œ‹‰Ê‚ª‘¶İ‚·‚é‚©”»’è
+	 *
 	 * @return boolean
 	 */
 	function hasResNext() {
@@ -423,9 +499,9 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ½èÍı·ë²Ì¤ò¼èÆÀ
-	 * 
-	 * @return String ½èÍı·ë²Ì¡¨¤Ê¤¤¾ì¹ç¡¢NULL
+	 * ˆ—Œ‹‰Ê‚ğæ“¾
+	 *
+	 * @return String ˆ—Œ‹‰ÊG‚È‚¢ê‡ANULL
 	 */
 	function getResultStatus() {
 		if ($this->responseData == null) {
@@ -435,22 +511,22 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤ò¼èÆÀ
-	 * 
-	 * @return String ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¡¨¤Ê¤¤¾ì¹ç¡¢NULL
+	 * ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ğæ“¾
+	 *
+	 * @return String ƒŒƒXƒ|ƒ“ƒXƒR[ƒhG‚È‚¢ê‡ANULL
 	 */
 	function getResponseCode() {
 		if ($this->responseData == null) {
-			
+
 			return null;
 		}
 		return $this->responseData->getResponseCode();
 	}
 
 	/**
-	 * ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¤ò¼èÆÀ
-	 * 
-	 * @return String ¥ì¥¹¥İ¥ó¥¹¾ÜºÙ¡¨¤Ê¤¤¾ì¹ç¡¢NULL
+	 * ƒŒƒXƒ|ƒ“ƒXÚ×‚ğæ“¾
+	 *
+	 * @return String ƒŒƒXƒ|ƒ“ƒXÚ×G‚È‚¢ê‡ANULL
 	 */
 	function getResponseDetail() {
 		if ($this->responseData == null) {
@@ -460,28 +536,28 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * Í×µáÅÅÊ¸¥Ñ¥é¥á¡¼¥¿Ì¤ÀßÄêÃÍ¤ÎÀßÄê
+	 * —v‹“d•¶ƒpƒ‰ƒ[ƒ^–¢İ’è’l‚Ìİ’è
 	 */
 	function setTelegramParamUnsetting() {
-		// ÀÜÂ³ID
+		// Ú‘±ID
 		if (!array_key_exists(PaygentB2BModule__CONNECT_ID_KEY, $this->telegramParam)) {
-			// ÀÜÂ³ID ¤¬Ì¤ÀßÄê¤Î¾ì¹ç¡¢¥Ç¥Õ¥©¥ë¥ÈID ¤òÀßÄê
+			// Ú‘±ID ‚ª–¢İ’è‚Ìê‡AƒfƒtƒHƒ‹ƒgID ‚ğİ’è
 			$this->telegramParam[PaygentB2BModule__CONNECT_ID_KEY] = $this->defaultId;
 		}
 
-		// ÀÜÂ³¥Ñ¥¹¥ï¡¼¥É
+		// Ú‘±ƒpƒXƒ[ƒh
 		if (!array_key_exists(PaygentB2BModule__CONNECT_PASSWORD_KEY, $this->telegramParam)) {
-			// ÀÜÂ³¥Ñ¥¹¥ï¡¼¥É¤¬Ì¤ÀßÄê¤Î¾ì¹ç¡¢¥Ç¥Õ¥©¥ë¥È¥Ñ¥¹¥ï¡¼¥É ¤òÀßÄê
+			// Ú‘±ƒpƒXƒ[ƒh‚ª–¢İ’è‚Ìê‡AƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh ‚ğİ’è
 			$this->telegramParam[PaygentB2BModule__CONNECT_PASSWORD_KEY] = $this->defaultPassword;
 		}
 
-		// ºÇÂç¸¡º÷¿ô
+		// Å‘åŒŸõ”
 		if ($this->telegramKind != null) {
 			if ($this->masterFile->isTelegramKindRef($this->telegramKind)) {
-				// ·èºÑ¾ğÊó¾È²ñ¤Î¾ì¹ç
+				// ŒˆÏî•ñÆ‰ï‚Ìê‡
 				if (!array_key_exists(PaygentB2BModule__LIMIT_COUNT_KEY, $this->telegramParam)) {
-					// ºÇÂç¸¡º÷¿ô¤¬Ì¤ÀßÄê¤Î¾ì¹ç¡¢¾È²ñMAX·ï¿ô¤òÀßÄê
-					$this->telegramParam[PaygentB2BModule__LIMIT_COUNT_KEY] = 
+					// Å‘åŒŸõ”‚ª–¢İ’è‚Ìê‡AÆ‰ïMAXŒ”‚ğİ’è
+					$this->telegramParam[PaygentB2BModule__LIMIT_COUNT_KEY] =
 						$this->selectMaxCnt;
 				}
 			}
@@ -489,75 +565,104 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * Post»ş¥¨¥é¡¼¥Á¥§¥Ã¥¯
-	 * 
-	 * @return mixed ¥¨¥é¡¼¤Ê¤·¤Î¾ì¹ç¡§TRUE¡¢Â¾¡§¥¨¥é¡¼¥³¡¼¥É
+	 * PostƒGƒ‰[ƒ`ƒFƒbƒN
+	 *
+	 * @return mixed ƒGƒ‰[‚È‚µ‚Ìê‡FTRUEA‘¼FƒGƒ‰[ƒR[ƒh
 	 */
 	function postErrorCheck() {
-		// ¥Ñ¥é¥á¡¼¥¿É¬¿Ü¥Á¥§¥Ã¥¯
+		// ƒpƒ‰ƒ[ƒ^•K{ƒ`ƒFƒbƒN
 		if (!$this->isModuleParamCheck()) {
-			// ¥â¥¸¥å¡¼¥ë¥Ñ¥é¥á¡¼¥¿¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__MODULE_PARAM_REQUIRED_ERROR 
-					. ": Error in indespensable HTTP request value.", E_USER_WARNING);
+			// ƒ‚ƒWƒ…[ƒ‹ƒpƒ‰ƒ[ƒ^ƒGƒ‰[
+			$this->resultMessage = PaygentB2BModuleConnectException__MODULE_PARAM_REQUIRED_ERROR
+					. ": Error in indespensable HTTP request value.";
+			trigger_error($this->resultMessage, E_USER_WARNING);
 			return PaygentB2BModuleConnectException__MODULE_PARAM_REQUIRED_ERROR;
 		}
 
 		if (!$this->isTeregramParamCheck()) {
-			// ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR 
-					. ": HTTP request contains unexpected value.", E_USER_WARNING);
+			// “d•¶—v‹ƒpƒ‰ƒ[ƒ^ƒGƒ‰[
+			$this->resultMessage = PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR
+					. ": HTTP request contains unexpected value.";
+			trigger_error($this->resultMessage, E_USER_WARNING);
 			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_OUTSIDE_ERROR;
 		}
 
 		if (!$this->isResultCSV()) {
-			// ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾ÀßÄê¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__RESPONSE_TYPE_ERROR 
-					. ": CVS file name error.", E_USER_WARNING);
+			// Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼İ’èƒGƒ‰[
+			$this->resultMessage = PaygentB2BModuleConnectException__RESPONSE_TYPE_ERROR
+					. ": CVS file name error.";
+			trigger_error($this->resultMessage, E_USER_WARNING);
 			return PaygentB2BModuleConnectException__RESPONSE_TYPE_ERROR;
 		}
-		
+
 		if (!$this->isTeregramParamKeyNullCheck()) {
-			// ÅÅÊ¸Í×µáKey null ¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR 
-					. ": HTTP request key must be null.", E_USER_WARNING);
+			// “d•¶—v‹Key null ƒGƒ‰[
+			$this->resultMessage = PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR
+					. ": HTTP request key must be null.";
+			trigger_error($this->resultMessage, E_USER_WARNING);
 			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
 		}
 
 		if (!$this->isTelegramParamKeyLenCheck()) {
-			// ÅÅÊ¸Í×µáKeyÄ¹¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR 
-					. ": HTTP request key must be shorter than " 
-					. PaygentB2BModule__TELEGRAM_KEY_LENGTH . " bytes.", E_USER_WARNING);
+			// “d•¶—v‹Key’·ƒGƒ‰[
+			$this->resultMessage = PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR
+					. ": HTTP request key must be shorter than "
+					. PaygentB2BModule__TELEGRAM_KEY_LENGTH . " bytes.";
+			trigger_error($this->resultMessage, E_USER_WARNING);
 			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
 		}
 
 		if (!$this->isTelegramParamValueLenCheck()) {
-			// ÅÅÊ¸Í×µáValueÄ¹¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR 
+			// “d•¶—v‹Value’·ƒGƒ‰[
+			$this->resultMessage = PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR
 					. ": HTTP request value must be shorter than "
-					. PaygentB2BModule__TELEGRAM_VALUE_LENGTH . " bytes.", E_USER_WARNING);
+					. PaygentB2BModule__TELEGRAM_VALUE_LENGTH . " bytes.";
+			trigger_error($this->resultMessage, E_USER_WARNING);
 			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
 		}
 
-		if (!$this->isTelegramParamItemCountCheck()) {
-			// ÅÅÊ¸Í×µá¹àÌÜ¿ô¥¨¥é¡¼
-			trigger_error(PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR 
-					. ": The number of HTTP request keys must be smaller than "
-					. PaygentB2BModule__TELEGRAM_ITEM_COUNT . ".", E_USER_WARNING);
-			return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
-		}
 		return true;
 	}
 
 	/**
-	 * ¥â¥¸¥å¡¼¥ë¥Ñ¥é¥á¡¼¥¿¥Á¥§¥Ã¥¯
-	 * 
+	 * ƒtƒ@ƒCƒ‹ƒpƒX‚Éw’è‚³‚ê‚½CSVƒtƒ@ƒCƒ‹‚Ì“à—e‚ğdataƒpƒ‰ƒ[ƒ^‚Éİ’è‚·‚é
+	 *
+	 */
+	function convertFileData()  {
+
+		// æˆøƒtƒ@ƒCƒ‹
+		if (!isset($this->telegramParam[PaygentB2BModule__DATA_KEY])
+					&& !StringUtil::isEmpty($this->getSendFilePath())) {
+			// key:data‚Ì“à—e‚ª‹ó‚Åƒtƒ@ƒCƒ‹ƒpƒX‚Ìw’è‚ª‚ ‚éê‡‚Íƒtƒ@ƒCƒ‹“à—e‚ğdata‚Éİ’è
+
+			// ƒtƒ@ƒCƒ‹‚Ì‘¶İŠm”F
+			if (!file_exists($this->getSendFilePath())) {
+				// ƒtƒ@ƒCƒ‹‘¶İƒGƒ‰[
+				trigger_error(PaygentB2BModuleException__FILE_PAYMENT_ERROR
+						. ": Send file not found. ", E_USER_WARNING);
+				return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
+			}
+
+			// ƒtƒ@ƒCƒ‹“à—e‚Ìæ“¾
+			$fileData = file_get_contents($this->getSendFilePath());
+
+			// ƒtƒ@ƒCƒ‹“à—e‚ğdataƒpƒ‰ƒ[ƒ^‚Éİ’è
+			$this->telegramParam[PaygentB2BModule__DATA_KEY] = $fileData;
+
+		}
+
+	}
+
+
+	/**
+	 * ƒ‚ƒWƒ…[ƒ‹ƒpƒ‰ƒ[ƒ^ƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NotError false=Error
 	 */
 	function isModuleParamCheck() {
 		$rb = false;
 
-		// É¬¿Ü¥¨¥é¡¼¥Á¥§¥Ã¥¯
+		// •K{ƒGƒ‰[ƒ`ƒFƒbƒN
 		if ((0 < $this->timeout) && (0 < $this->selectMaxCnt)) {
 			$rb = true;
 		}
@@ -566,14 +671,14 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿¥Á¥§¥Ã¥¯
-	 * 
+	 * “d•¶—v‹ƒpƒ‰ƒ[ƒ^ƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NotError false=Error
 	 */
 	function isTeregramParamCheck() {
 		$rb = false;
 
-		// ÅÅÊ¸¼ïÊÌID ¥¨¥é¡¼¥Á¥§¥Ã¥¯
+		// “d•¶í•ÊID ƒGƒ‰[ƒ`ƒFƒbƒN
 		if (array_key_exists(PaygentB2BModule__TELEGRAM_KIND_KEY, $this->telegramParam)) {
 			if (!StringUtil::isEmpty($this->telegramParam[
 				PaygentB2BModule__TELEGRAM_KIND_KEY])) {
@@ -585,16 +690,20 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾ÀßÄê¥Á¥§¥Ã¥¯
-	 * 
+	 * Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼İ’èƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NotError false=Error
 	 */
 	function isResultCSV() {
 		$rb = true;
 
-		// ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾ÀßÄê¥¨¥é¡¼¥Á¥§¥Ã¥¯
+		// Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼İ’èƒGƒ‰[ƒ`ƒFƒbƒN
 		if (!$this->masterFile->isTelegramKindRef($this->telegramKind)
+				&& PaygentB2BModule__TELEGRAM_KIND_FILE_PAYMENT_RES != $this->telegramKind
 				&& !StringUtil::isEmpty($this->resultCsv)) {
+			$rb = false;
+		} elseif (PaygentB2BModule__TELEGRAM_KIND_FILE_PAYMENT_RES == $this->telegramKind
+				&& StringUtil::isEmpty($this->resultCsv)) {
 			$rb = false;
 		}
 
@@ -602,14 +711,14 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿ Key Null ¥Á¥§¥Ã¥¯
-	 * 
+	 * “d•¶—v‹ƒpƒ‰ƒ[ƒ^ Key Null ƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NotError false=Error
 	 */
 	function isTeregramParamKeyNullCheck() {
 		$rb = true;
 
-		// Key null ¥Á¥§¥Ã¥¯
+		// Key null ƒ`ƒFƒbƒN
 		if (array_key_exists(null, $this->telegramParam)) {
 				$rb = false;
 		}
@@ -618,8 +727,8 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿ Key Ä¹¥Á¥§¥Ã¥¯
-	 * 
+	 * “d•¶—v‹ƒpƒ‰ƒ[ƒ^ Key ’·ƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NoError false=Error
 	 */
 	function isTelegramParamKeyLenCheck() {
@@ -633,48 +742,57 @@ class PaygentB2BModule {
 				}
 			}
 		}
-		
+
 		return $rb;
 	}
 
 	/**
-	 * ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿ Value Ä¹¥Á¥§¥Ã¥¯
-	 * 
+	 * “d•¶—v‹ƒpƒ‰ƒ[ƒ^ Value ’·ƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NoError false=Error
 	 */
 	function isTelegramParamValueLenCheck() {
 		$rb = true;
 
 		foreach($this->telegramParam as $keys => $values) {
-			if (!StringUtil::isEmpty($values)) {
+			// æˆøƒtƒ@ƒCƒ‹“à—e‚Íƒ`ƒFƒbƒN‘ÎÛŠO
+			if (PaygentB2BModule__DATA_KEY != $keys && !StringUtil::isEmpty($values)) {
 				if (strlen($values) > PaygentB2BModule__TELEGRAM_VALUE_LENGTH) {
 					$rb = false;
 					break;
 				}
 			}
 		}
-		
+
 		return $rb;
 	}
 
 	/**
-	 * ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿ ¹àÌÜ¿ô¥Á¥§¥Ã¥¯
-	 * 
+	 * “d•¶—v‹ƒpƒ‰ƒ[ƒ^ ‘POSTƒTƒCƒYƒ`ƒFƒbƒN
+	 *
 	 * @return boolean true=NoError false=Error
 	 */
-	function isTelegramParamItemCountCheck() {
-		$rb = false;
+	function validateTelegramLengthCheck() {
+		$telegramLength = $this->sender->getTelegramLength($this->telegramParam);
 
-		if (count($this->telegramParam) <= PaygentB2BModule__TELEGRAM_ITEM_COUNT) {
-			$rb = true;
+		// ƒtƒ@ƒCƒ‹ŒˆÏ”»’è
+		if (isset($this->telegramParam[PaygentB2BModule__DATA_KEY])) {
+			// ƒtƒ@ƒCƒ‹ŒˆÏ
+			if (PaygentB2BModule__TELEGRAM_LENGTH_FILE < $telegramLength) {
+				return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
+			}
+		} else {
+			// ƒtƒ@ƒCƒ‹ŒˆÏˆÈŠO
+			if (PaygentB2BModule__TELEGRAM_LENGTH < $telegramLength) {
+				return PaygentB2BModuleConnectException__TEREGRAM_PARAM_REQUIRED_ERROR;
+			}
 		}
 
-		return $rb;
 	}
 
 	/**
-	 * Proxy ÀßÄêÈ½Äê
-	 * 
+	 * Proxy İ’è”»’è
+	 *
 	 * @return boolean true=Set false=NotSet
 	 */
 	function isProxyDataSet() {
@@ -683,7 +801,7 @@ class PaygentB2BModule {
 		if (!(StringUtil::isEmpty($this->proxyServerIp) && StringUtil
 				::isEmpty($this->proxyServerName))
 				&& 0 < $this->proxyServerPort) {
-			// Proxy ÀßÄêºÑ¤Î¾ì¹ç
+			// Proxy İ’èÏ‚Ìê‡
 			$rb = true;
 		}
 
@@ -691,28 +809,31 @@ class PaygentB2BModule {
 	}
 
 	/**
-	 * Parse ½èÍıÈ½Äê
-	 * 
+	 * Parse ˆ—”»’è
+	 *
 	 * @param InputStream
 	 * @return boolean true=parse false=ResultOnly
 	 */
 	function isParseProcess() {
 		$rb = true;
 
-		// Parse ½èÍı¼Â»ÜÈ½Äê
+		// Parse ˆ—À{”»’è
 		if (strcasecmp(get_class($this->responseData), "ReferenceResponseDataImpl") == 0) {
-			// ReferenceResponseDataImpl ¤Î¾ì¹ç¤Î¤ß¡¢CSV½ĞÎÏ²ÄÈİ¤«¤é¼Â»ÜÈ½Äê
+			// ReferenceResponseDataImpl ‚Ìê‡‚Ì‚İACSVo—Í‰Â”Û‚©‚çÀ{”»’è
 			if (!StringUtil::isEmpty($this->resultCsv)) {
 				$rb = false;
 			}
+		} elseif (strcasecmp(get_class($this->responseData), "FilePaymentResponseDataImpl") == 0) {
+            // ƒtƒ@ƒCƒ‹ŒˆÏ‚Íí‚ÉResult‚Ì‚İ
+			$rb = false;
 		}
 
 		return $rb;
 	}
-	
+
 	/**
-	 * CSV ½ĞÎÏÈ½Äê
-	 * 
+	 * CSV o—Í”»’è
+	 *
 	 * @return boolean true=CSV Output false=Non
 	 */
 	function isCSVOutput() {
@@ -720,30 +841,43 @@ class PaygentB2BModule {
 
 		if ($this->masterFile->isTelegramKindRef($this->telegramKind)
 				&& !StringUtil::isEmpty($this->resultCsv)) {
-			// ÅÅÊ¸¼ïÊÌ¤¬¾È²ñ ³î¤Ä ·ë²ÌCSV¥Õ¥¡¥¤¥ëÌ¾ ¤¬ÀßÄêºÑ¤Î¾ì¹ç
+			// “d•¶í•Ê‚ªÆ‰ï Š‚Â Œ‹‰ÊCSVƒtƒ@ƒCƒ‹–¼ ‚ªİ’èÏ‚Ìê‡
 			if ($this->getResultStatus() == PaygentB2BModule__RESULT_STATUS_ERROR) {
-				// ½èÍı·ë²Ì¤¬°Û¾ï¤Î¾ì¹ç
+				// ˆ—Œ‹‰Ê‚ªˆÙí‚Ìê‡
 				if ($this->getResponseCode() == PaygentB2BModule__RESPONSE_CODE_9003) {
-					// ¥ì¥¹¥İ¥ó¥¹¥³¡¼¥É¤¬ 9003 ¤Î¾ì¹ç
+					// ƒŒƒXƒ|ƒ“ƒXƒR[ƒh‚ª 9003 ‚Ìê‡
 					$rb = true;
 				}
 			} else {
-				// ½èÍı·ë²Ì¤¬Àµ¾ï¤Î¾ì¹ç
+				// ˆ—Œ‹‰Ê‚ª³í‚Ìê‡
 				$rb = true;
 			}
 		}
-		
+
 		return $rb;
 	}
 
 	/**
-	 * ÅÅÊ¸Í×µá¥Ñ¥é¥á¡¼¥¿ È¾³Ñ¥«¥Ê ÃÖ´¹½èÍı
+	 * ƒtƒ@ƒCƒ‹ŒˆÏŒ‹‰Êƒtƒ@ƒCƒ‹ o—Í”»’è
+	 *
+	 * @return boolean true=CSV Output false=Non
+	 */
+	function isFilePaymentOutput() {
+		if (PaygentB2BModule__TELEGRAM_KIND_FILE_PAYMENT_RES == $this->telegramKind
+				&& !StringUtil::isEmpty($this->resultCsv)) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * “d•¶—v‹ƒpƒ‰ƒ[ƒ^ ”¼ŠpƒJƒi ’uŠ·ˆ—
 	 */
 	function replaceTelegramKana() {
 
 		foreach($this->telegramParam as $keys => $values) {
 			if (in_array(strtolower($keys), $this->REPLACE_KANA_PARAM)) {
-				$this->telegramParam[$keys] = 
+				$this->telegramParam[$keys] =
 					StringUtil::convertKatakanaZenToHan($values);
 			}
 		}
