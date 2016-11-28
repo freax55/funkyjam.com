@@ -28,7 +28,7 @@ class Database extends DatabeseRenderer {
 	*/
 	function connect() {
 		if (!$this->connection) {
-			$this->connection =& $this->wrapper->connect($this->url);
+			$this->connection = $this->wrapper->connect($this->url);
 		}
 		return $this->connection;
 	}
