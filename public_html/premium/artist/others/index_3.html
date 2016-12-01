@@ -43,6 +43,48 @@
 	<div class="top">
 		<div class="head">
 			<div class="date">
+{assign var="date" value="2016/07/08"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/07/08 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第313回 「海外ビビったワースト5」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 第5位「マンハッタンのパンク」<br><br />ファースト・アベニューは1人で歩いちゃダメだと言われていたのに、イーストヴィレッジあたりから迷い込んだ。<br />『人通りが少ないなぁ～』なんて思っていると突然、ビルの陰から3人のパンク野郎が飛び出して来て、オレの行く手に立って英語で怒鳴りまくるんだけど、英語が全然聞き取れないから日本人得意の曖昧アルカイックスマイルで歩きつづけていると、3人が背後に回ったので『ひゃゃゃゃ～背中から刺されるぅぅ～』と思わず振り向いたら、どーゆーワケかパンク3人は慌てて逃げてった。<br><br />今でもナニが起こったのか不明だけど、初期のニューヨークだったのでビビったビビった!<br><br /><br><br />第4位「バンコクのペガサス」<br><br />バブルの頃、悪人達の手下となってタイへ行ってた。<br><br />「今夜は楽しんでください」と、現地の親分に連れて行かれたのは、翼の生えた白馬がライトアップされている巨大なキャバクラ…とゆーかナンとゆーか…とにかくバンコクでは超有名&激高級な店。<br><br />店内に入ると国際フォーラム1階席くらいの大きなホールがあり、半円形のステージに向かって豪華なソファーが並べられ『ナンじゃこりゃ!?』となりつつ、そこを通り過ぎてファンキー・ジャムくらいある部屋に案内され、いかにも高そーなブランデーのボトルが3本&見たこともないフルーツ盛り合わせが出て、『こりゃもぉ日本に帰れないなぁぁ～』になっていると4人編成のバンドが登場して日本のヒット曲をメドレー。<br><br />悪人達は早くも上機嫌で酒をあおり、オレはバンド演奏で「夜の銀狐」を歌わされ、「そろそろ2階へ」と誘われて階段を上がると、なななんと、そこには見渡す限りの黒ドレス美女100人がスタンバイしていて、「ドーゾお好きな女性を…」などと言われて、ホントーに仕方なく「では日本語の話せる人を…」で日本語美女と酒になり、帰ろーとすると泣き出し、帰ろーとすると泣き出し、気がついたら悪人達はいなくなっていて、それから1人で逃げて帰るハメになって、マジにスゲー恐かった!<br><br /><br><br />第3位「ハジャイのドライバー」<br><br />夜行列車で未明の4時に豪雨のハジャイ(タイ南部のダークサイド都市)に到着。小柄なジーサンが近づいて来て「どこに行く?」と身振り手振り。地図を出してサトゥンとゆー港町を示すと、ジーサンの合図でボロボロの軽トラックと大男のドライバーが現れた。<br><br />まっ暗闇を言葉も通じない大男と2人、助手席の床は抜けていて地面ではねた豪雨が足を濡らし、『無事に着けるのかなぁ』とココロ細くなりはじめたら突然、大男が街灯もナンニモない山道で軽トラを止め、金属のレンチを取り出した。<br><br />『ひぇぇぇぇぇ～!』<br><br />絶対殺されるぅぅぅ～と思ったら、外に出てタイヤのボルトを締め直し、ビショビショになって戻って来た。<br><br />それから3時間、ヒトコトも話さずサトゥンに到着するも、現金の両替銀行が開店前で、さらに2時間、大男と2人…ああ絶望的に恐かったけど、結果的に大男は善人だったのだ。<br><br /><br><br />第2位「イギリスのハイウェイ」<br><br />最初の奥さんにスコットランドのインバネスで離婚を告げられ、傷心のままロンドンへ戻り、現地在住の知人にクルマを借りて1人で巨石遺跡=ストーンヘンジを観に行った。<br><br />イギリスは日本と同じ左側通行だから、ラウンドアバウトとゆー信号のない交差点さえクリアすれば運転に問題はないのだが、ロンドンからストーンヘンジまでは150kmほどあり、離婚ショックで思考も定まらず、一瞬切ない気持ちになった途端、草原を抜けるハイウェイから時速110kmで脱輪し、危うく大事故になるトコだった。日本でも脱輪は経験していなかったので、クルマを停めてブルブル震え、ついでに泣いた。<br><br /><br><br />第1位「シンガポールの吊り橋」<br><br />ファンキー・ジャムの社員旅行でシンガポールへ行った時、「ガーデン・バイ・ザ・ベイ」とゆー広大な植物園を訪れた。<br><br />そこにある人工の「スーパーツリー」をドーシテも観たくて、予想以上の大きさに感嘆してツリーとツリーの上部、地上30mに架かる橋を渡るコトになったのだが、イザ登ってみたら高所恐怖症のワタル自身はドーにもコーにも1歩も踏み出せず、ホノベ嬢に「入園料を払ってくれた大森社長にはナイショにしといて!」と懇願し、地上に降りて隠れてアイスを食べてました。大森[美人]社長、今まで黙っててゴメンなさい!</div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/07/01"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/07/01 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第312回 「選挙の美学」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 7月10日に第24回参議院議員選挙が行われるが、今回の注目は立候補者よりも、はじめて投票権を与えられた18-19歳の一般ピーポーだ。<br><br />ある調査によると「必ず行く」=22％、「行くつもり」=38％で、18-19歳の60％あまりが投票するコトになりそーなのである。<br><br />ちなみに、2014年の衆議院選挙の投票率は戦後最低の52.66％で、そのうち20歳代は33％弱だったから、18-19歳の60％はとても高い投票率だ。<br><br /><br><br />しか～し!<br><br />ワタル自身が18歳だった時を振り返ると、政治にはマッタク感心がなかった。<br><br />昭和の18歳は、まだまだガキだったのだ。<br><br /><br><br />しか～し!<br><br />平成の18歳は「AKB総選挙」で、投票の楽しさや1票の重みを熟知していると思うのだ。<br><br />冗談で言っているんじゃないよ。本気で言っているの;^_^A<br><br />政治なんて分からなくても、立候補者の主義主張を知らなくても、自分が好きだと思った人に投票すれば良いと、ワタル自身は思うのだ。<br><br />人生最初の国政選挙は、そのテードの意識で良いと思うのだ。<br><br />民主主義の大先輩=イギリスだって、EU離脱に投票した人達が「やっぱ離脱したくないから、もー1回国民投票やってちょーだい」なんて言ってるんだから、18歳の参政なんて好き嫌いレベルでOK。とにかく、投票に行くコトが最初の1歩だ。<br><br />以前も書いたけれど、オレ達=一般ピーポーは、政治家のスポンサーなのだ。<br><br />非力な庶民のオカゲで、政治家はカネの心配をしなくてイイのだよ。<br><br />だから、せめて選挙の時くらいは、庶民の好き嫌いをセンセー達に分からせたい。<br><br />それにはまず、投票に行くコトだ。<br><br />好きな人が誰もいなくて白票を投じても、それが自分の意思表示なのだから価値がある。<br><br />だから全国の18-19歳は、冷やかし気分でも良いから投票に行こう。<br><br />若い意思が本気になれば、きっと未来に反映される。<br><br /><br><br />しか～し!<br><br />東京都民には、参院選の後に都知事選もある。<br><br />この選挙は激しくヤッカイだ。<br><br />マスコミでは様々な人の名前が上がっているけれど、猪瀬・舛添のバトンタッチがトホホ過ぎたから、東京ピーポーはみ～んな懐疑的になっちゃってるのだ。<br><br />「誰が都知事になっても同じ」だなんて決して思わないけど、「誰なら都知事にふさわしいか」が分からないのだ。<br><br />内田裕也翁は、都知事を辞した舛添氏を評して「ロックじゃない、フォークソングだ」と言い捨てたけれど、それは絶対に違う。<br><br />確かにロックは立って走れと歌い、フォークは座って考えろと歌うけれど、それはセコイのではなく、フォークの美学なのだ。<br><br />舛添氏は多くの趣味を持っていたみたいだが、書も絵も音楽も、彼には政治的アクセサリーだったに違いない。<br><br />本当に書を解し、絵を愛で、音楽に癒されていたなら、あんな無様な結末にはならなかったハズである。<br><br />だから、フォークシンガーのワタル自身が次の都知事に望むのは、フォークの美学を持った人だ。<br><br />平成ピーポーには分かりにくいだろーが、風呂なしのアパートに棲み、小さな石けんをカタカタ鳴らして風呂屋へ行くのを、青春の美学と思うよーな政治家…なんていねぇだろーなぁ～ヽ(´o｀；<br><br />それでも全国的に7月10日は投票日!<br><br />行けない人は期日前投票をお忘れなく!<br /></div>
+		</div>
+	</div>
+</div>
+
+
+
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
 {assign var="date" value="2016/06/24"}
 {assign var="date" value=$date|escape|strtotime}
 {if ($smarty.now-$date-7*24*60*60) < 0}
@@ -206,51 +248,47 @@
 </div>
 
 
-
-										<div class="entry">
-	<div class="top">
-		<div class="head">
-			<div class="date">
-{assign var="date" value="2016/04/28"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
-{/if}
-			2016/04/28 UPDATE</div>
-			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
-			<p class="tit">第303回 「寛容の備え」</p>
-		</div>
-		<div class="texts">
-			<div class="text">熊本で大きな地震が起きた。<br><br />熊本にはワタル自身にとって大事な人が2人住んでいて、すぐに連絡をとった。<br><br />1人はワタル自身が東京の西永福でやっていたラーメン屋「臨機」を受け継ぐ、ケン・ボルケーノだ。<br><br />臨機in熊本は熊本市中央区にあり、激震地ではないものの、4月14日の前震では丼が落ちて割れ、16日の本震では水道が止まり営業が出来なくなった。<br><br />幸いにも本人も客も店舗も大きなダメージは受けず、水と物流が復活すれば営業再開が可能だという。<br><br />あと1人の気がかりは、久保田利伸の仕事を28年も一緒にしているイラストレーターの島かおりだ。<br><br />彼女は八代亜紀さんの出身地で有名な八代市で、父親手作りの家に両親と共に暮らしている。<br><br />父親手作りとゆーので、かなりヤバい予感がしたのだが、本が落下した程度で建物の損傷はないとの返信。<br><br />住所を頼りにGoogleストリートビューで探してみると、ポストにうっすらと「島」の漢字が見えるコンクリート製のシェルターみたいな建物を発見した。<br><br />「こりゃスゲー!」と島パパ手作りに感心したが、あとで知ったんだけどパパ手作りは内装のみで、建築はプロに130％耐震で建ててもらったとのコト;^_^A<br><br />本震後に、こんなメールが来た。<br><br />「断層が複雑に走っていて危険だ!　と言われていましたが、こんな終わらなそうな地震になるとは…。でも我が家は頑丈に建てたので大丈夫そうです。これ以上の強力な地震が来たら、ヒビが入ったりしそうでヤバそうですけど…」<br><br />これを書いているのは4月22日午前で、とりあえずワタル自身の知り合い2人は大丈夫だったが、報道映像で他地区の惨状を目にすると、どーしても暗澹たる気持ちになる。<br><br />人間は天災に抗えないとしても、倒壊した家屋から家財道具を盗んだり、被災者から現金を詐欺したりするヤカラにこそ、天罰が下れと思う。<br><br />頻発する地震で心身ともに疲れ果てている、被災者の傷口に塩を塗るよーな非道に、強烈な怒りを覚えずにはいられない。<br><br /><br><br />しか～し!<br><br />さらにワタル自身のよーな昭和オトコにとって腹立たしいのは、インターネットで言いたい放題のクレーマー達だ。<br><br />どれだけの時間&労力をかけて日本中のSNSを調べているのか分からないが、よくもまぁ大小さまざまなクレーム対象を見つけるモノだと感心&呆れ返る。<br><br />政務活動費不正やパナマ文書に対する意見ならまだしも、こんな大惨事の最中にもタレントやコメンテーターの言動に、蜜にアリが群がるごとく一斉にクレーム攻撃を仕掛ける人種は、イカガナモノか…なのである。<br><br />ワタル自身が育った日本では、【重箱の隅をつつく】や【あげ足取り】は女々しい行為とされ、今よりも寛容な人々が多かったよーに思う。<br><br /><br><br />しか～し!<br><br />「女々しい」は正しい日本語なのに、「女々しいなんて女性蔑視だ」と、これまたクレーム対象になったりしちゃうくらい、平成の日本人は実にまったく狭量な人種が増えてしまった感がある。<br><br />インターネットは国境もない開かれたスペースなのに、とっても窮屈で居心地の悪い場所になろーとしている。<br><br /><br><br />しか～し!<br><br />ワタル自身も地震情報をYAHOO!で調べたり、知人の安否をメールで確認したりと、ネットに頼るコトは多いし、LINEをはじめてからは、その即時性に驚かされている。<br><br />だから今回のよーな災害の時に、個人のスマホなどから発信される小さくて膨大な情報を、系統立て把握する国レベルの組織を立ち上げて欲しいと願うばかりだ。<br><br />以前、首都圏地震について書いたコトがあったけれど、そのXデーも刻々と迫っているよーな気がする。<br><br />たとえ国の災害対策組織が完備されたとしても、災害時はココロが潰れそーになる時や、どーしても他者に頼らなければならない時がある。<br><br />その時の備えとして、ネット民みなさんの寛容なココロを望むワタル自身なのである。<br /><br /><br /></div>
-		</div>
-	</div>
-</div>
-
-
-
-										<div class="entry">
-	<div class="top">
-		<div class="head">
-			<div class="date">
-{assign var="date" value="2016/04/22"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
-{/if}
-			2016/04/22 UPDATE</div>
-			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
-			<p class="tit">第302回 「はじめての競艇場」</p>
-		</div>
-		<div class="texts">
-			<div class="text"> 朝起きたら、茂本ヒデキチ画伯から「ベビメタ、53年ぶり快挙…米ビルボードチャート入り坂本九さん以来…」とゆーLINEが届いていた。<br /><br />そーだ。そーなのである。<br /><br />茂本ヒデキチ画伯は、女の子3人組のメタルダンスユニット=BABYMETALの大ファンなのである。<br /><br />画伯との付き合いは30年以上になるので、ワタル自身もベビメタの魅力を理解しよーとライヴ映像を観たのだが、オープニング1曲目で満腹になってしまった。<br /><br />3人の女の子よりバックバンドの演奏に耳が行き、『この人達は好きなメタル演奏で世界を回れて最高にハッピーじゃん』などとベクトルが変わってしまったのだ。<br /><br />えー、まー、ソレはソレとして、ベビメタのアルバム「METAL RESISTANCE」が米ビルボード誌の総合アルバム部門で初登場39位、ワールドアルバム部門で1位とゆー快挙は、トヤカク言わずに祝福したい。<br /><br /><br /><br />しか～し!<br /><br />茂本画伯に限らず、「え? この人が!?」とゆーよーな意外な趣味嗜好を持っている人は少なくない。<br /><br />以前、渋谷のサウナで頭髪少量中年サラリーマンが、水色のブラジャーを平然と付けてからワイシャツを着たので、反射的に3メートル飛び退いたが、そーゆー趣味の方もいらっしゃる。<br /><br />水色ブラジャー中年男は限りなくEDGEだけれど、茂本画伯がベビメタが大好きなのと同じレベルで無害…とも…まぁ、言えなくもない;^_^A<br /><br /><br /><br />しか～し!<br /><br />趣味が賭け事となると、CMに好感度タレントを起用しても、マユをひそめる一般ピーポーが多い。<br /><br />ワタル自身の肉体バイト仲間は、ほぼ全員がパチンコをやる。<br /><br />パチンコくらい、と思うかもしれないが、1日で10万円も使ってしまうハイローラーもいて、趣味を超して賭博レベルに熱くなる人種がいるのだ。<br /><br />ワタル自身はギャンブルほど愚かな行為はないと思うのだが、日本人はギャンブル依存率がダントツに高い国なのだ。<br /><br />日本にカジノはないが、パチンコの他に公営ギャンブルとして競馬、競輪、競艇、オートレースが認められ、カジノが公認されている国よりもギャンブルが身近にある。<br /><br />その結果、日本の成人男子の9%弱がギャンブル依存症とされ、アメリカ同の2%弱をはるかに上回っているのだ。<br /><br />ワタル部屋の最寄駅=成増駅からは、埼玉県の戸田競艇場でレースがある日に無料送迎バスが出るので、朝から競艇ピーポーの大行列が出来る。<br /><br />無料バスで競艇場へ向かうレベルの人達は、95%が疲れた風態の年配男性で、全員が約束したみたいに暗～い色の服を着て、競艇新聞からニゴリ目を離さない。<br /><br />多くの人が仕事に急ぐ駅前で、色のない競艇ピーポーの大行列は陰湿に黙々と、朝の活気に取り残される。<br /><br />そーしたアウトな行列を何度も観ているうちに、『こーゆー人達が集まる競艇場って、どんなトコなんだろーか?』と興味津々になった。<br /><br />そこで、4月12～17日に開催される「第32回日本モーターボート選手会会長賞」の初日に、戸田競艇場へ行ってみた。<br /><br />ワタル部屋から流星号で30分ほど、戸田競艇場は荒川に併設された5階建ての立派な施設だった。<br /><br />100円の入場料を払い2階ゲートから屋内へ入ると、レース情報などが一目瞭然のデジタルモニターが多数あり、昔ながらのアナログな予想屋も声を上げている。<br /><br />時間は11時20分頃だが、すでに第1レースは終了しており、第2レースの投票がスタートしていた。<br /><br />3階はインドアの観覧席があり、思ったとーり色のない人々ばかり。牛丼やラーメンなどのフードコートのサインだけが色を発している。<br /><br />なぜか4階は閉鎖中で、5階は特別観覧席なので近づかず、1階に下りてレースプール間近のスタンドに座った。<br /><br />オープンエアなので風は少々冷たかったが、穏やかな水面が広がる快晴の競艇場は、気持ちを晴れ晴れとさせてくれる。<br /><br /><br /><br />しか～し!<br /><br />本物の暗黒ギャンブラー達は、けして浮かれるコトはなく、賭けに勝つコトしか考えていない。<br /><br />自分がカネを賭けた選手は応援するが、その他の選手はボロクソに罵倒する。<br /><br />「2番は出るんじゃねぇよ!」<br /><br />「3番ジャマするな!」<br /><br />「4番来い! 4番来い! 4番来ぉぉぉい～あぁぁぁ～5番来るなぁぁぁ～!」<br /><br />負けたギャンブラー達は激しくマナーが悪く、ハズレた投票券をその場に投げ捨て、なにやらブツブツ言いながら次のレース予想に取りかかる。<br /><br />TVで観た若者達は、競艇選手を目指して厳しい訓練に耐え、夢へ向かって疾走していたが、彼等に賭ける血マナコ年配ギャンブラーは哀しいほど殺伐とし、公営ギャンブルに搾取され続ける敗者に見えた。<br /><br /><br /><br />しか～し!<br /><br />5階の特別席に行けば、英国のダービーステークスに集うよーな富者が、優雅にギャンブルを楽しんでいるのかもしれない。<br /><br />結果、ワタル自身が戸田競艇場で学んだのは、ギャンブルは貧者の光明ではなく、富者の余力である…とゆー皮肉だった。<br /><br />ギャンブルはほどほどにね(｀_´)ゞ</div>
-		</div>
-	</div>
-</div>
-
-
 									</div>
 									<div id="sub">
 	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/25"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_wataru.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/others/wataru/2016/11/333.html">
+
+
+						第333回 「セルフィーの魅力」
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/11/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_wataru.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/others/wataru/2016/11/332.html">
+
+
+						第332回 「ダマされないぞ!」
+
+					</a>
+				</p>
+		</li>
 
 		<li class="noImg">
 				<div class="date">
@@ -366,60 +404,22 @@
 				</p>
 		</li>
 
-		<li class="noImg">
-				<div class="date">
-{assign var="date" value="2016/09/30"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
-{/if}
-				<img src="/premium/images/common/icon_wataru.gif" />
-				</div>
-				<p class="tit">
-					<a href="/premium/artist/others/wataru/2016/09/post_42.html">
-
-
-						第325回 「長城の内と外」
-
-					</a>
-				</p>
-		</li>
-
-		<li class="noImg">
-				<div class="date">
-{assign var="date" value="2016/09/23"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
-{/if}
-				<img src="/premium/images/common/icon_wataru.gif" />
-				</div>
-				<p class="tit">
-					<a href="/premium/artist/others/wataru/2016/09/324.html">
-
-
-						第324回 「オールド渋谷ピーポー」
-
-					</a>
-				</p>
-		</li>
-
 	</ul>
 </div>
 								</div>
 								<div class="pagenate">
 									<ul>
-										<li><a href="/premium/artist/reading/../../../premium/artist/others/index.html" class="link_page">1</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_2.html" class="link_page">2</a></li>&nbsp;
+										<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index.html" class="link_page">1</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_2.html" class="link_page">2</a></li>&nbsp;
 <li><span class="current_page">3</span></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_4.html" class="link_page">4</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_5.html" class="link_page">5</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_6.html" class="link_page">6</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_7.html" class="link_page">7</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_8.html" class="link_page">8</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_9.html" class="link_page">9</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_10.html" class="link_page">10</a></li>&nbsp;
-<li><a href="/premium/artist/reading/../../../premium/artist/others/index_11.html" class="link_page">11</a></li>
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_4.html" class="link_page">4</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_5.html" class="link_page">5</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_6.html" class="link_page">6</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_7.html" class="link_page">7</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_8.html" class="link_page">8</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_9.html" class="link_page">9</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_10.html" class="link_page">10</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/reading/../../../premium/artist/others/index_11.html" class="link_page">11</a></li>
 									</ul>
 								</div>
 							</div>
