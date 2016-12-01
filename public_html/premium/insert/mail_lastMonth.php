@@ -51,8 +51,11 @@ if($list){
 		send($to, $subject, $body, $from);
 
 		//エボルニにメール送信
-		$to = "saita@evol-ni.com,kida@evol-ni.com";
-		send($to, "Send to confirmer from evolni.", $body, $from);
+//		$to = "saita@evol-ni.com,kida@evol-ni.com";
+//		send($to, "Send to confirmer from evolni.", $body, $from);
+		//UNTAMEDへ変更
+		$to = "kondo@untamed.co.jp,funatsu@untamed.co.jp";
+		send($to, "Send to confirmer from untamed", $body, $from);
 	}
 }
 
