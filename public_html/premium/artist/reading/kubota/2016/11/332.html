@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/premium/include/common.html" -->
+<link href="/premium/css/detail.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/premium/js/navi.js" charset="utf-8"></script>
+<title>Funky Jam PREMIUM FOR MEMBERS </title>
+</head>
+<body>
+	<a id="pagetop" name="pagetop"></a>
+	<div id="page">
+		<div id="container">
+<!--#include virtual="/premium/include/header_login.html" -->
+{assign var="blog_id" value="17"}
+<div id="gnavi">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/movie/index.php?path=index"><img src="/premium/images/detail/gnavi_movie{if $blog_id == "13"}_on{/if}.jpg" alt="Movie" /></a></li>
+		<li><a href="/premium/artist/offshot/index.php?path=index"><img src="/premium/images/detail/gnavi_offshot{if $blog_id == "16"}_on{/if}.jpg" alt="Offshot" /></a></li>
+		<li><a href="/premium/artist/reading/index.php?path=index"><img src="/premium/images/detail/gnavi_reading{if $blog_id == "17"}_on{/if}.jpg" alt="Reading" /></a></li>
+		<li><a href="/premium/artist/blog/index.php?path=index"><img src="/premium/images/detail/gnavi_blog{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}_on{/if}.jpg" alt="Staff Blog" /></a></li>
+		<li><a href="/premium/artist/others/index.php?path=index"><img src="/premium/images/detail/gnavi_others.jpg" alt="Others" /></a></li>
+	</ul>
+</div>
+			<div id="contentWrap">
+				<div id="contents">
+					<div id="contentInner">
+						<div class="path"><a href="/premium/">トップページ</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=index">Reading（リーディング）</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/premium/artist/reading/index.php?path=kubota/index">久保田 利伸</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;第332回 「ダマされないぞ!」</div>
+						<div class="section">
+{assign var="blog_id" value="17"}
+{assign var="blog_type" value="0"}
+{if $blog_id == "13"}
+{assign var="blog_type" value="movie"}
+{/if}
+{if $blog_id == "16"}
+{assign var="blog_type" value="offshot"}
+{/if}
+{if $blog_id == "17"}
+{assign var="blog_type" value="reading"}
+{/if}
+{if $blog_id == "8" || $blog_id == "9" || $blog_id == "10"}
+{assign var="blog_type" value="blog"}
+{/if}
+<div class="btns">
+	<ul class="clearfix">
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=index"><img src="/premium/images/detail/btn_all.png" alt="ALL" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=kubota/index"><img src="/premium/images/detail/btn_kubota.png" alt="久保田 利伸" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=urashima/index"><img src="/premium/images/detail/btn_urashima.png" alt="浦島 りんこ" /></a></li>
+		<li><a href="/premium/artist/{$blog_type}/index.php?path=mori/index"><img src="/premium/images/detail/btn_mori.png" alt="森 大輔" /></a></li>
+	</ul>
+</div>
+							<div class="article column2" id="blog">
+								<div class="inner clearfix">
+									<div id="mainArea">
+										<div class="entry">
+	<div class="top">
+		<div class="head">
+			<div class="date">
+{assign var="date" value="2016/11/18"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+			<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+			2016/11/18 UPDATE</div>
+			<p class="icon"><img src="/premium/images/common/icon_wataru.gif" /></p>
+			<p class="tit">第332回 「ダマされないぞ!」</p>
+		</div>
+		<div class="texts">
+			<div class="text"> 『長生きしたけりゃパンは食べるな』とゆー、デスメタルみたいなタイトルの本を見つけた。<br><br />小麦に含まれるグルテンが身体に悪く、女性に人気のグラノーラも全粒粉パスタも、とにかくグルテンが含まれる食物を摂り過ぎると、腸に穴(！)があいたりウツ病になったり、とにかく大変マルになるとゆーのだ。<br><br />この本を丸ごと信じれば、小麦グルテンは中華麺にも含まれているから、ラーメン大ファンのワタル自身もヒトゴトではない。<br><br />逆に大喜びしたのは2014年、イギリスの有名な科学誌「ネイチャー」に『長生きしたけりゃ酒もタバコも楽しめばいい』とゆーフォークソング的な研究報告が掲載された時だ。<br><br />これは、ストレスこそが寿命を縮める主因なので、好きな酒やタバコを我慢するより、適度に楽しむ方が身体に良い…とゆーリポートだった。<br><br />まあ、適度が難題なんだけどね(-.-;)<br><br />中国の新聞「大河網」には『人間の理想的な身長は168センチで、それより高くなると早死にする』とゆーイカニモ中国な説が掲載された。この説によると、身長178センチの人は168センチの人より5年も短命とゆーコトになる。<br><br />また、&#226;カロテンには抗酸化作用がありガン予防になるとか、グルコサミンが関節症に効果があるとか、ブルーベリーエキスで目が良くなるとか、血液型で性格が分かるとか、それら全部ナ&#12316;ンの科学的論証もないと言われてしまうと、ガクゼンとするしかない。<br><br /><br><br />しか～し!<br><br />ぶっちゃけワタル自身は、こーゆー珍説・奇説・妄説のほとんどを、最初から相手にしていない。<br><br /><br><br />しか～し!<br><br />日本の水道水は、世界中のミネラルウォーターより安全だとゆー報告は、信じてもイイよーに思った。<br><br />水道水の水質安全基準は51項目あるが、食品衛生法下にあるミネラルウォーターは、わずか18項目しかないのだ。<br><br /><br><br />しか～し!<br><br />安全と美味は違うので、目的に応じて水道水orミネラルウォーターを決めれば良い、と思っていた。<br><br /><br><br />しか～し!<br><br />ナニ言ってんだよ、水道水はスゲー危険だとゆー意見がある。<br><br />水道水そのものではなく、水道管がヤバイとゆーのだ。<br><br />古い水道管から有害な鉛がドロドロ溶け出しているとゆーのだ。<br><br /><br><br />しか～し!<br><br />そもそも本当に、全国の水道局が51項目もの安全基準をチェックしているか、一般ピーポーには分からない。<br><br />庶民は行政の報告を信じるしかないのだ。<br><br /><br><br />しか～し!<br><br />豊洲新市場の報告がデタラメだったよーに、今の一般ピーポーの多くは疑心暗鬼に陥っている。<br><br />五輪&パラリンピックの施設も、黙っていたら建設費が何倍にもなり、文句を言ったら急に安くなったり、組織委員会会長=森喜朗氏の「(予算圧縮前に)自分が全部やっている。2000億円縮減した」なんて言葉が信じられるワケがないっつーの。<br><br />えー、この際だから言わせてもらうけど、そもそもワタル自身は森氏が好きじゃない(￣^￣)ゞ<br><br />どーして森氏は、いつもあんなに偉そーなんだろーか?<br><br />どーしたら、あんなに偉そーな態度で他者を威圧出来るのだろーか?<br><br />ワタル自身は国会議員でも東京都知事でもナンでもないから、森氏とは個人的な利害関係が1ミリもないので、彼の社会的地位などカンケーないもんね&#12316;偉そーにされる筋合はないもんね&#12316;会ったらタメグチきいてやるもんね&#12316;なのである。<br><br />男としては衆議院議員の小泉進次郎氏がワリと好きなんだけど、かなり年上の農協幹部を頭ごなしに否定するニュースを見て、シンちゃんも政治家になっちゃったなぁ…と、ココロに風が吹いた。<br><br />偉い人は、地位と肩書と財力を手に入れ、さらに偉くなっていく。<br><br />それで本当に偉くなるならイイけれど、偉らそーになっちゃう人は信用出来ない。<br><br />だから政治家やマスコミの話は、丸ごと信じられないワタル自身なのだ。</div>
+		</div>
+	</div>
+</div>
+									</div>
+									<div id="sub">
+	<ul>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/09/26"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/09/no_diggity_10.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/08/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/08/no_diggity_9.html">
+
+
+						No Diggity【オススメの本】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/07/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/07/no_diggity_8.html">
+
+
+						No Diggity【オススメ映画】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/05/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/05/no_diggity_7.html">
+
+
+						No Diggity【オススメ音楽】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/04/04"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/04/no_diggity_2_2.html">
+
+
+						No Diggity【この冬買ったモノ その2】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2016/03/11"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2016/03/no_diggity_6.html">
+
+
+						No Diggity【この冬買ったモノ】
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/10/29"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/10/no_diggity_5.html">
+
+
+						No Diggity【久保田利伸的手放せないモノ?!】...
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
+{assign var="date" value="2014/09/30"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_kubota.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/reading/kubota/2014/09/no_diggity_4.html">
+
+
+						No Diggity【オススメ音楽&映画を同時に公開！】...
+
+					</a>
+				</p>
+		</li>
+
+	</ul>
+</div>
+								</div>
+							</div>
+							<div class="bottom"><img src="/premium/images/detail/bg_section_bottom.png" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--#include virtual="/premium/include/footer.html" -->
+		</div>
+	</div>
+<!--#include virtual="/premium/include/analytics.html" -->
+</body>
+</html>
