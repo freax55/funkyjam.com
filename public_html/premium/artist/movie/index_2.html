@@ -55,10 +55,38 @@
 									<ul class="clearfix">
 
 
+<!-- 変数countに1加算する -->
+{assign var="no" value="8"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/09/12"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/09/12 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_kubota.gif" /></p>
+	<p class="tit">2016/9/12 UP 一昨年の冬、布団乾燥機をゲット！</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+  <p class="lead">2016/9/12 UP 一昨年の冬、布団乾燥機をゲット！</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/JzSVFy6wMZI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{else}
+  <p class="lead">2016/9/12 UP 一昨年の冬、布団乾燥機をゲット！</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/JzSVFy6wMZI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{/if}	
+</li>
+
+
 
 
 <!-- 変数countに1加算する -->
-{assign var="no" value="8"}
+{assign var="no" value="9"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -87,7 +115,7 @@
 
 
 <!-- 変数countに1加算する -->
-{assign var="no" value="9"}
+{assign var="no" value="10"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -116,7 +144,7 @@
 
 
 <!-- 変数countに1加算する -->
-{assign var="no" value="10"}
+{assign var="no" value="11"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -147,7 +175,7 @@
 
 
 <!-- 変数countに1加算する -->
-{assign var="no" value="11"}
+{assign var="no" value="12"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -176,7 +204,7 @@
 
 
 <!-- 変数countに1加算する -->
-{assign var="no" value="12"}
+{assign var="no" value="13"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -205,7 +233,7 @@
 
 
 <!-- 変数countに1加算する -->
-{assign var="no" value="13"}
+{assign var="no" value="14"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -228,35 +256,6 @@
 {else}
     <p class="lead">焼き餃子、完成！</p>
 <div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/WtpS96q8U9k?rel=0" frameborder="0" allowfullscreen></iframe></div>
-{/if}	
-</li>
-
-
-
-<!-- 変数countに1加算する -->
-{assign var="no" value="14"}
-{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
-<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
-{else}
-<li class="normal">
-{/if}
-	<div class="date">
-{assign var="date" value="2015/04/06"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2015/04/06 UPDATE
-{else}
-	&nbsp;
-{/if}
-	</div>
-	<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
-	<p class="tit">森大輔、クッキング第二弾スタート！</p>
-{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
-   <p class="lead">森大輔、クッキング第二弾スタート！</p>
-<div class="movieBox"><iframe width="349" height="196" src="//www.youtube.com/embed/10TfKJPt4B0?rel=0" frameborder="0" allowfullscreen></iframe></div>
-{else}
-   <p class="lead">森大輔、クッキング第二弾スタート！</p>
-<div class="movieBox"><iframe width="235" height="132" src="//www.youtube.com/embed/10TfKJPt4B0?rel=0" frameborder="0" allowfullscreen></iframe></div>
 {/if}	
 </li>
 
