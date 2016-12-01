@@ -55,10 +55,35 @@
 									<ul class="clearfix">
 
 
-
-
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
 {assign var="no" value="15"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2015/08/19"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2015/08/19 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+	<p class="tit">ÈLéqçÏÇËÅAäÆåãï“ÅI</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+     <p class="lead">ÈLéqçÏÇËÅAäÆåãï“ÅI</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/l0WC3EWL3Ig?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{else}
+     <p class="lead">ÈLéqçÏÇËÅAäÆåãï“ÅI</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/l0WC3EWL3Ig?rel=0" frameborder="0" allowfullscreen></iframe></div>
+{/if}	
+</li>
+
+<!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
+{assign var="no" value="16"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -87,7 +112,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="16"}
+{assign var="no" value="17"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -116,7 +141,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="17"}
+{assign var="no" value="18"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -145,7 +170,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="18"}
+{assign var="no" value="19"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -174,7 +199,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="19"}
+{assign var="no" value="20"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}

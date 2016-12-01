@@ -55,10 +55,37 @@
 									<ul class="clearfix">
 
 
-
-
 <!-- •Ï”count‚É1‰ÁZ‚·‚é -->
 {assign var="no" value="8"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/09/27"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/09/27 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
+	<p class="tit">2016/9/27UPu–S‚«‰¤—‚Ì‚½‚ß‚Ìƒpƒ”ƒ@[ƒkvMVB‰e•—ŒiAŒöŠJI</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+   <p class="lead">u–S‚«‰¤—‚Ì‚½‚ß‚Ìƒpƒ”ƒ@[ƒkvMVB‰e•—ŒiAŒöŠJI</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/JAGSC80TRZw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+{else}
+   <p class="lead">u–S‚«‰¤—‚Ì‚½‚ß‚Ìƒpƒ”ƒ@[ƒkvMVB‰e•—ŒiAŒöŠJI</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/JAGSC80TRZw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+{/if}	
+</li>
+
+<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
+{assign var="no" value="9"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -89,7 +116,7 @@
 
 
 <!-- •Ï”count‚É1‰ÁZ‚·‚é -->
-{assign var="no" value="9"}
+{assign var="no" value="10"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -118,7 +145,7 @@
 
 
 <!-- •Ï”count‚É1‰ÁZ‚·‚é -->
-{assign var="no" value="10"}
+{assign var="no" value="11"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -147,7 +174,7 @@
 
 
 <!-- •Ï”count‚É1‰ÁZ‚·‚é -->
-{assign var="no" value="11"}
+{assign var="no" value="12"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -176,7 +203,7 @@
 
 
 <!-- •Ï”count‚É1‰ÁZ‚·‚é -->
-{assign var="no" value="12"}
+{assign var="no" value="13"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -207,7 +234,7 @@
 
 
 <!-- •Ï”count‚É1‰ÁZ‚·‚é -->
-{assign var="no" value="13"}
+{assign var="no" value="14"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -233,34 +260,6 @@
 {/if}	
 </li>
 
-
-
-<!-- •Ï”count‚É1‰ÁZ‚·‚é -->
-{assign var="no" value="14"}
-{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
-<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
-{else}
-<li class="normal">
-{/if}
-	<div class="date">
-{assign var="date" value="2015/08/19"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2015/08/19 UPDATE
-{else}
-	&nbsp;
-{/if}
-	</div>
-	<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
-	<p class="tit">éLqì‚èAŠ®Œ‹•ÒI</p>
-{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
-     <p class="lead">éLqì‚èAŠ®Œ‹•ÒI</p>
-<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/l0WC3EWL3Ig?rel=0" frameborder="0" allowfullscreen></iframe></div>
-{else}
-     <p class="lead">éLqì‚èAŠ®Œ‹•ÒI</p>
-<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/l0WC3EWL3Ig?rel=0" frameborder="0" allowfullscreen></iframe></div>
-{/if}	
-</li>
 
 
 									</ul>
