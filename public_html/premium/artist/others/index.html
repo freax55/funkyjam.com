@@ -289,6 +289,25 @@
 
 		<li class="noImg">
 				<div class="date">
+{assign var="date" value="2016/12/02"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+					<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;
+{/if}
+				<img src="/premium/images/common/icon_wataru.gif" />
+				</div>
+				<p class="tit">
+					<a href="/premium/artist/others/wataru/2016/11/334.html">
+
+
+						‘æ334‰ñ uLet's Hug!v
+
+					</a>
+				</p>
+		</li>
+
+		<li class="noImg">
+				<div class="date">
 {assign var="date" value="2016/11/25"}
 {assign var="date" value=$date|escape|strtotime}
 {if ($smarty.now-$date-7*24*60*60) < 0}
