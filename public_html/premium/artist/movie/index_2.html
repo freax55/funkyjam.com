@@ -55,8 +55,41 @@
 									<ul class="clearfix">
 
 
+
+
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
 {assign var="no" value="8"}
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
+{else}
+<li class="normal">
+{/if}
+	<div class="date">
+{assign var="date" value="2016/09/21"}
+{assign var="date" value=$date|escape|strtotime}
+{if ($smarty.now-$date-7*24*60*60) < 0}
+		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2016/09/21 UPDATE
+{else}
+	&nbsp;
+{/if}
+	</div>
+	<p class="icon"><img src="/premium/images/common/icon_urashima.gif" /></p>
+	<p class="tit">ÇÃÇÍÇÒë°íÊéÆ!!!</p>
+{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
+  <p class="lead">ÇÃÇÍÇÒë°íÊéÆ!!!</p>
+<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/GdWiAGKEHxU?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+{else}
+  <p class="lead">ÇÃÇÍÇÒë°íÊéÆ!!!</p>
+<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/GdWiAGKEHxU?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+{/if}	
+</li>
+
+
+
+<!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
+{assign var="no" value="9"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -84,9 +117,8 @@
 
 
 
-
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="9"}
+{assign var="no" value="10"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -115,7 +147,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="10"}
+{assign var="no" value="11"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -144,7 +176,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="11"}
+{assign var="no" value="12"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -175,7 +207,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="12"}
+{assign var="no" value="13"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -204,7 +236,7 @@
 
 
 <!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="13"}
+{assign var="no" value="14"}
 {if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
 <li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
 {else}
@@ -231,42 +263,13 @@
 </li>
 
 
-
-<!-- ïœêîcountÇ…1â¡éZÇ∑ÇÈ -->
-{assign var="no" value="14"}
-{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
-<li class="pick{if $no%7 == '2' || $no%7 == '4'} last{/if}">
-{else}
-<li class="normal">
-{/if}
-	<div class="date">
-{assign var="date" value="2015/06/30"}
-{assign var="date" value=$date|escape|strtotime}
-{if ($smarty.now-$date-7*24*60*60) < 0}
-		<img src="/premium/images/detail/icon_new.gif" alt="NEW" />&nbsp;&nbsp;2015/06/30 UPDATE
-{else}
-	&nbsp;
-{/if}
-	</div>
-	<p class="icon"><img src="/premium/images/common/icon_mori.gif" /></p>
-	<p class="tit">èƒÇ´ÈLéqÅAäÆê¨ÅI</p>
-{if $no%7 == '1' || $no%7 == '2' || $no%7 == '3' || $no%7 == '4'}
-    <p class="lead">èƒÇ´ÈLéqÅAäÆê¨ÅI</p>
-<div class="movieBox"><iframe width="349" height="196" src="https://www.youtube.com/embed/WtpS96q8U9k?rel=0" frameborder="0" allowfullscreen></iframe></div>
-{else}
-    <p class="lead">èƒÇ´ÈLéqÅAäÆê¨ÅI</p>
-<div class="movieBox"><iframe width="235" height="132" src="https://www.youtube.com/embed/WtpS96q8U9k?rel=0" frameborder="0" allowfullscreen></iframe></div>
-{/if}	
-</li>
-
-
 									</ul>
 								</div>
 								<div class="pagenate">
 									<ul>
-<li><a href="/premium/artist/movie/index.html" class="link_page">1</a></li>&nbsp;
+<li><a href="http://www.funkyjam.com/premium/artist/movie/index.html" class="link_page">1</a></li>&nbsp;
 <li><span class="current_page">2</span></li>&nbsp;
-<li><a href="/premium/artist/movie/index_3.html" class="link_page">3</a></li>
+<li><a href="http://www.funkyjam.com/premium/artist/movie/index_3.html" class="link_page">3</a></li>
 									</ul>
 								</div>
 							</div>
