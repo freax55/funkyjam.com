@@ -55,6 +55,16 @@ a:hover .hover{
 	-khtml-opacity: 0.7; /* Safari 1.x */
 }
 
+a.wnite{
+	color: #fff;
+	text-decoration: underline;
+}
+
+a.white:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
 a{
 	color: #9E7427;
 	text-decoration: underline;
