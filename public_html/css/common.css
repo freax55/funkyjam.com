@@ -8,14 +8,15 @@ html {
 	-webkit-text-size-adjust: none;
 }
 
+body.topIndex.xmas{
+	background-image: url(/images/bg2.png) repeat-y;
+}
+
 body{
 	border-top: 3px solid #333333;
 	background-image: url(/images/bg.png);
 	background-repeat: repeat;
 	background-position: left top;
-}
-body.topIndex.xmas{
-	background-image: url(/images/bg2.png) repeat-y;
 }
 
 body .e-entry-title {
