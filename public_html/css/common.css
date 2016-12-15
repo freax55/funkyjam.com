@@ -14,6 +14,9 @@ body{
 	background-repeat: repeat;
 	background-position: left top;
 }
+body.topIndex.xmas{
+	background-image: url(/images/bg2.png) repeat-y;
+}
 
 body .e-entry-title {
     color: #000 !important;
