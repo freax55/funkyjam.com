@@ -9,7 +9,8 @@ html {
 }
 
 body.topIndex.xmas{
-	background-image: url(/images/bg2.png) repeat-y;
+	background-image: url(/images/bg2.png);
+	background-repeat: repeat-y;
 }
 
 body{
