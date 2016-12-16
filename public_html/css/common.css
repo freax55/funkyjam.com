@@ -11,7 +11,8 @@ html {
 body.topIndex.xmas{
 	background-image: url(/images/bg2.png);
 	background-repeat: repeat-y;
-	background-position: 50% 50%;
+	/*background-position: 50% 50%;*/
+	background-size: contain;
     /*background-color: #306e2b;*/
 }
 
