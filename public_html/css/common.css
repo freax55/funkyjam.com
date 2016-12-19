@@ -149,6 +149,16 @@ header nav ul li{
     right: -36px;
 }
 
+.label-white{
+	color: #D6540D;
+    background-color: #fff;
+    padding: 0px 3px;
+    font-size: 11px;
+    position: absolute;
+    top: -9px;
+    right: -36px;
+}
+
 /*========* footer *========*/
 
 footer{
