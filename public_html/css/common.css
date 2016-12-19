@@ -133,6 +133,22 @@ header nav ul li{
 	float: left;
 }
 
+.blink{
+	-webkit-animation:blink 0.9s ease infinite alternate;
+	-moz-animation:blink 0.9s ease infinite alternate;
+	animation:blink 0.9s ease infinite alternate;
+}
+
+.label-orange{
+	color: #fff;
+    background-color: #D6540D;
+    padding: 0px 3px;
+    font-size: 11px;
+    position: absolute;
+    top: -9px;
+    right: -36px;
+}
+
 /*========* footer *========*/
 
 footer{
