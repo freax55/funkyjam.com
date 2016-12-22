@@ -6,6 +6,16 @@ RewriteBase /
 
 
 #-------------------------------
+#the beginning of the 20160126
+
+#RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY}%{TIME_HOUR} !<2016122218
+
+#RewriteCond %{DOCUMENT_ROOT}/premium/top_20161226.html -f
+
+#RewriteRule ^premium/top\.html$ premium/top_20161226.html [L]
+#-------------------------------
+
+#-------------------------------
 #the beginning of the 20160101
 
 #RewriteCond %{REMOTE_ADDR} ^182\.171\.234\.187$ [OR]
