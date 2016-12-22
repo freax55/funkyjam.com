@@ -72,6 +72,16 @@ a.white:hover{
 	text-decoration: none;
 }
 
+a.black{
+	color: #000;
+	text-decoration: underline;
+}
+
+a.black:hover{
+	color: #000;
+	text-decoration: none;
+}
+
 a{
 	color: #9E7427;
 	text-decoration: underline;
