@@ -60,7 +60,7 @@ a:hover .hover{
 	-khtml-opacity: 0.7; /* Safari 1.x */
 }
 
-a.white{
+/*a.white{
 	color: #fff;
 	text-decoration: underline;
 }
@@ -68,9 +68,9 @@ a.white{
 a.white:hover{
 	color: #fff;
 	text-decoration: none;
-}
+}*/
 
-a.black{
+/*a.black{
 	color: #000;
 	text-decoration: underline;
 }
@@ -78,7 +78,7 @@ a.black{
 a.black:hover{
 	color: #000;
 	text-decoration: none;
-}
+}*/
 
 a{
 	color: #9E7427;
