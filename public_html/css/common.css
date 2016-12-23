@@ -9,17 +9,18 @@ html {
 }
 
 body.topIndex.xmas{
-	border-top: 3px solid #333333;
-	background-image: url(/images/bg.png);
-	background-repeat: repeat;
-	background-position: left top;
+	background-image: url(/images/bg2.png);
+	background-repeat: repeat-y;
+	/*background-position: ;*/
+	background-size: cover;
+    /*background-color: #306e2b;*/
 }
 
-/*body.topIndex.newyear{
+body.topIndex.newyear{
 	background-image: url(/images/bg3.png);
 	background-repeat: repeat-y;
 	background-size: cover;
-}*/
+}
 
 body{
 	border-top: 3px solid #333333;
@@ -62,16 +63,16 @@ a:hover .hover{
 }
 
 a.white{
-	color: #9E7427;
+	color: #fff;
 	text-decoration: underline;
 }
 
 a.white:hover{
-	color: #9E7427;
+	color: #fff;
 	text-decoration: none;
 }
 
-/*a.black{
+a.black{
 	color: #000;
 	text-decoration: underline;
 }
@@ -79,7 +80,7 @@ a.white:hover{
 a.black:hover{
 	color: #000;
 	text-decoration: none;
-}*/
+}
 
 a{
 	color: #9E7427;
