@@ -8,11 +8,12 @@ html {
 	-webkit-text-size-adjust: none;
 }
 
-/*body.topIndex.xmas{
-	background-image: url(/images/bg2.png);
-	background-repeat: repeat-y;
-	background-size: cover;
-}*/
+body.topIndex.xmas{
+	border-top: 3px solid #333333;
+	background-image: url(/images/bg.png);
+	background-repeat: repeat;
+	background-position: left top;
+}
 
 /*body.topIndex.newyear{
 	background-image: url(/images/bg3.png);
@@ -60,15 +61,15 @@ a:hover .hover{
 	-khtml-opacity: 0.7; /* Safari 1.x */
 }
 
-/*a.white{
-	color: #fff;
+a.white{
+	color: #9E7427;
 	text-decoration: underline;
 }
 
 a.white:hover{
-	color: #fff;
+	color: #9E7427;
 	text-decoration: none;
-}*/
+}
 
 /*a.black{
 	color: #000;
