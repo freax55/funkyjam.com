@@ -11,9 +11,7 @@ html {
 body.topIndex.xmas{
 	background-image: url(/images/bg2.png);
 	background-repeat: repeat-y;
-	/*background-position: ;*/
 	background-size: cover;
-    /*background-color: #306e2b;*/
 }
 
 body.topIndex.newyear{
