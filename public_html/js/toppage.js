@@ -206,9 +206,8 @@ $(function(){
     $(".timeline-TweetList li:first-child").show();
     //console.log(href);
     $(".timeline-TweetList li:first-child .timeline-Tweet-text").wrap('<a id="twNew" target="_brank" href="'+ href +'" ></a>');
-    // 背景赤の時(正月・黒文字)
+    // 背景赤の時文字色変える
     // $(".timeline-TweetList li:first-child .timeline-Tweet-text").wrap('<a id="twNew" class="black" target="_brank" href="'+ href +'" ></a>');
-    // 背景赤の時(クリスマス・白文字)
     // $(".timeline-TweetList li:first-child .timeline-Tweet-text").wrap('<a id="twNew" class="white" target="_brank" href="'+ href +'" ></a>');
   },1);
 });
