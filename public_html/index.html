@@ -105,22 +105,22 @@ events: {
 'onStateChange': onPlayerStateChange
 }
 });
-player3 = new YT.Player('player3', {
-height: '225',
-width: '225',
-videoId: 'y6gTJBDABPI',
-wmode: 'transparent',
-playerVars:{
-'loop': '0',
-'rel': '0',
-'showinfo': '0',
-'color': 'red',
-},
-events: {
-'onReady': onPlayerReady,
-'onStateChange': onPlayerStateChange
-}
-});
+// player3 = new YT.Player('player3', {
+// height: '225',
+// width: '225',
+// videoId: 'y6gTJBDABPI',
+// wmode: 'transparent',
+// playerVars:{
+// 'loop': '0',
+// 'rel': '0',
+// 'showinfo': '0',
+// 'color': 'red',
+// },
+// events: {
+// 'onReady': onPlayerReady,
+// 'onStateChange': onPlayerStateChange
+// }
+// });
 }
 function onPlayerReady(event) {
 event.target.playVideo();
