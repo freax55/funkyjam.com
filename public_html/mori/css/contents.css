@@ -30,7 +30,8 @@
   font-size: 6rem;
   font-weight: bold;
 }
-#contents .detailWrap > .inner .image, #contents .detailWrap > .inner p {
+#contents .detailWrap > .inner .image, #contents .detailWrap > .inner p,
+#contents .detailWrap > .inner ul.present {
   margin-top: 30px;
 }
 #contents .detailWrap > .inner .image:first-child, #contents .detailWrap > .inner p:first-child {
@@ -42,7 +43,8 @@
 #contents .detailWrap > .inner .image.br img {
   border: 3px solid #000;
 }
-#contents .detailWrap > .inner p {
+#contents .detailWrap > .inner p,
+#contents .detailWrap > .inner ul.present {
   font-size: 3.4rem;
 }
 #contents .detailWrap > .inner p span {
@@ -176,10 +178,12 @@
     margin-bottom: 7.5px;
     font-size: 1.8rem;
   }
-  #contents .detailWrap > .inner .image, #contents .detailWrap > .inner p {
+  #contents .detailWrap > .inner .image, #contents .detailWrap > .inner p,
+  #contents .detailWrap > .inner ul.present, {
     margin-top: 15px;
   }
-  #contents .detailWrap > .inner p {
+  #contents .detailWrap > .inner p,
+  #contents .detailWrap > .inner ul.present {
     font-size: 1.4rem;
   }
   #contents .detailWrap > .inner p span.big {
