@@ -44,7 +44,7 @@
   border: 3px solid #000;
 }
 #contents .detailWrap > .inner p,
-#contents .detailWrap > .inner ul.present {
+#contents .detailWrap > .inner ul.present li {
   font-size: 3.4rem;
 }
 #contents .detailWrap > .inner p span {
