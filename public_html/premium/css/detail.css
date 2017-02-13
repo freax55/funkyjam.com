@@ -509,7 +509,7 @@
 }
 #offshot .image .copy {
 	position: absolute;
-	top:70%;
+	top:66%;
 	left: 0;
 	width: 100%;
 }
@@ -528,7 +528,7 @@
 #fancybox-content .copy {
 	width: 100%;
 	position: absolute;
-	top:70%;
+	top:66%;
 	left: 0;
 	z-index: 100;
 }
