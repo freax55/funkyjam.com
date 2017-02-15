@@ -20,18 +20,18 @@
 				<div class="login">
 					{if $login_flg == 'login_ON'}
 					<div class="looutBlock">
-						<div><img src="images/top/login.jpg" alt="ƒƒOƒCƒ“’†‚Å‚·" /></div>
+						<div><img src="images/top/login.jpg" alt="ãƒ­ã‚°ã‚¤ãƒ³ä¸­ã§ã™" /></div>
 					{else}
-					<h2><img src="/premium/images/top/txt_eyecatch.jpg" alt="“®‰æ‚âƒIƒtƒVƒ‡ƒbƒg‚È‚ÇAÅVî•ñ‚ª–ÚI" /></h2>
-					<div class="btn"><a href="https://www.funkyjam.com/premium/insert/"><img src="/premium/images/top/btn_login.jpg" alt="V‹K‰ïˆõ“o˜^‚Í‚±‚¿‚ç‚©‚ç" /></a></div>
+					<h2><img src="/premium/images/top/txt_eyecatch.jpg" alt="å‹•ç”»ã‚„ã‚ªãƒ•ã‚·ãƒ§ãƒƒãƒˆãªã©ã€æœ€æ–°æƒ…å ±ãŒæº€è¼‰ï¼" /></h2>
+					<div class="btn"><a href="https://www.funkyjam.com/premium/insert/"><img src="/premium/images/top/btn_login.jpg" alt="æ–°è¦ä¼šå“¡ç™»éŒ²ã¯ã“ã¡ã‚‰ã‹ã‚‰" /></a></div>
 					<div class="loginBlock">
 						<form action="./" method="post">
 							{if !$errors.login_id and !$errors.login_pass}
 								<h3><img src="/premium/images/top/tit_login.jpg" alt="Login" /></h3>
 							{else}
 								<div class="errBlock">
-									{if $errors.login_id}<p class="error">¦{$errors.login_id|escape}</p>{/if}
-									{if $errors.login_pass}<p class="error">¦{$errors.login_pass|escape}</p>{/if}
+									{if $errors.login_id}<p class="error">â€»{$errors.login_id|escape}</p>{/if}
+									{if $errors.login_pass}<p class="error">â€»{$errors.login_pass|escape}</p>{/if}
 								</div>
 							{/if}
 							<dl class="clearfix">
@@ -41,10 +41,10 @@
 								<dd><input type="password" name="login_pass" id="login_pass" value="{$login_pass}" maxlength="8" /></dd>
 							</dl>
 							<ul>
-								<li><img src="/premium/images/top/icon_login.gif" alt="" />&nbsp;&nbsp;<a href="https://www.funkyjam.com/premium/reminder/index.php?action=pass_remind">ƒpƒXƒ[ƒh‚ğ–Y‚ê‚½</a></li>
-								<li><img src="/premium/images/top/icon_login.gif" alt="" />&nbsp;&nbsp;<a href="https://www.funkyjam.com/premium/reminder/index.php?action=id_remind">IDÄ”­s‚Í‚±‚¿‚ç</a></li>
+								<li><img src="/premium/images/top/icon_login.gif" alt="" />&nbsp;&nbsp;<a href="https://www.funkyjam.com/premium/reminder/index.php?action=pass_remind">ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸ</a></li>
+								<li><img src="/premium/images/top/icon_login.gif" alt="" />&nbsp;&nbsp;<a href="https://www.funkyjam.com/premium/reminder/index.php?action=id_remind">IDå†ç™ºè¡Œã¯ã“ã¡ã‚‰</a></li>
 							</ul>
-							<p class="btn"><input type="image" src="/premium/images/top/btn_login2.jpg" alt="ƒƒOƒCƒ“" /></p>
+							<p class="btn"><input type="image" src="/premium/images/top/btn_login2.jpg" alt="ãƒ­ã‚°ã‚¤ãƒ³" /></p>
 							<input type="hidden" name="action" value="confirm" />
 						</form>
 					{/if}
@@ -94,7 +94,7 @@
 					<div id="movieWrap">
 						<h2><img src="/premium/images/top/tit_movie.png" alt="HOT MOVIE" /></h2>
 						<div id="movie">
-							<p class="txt"><br />@@‹Md‚È“®‰æ‚ğƒvƒŒƒ~ƒAƒ€Eƒƒ“ƒo[ƒY‚ÉŒöŠJI</p>
+							<p class="txt"><br />ã€€ã€€è²´é‡ãªå‹•ç”»ã‚’ãƒ—ãƒ¬ãƒŸã‚¢ãƒ ãƒ»ãƒ¡ãƒ³ãƒãƒ¼ã‚ºã«å…¬é–‹ï¼</p>
 							<div id="movieBlock">
 								{if $login_flg == 'login_ON'}
 <script>
@@ -108,7 +108,7 @@ function onYouTubeIframeAPIReady() {
 player = new YT.Player('player', {
 height: '156',
 width: '278',
-videoId: 'DJQw0LcE-0c',
+videoId: 'RB1fNQf_wzw',
 wmode: 'transparent',
 playerVars:{
 'loop': '0',
@@ -140,25 +140,25 @@ function onPlayerStateChange(event) {
 						<div id="hotNews" class="clearfix">
 							<h2><img src="/premium/images/top/tit_hot_news.jpg" alt="Hot News" /></h2>
 							<ul class="txtBlock clearfix">
-								<li><img src="/premium/images/top/icon_reading.gif" alt="reading" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/reading/index.php?path=mori/index">yX‘å•ãz‚Ü‚¾‚Ü‚¾Œê‚éIƒgƒ‰ƒ“ƒXƒtƒH[ƒ}[ </a></li>
-								<li><img src="/premium/images/top/icon_movie.gif" alt="movie" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/movie/index.php?path=kubota/index">y‹v•Û“c—˜LzMovie‚ğXV‚µ‚Ü‚µ‚½I</a></li>
-								<li><img src="/premium/images/top/icon_staffblog.gif" alt="staffblog" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/blog/index.php?path=kubota/index">y‹v•Û“c—˜LzStaff Blog‚ğXV‚µ‚Ü‚µ‚½I</a></li>
-								<li><img src="/premium/images/top/icon_reading.gif" alt="reading" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/others/index.php?path=index">yƒƒ^ƒ‹©gzŒ´q—Í‚Ì‹ºˆĞI</a></li>
+								<li><img src="/premium/images/top/icon_movie.gif" alt="movie" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/movie/index.php?path=urashima/index">ã€æµ¦å¶‹ã‚Šã‚“ã“ã€‘Movieã‚’æ›´æ–°ã—ã¾ã—ãŸï¼</a></li>
+								<li><img src="/premium/images/top/icon_reading.gif" alt="reading" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/reading/index.php?path=mori/index">ã€æ£®å¤§è¼”ã€‘ã¾ã ã¾ã èªã‚‹ï¼ãƒˆãƒ©ãƒ³ã‚¹ãƒ•ã‚©ãƒ¼ãƒãƒ¼ </a></li>
+								<li><img src="/premium/images/top/icon_movie.gif" alt="movie" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/movie/index.php?path=kubota/index">ã€ä¹…ä¿ç”°åˆ©ä¼¸ã€‘Movieã‚’æ›´æ–°ã—ã¾ã—ãŸï¼</a></li>
+								<li><img src="/premium/images/top/icon_staffblog.gif" alt="staffblog" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/blog/index.php?path=kubota/index">ã€ä¹…ä¿ç”°åˆ©ä¼¸ã€‘Staff Blogã‚’æ›´æ–°ã—ã¾ã—ãŸï¼</a></li>
 							</ul>
 						</div>
 						<div id="topNews" class="clearfix">
-							<h2><img src="/premium/images/top/tit_news.gif" alt="ÅVî•ñ" /></h2>
+							<h2><img src="/premium/images/top/tit_news.gif" alt="æœ€æ–°æƒ…å ±" /></h2>
 							<ul>
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/message/" style="color:#FF0000;">ƒ‚²—˜—p‚ÌŠF—l‚Ö„d—v‚È‚¨’m‚ç‚¹</a></li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/message/" style="color:#FF0000;">ï¼œã”åˆ©ç”¨ã®çš†æ§˜ã¸ï¼é‡è¦ãªãŠçŸ¥ã‚‰ã›</a></li>
 {if $user_mail}
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;<span style="color:#C29C02;">yII—LŒøŠúŒÀ‚ª¡Œ––‚Ü‚ÅIIz Œp‘±‚Ì‚¨è‘±‚«‚Í<a href="https://www.funkyjam.com/premium/insert/index.php?action=edit">‚±‚¿‚ç</a></span></li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;<span style="color:#C29C02;">ã€ï¼ï¼æœ‰åŠ¹æœŸé™ãŒä»Šæœˆæœ«ã¾ã§ï¼ï¼ã€‘ ç¶™ç¶šã®ãŠæ‰‹ç¶šãã¯<a href="https://www.funkyjam.com/premium/insert/index.php?action=edit">ã“ã¡ã‚‰</a></span></li>
 {else}
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;‚²—v–]“™‚¨–â‚¢‡‚í‚¹‚Í<a href="mailto:premium@funkyjam.com">premium@funkyjam.com</a>‚Ü‚ÅI</li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;ã”è¦æœ›ç­‰ãŠå•ã„åˆã‚ã›ã¯<a href="mailto:premium@funkyjam.com">premium@funkyjam.com</a>ã¾ã§ï¼</li>
 {/if}
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.14&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_reading.gif" alt="reading" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/reading/index.php?path=mori/index">DAISUKE MORI@‚ÌƒŠ[ƒfƒBƒ“ƒO‚ğXV‚µ‚Ü‚µ‚½</a></li>
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.13&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_movie.gif" alt="movie" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/movie/index.php?path=kubota/index">TOSHINOBU KUBOTA@‚Ì“®‰æ‚ğXV‚µ‚Ü‚µ‚½</a></li>
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.10&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_staffblog.gif" alt="staffblog" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/blog/index.php?path=kubota/index">TOSHINOBU KUBOTA@‚ÌƒXƒ^ƒbƒtƒuƒƒO‚ğXV‚µ‚Ü‚µ‚½</a></li>
-								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.10&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_reading.gif" alt="reading" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/others/index.php?path=index">ƒƒ^ƒ‹@‚Ìyƒƒ^ƒ‹©gz‚ğXV‚µ‚Ü‚µ‚½</a></li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.15&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_movie.gif" alt="movie" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/movie/index.php?path=urashima/index">RINKO URASHIMAã€€ã®å‹•ç”»ã‚’æ›´æ–°ã—ã¾ã—ãŸ</a></li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.14&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_reading.gif" alt="reading" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/reading/index.php?path=mori/index">DAISUKE MORIã€€ã®ãƒªãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’æ›´æ–°ã—ã¾ã—ãŸ</a></li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.13&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_movie.gif" alt="movie" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/movie/index.php?path=kubota/index">TOSHINOBU KUBOTAã€€ã®å‹•ç”»ã‚’æ›´æ–°ã—ã¾ã—ãŸ</a></li>
+								<li><img src="/premium/images/top/icon_news.gif" alt="" />&nbsp;&nbsp;2017.02.10&nbsp;&nbsp;&nbsp;<img src="/premium/images/top/icon_staffblog.gif" alt="staffblog" />&nbsp;&nbsp;<a href="http://www.funkyjam.com/premium/artist/blog/index.php?path=kubota/index">TOSHINOBU KUBOTAã€€ã®ã‚¹ã‚¿ãƒƒãƒ•ãƒ–ãƒ­ã‚°ã‚’æ›´æ–°ã—ã¾ã—ãŸ</a></li>
 							</ul>
 						</div>
 					</div>
