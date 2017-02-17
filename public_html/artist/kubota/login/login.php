@@ -28,6 +28,9 @@ class Action extends DatabaseAction {
 		} elseif($this->form["phrase"] == 'YK98MN') {
 			$_SESSION["loginID"]['backstage_2015'] = $this->form["phrase"];
 			$this->__controller->redirectToURL('backstage_2015/');
+		} elseif($this->form["phrase"] == 'FKBD') {
+			$_SESSION["loginID"]['normal'] = $this->form["phrase"];
+			$this->__controller->redirectToURL('bbcm_tkm121/');
 		} elseif($this->form["phrase"] == 'TAVC') {
 			$_SESSION["loginID"]['normal'] = $this->form["phrase"];
 			$this->__controller->redirectToURL('bbcm_tkm119/');
