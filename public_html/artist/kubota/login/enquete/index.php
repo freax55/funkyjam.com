@@ -18,19 +18,19 @@ class Controller extends DefaultController {
 
 		$this->units["presents"] = array(
 			1 => array(
-				"name" => "µ×ÊÝÅÄÍø¿­ Ä¾É®¥µ¥¤¥óÆþ¤ê NYÅÚ»º A<br>[URBAN OUTFITTERSÀÞ¤ê¤¿¤¿¤ß¥ê¥å¥Ã¥¯]¡¡2Ì¾ÍÍ",
+				"name" => "ŽµŽ×ŽÊŽÝŽÅŽÄŽÍŽ¿Ž­ ŽÄŽ¾ŽÉŽ®Ž¥ŽµŽ¥Ž¤Ž¥ŽÆŽ¤ NYŽÅŽÚŽ»Žº A<br>[URBAN OUTFITTERSŽÀŽÞŽ¤ô¦Ž¿Ž¤Ž¿Ž¤ŽßŽ¥Ž¥ê§ŽÃŽ¥Ž¯]Ž¡Ž¡2ŽÌŽ¾ŽÍŽÍ",
 				"value" => ""
 			),
 			2 => array(
-				"name" => "µ×ÊÝÅÄÍø¿­ Ä¾É®¥µ¥¤¥óÆþ¤ê NYÅÚ»º B<br>[URBAN OUTFITTERS¥Î¡¼¥È]¡¡3Ì¾ÍÍ",
+				"name" => "ŽµŽ×ŽÊŽÝŽÅŽÄŽÍŽ¿Ž­ ŽÄŽ¾ŽÉŽ®Ž¥ŽµŽ¥Ž¤Ž¥ŽÆŽ¤ NYŽÅŽÚŽ»Žº B<br>[URBAN OUTFITTERSŽ¥ŽÎŽ¡Ž¼Ž¥ŽÈ]Ž¡Ž¡3ŽÌŽ¾ŽÍŽÍ",
 				"value" => ""
 			),
 			3 => array(
-				"name" => "Ê¸¸ËËÜ¡Ö´ñÌ¯¤ÊÏÀÍý­µ,­¶¡×Ä¾É®¥µ¥¤¥óÆþ¤ê¡¡1Ì¾ÍÍ",
-				"value" => "¢¨¥µ¥¤¥ó¤Ï½é´©¤Î¤ß¤È¤Ê¤ê¤Þ¤¹"
+				"name" => "ŽÊŽ¸Ž¸ŽËŽËŽÜŽ¡ŽÖŽ´ŽÌŽ¯Ž¤ŽÊŽÏŽÀŽÍŽ­Žµ,Ž­Ž¶Ž¡Ž×ŽÄŽ¾ŽÉŽ®Ž¥ŽµŽ¥Ž¤Ž¥ŽÆŽ¤ô£Ž¡1ŽÌŽ¾ŽÍŽÍ",
+				"value" => "Ž¢Ž¨Ž¥ŽµŽ¥Ž¤Ž¥Ž¤ŽÏŽ½ò¶Ž©Ž¤ŽÎŽ¤ŽßŽ¤ŽÈŽ¤ŽÊŽ¤ô¦ŽÞŽ¤Ž¹"
 			),
 			4 => array(
-				"name" => "µ×ÊÝÅÄÍø¿­ Ä¾É®¥Ï¥¬¥­¡¡1Ì¾ÍÍ",
+				"name" => "ŽµŽ×ŽÊŽÝŽÅŽÄŽÍŽ¿Ž­ ŽÄŽ¾ŽÉŽ®Ž¥ŽÏŽ¥Ž¬Ž¥Ž­Ž¡Ž¡1ŽÌŽ¾ŽÍŽÍ",
 				"value" => ""
 			));
 	
@@ -63,7 +63,7 @@ class Controller extends DefaultController {
 		$mail->send();
 
 		$mail->setSubject($m['customer']['subject']);
-		$mail->setTo($this->data['mail'],$this->data['name'] . " ¤µ¤ó");
+		$mail->setTo($this->data['mail'],$this->data['name'] . " Ž¤ŽµŽ¤");
 		$mail->send();
 
 		$this->data = null;
@@ -99,13 +99,13 @@ class Controller extends DefaultController {
 	function validationExec($data , $keys , $errorMessages=null , $errors=null){
 		$d = $data;
 		$errorMessagesD = array(
-			'emp' => 'ÆþÎÏ¤ò¤ª´ê¤¤¤·¤Þ¤¹¡£',
-			'empR' => 'ÁªÂò¤ò¤ª´ê¤¤¤·¤Þ¤¹¡£',
-			'empS' => 'ÁªÂò¤ò¤ª´ê¤¤¤·¤Þ¤¹¡£',
-			'num' => 'È¾³Ñ¿ô»ú¤ÇÆþÎÏ¤·¤Æ¤¯¤À¤µ¤¤¡£',
-			'cmp' => '³ÎÇ§ÆþÎÏ¤È°ìÃ×¤·¤Æ¤¤¤Þ¤»¤ó¡£ÆþÎÏ¤ò¤´³ÎÇ§¤¯¤À¤µ¤¤¡£',
-			'mail' => '·Á¼°¤ò³ÎÇ§¤·¤Æ¤¯¤À¤µ¤¤¡£',
-			'reg' => '·Á¼°¤ò³ÎÇ§¤·¤Æ¤¯¤À¤µ¤¤¡£'
+			'emp' => 'ŽÆŽÎŽÏŽ¤Ž¤ŽªŽ´ô¦Ž¤Ž¤Ž·Ž¤ŽÞŽ¤Ž¹Ž¡Ž£',
+			'empR' => 'ŽÁŽªŽÂŽ¤Ž¤ŽªŽ´ô¦Ž¤Ž¤Ž·Ž¤ŽÞŽ¤Ž¹Ž¡Ž£',
+			'empS' => 'ŽÁŽªŽÂŽ¤Ž¤ŽªŽ´ô¦Ž¤Ž¤Ž·Ž¤ŽÞŽ¤Ž¹Ž¡Ž£',
+			'num' => 'ŽÈŽ¾Ž³ŽÑŽ¿Ž»Ž¤ŽÇŽÆŽÎŽÏŽ¤Ž·Ž¤ŽÆŽ¤Ž¯Ž¤ŽÀŽ¤ŽµŽ¤Ž¤Ž¡Ž£',
+			'cmp' => 'Ž³ŽÎŽÇŽ§ŽÆŽÎŽÏŽ¤ŽÈŽ°ŽÃŽ×Ž¤Ž·Ž¤ŽÆŽ¤Ž¤Ž¤ŽÞŽ¤Ž»Ž¤Ž¡Ž£ŽÆŽÎŽÏŽ¤Ž¤Ž´Ž³ŽÎŽÇŽ§Ž¤Ž¯Ž¤ŽÀŽ¤ŽµŽ¤Ž¤Ž¡Ž£',
+			'mail' => 'Ž·ŽÁŽ¼Ž°Ž¤Ž³ŽÎŽÇŽ§Ž¤Ž·Ž¤ŽÆŽ¤Ž¯Ž¤ŽÀŽ¤ŽµŽ¤Ž¤Ž¡Ž£',
+			'reg' => 'Ž·ŽÁŽ¼Ž°Ž¤Ž³ŽÎŽÇŽ§Ž¤Ž·Ž¤ŽÆŽ¤Ž¯Ž¤ŽÀŽ¤ŽµŽ¤Ž¤Ž¡Ž£'
 		);
 		if(count ($errorMessages))
 			$errorMessagesD = array_merge($errorMessagesD, $errorMessages);
