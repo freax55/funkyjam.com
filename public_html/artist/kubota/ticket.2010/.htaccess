@@ -1,7 +1,0 @@
-# Maintenance
-#RewriteEngine On
-#RewriteBase /artist/kubota/ticket/
-#
-#RewriteCond %{REMOTE_ADDR} !^59\.146\.75\.44$
-#RewriteCond %{REQUEST_URI} !(css|image)/
-#RewriteRule ^.*$ mentenance.html [L]
