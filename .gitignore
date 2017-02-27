@@ -9,3 +9,5 @@ mt-config.cgi
 /images/
 /img/
 /templates_c/
+*.sublime-project
+*.sublime-workspace
