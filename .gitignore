@@ -11,3 +11,4 @@ mt-config.cgi
 /templates_c/
 *.sublime-project
 *.sublime-workspace
+/test_top
