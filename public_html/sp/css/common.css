@@ -158,3 +158,15 @@ body {
 	position: relative;
 	padding:15px;
 }
+.table-pad {
+	text-align: left;
+    border: 1px solid #ddd;
+    padding: 2px 10px 2px 10px;
+    vertical-align: middle;
+}
+.table-pad-c {
+	text-align: center;
+    border: 1px solid #ddd;
+    padding: 2px 10px 2px 10px;
+    vertical-align: middle;
+}
